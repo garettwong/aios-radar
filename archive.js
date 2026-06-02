@@ -5,10 +5,287 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-02 20:26",
-    "editions": 39
+    "fetchedAt": "2026-06-02 21:26",
+    "editions": 40
   },
   "editions": [
+    {
+      "key": "2026-06-02 21",
+      "label": "2026-06-02 · 20:39",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-02 · 20:39 GMT+8",
+          "quickRead": [
+            "Coding agents are moving from chat into governed, scheduled, long-running work loops.",
+            "Creative AI is shifting toward controllable style systems, private LoRAs, moodboards, and architecture workflows.",
+            "Agent memory, integrations, and security are becoming the new platform layer around models.",
+            "Open-source maintainers are pushing back on AI-generated ports that ignore attribution and correctness.",
+            "Enterprise adoption is now about procurement, governance, evals, and production evidence, not model demos."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The next useful consulting angle is not \"which model is best.\" It is how to design repeatable AI work systems: memory, approvals, evals, provenance, API access, and creative control. That is where clients will get stuck."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Platform shift",
+              "title": "OpenAI frontier models and Codex are now available on AWS",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says its frontier models and Codex are generally available through AWS, including Codex on Amazon Bedrock. The pitch is enterprise access through existing AWS security, compliance, procurement, billing, and governance workflows.",
+              "why": "This is a market-timing signal: enterprise clients may stop asking whether AI coding agents are allowed and start asking how to use them inside approved infrastructure. Teaching and consulting can move toward \"AI inside real company rules.\"",
+              "action": "Track what Bedrock-hosted Codex can and cannot do compared with direct Codex or local OpenClaw-style workflows.",
+              "teacher": "Bedrock is AWS's managed AI platform. If Codex runs there, companies can test AI coding agents without creating a separate vendor-security process.",
+              "link": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/"
+            },
+            {
+              "n": 2,
+              "category": "Agentic workflow",
+              "title": "OpenAI describes a Codex-driven self-improving tax agent loop",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "OpenAI and Thrive Holdings describe Tax AI for Crete accountants, where practitioner corrections, production traces, and tailored evals feed a Codex-driven improvement loop. The pilot processed 7,000 returns and reportedly saved about a third of preparation time.",
+              "why": "This is the consulting pattern to teach: AI systems improve when real expert feedback is captured as structured evidence, not random chat feedback. It maps directly to creative review loops for renders, layouts, and client revisions.",
+              "action": "Sketch a small \"render correction to eval\" loop: source, expected correction, failure reason, test prompt, and pass/fail criteria.",
+              "teacher": "An eval is a repeatable test for an AI system. A production trace is the saved path from input to output, including intermediate steps, so failures can be investigated.",
+              "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex/"
+            },
+            {
+              "n": 3,
+              "category": "Coding agents",
+              "title": "Cursor adds Auto-review Run Mode for safer long-running agents",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Cursor's changelog says Auto-review allows longer agent work with fewer approval prompts and safer execution. Shell, MCP, and fetch calls are handled through allowlists, sandboxing, and a classifier subagent that decides when to ask for approval.",
+              "why": "This shows where AI IDEs are heading: not more chat, but safer autonomy. For teaching, it is useful to explain why approvals, sandboxes, and tool policies matter when agents touch real files.",
+              "action": "Compare Cursor's run mode with OpenClaw-style approvals and write down what should be auto-allowed versus human-approved in a client workflow.",
+              "teacher": "MCP means Model Context Protocol, a standard way for AI apps to use tools and external services. A sandbox is a restricted environment where risky actions are contained.",
+              "link": "https://cursor.com/changelog/auto-review"
+            },
+            {
+              "n": 4,
+              "category": "Agent automation",
+              "title": "Cursor Automations move into the Agents Window with multi-repo and no-repo tasks",
+              "source": "Official",
+              "relevance": "Beginner",
+              "summary": "Cursor says Automations can now be created in the Agents Window, can attach multiple repos, or run with no repository at all. Templates include Slack digests, product analytics, FAQ response, finance reporting, and customer health monitoring.",
+              "why": "The no-repo angle is important: AI assistants are becoming business-process workers, not just code helpers. This is close to the recurring radar brief itself: scheduled agents watching signals and producing output.",
+              "action": "Watch which automation templates become common, then translate the best ones into workshop examples for creators and small studios.",
+              "teacher": "A no-repo automation is an agent job that monitors tools, messages, dashboards, or documents without being tied to a software codebase.",
+              "link": "https://cursor.com/changelog/05-20-26"
+            },
+            {
+              "n": 5,
+              "category": "Open-source agent memory",
+              "title": "Krimto launches git-owned markdown memory for AI coding agents",
+              "source": "Hacker News / GitHub",
+              "relevance": "Intermediate",
+              "summary": "Krimto is an open-source memory layer where AI agent facts are stored as markdown files in a git repo controlled by the user. It supports user, team, and organization scopes, plus cross-vendor MCP use across Claude Code, Cursor, Codex, Gemini CLI, and others.",
+              "why": "Memory is becoming a differentiator for AI-native work. For consulting, this is a clean way to explain why teams need owned, reviewable, scoped knowledge instead of invisible vendor memory.",
+              "action": "Test whether git-backed memory could store studio rules, client preferences, brand constraints, and render checklists.",
+              "teacher": "Git-backed memory means every remembered fact is a normal file with history. Scope means whether a memory belongs to one person, one team, or the whole organization.",
+              "link": "https://github.com/krimto-labs/krimto"
+            },
+            {
+              "n": 6,
+              "category": "Agent integration layer",
+              "title": "Nango trends on GitHub with AI-built product integrations for 800+ APIs",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "Nango describes itself as an open-source platform for connecting products and AI agents to 800+ APIs. It handles OAuth, credential refresh, execution, scaling, observability, and AI-generated TypeScript integration functions.",
+              "why": "Agent capability increasingly depends on reliable integrations, not only prompts. This is the layer that lets AI assistants work with Gmail, Sheets, Slack, project tools, billing, and client systems safely.",
+              "action": "Watch whether Nango becomes a default bridge for AI products that need many customer integrations without custom auth work.",
+              "teacher": "OAuth is the login-and-permission flow used by many web apps. A multi-tenant integration means the same product can securely connect to many customers' accounts.",
+              "link": "https://github.com/NangoHQ/nango"
+            },
+            {
+              "n": 7,
+              "category": "Creative AI",
+              "title": "Krea partners with Henning Larsen and expands Krea 2 creator controls",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Krea announced a partnership with Henning Larsen Architects, plus recent Krea 2 updates around LoRA training, moodboards, and an API. The product direction is AI image generation with stronger style, object, and creative-direction control.",
+              "why": "Architecture and design firms adopting AI creative tooling is a real market signal. Clients will care less about novelty and more about controlled style systems, private references, and repeatable visual language.",
+              "action": "Test one workflow where a moodboard plus private style LoRA becomes a repeatable client concept-design system.",
+              "teacher": "LoRA is a lightweight model adaptation that teaches a generator a specific style, character, object, or brand look without retraining the whole model.",
+              "link": "https://www.krea.ai/news"
+            },
+            {
+              "n": 8,
+              "category": "Image model control",
+              "title": "Qwen-Image-Edit targets precise text editing and semantic image control",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "Qwen says Qwen-Image-Edit extends its 20B image model with precise text-editing capabilities, using visual semantic control and appearance control together. The larger Qwen-Image line emphasizes complex text rendering and fine-grained editing.",
+              "why": "Text rendering and surgical edits are pain points in design and 3D presentation work. If models improve here, more layout and signage tasks become viable inside AI-assisted pipelines.",
+              "action": "Watch independent tests on typography, bilingual signage, label correction, and object-preserving edits before using it for client work.",
+              "teacher": "Semantic control changes what the image means or contains. Appearance control tries to preserve visual details such as lighting, texture, and object identity.",
+              "link": "https://qwenlm.github.io/blog/qwen-image-edit/"
+            },
+            {
+              "n": 9,
+              "category": "Open-source risk",
+              "title": "AboutCode says an AI agent ported ScanCode from Python to Rust and exposed provenance failures",
+              "source": "Hacker News / Trusted open-source post",
+              "relevance": "Advanced",
+              "summary": "AboutCode describes an agentic LLM system that mechanically ported ScanCode Toolkit to Rust, allegedly stripping copyright and license notices and making flawed performance claims. The post argues that AI-assisted porting needs attribution, correctness, and license safeguards.",
+              "why": "This is a useful cautionary story for teaching responsible vibe coding. Speed is not enough if the output loses provenance, violates licenses, or only passes shallow tests.",
+              "action": "Add a provenance checklist to any AI-assisted code or asset workflow: source, license, transformation, tests, and attribution.",
+              "teacher": "Provenance means knowing where an output came from. In code and creative work, it matters because licenses and attribution can survive only if origin is tracked.",
+              "link": "https://aboutcode.org/blog/agentic-scancode-port-case-study/"
+            },
+            {
+              "n": 10,
+              "category": "Agent security",
+              "title": "Archestra raises $10M to build open-source security for enterprise AI agents",
+              "source": "Tool launch / Official",
+              "relevance": "Intermediate",
+              "summary": "Archestra announced a $10M seed round and says multiple Fortune 500 companies run it in production to connect AI agents to corporate data. The company frames the bottleneck as infrastructure: data access, guardrails, governance, observability, MCP, CLI, API, auth, and cost management.",
+              "why": "This confirms a consulting wedge: clients do not just need prompts; they need secure ways for assistants to act. The same issue applies to studios connecting AI to Drive, email, client files, render farms, and project trackers.",
+              "action": "Watch whether Archestra's open-source approach becomes a pattern for safe agent access in small teams, not only enterprises.",
+              "teacher": "Guardrails are limits on what an agent can read or do. Observability means logs and traces that show what happened when an agent used a tool.",
+              "link": "https://archestra.ai/blog/archestra-announces-10m-seed"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-02 · 20:28 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "AI Agent Ecosystem",
+              "title": "Anthropic Open-Sources 11 Knowledge Work Plugins for Claude Cowork Source type: Official (Anthropic GitHub - 18k+ stars) Anthropic released 11 open-source plugins covering sales, marketing, productivity, legal, finance, data, product management, customer support, enterprise search, bio-research, and plugin management. Each bundles skills, MCP connectors, slash commands, and sub-agent workflows for Claude Cowork. Companies customize them for their own tools and terminology. Why it matters to Garett: This is a ready-made consulting opportunity. Garett could build and sell custom plugins for 3D studios, design agencies, or education teams who use Claude Cowork. Teaching students how to create plugins from these templates is a fresh course module. The plugin marketplace model creates recurring value. Relevance: Intermediate",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Install the marketing plugin on your Claude Cowork today. Customize its Canva and Figma connectors for your own workflow. See how quickly it adapts to your terminology. Teacher: What is a Claude Cowork plugin? A plugin is a folder with markdown files and JSON config that teaches Claude how to do a specific job - what tools to use, what steps to follow, what slash commands to expose. No coding needed. It is like a detailed job manual that Claude reads before helping you. MCP (Model Context Protocol) connectors let Claude reach external tools like Slack, Notion, and Figma. https://github.com/anthropics/knowledge-work-plugins",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 2,
+              "category": "Developer Tools",
+              "title": "Cursor Launches Official Plugin System with 14 Plugins Source type: Official (Cursor GitHub) Cursor released a formal plugin specification and marketplace with plugins for continual learning, PR review, docs canvas, orchestration, agent compatibility, CLI design, and more. Each plugin uses the same skills/rules/MCP structure as Claude plugins. Why it matters to Garett: Cursor is one of the most popular AI coding IDEs. Knowing how to build and sell plugins positions Garett as an early expert. These skills transfer directly to Claude Code plugins and the broader agent plugin space. A course on \"Building AI Agent Plugins\" across platforms would be highly sellable. Relevance: Advanced",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Read the Cursor plugin spec at the GitHub repo. Scaffold a simple \"3D Asset Pipeline\" plugin using the create-plugin template. Teacher: What is a plugin marketplace in an AI IDE? Just like the Apple App Store or Figma plugins - a central directory where developers publish reusable add-ons. In Cursor's case, plugins add skills and rules that shape how the AI coding agent works. You install with one command: /plugin install skill-name. Any developer can publish one. https://github.com/cursor/plugins",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 3,
+              "category": "Code Understanding / Teaching",
+              "title": "Understand-Anything: Interactive Knowledge Graphs for Any Codebase (49k Stars) Source type: GitHub (Trending #1 weekly TypeScript) A Claude Code plugin that builds a multi-agent pipeline to scan any project, extract every file/function/class/dependency, and produce an interactive knowledge graph. Users can search, chat, diff, explore domains, and generate onboarding guides - all from the graph. Why it matters to Garett: This is a powerful teaching tool. Garett can use it to help students understand complex codebases visually. For consulting, it solves the \"new team, huge codebase\" onboarding problem. The knowledge-base mode also works on wiki-style documentation - great for course content organization. Relevance: Intermediate",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Install the plugin in Claude Code on a medium-sized project you work on. Run /understand to generate the graph, then /understand-dashboard to explore it visually in the browser. Teacher: What is a knowledge graph for code? A knowledge graph turns code into an interactive map where every file, function, and class is a clickable node. Connections show which functions call others, which files depend on each other, and how data flows. It is like Google Maps for your code - you can zoom in, search, and get directions between parts of the system. https://github.com/Lum1104/Understand-Anything",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 4,
+              "category": "AI Cost Optimization",
+              "title": "CodeGraph: Pre-Indexed Code Knowledge Graphs for AI Coding Agents (37k Stars) Source type: GitHub (Trending TypeScript weekly) CodeGraph pre-indexes your codebase into a knowledge graph that AI agents query instantly instead of scanning files. Tested across VS Code, Django, Excalidraw, and more - average 57% fewer tokens, 25% cheaper, 23% faster, 62% fewer tool calls. Why it matters to Garett: Token cost is a real barrier for teaching labs and client projects. CodeGraph makes AI agents dramatically cheaper and faster. Garett can teach this as a \"cost optimization\" technique in consulting engagements. Works across Claude Code, Codex, Gemini CLI, Cursor, and more. Relevance: Advanced",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Run codegraph init -i on one of your active projects, then compare an agent's costs before and after using the pre-indexed graph. Track the token savings. Teacher: What does \"pre-indexed knowledge graph\" mean? Normally when you ask an AI agent a question about your code, it searches through files one by one - like reading a library book by book. A pre-indexed graph is like having a card catalog: the agent already knows where everything is and can answer directly. This saves the cost and time of scanning files. https://github.com/colbymchenry/codegraph",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 5,
+              "category": "Visual Communication",
+              "title": "Next AI Draw.io: AI-Powered Diagram Creation via Natural Language + MCP (30k Stars) Source type: GitHub (Trending TypeScript weekly) A Next.js app that integrates AI with draw.io to create, modify, and enhance diagrams through natural language. Supports PDF uploads, image-based diagram replication, cloud architecture diagrams, and MCP server integration for Claude Code, Cursor, and VS Code. Why it matters to Garett: Diagrams are core to teaching and consulting. This tool lets Garett generate architecture diagrams, process flows, and concept maps by just describing them in plain English. The MCP integration means Claude can create diagrams inside your chat session. Perfect for course slides, client reports, and workshop materials. Relevance: Beginner",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Try the live demo at next-ai-drawio.jiang.jp. Prompt \"Generate a 3D rendering pipeline diagram showing modeling, texturing, lighting, and output stages with connected arrows.\" Teacher: What is MCP and why does it matter for diagrams? MCP (Model Context Protocol) is a standard way for AI agents to connect to external tools. When Next AI Draw.io provides an MCP server, Claude can send diagram instructions directly to the app. You stay in your chat window while the diagram appears in your browser in real time - no copy-pasting. https://github.com/DayuanJiang/next-ai-draw-io",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 6,
+              "category": "Multi-Agent Studio",
+              "title": "Orca IDE: Run Multiple AI Coding Agents Side-by-Side on Desktop and Mobile Source type: GitHub (Trending TypeScript weekly, 3.9k stars) Orca is a native desktop and mobile IDE that runs Claude Code, Codex, Grok, Gemini, Cursor CLI, and 15+ other AI agents in parallel. Each feature gets its own git worktree. Includes multi-agent terminals, source control, GitHub integration, SSH support, and push notifications when agents complete tasks. Why it matters to Garett: This lets Garett orchestrate multiple AI agents for complex teaching/studio workflows. Run one agent researching, another generating assets, a third reviewing - all concurrently. The mobile app means he can monitor agent progress from anywhere. This is the kind of tool his consulting clients will need help adopting. Relevance: Advanced",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Download the Orca desktop app from onOrca.dev. Set up two agents (e.g., Claude Code and Codex) working on different tasks in the same repo. Watch the parallel progress in the dashboard. Teacher: What is a \"worktree-native\" multi-agent IDE? A worktree is a separate copy of your project files. In Orca, each AI agent gets its own worktree so they never interfere with each other. You can have Claude editing one feature in worktree A while Codex refactors another in worktree B. No stashing, no merge conflicts. Each worktree is a clean sandbox. https://github.com/stablyai/orca",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 7,
+              "category": "Context Cost Savings",
+              "title": "Headroom: Compress AI Agent Context by 60-95% with Same Accuracy (4.8k Stars) Source type: GitHub (Trending Python weekly) Headroom compresses tool outputs, logs, RAG chunks, files, and conversation history before they reach the LLM. Uses multiple algorithms (SmartCrusher, CodeCompressor, Kompress-base) with cross-agent memory and reversible CCR compression. Works as library, proxy, agent wrapper, or MCP server. Why it matters to Garett: Token costs add up fast in teaching labs and consulting projects. Headroom cuts costs drastically with zero accuracy loss. Garett can teach this as a \"token budget management\" skill. The cross-agent memory feature is particularly useful for courses where students share agent accounts. Relevance: Intermediate",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Run pip install headroom-ai[all] then try headroom wrap claude to automatically compress all context for Claude Code. Run headroom stats to see your token savings. Teacher: What does \"compressing context before the LLM sees it\" mean? When an AI agent reads files or runs tools, it sends all that text to the LLM and pays for every word. Headroom squeezes that text - removing redundancy, summarizing logs, condensing JSON - before sending it. The LLM still gets the same meaning but pays for fewer tokens. Think of it like emailing a summary instead of the raw 50-page report. https://github.com/chopratejas/headroom",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 8,
+              "category": "AI Safety / Consulting",
+              "title": "Microsoft Agent Governance Toolkit: Production-Grade Policy Enforcement for Autonomous AI Agents Source type: Official (Microsoft GitHub - 3.7k stars) Microsoft open-sourced a toolkit that enforces policies on AI agent actions at the code level - not asking agents to behave but making violation structurally impossible. Covers zero-trust identity, execution sandboxing, OWASP Agentic Top 10, and tamper-evident audit logs. One-line integration for any Python tool function. Why it matters to Garett: Enterprise clients will need governance before they adopt AI agents at scale. Garett can build a consulting practice around \"Agent Governance Readiness\" - auditing workflows, setting up policies, training teams. This skill is directly sellable to studios, agencies, and schools adopting AI agents. Relevance: Advanced",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "pip install agent-governance-toolkit[full]. Wrap a tool function with govern(my_tool, policy=\"policy.yaml\") and see how policy enforcement blocks unauthorized actions at the code level. Teacher: What is \"agent governance\" and why is it needed? When an AI agent can call tools, send emails, query databases, or delete files, you need a way to say \"this agent can read customer data but not delete it.\" Agent governance locks those permissions at the code level - not via prompts that an attacker could override. It is like giving an employee a keycard that only opens certain doors. https://github.com/microsoft/agent-governance-toolkit",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 9,
+              "category": "Voice AI",
+              "title": "Dograh: Open-Source Voice AI Platform - Self-Hosted Alternative to Vapi and Retell Source type: GitHub (Trending Python weekly, 4k stars) Dograh is a fully open-source, self-hostable voice AI platform with a drag-and-drop workflow builder. Supports inbound/outbound calls, bring-your-own LLM/STT/TTS, telephony integration (Twilio, Vonage), and MCP-native architecture. One Docker command to deploy. BSD 2-Clause license - no vendor lock-in. Why it matters to Garett: Voice AI agents are a growing market. Garett could build voice-based teaching assistants, client Q&A bots, or automated intake systems for his consulting practice. Self-hosting means no per-minute SaaS fees. This is a great topic for a \"Voice AI for Creatives\" workshop - show students how to build a voice portfolio reviewer. Relevance: Intermediate",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Run the one-line Docker deploy command from the GitHub README. Open localhost:3010 and create your first voice agent in under 2 minutes using the drag-and-drop builder. Teacher: What is the difference between Vapi/Retell and Dograh? Vapi and Retell are paid SaaS platforms where you pay per minute for voice AI agents. Dograh is free, open-source software you run on your own server. You bring your own API keys for AI models. The trade-off: SaaS is easier to start, self-hosted is cheaper at scale and gives full control over your data. https://github.com/dograh-hq/dograh",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 10,
+              "category": "Web Development / Agency",
+              "title": "Webflow Cloud: One Workspace for Sites, Apps, and AI-Native Web Presence Source type: Official (Webflow Blog) Webflow launched \"Webflow Cloud\" - a unified workspace that lets teams build both traditional websites and full applications from one platform. Combines visual web design with backend capabilities, agentic SEO (AEO) tools, and AI-native content optimization. Why it matters to Garett: Webflow is increasingly positioning itself as an AI-first web platform. Garett can offer \"Webflow + AI\" consulting to clients who need modern web presence. The AEO (AI Engine Optimization) feature is a new service category Garett can sell to clients worried about visibility in ChatGPT, Claude, and Gemini search results. Teaching Webflow Cloud + AI workflows would be a unique course offering. Relevance: Beginner",
+              "source": "",
+              "relevance": "",
+              "summary": "",
+              "why": "",
+              "action": "Create a free Webflow account and explore the new Cloud workspace. Build a simple portfolio site and test the AEO assessment tool to see how your site appears in AI search results. Teacher: What is AEO (AI Engine Optimization)? Just as SEO helps websites rank in Google search results, AEO helps your content appear correctly when AI assistants like ChatGPT, Claude, and Gemini answer questions. Webflow's AEO measures how your brand shows up in AI answers and gives recommendations to improve visibility - a new service category for web designers and consultants. https://webflow.com/blog/introducing-webflow-aeo AI Life and Job Opportunity Radar - Curated for Garett Generated 2026-06-02 20:28 GMT+8 | Sources verified at time of writing",
+              "teacher": "",
+              "link": null
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-02 15",
       "label": "2026-06-02 · 15:10",
