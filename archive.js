@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-02 22:12",
+    "fetchedAt": "2026-06-02 22:18",
     "editions": 57
   },
   "editions": [
@@ -6834,8 +6834,8 @@ window.DASHBOARD_ARCHIVE = {
             {
               "n": 1,
               "category": "Design systems",
-              "title": "Claude-Code-Design-AI packages a free Claude Design-style UI/UX architectSource type: GitHub",
-              "source": "",
+              "title": "Claude-Code-Design-AI packages a free Claude Design-style UI/UX architect",
+              "source": "GitHub",
               "relevance": "Intermediate",
               "summary": "The repository describes a Claude Design Free framework for UI/UX work, including screenshot-to-React, Figma components, Tailwind generation, shadcn/ui integration, wireframes, icons, branding, and responsive layout output. It was created May 13 and had 474 GitHub stars when checked.",
               "why": "This shows demand for open Claude Design alternatives. For teaching or consulting, the opportunity is not only making prettier mockups, but teaching clients how to turn screenshots, brand systems, and component libraries into repeatable AI-assisted UI workflows.",
@@ -6846,8 +6846,8 @@ window.DASHBOARD_ARCHIVE = {
             {
               "n": 2,
               "category": "Agent publishing",
-              "title": "md2html turns long AI-written docs into readable one-page artifactsSource type: GitHub",
-              "source": "",
+              "title": "md2html turns long AI-written docs into readable one-page artifacts",
+              "source": "GitHub",
               "relevance": "Beginner",
               "summary": "md2html is a portable skill for Claude Code, Codex, Antigravity, and other agents. It converts long Markdown plans, specs, RFCs, runbooks, and brainstorms into self-contained HTML with sidebar TOC, Mermaid diagrams, timelines, callouts, comparison cards, and light/dark themes.",
               "why": "The market is rewarding people who can turn AI output into polished client-facing artifacts. This is directly useful for teaching: students need to learn how to package AI work so it looks credible and is easy to read.",
@@ -6894,8 +6894,8 @@ window.DASHBOARD_ARCHIVE = {
             {
               "n": 6,
               "category": "OpenClaw-style capability builders",
-              "title": "AgentClaw turns one-sentence ideas into reusable Claw capabilitiesSource type: GitHub",
-              "source": "",
+              "title": "AgentClaw turns one-sentence ideas into reusable Claw capabilities",
+              "source": "GitHub",
               "relevance": "Advanced",
               "summary": "AgentClaw describes a declarative agent workflow framework with computer, browser, code, file control, MCP, skills, memory, knowledge bases, tracing, scheduling, and API or MCP publishing. Its demo turns a natural-language request into a scheduled system-log audit agent.",
               "why": "This confirms the OpenClaw-style direction: assistants are becoming personal workflow operating systems. For consulting, the value is helping people identify repeatable work and package it as reusable capabilities.",
@@ -6942,8 +6942,8 @@ window.DASHBOARD_ARCHIVE = {
             {
               "n": 10,
               "category": "Vibe-coded firmware",
-              "title": "Resident open-sources a sandbox for AI-authored apps on ESP32 devicesSource type: Hacker News",
-              "source": "",
+              "title": "Resident open-sources a sandbox for AI-authored apps on ESP32 devices",
+              "source": "Hacker News",
               "relevance": "Advanced",
               "summary": "Matt Webb writes that Resident is an open-source library for running AI-authored code on microcontrollers with no compile step and no firmware flashing. The post says it gives ESP32 devices a code sandbox and driver API so users can push app behavior over Wi-Fi while restricting unsafe access.",
               "why": "This is a strong maker signal: AI is being used to dynamically write small device behaviors. Teaching can connect AI agents, physical computing, UI latency, and safety in a way that feels concrete and future-facing.",
@@ -10837,11 +10837,11 @@ window.DASHBOARD_ARCHIVE = {
               "title": "OpenAI frames Codex as a data science deliverable builder, not just a query helper",
               "source": "Official",
               "relevance": "Intermediate",
-              "summary": "OpenAI says data science teams can use Codex to turn dashboards, metric definitions, exports, experiment notes, and business context into review-ready analysis assets with charts, caveats, source links, and review questions.",
+              "summary": "OpenAI says data science teams can use Codex to turn dashboards, metric definitions, exports, experiment notes, and business context into review-ready analysis assets with charts, caveats,",
               "why": "This is a clear consulting opportunity: many teams are drowning in data but bad at converting it into decisions. Garett can teach the pattern of 'evidence, caveats, recommendation' as an AI workflow.",
               "action": "Watch for clients who already have dashboards but weak reporting habits; they are ideal candidates for AI-assisted KPI memo workflows.",
-              "teacher": "KPI means Key Performance Indicator. In practice, it is the number a team watches to know whether a product, campaign, or business process is healthy.",
-              "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex"
+              "teacher": "KPI means Key Performance Indicator. In practice, it is the number a team watches to know whether a product, campaign, or business process is healthy. Source link <https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex>",
+              "link": null
             },
             {
               "n": 3,
