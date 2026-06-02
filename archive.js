@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-02 22:18",
+    "fetchedAt": "2026-06-02 22:22",
     "editions": 57
   },
   "editions": [
@@ -238,12 +238,12 @@ window.DASHBOARD_ARCHIVE = {
               "n": 7,
               "category": "Context Cost Savings",
               "title": "Headroom: Compress AI Agent Context by 60-95% with Same Accuracy (4.8k Stars)",
-              "source": "GitHub (Trending Python weekly)",
+              "source": "GitHub (Trending Python weekly) Headroom compresses tool outputs, logs, RAG chunks, files, and conversation history before they reach the LLM. Uses multiple algorithms (SmartCrusher, CodeCompressor, Kompress-base) with cross-agent memory and reversible CCR compression. Works as library, proxy, agent wrapper, or MCP server.",
               "relevance": "Intermediate",
-              "summary": "Headroom compresses tool outputs, logs, RAG chunks, files, and conversation history before they reach the LLM. Uses multiple algorithms (SmartCrusher, CodeCompressor, Kompress-base) with cross-agent memory and reversible CCR compression. Works as library, proxy, agent wrapper, or MCP server.",
+              "summary": "instead of the raw 50-page report. https://github.com/chopratejas/headroom",
               "why": "Token costs add up fast in teaching labs and consulting projects. Headroom cuts costs drastically with zero accuracy loss. Garett can teach this as a \"token budget management\" skill. The cross-agent memory feature is particularly useful for courses where students share agent accounts.",
               "action": "Run pip install headroom-ai[all] then try headroom wrap claude to automatically compress all context for Claude Code. Run headroom stats to see your token savings.",
-              "teacher": "What does \"compressing context before the LLM sees it\" mean? When an AI agent reads files or runs tools, it sends all that text to the LLM and pays for every word. Headroom squeezes that text - removing redundancy, summarizing logs, condensing JSON - before sending it. The LLM still gets the same meaning but pays for fewer tokens. Think of it like emailing a summary instead of the raw 50-page report. https://github.com/chopratejas/headroom",
+              "teacher": "What does \"compressing context before the LLM sees it\" mean? When an AI agent reads files or runs tools, it sends all that text to the LLM and pays for every word. Headroom squeezes that text - removing redundancy, summarizing logs, condensing JSON - before sending it. The LLM still gets the same meaning but pays for fewer tokens. Think of it like emailing a",
               "link": null
             },
             {
@@ -1122,11 +1122,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 3,
               "category": "Course app creation",
               "title": "Google shows a quiz vibe coded in Google AI Studio by a non-developer",
-              "source": "Official",
+              "source": "Official Google says an editor with zero coding background used Gemini and Google AI Studio to build an I/O 2026 quiz. The workflow used uploaded sources, design inspiration, generated prompts, previews, and refinements.",
               "relevance": "Beginner",
-              "summary": "Google says an editor with zero coding background used Gemini and Google AI Studio to build an I/O 2026 quiz. The workflow used uploaded sources, design inspiration, generated prompts, previews, and refinements.",
+              "summary": ".",
               "why": "Garett can turn course PDFs, slide decks, and demo notes into interactive quizzes or client onboarding tools without waiting for a developer.",
-              "action": "Upload one 3D lesson outline and ask Google AI Studio to build a 10-question mobile quiz with explanations and a score summary.",
+              "action": "Upload one 3D lesson outline and ask Google AI Studio to build a 10-question mobile quiz with explanations and a score",
               "teacher": "Vibe coding means describing the app you want in natural language, then steering the AI-generated app through previews and edits instead of writing every line manually. https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
               "link": null
             },
@@ -1890,9 +1890,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Intermediate",
               "summary": "Meshy says Workspace 3.0 unifies image generation, 3D model generation, texturing, remesh, rigging, animation, print preparation, scene creation, video, and asset management. It also adds 3D printing workflows with slicer export.",
-              "why": "AI 3D tools are moving from novelty generators to production workspaces. This creates demand for teachers who can explain topology, printability, art direction, and pipeline quality to non-technical creators.",
-              "action": "Generate one asset and inspect topology, printability, texture quality, and Blender handoff friction.",
-              "teacher": "Remesh means rebuilding mesh structure for cleaner geometry. Slicer export means preparing a 3D model for software used by 3D printers.",
+              "why": "AI 3D tools are moving from novelty generators to production workspaces. This creates demand for",
+              "action": "Generate one asset and inspect topology, printability, texture quality, and Blender handoff friction. *Teacher explanation:* Remesh means rebuilding mesh structure for cleaner geometry. Slicer export means preparing a 3D model for software used by 3D printers.",
+              "teacher": "s who can explain topology, printability, art direction, and pipeline quality to non-technical creators.",
               "link": "https://www.meshy.ai/blog/workspace3"
             },
             {
@@ -1993,9 +1993,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Intermediate",
               "summary": "Cursor says Automations are now available in the Agents Window, can attach multiple repositories, or run without a repository. The examples include Slack digests, product FAQ agents, product analytics, finance reports, and customer health monitoring.",
-              "why": "This is a clear offer category: 'AI assistant setup for creative teams'. Many studios and teachers need recurring digests, client FAQ responders, production checklists, and project-health alerts but do not know how to design them safely.",
-              "action": "Draft three no-repo automations for a 3D course: daily student question digest, weekly render-submission checklist, and client feedback summary.",
-              "teacher": "No-repo automation means an AI agent can watch and summarize tools like chat, docs, or tickets without needing a software codebase attached.",
+              "why": "This is a clear offer category: 'AI assistant setup for creative teams'. Many studios and",
+              "action": "Draft three no-repo automations for a 3D course: daily student question digest, weekly render-submission checklist, and client feedback summary. *Teacher explanation:* No-repo automation means an AI agent can watch and summarize tools like chat, docs, or tickets without needing a software codebase attached.",
+              "teacher": "s need recurring digests, client FAQ responders, production checklists, and project-health alerts but do not know how to design them safely.",
               "link": "https://cursor.com/changelog/05-20-26"
             },
             {
@@ -2127,8 +2127,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "OpenAI says Braintrust engineers use Codex with GPT-5.5 to turn customer feature requests into preview branches in minutes. The post says half of Braintrust moved to Codex in one month, shifting coding from isolated implementation to fast customer feedback loops.",
               "why": "This is a practical signal that AI coding agents are becoming sales, product, and consulting accelerators, not just developer tools. For Garett, the teaching angle is how to explain rapid prototype loops to clients who still think AI coding is only for programmers.",
-              "action": "Watch for workflows that convert client notes, screenshots, or feedback into demoable branches; test one small request-to-preview loop in a throwaway repo. Teacher explanation Codex is OpenAI's coding agent. A preview branch is a temporary version of software that clients can click or test before it becomes the main product.",
-              "teacher": "",
+              "action": "Watch for workflows that convert client notes, screenshots, or feedback into demoable branches; test one small request-to-preview loop in a throwaway repo.",
+              "teacher": "Codex is OpenAI's coding agent. A preview branch is a temporary version of software that clients can click or test before it becomes the main product.",
               "link": "https://openai.com/index/braintrust"
             },
             {
@@ -2139,8 +2139,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "GitHub says Anthropic's Claude Opus 4.8 is now available in GitHub Copilot, with improvements in code understanding, code generation, complex problem solving, and large-codebase navigation. The changelog also notes a 15X premium request multiplier at launch.",
               "why": "The market is moving toward model choice inside one coding surface. Garett should expect clients and students to ask which model to use for planning, refactoring, reviewing, or UI work rather than which single tool is best.",
-              "action": "Compare one real task across Copilot with Opus, Codex, and Claude Code if available; track quality, speed, and cost per useful result. Teacher explanation A premium request multiplier means one request can count as many quota units. Better models may be worth it for hard problems, but expensive for routine edits.",
-              "teacher": "",
+              "action": "Compare one real task across Copilot with Opus, Codex, and Claude Code if available; track quality, speed, and cost per useful result.",
+              "teacher": "A premium request multiplier means one request can count as many quota units. Better models may be worth it for hard problems, but expensive for routine edits.",
               "link": "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot"
             },
             {
@@ -2151,8 +2151,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "GitHub added an ai_adoption_phase field to Copilot usage reports, grouping engaged users by how they use Copilot over a rolling 28-day window. Enterprise and organization reports can now show adoption by phase instead of only active-user counts.",
               "why": "AI enablement is becoming measurable. For consulting, this is a signal that buyers will want adoption dashboards, training cohorts, and proof that teams are progressing from casual chat to real workflow integration.",
-              "action": "Build a simple adoption ladder for any AI training offer: explore, assisted work, workflow integration, and autonomous review. Teacher explanation A cohort is a group of users with similar behavior. In AI training, cohorts help show whether people are only experimenting or actually changing how they work.",
-              "teacher": "",
+              "action": "Build a simple adoption ladder for any AI training offer: explore, assisted work, workflow integration, and autonomous review.",
+              "teacher": "A cohort is a group of users with similar behavior. In AI training, cohorts help show whether people are only experimenting or actually changing how they work.",
               "link": "https://github.blog/changelog/2026-05-29-copilot-usage-metrics-api-adds-cohorts-for-ai-adoption"
             },
             {
@@ -2163,8 +2163,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "GitHub says Copilot Memory now has better deletion guidance, a repository-level off switch, and more controls in the Copilot CLI. The feature remains in public preview for paid Copilot plans.",
               "why": "Persistent assistant memory is becoming normal, but so are controls around privacy and project boundaries. Garett can use this to teach clients why memory is powerful, risky, and needs governance.",
-              "action": "Create a one-page checklist for agent memory: what to remember, what to never remember, who can delete it, and where it applies. Teacher explanation Agent memory means an assistant stores preferences or facts for future work. Repository scope means the memory can be limited to one code project instead of leaking across everything.",
-              "teacher": "",
+              "action": "Create a one-page checklist for agent memory: what to remember, what to never remember, who can delete it, and where it applies.",
+              "teacher": "Agent memory means an assistant stores preferences or facts for future work. Repository scope means the memory can be limited to one code project instead of leaking across everything.",
               "link": "https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli"
             },
             {
@@ -2175,8 +2175,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Artificial Analysis and IBM launched ITBench-AA on Hugging Face to test agentic enterprise IT work, starting with Kubernetes incident response. The post says frontier models score below 50 percent on tasks that require reading logs, tracing dependencies, and finding root causes.",
               "why": "This cuts through hype: agents are useful, but enterprise reliability still needs scaffolding, tools, and human review. For Garett, it is a strong teaching example for setting client expectations around agent autonomy.",
-              "action": "Use this as a benchmark story when explaining why agent workflows need tests, logs, rollback plans, and verification gates. Teacher explanation Kubernetes is infrastructure software for running apps across many machines. Site Reliability Engineering, or SRE, is the practice of keeping systems reliable under real failures.",
-              "teacher": "",
+              "action": "Use this as a benchmark story when explaining why agent workflows need tests, logs, rollback plans, and verification gates.",
+              "teacher": "Kubernetes is infrastructure software for running apps across many machines. Site Reliability Engineering, or SRE, is the practice of keeping systems reliable under real failures.",
               "link": "https://huggingface.co/blog/ibm-research/itbench-aa"
             },
             {
@@ -2187,8 +2187,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Hugging Face describes running the Reachy Mini robot conversation stack locally instead of sending audio to a server. The stack uses VAD, STT, LLM, and TTS pieces behind a Realtime API-compatible WebSocket, with swappable open-source components.",
               "why": "Local multimodal assistants are becoming maker-accessible. This matters for OpenClaw-style assistants, teaching demos, kiosks, studios, and privacy-sensitive client installations.",
-              "action": "Watch the local speech-to-speech stack and test which components could power a private studio assistant or exhibition guide. Teacher explanation VAD detects when someone is speaking. STT converts speech to text. TTS converts text back to speech. A cascade connects these smaller models into one voice assistant pipeline.",
-              "teacher": "",
+              "action": "Watch the local speech-to-speech stack and test which components could power a private studio assistant or exhibition guide.",
+              "teacher": "VAD detects when someone is speaking. STT converts speech to text. TTS converts text back to speech. A cascade connects these smaller models into one voice assistant pipeline.",
               "link": "https://huggingface.co/blog/local-reachy-mini-conversation"
             },
             {
@@ -2199,8 +2199,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The EveryInc Compound Engineering plugin is an official plugin for Claude Code, Codex, Cursor, and similar tools. Its README frames agentic engineering as 80 percent planning and review, 20 percent execution, with commands for brainstorming, planning, code review, and doc review.",
               "why": "The signal is that maker tooling is moving from single prompts to repeatable agent rituals. Garett can teach that better AI output often comes from process design, not only model choice.",
-              "action": "Install or inspect the command structure, then adapt the planning-review-execution pattern into Garett's own OpenClaw workflows. Teacher explanation A plugin adds reusable behaviors to an AI coding tool. Compound engineering means each project should leave behind better plans, checks, and context for the next project.",
-              "teacher": "",
+              "action": "Install or inspect the command structure, then adapt the planning-review-execution pattern into Garett's own OpenClaw workflows.",
+              "teacher": "A plugin adds reusable behaviors to an AI coding tool. Compound engineering means each project should leave behind better plans, checks, and context for the next project.",
               "link": "https://github.com/EveryInc/compound-engineering-plugin"
             },
             {
@@ -2211,8 +2211,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The cursor/plugins repository describes official Cursor plugins for developer tools, frameworks, and SaaS products, each with its own plugin manifest. Visible examples include Continual Learning for transcript-driven AGENTS.md memory updates and Cursor Team Kit for internal team workflows.",
               "why": "This points to AI IDEs becoming platforms, not just editors. For Garett, the teaching opportunity is to show clients how repeatable plugins, memory rules, and team workflows turn personal AI use into shared operating systems.",
-              "action": "Watch Cursor plugins and map which plugin patterns could become training modules or packaged consulting assets. Teacher explanation A plugin manifest is a small file that tells an app what a plugin is and how to load it. AGENTS.md is a project instruction file that helps coding agents follow local rules.",
-              "teacher": "",
+              "action": "Watch Cursor plugins and map which plugin patterns could become training modules or packaged consulting assets.",
+              "teacher": "A plugin manifest is a small file that tells an app what a plugin is and how to load it. AGENTS.md is a project instruction file that helps coding agents follow local rules.",
               "link": "https://github.com/cursor/plugins"
             },
             {
@@ -2222,9 +2222,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Advanced",
               "summary": "The OpenBMB VoxCPM repository describes VoxCPM2 as a tokenizer-free text-to-speech system for multilingual speech generation, creative voice design, and true-to-life cloning, with demo and model links. It appeared in GitHub trending alongside other AI maker projects.",
-              "why": "Audio is becoming another maker layer for teachers, demos, guides, and content production. Garett can watch how voice design joins visual design as a client-facing creative AI skill.",
+              "why": "Audio is becoming another maker layer for",
               "action": "Test the demo or model card and compare it with commercial TTS for short teaching narration, character voice mockups, or booth guide concepts. Teacher explanation TTS means text-to-speech. Tokenizer-free means the system avoids a common text-splitting step, which can help speech models handle languages and pronunciation differently.",
-              "teacher": "",
+              "teacher": "s, demos, guides, and content production. Garett can watch how voice design joins visual design as a client-facing creative AI skill.",
               "link": "https://github.com/OpenBMB/VoxCPM"
             },
             {
@@ -2235,8 +2235,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "The AutoSubs GitHub project says it generates accurate timestamped subtitles locally, with no cloud subscription. It supports speaker labels, translation, SRT export, DaVinci Resolve, Premiere Pro, and After Effects via a bundled extension.",
               "why": "Creator tools are moving toward local, workflow-native AI utilities. For Garett, this is a signal that small AI helpers inside existing creative software can be more valuable than flashy standalone apps.",
-              "action": "Test AutoSubs on one short video and compare the time saved versus Resolve or Adobe's built-in caption workflow. Teacher explanation SRT is a common subtitle file format. On-device means the transcription runs on your computer, which can reduce privacy risk and recurring cloud cost.",
-              "teacher": "",
+              "action": "Test AutoSubs on one short video and compare the time saved versus Resolve or Adobe's built-in caption workflow.",
+              "teacher": "SRT is a common subtitle file format. On-device means the transcription runs on your computer, which can reduce privacy risk and recurring cloud cost.",
               "link": "https://github.com/tmoroney/auto-subs"
             }
           ]
@@ -2423,9 +2423,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Beginner",
               "summary": "Google says an editor with zero coding background built an I/O 2026 quiz in Google AI Studio, using Gemini to generate a detailed prompt and then refining previews. The post positions AI Studio, powered by the Antigravity coding agent, as a way for non-developers to build apps.",
-              "why": "This is a strong teaching signal. The buyer may no longer be a developer; it may be a designer, teacher, marketer, or founder who needs product taste and workflow guidance.",
-              "action": "Test AI Studio with one tiny teaching demo: brief, visual references, preview, refine, publish.",
-              "teacher": "Vibe coding means describing the outcome and iterating by feel with an AI coding agent, instead of manually writing every line of code.",
+              "why": "This is a strong teaching signal. The buyer may no longer be a developer; it may be a designer,",
+              "action": "Test AI Studio with one tiny teaching demo: brief, visual references, preview, refine, publish. *Teacher explanation:* Vibe coding means describing the outcome and iterating by feel with an AI coding agent, instead of manually writing every line of code.",
+              "teacher": ", marketer, or founder who needs product taste and workflow guidance.",
               "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/"
             },
             {
@@ -2692,11 +2692,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 1,
               "category": "Agent orchestrationAgents CLI turns separate coding agents into one",
               "title": "versioned command layer",
-              "source": "Tool launch Quick summary",
+              "source": "Tool launch",
               "relevance": "Advanced",
-              "summary": "Agents CLI says it can run different coding-agent CLIs, rotate accounts, pipe agents together, pin versions per project, run parallel worktrees, index transcripts, and sync skills, MCP servers, hooks, permissions, and commands across harnesses. Why it matters to Garett This is an OpenClaw-style market signal: the value is moving from one model or one IDE to the operating layer that coordinates many agents. That matters for teaching because clients will need simple mental models for agent routing, budgets, approvals, memory, and repeatable project setup.",
-              "why": "",
-              "action": "",
+              "summary": "Agents CLI says it can run different coding-agent CLIs, rotate accounts, pipe agents together, pin versions per project, run parallel worktrees, index transcripts, and sync skills, MCP servers, hooks, permissions, and commands across harnesses.",
+              "why": "This is an OpenClaw-style market signal: the value is moving from one model or one IDE to the operating layer that coordinates many agents. That matters for teaching because clients will need simple mental models for agent routing, budgets, approvals, memory, and repeatable project setup.",
+              "action": "Watch whether Agents CLI becomes a common neutral control layer, and test its idea of pinned project agent versions against your own OpenClaw worker setup.",
               "teacher": "A harness is the software wrapper that gives an AI model tools, files, memory, approvals, and a workflow. MCP means Model Context Protocol, a standard way for agents to connect to external tools and data. *",
               "link": "https://agents-cli.sh"
             },
@@ -2704,11 +2704,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 2,
               "category": "Agent desktop UXAgent Deck packages AI coding agents as a native Mac",
               "title": "command room",
-              "source": "Tool launch Quick summary",
+              "source": "Tool launch",
               "relevance": "Intermediate",
-              "summary": "Agent Deck presents a macOS app for AI coding agents with project agents, curated skills, GitHub issue launches, parallel worktrees, color-coded transcripts, diffs, approvals, memory, and one-click merge. The page says v1.5 was released on 30 May 2026. Why it matters to Garett This shows the agent market moving beyond terminal-only workflows toward visual operations dashboards. For consulting, the opportunity is not just teaching prompts; it is helping teams design safe agent workspaces, review surfaces, and handoff rituals.",
-              "why": "",
-              "action": "",
+              "summary": "Agent Deck presents a macOS app for AI coding agents with project agents, curated skills, GitHub issue launches, parallel worktrees, color-coded transcripts, diffs, approvals, memory, and one-click merge. The page says v1.5 was released on 30 May 2026.",
+              "why": "This shows the agent market moving beyond terminal-only workflows toward visual operations dashboards. For consulting, the opportunity is not just teaching prompts; it is helping teams design safe agent workspaces, review surfaces, and handoff rituals.",
+              "action": "Track Agent Deck as a UX reference for how non-terminal users may expect agent work to look: sessions, skills, approvals, branches, and merge buttons in one place.",
               "teacher": "A worktree is a separate copy of a Git branch that lets one agent work safely without touching the main folder. It is useful when multiple agents run in parallel. *",
               "link": "https://agentdeck.site/"
             },
@@ -2716,11 +2716,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 3,
               "category": "Agent config portabilityAgentpack focuses on reproducible config",
               "title": "layers for Claude Code, Codex, Cursor, and OpenCode",
-              "source": "Hacker News / Maker blog Quick summary",
+              "source": "Hacker News / Maker blog",
               "relevance": "Advanced",
-              "summary": "The Agentpack post argues that modern agents all need skills, hooks, and MCPs, but every harness loads them differently. The tool creates an ephemeral staging configuration so agents can use a project-specific setup without polluting global or repo config. Why it matters to Garett This is the same pain Garett sees with multi-agent setups: the workflow depends on fragile local conventions. The consulting angle is strong because teams will pay for repeatable, auditable agent environments.",
-              "why": "",
-              "action": "",
+              "summary": "The Agentpack post argues that modern agents all need skills, hooks, and MCPs, but every harness loads them differently. The tool creates an ephemeral staging configuration so agents can use a project-specific setup without polluting global or repo config.",
+              "why": "This is the same pain Garett sees with multi-agent setups: the workflow depends on fragile local conventions. The consulting angle is strong because teams will pay for repeatable, auditable agent environments.",
+              "action": "Watch for convergence around portable agent configs, especially AGENTS.md, SKILL.md, hooks, plugin formats, and MCP settings.",
               "teacher": "Ephemeral means temporary. In this context, a temporary config layer can be created for a task, used by the agent, then removed so the user environment stays clean. *",
               "link": "https://nexo.sh/posts/agentpack/"
             },
@@ -2728,11 +2728,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 4,
               "category": "Agent securityCordium offers secretless Kubernetes sandboxes for",
               "title": "developers and AI agents",
-              "source": "GitHub Quick summary",
+              "source": "GitHub",
               "relevance": "Advanced",
-              "summary": "Cordium describes itself as a free, open-source, self-hosted sandbox platform for developers, AI agents, and automated workloads. It uses identity-based access through Octelium so credentials do not need to be injected into the sandbox. Why it matters to Garett As agents become more capable, the main blocker becomes trust: what can they access, and how do you prevent credential leaks? This is a key topic for any serious AI literacy or consulting program.",
-              "why": "",
-              "action": "",
+              "summary": "Cordium describes itself as a free, open-source, self-hosted sandbox platform for developers, AI agents, and automated workloads. It uses identity-based access through Octelium so credentials do not need to be injected into the sandbox.",
+              "why": "As agents become more capable, the main blocker becomes trust: what can they access, and how do you prevent credential leaks? This is a key topic for any serious AI literacy or consulting program.",
+              "action": "Use Cordium as a reference pattern when explaining safe agent infrastructure: isolated workspaces, identity-based access, no long-lived secrets inside the agent box.",
               "teacher": "Secretless access means the agent workspace does not hold API keys, passwords, or SSH private keys. A trusted identity layer grants access only when policy allows it. *",
               "link": "https://github.com/octelium/cordium"
             },
@@ -2740,11 +2740,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 5,
               "category": "Visual-agent workflowScreenshotter compresses screenshots for Codex,",
               "title": "Claude, and other agents",
-              "source": "GitHub Quick summary",
+              "source": "GitHub",
               "relevance": "Beginner",
-              "summary": "Screenshotter is a local macOS utility that watches screenshots, optimizes them locally, and copies them to the clipboard for agent use. Its README compares large screenshots against compressed versions and includes profiles for readability, balanced, and token modes. Why it matters to Garett Small utilities like this reveal where daily AI work is going: agents need visual context, but image tokens, upload friction, and readability still matter. This is directly relevant to 3D/design reviews and screen-based teaching demos.",
-              "why": "",
-              "action": "",
+              "summary": "Screenshotter is a local macOS utility that watches screenshots, optimizes them locally, and copies them to the clipboard for agent use. Its README compares large screenshots against compressed versions and includes profiles for readability, balanced, and token modes.",
+              "why": "Small utilities like this reveal where daily AI work is going: agents need visual context, but image tokens, upload friction, and readability still matter. This is directly relevant to 3D/design reviews and screen-based teaching demos.",
+              "action": "Watch for more visual-context helpers: screenshot compression, UI state capture, design annotation, and browser-debug MCPs.",
               "teacher": "Image tokens are the model cost units used to process pictures. Compressing or resizing screenshots can reduce cost and latency while keeping text readable. *",
               "link": "https://github.com/mgranados/screenshotter"
             },
@@ -2752,11 +2752,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 6,
               "category": "AI education and vibe codingDDS Vibe Academy uses an AI-built Shopify",
               "title": "page as proof of production workflow",
-              "source": "Hacker News / Tool launch Quick summary",
+              "source": "Hacker News / Tool launch",
               "relevance": "Intermediate",
-              "summary": "DDS Vibe Academy presents 49 free AI coding classes and says the page itself was built by AI agents: Claude Opus authored, Google Antigravity deployed, Cowork audited, and Shopify MCP handled theme asset writes. The page frames the human role as designing constraints while agents execute. Why it matters to Garett This is a direct signal for Garett long-term: education brands are turning their own production workflow into the lesson. Teaching AI-native creation may increasingly mean showing the operating method, not just the final tutorial.",
-              "why": "",
-              "action": "",
+              "summary": "DDS Vibe Academy presents 49 free AI coding classes and says the page itself was built by AI agents: Claude Opus authored, Google Antigravity deployed, Cowork audited, and Shopify MCP handled theme asset writes. The page frames the human role as designing constraints while agents execute.",
+              "why": "This is a direct signal for Garett long-term: education brands are turning their own production workflow into the lesson. Teaching AI-native creation may increasingly mean showing the operating method, not just the final tutorial.",
+              "action": "Study the framing: constraint-first, agent-built artifact, audit proof, and free class library. It is a useful competitor signal for future teaching products.",
               "teacher": "Constraint-first means the human defines goals, rules, structure, and acceptance criteria before the agent builds. The craft shifts from typing code to shaping the work system. *",
               "link": "https://ddsboston.com/pages/dds-vibe-academy"
             },
@@ -2764,11 +2764,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 7,
               "category": "Architecture literacyAwesome Architecture teaches builders to think",
               "title": "like system designers, not just coders",
-              "source": "GitHub Quick summary",
+              "source": "GitHub",
               "relevance": "Intermediate",
-              "summary": "Awesome Architecture is an open-source architecture knowledge base with tutorials and templates for real systems, including AI gateways, RAG, agents, inference serving, and vector databases. It also links to an architecture-copilot skill for Claude Code, Cursor, and Codex. Why it matters to Garett When code becomes cheap, architecture judgment becomes more valuable. This supports Garett's possible teaching direction: the market needs people who can explain tradeoffs, system maps, reliability, and product decisions to AI-native builders.",
-              "why": "",
-              "action": "",
+              "summary": "Awesome Architecture is an open-source architecture knowledge base with tutorials and templates for real systems, including AI gateways, RAG, agents, inference serving, and vector databases. It also links to an architecture-copilot skill for Claude Code, Cursor, and Codex.",
+              "why": "When code becomes cheap, architecture judgment becomes more valuable. This supports Garett's possible teaching direction: the market needs people who can explain tradeoffs, system maps, reliability, and product decisions to AI-native builders.",
+              "action": "Bookmark it as a teaching reference for explaining AI app architecture: requirements, constraints, quality attributes, tradeoffs, and architecture diagrams.",
               "teacher": "RAG means retrieval augmented generation. It is a pattern where an AI system searches trusted documents or data first, then uses those retrieved facts to answer or act. *",
               "link": "https://github.com/study8677/awesome-architecture"
             },
@@ -2776,11 +2776,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 8,
               "category": "Spec-driven vibe codingVibecode Pro Max Kit packages memory, specs,",
               "title": "agents, and skills for vibecoders",
-              "source": "GitHub Quick summary",
+              "source": "GitHub",
               "relevance": "Intermediate",
-              "summary": "The Vibecode Pro Max Kit claims to turn coding agents into a spec-driven engineering team with PRDs, backlog management, context routing, a self-improving knowledge base, 12 agents, and 32 skills. It targets vibecoders, product owners, CEOs, and builders. Why it matters to Garett This shows vibe coding maturing into packaged process. The market is learning that raw prompting is not enough; reusable specs, roles, memory, and review artifacts are becoming the product.",
-              "why": "",
-              "action": "",
+              "summary": "The Vibecode Pro Max Kit claims to turn coding agents into a spec-driven engineering team with PRDs, backlog management, context routing, a self-improving knowledge base, 12 agents, and 32 skills. It targets vibecoders, product owners, CEOs, and builders.",
+              "why": "This shows vibe coding maturing into packaged process. The market is learning that raw prompting is not enough; reusable specs, roles, memory, and review artifacts are becoming the product.",
+              "action": "Compare its workflow language against your own: PRD, backlog, memory, skills, roles, context routing, and long-running task survival.",
               "teacher": "A PRD is a product requirements document. It describes what should be built, why it matters, who it serves, and how success will be judged. *",
               "link": "https://github.com/withkynam/vibecode-pro-max-kit"
             },
@@ -2788,11 +2788,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 9,
               "category": "Agent memoryPMB offers local-first persistent memory shared across",
               "title": "Claude Code, Cursor, Codex, Gemini, and more",
-              "source": "GitHub Quick summary",
+              "source": "GitHub",
               "relevance": "Advanced",
-              "summary": "PMB says it provides persistent agent memory through MCP, with SQLite and LanceDB on disk, no API keys, offline operation, multilingual retrieval, and one-command connection for multiple agent tools. The README emphasizes memory surviving across sessions, tools, and restarts. Why it matters to Garett Memory is one of the next battlegrounds for assistants. For Garett, this matters because teaching and consulting will need a clear explanation of what agents should remember, where memory lives, and how to avoid context rot.",
-              "why": "",
-              "action": "",
+              "summary": "PMB says it provides persistent agent memory through MCP, with SQLite and LanceDB on disk, no API keys, offline operation, multilingual retrieval, and one-command connection for multiple agent tools. The README emphasizes memory surviving across sessions, tools, and restarts.",
+              "why": "Memory is one of the next battlegrounds for assistants. For Garett, this matters because teaching and consulting will need a clear explanation of what agents should remember, where memory lives, and how to avoid context rot.",
+              "action": "Watch the local-first memory space and compare PMB-style shared memory with OpenClaw memory, project job cards, and skill-based context.",
               "teacher": "LanceDB is a local vector database. A vector database stores meaning-based embeddings so an agent can retrieve related memories even when the exact words differ. *",
               "link": "https://github.com/oleksiijko/pmb"
             },
@@ -2800,11 +2800,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 10,
               "category": "ComfyUI and AI videoComfyUI-WanAnimatePlus adds multi-reference",
               "title": "images and seamless video continuation to WanAnimate workflows",
-              "source": "GitHub Quick summary",
+              "source": "GitHub",
               "relevance": "Advanced",
-              "summary": "ComfyUI-WanAnimatePlus adds prefix_frames for 1 to 5 reference images and transition_video for passing the last 21 frames of a previous segment. The goal is multi-shot video generation, video continuation, and motion transfer with multi-reference control. Why it matters to Garett For 3D/design and creator workflows, continuity is the hard part. This signal points toward controllable shot extension, reference-consistent animation, and modular ComfyUI pipelines instead of one-off clips.",
-              "why": "",
-              "action": "",
+              "summary": "ComfyUI-WanAnimatePlus adds prefix_frames for 1 to 5 reference images and transition_video for passing the last 21 frames of a previous segment. The goal is multi-shot video generation, video continuation, and motion transfer with multi-reference control.",
+              "why": "For 3D/design and creator workflows, continuity is the hard part. This signal points toward controllable shot extension, reference-consistent animation, and modular ComfyUI pipelines instead of one-off clips.",
+              "action": "Watch whether multi-reference plus transition-frame workflows become the default pattern for creator video pipelines.",
               "teacher": "ComfyUI is a node-based interface for generative media workflows. WanAnimate is a video animation pipeline; transition frames help the next clip continue from the previous one instead of visibly resetting. *",
               "link": "https://github.com/wuwukaka/ComfyUI-WanAnimatePlus"
             }
@@ -3140,9 +3140,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Beginner",
               "summary": "Anthropic says KPMG is integrating Claude across audit, tax, and advisory work, with a strategic alliance to build AI-enabled services. The announcement frames Claude as business infrastructure rather than a side tool.",
-              "why": "This is a consulting signal. Big firms are productizing AI literacy, workflow redesign, and staff enablement, which creates demand for teachers who can explain AI systems clearly to non-engineers and creative teams.",
-              "action": "Draft a one-page lesson called 'AI in a service business: from chat assistant to operating workflow.'",
-              "teacher": "A strategic alliance means the vendor and consulting firm are not only buying software. They are packaging repeatable services, training, and client delivery methods around it.",
+              "why": "This is a consulting signal. Big firms are productizing AI literacy, workflow redesign, and staff enablement, which creates demand for",
+              "action": "Draft a one-page lesson called 'AI in a service business: from chat assistant to operating workflow.' *Teacher explanation:* A strategic alliance means the vendor and consulting firm are not only buying software. They are packaging repeatable services, training, and client delivery methods around it.",
+              "teacher": "s who can explain AI systems clearly to non-engineers and creative teams.",
               "link": "https://www.anthropic.com/news/anthropic-kpmg"
             },
             {
@@ -3562,9 +3562,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "OpenAI is now positioning Codex as an enterprise-grade coding agent category leader",
               "source": "Official",
               "relevance": "Advanced",
-              "summary": "Quick summary OpenAI says Gartner named it a Leader for enterprise AI coding agents, highlighting Codex across governance, sandboxing, approval gates, RBAC, IDE, CLI, app, SDK, and cloud orchestration surfaces. Why it matters to Garett This is a market signal Garett can sell around: clients will need help turning agentic coding from a toy into a controlled workflow for internal tools, client portals, automation scripts, and AI-native service delivery.",
-              "why": "",
-              "action": "",
+              "summary": "OpenAI says Gartner named it a Leader for enterprise AI coding agents, highlighting Codex across governance, sandboxing, approval gates, RBAC, IDE, CLI, app, SDK, and cloud orchestration surfaces.",
+              "why": "This is a market signal Garett can sell around: clients will need help turning agentic coding from a toy into a controlled workflow for internal tools, client portals, automation scripts, and AI-native service delivery.",
+              "action": "Pick one small client-report or teaching-support app idea and map the safe agent workflow: repo, approval points, test command, output review, and handoff checklist.",
               "teacher": "Agentic coding means the AI does more than autocomplete. It can inspect a codebase, edit files, run tests, and prepare work for human review. RBAC means role-based access control, so different users get different permissions. *",
               "link": "https://openai.com/index/gartner-2026-agentic-coding-leader/"
             },
@@ -3574,9 +3574,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "Figma MCP is becoming a named bridge between the canvas and AI agents",
               "source": "Official",
               "relevance": "Intermediate",
-              "summary": "Quick summary Figma has a dedicated Figma MCP topic page around closing the gap between design and code, grouping articles and workflows for connecting the design canvas to agentic tools. Why it matters to Garett For Garett, this is a teachable consulting lane: design students and small studios will need a practical method for turning Figma layouts, design systems, and client revisions into app prototypes without losing visual standards.",
-              "why": "",
-              "action": "",
+              "summary": "Figma has a dedicated Figma MCP topic page around closing the gap between design and code, grouping articles and workflows for connecting the design canvas to agentic tools.",
+              "why": "For Garett, this is a teachable consulting lane: design students and small studios will need a practical method for turning Figma layouts, design systems, and client revisions into app prototypes without losing visual standards.",
+              "action": "Create a mini lesson: take one Figma screen, list the design tokens, then ask an AI coding agent to recreate the UI while checking spacing, typography, and component states manually.",
               "teacher": "MCP means Model Context Protocol. It is a standard way for an AI assistant to connect to tools or data sources, such as a design canvas, instead of relying only on pasted screenshots. *",
               "link": "https://www.figma.com/blog/figma-mcp/"
             },
@@ -3586,9 +3586,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "mcp-ms-office-documents lets AI assistants create PowerPoint, Word, Excel, email, and XML files",
               "source": "GitHub",
               "relevance": "Intermediate",
-              "summary": "Quick summary The project provides a Docker-based MCP server that lets Claude, Cursor, or other MCP clients generate Office files from prompts, including PowerPoint decks, Word documents, Excel files, email drafts, XML, templates, and optional cloud download links. Why it matters to Garett This is directly sellable as a client-report production stack. Garett can package course notes, visual audits, project reports, and proposal decks as repeatable templates instead of building every document manually.",
-              "why": "",
-              "action": "",
+              "summary": "The project provides a Docker-based MCP server that lets Claude, Cursor, or other MCP clients generate Office files from prompts, including PowerPoint decks, Word documents, Excel files, email drafts, XML, templates, and optional cloud download links.",
+              "why": "This is directly sellable as a client-report production stack. Garett can package course notes, visual audits, project reports, and proposal decks as repeatable templates instead of building every document manually.",
+              "action": "Test one template idea: a 10-slide design audit deck with fixed sections for problem, reference, visual diagnosis, revised direction, and next actions.",
               "teacher": "An MCP server is a local or cloud tool that an AI assistant can call. In this case, the AI does not only write text; it produces real Office file formats like .pptx, .docx, and .xlsx. *",
               "link": "https://github.com/ForLegalAI/mcp-ms-office-documents"
             },
@@ -3598,9 +3598,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "ppt-translator preserves PowerPoint layout while translating decks through Amazon Bedrock models",
               "source": "GitHub",
               "relevance": "Intermediate",
-              "summary": "Quick summary The tool translates full PowerPoint files, selected slides, or batches while preserving layout, charts, colors, styles, and language-specific fonts. It also supports glossary files, caching, dry-run cost estimates, and FastMCP integration. Why it matters to Garett Garett often needs English-first material with Traditional Chinese support. A layout-preserving deck translator can turn one master course deck into localized versions without wrecking typography or chart labels.",
-              "why": "",
-              "action": "",
+              "summary": "The tool translates full PowerPoint files, selected slides, or batches while preserving layout, charts, colors, styles, and language-specific fonts. It also supports glossary files, caching, dry-run cost estimates, and FastMCP integration.",
+              "why": "Garett often needs English-first material with Traditional Chinese support. A layout-preserving deck translator can turn one master course deck into localized versions without wrecking typography or chart labels.",
+              "action": "Run a small test on a 3-slide lesson deck and compare: body text, chart labels, font choices, line breaks, and whether a glossary keeps art terms consistent.",
               "teacher": "Amazon Bedrock is AWS managed access to multiple AI models. A glossary is a controlled term list, useful for keeping words like bevel, shader, topology, and render pass consistent across languages. *",
               "link": "https://github.com/daekeun-ml/ppt-translator"
             },
@@ -3610,9 +3610,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "BowerBot uses an AI agent to assemble production-ready OpenUSD scenes from natural language",
               "source": "GitHub",
               "relevance": "Advanced",
-              "summary": "Quick summary BowerBot describes a conversational OpenUSD authoring agent that finds assets, places them with spatial awareness, authors materials, sets USD lighting, validates units, hierarchy, references, and bindings, then packages scenes for USD-compatible tools. Why it matters to Garett This is exactly the kind of pipeline shift clients will struggle to understand. Garett can consult on where AI scene assembly helps, where art direction still matters, and how to validate assets before production.",
-              "why": "",
-              "action": "",
+              "summary": "BowerBot describes a conversational OpenUSD authoring agent that finds assets, places them with spatial awareness, authors materials, sets USD lighting, validates units, hierarchy, references, and bindings, then packages scenes for USD-compatible tools.",
+              "why": "This is exactly the kind of pipeline shift clients will struggle to understand. Garett can consult on where AI scene assembly helps, where art direction still matters, and how to validate assets before production.",
+              "action": "Make a comparison sheet: manual Blender blockout versus AI-assisted OpenUSD blockout, with columns for speed, risk, validation, and human art-direction checkpoints.",
               "teacher": "OpenUSD is a scene-description system used to move complex 3D scenes across tools. ASWF refers to the Academy Software Foundation, which helps define production standards for media and entertainment pipelines. *",
               "link": "https://github.com/binary-core-llc/bowerbot"
             },
@@ -3622,9 +3622,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "AI Marketing Suite for Claude Code packages audits, campaigns, proposals, and PDF reports as sellable services",
               "source": "GitHub",
               "relevance": "Intermediate",
-              "summary": "Quick summary The repository provides Claude Code marketing skills and subagents for website audits, CRO, SEO, copy, emails, ads, content calendars, competitor analysis, proposals, and client-ready PDF reports. Why it matters to Garett Even if Garett does not sell marketing, the structure is valuable: it shows how to turn expertise into named commands, repeatable subagents, scoring rubrics, and client-ready reports. The same pattern can become a 3D visual audit service.",
-              "why": "",
-              "action": "",
+              "summary": "The repository provides Claude Code marketing skills and subagents for website audits, CRO, SEO, copy, emails, ads, content calendars, competitor analysis, proposals, and client-ready PDF reports.",
+              "why": "Even if Garett does not sell marketing, the structure is valuable: it shows how to turn expertise into named commands, repeatable subagents, scoring rubrics, and client-ready reports. The same pattern can become a 3D visual audit service.",
+              "action": "Copy the service pattern, not the content: draft a /visual-audit command with five subchecks: composition, typography, material realism, lighting, and conversion clarity.",
               "teacher": "CRO means conversion rate optimization. It is the practice of improving a page or asset so more viewers take the desired action, such as booking, buying, or requesting a quote. *",
               "link": "https://github.com/zubair-trabzada/ai-marketing-claude"
             },
@@ -3634,9 +3634,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "ChatPPT-MCP exposes AI presentation generation, editing, and document-to-PPT workflows to MCP clients",
               "source": "GitHub",
               "relevance": "Beginner",
-              "summary": "Quick summary ChatPPT-MCP says users can generate presentations from topics, requirements, Word, or PDF documents, edit online, download outputs, and use Streamable HTTP with MCP clients. It also mentions document APIs for resume, job matching, and other processing scenarios. Why it matters to Garett This is useful for fast course-outline prototyping and client recap decks. Garett can use it to produce rough slide structure quickly, then apply his own typography and visual direction as the premium layer.",
-              "why": "",
-              "action": "",
+              "summary": "ChatPPT-MCP says users can generate presentations from topics, requirements, Word, or PDF documents, edit online, download outputs, and use Streamable HTTP with MCP clients. It also mentions document APIs for resume, job matching, and other processing scenarios.",
+              "why": "This is useful for fast course-outline prototyping and client recap decks. Garett can use it to produce rough slide structure quickly, then apply his own typography and visual direction as the premium layer.",
+              "action": "Try a 6-slide outline for a lesson called AI-assisted booth render QA, then rewrite the weak slides manually to show students the difference between structure and taste.",
               "teacher": "Streamable HTTP is a web connection style for tool calls. It can make an AI tool easier to use without installing a local server, depending on the client. *",
               "link": "https://github.com/YOOTeam/ChatPPT-MCP"
             },
@@ -3646,9 +3646,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "AI Agent Session Center turns multiple Claude, Gemini, and Codex sessions into a monitored 3D dashboard",
               "source": "GitHub",
               "relevance": "Advanced",
-              "summary": "Quick summary The project describes a real-time dashboard for AI coding sessions with live terminals, prompt history, tool logs, queueing, approvals, SSH sessions, file browsing, and animated 3D robot states for each agent. Why it matters to Garett This is a strong clue for future teaching: students will not just use one chatbot. They will supervise multiple agents. Garett can teach agent management, review discipline, and how to avoid runaway token or approval loops.",
-              "why": "",
-              "action": "",
+              "summary": "The project describes a real-time dashboard for AI coding sessions with live terminals, prompt history, tool logs, queueing, approvals, SSH sessions, file browsing, and animated 3D robot states for each agent.",
+              "why": "This is a strong clue for future teaching: students will not just use one chatbot. They will supervise multiple agents. Garett can teach agent management, review discipline, and how to avoid runaway token or approval loops.",
+              "action": "Design a classroom demo with three agents: one researching references, one drafting a lesson app, and one checking output quality. Make students identify which agent needs human review.",
               "teacher": "Observability means being able to see what a system is doing: logs, status, errors, cost, and decisions. For AI agents, observability is what stops invisible automation from becoming chaos. *",
               "link": "https://github.com/coding-by-feng/ai-agent-session-center"
             },
@@ -3658,9 +3658,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "Cube Pets Office turns one idea into specs, routes, prompts, previews, and evidence trails with a 3D office shell",
               "source": "GitHub",
               "relevance": "Intermediate",
-              "summary": "Quick summary Cube Pets Office describes an AI Agent OS that takes a one-sentence idea through clarification, route planning, spec-tree decomposition, generated requirements, design tasks, prompts, previews, exportable artifacts, audit logs, and replay timelines. Why it matters to Garett This maps well to Garett building small teaching or client-support apps. Instead of jumping straight to coding, he can use this kind of workflow to validate the product, risks, cost, and lesson value first.",
-              "why": "",
-              "action": "",
+              "summary": "Cube Pets Office describes an AI Agent OS that takes a one-sentence idea through clarification, route planning, spec-tree decomposition, generated requirements, design tasks, prompts, previews, exportable artifacts, audit logs, and replay timelines.",
+              "why": "This maps well to Garett building small teaching or client-support apps. Instead of jumping straight to coding, he can use this kind of workflow to validate the product, risks, cost, and lesson value first.",
+              "action": "Feed it one teaching app idea: a student render critique tracker. Judge whether the exported spec is good enough to hand to a coding agent.",
               "teacher": "A PRD is a product requirements document. It explains what a product should do, who it serves, and how success is judged before the team builds it. *",
               "link": "https://github.com/xiaojilele-glitch/cube-pets-office"
             },
@@ -3670,9 +3670,9 @@ window.DASHBOARD_ARCHIVE = {
               "title": "Blender LLM Assistant turns plain English into validated Blender Python actions inside the viewport",
               "source": "GitHub",
               "relevance": "Beginner",
-              "summary": "Quick summary The Blender extension lets users type commands like create a blue sphere, add a modifier, set up lighting, or apply materials. It supports OpenAI, Claude, Gemini, preview mode, AST validation, and blocks file-system, network, and shell access. Why it matters to Garett This is a practical teaching bridge: beginners can see how natural language maps to bpy operations, while advanced users can discuss why validation, preview, and manual art direction still matter.",
-              "why": "",
-              "action": "",
+              "summary": "The Blender extension lets users type commands like create a blue sphere, add a modifier, set up lighting, or apply materials. It supports OpenAI, Claude, Gemini, preview mode, AST validation, and blocks file-system, network, and shell access.",
+              "why": "This is a practical teaching bridge: beginners can see how natural language maps to bpy operations, while advanced users can discuss why validation, preview, and manual art direction still matter.",
+              "action": "Record a short test: prompt it to build a simple studio lighting setup, then explain which generated steps are useful and which still need a senior artist correction.",
               "teacher": "bpy is the Blender Python API. AST validation means the code is parsed and checked before running, which helps block unsafe operations while still allowing Blender scene commands. *",
               "link": "https://github.com/suryansh00001/Blender-Extension"
             }
@@ -3757,9 +3757,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Intermediate",
               "summary": "Anthropic says PwC is expanding its strategic alliance, rolling out Claude Code and Cowork, creating a Center of Excellence, and training and certifying 30,000 professionals. The work targets agentic technology build, AI-native deal-making, and enterprise function reinvention.",
-              "why": "Large consultancies are turning AI literacy into structured training and delivery packages. Independent teachers can compete by being more practical, visual, and workflow-specific for creative teams.",
-              "action": "Draft one workshop outline called AI workflow literacy for creative teams, with hands-on modules rather than generic AI theory.",
-              "teacher": "A Center of Excellence is a dedicated team that sets standards, trains staff, and helps departments adopt a technology consistently instead of letting every team improvise alone.",
+              "why": "Large consultancies are turning AI literacy into structured training and delivery packages. Independent",
+              "action": "Draft one workshop outline called AI workflow literacy for creative teams, with hands-on modules rather than generic AI theory. *Teacher explanation:* A Center of Excellence is a dedicated team that sets standards, trains staff, and helps departments adopt a technology consistently instead of letting every team improvise alone.",
+              "teacher": "s can compete by being more practical, visual, and workflow-specific for creative teams.",
               "link": "https://www.anthropic.com/news/pwc-expanded-partnership"
             },
             {
@@ -3995,8 +3995,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Kimi Code CLI is a new terminal AI coding agent from MoonshotAI. The README says it can read and edit code, run shell commands, search files, fetch web pages, and decide next steps from feedback.",
               "why": "Another model company is shipping its own agent surface, not just an API. For teaching and consulting, Garett should watch how many clients will compare agent workflows by interface, safety, install friction, and model routing, not only model scores.",
-              "action": "Install it in a throwaway repo and compare its plan/edit loop against Codex, Claude Code, and Gemini CLI. Teacher explanation A coding agent is an AI tool that can inspect files, make code changes, run commands, and iterate from tool feedback. The market signal is that model vendors increasingly want to own the workflow layer around the model.",
-              "teacher": "",
+              "action": "Install it in a throwaway repo and compare its plan/edit loop against Codex, Claude Code, and Gemini CLI.",
+              "teacher": "A coding agent is an AI tool that can inspect files, make code changes, run commands, and iterate from tool feedback. The market signal is that model vendors increasingly want to own the workflow layer around the model.",
               "link": "https://github.com/MoonshotAI/kimi-code"
             },
             {
@@ -4007,8 +4007,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Runtime is a YC P26 launch positioned as the runtime for all your team agents. Its site says teams can run Claude Code, Cursor, Codex, Copilot, Gemini CLI, Devin, and OpenCode inside sandboxed environments with company context, guardrails, integrations, observability, and spend limits.",
               "why": "This is the enterprise version of the OpenClaw pattern: assistants need context, tools, approvals, and visibility. Garett can frame future consulting around helping teams design safe agent workspaces, not just choose one chatbot.",
-              "action": "Watch whether small studios start asking for agent sandboxes with Slack, GitHub, Linear, and design tool integrations. Teacher explanation A sandbox is an isolated workspace where an agent can act without damaging production systems. Guardrails are approval rules, tool limits, secrets handling, and logs that make agent work reviewable.",
-              "teacher": "",
+              "action": "Watch whether small studios start asking for agent sandboxes with Slack, GitHub, Linear, and design tool integrations.",
+              "teacher": "A sandbox is an isolated workspace where an agent can act without damaging production systems. Guardrails are approval rules, tool limits, secrets handling, and logs that make agent work reviewable.",
               "link": "https://www.runtm.com/"
             },
             {
@@ -4019,8 +4019,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "CodeAlta describes itself as a terminal workspace for agentic coding. The README highlights provider setup, project navigation, prompt attachments, threaded sessions, delegated work, trusted local plugins, model selectors, context status, and inspectable timeline cards behind the alta command.",
               "why": "The agent IDE race is spreading beyond VS Code and web apps into TUI-first power tools. For Garett, this is a clue that advanced users will want portable workflows that can survive across providers and operating systems.",
-              "action": "Try the screenshots and README flow, then note which interaction ideas could apply to OpenClaw-style teaching demos. Teacher explanation TUI means text user interface: a keyboard-driven app inside the terminal. Provider-neutral means the tool can connect to several model backends instead of locking users into one lab.",
-              "teacher": "",
+              "action": "Try the screenshots and README flow, then note which interaction ideas could apply to OpenClaw-style teaching demos.",
+              "teacher": "TUI means text user interface: a keyboard-driven app inside the terminal. Provider-neutral means the tool can connect to several model backends instead of locking users into one lab.",
               "link": "https://github.com/CodeAlta/CodeAlta"
             },
             {
@@ -4031,8 +4031,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Lucarne says it lets users stop babysitting local AI agents by sending secure notifications through Telegram or WeChat. It emphasizes zero-intrusion setup, no hooks, no skills, no MCP, and actionable mobile events for approvals, questions, failures, sessions, workspaces, and history.",
               "why": "This is very close to Garett needs: agents doing work while the human steps away, with mobile approval at the right moment. It points to a market for AI operations as a daily companion workflow, not a desktop-only coding tool.",
-              "action": "Test the product idea mentally against OpenClaw: what agent events deserve mobile interruption, and what should stay quiet. Teacher explanation Agent supervision means checking progress, answering clarifying questions, and approving risky actions. The useful product pattern is not more chat, but better interruption timing.",
-              "teacher": "",
+              "action": "Test the product idea mentally against OpenClaw: what agent events deserve mobile interruption, and what should stay quiet.",
+              "teacher": "Agent supervision means checking progress, answering clarifying questions, and approving risky actions. The useful product pattern is not more chat, but better interruption timing.",
               "link": "https://github.com/tuchg/Lucarne"
             },
             {
@@ -4043,8 +4043,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "usage is a privacy-first macOS menu bar tracker for Claude Code and Codex. Its README says it reads local usage files instead of calling Anthropic or OpenAI APIs, then shows session, weekly, project, token, and cost estimates.",
               "why": "As AI work becomes continuous, people need dashboards for cost, limits, and habits. Garett can teach clients that agent productivity includes budget literacy and feedback loops, not only prompt tips.",
-              "action": "Watch whether Cursor, Codex, Claude Code, and OpenClaw converge on simple visible cost meters for every session. Teacher explanation Tokens are chunks of text processed by a model. Token tracking matters because agent loops can quietly burn budget during long tasks, retries, and tool use.",
-              "teacher": "",
+              "action": "Watch whether Cursor, Codex, Claude Code, and OpenClaw converge on simple visible cost meters for every session.",
+              "teacher": "Tokens are chunks of text processed by a model. Token tracking matters because agent loops can quietly burn budget during long tasks, retries, and tool use.",
               "link": "https://github.com/aqua5230/usage"
             },
             {
@@ -4055,8 +4055,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "PaperSpine is a motivation-driven writing skill suite for Codex and Claude Code. The README says it helps with papers, reports, reviews, and LaTeX-safe audits by learning target examples, building evidence-aware blueprints, recording revision reasons, and packaging outputs for both Codex and Claude.",
               "why": "This shows skills becoming teachable consulting products: repeatable workflows wrapped as agent instructions and deterministic helpers. Garett could package design critique, 3D pipeline review, or AI literacy lessons the same way.",
-              "action": "Skim its dist structure and copy the pattern: one high-value workflow, several focused subskills, and explicit audit steps. Teacher explanation An agent skill is a reusable instruction-and-tool package. LaTeX is a document system used in academia, and LaTeX-safe means the agent should not break formatting syntax while editing.",
-              "teacher": "",
+              "action": "Skim its dist structure and copy the pattern: one high-value workflow, several focused subskills, and explicit audit steps.",
+              "teacher": "An agent skill is a reusable instruction-and-tool package. LaTeX is a document system used in academia, and LaTeX-safe means the agent should not break formatting syntax while editing.",
               "link": "https://github.com/WUBING2023/PaperSpine"
             },
             {
@@ -4065,10 +4065,10 @@ window.DASHBOARD_ARCHIVE = {
               "title": "AI FOMO Skills turns information overload into personalized agent triage",
               "source": "GitHub |",
               "relevance": "Beginner",
-              "summary": "AI FOMO Skills is a skill set for AI founders, product managers, independent developers, and frequent agent users. The README says it is not a generic AI daily brief, but a way for agents to judge whether a signal matters, why it matters, and whether it should become long-term knowledge.",
-              "why": "This directly validates the need behind this radar email. The market is moving from generic summaries toward personalized signal filters that encode goals, taste, trusted sources, and long-term memory.",
-              "action": "Compare its criteria with this brief and decide which signals should become a permanent Garett scoring rubric. Teacher explanation FOMO means fear of missing out. In this context, the hard problem is not collecting more AI news, but deciding what deserves attention based on a specific person and strategy.",
-              "teacher": "",
+              "summary": "AI FOMO Skills is a skill set for AI founders, product managers, independent developers, and frequent agent users. The README says it is not a generic AI daily brief, but a way for agents to judge whether a signal matters,",
+              "why": ", and whether it should become long-term knowledge. *Why it matters to Garett:* This directly validates the need behind this radar email. The market is moving from generic summaries toward personalized signal filters that encode goals, taste, trusted sources, and long-term memory.",
+              "action": "Compare its criteria with this brief and decide which signals should become a permanent Garett scoring rubric.",
+              "teacher": "FOMO means fear of missing out. In this context, the hard problem is not collecting more AI news, but deciding what deserves attention based on a specific person and strategy.",
               "link": "https://github.com/vincelele/ai-fomo-skills"
             },
             {
@@ -4079,8 +4079,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "ComfyUI-Angelo is a click-to-refine sampler for ComfyUI. The README says users can generate an image, then click, paint, or drag regions to refine only that area while the rest stays bit-exact, replacing a KSampler plus post-processing chain.",
               "why": "This is a practical creator workflow signal: AI image tools are moving from prompt-and-pray into localized art direction. Garett should watch this pattern for 3D and design tools where client revisions must preserve approved areas.",
-              "action": "Try it on a simple product image workflow and evaluate whether localized refinement reduces revision chaos. Teacher explanation ComfyUI is a node-based interface for image and video generation workflows. Bit-exact means unchanged pixels remain exactly the same, which matters when only one area needs revision.",
-              "teacher": "",
+              "action": "Try it on a simple product image workflow and evaluate whether localized refinement reduces revision chaos.",
+              "teacher": "ComfyUI is a node-based interface for image and video generation workflows. Bit-exact means unchanged pixels remain exactly the same, which matters when only one area needs revision.",
               "link": "https://github.com/shootthesound/ComfyUI-Angelo"
             },
             {
@@ -4091,8 +4091,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "image-to-3d-studio describes a workflow for turning a single image into a 3D scene with multi-style rendering and AI video control signals. It mentions cel shading, Ghibli-like, cinematic, and concept art styles via Blender.",
               "why": "Even small maker repos show the direction: image, 3D scene, render style, and video control are collapsing into one pipeline. For Garett, that means teaching future 3D artists how to supervise pipelines, not only operate one DCC tool.",
-              "action": "Watch this category for stronger demos that export clean geometry, cameras, and control passes into Blender. Teacher explanation DCC means digital content creation tool, such as Blender, Houdini, Unreal, or Maya. Control signals are extra guides, like depth or camera paths, that help video or render models stay consistent.",
-              "teacher": "",
+              "action": "Watch this category for stronger demos that export clean geometry, cameras, and control passes into Blender.",
+              "teacher": "DCC means digital content creation tool, such as Blender, Houdini, Unreal, or Maya. Control signals are extra guides, like depth or camera paths, that help video or render models stay consistent.",
               "link": "https://github.com/lujiaheng-artpivot/image-to-3d-studio"
             },
             {
@@ -4103,8 +4103,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "meshy-mcp is an MCP server connecting Claude Desktop or other MCP clients to the Meshy AI 3D generation API. The README lists text to 3D, image to 3D, AI textures, 3D website environments, and GLB, FBX, and USDZ export.",
               "why": "This is the clearest near-term bridge between chat agents and 3D asset services. Garett can expect clients to ask for natural-language asset generation tied into review, export, and production handoff workflows.",
-              "action": "Connect the idea to Garett workflow: what would a safe 3D generation tool need before it touches client project files. Teacher explanation MCP means Model Context Protocol, a standard way for assistants to call external tools. GLB, FBX, and USDZ are common 3D exchange formats used across web, DCC, and AR pipelines.",
-              "teacher": "",
+              "action": "Connect the idea to Garett workflow: what would a safe 3D generation tool need before it touches client project files.",
+              "teacher": "MCP means Model Context Protocol, a standard way for assistants to call external tools. GLB, FBX, and USDZ are common 3D exchange formats used across web, DCC, and AR pipelines.",
               "link": "https://github.com/zyadhajaji/meshy-mcp"
             }
           ]
@@ -4489,9 +4489,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Intermediate",
               "summary": "Figma-To-Unity describes a standalone tool and MCP-enabled workflow for moving Figma UI into Unity, with an AI bonus. The project was updated today.",
-              "why": "For 3D artists and teachers, this is a bridge between interface design and real-time engines. Garett can teach students how UI systems, game engines, and AI tooling meet in practical production.",
-              "action": "Create a tiny demo assignment: design a menu in Figma, export or rebuild it in Unity, then document what the AI could and could not preserve.",
-              "teacher": "Unity is a real-time engine used for games, interactive apps, and visualization. The opportunity is not only asset creation, but connecting design files to real-time production environments. *",
+              "why": "For 3D artists and",
+              "action": "Create a tiny demo assignment: design a menu in Figma, export or rebuild it in Unity, then document what the AI could and could not preserve. *Teacher explanation:* Unity is a real-time engine used for games, interactive apps, and visualization. The opportunity is not only asset creation, but connecting design files to real-time production environments. *",
+              "teacher": "s, this is a bridge between interface design and real-time engines. Garett can teach students how UI systems, game engines, and AI tooling meet in practical production.",
               "link": "https://github.com/zasuozz-oss/figma-to-unity"
             },
             {
@@ -4726,9 +4726,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Intermediate",
               "summary": "The repo describes two skills: editing raw footage into MP4 with transcription, filler cuts, silence cuts, captions, and aspect-ratio reframing; and generating a short branded vertical ad.",
-              "why": "This points to a sellable 'teacher content repurposing' offer: convert long lessons, 3D walkthroughs, or client explainers into short captioned clips for social channels.",
-              "action": "Record a 2-minute Blender tip, then test whether an AI editing flow can produce a clean 9:16 captioned clip with the filler words removed.",
-              "teacher": "Remotion is a React-based video rendering framework. Whisper is a speech-to-text model used to create transcripts and timing for captions and cuts.",
+              "why": "This points to a sellable '",
+              "action": "Record a 2-minute Blender tip, then test whether an AI editing flow can produce a clean 9:16 captioned clip with the filler words removed. *Teacher explanation:* Remotion is a React-based video rendering framework. Whisper is a speech-to-text model used to create transcripts and timing for captions and cuts.",
+              "teacher": "content repurposing' offer: convert long lessons, 3D walkthroughs, or client explainers into short captioned clips for social channels.",
               "link": "https://github.com/G33M0D/claudecut"
             },
             {
@@ -5083,9 +5083,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Beginner",
               "summary": "Meshy profiles Hasten Hebrew Academy, where students use digital tools for VR, AR, games, and interactive stories. The school uses Meshy to generate more detailed 3D assets quickly so students can focus on design and immersive project ideas.",
-              "why": "This is a ready teaching pitch: AI 3D tools let beginners make assets earlier, so the teacher can spend class time on composition, storytelling, lighting, and critical judgment.",
-              "action": "Design a one-class exercise: students prompt a simple prop in Meshy, import it into a scene, then critique silhouette, scale, material, and story fit.",
-              "teacher": "STEAM means science, technology, engineering, arts, and mathematics. It is useful here because 3D lets students combine technical making with visual storytelling.",
+              "why": "This is a ready teaching pitch: AI 3D tools let beginners make assets earlier, so the",
+              "action": "Design a one-class exercise: students prompt a simple prop in Meshy, import it into a scene, then critique silhouette, scale, material, and story fit. *Teacher explanation:* STEAM means science, technology, engineering, arts, and mathematics. It is useful here because 3D lets students combine technical making with visual storytelling.",
+              "teacher": "can spend class time on composition, storytelling, lighting, and critical judgment.",
               "link": "https://www.meshy.ai/blog/ai-transforming-steam-k8-education"
             },
             {
@@ -5321,8 +5321,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Webflow says AEO is now available for Enterprise. It measures how a brand appears in AI answers, gives prioritized recommendations, and helps ship improvements at scale with agents.",
               "why": "AEO can become a paid audit for websites, portfolios, product pages, and course pages. Garett can explain to clients why being visible to AI assistants is becoming as important as old-school SEO.",
-              "action": "Test three prompts in ChatGPT, Gemini, and Claude: 'best 3D design consultant in Hong Kong,' 'AI 3D workflow teacher,' and a client niche. Record whether Garett or target client pages appear.",
-              "teacher": "AEO means answer engine optimization. Instead of only ranking in Google search results, the goal is to be found, trusted, and cited inside AI-generated answers.",
+              "action": "Test three prompts in ChatGPT, Gemini, and Claude: 'best 3D design consultant in Hong Kong,' 'AI 3D workflow",
+              "teacher": ",' and a client niche. Record whether Garett or target client pages appear. *Teacher explanation:* AEO means answer engine optimization. Instead of only ranking in Google search results, the goal is to be found, trusted, and cited inside AI-generated answers.",
               "link": "https://webflowmarketingmain.com/updates/now-available-webflow-aeo"
             },
             {
@@ -5640,9 +5640,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Advanced",
               "summary": "Athena embeds native terminals for Codex; OpenCode; Claude; and Hermes; adds shared project context; and includes an MCP bridge for workspace control. The repo was created May 12 and updated May 21.",
-              "why": "Designers and teachers will need dashboards that make agent work visible. This is a cue to sell training around monitoring; context; task logs; and review habits.",
-              "action": "Design a one-page \"AI production dashboard\" mockup for a 3D studio: active tasks; pending approvals; asset status; cost; and quality checks.",
-              "teacher": "A control surface is the interface where a human supervises several tools. For agents; it should show what they know; what they are doing; what they changed; and what needs approval.",
+              "why": "Designers and",
+              "action": "Design a one-page \"AI production dashboard\" mockup for a 3D studio: active tasks; pending approvals; asset status; cost; and quality checks. *Teacher explanation:* A control surface is the interface where a human supervises several tools. For agents; it should show what they know; what they are doing; what they changed; and what needs approval.",
+              "teacher": "s will need dashboards that make agent work visible. This is a cue to sell training around monitoring; context; task logs; and review habits.",
               "link": "https://github.com/luckeyfaraday/Athena"
             },
             {
@@ -5786,9 +5786,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Beginner",
               "summary": "Krea says Krea 2 is its first foundation image model built from scratch, focused on aesthetics, style transfer, and creative control. Users can use style references, combine them, adjust strength, and control variation across batches.",
-              "why": "The creative tool market is shifting away from generic prompt output and toward controllable direction. That is exactly where a design-literate teacher can help clients build consistent visual systems instead of random pretty images.",
-              "action": "Test Krea 2 with two style references from the same brand direction and judge whether it maintains identity across a small batch.",
-              "teacher": "Style transfer means using a reference image to guide the look of a new image. The important part is control: strength, mix, and variation are closer to art direction than simple prompting.",
+              "why": "The creative tool market is shifting away from generic prompt output and toward controllable direction. That is exactly where a design-literate",
+              "action": "Test Krea 2 with two style references from the same brand direction and judge whether it maintains identity across a small batch. *Teacher explanation:* Style transfer means using a reference image to guide the look of a new image. The important part is control: strength, mix, and variation are closer to art direction than simple prompting.",
+              "teacher": "can help clients build consistent visual systems instead of random pretty images.",
               "link": "https://www.krea.ai/blog/krea-2-image-model"
             },
             {
@@ -6122,11 +6122,11 @@ window.DASHBOARD_ARCHIVE = {
               "n": 1,
               "category": "Vibe coding and AI app consulting",
               "title": "Lovable adds SEO and AI search, design guidance, Telegram control, MCP, workspace skills, and new connectors",
-              "source": "Official / Tool launch",
+              "source": "Official / Tool launch Lovable's May 18 changelog says it added SEO and AI search reviews, guided design directions, a Telegram bot, a research-preview MCP server, reusable workspace skills, Wiz security scanning, and more app connectors including Airtable, Notion, Google Search Console, Granola, Mailgun, Storyblok, and HeyGen.",
               "relevance": "Intermediate",
-              "summary": "Lovable's May 18 changelog says it added SEO and AI search reviews, guided design directions, a Telegram bot, a research-preview MCP server, reusable workspace skills, Wiz security scanning, and more app connectors including Airtable, Notion, Google Search Console, Granola, Mailgun, Storyblok, and HeyGen.",
+              "summary": ", and a downloadable recommendation page.",
               "why": "This is a ready-made consulting package: build lightweight client portals, course microsites, SEO/AEO audits, and design support apps without a traditional dev team.",
-              "action": "Prompt Lovable to build a one-page '3D course audit' app with a form, AI summary, and a downloadable recommendation page.",
+              "action": "Prompt Lovable to build a one-page '3D course audit' app with a form, AI",
               "teacher": "MCP means Model Context Protocol. It lets an AI tool talk to another service in a structured way, like giving Claude or Cursor direct access to a Lovable project instead of copy-pasting between tools.",
               "link": "https://docs.lovable.dev/changelog"
             },
@@ -6174,8 +6174,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "HeyGen says April shipped Avatar V, Seedance 2.0 integration, Video Agent, Instant Highlights v2, a CLI, open-source HyperFrames, and HeyGen Skills for Claude Code or Cursor workflows.",
               "why": "This is a direct upgrade for lessons, client explainers, and multilingual course marketing. It also creates a service offer: turn one webinar or client report into clips, avatar summaries, and localized versions.",
-              "action": "Convert one old 3D tip into a 45-second avatar explainer, then test two versions: teacher voice and client-sales voice.",
-              "teacher": "HyperFrames treats video like code. A page-like HTML structure can be rendered into an MP4, which means agents can generate and revise videos more repeatably.",
+              "action": "Convert one old 3D tip into a 45-second avatar explainer, then test two versions:",
+              "teacher": "voice and client-sales voice. *Teacher explanation:* HyperFrames treats video like code. A page-like HTML structure can be rendered into an MP4, which means agents can generate and revise videos more repeatably.",
               "link": "https://www.heygen.com/blog/heygen-april-2026-release"
             },
             {
@@ -6578,9 +6578,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Trusted news",
               "relevance": "Advanced",
               "summary": "Yugabyte reports 350+ evaluations across 17 model configurations, including Claude, Gemini, GPT, Composer, Codex CLI, Claude Code CLI, Cursor, and Codex. Their key finding: tool wrapping matters as much as the model, and skill-file tuning can improve one workload while hurting others.",
-              "why": "This supports a consulting angle around measuring workflows instead of arguing about model brands. It also warns teachers not to present skill files as magic; they need testing across real tasks.",
-              "action": "Build a small personal benchmark for one repeatable Garett workflow, such as PDF revision, render prompt cleanup, or client deck extraction.",
-              "teacher": "A skill file is a reusable instruction pack for an AI agent. The risk is overfitting: instructions tuned for one task can make the agent worse on a different task.",
+              "why": "This supports a consulting angle around measuring workflows instead of arguing about model brands. It also warns",
+              "action": "Build a small personal benchmark for one repeatable Garett workflow, such as PDF revision, render prompt cleanup, or client deck extraction. *Teacher explanation:* A skill file is a reusable instruction pack for an AI agent. The risk is overfitting: instructions tuned for one task can make the agent worse on a different task.",
+              "teacher": "s not to present skill files as magic; they need testing across real tasks.",
               "link": "https://www.yugabyte.com/blog/benchmarking-ai-coding-agents-for-distributed-sql-lessons/"
             },
             {
@@ -7687,121 +7687,121 @@ window.DASHBOARD_ARCHIVE = {
             {
               "n": 1,
               "category": "AI design systems",
-              "title": "Krea 2 promotes exploratory prompting instead of perfect prompt engineering Source type Official Quick summary Krea says Krea 2 is designed so users can start with vague prompts, inspect diverse directions, then narrow the style or intent. The post frames image generation as an exploration loop rather than a one-shot prompt-writing contest. Why it matters to Garett This is useful for Garett because teaching creative AI is moving toward art direction, taste, and iteration loops, not just memorizing prompt formulas. It also gives a simple teaching demo for students and consulting clients. Relevance level Beginner Practical action Test one vague visual idea in Krea, save four divergent outputs, then refine only the strongest direction. Teacher explanation Exploratory prompting means using the model to discover possible directions first, then steering it. It is closer to thumbnail sketching than writing a final production brief.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "Krea 2 promotes exploratory prompting instead of perfect prompt engineering",
+              "source": "Official",
+              "relevance": "Beginner",
+              "summary": "Krea says Krea 2 is designed so users can start with vague prompts, inspect diverse directions, then narrow the style or intent. The post frames image generation as an exploration loop rather than a one-shot prompt-writing contest.",
+              "why": "This is useful for Garett because teaching creative AI is moving toward art direction, taste, and iteration loops, not just memorizing prompt formulas. It also gives a simple teaching demo for students and consulting clients.",
+              "action": "Test one vague visual idea in Krea, save four divergent outputs, then refine only the strongest direction.",
+              "teacher": "Exploratory prompting means using the model to discover possible directions first, then steering it. It is closer to thumbnail sketching than writing a final production brief.",
               "link": "https://www.krea.ai/blog/explorative-prompting-krea-2"
             },
             {
               "n": 2,
               "category": "Coding agent harnesses",
-              "title": "oh-my-pi shows the coding-agent race is shifting toward harness quality Source type GitHub Quick summary The oh-my-pi repo describes a terminal coding agent with LSP operations, debugger operations, browser tools, subagents, persistent memory, hash-anchored edits, and multi-provider support. Its pitch is that better tool surfaces can improve edit success and reduce token waste. Why it matters to Garett This matters because the market is learning that the model is only half the product. For consulting, Garett can explain why workflow, permissions, memory, and verification determine whether AI coding feels reliable. Relevance level Advanced Practical action Watch how oh-my-pi handles anchored edits and LSP-aware changes, then compare that to Cursor, Codex, Claude Code, and OpenClaw-style workflows. Teacher explanation A harness is the software layer around a model: tools, file editing, search, browser control, memory, approvals, and verification. A better harness can make the same model act much smarter.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "oh-my-pi shows the coding-agent race is shifting toward harness quality",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "The oh-my-pi repo describes a terminal coding agent with LSP operations, debugger operations, browser tools, subagents, persistent memory, hash-anchored edits, and multi-provider support. Its pitch is that better tool surfaces can improve edit success and reduce token waste.",
+              "why": "This matters because the market is learning that the model is only half the product. For consulting, Garett can explain why workflow, permissions, memory, and verification determine whether AI coding feels reliable.",
+              "action": "Watch how oh-my-pi handles anchored edits and LSP-aware changes, then compare that to Cursor, Codex, Claude Code, and OpenClaw-style workflows.",
+              "teacher": "A harness is the software layer around a model: tools, file editing, search, browser control, memory, approvals, and verification. A better harness can make the same model act much smarter.",
               "link": "https://github.com/can1357/oh-my-pi"
             },
             {
               "n": 3,
               "category": "Agent workflow rules",
-              "title": "Andrej Karpathy Skills turns AI coding lessons into reusable project rules Source type GitHub Quick summary This repo packages guidance inspired by Karpathy comments into a single CLAUDE.md style file and plugin: think before coding, keep changes simple, edit surgically, and define verifiable success criteria. It also includes Cursor rule support. Why it matters to Garett This is a strong signal for teaching: people are turning AI usage wisdom into portable operating systems for agents. Garett can teach not only tools, but also behavior design for better outcomes. Relevance level Intermediate Practical action Use the four principles as a checklist when reviewing AI-generated code or creative automation scripts. Teacher explanation CLAUDE.md and similar rule files are project-level instructions that guide coding agents. They work like a studio style guide for AI behavior.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "Andrej Karpathy Skills turns AI coding lessons into reusable project rules",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "This repo packages guidance inspired by Karpathy comments into a single CLAUDE.md style file and plugin: think before coding, keep changes simple, edit surgically, and define verifiable success criteria. It also includes Cursor rule support.",
+              "why": "This is a strong signal for teaching: people are turning AI usage wisdom into portable operating systems for agents. Garett can teach not only tools, but also behavior design for better outcomes.",
+              "action": "Use the four principles as a checklist when reviewing AI-generated code or creative automation scripts.",
+              "teacher": "CLAUDE.md and similar rule files are project-level instructions that guide coding agents. They work like a studio style guide for AI behavior.",
               "link": "https://github.com/multica-ai/andrej-karpathy-skills"
             },
             {
               "n": 4,
               "category": "Creator operating systems",
-              "title": "agency-agents packages a whole AI agency as specialist agent roles Source type GitHub Quick summary The Agency repo offers many specialized AI agent personas such as frontend developer, backend architect, AI engineer, code reviewer, technical writer, and community roles. It also advertises conversion and installation across tools including Claude Code, Gemini CLI, OpenCode, Copilot, OpenClaw, Cursor, and others. Why it matters to Garett The signal is that creators are productizing expertise as reusable agent roles. For Garett, this points toward teaching and consulting packages where workflows, roles, and deliverables are the product. Relevance level Intermediate Practical action Map three repeatable consulting tasks into specialist agent roles with clear deliverables and review gates. Teacher explanation A specialist agent is a configured AI role with a mission, process, and success criteria. It is not magic autonomy; it is a reusable workflow wrapper around a model.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "agency-agents packages a whole AI agency as specialist agent roles",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "The Agency repo offers many specialized AI agent personas such as frontend developer, backend architect, AI engineer, code reviewer, technical writer, and community roles. It also advertises conversion and installation across tools including Claude Code, Gemini CLI, OpenCode, Copilot, OpenClaw, Cursor, and others.",
+              "why": "The signal is that creators are productizing expertise as reusable agent roles. For Garett, this points toward teaching and consulting packages where workflows, roles, and deliverables are the product.",
+              "action": "Map three repeatable consulting tasks into specialist agent roles with clear deliverables and review gates.",
+              "teacher": "A specialist agent is a configured AI role with a mission, process, and success criteria. It is not magic autonomy; it is a reusable workflow wrapper around a model.",
               "link": "https://github.com/msitarzewski/agency-agents"
             },
             {
               "n": 5,
               "category": "Agent infrastructure",
-              "title": "id-agent optimizes IDs for LLM context windows instead of databases Source type GitHub Quick summary id-agent creates human-readable, word-based IDs that use fewer tokens than UUIDs and are easier for LLMs to remember. It also includes alias mapping to replace long IDs before sending text to an LLM and restore them later. Why it matters to Garett This is a subtle but important infrastructure signal: agent systems are now designing even small primitives around context limits and model behavior. It helps Garett understand why AI-native products need different design patterns. Relevance level Advanced Practical action Watch for more libraries that redesign old software primitives around token cost, memory, and model reliability. Teacher explanation A UUID is a long unique identifier used in software. Token cost matters because LLMs read text in chunks called tokens, and long machine IDs waste context and can be copied incorrectly.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "id-agent optimizes IDs for LLM context windows instead of databases",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "id-agent creates human-readable, word-based IDs that use fewer tokens than UUIDs and are easier for LLMs to remember. It also includes alias mapping to replace long IDs before sending text to an LLM and restore them later.",
+              "why": "This is a subtle but important infrastructure signal: agent systems are now designing even small primitives around context limits and model behavior. It helps Garett understand why AI-native products need different design patterns.",
+              "action": "Watch for more libraries that redesign old software primitives around token cost, memory, and model reliability.",
+              "teacher": "A UUID is a long unique identifier used in software. Token cost matters because LLMs read text in chunks called tokens, and long machine IDs waste context and can be copied incorrectly.",
               "link": "https://github.com/vostride/id-agent"
             },
             {
               "n": 6,
               "category": "AI QA automation",
-              "title": "agent-qa brings natural-language testing, memory, and MCP to web and mobile QA Source type Hacker News Quick summary agent-qa is presented as an open-source agentic QA harness where tests are written in natural language, run across web and mobile, and improve through execution memory and self-healing. It exposes primitives through MCP and skills so coding agents can author tests and inspect artifacts. Why it matters to Garett This shows where AI-assisted product building is going: agents will not just write code, they will test, remember UI drift, and create QA artifacts. That is valuable for consulting clients who want faster release loops. Relevance level Intermediate Practical action Try writing one plain-English test for a simple website flow and compare the artifacts to a traditional Playwright script. Teacher explanation QA means quality assurance. MCP is Model Context Protocol, a standard way for AI agents to access tools and data sources. Self-healing means a test can recover when the UI changes slightly.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "agent-qa brings natural-language testing, memory, and MCP to web and mobile QA",
+              "source": "Hacker News",
+              "relevance": "Intermediate",
+              "summary": "agent-qa is presented as an open-source agentic QA harness where tests are written in natural language, run across web and mobile, and improve through execution memory and self-healing. It exposes primitives through MCP and skills so coding agents can author tests and inspect artifacts.",
+              "why": "This shows where AI-assisted product building is going: agents will not just write code, they will test, remember UI drift, and create QA artifacts. That is valuable for consulting clients who want faster release loops.",
+              "action": "Try writing one plain-English test for a simple website flow and compare the artifacts to a traditional Playwright script.",
+              "teacher": "QA means quality assurance. MCP is Model Context Protocol, a standard way for AI agents to access tools and data sources. Self-healing means a test can recover when the UI changes slightly.",
               "link": "https://vostride.com/agent-qa"
             },
             {
               "n": 7,
               "category": "AI code review",
-              "title": "Haystack focuses PR review on the changes that need human attention Source type Hacker News Quick summary Haystack describes AI-powered PR review with automatic grouping of related changes, call graph visualization, data-flow analysis, jump-to-definition, inline AI comments, and an agent that understands the full PR context. Why it matters to Garett The market is moving from AI writing code to AI helping humans review and understand code. Garett can apply the same concept to creative reviews: organize changes, expose dependencies, and keep humans focused on judgment. Relevance level Intermediate Practical action Use Haystack feature list as a template for what an AI review assistant should explain before asking a human to approve work. Teacher explanation A PR, or pull request, is a proposed code change. Call graphs and data-flow views show how functions and variables connect, making a large change easier to inspect.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "Haystack focuses PR review on the changes that need human attention",
+              "source": "Hacker News",
+              "relevance": "Intermediate",
+              "summary": "Haystack describes AI-powered PR review with automatic grouping of related changes, call graph visualization, data-flow analysis, jump-to-definition, inline AI comments, and an agent that understands the full PR context.",
+              "why": "The market is moving from AI writing code to AI helping humans review and understand code. Garett can apply the same concept to creative reviews: organize changes, expose dependencies, and keep humans focused on judgment.",
+              "action": "Use Haystack feature list as a template for what an AI review assistant should explain before asking a human to approve work.",
+              "teacher": "A PR, or pull request, is a proposed code change. Call graphs and data-flow views show how functions and variables connect, making a large change easier to inspect.",
               "link": "https://haystackeditor.com/"
             },
             {
               "n": 8,
               "category": "AI-native maker demos",
-              "title": "A native macOS Markdown viewer claims it was built entirely by AI coding agents Source type Hacker News Quick summary The mdviewer repo describes a fast Tauri and Rust Markdown viewer for macOS with GitHub-flavored Markdown, Obsidian-style links, math, Mermaid diagrams, sanitized HTML, and automated releases. The author says the implementation was designed and built by AI coding agents, including local Qwen via llama.cpp and later Claude Code work. Why it matters to Garett This is a concrete maker signal: small, polished native utilities can now be shipped by people orchestrating agents rather than manually writing every line. That is directly relevant to AI-native creator education. Relevance level Intermediate Practical action Study the repo Colophon section and note which tasks were done by local models versus cloud coding agents. Teacher explanation Tauri is a framework for building lightweight desktop apps with a Rust backend and web UI. Local models run on the user's machine, which can reduce cost and improve privacy.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "A native macOS Markdown viewer claims it was built entirely by AI coding agents",
+              "source": "Hacker News",
+              "relevance": "Intermediate",
+              "summary": "The mdviewer repo describes a fast Tauri and Rust Markdown viewer for macOS with GitHub-flavored Markdown, Obsidian-style links, math, Mermaid diagrams, sanitized HTML, and automated releases. The author says the implementation was designed and built by AI coding agents, including local Qwen via llama.cpp and later Claude Code work.",
+              "why": "This is a concrete maker signal: small, polished native utilities can now be shipped by people orchestrating agents rather than manually writing every line. That is directly relevant to AI-native creator education.",
+              "action": "Study the repo Colophon section and note which tasks were done by local models versus cloud coding agents.",
+              "teacher": "Tauri is a framework for building lightweight desktop apps with a Rust backend and web UI. Local models run on the user's machine, which can reduce cost and improve privacy.",
               "link": "https://github.com/rajatarya/mdviewer"
             },
             {
               "n": 9,
               "category": "Document AI pipelines",
-              "title": "PaddleOCR 3.5 adds a Transformers backend for OCR and document parsing Source type Trusted news Quick summary Hugging Face says PaddleOCR 3.5 can run supported OCR and document parsing models through a Transformers inference backend by setting engine=\"transformers\". The post highlights easier integration into RAG, Document AI, search, analytics, and agent workflows. Why it matters to Garett A lot of consulting work starts with messy documents, screenshots, PDFs, tables, and layouts. Better open document parsing makes custom AI workflows more practical for small teams and educators. Relevance level Advanced Practical action Try the Hugging Face Space with one complex PDF or screenshot, then inspect whether the extracted structure is good enough for a teaching demo. Teacher explanation OCR means optical character recognition: turning images of text into machine-readable text. RAG means retrieval augmented generation, where an AI answers using retrieved documents instead of memory alone.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "PaddleOCR 3.5 adds a Transformers backend for OCR and document parsing",
+              "source": "Trusted news",
+              "relevance": "Advanced",
+              "summary": "Hugging Face says PaddleOCR 3.5 can run supported OCR and document parsing models through a Transformers inference backend by setting engine=\"transformers\". The post highlights easier integration into RAG, Document AI, search, analytics, and agent workflows.",
+              "why": "A lot of consulting work starts with messy documents, screenshots, PDFs, tables, and layouts. Better open document parsing makes custom AI workflows more practical for small teams and educators.",
+              "action": "Try the Hugging Face Space with one complex PDF or screenshot, then inspect whether the extracted structure is good enough for a teaching demo.",
+              "teacher": "OCR means optical character recognition: turning images of text into machine-readable text. RAG means retrieval augmented generation, where an AI answers using retrieved documents instead of memory alone.",
               "link": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers"
             },
             {
               "n": 10,
               "category": "AI education products",
-              "title": "DDS Vibe Academy turns AI coding into a free 31-class public curriculum Source type Hacker News Quick summary A Show HN post introduces DDS Vibe Academy, a free 31-class curriculum covering Claude Code, Google Antigravity, Gemini, Cursor, Shopify Sidekick, Ollama, Hydrogen, and AI cost engineering. The author says the hub itself was built by agents, with Claude authoring Liquid sections, Antigravity deploying through Shopify MCP, and Cowork running a browser audit. Why it matters to Garett This is close to Garett's long-term teaching direction: public curricula are becoming marketing, proof of competence, and product surface at the same time. It shows how AI-native educators may compete. Relevance level Beginner Practical action Review the curriculum structure, then outline one compact AI-for-3D-creators lesson series with proof demos instead of generic lectures. Teacher explanation Vibe coding means using AI agents to build software through intent, iteration, and review rather than manually typing every line. Liquid is Shopify's template language.",
-              "source": "",
-              "relevance": "",
-              "summary": "",
-              "why": "",
-              "action": "",
-              "teacher": "",
+              "title": "DDS Vibe Academy turns AI coding into a free 31-class public curriculum",
+              "source": "Hacker News",
+              "relevance": "Beginner",
+              "summary": "A Show HN post introduces DDS Vibe Academy, a free 31-class curriculum covering Claude Code, Google Antigravity, Gemini, Cursor, Shopify Sidekick, Ollama, Hydrogen, and AI cost engineering. The author says the hub itself was built by agents, with Claude authoring Liquid sections, Antigravity deploying through Shopify MCP, and Cowork running a browser audit.",
+              "why": "This is close to Garett's long-term teaching direction: public curricula are becoming marketing, proof of competence, and product surface at the same time. It shows how AI-native educators may compete.",
+              "action": "Review the curriculum structure, then outline one compact AI-for-3D-creators lesson series with proof demos instead of generic lectures.",
+              "teacher": "Vibe coding means using AI agents to build software through intent, iteration, and review rather than manually typing every line. Liquid is Shopify's template language.",
               "link": "https://news.ycombinator.com/item?id=48198681"
             }
           ]
@@ -8568,9 +8568,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Advanced",
               "summary": "Cursor says cloud agents now get stronger environment setup: multi-repo environments, Dockerfile-based configuration, build secrets, caching, validation, version history, audit logs, and scoped egress and secrets.",
-              "why": "This turns vibe coding from toy demos into a service opportunity. Garett can help teachers, small studios, and clients define safe environments where AI agents can build support apps without breaking everything.",
-              "action": "Draft a sample 'agent environment spec' for a course support app: repos, allowed services, secrets, tests, deployment, and rollback rule.",
-              "teacher": "A cloud agent needs a workspace just like a human developer: files, dependencies, credentials, and test commands. Governance means controlling what it can access and recording what changed. https://cursor.com/blog/cloud-agent-development-environments",
+              "why": "This turns vibe coding from toy demos into a service opportunity. Garett can help",
+              "action": "Draft a sample 'agent environment spec' for a course support app: repos, allowed services, secrets, tests, deployment, and rollback rule. *Teacher explanation:* A cloud agent needs a workspace just like a human developer: files, dependencies, credentials, and test commands. Governance means controlling what it can access and recording what changed. https://cursor.com/blog/cloud-agent-development-environments",
+              "teacher": "s, small studios, and clients define safe environments where AI agents can build support apps without breaking everything.",
               "link": null
             },
             {
@@ -9626,9 +9626,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Beginner",
               "summary": "Google says its free five-day AI Agents Intensive Course with Kaggle returns June 15-19, 2026, with updated content, new speakers, hands-on examples, and a capstone project. It focuses on building production-ready AI agents using natural language workflows, tools, and APIs.",
-              "why": "This is a curriculum signal: students and clients will soon expect vibe coding and agent literacy. Garett can adapt the structure into a design-focused version for 3D artists, teachers, and small studios.",
-              "action": "Register, then outline a parallel five-day mini-course: AI brief, asset research, deck/report generation, prototype app, and client handoff.",
-              "teacher": "Vibe coding means building software through natural-language direction and iterative review, while still checking the result like a professional. https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
+              "why": "This is a curriculum signal: students and clients will soon expect vibe coding and agent literacy. Garett can adapt the structure into a design-focused version for 3D artists,",
+              "action": "Register, then outline a parallel five-day mini-course: AI brief, asset research, deck/report generation, prototype app, and client handoff. *Teacher explanation:* Vibe coding means building software through natural-language direction and iterative review, while still checking the result like a professional. https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
+              "teacher": "s, and small studios.",
               "link": null
             },
             {
@@ -9886,9 +9886,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Beginner",
               "summary": "The repository lists free resources including Microsoft Learn paths for agentic systems, GitHub Copilot Agent Mode, GitHub MCP training, GitHub Skills, MCP documentation, and Anthropic Learn. It is a compact course map for agent literacy.",
-              "why": "This is useful for Garett as a teacher because it gives a curriculum skeleton. He can build a practical class around AI assistants for artists without inventing every prerequisite from scratch.",
-              "action": "Turn the links into a 4-week mini-course outline: week 1 agent basics, week 2 MCP tools, week 3 design/3D workflows, week 4 client-safe deployment.",
-              "teacher": "Agent literacy means knowing how to brief, constrain, verify, and supervise AI systems that can use tools. It is becoming a job skill, not just a tech hobby. *",
+              "why": "This is useful for Garett as a",
+              "action": "Turn the links into a 4-week mini-course outline: week 1 agent basics, week 2 MCP tools, week 3 design/3D workflows, week 4 client-safe deployment. *Teacher explanation:* Agent literacy means knowing how to brief, constrain, verify, and supervise AI systems that can use tools. It is becoming a job skill, not just a tech hobby. *",
+              "teacher": "because it gives a curriculum skeleton. He can build a practical class around AI assistants for artists without inventing every prerequisite from scratch.",
               "link": "https://github.com/thegibi/learning-ai-free"
             },
             {
@@ -10008,9 +10008,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "",
               "relevance": "Beginner",
               "summary": "Krea describes S-Refs in Krea 2: extracting style from one image and applying it to new prompts, with control over strength. The feature is about keeping visual direction consistent without manually rebuilding the prompt each time.",
-              "why": "For a 3D artist or design teacher, this is a practical sign that creative control is shifting from one-off prompting to reusable visual systems. It is useful language for teaching brand consistency, look development, and AI art direction.",
-              "action": "Test one personal style reference across five prompts and note where identity, color, lighting, and composition stay consistent or break.",
-              "teacher": "S-Ref means style reference. It uses an example image as a style source, then applies that look to new generations while the user controls how strongly it influences the result. *",
+              "why": "For a 3D artist or design",
+              "action": "Test one personal style reference across five prompts and note where identity, color, lighting, and composition stay consistent or break. *Teacher explanation:* S-Ref means style reference. It uses an example image as a style source, then applies that look to new generations while the user controls how strongly it influences the result. *",
+              "teacher": ", this is a practical sign that creative control is shifting from one-off prompting to reusable visual systems. It is useful language for teaching brand consistency, look development, and AI art direction.",
               "link": "https://www.krea.ai/blog/style-references-krea-2"
             },
             {
@@ -10136,8 +10136,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The repository is trending and describes itself as academic research skills for Claude Code, covering the chain from research to writing, review, revision, and final output.",
               "why": "This is directly adaptable to course production: research references, draft lesson notes, review examples, revise worksheets, and finalize a PDF or slide pack.",
-              "action": "Test one lesson topic by asking an agent to produce a source-backed outline, then review it like a teacher before turning it into slides.",
-              "teacher": "Agent skills are reusable instruction packs. Instead of writing the same prompt every time, you give the assistant a repeatable method for a class of work.",
+              "action": "Test one lesson topic by asking an agent to produce a source-backed outline, then review it like a",
+              "teacher": "before turning it into slides. *Teacher explanation:* Agent skills are reusable instruction packs. Instead of writing the same prompt every time, you give the assistant a repeatable method for a class of work.",
               "link": "https://github.com/Imbad0202/academic-research-skills"
             },
             {
@@ -10293,9 +10293,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Advanced",
               "summary": "Google announced Genkit Middleware for TypeScript, Go, and Dart, with Python support planned. It adds hooks around generation, model calls, and tool execution for retries, fallbacks, caching, human approval, skills, and filesystem access.",
-              "why": "The market is moving from prompt tricks to workflow engineering. A teacher can explain this as the difference between asking AI once and building an AI process that can be inspected, resumed, and controlled.",
-              "action": "Test one tiny Genkit flow or at least map its middleware ideas onto OpenClaw-style skills, approvals, and file access.",
-              "teacher": "Middleware is code that sits between the user request and the agent action. It can retry failures, block dangerous tools, change models, log behavior, or ask a human to approve before continuing. https://developers.googleblog.com/en/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/",
+              "why": "The market is moving from prompt tricks to workflow engineering. A",
+              "action": "Test one tiny Genkit flow or at least map its middleware ideas onto OpenClaw-style skills, approvals, and file access. *Teacher explanation:* Middleware is code that sits between the user request and the agent action. It can retry failures, block dangerous tools, change models, log behavior, or ask a human to approve before continuing. https://developers.googleblog.com/en/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/",
+              "teacher": "can explain this as the difference between asking AI once and building an AI process that can be inspected, resumed, and controlled.",
               "link": null
             },
             {
@@ -10397,8 +10397,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Raven describes itself as a design knowledge MCP server that Claude can query while generating UI. It includes principles, UI patterns, content systems, research methods, service design, brand rules, business strategy, and design tokens.",
               "why": "This is a teachable layer above generic prompting: Garett can show students how to make AI respect design systems, heuristics, accessibility, and client brand logic instead of producing generic AI-looking layouts.",
-              "action": "Install Raven in one AI client and ask it to audit a landing page concept against conversion, visual hierarchy, and WCAG checks. Teacher explanation MCP means Model Context Protocol. It is a standard way for an AI assistant to call external tools or knowledge sources instead of relying only on chat memory. A design MCP can turn design judgement into repeatable checks. *",
-              "teacher": "",
+              "action": "Install Raven in one AI client and ask it to audit a landing page concept against conversion, visual hierarchy, and WCAG checks.",
+              "teacher": "MCP means Model Context Protocol. It is a standard way for an AI assistant to call external tools or knowledge sources instead of relying only on chat memory. A design MCP can turn design judgement into repeatable checks. *",
               "link": "https://github.com/rhinocap/raven-mcp"
             },
             {
@@ -10409,8 +10409,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The repository presents one MCP server for multiple Adobe Creative Cloud apps, with tools for Photoshop documents, Premiere imports and exports, After Effects compositions, InDesign placement, Illustrator material search, and a 4097-item scientific illustration library.",
               "why": "This points to a sellable workflow audit: help studios decide which Adobe tasks should become AI-callable, which still need senior art direction, and how to verify outputs before client delivery.",
-              "action": "Test only the Photoshop or Illustrator info/export tools first, then document a safe demo workflow for producing a simple client visual pack. Teacher explanation An MCP server is a connector. Instead of asking AI to describe Photoshop steps, the AI can call real app functions. The risk is quality control, so the teaching angle is verification, naming, undo safety, and human review. *",
-              "teacher": "",
+              "action": "Test only the Photoshop or Illustrator info/export tools first, then document a safe demo workflow for producing a simple client visual pack.",
+              "teacher": "An MCP server is a connector. Instead of asking AI to describe Photoshop steps, the AI can call real app functions. The risk is quality control, so the teaching angle is verification, naming, undo safety, and human review. *",
               "link": "https://github.com/wade20250715/adobe-mcp-server"
             },
             {
@@ -10421,8 +10421,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Unity AI Bridge says it lets AI IDEs inspect scenes, edit materials, run tests, profile performance, and work through 62 tools across 13 categories. It emphasizes no open ports, no external dependencies, and support for Claude Code, Cursor, Copilot, Windsurf, and Claude Desktop.",
               "why": "Clients and students will increasingly expect AI to help inside real-time engines, not just generate code outside them. Garett can teach where AI helps scene cleanup, prefab checks, material iteration, and performance triage.",
-              "action": "Create a tiny Unity scene and ask an agent to list objects, find missing materials, and make one reversible material edit. Teacher explanation File-based IPC means the tool exchanges request and response files instead of opening a network port. That can be easier to secure and more stable inside locked-down studio machines. *",
-              "teacher": "",
+              "action": "Create a tiny Unity scene and ask an agent to list objects, find missing materials, and make one reversible material edit.",
+              "teacher": "File-based IPC means the tool exchanges request and response files instead of opening a network port. That can be easier to secure and more stable inside locked-down studio machines. *",
               "link": "https://github.com/aiseog3121/unity-ai-bridge"
             },
             {
@@ -10433,8 +10433,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "OpenShowreel is an MCP server for After Effects that focuses on premium motion mechanics: 60 fps comps, motion blur, bounce expressions, timing offsets, delayed child motion, tactile button presses, text reveals, and master-camera finishing.",
               "why": "This is a strong course module: AI can make motion, but senior value is knowing the mechanics that stop it looking robotic. Garett can teach the difference between prompt output and art-directed motion systems.",
-              "action": "Build a 10-second UI walkthrough brief and compare a normal AI animation plan against an OpenShowreel-style checklist. Teacher explanation Expressions in After Effects are small scripts attached to properties such as position or scale. They let motion behave with physics-like rules instead of hand-keyframing every frame. *",
-              "teacher": "",
+              "action": "Build a 10-second UI walkthrough brief and compare a normal AI animation plan against an OpenShowreel-style checklist.",
+              "teacher": "Expressions in After Effects are small scripts attached to properties such as position or scale. They let motion behave with physics-like rules instead of hand-keyframing every frame. *",
               "link": "https://github.com/Phanikondru/openshowreel"
             },
             {
@@ -10445,8 +10445,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The project says it builds on the original Blender MCP idea with a production-grade architecture: 69 tool groups, 550+ actions, multilingual intent routing, BVH assembly analysis, thread-safe execution, and a 499-test suite.",
               "why": "This is a market signal that Blender agent workflows are moving from toy demos to structured production tooling. Garett can consult on where to expose tools, how to test them, and how to prevent agents from damaging scene files.",
-              "action": "Use it on a duplicate Blender file and ask the agent to inspect scene contents, generate screenshots, and make one material change with a before-after checklist. Teacher explanation BVH usually means Bounding Volume Hierarchy, a spatial data structure used to test geometry relationships efficiently. In production, it can help an AI check whether parts touch, overlap, or collide. *",
-              "teacher": "",
+              "action": "Use it on a duplicate Blender file and ask the agent to inspect scene contents, generate screenshots, and make one material change with a before-after checklist.",
+              "teacher": "BVH usually means Bounding Volume Hierarchy, a spatial data structure used to test geometry relationships efficiently. In production, it can help an AI check whether parts touch, overlap, or collide. *",
               "link": "https://github.com/Immunogenic-prismspectroscope589/Blender_mcp"
             },
             {
@@ -10457,8 +10457,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "GODOT-MCP describes a dependency-light MCP server plus Godot editor plugin for scene control, GDScript, 2D and 3D, animation, physics, assets, screenshots, runtime checks, and safer project-local edits.",
               "why": "Godot is popular for indie education. Garett could package a course around AI-assisted prototype building while teaching the safety rule: inspect first, edit inside project boundaries, and keep destructive actions out.",
-              "action": "Make a blank Godot 4 project and test three safe tools: project scan, list scenes, and capture screenshot. Teacher explanation GDScript is Godot's main scripting language. A safe bridge matters because game agents need context from the editor, but should not get unrestricted shell access to the whole computer. *",
-              "teacher": "",
+              "action": "Make a blank Godot 4 project and test three safe tools: project scan, list scenes, and capture screenshot.",
+              "teacher": "GDScript is Godot's main scripting language. A safe bridge matters because game agents need context from the editor, but should not get unrestricted shell access to the whole computer. *",
               "link": "https://github.com/gordidima-rgb/GODOT-MCP"
             },
             {
@@ -10469,8 +10469,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Conduit says it gives AI assistants direct Photoshop control for documents, layers, selections, masks, filters, Firefly generative tools, neural filters, web export, color science, accessibility, and canvas previews after operations.",
               "why": "This is directly relevant to freelance client work: fast retouching and export automation are useful, but senior judgement is needed for prompts, variations, legal review, and final visual quality.",
-              "action": "Create a throwaway PSD and test a simple export recipe: duplicate a product layer, add shadow, export PNG and WebP, then visually inspect the output. Teacher explanation A namespace is a group of related functions, such as layers or filters. A large Photoshop MCP is powerful, but also dangerous unless the workflow uses duplicate files, previews, and undo checkpoints. *",
-              "teacher": "",
+              "action": "Create a throwaway PSD and test a simple export recipe: duplicate a product layer, add shadow, export PNG and WebP, then visually inspect the output.",
+              "teacher": "A namespace is a group of related functions, such as layers or filters. A large Photoshop MCP is powerful, but also dangerous unless the workflow uses duplicate files, previews, and undo checkpoints. *",
               "link": "https://github.com/jagjourney/Conduit-for-Photoshop-MCP"
             },
             {
@@ -10481,8 +10481,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Flue describes a tiny bridge that lets coding agents drive desktop software such as Photoshop, Premiere, Blender, Unity, Houdini, Illustrator, Office, and more through native scripting APIs, without setting up MCP servers.",
               "why": "This is an important consulting signal: some studios may not want many custom MCP servers. Garett can sell an evaluation of whether a simple bridge, MCP, or screenshot-based workflow fits each client's app stack.",
-              "action": "Review Flue's supported-app list and pick one non-destructive task, such as reading document metadata or exporting a test file. Teacher explanation A native scripting API is the automation interface already built into an app. Flue's bet is that agents can call those app scripts directly instead of needing a custom server for every task. *",
-              "teacher": "",
+              "action": "Review Flue's supported-app list and pick one non-destructive task, such as reading document metadata or exporting a test file.",
+              "teacher": "A native scripting API is the automation interface already built into an app. Flue's bet is that agents can call those app scripts directly instead of needing a custom server for every task. *",
               "link": "https://github.com/SFKislev/Flue"
             },
             {
@@ -10493,8 +10493,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "The repository offers an agent skill and CLI that reverse-engineers colors, typography, spacing, radius, and shadows from a public website, then outputs W3C-style tokens.json and tokens.css files.",
               "why": "This is practical for client reports and teaching: Garett can show how to analyze a competitor, extract visual primitives, and then explain what to copy, what to avoid, and what to systematize ethically.",
-              "action": "Run it on one portfolio or brand site, then turn the extracted tokens into a one-page visual audit for a client. Teacher explanation Design tokens are named values for visual decisions, such as color, font size, spacing, and radius. They make a visual style reusable across websites, slides, and apps. *",
-              "teacher": "",
+              "action": "Run it on one portfolio or brand site, then turn the extracted tokens into a one-page visual audit for a client.",
+              "teacher": "Design tokens are named values for visual decisions, such as color, font size, spacing, and radius. They make a visual style reusable across websites, slides, and apps. *",
               "link": "https://github.com/arvindrk/extract-design-system"
             },
             {
@@ -10505,8 +10505,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "BlenderSQL says it lets AI assistants read and edit a live .blend file: objects, materials, animation, grease pencil, sequencer, and more. It exposes the scene through a SQL-like model while keeping changes as normal Blender undo steps.",
               "why": "This is a strong senior-artist advantage: instead of manually hunting broken constraints, heavy meshes, orphaned materials, or naming messes, an AI can audit the scene and propose cleanup while Garett keeps art direction control.",
-              "action": "On a duplicate .blend, ask it to list unused materials, heaviest meshes, and orphaned data before allowing any edit. Teacher explanation SQL is a language for asking structured questions of tables. Here, the idea is not that artists write SQL, but that the AI gets a table-like map of the Blender file so it can inspect complex scenes accurately. *",
-              "teacher": "",
+              "action": "On a duplicate .blend, ask it to list unused materials, heaviest meshes, and orphaned data before allowing any edit.",
+              "teacher": "SQL is a language for asking structured questions of tables. Here, the idea is not that artists write SQL, but that the AI gets a table-like map of the Blender file so it can inspect complex scenes accurately. *",
               "link": "https://github.com/thebabush/blendersql"
             }
           ]
@@ -11395,8 +11395,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Stripe describes about a dozen experiments on how to get coding agents to use Stripe correctly. The main finding is that passive hints in SDKs or API responses failed, while active prompts, skill installs, and documentation distribution worked better.",
               "why": "This is a concrete market lesson for teaching and consulting: AI-native workflows need designed steering surfaces, not just better docs. Garett can explain to clients that agent adoption requires packaging knowledge where agents actually look.",
-              "action": "Watch how serious SaaS companies publish agent skills, CLI prompts, and install flows, then map the pattern to any creative or production pipeline. *Teacher explanation* Agent steering means shaping what an AI agent does by changing the context, tools, docs, prompts, and workflows around it. Passive hints are things the agent might miss. Active prompts are explicit instructions or setup flows the agent is more likely to follow.",
-              "teacher": "",
+              "action": "Watch how serious SaaS companies publish agent skills, CLI prompts, and install flows, then map the pattern to any creative or production pipeline.",
+              "teacher": "Agent steering means shaping what an AI agent does by changing the context, tools, docs, prompts, and workflows around it. Passive hints are things the agent might miss. Active prompts are explicit instructions or setup flows the agent is more likely to follow.",
               "link": "https://stripe.dev/blog/ai-steering-experiments"
             },
             {
@@ -11407,8 +11407,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The Palace AI repo pitches a codebase map made of rooms and typed relationships. It claims agents can navigate with smaller context by reading a palace map, one room file, and only the source files they need.",
               "why": "This points to the next layer after simple RAG: spatial or graph-like orientation for agents. For consulting, the sell is not just faster coding, but less context waste and fewer wrong-file edits.",
-              "action": "Test Palace AI on one messy repo and compare whether the agent finds the right files faster than with a normal tree dump. *Teacher explanation* AST means Abstract Syntax Tree, a structured representation of code. Instead of reading raw text, tools can inspect functions, exports, imports, and relationships in a more precise way.",
-              "teacher": "",
+              "action": "Test Palace AI on one messy repo and compare whether the agent finds the right files faster than with a normal tree dump.",
+              "teacher": "AST means Abstract Syntax Tree, a structured representation of code. Instead of reading raw text, tools can inspect functions, exports, imports, and relationships in a more precise way.",
               "link": "https://github.com/RhyChaw/palace-ai"
             },
             {
@@ -11419,8 +11419,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "A Hacker News thread asks regular coding-agent users whether they still invest in repo-level instruction files such as CLAUDE.md and AGENTS.md, especially for behavior rules like coding style and do-not-do lists.",
               "why": "This is a useful early-adopter pain signal: builders are learning that instruction files are helpful for facts and commands, but not magic for behavior. That is exactly the kind of nuance Garett can teach.",
-              "action": "Keep instruction files short and testable: commands, project maps, verification steps, and hard constraints rather than long personality rules. *Teacher explanation* CLAUDE.md and AGENTS.md are local instruction files that many coding agents read before working in a project. They are like a project handbook for the AI, but their effectiveness depends on length, placement, and whether the agent actually consults them.",
-              "teacher": "",
+              "action": "Keep instruction files short and testable: commands, project maps, verification steps, and hard constraints rather than long personality rules.",
+              "teacher": "CLAUDE.md and AGENTS.md are local instruction files that many coding agents read before working in a project. They are like a project handbook for the AI, but their effectiveness depends on length, placement, and whether the agent actually consults them.",
               "link": "https://news.ycombinator.com/item?id=48160604"
             },
             {
@@ -11431,8 +11431,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "A Show HN post for GameVibe day 33 shows a tower-defense game produced as part of a daily vibe-coding challenge. The signal is less the specific game and more the cadence: creators are shipping public interactive experiments every day.",
               "why": "For Garett, this is a market timing clue. The new competition is not only polished studios; it is fast creators who build playable demos, teaching material, and product concepts in public.",
-              "action": "Watch one daily maker challenge and note which parts are still weak: art direction, UX polish, performance, or monetization. *Teacher explanation* Vibe coding means building software by steering an AI coding tool with natural language, examples, and feedback rather than writing every line manually. It can be fast, but quality still depends on taste and review.",
-              "teacher": "",
+              "action": "Watch one daily maker challenge and note which parts are still weak: art direction, UX polish, performance, or monetization.",
+              "teacher": "Vibe coding means building software by steering an AI coding tool with natural language, examples, and feedback rather than writing every line manually. It can be fast, but quality still depends on taste and review.",
               "link": "https://gamevibe.us/33-tower-defense"
             },
             {
@@ -11443,8 +11443,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Webflow argues that AI-generated code can ship quickly but create cleanup debt later across engineering teams, indie builders, and software ecosystems. The framing is that velocity without governance moves cost into the future.",
               "why": "This is valuable for consulting positioning. Garett can teach AI literacy as a quality system: faster prototypes plus review, constraints, and maintainability, not blind acceleration.",
-              "action": "When testing an AI-built mini app, add a cleanup checklist: dependencies, security, naming, architecture, accessibility, and handoff notes. *Teacher explanation* Technical debt is future work created by shortcuts today. AI can create debt faster because it can produce lots of plausible code before anyone checks whether the structure is maintainable.",
-              "teacher": "",
+              "action": "When testing an AI-built mini app, add a cleanup checklist: dependencies, security, naming, architecture, accessibility, and handoff notes.",
+              "teacher": "Technical debt is future work created by shortcuts today. AI can create debt faster because it can produce lots of plausible code before anyone checks whether the structure is maintainable.",
               "link": "https://webflow.com/blog/cleanup-cost-ai-generated-code"
             },
             {
@@ -11455,8 +11455,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "Search Engine Land describes marketers building calculators, widgets, persona components, and interactive pages with AI instead of waiting for developer roadmaps. The article says some tool-based pages can outperform text-heavy competitors.",
               "why": "This matters because teaching and consulting can move beyond prompts into small shippable tools. Designers who can prototype useful web experiences have leverage in SEO, GEO, and client education.",
-              "action": "Build one tiny interactive teaching tool around a niche 3D or AI workflow and see if it explains better than a static post. *Teacher explanation* GEO means Generative Engine Optimization: making content useful and visible for AI answer engines, not only traditional search results. Interactive tools can create stronger signals than generic articles.",
-              "teacher": "",
+              "action": "Build one tiny interactive teaching tool around a niche 3D or AI workflow and see if it explains better than a static post.",
+              "teacher": "GEO means Generative Engine Optimization: making content useful and visible for AI answer engines, not only traditional search results. Interactive tools can create stronger signals than generic articles.",
               "link": "https://searchengineland.com/vibe-coding-seo-advantage-477069"
             },
             {
@@ -11467,8 +11467,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The repo turns Google Search guidance for AI Overviews and AI Mode into an installable Agent Skill. It focuses on crawlability, indexability, helpful content, media SEO, structured data, ecommerce, local details, and agent-friendly site readiness.",
               "why": "This shows a clear pattern: expertise is becoming portable as skills that agents can install. Garett can turn his own 3D/design judgment into reusable teaching and audit skills.",
-              "action": "Study the skill structure and outline a similar skill for AI-ready portfolio reviews or 3D asset pipeline audits. *Teacher explanation* An Agent Skill is a packaged set of instructions, references, and workflows that an AI assistant can load when doing a specific job. It turns expert process into reusable agent capability.",
-              "teacher": "",
+              "action": "Study the skill structure and outline a similar skill for AI-ready portfolio reviews or 3D asset pipeline audits.",
+              "teacher": "An Agent Skill is a packaged set of instructions, references, and workflows that an AI assistant can load when doing a specific job. It turns expert process into reusable agent capability.",
               "link": "https://github.com/deepakness/google-ai-search-optimization"
             },
             {
@@ -11479,8 +11479,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "A 2026 guide to Blender AI plugins lists 3D-Agent as a top pick for native Blender integration and says it uses Model Context Protocol to operate directly inside Blender instead of relying on export and import loops.",
               "why": "For a 3D artist, this is the important direction: AI tools are moving from external generators into DCC-native assistants. The winners may be the tools that understand scene context, not only produce meshes.",
-              "action": "Watch for Blender tools that can inspect scene hierarchy, materials, lighting, and modifiers before making edits. *Teacher explanation* DCC means Digital Content Creation software such as Blender, Houdini, Maya, or Cinema 4D. MCP is Model Context Protocol, a standard way for AI assistants to connect to tools and data sources.",
-              "teacher": "",
+              "action": "Watch for Blender tools that can inspect scene hierarchy, materials, lighting, and modifiers before making edits.",
+              "teacher": "DCC means Digital Content Creation software such as Blender, Houdini, Maya, or Cinema 4D. MCP is Model Context Protocol, a standard way for AI assistants to connect to tools and data sources.",
               "link": "https://3d-agent.com/blender-ai/plugin"
             },
             {
@@ -11491,8 +11491,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Claude Soul describes itself as a self-improving learning engine for Claude Code with persistent identity, cross-session memory, evidence tiers, reflections, and evolving cognitive frameworks.",
               "why": "This is close to OpenClaw-style assistants. The market is realizing that useful AI companions need continuity, correction loops, and calibrated behavior, not only chat history.",
-              "action": "Track which persistent-memory projects focus on verifiable behavior changes rather than just storing more notes. *Teacher explanation* Persistent memory stores useful context across sessions. The harder problem is behavioral learning: using past corrections to change how the assistant plans, verifies, pushes back, and communicates.",
-              "teacher": "",
+              "action": "Track which persistent-memory projects focus on verifiable behavior changes rather than just storing more notes.",
+              "teacher": "Persistent memory stores useful context across sessions. The harder problem is behavioral learning: using past corrections to change how the assistant plans, verifies, pushes back, and communicates.",
               "link": "https://github.com/DomDemetz/claude-soul"
             },
             {
@@ -11503,8 +11503,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The template is aimed at non-engineer product designers using AI coding agents. It asks the agent to slow down, extract product truth, ask PM-style questions, maintain source-of-truth docs, and build one capability at a time.",
               "why": "This is directly relevant to Garett teaching creators. The market needs workflows where creative direction stays with the designer while the agent handles engineering closure.",
-              "action": "Use the template idea for one small creative product: write product truth first, then let an agent build only one verified capability. *Teacher explanation* Source-of-truth docs are the living files that define product rules, flows, scope, risks, and acceptance criteria. They prevent important decisions from getting buried in a chat transcript.",
-              "teacher": "",
+              "action": "Use the template idea for one small creative product: write product truth first, then let an agent build only one verified capability.",
+              "teacher": "Source-of-truth docs are the living files that define product rules, flows, scope, risks, and acceptance criteria. They prevent important decisions from getting buried in a chat transcript.",
               "link": "https://github.com/tantsiho/designer-led-agent-starter"
             }
           ]
@@ -12106,8 +12106,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The repository describes a local-first agentic HTML editor that detects Claude Code, Cursor Agent, Codex, Gemini CLI, Copilot CLI, OpenCode, Qwen Coder, and Aider, then uses 75 skill templates across 9 deliverable surfaces. It exports single-file HTML or PNG for decks, magazine articles, data reports, prototypes, social cards, and video frames.",
               "why": "This is a direct upgrade path for Garetts teaching and consulting outputs: client reports, lesson handouts, before-after design audits, proposal decks, and social proof posts can become designed HTML artifacts instead of plain Markdown.",
-              "action": "Test one existing lesson outline: ask an agent to turn it into a 6-slide HTML mini-deck plus one client-ready one-page summary. Teacher explanation Agentic HTML means the AI writes the final visual web document, not just text. A skill template is a reusable design and workflow recipe that tells the agent how a specific artifact should be structured and styled. *",
-              "teacher": "",
+              "action": "Test one existing lesson outline: ask an agent to turn it into a 6-slide HTML mini-deck plus one client-ready one-page summary.",
+              "teacher": "Agentic HTML means the AI writes the final visual web document, not just text. A skill template is a reusable design and workflow recipe that tells the agent how a specific artifact should be structured and styled. *",
               "link": "https://github.com/nexu-io/html-anything"
             },
             {
@@ -12118,8 +12118,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The repo packages provider-neutral workflows for turning AI images and videos into runtime-ready game assets, including sprites, icons, backgrounds, video-to-frames animation, anchors, compression checks, and runtime QA. It emphasizes choosing the pipeline by the runtime job instead of chasing model hype.",
               "why": "This is a strong teaching module for Garett: students and small clients need to learn why AI concept art is not the same as production art. It can become a paid workshop on converting AI outputs into usable game or interactive assets.",
-              "action": "Build a tiny demo: generate one combat sprite idea, make a contact sheet, remove a solid background, and document the QA checks at target size. Teacher explanation Runtime-ready means the asset survives inside an actual app or game loop. It must have stable silhouettes, correct transparency, manageable texture size, and predictable behavior after import. *",
-              "teacher": "",
+              "action": "Build a tiny demo: generate one combat sprite idea, make a contact sheet, remove a solid background, and document the QA checks at target size.",
+              "teacher": "Runtime-ready means the asset survives inside an actual app or game loop. It must have stable silhouettes, correct transparency, manageable texture size, and predictable behavior after import. *",
               "link": "https://github.com/ybuild-ai/ai-game-art-pipeline-skill"
             },
             {
@@ -12130,8 +12130,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The skill opens an HTML file or URL through Playwright MCP, captures desktop, tablet, and mobile screenshots, then audits typography, contrast, rhythm, spacing, hierarchy, color, and alignment with concrete CSS fixes. The author frames it as moving from generic code-only feedback to pixel-aware design review.",
               "why": "This is productized consulting material: Garett can offer fast AI-assisted design audits for landing pages, portfolios, course pages, and student projects, while still applying his senior visual judgment.",
-              "action": "Run the workflow on one portfolio or landing page and create a one-page report: what works, critical issues, quick CSS fixes, and mobile risks. Teacher explanation Playwright MCP lets an AI assistant control a browser and capture pages. The important part is the visual loop: screenshot first, critique pixels second, then rerun after fixes. *",
-              "teacher": "",
+              "action": "Run the workflow on one portfolio or landing page and create a one-page report: what works, critical issues, quick CSS fixes, and mobile risks.",
+              "teacher": "Playwright MCP lets an AI assistant control a browser and capture pages. The important part is the visual loop: screenshot first, critique pixels second, then rerun after fixes. *",
               "link": "https://github.com/AslanMazhidov/design-review-skill"
             },
             {
@@ -12142,8 +12142,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The project offers MCP servers with tools for mesh inspection, repair, scaling, recursive splitting, dowel connectors, assembly manifests, BambuStudio conversion, arranging, orienting, slicing, previews, and print estimates. It chains STL or OBJ files into print-ready 3MF packages.",
               "why": "This points to a niche but valuable service: AI-assisted 3D print prep for large models, product mockups, props, and class projects. Garett could teach a practical bridge from 3D modeling to fabrication without making students memorize every slicer step.",
-              "action": "Take one oversized STL, inspect whether it fits a build volume, then write a manual checklist mirroring the repo pipeline: repair, split, connectors, manifest, estimate. Teacher explanation MCP means Model Context Protocol, a standard way for AI assistants to call external tools. A 3MF file is a richer 3D printing project format that can store model, material, and print setup information. *",
-              "teacher": "",
+              "action": "Take one oversized STL, inspect whether it fits a build volume, then write a manual checklist mirroring the repo pipeline: repair, split, connectors, manifest, estimate.",
+              "teacher": "MCP means Model Context Protocol, a standard way for AI assistants to call external tools. A 3MF file is a richer 3D printing project format that can store model, material, and print setup information. *",
               "link": "https://github.com/catesandrew/bambu-cli-mcp"
             },
             {
@@ -12154,8 +12154,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The repository combines a PPT generation skill, an Excel MCP server, and a Word live-editing MCP server. It claims local Office automation with native editable PowerPoint shapes, Excel formulas and pivots, and Word tracked changes, rather than uploading documents to a SaaS tool.",
               "why": "Client report production is a real bottleneck. Garett can turn this into a consulting offer: automate weekly reports, convert source docs to editable decks, or build a private local workflow for clients who cannot upload files to cloud AI tools.",
-              "action": "Test with a harmless sample: convert a short course outline into an editable PPTX and a one-page Word brief, then inspect whether the objects are truly editable. Teacher explanation Native editable output means the result is not a screenshot pasted into Office. Text boxes, shapes, charts, tables, comments, and revisions remain objects a client can edit later. *",
-              "teacher": "",
+              "action": "Test with a harmless sample: convert a short course outline into an editable PPTX and a one-page Word brief, then inspect whether the objects are truly editable.",
+              "teacher": "Native editable output means the result is not a screenshot pasted into Office. Text boxes, shapes, charts, tables, comments, and revisions remain objects a client can edit later. *",
               "link": "https://github.com/lingfan36/ai-office-mcp"
             },
             {
@@ -12166,8 +12166,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Harness is a macOS developer tool where an AI agent follows a plain-language goal in an iOS Simulator, macOS app, or web app, then reports whether it succeeded, the path it took, and where it found friction. The repo describes screenshots, replayable runs, persona setup, credential handling, and friction events.",
               "why": "For Garetts consulting, this creates a new audit category: AI-assisted UX walkthroughs for student apps, Webflow sites, portfolios, shops, and client prototypes. It helps move from subjective feedback to repeatable friction reports.",
-              "action": "Pick one web page and define a persona plus goal, such as first-time visitor tries to find the course price and contact form. Compare the agent friction report with Garetts own critique. Teacher explanation AI user testing is not the same as normal scripted testing. A scripted test checks a fixed path; an agent test tries to achieve a human goal and reports confusion along the way. *",
-              "teacher": "",
+              "action": "Pick one web page and define a persona plus goal, such as first-time visitor tries to find the course price and contact form. Compare the agent friction report with Garetts own critique.",
+              "teacher": "AI user testing is not the same as normal scripted testing. A scripted test checks a fixed path; an agent test tries to achieve a human goal and reports confusion along the way. *",
               "link": "https://github.com/awizemann/harness"
             },
             {
@@ -12178,8 +12178,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "agentsec scans skills for Claude Code, OpenClaw, Codex, ClawHub, skills.sh, and generic local skill directories. It checks risk categories such as malicious skills, supply chain compromise, over-privileged skills, insecure metadata, weak isolation, update drift, and missing governance, then can output text, JSON, SARIF, or HTML reports.",
               "why": "As Garett builds or teaches OpenClaw-style assistants, safety becomes a differentiator. A practical AI workflow audit can be sold to teams adopting skills, MCP servers, and agent automations without knowing what they have installed.",
-              "action": "Run a dry audit on a non-sensitive skills folder and turn the output into a client-friendly risk scorecard template. Teacher explanation OWASP is a security community known for practical risk lists. Agentic skills are reusable instructions and tool recipes; if they are overpowered or unreviewed, they can become a hidden attack surface. *",
-              "teacher": "",
+              "action": "Run a dry audit on a non-sensitive skills folder and turn the output into a client-friendly risk scorecard template.",
+              "teacher": "OWASP is a security community known for practical risk lists. Agentic skills are reusable instructions and tool recipes; if they are overpowered or unreviewed, they can become a hidden attack surface. *",
               "link": "https://github.com/semiotic-ai/agentsec"
             },
             {
@@ -12190,8 +12190,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The project lets Codex, Claude Code, Cursor-style agents, and other MCP clients launch or attach to Python programs, set breakpoints, step through code, inspect locals, expand variables, evaluate expressions, and stop sessions. The stated goal is to let agents debug with runtime state like a human engineer.",
               "why": "This is useful for Garett building small teaching apps, automations, and support tools. It also creates a teachable point: vibe coding should not just be prompting; serious work needs tests, logs, breakpoints, and observed state.",
-              "action": "Use a tiny broken Python script and compare two agent runs: one without debugger access and one with runtime locals shown at the bug line. Teacher explanation Runtime state is what the program actually knows while it is running, such as variable values and stack frames. Debug Adapter Protocol is a common bridge used by editors and debuggers. *",
-              "teacher": "",
+              "action": "Use a tiny broken Python script and compare two agent runs: one without debugger access and one with runtime locals shown at the bug line.",
+              "teacher": "Runtime state is what the program actually knows while it is running, such as variable values and stack frames. Debug Adapter Protocol is a common bridge used by editors and debuggers. *",
               "link": "https://github.com/illscience/vibe-debug"
             },
             {
@@ -12202,8 +12202,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "OpsinTech describes itself as an AI-native operations platform built on the DeerFlow agent runtime, adding multi-tenancy, role-based access control, audit logging, admin dashboards, database-backed configuration, model provider templates, and per-tenant skills and MCP management.",
               "why": "This is a market signal: businesses are moving from agent demos to governed agent platforms. Garett can consult around the human side of this shift: what workflows should be automated, what must stay approved by people, and how to train teams safely.",
-              "action": "Create a simple consulting checklist: users, roles, tools, approvals, audit logs, data boundaries, and rollback plan for any proposed client agent workflow. Teacher explanation RBAC means role-based access control: different users get different powers. Multi-tenancy means one platform can serve separate teams or clients while keeping their data and settings isolated. *",
-              "teacher": "",
+              "action": "Create a simple consulting checklist: users, roles, tools, approvals, audit logs, data boundaries, and rollback plan for any proposed client agent workflow.",
+              "teacher": "RBAC means role-based access control: different users get different powers. Multi-tenancy means one platform can serve separate teams or clients while keeping their data and settings isolated. *",
               "link": "https://github.com/OpsinTech/opsintech-platform"
             },
             {
@@ -12214,8 +12214,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "vibe-station lets users run Claude Code, Cursor, OpenCode, and Gemini CLI side by side, each on its own branch and worktree, with live terminal streaming, file previews, diffs, markdown rendering, and browser-based oversight. It is positioned as a hub for parallel vibe coding.",
               "why": "For Garett, this suggests a future teaching setup: one agent builds, one reviews, one writes tests, and one documents a demo app, all visible to students. It also helps him supervise app-building work without losing control of branches and changes.",
-              "action": "Sketch a class demo with three agent roles: builder, reviewer, and documentation writer. Define what each is allowed to change before any real coding starts. Teacher explanation A git worktree is a separate checkout of the same repository on another branch. It lets multiple experiments happen at once without agents overwriting each others files. *",
-              "teacher": "",
+              "action": "Sketch a class demo with three agent roles: builder, reviewer, and documentation writer. Define what each is allowed to change before any real coding starts.",
+              "teacher": "A git worktree is a separate checkout of the same repository on another branch. It lets multiple experiments happen at once without agents overwriting each others files. *",
               "link": "https://github.com/fastestdevalive/vibe-station"
             }
           ]
@@ -12675,8 +12675,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "OpenAI says Codex is now available in the ChatGPT mobile app, letting users review active threads, approve commands, inspect diffs, see test results, and steer work running on laptops, dev boxes, or remote environments. The post frames this as the new collaboration rhythm for longer-running coding agents.",
               "why": "This is a direct opportunity for Garett to build small teaching/support tools without sitting at the computer the whole time. It also becomes a consulting angle: help studios set up mobile-supervised AI production agents with clear approval habits.",
-              "action": "Test one tiny support app idea: ask Codex to build a student FAQ page or asset-checklist tool, then only use mobile check-ins to approve, redirect, and review the result. Teacher explanation Codex: OpenAI coding agent. Agent workflow: a process where AI does multi-step work, asks for approvals, and reports progress instead of only answering one prompt.",
-              "teacher": "",
+              "action": "Test one tiny support app idea: ask Codex to build a student FAQ page or asset-checklist tool, then only use mobile check-ins to approve, redirect, and review the result.",
+              "teacher": "Codex: OpenAI coding agent. Agent workflow: a process where AI does multi-step work, asks for approvals, and reports progress instead of only answering one prompt.",
               "link": "https://openai.com/index/work-with-codex-from-anywhere"
             },
             {
@@ -12687,8 +12687,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "GitHub says it is piloting an experimental accessibility agent inside Copilot CLI and VS Code to answer accessibility questions and catch simple objective front-end issues before production. The post says the agent reviewed 3,535 pull requests and reached a 68 percent resolution rate.",
               "why": "Garett can turn accessibility into a client-report upsell for websites, course pages, portfolios, and interactive product demos. It is also teachable: design quality is not only beauty, it includes labels, structure, contrast, and usability.",
-              "action": "Run one portfolio or course landing page through an accessibility checklist and create a one-page before/after report template for clients. Teacher explanation Accessibility agent: an AI helper that checks if a digital product can be used by people with disabilities. Pull request: a proposed code change that can be reviewed before going live.",
-              "teacher": "",
+              "action": "Run one portfolio or course landing page through an accessibility checklist and create a one-page before/after report template for clients.",
+              "teacher": "Accessibility agent: an AI helper that checks if a digital product can be used by people with disabilities. Pull request: a proposed code change that can be reviewed before going live.",
               "link": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/"
             },
             {
@@ -12699,8 +12699,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Webflow published a piece arguing that AI-generated code can ship quickly but create later cleanup costs when governance, ownership, and review are missing. It frames the debt across engineering teams, indie builders, and wider ecosystems.",
               "why": "This is a strong consulting offer: AI-built site audit, cleanup plan, and maintainability score. Garett can sell this to clients using Webflow, Framer, Canva, Lovable, or vibe-coded prototypes that look finished but are fragile underneath.",
-              "action": "Create a simple audit checklist with 10 items: ownership, secrets, responsive layout, accessibility, content structure, analytics, performance, errors, backups, and update path. Teacher explanation Technical debt: hidden future work caused by fast but messy decisions. Governance: rules and review steps that stop AI output from becoming unmaintainable.",
-              "teacher": "",
+              "action": "Create a simple audit checklist with 10 items: ownership, secrets, responsive layout, accessibility, content structure, analytics, performance, errors, backups, and update path.",
+              "teacher": "Technical debt: hidden future work caused by fast but messy decisions. Governance: rules and review steps that stop AI output from becoming unmaintainable.",
               "link": "https://webflowmarketingmain.com/blog/cleanup-cost-ai-generated-code"
             },
             {
@@ -12711,8 +12711,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Webflow posted a tutorial on building a Claude-powered chat interface on a Webflow site using Webflow Cloud, with the core promise that the API key is not exposed in front-end code.",
               "why": "This points to a service Garett can package: AI course assistant, studio FAQ bot, client onboarding bot, or project-status assistant embedded on a website. The key lesson is not just chat, but safe deployment.",
-              "action": "Prototype a Webflow-style course helper that answers from a short lesson outline, then document what must stay server-side before selling it to clients. Teacher explanation API key: a secret credential that lets software call an AI service. Server-side: code running on a secure backend instead of inside the visitor browser.",
-              "teacher": "",
+              "action": "Prototype a Webflow-style course helper that answers from a short lesson outline, then document what must stay server-side before selling it to clients.",
+              "teacher": "API key: a secret credential that lets software call an AI service. Server-side: code running on a secure backend instead of inside the visitor browser.",
               "link": "https://webflowmarketingmain.com/blog/claude-chat-webflow"
             },
             {
@@ -12723,8 +12723,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "Product Hunt describes Loova Agents as an AI director for creating cinematic videos with ease. It appeared in the May 16 Product Hunt feed as a new launch.",
               "why": "For Garett, this is not just another video tool. It is a test bed for teaching cinematic prompting, reference boards, shot breakdowns, and client-ready previsualization packages.",
-              "action": "Make a 20-second mock product film from one product image and write down the prompt structure: mood, camera, lighting, lens, action, and brand notes. Teacher explanation Previsualization: a quick rough version of a shot or sequence used to plan the final production. AI director: a tool that helps decide shots, timing, and visual style from prompts.",
-              "teacher": "",
+              "action": "Make a 20-second mock product film from one product image and write down the prompt structure: mood, camera, lighting, lens, action, and brand notes.",
+              "teacher": "Previsualization: a quick rough version of a shot or sequence used to plan the final production. AI director: a tool that helps decide shots, timing, and visual style from prompts.",
               "link": "https://www.producthunt.com/products/loova-agents"
             },
             {
@@ -12735,8 +12735,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "Product Hunt describes Riffly as a tool where users describe a deck and AI builds it, with export to PowerPoint. It appeared in the May 16 Product Hunt launch feed.",
               "why": "This is useful for Garett's teaching funnel: outline a workshop, generate a first deck, then apply professional visual direction by hand. The sellable angle is AI-assisted deck production plus human art direction.",
-              "action": "Generate a 10-slide mini lesson on lighting a 3D product render, export to PowerPoint, then spend 20 minutes improving only hierarchy and examples. Teacher explanation PowerPoint export: the deck can be edited in Microsoft PowerPoint instead of staying locked in a web tool. Hierarchy: the visual order that tells students what to read first.",
-              "teacher": "",
+              "action": "Generate a 10-slide mini lesson on lighting a 3D product render, export to PowerPoint, then spend 20 minutes improving only hierarchy and examples.",
+              "teacher": "PowerPoint export: the deck can be edited in Microsoft PowerPoint instead of staying locked in a web tool. Hierarchy: the visual order that tells students what to read first.",
               "link": "https://www.producthunt.com/products/riffly"
             },
             {
@@ -12747,8 +12747,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The GitHub project describes an AI-agent skill for Claude Code, Codex, and similar agents that generates single-file HTML horizontal slide decks, slide imagery, and social covers. It includes editorial magazine and Swiss international style systems plus checklists.",
               "why": "This is close to Garett's sweet spot: AI can produce structure, but the market advantage comes from typography, layout taste, and visual critique. It can become a course module: from prompt to publishable deck.",
-              "action": "Clone the idea manually: make one HTML deck template with Garett's preferred dark OCC style and use an agent to fill it from lesson notes. Teacher explanation HTML deck: a presentation built as a web page instead of a PPT file. Swiss style: clean grid-based design with strong typography and minimal decoration.",
-              "teacher": "",
+              "action": "Clone the idea manually: make one HTML deck template with Garett's preferred dark OCC style and use an agent to fill it from lesson notes.",
+              "teacher": "HTML deck: a presentation built as a web page instead of a PPT file. Swiss style: clean grid-based design with strong typography and minimal decoration.",
               "link": "https://github.com/op7418/guizang-ppt-skill"
             },
             {
@@ -12759,8 +12759,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "The GitHub readme says pretext-pdf-mcp is an MCP server for generating professional PDFs from structured JSON in Claude, Cursor, or other AI agents. It highlights no headless browser, embedded fonts, precision text layout, a live demo, and templates for invoices, market reports, resumes, and custom documents.",
               "why": "This maps directly to Garett's client-report workflow: project audits, design reviews, course certificates, invoices, and market summaries can become repeatable agent-generated deliverables.",
-              "action": "Create a JSON outline for a 3D asset audit report with sections for brief, issues, screenshots, fixes, and next steps; then test whether the output is clean enough for client delivery. Teacher explanation MCP: Model Context Protocol, a standard way for AI assistants to use external tools. JSON: structured text that tells software exactly what content goes where.",
-              "teacher": "",
+              "action": "Create a JSON outline for a 3D asset audit report with sections for brief, issues, screenshots, fixes, and next steps; then test whether the output is clean enough for client delivery.",
+              "teacher": "MCP: Model Context Protocol, a standard way for AI assistants to use external tools. JSON: structured text that tells software exactly what content goes where.",
               "link": "https://github.com/Himaan1998Y/pretext-pdf-mcp"
             },
             {
@@ -12771,8 +12771,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "The GitHub project describes automating Blender with Claude AI and Blender MCP, including creating 3D objects with a local Hunyuan 3D generator. The repository was surfaced in recent GitHub results for Blender MCP automation.",
               "why": "This is highly relevant to Garett's authority as a senior 3D artist. Students and clients will need help separating toy demos from usable production workflows, especially topology, scale, naming, materials, and cleanup.",
-              "action": "Pick one simple prop, generate it through the AI-Blender path, then grade it like a class assignment: mesh quality, UVs, material logic, scene scale, and render readiness. Teacher explanation Blender MCP: a bridge that lets an AI assistant control Blender tools. Hunyuan 3D: Tencent's 3D generation model family for creating 3D assets from prompts or images.",
-              "teacher": "",
+              "action": "Pick one simple prop, generate it through the AI-Blender path, then grade it like a class assignment: mesh quality, UVs, material logic, scene scale, and render readiness.",
+              "teacher": "Blender MCP: a bridge that lets an AI assistant control Blender tools. Hunyuan 3D: Tencent's 3D generation model family for creating 3D assets from prompts or images.",
               "link": "https://github.com/laxmimerit/Automate-Blender-with-Claude-AI"
             },
             {
@@ -12783,8 +12783,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Product Hunt describes Agentmemory as persistent memory for Codex, Hermes, OpenClaw, Claude, and other agents. It appeared in the May 16 Product Hunt launch feed.",
               "why": "This matters because teaching and consulting assistants become much more valuable when they remember course rules, client preferences, style guides, and prior decisions. Garett can consult around memory design: what to store, what not to store, and how to avoid leaks.",
-              "action": "Design a memory policy for one course assistant: store student progress and common questions, but never store private payment details or sensitive client files. Teacher explanation Persistent memory: saved context that survives after a chat ends. Memory policy: rules deciding what the assistant may remember, forget, or keep private.",
-              "teacher": "",
+              "action": "Design a memory policy for one course assistant: store student progress and common questions, but never store private payment details or sensitive client files.",
+              "teacher": "Persistent memory: saved context that survives after a chat ends. Memory policy: rules deciding what the assistant may remember, forget, or keep private.",
               "link": "https://www.producthunt.com/products/agent-memory-dev"
             }
           ]
@@ -13031,9 +13031,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Intermediate",
               "summary": "The GitHub project describes a Claude Skill that processes many content types such as web pages, YouTube, PDFs, Markdown, Word, PowerPoint, images, audio, and ZIP files into NotebookLM outputs like podcasts, PPTs, mind maps, quizzes, videos, reports, infographics, and flashcards.",
-              "why": "The safe, legitimate version of this pattern is excellent for course creation: collect owned or public materials, convert them into multiple learning assets, then review and improve them with teacher judgment.",
-              "action": "Use only owned notes or public documentation and create one mini lesson package: slide outline, quiz, flashcards, and a short audio explainer.",
-              "teacher": "A Claude Skill is a reusable folder of instructions and resources that teaches an AI assistant how to perform a repeatable workflow. Use it ethically with content you have rights to use.",
+              "why": "The safe, legitimate version of this pattern is excellent for course creation: collect owned or public materials, convert them into multiple learning assets, then review and improve them with",
+              "action": "Use only owned notes or public documentation and create one mini lesson package: slide outline, quiz, flashcards, and a short audio explainer. *Teacher explanation:* A Claude Skill is a reusable folder of instructions and resources that teaches an AI assistant how to perform a repeatable workflow. Use it ethically with content you have rights to use.",
+              "teacher": "judgment.",
               "link": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm"
             },
             {
@@ -13188,9 +13188,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "GitHub",
               "relevance": "Beginner",
               "summary": "The repo positions skills as practical patterns from a real .claude directory, including alignment sessions, shared language, issue triage, and process control for Claude Code, Codex, and other agents.",
-              "why": "This is a strong education signal. The winning teachers will not only teach prompts; they will teach reusable habits that keep agents aligned with human intent.",
-              "action": "Adapt the idea of a 'grill me first' skill for design briefs, client discovery, and 3D asset requirements.",
-              "teacher": "Composable means each skill does one focused job and can be combined with others. That is easier to teach and debug than one huge master prompt.",
+              "why": "This is a strong education signal. The winning",
+              "action": "Adapt the idea of a 'grill me first' skill for design briefs, client discovery, and 3D asset requirements. *Teacher explanation:* Composable means each skill does one focused job and can be combined with others. That is easier to teach and debug than one huge master prompt.",
+              "teacher": "s will not only teach prompts; they will teach reusable habits that keep agents aligned with human intent.",
               "link": "https://github.com/mattpocock/skills"
             },
             {
@@ -13244,8 +13244,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "OpenAI says Codex can now be used from the ChatGPT mobile app to review outputs, approve commands, change models, and continue work across laptops, devboxes, or remote environments. The same post says Remote SSH is generally available and hooks can scan prompts, run validators, log conversations, and customize behavior.",
               "why": "This is a market signal that AI work is becoming something a consultant supervises across devices, not a one-seat desktop tool. Garett can sell lightweight teaching/support apps and supervise course assets, lesson pages, or client prototype fixes while away from the workstation.",
-              "action": "Test one small support app idea: ask Codex to build a course FAQ page, then review the diff and approval flow from mobile. Teacher explanation Remote SSH lets a tool work inside another machine over a secure terminal connection. Hooks are small scripts that run at key moments, such as before an agent executes a command, so teams can add safety checks or logging. *",
-              "teacher": "",
+              "action": "Test one small support app idea: ask Codex to build a course FAQ page, then review the diff and approval flow from mobile.",
+              "teacher": "Remote SSH lets a tool work inside another machine over a secure terminal connection. Hooks are small scripts that run at key moments, such as before an agent executes a command, so teams can add safety checks or logging. *",
               "link": "https://openai.com/index/work-with-codex-from-anywhere/"
             },
             {
@@ -13255,9 +13255,9 @@ window.DASHBOARD_ARCHIVE = {
               "source": "Official",
               "relevance": "Intermediate",
               "summary": "Runway news currently points users to Runway Agent and frames it as a creative partner, with an active Pro promotion. The visible official page is light on details, but the product positioning is clear: creative AI is moving from single generation tools toward agent-style workflows.",
-              "why": "For a senior 3D artist and teacher, the opportunity is to teach the difference between prompt-only video generation and supervised creative direction. Garett can package this as a workshop: storyboard, reference, generate, critique, iterate, and deliver.",
+              "why": "For a senior 3D artist and",
               "action": "Run a 30-minute test: turn one old 3D still into a 10-second promo concept and document every decision the agent needs from a human art director. Teacher explanation An AI creative agent is not just a model that outputs one clip. It is a workflow layer that can take direction, keep context, and help coordinate multiple creative steps. *",
-              "teacher": "",
+              "teacher": ", the opportunity is to teach the difference between prompt-only video generation and supervised creative direction. Garett can package this as a workshop: storyboard, reference, generate, critique, iterate, and deliver.",
               "link": "https://runwayml.com/news"
             },
             {
@@ -13268,8 +13268,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Meshy says Workspace 3.0 replaces separate Text to 3D, Image to 3D, texturing, remesh, and asset pages with task-oriented modules. It adds a unified 3D Model workflow, 3D Printing module, Scene and Video modules, and assets/projects inside the workspace.",
               "why": "This is directly teachable: clients and students need help understanding where AI 3D is useful and where senior artist cleanup still matters. Garett can sell an AI 3D pipeline audit: prompt, generate, remesh, texture, printability check, Blender cleanup, and final delivery.",
-              "action": "Create one small asset pack: generate a prop, texture it, remesh it, check printability, export to Blender, and note which steps still need professional judgment. Teacher explanation Remesh means rebuilding the polygon structure of a 3D model so it is cleaner or easier to animate, texture, print, or edit. Printability checks look for problems that would fail on a real 3D printer. *",
-              "teacher": "",
+              "action": "Create one small asset pack: generate a prop, texture it, remesh it, check printability, export to Blender, and note which steps still need professional judgment.",
+              "teacher": "Remesh means rebuilding the polygon structure of a 3D model so it is cleaner or easier to animate, texture, print, or edit. Printability checks look for problems that would fail on a real 3D printer. *",
               "link": "https://www.meshy.ai/blog/workspace3"
             },
             {
@@ -13280,8 +13280,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Beginner",
               "summary": "Webflow says designers and site managers can save a default preview role so the canvas opens in a simplified view automatically on every visit. The update is aimed at role-based site review and collaboration.",
               "why": "This is small but sellable. For client website work, reducing UI confusion is part of consulting value. Garett can set up client-friendly review roles so nontechnical stakeholders only see what they are allowed to see.",
-              "action": "Make a demo Webflow project with one editor role and record a short before/after showing how the client review experience becomes less confusing. Teacher explanation A preview role is a permission-based view of the site editor. It lets different people see the project as an editor, marketer, designer, or other role instead of seeing the full builder interface. *",
-              "teacher": "",
+              "action": "Make a demo Webflow project with one editor role and record a short before/after showing how the client review experience becomes less confusing.",
+              "teacher": "A preview role is a permission-based view of the site editor. It lets different people see the project as an editor, marketer, designer, or other role instead of seeing the full builder interface. *",
               "link": "https://webflowmarketingmain.com/updates/default-preview-role-per-site"
             },
             {
@@ -13292,8 +13292,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Webflow says users with page-specific access can now publish only the pages they are allowed to edit when using Single-Page Publishing. Admins can restrict both page access and who can publish the full site.",
               "why": "This is a practical consulting angle for client teams: safe delegation. Garett can offer a Webflow governance setup for marketing pages, portfolio pages, launch pages, and campaign pages where junior staff can update content without risking the whole site.",
-              "action": "Draft a one-page client SOP: who can edit, who can publish, what pages are locked, and what review step happens before launch. Teacher explanation Single-Page Publishing means publishing only one selected page instead of the whole website. Page-specific access means each user can be limited to certain pages. *",
-              "teacher": "",
+              "action": "Draft a one-page client SOP: who can edit, who can publish, what pages are locked, and what review step happens before launch.",
+              "teacher": "Single-Page Publishing means publishing only one selected page instead of the whole website. Page-specific access means each user can be limited to certain pages. *",
               "link": "https://webflowmarketingmain.com/updates/single-page-publishing-access"
             },
             {
@@ -13304,8 +13304,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Vercel says AI Gateway now supports sorting model providers by cost, time to first token, or tokens per second. It also exposes routing metadata so teams can see why a provider was chosen.",
               "why": "This turns model choice into a consulting deliverable. Garett can help small teams choose when to optimize for cheap drafts, fast classroom demos, or higher-throughput report generation.",
-              "action": "Build a tiny model-routing calculator for a course demo: one prompt optimized for lowest cost, one for fastest first response, and one for long-output speed. Teacher explanation TTFT means time to first token, or how long the user waits before the first words appear. TPS means tokens per second, or how fast the model continues writing once it starts. *",
-              "teacher": "",
+              "action": "Build a tiny model-routing calculator for a course demo: one prompt optimized for lowest cost, one for fastest first response, and one for long-output speed.",
+              "teacher": "TTFT means time to first token, or how long the user waits before the first words appear. TPS means tokens per second, or how fast the model continues writing once it starts. *",
               "link": "https://vercel.com/changelog/sort-providers-by-cost-latency-or-throughput-on-ai-gateway"
             },
             {
@@ -13316,8 +13316,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Cloudflare says the Agents SDK update improves recovery when browser streams are interrupted, fixes state synchronization, adds durable Think submissions, exposes routing retry configuration, and adds connection control for Voice agents.",
               "why": "Reliable agent behavior is becoming the difference between a toy demo and a paid client system. Garett can consult around course bots, client intake bots, and portfolio assistants that survive refreshes, dropped connections, and longer tasks.",
-              "action": "Prototype a course helper bot that keeps generating an answer after the browser refreshes, then show students why reliability matters more than a flashy prompt. Teacher explanation Durable Objects are Cloudflare's stateful serverless objects. They help an app remember and recover state across reconnects, restarts, or long-running agent tasks. *",
-              "teacher": "",
+              "action": "Prototype a course helper bot that keeps generating an answer after the browser refreshes, then show students why reliability matters more than a flashy prompt.",
+              "teacher": "Durable Objects are Cloudflare's stateful serverless objects. They help an app remember and recover state across reconnects, restarts, or long-running agent tasks. *",
               "link": "https://developers.cloudflare.com/changelog/post/2026-05-13-agents-sdk-v0124/"
             },
             {
@@ -13328,8 +13328,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Notion developer changelog says the Update page markdown endpoint now supports insert_content.position, letting integrations prepend markdown to the start of a page or append it to the end without rewriting the full page.",
               "why": "This matters for AI-generated course notes and client reports. An assistant can add a summary at the top, append meeting notes at the bottom, or maintain a living lesson page without overwriting the rest.",
-              "action": "Create a Notion course page test where an AI summary is prepended at the top and a lesson changelog is appended at the bottom. Teacher explanation Markdown is a plain-text writing format used by many AI tools. Prepend means insert at the beginning. Append means insert at the end. *",
-              "teacher": "",
+              "action": "Create a Notion course page test where an AI summary is prepended at the top and a lesson changelog is appended at the bottom.",
+              "teacher": "Markdown is a plain-text writing format used by many AI tools. Prepend means insert at the beginning. Append means insert at the end. *",
               "link": "https://developers.notion.com/page/changelog"
             },
             {
@@ -13340,8 +13340,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Advanced",
               "summary": "Cloudflare says R2 SQL now supports joining multiple Iceberg tables, filtering with subqueries, and using multi-table CTEs. It lets teams query data stored in R2 without exporting it to a separate warehouse.",
               "why": "This is a quiet opportunity for AI-native reporting. Garett can sell lightweight client dashboards or monthly report systems where raw data stays cheap in object storage and AI helps explain the results.",
-              "action": "Sketch a client report architecture: website events in R2, R2 SQL query, AI-written insight summary, and a designed PDF or web report. Teacher explanation A JOIN combines rows from two tables, such as clients and invoices. A subquery is a query inside another query. Iceberg is a table format for large data stored in files. *",
-              "teacher": "",
+              "action": "Sketch a client report architecture: website events in R2, R2 SQL query, AI-written insight summary, and a designed PDF or web report.",
+              "teacher": "A JOIN combines rows from two tables, such as clients and invoices. A subquery is a query inside another query. Iceberg is a table format for large data stored in files. *",
               "link": "https://developers.cloudflare.com/changelog/post/2026-05-14-joins-subqueries-multi-table-queries/"
             },
             {
@@ -13352,8 +13352,8 @@ window.DASHBOARD_ARCHIVE = {
               "relevance": "Intermediate",
               "summary": "Vercel says Protected Source Maps can put production .map files behind Vercel Authentication so the team can debug readable stack traces while public visitors get a 404. New projects have it enabled by default, and existing projects can opt in.",
               "why": "As more freelancers ship vibe-coded client sites, security and debugging hygiene become a premium service. Garett can teach students that shipping is not enough: client apps need safe debugging, review, and deployment habits.",
-              "action": "Audit one deployed demo app: check whether source maps are publicly exposed, then document a safe debug setup for students or clients. Teacher explanation A source map connects minified browser code back to the original readable files. It helps debugging, but if public it can expose implementation details. *",
-              "teacher": "",
+              "action": "Audit one deployed demo app: check whether source maps are publicly exposed, then document a safe debug setup for students or clients.",
+              "teacher": "A source map connects minified browser code back to the original readable files. It helps debugging, but if public it can expose implementation details. *",
               "link": "https://vercel.com/changelog/protected-source-maps-ship-browser-source-maps-securely"
             }
           ]

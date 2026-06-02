@@ -10,7 +10,7 @@ window.DASHBOARD_DATA = {
     "operator": "GARETT",
     "generatedAt": "2026-06-02 · 20:39 GMT+8",
     "latestBrief": "2026-06-02 · 20:39 GMT+8",
-    "fetchedAt": "2026-06-02 22:18",
+    "fetchedAt": "2026-06-02 22:22",
     "source": "myaiagent2026@gmail.com"
   },
   "briefs": [
@@ -239,12 +239,12 @@ window.DASHBOARD_DATA = {
           "n": 7,
           "category": "Context Cost Savings",
           "title": "Headroom: Compress AI Agent Context by 60-95% with Same Accuracy (4.8k Stars)",
-          "source": "GitHub (Trending Python weekly)",
+          "source": "GitHub (Trending Python weekly) Headroom compresses tool outputs, logs, RAG chunks, files, and conversation history before they reach the LLM. Uses multiple algorithms (SmartCrusher, CodeCompressor, Kompress-base) with cross-agent memory and reversible CCR compression. Works as library, proxy, agent wrapper, or MCP server.",
           "relevance": "Intermediate",
-          "summary": "Headroom compresses tool outputs, logs, RAG chunks, files, and conversation history before they reach the LLM. Uses multiple algorithms (SmartCrusher, CodeCompressor, Kompress-base) with cross-agent memory and reversible CCR compression. Works as library, proxy, agent wrapper, or MCP server.",
+          "summary": "instead of the raw 50-page report. https://github.com/chopratejas/headroom",
           "why": "Token costs add up fast in teaching labs and consulting projects. Headroom cuts costs drastically with zero accuracy loss. Garett can teach this as a \"token budget management\" skill. The cross-agent memory feature is particularly useful for courses where students share agent accounts.",
           "action": "Run pip install headroom-ai[all] then try headroom wrap claude to automatically compress all context for Claude Code. Run headroom stats to see your token savings.",
-          "teacher": "What does \"compressing context before the LLM sees it\" mean? When an AI agent reads files or runs tools, it sends all that text to the LLM and pays for every word. Headroom squeezes that text - removing redundancy, summarizing logs, condensing JSON - before sending it. The LLM still gets the same meaning but pays for fewer tokens. Think of it like emailing a summary instead of the raw 50-page report. https://github.com/chopratejas/headroom",
+          "teacher": "What does \"compressing context before the LLM sees it\" mean? When an AI agent reads files or runs tools, it sends all that text to the LLM and pays for every word. Headroom squeezes that text - removing redundancy, summarizing logs, condensing JSON - before sending it. The LLM still gets the same meaning but pays for fewer tokens. Think of it like emailing a",
           "link": null
         },
         {
