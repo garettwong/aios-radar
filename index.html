@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIOS · OCC AI Opportunity Radar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>" />
+  <meta name="theme-color" content="#050607" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AIOS Radar" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
+</head>
+<body>
+  <!-- ====================== HEADER ====================== -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">AIOS</span>
+      <span class="brand-sub" id="brand-tagline">OCC AI OPPORTUNITY RADAR</span>
+    </div>
+    <div class="topbar-meta">
+      <div class="meta-item"><span class="meta-label">OPERATOR</span><span class="meta-val" id="meta-operator">—</span></div>
+      <div class="meta-item"><span class="meta-label">UNREAD</span><span class="meta-val" id="meta-unread">—</span></div>
+      <div class="meta-item"><span class="meta-label">LATEST</span><span class="meta-val" id="meta-updated">—</span></div>
+      <div class="meta-item clock">
+        <span class="meta-val" id="clock-time">--:--:--</span>
+        <span class="meta-label" id="clock-date">—</span>
+      </div>
+      <div class="fontctl" title="Text size">
+        <button id="fs-dec" aria-label="Smaller text">A−</button>
+        <span id="fs-level">L</span>
+        <button id="fs-inc" aria-label="Bigger text">A+</button>
+      </div>
+      <button class="refresh-btn" id="refresh-btn" title="Reload the page">⟳ RELOAD</button>
+    </div>
+  </header>
+
+  <div class="status-banner" id="status-banner" hidden></div>
+
+  <!-- ====================== VIEW NAV ====================== -->
+  <nav class="viewnav">
+    <button class="vnav active" data-view="radar">📡 RADAR <span class="vnav-sub">live</span></button>
+    <button class="vnav" data-view="library">📚 LIBRARY <span class="vnav-count" id="lib-nav-count">0</span></button>
+  </nav>
+  <div class="view-help" id="view-help"></div>
+
+  <div id="radar-view">
+  <!-- ====================== CONTROLS (top) ====================== -->
+  <section class="controls">
+    <div class="edition-wrap" id="edition-wrap" hidden>
+      <label for="edition-select">📅 EDITION</label>
+      <select id="edition-select"></select>
+    </div>
+    <div class="filter-row" id="filter-row"></div>
+    <div class="view-toggles">
+      <button class="vtoggle" id="toggle-read" title="Hide read — show only unread">🔽 Unread only</button>
+      <button class="vtoggle" id="toggle-saved" title="Show only saved items">★ Saved</button>
+    </div>
+    <input type="search" class="search-box" id="search-box" placeholder="search signals…" autocomplete="off" />
+  </section>
+
+  <!-- ====================== NEWS (primary, top) ====================== -->
+  <main class="grid">
+    <section class="panel column" id="col-trend">
+      <div class="panel-head">
+        <span class="panel-title" id="trend-title">AI TRENDS</span>
+        <span class="head-right">
+          <button class="markall" data-col="trend" title="Mark everything shown here as read (they stay, shaded)">✓ all read</button>
+          <span class="panel-count" id="trend-count">0</span>
+        </span>
+      </div>
+      <p class="panel-subtitle" id="trend-subtitle"></p>
+      <div class="signal-list" id="trend-signals"></div>
+    </section>
+
+    <section class="panel column" id="col-job">
+      <div class="panel-head">
+        <span class="panel-title" id="job-title">OPPORTUNITY</span>
+        <span class="head-right">
+          <button class="markall" data-col="job" title="Mark everything shown here as read (they stay, shaded)">✓ all read</button>
+          <span class="panel-count" id="job-count">0</span>
+        </span>
+      </div>
+      <p class="panel-subtitle" id="job-subtitle"></p>
+      <div class="signal-list" id="job-signals"></div>
+    </section>
+
+    <aside class="side-rail">
+      <article class="panel">
+        <div class="panel-head"><span class="panel-title">▦ STATS</span></div>
+        <div class="stats-grid" id="stats-grid"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-head"><span class="panel-title">▤ RELEVANCE</span></div>
+        <div class="bars" id="relevance-bars"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-head">
+          <span class="panel-title">✓ ACTION QUEUE</span>
+          <span class="panel-count" id="action-progress">0/0</span>
+        </div>
+        <div class="action-list" id="action-list"></div>
+      </article>
+      <article class="panel" id="projects-panel" hidden>
+        <div class="panel-head">
+          <span class="panel-title">⊞ PROJECTS</span>
+          <span class="panel-count" id="projects-count">0</span>
+        </div>
+        <div class="project-list" id="project-list"></div>
+      </article>
+    </aside>
+  </main>
+
+  <!-- ====================== CONTEXT (secondary, below) ====================== -->
+  <div class="section-label">▾ CONTEXT &amp; SUMMARY</div>
+  <section class="focus" id="focus-row"></section>
+  <section class="strip" id="strip-row"></section>
+  </div><!-- /radar-view -->
+
+  <!-- ====================== LIBRARY VIEW ====================== -->
+  <div id="library-view" hidden>
+    <section class="controls">
+      <div class="filter-row" id="lib-type-row"></div>
+      <div class="view-toggles">
+        <button class="vtoggle" id="lib-toggle-read" title="Hide read — show only unread">🔽 Unread only</button>
+        <button class="vtoggle" id="lib-toggle-saved" title="Show only saved items">★ Saved</button>
+      </div>
+      <input type="search" class="search-box" id="lib-search" placeholder="search all 1,914 items…" autocomplete="off" />
+    </section>
+    <div class="lib-meta" id="lib-meta"></div>
+    <div class="lib-cols" id="library-list">
+      <div class="lib-col" id="lib-col-left"></div>
+      <div class="lib-col" id="lib-col-right"></div>
+    </div>
+    <div class="loadmore-wrap"><button class="loadmore" id="lib-loadmore" hidden>Load more</button></div>
+  </div>
+
+  <footer class="footer">
+    <span id="footer-note"></span>
+    <span class="footer-spark">AIOS // local build // data lives in <code>data.js</code></span>
+  </footer>
+
+  <button id="to-top" title="Back to top">↑ Top</button>
+
+  <!-- Refresh help modal -->
+  <div class="modal-overlay" id="modal-overlay" hidden>
+    <div class="modal">
+      <div class="modal-head"><span>⟳ HOW TO REFRESH</span><button id="modal-close">✕</button></div>
+      <div class="modal-body">
+        <p>The board pulls from your OCC AI Opportunity Radar emails. To get the newest:</p>
+        <ol>
+          <li>Ask Claude Code: <code>"refresh the dashboard"</code></li>
+          <li>It re-reads your emails and rebuilds the board (also runs automatically every 3h).</li>
+          <li>Reload this page.</li>
+        </ol>
+        <p class="modal-small">Tip: ✓ marks a card read (it stays, just shaded); ★ saves it. Use “Unread only” to hide read ones.</p>
+        <button class="reload-btn" id="reload-btn">⟳ Reload now</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="archive.js"></script>
+  <script src="catalog.js"></script>
+  <script src="profile.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

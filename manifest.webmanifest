@@ -1,0 +1,15 @@
+{
+  "name": "AIOS — OCC AI Opportunity Radar",
+  "short_name": "AIOS Radar",
+  "description": "Garett's AI news & job-opportunity radar.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#050607",
+  "theme_color": "#050607",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "type": "image/svg+xml", "sizes": "any" }
+  ]
+}
