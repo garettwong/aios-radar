@@ -5,10 +5,122 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-03 23:28",
-    "editions": 59
+    "fetchedAt": "2026-06-03 23:57",
+    "editions": 61
   },
   "editions": [
+    {
+      "key": "2026-06-03 21",
+      "label": "2026-06-03 · 21:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and enterprise AI signals.",
+          "date": "2026-06-03 · 21:00 GMT+8",
+          "quickRead": [
+            "Nvidia pushes local agentic AI PCs"
+          ],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Nvidia pushes",
+              "title": "Nvidia pushes local agentic AI PCs",
+              "source": "tomshardware.com",
+              "relevance": "Intermediate",
+              "summary": "Nvidia's RTX Spark platform and related coverage point toward powerful local AI PCs with unified memory, Arm CPUs, Blackwell GPUs, and security primitives for local agents.",
+              "why": "If agents can run locally, privacy, latency, and cost improve. This matters for creative, 3D, video, and internal-business workflows that should not always go to the cloud.",
+              "action": "Track AI PC hardware as a separate category in the dashboard: local inference, memory size, privacy controls, and which apps can actually use the hardware.",
+              "teacher": "Teach local-vs-cloud AI as a tradeoff: local is better for privacy and fast iteration, cloud is better for very large models and managed services.",
+              "link": "https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, careers, and AI-native client services.",
+          "date": "2026-06-03 · 21:00 GMT+8",
+          "quickRead": [
+            "Tech layoffs pass 100k as firms fund AI"
+          ],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Tech layoffs",
+              "title": "Tech layoffs pass 100k as firms fund AI",
+              "source": "techspot.com",
+              "relevance": "Intermediate",
+              "summary": "TechSpot reported that 2026 tech layoffs have passed 100,000, with AI funding and restructuring repeatedly appearing in the explanation, though overhiring and resizing also matter.",
+              "why": "This is high-signal jobs news because it links AI spending, company restructuring, and worker risk without pretending AI is the only cause.",
+              "action": "When saving this to your app, mark it as labor-market risk and include a note that attribution is mixed: AI, overhiring, margin pressure, and role redesign.",
+              "teacher": "Teach careful causality. A headline may say AI caused layoffs, but good analysis separates direct replacement, budget reallocation, and ordinary restructuring.",
+              "link": "https://www.techspot.com/news/112493-tech-layoffs-pass-100000-2026-tracker-points-ai.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "2026-06-03 18",
+      "label": "2026-06-03 · 18:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and enterprise AI signals.",
+          "date": "2026-06-03 · 18:00 GMT+8",
+          "quickRead": [
+            "Microsoft Scout and agent trust stack"
+          ],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Scout",
+              "title": "Microsoft Scout and agent trust stack",
+              "source": "blogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft used Build 2026 to announce Scout, its own reasoning-model push, and a broader trust/control stack for agents including evaluation and control specifications.",
+              "why": "The important trend is not another chatbot. The useful signal is that agent systems are being packaged with context, testing, controls, and enterprise deployment rules.",
+              "action": "For your dashboard, tag this under agent infrastructure and governance. For your own workflows, require every agent task to have source, action log, and rollback notes.",
+              "teacher": "Students should learn that agent quality depends on the surrounding system: tools, permissions, tests, memory, and review gates. A strong model alone is not enough.",
+              "link": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, careers, and AI-native client services.",
+          "date": "2026-06-03 · 18:00 GMT+8",
+          "quickRead": [
+            "Entry-level jobs squeezed while AI skills rise"
+          ],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Entry-level jobs",
+              "title": "Entry-level jobs squeezed while AI skills rise",
+              "source": "techtimes.com",
+              "relevance": "Intermediate",
+              "summary": "A June 1 labor-market report said 2026 tech cuts remain high while demand for AI skills in early-career postings has increased sharply.",
+              "why": "This is the practical career signal: entry-level roles are not disappearing evenly, but the safe path is shifting toward AI-enabled work, evaluation, and automation literacy.",
+              "action": "Build a junior-role checklist: prompt quality, spreadsheet/data cleanup, model checking, workflow automation, and one portfolio project that proves AI use in a real task.",
+              "teacher": "Explain the difference between job loss and skill mismatch. Companies can cut old roles and hire new AI-capable roles at the same time.",
+              "link": "https://www.techtimes.com/articles/317535/20260601/entry-level-tech-jobs-2026-148092-cuts-expose-which-skills-still-get-you-hired.htm"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-03 15",
       "label": "2026-06-03 · 15:36",
