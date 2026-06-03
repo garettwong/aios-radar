@@ -5,10 +5,176 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-03 11:27",
-    "editions": 57
+    "fetchedAt": "2026-06-03 11:44",
+    "editions": 58
   },
   "editions": [
+    {
+      "key": "2026-06-03 09",
+      "label": "2026-06-03 · 09:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Catch-up brief: enterprise agent platforms, coding-agent configuration, agent security, and 3D / creative AI signals.",
+          "date": "2026-06-03 · 09:00 GMT+8",
+          "quickRead": [
+            "Codex growth is being driven by office workers, not only software engineers",
+            "OpenAI launched an enterprise platform for managing fleets of agents",
+            "Agentic coding tools now have measurable configuration mechanisms",
+            "Self-running agents are creating a security problem",
+            "OpenUSD remains a key shared language for AI-era 3D production"
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The shift is from better models to managing fleets of agents. Configuration, permissions, security, and 3D / creative control are where the real work and consulting value now sit."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Codex knowledge work",
+              "title": "Codex growth is being driven by office workers, not only software engineers",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "Axios reports Codex adoption is spreading into knowledge-work tasks such as academic workflows, data collection, statistical analysis, and code-assisted processing.",
+              "why": "Coding agents are becoming general work agents. The line between coding, research, reporting, and office automation is blurring as agents handle structured multi-step tasks.",
+              "action": "Supervising agents is becoming mentally expensive. Power users increasingly need to manage several fast-moving AI workstreams at once, creating demand for better orchestration and review systems.",
+              "teacher": "",
+              "link": "https://www.axios.com/2026/06/02/openai-codex-knowledge-workers"
+            },
+            {
+              "n": 2,
+              "category": "Enterprise agent platforms",
+              "title": "OpenAI launched an enterprise platform for managing fleets of agents",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "Axios described Frontier as a platform for large companies to build, deploy, and manage agents that connect into existing systems.",
+              "why": "AI agent platforms compete with traditional SaaS vendors. TechTarget noted that OpenAI enters a field with Google Cloud, Oracle, Microsoft, AWS, IBM, and enterprise software vendors.",
+              "action": "The next battle is control plane, not chatbot UI. Companies need identity, permissions, logging, and deployment discipline for many agents at once.",
+              "teacher": "",
+              "link": "https://www.axios.com/2026/02/05/openai-platform-ai-agents"
+            },
+            {
+              "n": 3,
+              "category": "Coding-agent configuration",
+              "title": "Agentic coding tools now have measurable configuration mechanisms",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "An arXiv study analyzes configuration approaches across Claude Code, GitHub Copilot, Cursor, Gemini, and Codex.",
+              "why": "Rules files and project instructions are becoming production assets. Good agent work depends on repo instructions, tests, tool boundaries, and review routines.",
+              "action": "Coding-agent tools are splitting into clear product categories. Guides and market analysis divide the space into IDE agents, terminal agents, hosted agents, and bring-your-own-key shells.",
+              "teacher": "",
+              "link": "https://arxiv.org/abs/2602.14690"
+            },
+            {
+              "n": 4,
+              "category": "Agent security crisis",
+              "title": "Self-running agents are creating a security problem",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar reports that agentic enterprise systems require visibility into permissions, escalation, and data movement.",
+              "why": "AI coding tools expand the CI/CD attack surface. Cloud Security Alliance research notes new attack paths around AI coding tools, workspace trust, project files, and token exposure.",
+              "action": "Agent permission design is now part of product design. A useful agent workflow needs least privilege, audit logs, approval points, and rollback plans.",
+              "teacher": "",
+              "link": "https://www.techradar.com/pro/why-self-running-agents-are-creating-the-biggest-security-crisis-of-2026"
+            },
+            {
+              "n": 5,
+              "category": "3D and creative AI",
+              "title": "OpenUSD remains a key shared language for AI-era 3D production",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA keeps positioning OpenUSD and Omniverse as infrastructure for interoperable 3D scenes.",
+              "why": "Krea-style tools are moving toward controllable creator workflows. The signal is professional control: LoRA, image editing, consistency, and production settings rather than simple prompt images.",
+              "action": "Luma continues pushing AI video into creator formats. AI video is becoming a repeatable creative format with story, prompt, and production workflows.",
+              "teacher": "",
+              "link": "https://developer.nvidia.com/usd"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Catch-up brief: agent-operator roles, enterprise AI talent, safety-review services, and Garett's action plan.",
+          "date": "2026-06-03 · 09:00 GMT+8",
+          "quickRead": [
+            "Agent operator becomes a real business role",
+            "OpenAI workforce expansion points to enterprise AI talent demand",
+            "Agent setup and QA can be packaged as a service",
+            "Agent safety reviewer is a practical role",
+            "AI render QA is a strong service direction"
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Package AI render QA as a service: use your eye for typography, lighting, and realism to verify AI-assisted booth and product renders, then build one before/after case study as proof."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Agent operator work",
+              "title": "Agent operator becomes a real business role",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "If office workers are using Codex and Claude Code for non-programming workflows, companies need people who can define tasks, review outputs, and recover failures.",
+              "why": "The job skill is workflow decomposition. Breaking a goal into agent-sized tasks, checking each output, and merging results is more valuable than simple prompt writing.",
+              "action": "Sell “AI workstream cleanup” to small teams. A practical service is helping teams stop messy AI experiments and turn them into repeatable, logged, reviewable processes.",
+              "teacher": "",
+              "link": "https://www.axios.com/2026/06/02/openai-codex-knowledge-workers"
+            },
+            {
+              "n": 2,
+              "category": "Enterprise AI talent",
+              "title": "OpenAI workforce expansion points to enterprise AI talent demand",
+              "source": "computerworld.com",
+              "relevance": "Intermediate",
+              "summary": "Computerworld reported OpenAI planned to nearly double its workforce while focusing on enterprise scaling and monetization.",
+              "why": "AI agent architect is emerging as a named job. The same reporting highlights roles around designing autonomous systems that can execute multi-step workflows.",
+              "action": "Learn to design agent workflows, not only use tools. The higher-value path is documenting process, constraints, permissions, and verification for a business task.",
+              "teacher": "",
+              "link": "https://www.computerworld.com/article/4148621/openai-to-double-workforce-highlights-growing-demand-for-enterprise-ai-talent.html"
+            },
+            {
+              "n": 3,
+              "category": "Coding-agent QA services",
+              "title": "Agent setup and QA can be packaged as a service",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "Teams need help creating instructions, test gates, repo conventions, and “do not touch” rules for agent work.",
+              "why": "Agent-generated code still needs reproducibility checks. Research on dependency gaps in LLM coding agents shows generated projects can fail when dependencies and environment assumptions are not controlled.",
+              "action": "Sell an “AI coding cleanup” checklist. A simple paid package: audit repo instructions, run tests, fix dependency gaps, and document how agents should operate.",
+              "teacher": "",
+              "link": "https://arxiv.org/abs/2602.14690"
+            },
+            {
+              "n": 4,
+              "category": "Agent safety reviewer",
+              "title": "Agent safety reviewer is a practical role",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Businesses adopting agents need someone to review what the agent did, what data it touched, and whether it followed policy.",
+              "why": "Offer permission and audit-log review. A consultant can help small businesses define allowed tools, sensitive data, send approvals, and emergency stop rules.",
+              "action": "Safety work is easier to sell than generic AI enthusiasm. Owners understand the risk of email mistakes, file leaks, wrong sends, and broken automation.",
+              "teacher": "",
+              "link": "https://www.techradar.com/pro/why-self-running-agents-are-creating-the-biggest-security-crisis-of-2026"
+            },
+            {
+              "n": 5,
+              "category": "Garett action plan",
+              "title": "AI render QA is a strong service direction",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "Your eye for typography, layout, lighting, object placement, and realism can be packaged as verification for AI-assisted booth and product renders.",
+              "why": "Make a “source-locked render revision” offer. Promise controlled revisions: source deck authority, candidate rejection, no old-image reuse, and verified final output.",
+              "action": "Turn the workflow into a portfolio proof. Create one before/after case study showing how AI output was corrected into client-ready design or render delivery.",
+              "teacher": "",
+              "link": "https://developer.nvidia.com/usd"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-02 21",
       "label": "2026-06-02 · 23:39",
