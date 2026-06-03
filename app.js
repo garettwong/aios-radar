@@ -173,10 +173,11 @@
         (isSaved(s) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(s) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       `<p class="signal-summary">${esc(s.summary)}</p>` +
-      '<div class="signal-details">' + detailFrames(s.summary, s.why, s.action, s.teacher, s.link) + "</div>";
+      '<div class="signal-details">' + detailFrames(s.summary, s.why, s.action, s.teacher, s.link) + noteBoxHTML() + "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(s); });
     card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(s); });
-    card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button")) return; card.classList.toggle("open"); });
+    card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button") || e.target.closest(".note-box")) return; card.classList.toggle("open"); });
+    wireNoteBox(card, s);
     return card;
   }
   function block(label, text) {
@@ -390,10 +391,11 @@
         (isSaved(it) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(it) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       `<p class="signal-summary">${esc(it.summary)}</p>` +
-      '<div class="signal-details">' + detailFrames(it.summary, it.why, it.action, it.teacher || it.plain || it.terms, it.link) + "</div>";
+      '<div class="signal-details">' + detailFrames(it.summary, it.why, it.action, it.teacher || it.plain || it.terms, it.link) + noteBoxHTML() + "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(it); });
     card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(it); });
-    card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button")) return; card.classList.toggle("open"); });
+    card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button") || e.target.closest(".note-box")) return; card.classList.toggle("open"); });
+    wireNoteBox(card, it);
     return card;
   }
   function renderLibrary() {
@@ -444,6 +446,8 @@
     const arch = libItems.filter((x) => x.source2 === "Archive").length;
     h.innerHTML = v === "library"
       ? `📚 <b>LIBRARY</b> — everything archived &amp; searchable: <b>${briefs}</b> signals from all your email briefs + <b>${arch}</b> reference items (incl. 242 AI terms).`
+      : v === "todo"
+      ? `📝 <b>TO-DO</b> — your private notes &amp; follow-ups. Add one from the box at the bottom of any news card; set a date to get a reminder.`
       : `📡 <b>RADAR</b> — your <b>newest</b> email brief only (auto-pulled every 3h). Step back through past briefs with 📅 EDITION; the full history is in 📚 LIBRARY.`;
   }
   function setupNav() {
@@ -453,6 +457,8 @@
         document.querySelectorAll(".vnav").forEach((b) => b.classList.toggle("active", b === btn));
         $("radar-view").hidden = (v !== "radar");
         $("library-view").hidden = (v !== "library");
+        $("todo-view").hidden = (v !== "todo");
+        if (v === "todo") renderTodoGate();
         setViewHelp(v);
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
@@ -471,8 +477,145 @@
     renderFocus(); renderStrip(); renderColumns(); renderStats(); renderRelevance(); renderActions();
   }
 
+  /* ======================================================================
+     TO-DO — capture inspirations from any news card; keep them private;
+     (after a 5-minute Google setup) sync to a private Google Sheet + reminders.
+  ====================================================================== */
+  const TODO_CFG = { appsUrl: "" }; // paste your Google Web App URL here after setup
+  const TODO_KEY = "aios_todos_v1", TPASS_KEY = "aios_todo_pass_v1";
+  const loadTodos = () => { try { return JSON.parse(localStorage.getItem(TODO_KEY) || "[]"); } catch (e) { return []; } };
+  let todos = loadTodos();
+  const saveTodos = () => { try { localStorage.setItem(TODO_KEY, JSON.stringify(todos)); } catch (e) {} };
+  let todoFilter = "open", todoQuery = "", todoUnlocked = false, todoPassVal = "";
+  const todayStr = () => { const d = new Date(), p = (n) => String(n).padStart(2, "0"); return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()); };
+  const hashPass = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = (((h << 5) + h) ^ s.charCodeAt(i)) >>> 0; return h.toString(16); };
+  const todoHasPass = () => !!localStorage.getItem(TPASS_KEY);
+
+  function addTodo(t) {
+    const id = "t" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    todos.unshift(Object.assign({ id, created: new Date().toISOString(), status: "open", suggestion: "", synced: false }, t));
+    saveTodos(); renderTodos(); cloudPush(todos[0]);
+  }
+  function patchTodo(id, patch) { const i = todos.findIndex((x) => x.id === id); if (i < 0) return; Object.assign(todos[i], patch, { synced: false }); saveTodos(); renderTodos(); cloudPush(todos[i]); }
+  function dropTodo(id) { todos = todos.filter((x) => x.id !== id); saveTodos(); renderTodos(); }
+
+  function noteBoxHTML() {
+    return '<div class="note-box">' +
+      '<span class="note-label">📝 My note / follow-up idea</span>' +
+      '<textarea class="note-input" rows="2" placeholder="Type an idea, question, or next step…"></textarea>' +
+      '<div class="note-row"><label class="note-remind-lbl">⏰ <input type="date" class="note-remind" title="Remind me on this date (optional)"></label>' +
+      '<button class="note-add" type="button">＋ Add to my To-Do</button><span class="note-msg"></span></div></div>';
+  }
+  function wireNoteBox(card, item) {
+    const box = card.querySelector(".note-box"); if (!box) return;
+    box.addEventListener("click", (e) => e.stopPropagation());
+    const ta = box.querySelector(".note-input"), rem = box.querySelector(".note-remind"), msg = box.querySelector(".note-msg");
+    box.querySelector(".note-add").addEventListener("click", () => {
+      if (!ta.value.trim() && !rem.value) { msg.textContent = "type something first"; setTimeout(() => (msg.textContent = ""), 2000); return; }
+      addTodo({ srcTitle: item.title || "", note: ta.value.trim(), category: item.category || item.type || "Note",
+        date: shortDate(item.briefDate || item.date || ""), link: item.link || null, remindOn: rem.value || "" });
+      ta.value = ""; rem.value = ""; msg.textContent = "✓ added to To-Do"; setTimeout(() => (msg.textContent = ""), 2500);
+    });
+  }
+
+  function renderTodoGate() {
+    const lock = $("todo-lock"), main = $("todo-main");
+    if (todoUnlocked) { lock.hidden = true; main.hidden = false; renderTodos(); return; }
+    main.hidden = true; lock.hidden = false;
+    const has = todoHasPass();
+    lock.innerHTML = '<div class="lock-box"><div class="lock-ico">🔒</div>' +
+      `<h3>${has ? "Enter your passphrase" : "Set a passphrase"}</h3>` +
+      `<p class="lock-sub">${has ? "Your To-Do list is private. Only you can open it." : "Protect your To-Do list with a passphrase only you know."}</p>` +
+      '<input type="password" id="todo-pass-in" placeholder="passphrase" autocomplete="off" />' +
+      `<button id="todo-pass-go" class="lock-go">${has ? "Unlock" : "Set & open"}</button><div class="lock-msg" id="todo-pass-msg"></div></div>`;
+    const go = () => { const v = ($("todo-pass-in").value || "").trim(); if (!v) return;
+      if (has) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
+      else { localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; renderTodoGate(); } };
+    $("todo-pass-go").addEventListener("click", go);
+    $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
+    $("todo-pass-in").focus();
+  }
+
+  function todoCard(t) {
+    const card = el("article", "todo-card" + (t.status === "done" ? " done" : ""));
+    const link = t.link ? `<a class="source-link" href="${esc(t.link)}" target="_blank" rel="noopener">SOURCE ↗</a>` : "";
+    card.innerHTML = '<div class="todo-top">' +
+        `<span class="tag cat">${esc(t.category || "Note")}</span>` +
+        (t.date ? `<span class="tag src">🗓 ${esc(t.date)}</span>` : "") +
+        (t.remindOn ? `<span class="tag rem">⏰ ${esc(t.remindOn)}</span>` : "") +
+        '<span class="todo-actions">' +
+          `<button class="ca tdone" type="button">${t.status === "done" ? "↺ reopen" : "✓ done"}</button>` +
+          '<button class="ca tdel" type="button" title="Delete">🗑</button></span></div>' +
+      (t.srcTitle ? `<div class="todo-src">📰 ${esc(t.srcTitle)}</div>` : "") +
+      '<span class="note-label">📝 My note</span>' +
+      `<textarea class="todo-note" rows="2" placeholder="(type your idea)">${esc(t.note || "")}</textarea>` +
+      '<div class="todo-row2"><label class="note-remind-lbl">⏰ Remind me <input type="date" class="todo-remind" value="' + esc(t.remindOn || "") + '"></label></div>' +
+      '<div class="todo-sugg">' + (t.suggestion ? `<div class="sugg-text"><b>🤖 How to do it:</b> ${esc(t.suggestion)}</div>` : '<button class="sugg-btn" type="button">🤖 Get AI suggestion</button>') + '</div>' +
+      (link ? `<div class="frame-source">${link}</div>` : "");
+    card.querySelector(".tdone").addEventListener("click", () => patchTodo(t.id, { status: t.status === "done" ? "open" : "done" }));
+    card.querySelector(".tdel").addEventListener("click", () => { if (confirm("Delete this to-do?")) dropTodo(t.id); });
+    card.querySelector(".todo-note").addEventListener("change", (e) => patchTodo(t.id, { note: e.target.value }));
+    card.querySelector(".todo-remind").addEventListener("change", (e) => patchTodo(t.id, { remindOn: e.target.value }));
+    const sb = card.querySelector(".sugg-btn"); if (sb) sb.addEventListener("click", () => getSuggestion(t));
+    return card;
+  }
+
+  function renderTodos() {
+    const host = $("todo-list"); if (!host) return;
+    let list = todos.slice();
+    if (todoFilter === "open") list = list.filter((t) => t.status === "open");
+    else if (todoFilter === "done") list = list.filter((t) => t.status === "done");
+    if (todoQuery) list = list.filter((t) => ((t.srcTitle || "") + " " + (t.note || "") + " " + (t.category || "")).toLowerCase().includes(todoQuery));
+    host.innerHTML = "";
+    if (!list.length) host.appendChild(el("div", "empty-note", todos.length
+      ? "Nothing here. Change the filter above, or add notes from any news card."
+      : "No to-dos yet. Open any news card, type a note at the bottom, and tap “＋ Add to my To-Do”."));
+    list.forEach((t) => host.appendChild(todoCard(t)));
+    updateTodoNavCount(); renderTodoReminders();
+  }
+  function renderTodoReminders() {
+    const host = $("todo-reminders"); if (!host) return;
+    const today = todayStr();
+    const due = todos.filter((t) => t.status === "open" && t.remindOn && t.remindOn <= today);
+    const soon = todos.filter((t) => t.status === "open" && t.remindOn && t.remindOn > today).sort((a, b) => a.remindOn.localeCompare(b.remindOn)).slice(0, 3);
+    if (!due.length && !soon.length) { host.hidden = true; host.innerHTML = ""; return; }
+    host.hidden = false;
+    host.innerHTML = (due.length ? `<div class="rem-due">⏰ <b>${due.length}</b> reminder${due.length > 1 ? "s" : ""} due now</div>` : "") +
+      soon.map((t) => `<div class="rem-soon">📅 ${esc(t.remindOn)} — ${esc((t.srcTitle || t.note || "").slice(0, 60))}</div>`).join("");
+  }
+  function updateTodoNavCount() {
+    const open = todos.filter((t) => t.status === "open").length;
+    if ($("todo-nav-count")) $("todo-nav-count").textContent = open;
+    const due = todos.filter((t) => t.status === "open" && t.remindOn && t.remindOn <= todayStr()).length;
+    const nav = document.querySelector('.vnav[data-view="todo"]'); if (nav) nav.classList.toggle("has-due", due > 0);
+  }
+
+  function cloudPush(t) {
+    if (!TODO_CFG.appsUrl || !t) return;
+    try { fetch(TODO_CFG.appsUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" },
+      body: JSON.stringify(Object.assign({ action: "save", secret: todoPassVal }, t)) }); t.synced = true; saveTodos(); } catch (e) {}
+  }
+  function syncAll() {
+    if (!TODO_CFG.appsUrl) { alert("Cloud sync is not set up yet.\n\nFinish the 5-minute Google step, then paste your link into app.js (TODO_CFG.appsUrl). After that this button saves every note to your private Google Sheet, on every device."); return; }
+    todos.forEach(cloudPush); alert("Your notes were sent to your private Google Sheet.");
+  }
+  function getSuggestion(t) {
+    if (!TODO_CFG.appsUrl) { alert("AI suggestions need the Google + Gemini setup.\n\nOnce that is done, this button writes a short “how to do it” plan for the note."); return; }
+    alert("This turns on after the Google + Gemini setup.");
+  }
+
+  function setupTodo() {
+    $("todo-search").addEventListener("input", (e) => { todoQuery = e.target.value.trim().toLowerCase(); renderTodos(); });
+    document.querySelectorAll(".todo-filter").forEach((b) => b.addEventListener("click", () => {
+      todoFilter = b.dataset.f; document.querySelectorAll(".todo-filter").forEach((x) => x.classList.toggle("active", x === b)); renderTodos(); }));
+    $("todo-sync").addEventListener("click", syncAll);
+    $("todo-lockbtn").addEventListener("click", () => { todoUnlocked = false; renderTodoGate(); });
+    updateTodoNavCount();
+  }
+
   renderProfile();
   setupLibrary();
   setupNav();
+  setupTodo();
   mount();
 })();

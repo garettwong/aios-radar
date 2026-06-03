@@ -44,6 +44,7 @@
   <nav class="viewnav">
     <button class="vnav active" data-view="radar">📡 RADAR <span class="vnav-sub">live</span></button>
     <button class="vnav" data-view="library">📚 LIBRARY <span class="vnav-count" id="lib-nav-count">0</span></button>
+    <button class="vnav" data-view="todo">📝 TO-DO <span class="vnav-count" id="todo-nav-count">0</span></button>
   </nav>
   <div class="view-help" id="view-help"></div>
 
@@ -128,7 +129,7 @@
         <button class="vtoggle" id="lib-toggle-read" title="Hide read — show only unread">🔽 Unread only</button>
         <button class="vtoggle" id="lib-toggle-saved" title="Show only saved items">★ Saved</button>
       </div>
-      <input type="search" class="search-box" id="lib-search" placeholder="search all 1,914 items…" autocomplete="off" />
+      <input type="search" class="search-box" id="lib-search" placeholder="search all items…" autocomplete="off" />
     </section>
     <div class="lib-meta" id="lib-meta"></div>
     <div class="lib-cols" id="library-list">
@@ -136,6 +137,28 @@
       <div class="lib-col" id="lib-col-right"></div>
     </div>
     <div class="loadmore-wrap"><button class="loadmore" id="lib-loadmore" hidden>Load more</button></div>
+  </div>
+
+  <!-- ====================== TO-DO VIEW (private) ====================== -->
+  <div id="todo-view" hidden>
+    <div id="todo-lock"></div>
+    <div id="todo-main" hidden>
+      <section class="controls todo-controls">
+        <div class="filter-row">
+          <button class="chip todo-filter active" data-f="open">Open</button>
+          <button class="chip todo-filter" data-f="done">Done</button>
+          <button class="chip todo-filter" data-f="all">All</button>
+        </div>
+        <input type="search" class="search-box" id="todo-search" placeholder="search my to-dos…" autocomplete="off" />
+        <button class="vtoggle" id="todo-sync" title="Save to my private Google Sheet">☁ Sync to Google</button>
+        <button class="vtoggle" id="todo-lockbtn" title="Lock the To-Do list">🔒 Lock</button>
+      </section>
+      <div class="todo-howto" id="todo-howto">
+        💡 To add a to-do: open any news card, type your idea in the <b>“📝 My note / follow-up”</b> box at the bottom, then tap <b>“＋ Add to my To-Do”</b>. Set a date to get a reminder.
+      </div>
+      <div class="todo-reminders" id="todo-reminders" hidden></div>
+      <div class="todo-list" id="todo-list"></div>
+    </div>
   </div>
 
   <footer class="footer">
