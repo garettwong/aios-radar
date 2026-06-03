@@ -543,36 +543,11 @@
   }
 
   function renderTodoGate() {
-    const lock = $("todo-lock"), main = $("todo-main");
-    if (todoUnlocked) { lock.hidden = true; main.hidden = false; renderTodos(); return; }
-    main.hidden = true; lock.hidden = false;
-    const hasPass = todoHasPass();
-    lock.innerHTML = '<div class="lock-box"><div class="lock-ico">🔒</div>' +
-      (hasPass
-        ? '<h3>Enter your password</h3><p class="lock-sub">This list is private to you.</p>'
-        : '<h3>Set your password</h3><p class="lock-sub">Type any password and press Save. You will use it to open this list, so other people cannot see it. You only set it once.</p>') +
-      `<input type="password" id="todo-pass-in" placeholder="${hasPass ? "your password" : "type a password here"}" autocomplete="off" />` +
-      `<button id="todo-pass-go" class="lock-go">${hasPass ? "Open" : "Save password"}</button>` +
-      '<div class="lock-msg" id="todo-pass-msg"></div>' +
-      (hasPass ? '<div class="lock-reset" id="todo-reset">Forgot? Start over</div>' : '') +
-      '</div>';
-    const go = () => {
-      const v = ($("todo-pass-in").value || "").trim();
-      if (!v) { $("todo-pass-msg").textContent = "Type a password first."; return; }
-      if (hasPass) {
-        if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; renderTodoGate(); }
-        else $("todo-pass-msg").textContent = "Wrong password. Try again, or tap “Forgot? Start over”.";
-      } else {
-        localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; renderTodoGate();
-      }
-    };
-    $("todo-pass-go").addEventListener("click", go);
-    $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
-    $("todo-pass-in").focus();
-    const rst = $("todo-reset");
-    if (rst) rst.addEventListener("click", () => {
-      localStorage.removeItem(TPASS_KEY); localStorage.removeItem(TOPEN_KEY); todoUnlocked = false; renderTodoGate();
-    });
+    // Password removed — the To-Do list opens directly on every device.
+    if ($("todo-lock")) $("todo-lock").hidden = true;
+    if ($("todo-main")) $("todo-main").hidden = false;
+    todoUnlocked = true;
+    renderTodos();
   }
 
   function todoCard(t) {
@@ -661,7 +636,7 @@
     document.querySelectorAll(".todo-filter").forEach((b) => b.addEventListener("click", () => {
       todoFilter = b.dataset.f; document.querySelectorAll(".todo-filter").forEach((x) => x.classList.toggle("active", x === b)); renderTodos(); }));
     $("todo-sync").addEventListener("click", syncAll);
-    $("todo-lockbtn").addEventListener("click", () => { todoUnlocked = false; localStorage.removeItem(TOPEN_KEY); renderTodoGate(); });
+    var _lb = $("todo-lockbtn"); if (_lb) _lb.style.display = "none";
     updateTodoNavCount();
   }
 
