@@ -675,6 +675,9 @@ code {
 .lock-go { margin-top: 12px; width: 100%; color: var(--bg); background: var(--cyan); border: none; border-radius: 8px; padding: 11px; font-family: var(--mono); font-weight: 600; font-size: calc(13px * var(--fs)); cursor: pointer; letter-spacing: 1px; }
 .lock-go:hover { box-shadow: 0 0 16px rgba(54,214,231,.35); }
 .lock-msg { color: var(--red); font-size: calc(11.5px * var(--fs)); margin-top: 10px; min-height: 14px; }
+.lock-or { color: var(--ink-3); font-size: calc(11px * var(--fs)); margin: 14px 0 8px; letter-spacing: 1px; }
+.lock-go.alt { background: transparent; color: var(--cyan); border: 1px solid var(--cyan-dim); }
+.lock-go.alt:hover { background: rgba(54,214,231,.08); box-shadow: none; }
 
 .todo-controls { justify-content: flex-start; align-items: center; }
 .todo-howto { color: var(--ink-2); font-size: calc(12.5px * var(--fs)); line-height: 1.6; background: var(--bg-2); border-left: 3px solid var(--cyan-dim); padding: 11px 14px; border-radius: 0 8px 8px 0; margin: 0 0 14px; }

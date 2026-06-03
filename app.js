@@ -520,22 +520,54 @@
     });
   }
 
+  /* ---- biometric (Face ID / Touch ID) unlock via WebAuthn, with passphrase fallback ---- */
+  const BIO_KEY = "aios_bio_id_v1";
+  const _b64 = (buf) => btoa(String.fromCharCode.apply(null, new Uint8Array(buf)));
+  const _unb64 = (s) => { const bin = atob(s), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u.buffer; };
+  const _rand = (n) => { const u = new Uint8Array(n); crypto.getRandomValues(u); return u; };
+  const bioSupported = () => !!(window.PublicKeyCredential && navigator.credentials && navigator.credentials.create);
+  async function bioRegister() {
+    const cred = await navigator.credentials.create({ publicKey: {
+      challenge: _rand(32), rp: { name: "AIOS To-Do", id: location.hostname },
+      user: { id: _rand(16), name: "garett", displayName: "Garett" },
+      pubKeyCredParams: [{ type: "public-key", alg: -7 }, { type: "public-key", alg: -257 }],
+      authenticatorSelection: { authenticatorAttachment: "platform", userVerification: "required" },
+      timeout: 60000, attestation: "none" } });
+    localStorage.setItem(BIO_KEY, _b64(cred.rawId));
+  }
+  async function bioUnlock() {
+    const id = localStorage.getItem(BIO_KEY);
+    const pk = { challenge: _rand(32), timeout: 60000, userVerification: "required", rpId: location.hostname };
+    if (id) pk.allowCredentials = [{ type: "public-key", id: _unb64(id) }];
+    await navigator.credentials.get({ publicKey: pk });
+  }
+
   function renderTodoGate() {
     const lock = $("todo-lock"), main = $("todo-main");
     if (todoUnlocked) { lock.hidden = true; main.hidden = false; renderTodos(); return; }
     main.hidden = true; lock.hidden = false;
-    const has = todoHasPass();
-    lock.innerHTML = '<div class="lock-box"><div class="lock-ico">🔒</div>' +
-      `<h3>${has ? "Enter your passphrase" : "Set a passphrase"}</h3>` +
-      `<p class="lock-sub">${has ? "Your To-Do list is private. Only you can open it." : "Protect your To-Do list with a passphrase only you know."}</p>` +
-      '<input type="password" id="todo-pass-in" placeholder="passphrase" autocomplete="off" />' +
-      `<button id="todo-pass-go" class="lock-go">${has ? "Unlock" : "Set & open"}</button><div class="lock-msg" id="todo-pass-msg"></div></div>`;
-    const go = () => { const v = ($("todo-pass-in").value || "").trim(); if (!v) return;
-      if (has) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
+    const hasPass = todoHasPass(), hasBio = !!localStorage.getItem(BIO_KEY), bioOk = bioSupported();
+    let h = '<div class="lock-box"><div class="lock-ico">🔒</div><h3>Your private To-Do</h3>' +
+      '<p class="lock-sub">Only you can open this list.</p>';
+    if (bioOk) h += `<button id="todo-bio-go" class="lock-go">${hasBio ? "🙂 Unlock with Face ID" : "🙂 Set up Face ID"}</button>`;
+    h += `<div class="lock-or">${bioOk ? "— or use a passphrase —" : ""}</div>` +
+      `<input type="password" id="todo-pass-in" placeholder="${hasPass ? "passphrase" : "set a passphrase"}" autocomplete="off" />` +
+      `<button id="todo-pass-go" class="lock-go alt">${hasPass ? "Unlock" : "Set & open"}</button>` +
+      '<div class="lock-msg" id="todo-pass-msg"></div></div>';
+    lock.innerHTML = h;
+    const goPass = () => { const v = ($("todo-pass-in").value || "").trim(); if (!v) return;
+      if (hasPass) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
       else { localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; renderTodoGate(); } };
-    $("todo-pass-go").addEventListener("click", go);
-    $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
-    $("todo-pass-in").focus();
+    $("todo-pass-go").addEventListener("click", goPass);
+    $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") goPass(); });
+    const bio = $("todo-bio-go");
+    if (bio) bio.addEventListener("click", async () => {
+      $("todo-pass-msg").textContent = "";
+      try {
+        if (!localStorage.getItem(BIO_KEY)) await bioRegister(); else await bioUnlock();
+        todoUnlocked = true; renderTodoGate();
+      } catch (e) { $("todo-pass-msg").textContent = "Face ID was cancelled or is unavailable here — you can use a passphrase."; }
+    });
   }
 
   function todoCard(t) {
@@ -552,7 +584,7 @@
       '<span class="note-label">📝 My note</span>' +
       `<textarea class="todo-note" rows="2" placeholder="(type your idea)">${esc(t.note || "")}</textarea>` +
       '<div class="todo-row2"><label class="note-remind-lbl">⏰ Remind me <input type="date" class="todo-remind" value="' + esc(t.remindOn || "") + '"></label></div>' +
-      '<div class="todo-sugg">' + (t.suggestion ? `<div class="sugg-text"><b>🤖 How to do it:</b> ${esc(t.suggestion)}</div>` : '<button class="sugg-btn" type="button">🤖 Get AI suggestion</button>') + '</div>' +
+      '<div class="todo-sugg">' + (t.suggestion ? `<div class="sugg-text"><b>🤖 AI answer:</b> ${esc(t.suggestion)}</div>` : '<button class="sugg-btn" type="button">🤖 Ask AI to answer</button>') + '</div>' +
       (link ? `<div class="frame-source">${link}</div>` : "");
     card.querySelector(".tdone").addEventListener("click", () => patchTodo(t.id, { status: t.status === "done" ? "open" : "done" }));
     card.querySelector(".tdel").addEventListener("click", () => { if (confirm("Delete this to-do?")) dropTodo(t.id); });
@@ -602,8 +634,21 @@
     todos.forEach(cloudPush); alert("Your notes were sent to your private Google Sheet.");
   }
   function getSuggestion(t) {
-    if (!TODO_CFG.appsUrl) { alert("AI suggestions need the Google + Gemini setup.\n\nOnce that is done, this button writes a short “how to do it” plan for the note."); return; }
-    alert("This turns on after the Google + Gemini setup.");
+    if (!TODO_CFG.appsUrl) {
+      alert("AI answering is doable and almost ready.\n\nIt needs a one-time 5-minute Google + Gemini setup. After that: write your question in the note, tap “Ask AI to answer”, and the answer appears here and stays saved.");
+      return;
+    }
+    // JSONP call so the dashboard can read the answer across origins
+    const cb = "aiosAns" + Math.floor(Math.random() * 1e9);
+    const s = document.createElement("script");
+    let done = false;
+    window[cb] = (data) => { done = true; try { if (data && data.answer) patchTodo(t.id, { suggestion: data.answer }); } finally { delete window[cb]; s.remove(); } };
+    const secret = localStorage.getItem("aios_sync_secret") || todoPassVal || "";
+    s.src = TODO_CFG.appsUrl + "?action=ask&secret=" + encodeURIComponent(secret) +
+      "&title=" + encodeURIComponent(t.srcTitle || "") + "&q=" + encodeURIComponent(t.note || "") + "&callback=" + cb;
+    s.onerror = () => { if (!done) { delete window[cb]; s.remove(); alert("Could not reach the AI helper — check the Google setup."); } };
+    patchTodo(t.id, { suggestion: "… thinking …" });
+    document.body.appendChild(s);
   }
 
   function setupTodo() {
