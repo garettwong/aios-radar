@@ -286,7 +286,10 @@ code {
   overflow: hidden;
   transition: max-height .28s ease, margin-top .28s ease;
 }
-.signal.open .signal-details { max-height: 720px; margin-top: 11px; }
+.signal.open .signal-details { max-height: none; overflow: visible; margin-top: 11px; }
+/* RADAR news cards: show the full card + the note box WITHOUT tapping, and never clip (big fonts) */
+#trend-signals .signal-details, #job-signals .signal-details { max-height: none !important; overflow: visible; margin-top: 11px; }
+#trend-signals .signal-summary, #job-signals .signal-summary { display: none; }
 .detail-block { margin-bottom: 13px; }
 .detail-label {
   font-family: var(--mono);

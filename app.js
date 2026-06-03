@@ -173,7 +173,7 @@
         (isSaved(s) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(s) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       `<p class="signal-summary">${esc(s.summary)}</p>` +
-      '<div class="signal-details">' + detailFrames(s.summary, s.why, s.action, s.teacher, s.link) + noteBoxHTML() + "</div>";
+      '<div class="signal-details">' + detailFrames(s.summary, s.why, s.action, s.teacher) + noteBoxHTML() + sourceRow(s.link) + "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(s); });
     card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(s); });
     card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button") || e.target.closest(".note-box")) return; card.classList.toggle("open"); });
@@ -184,19 +184,21 @@
     if (!text) return "";
     return `<div class="detail-block"><span class="detail-label">${label}</span><span class="detail-text">${esc(text)}</span></div>`;
   }
-  // 4 clear framed sections (Summary / Why / Action / Teacher) + source — used by RADAR and LIBRARY
-  function detailFrames(summary, why, action, teacher, link) {
-    const f = (ico, label, txt, cls) =>
-      `<div class="frame ${cls}"><div class="frame-ico">${ico}</div><div class="frame-body">` +
-      `<span class="frame-label">${label}</span><div class="frame-text">${txt ? esc(txt) : "—"}</div></div></div>`;
+  function sourceRow(link) {
     const lk = link
       ? `<a class="source-link" href="${esc(link)}" target="_blank" rel="noopener">SOURCE ↗</a>`
       : `<span class="source-link disabled">SOURCE — n/a</span>`;
+    return `<div class="frame-source">${lk}</div>`;
+  }
+  // 4 clear framed sections (Summary / Why / Action / Teacher) — used by RADAR and LIBRARY
+  function detailFrames(summary, why, action, teacher) {
+    const f = (ico, label, txt, cls) =>
+      `<div class="frame ${cls}"><div class="frame-ico">${ico}</div><div class="frame-body">` +
+      `<span class="frame-label">${label}</span><div class="frame-text">${txt ? esc(txt) : "—"}</div></div></div>`;
     return f("🎯", "SUMMARY", summary, "f-sum") +
            f("💡", "WHY IT MATTERS", why, "f-why") +
            f("🔧", "PRACTICAL ACTION", action, "f-act") +
-           f("🎓", "TEACHER NOTE", teacher, "f-teach") +
-           `<div class="frame-source">${lk}</div>`;
+           f("🎓", "TEACHER NOTE", teacher, "f-teach");
   }
 
   /* ---------------- render columns ---------------- */
@@ -391,7 +393,7 @@
         (isSaved(it) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(it) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       `<p class="signal-summary">${esc(it.summary)}</p>` +
-      '<div class="signal-details">' + detailFrames(it.summary, it.why, it.action, it.teacher || it.plain || it.terms, it.link) + noteBoxHTML() + "</div>";
+      '<div class="signal-details">' + detailFrames(it.summary, it.why, it.action, it.teacher || it.plain || it.terms) + noteBoxHTML() + sourceRow(it.link) + "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(it); });
     card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(it); });
     card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button") || e.target.closest(".note-box")) return; card.classList.toggle("open"); });

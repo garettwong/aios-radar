@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-03 12:28",
+    "fetchedAt": "2026-06-03 13:02",
     "editions": 58
   },
   "editions": [
@@ -40,7 +40,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "Axios reports Codex adoption is spreading into knowledge-work tasks such as academic workflows, data collection, statistical analysis, and code-assisted processing.",
               "why": "Coding agents are becoming general work agents. The line between coding, research, reporting, and office automation is blurring as agents handle structured multi-step tasks.",
               "action": "Supervising agents is becoming mentally expensive. Power users increasingly need to manage several fast-moving AI workstreams at once, creating demand for better orchestration and review systems.",
-              "teacher": "",
+              "teacher": "Codex is OpenAI's coding agent. 'Knowledge work' means office tasks such as research, data handling, and report writing, not only computer programming. The point is that ordinary office staff now use this tool, not just engineers.",
               "link": "https://www.axios.com/2026/06/02/openai-codex-knowledge-workers"
             },
             {
@@ -52,7 +52,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "Axios described Frontier as a platform for large companies to build, deploy, and manage agents that connect into existing systems.",
               "why": "AI agent platforms compete with traditional SaaS vendors. TechTarget noted that OpenAI enters a field with Google Cloud, Oracle, Microsoft, AWS, IBM, and enterprise software vendors.",
               "action": "The next battle is control plane, not chatbot UI. Companies need identity, permissions, logging, and deployment discipline for many agents at once.",
-              "teacher": "",
+              "teacher": "A 'fleet of agents' means many AI assistants running at the same time. A platform to manage them handles their identity, what each is allowed to do, and a record of their actions. 'Enterprise' means large-company use.",
               "link": "https://www.axios.com/2026/02/05/openai-platform-ai-agents"
             },
             {
@@ -64,7 +64,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "An arXiv study analyzes configuration approaches across Claude Code, GitHub Copilot, Cursor, Gemini, and Codex.",
               "why": "Rules files and project instructions are becoming production assets. Good agent work depends on repo instructions, tests, tool boundaries, and review routines.",
               "action": "Coding-agent tools are splitting into clear product categories. Guides and market analysis divide the space into IDE agents, terminal agents, hosted agents, and bring-your-own-key shells.",
-              "teacher": "",
+              "teacher": "'Configuration' means the setup files and written rules that tell an AI coding tool how to behave in a project, for example which tests to run and which files it must not touch. Good configuration is becoming as important as the code itself.",
               "link": "https://arxiv.org/abs/2602.14690"
             },
             {
@@ -76,7 +76,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "TechRadar reports that agentic enterprise systems require visibility into permissions, escalation, and data movement.",
               "why": "AI coding tools expand the CI/CD attack surface. Cloud Security Alliance research notes new attack paths around AI coding tools, workspace trust, project files, and token exposure.",
               "action": "Agent permission design is now part of product design. A useful agent workflow needs least privilege, audit logs, approval points, and rollback plans.",
-              "teacher": "",
+              "teacher": "A 'self-running agent' acts on its own without asking at each step. The risk is that it may touch data or systems it should not. 'Permissions' control what it can reach; an 'audit trail' is a record of what it did.",
               "link": "https://www.techradar.com/pro/why-self-running-agents-are-creating-the-biggest-security-crisis-of-2026"
             },
             {
@@ -88,7 +88,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "NVIDIA keeps positioning OpenUSD and Omniverse as infrastructure for interoperable 3D scenes.",
               "why": "Krea-style tools are moving toward controllable creator workflows. The signal is professional control: LoRA, image editing, consistency, and production settings rather than simple prompt images.",
               "action": "Luma continues pushing AI video into creator formats. AI video is becoming a repeatable creative format with story, prompt, and production workflows.",
-              "teacher": "",
+              "teacher": "'OpenUSD' is a shared file format for 3D scenes, so different programs (such as Blender and NVIDIA Omniverse) can exchange work. 'LoRA' is a small add-on that teaches an image model one specific style. Together they give creators more control.",
               "link": "https://developer.nvidia.com/usd"
             }
           ]
@@ -120,7 +120,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "If office workers are using Codex and Claude Code for non-programming workflows, companies need people who can define tasks, review outputs, and recover failures.",
               "why": "The job skill is workflow decomposition. Breaking a goal into agent-sized tasks, checking each output, and merging results is more valuable than simple prompt writing.",
               "action": "Sell “AI workstream cleanup” to small teams. A practical service is helping teams stop messy AI experiments and turn them into repeatable, logged, reviewable processes.",
-              "teacher": "",
+              "teacher": "An 'agent operator' is a person whose job is to give an AI agent clear tasks, check its results, and fix problems when it fails. This is a new role, created because companies now run AI on real work.",
               "link": "https://www.axios.com/2026/06/02/openai-codex-knowledge-workers"
             },
             {
@@ -132,7 +132,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "Computerworld reported OpenAI planned to nearly double its workforce while focusing on enterprise scaling and monetization.",
               "why": "AI agent architect is emerging as a named job. The same reporting highlights roles around designing autonomous systems that can execute multi-step workflows.",
               "action": "Learn to design agent workflows, not only use tools. The higher-value path is documenting process, constraints, permissions, and verification for a business task.",
-              "teacher": "",
+              "teacher": "'Enterprise AI talent' means staff who can build and run AI for large companies. An 'AI agent architect' designs how an automated system carries out multi-step work safely. Demand for these roles is rising.",
               "link": "https://www.computerworld.com/article/4148621/openai-to-double-workforce-highlights-growing-demand-for-enterprise-ai-talent.html"
             },
             {
@@ -144,7 +144,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "Teams need help creating instructions, test gates, repo conventions, and “do not touch” rules for agent work.",
               "why": "Agent-generated code still needs reproducibility checks. Research on dependency gaps in LLM coding agents shows generated projects can fail when dependencies and environment assumptions are not controlled.",
               "action": "Sell an “AI coding cleanup” checklist. A simple paid package: audit repo instructions, run tests, fix dependency gaps, and document how agents should operate.",
-              "teacher": "",
+              "teacher": "'QA' means quality assurance, that is, checking that work is correct before it is used. Here it means reviewing AI-written code: setting up tests, rules, and 'do not touch' limits so the output can be trusted. This can be sold as a paid service.",
               "link": "https://arxiv.org/abs/2602.14690"
             },
             {
@@ -156,7 +156,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "Businesses adopting agents need someone to review what the agent did, what data it touched, and whether it followed policy.",
               "why": "Offer permission and audit-log review. A consultant can help small businesses define allowed tools, sensitive data, send approvals, and emergency stop rules.",
               "action": "Safety work is easier to sell than generic AI enthusiasm. Owners understand the risk of email mistakes, file leaks, wrong sends, and broken automation.",
-              "teacher": "",
+              "teacher": "A 'safety reviewer' checks what an AI agent did, what data it touched, and whether it followed the rules. An 'audit log' is the record used to do this. Small businesses will pay for this because they fear wrong sends and data leaks.",
               "link": "https://www.techradar.com/pro/why-self-running-agents-are-creating-the-biggest-security-crisis-of-2026"
             },
             {
@@ -168,7 +168,7 @@ window.DASHBOARD_ARCHIVE = {
               "summary": "Your eye for typography, layout, lighting, object placement, and realism can be packaged as verification for AI-assisted booth and product renders.",
               "why": "Make a “source-locked render revision” offer. Promise controlled revisions: source deck authority, candidate rejection, no old-image reuse, and verified final output.",
               "action": "Turn the workflow into a portfolio proof. Create one before/after case study showing how AI output was corrected into client-ready design or render delivery.",
-              "teacher": "",
+              "teacher": "'Render QA' means checking AI-made images or 3D renders for correctness: lighting, layout, object placement, and realism. 'Source-locked' means every revision must follow the approved source material, with no reuse of old images. This is a service you can sell using your design eye.",
               "link": "https://developer.nvidia.com/usd"
             }
           ]
