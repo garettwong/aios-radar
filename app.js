@@ -484,11 +484,11 @@
      (after a 5-minute Google setup) sync to a private Google Sheet + reminders.
   ====================================================================== */
   const TODO_CFG = { appsUrl: "" }; // paste your Google Web App URL here after setup
-  const TODO_KEY = "aios_todos_v1", TPASS_KEY = "aios_todo_pass_v1";
+  const TODO_KEY = "aios_todos_v1", TPASS_KEY = "aios_todo_pass_v1", TOPEN_KEY = "aios_todo_open_v1";
   const loadTodos = () => { try { return JSON.parse(localStorage.getItem(TODO_KEY) || "[]"); } catch (e) { return []; } };
   let todos = loadTodos();
   const saveTodos = () => { try { localStorage.setItem(TODO_KEY, JSON.stringify(todos)); } catch (e) {} };
-  let todoFilter = "open", todoQuery = "", todoUnlocked = false, todoPassVal = "";
+  let todoFilter = "open", todoQuery = "", todoUnlocked = !!localStorage.getItem(TOPEN_KEY), todoPassVal = "";
   const todayStr = () => { const d = new Date(), p = (n) => String(n).padStart(2, "0"); return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()); };
   const hashPass = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = (((h << 5) + h) ^ s.charCodeAt(i)) >>> 0; return h.toString(16); };
   const todoHasPass = () => !!localStorage.getItem(TPASS_KEY);
@@ -556,8 +556,8 @@
       '<div class="lock-msg" id="todo-pass-msg"></div></div>';
     lock.innerHTML = h;
     const goPass = () => { const v = ($("todo-pass-in").value || "").trim(); if (!v) return;
-      if (hasPass) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
-      else { localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; renderTodoGate(); } };
+      if (hasPass) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
+      else { localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate(); } };
     $("todo-pass-go").addEventListener("click", goPass);
     $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") goPass(); });
     const bio = $("todo-bio-go");
@@ -565,7 +565,7 @@
       $("todo-pass-msg").textContent = "";
       try {
         if (!localStorage.getItem(BIO_KEY)) await bioRegister(); else await bioUnlock();
-        todoUnlocked = true; renderTodoGate();
+        todoUnlocked = true; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate();
       } catch (e) { $("todo-pass-msg").textContent = "Face ID was cancelled or is unavailable here — you can use a passphrase."; }
     });
   }
@@ -656,7 +656,7 @@
     document.querySelectorAll(".todo-filter").forEach((b) => b.addEventListener("click", () => {
       todoFilter = b.dataset.f; document.querySelectorAll(".todo-filter").forEach((x) => x.classList.toggle("active", x === b)); renderTodos(); }));
     $("todo-sync").addEventListener("click", syncAll);
-    $("todo-lockbtn").addEventListener("click", () => { todoUnlocked = false; renderTodoGate(); });
+    $("todo-lockbtn").addEventListener("click", () => { todoUnlocked = false; localStorage.removeItem(TOPEN_KEY); renderTodoGate(); });
     updateTodoNavCount();
   }
 
