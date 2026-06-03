@@ -488,7 +488,7 @@
   const loadTodos = () => { try { return JSON.parse(localStorage.getItem(TODO_KEY) || "[]"); } catch (e) { return []; } };
   let todos = loadTodos();
   const saveTodos = () => { try { localStorage.setItem(TODO_KEY, JSON.stringify(todos)); } catch (e) {} };
-  let todoFilter = "open", todoQuery = "", todoUnlocked = !!localStorage.getItem(TOPEN_KEY), todoPassVal = "";
+  let todoFilter = "open", todoQuery = "", todoUnlocked = false, todoPassVal = "";
   const todayStr = () => { const d = new Date(), p = (n) => String(n).padStart(2, "0"); return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()); };
   const hashPass = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = (((h << 5) + h) ^ s.charCodeAt(i)) >>> 0; return h.toString(16); };
   const todoHasPass = () => !!localStorage.getItem(TPASS_KEY);
@@ -546,34 +546,32 @@
     const lock = $("todo-lock"), main = $("todo-main");
     if (todoUnlocked) { lock.hidden = true; main.hidden = false; renderTodos(); return; }
     main.hidden = true; lock.hidden = false;
-    const hasPass = todoHasPass(), hasBio = !!localStorage.getItem(BIO_KEY), bioOk = bioSupported();
-    let h = '<div class="lock-box"><div class="lock-ico">🔒</div><h3>Your private To-Do</h3>' +
-      '<p class="lock-sub">Only you can open this list.</p>';
-    if (bioOk) h += `<button id="todo-bio-go" class="lock-go">${hasBio ? "🙂 Unlock with Face ID" : "🙂 Set up Face ID"}</button>`;
-    h += `<div class="lock-or">${bioOk ? "— or use a passphrase —" : ""}</div>` +
-      `<input type="password" id="todo-pass-in" placeholder="${hasPass ? "passphrase" : "set a passphrase"}" autocomplete="off" />` +
-      `<button id="todo-pass-go" class="lock-go alt">${hasPass ? "Unlock" : "Set & open"}</button>` +
+    const hasPass = todoHasPass();
+    lock.innerHTML = '<div class="lock-box"><div class="lock-ico">🔒</div>' +
+      (hasPass
+        ? '<h3>Enter your password</h3><p class="lock-sub">This list is private to you.</p>'
+        : '<h3>Set your password</h3><p class="lock-sub">Type any password and press Save. You will use it to open this list, so other people cannot see it. You only set it once.</p>') +
+      `<input type="password" id="todo-pass-in" placeholder="${hasPass ? "your password" : "type a password here"}" autocomplete="off" />` +
+      `<button id="todo-pass-go" class="lock-go">${hasPass ? "Open" : "Save password"}</button>` +
       '<div class="lock-msg" id="todo-pass-msg"></div>' +
-      ((hasPass || hasBio) ? '<div class="lock-reset" id="todo-reset">Forgot? Start over</div>' : '') +
+      (hasPass ? '<div class="lock-reset" id="todo-reset">Forgot? Start over</div>' : '') +
       '</div>';
-    lock.innerHTML = h;
-    const goPass = () => { const v = ($("todo-pass-in").value || "").trim(); if (!v) return;
-      if (hasPass) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
-      else { localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate(); } };
-    $("todo-pass-go").addEventListener("click", goPass);
-    $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") goPass(); });
-    const bio = $("todo-bio-go");
-    if (bio) bio.addEventListener("click", async () => {
-      $("todo-pass-msg").textContent = "";
-      try {
-        if (!localStorage.getItem(BIO_KEY)) await bioRegister(); else await bioUnlock();
-        todoUnlocked = true; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate();
-      } catch (e) { $("todo-pass-msg").textContent = "Face ID was cancelled or is unavailable here — you can use a passphrase."; }
-    });
+    const go = () => {
+      const v = ($("todo-pass-in").value || "").trim();
+      if (!v) { $("todo-pass-msg").textContent = "Type a password first."; return; }
+      if (hasPass) {
+        if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; renderTodoGate(); }
+        else $("todo-pass-msg").textContent = "Wrong password. Try again, or tap “Forgot? Start over”.";
+      } else {
+        localStorage.setItem(TPASS_KEY, hashPass(v)); todoUnlocked = true; todoPassVal = v; renderTodoGate();
+      }
+    };
+    $("todo-pass-go").addEventListener("click", go);
+    $("todo-pass-in").addEventListener("keydown", (e) => { if (e.key === "Enter") go(); });
+    $("todo-pass-in").focus();
     const rst = $("todo-reset");
     if (rst) rst.addEventListener("click", () => {
-      localStorage.removeItem(TPASS_KEY); localStorage.removeItem(BIO_KEY); localStorage.removeItem(TOPEN_KEY);
-      todoUnlocked = false; renderTodoGate();
+      localStorage.removeItem(TPASS_KEY); localStorage.removeItem(TOPEN_KEY); todoUnlocked = false; renderTodoGate();
     });
   }
 
