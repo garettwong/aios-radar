@@ -5,10 +5,316 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-03 15:28",
-    "editions": 58
+    "fetchedAt": "2026-06-03 16:02",
+    "editions": 59
   },
   "editions": [
+    {
+      "key": "2026-06-03 15",
+      "label": "2026-06-03 · 15:36",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and enterprise AI signals.",
+          "date": "2026-06-03 · 15:36 GMT+8",
+          "quickRead": [
+            "Microsoft Build turns agents into enterprise plumbing",
+            "Build 2026 watchlist: Windows, RTX Spark, AI agents",
+            "OpenAI pushes Codex as an enterprise coding-agent category",
+            "UiPath connects enterprise automation with coding agents",
+            "Cisco ships tools to secure AI-agent infrastructure",
+            "Collibra targets oversight for agentic AI"
+          ],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Build",
+              "title": "Microsoft Build turns agents into enterprise plumbing",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Build 2026 is being framed around intent-first development, agent frameworks, Copilot, Azure AI Foundry, MCP, and agent-to-agent workflows.",
+              "why": "This is a signal that enterprise AI is moving from chat demos into tool-connected operating layers.",
+              "action": "Map one repeated internal workflow that could be split into planner, executor, reviewer, and logger agents.",
+              "teacher": "Explain to students that agents are not magic workers. They are software loops with tools, permissions, memory, and verification gates.",
+              "link": "https://www.techradar.com/pro/from-code-first-to-intent-first-microsoft-build-2026-could-be-the-end-of-programming-as-we-know-it"
+            },
+            {
+              "n": 2,
+              "category": "Build 2026",
+              "title": "Build 2026 watchlist: Windows, RTX Spark, AI agents",
+              "source": "windowscentral.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Build 2026 started June 2 with Windows, Nvidia RTX Spark, and AI-agent sessions as expected themes.",
+              "why": "Local AI hardware plus developer platforms can change the cost and privacy model for serious AI workflows.",
+              "action": "Track whether any Build releases reduce the need for cloud-only model calls in your automation stack.",
+              "teacher": "Use this as a hardware-vs-cloud lesson: local AI is about latency, privacy, and cost control, not only speed.",
+              "link": "https://www.windowscentral.com/microsoft/windows-11/how-to-watch-microsoft-build-2026-windows-11-nvidia-rtx-spark-ai-agents-and-more"
+            },
+            {
+              "n": 3,
+              "category": "OpenAI pushes",
+              "title": "OpenAI pushes Codex as an enterprise coding-agent category",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says Gartner named it a leader in enterprise AI coding agents and is promoting Codex usage for enterprise builders.",
+              "why": "Coding agents are becoming a managed enterprise tool category, not just a developer side toy.",
+              "action": "Create a coding-agent policy: allowed repos, test requirements, secret-handling, and review rules before wider use.",
+              "teacher": "Teach the difference between autocomplete, chat coding help, and agentic coding that changes files and opens work items.",
+              "link": "https://openai.com/index/gartner-2026-agentic-coding-leader/"
+            },
+            {
+              "n": 4,
+              "category": "UiPath connects",
+              "title": "UiPath connects enterprise automation with coding agents",
+              "source": "nasdaq.com",
+              "relevance": "Intermediate",
+              "summary": "UiPath announced native integration for coding agents, including Claude Code and OpenAI Codex support for enterprise automation.",
+              "why": "The automation market is connecting RPA, coding agents, and business orchestration into one operating surface.",
+              "action": "List existing scripts and RPA flows that could benefit from a coding-agent maintenance layer.",
+              "teacher": "Show students the evolution from macros to RPA to agents: each step adds more reasoning but also more risk.",
+              "link": "https://www.nasdaq.com/press-release/uipath-becomes-first-business-orchestration-automation-platform-native-integration"
+            },
+            {
+              "n": 5,
+              "category": "Cisco ships",
+              "title": "Cisco ships tools to secure AI-agent infrastructure",
+              "source": "investing.com",
+              "relevance": "Intermediate",
+              "summary": "Reuters reported Cisco released software to help businesses build AI defender agents and protect IT infrastructure.",
+              "why": "Agent security is becoming its own market because companies are adding autonomous software to sensitive systems.",
+              "action": "Add an agent-risk checklist: identity, tool permissions, logs, rollback, human approval, and data boundaries.",
+              "teacher": "Teach agent security as least privilege plus observability. If an agent can act, it must be auditable.",
+              "link": "https://www.investing.com/news/stock-market-news/cisco-rolls-out-software-tools-to-protect-it-systems-from-ai-agents-4722114"
+            },
+            {
+              "n": 6,
+              "category": "Collibra targets",
+              "title": "Collibra targets oversight for agentic AI",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Collibra launched an AI Command Center for real-time oversight and continuous control of agentic AI systems.",
+              "why": "Governance is shifting from documents and policies into live monitoring of agents, data, and decisions.",
+              "action": "For any dashboard-import AI email flow, log source URLs, topic uniqueness, and transformation steps.",
+              "teacher": "Use this as a governance example: quality control should happen before content enters a downstream app.",
+              "link": "https://www.prnewswire.com/news-releases/collibra-launches-ai-command-center-to-scale-agentic-ai-with-real-time-oversight-and-continuous-control-302763105.html"
+            },
+            {
+              "n": 7,
+              "category": "Commvault frames",
+              "title": "Commvault frames backup and recovery as AI-agent safety",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Commvault announced AI capabilities focused on controlled agentic transformation, data protection, and recovery.",
+              "why": "As agents write, move, and change data, rollback becomes a business-critical AI feature.",
+              "action": "Require rollback plans for automations that send email, edit files, or update dashboards.",
+              "teacher": "Teach students that AI reliability is not only prompt quality. Recovery design matters when automation touches real systems.",
+              "link": "https://www.prnewswire.com/news-releases/commvault-introduces-innovations-to-advance-secure-controlled-agentic-transformation-in-the-enterprise-302739684.html"
+            },
+            {
+              "n": 8,
+              "category": "Siemens applies",
+              "title": "Siemens applies AI agents to chip design workflows",
+              "source": "news.siemens.com",
+              "relevance": "Intermediate",
+              "summary": "Siemens launched Fuse EDA AI Agent for front-end chip design and verification workflows.",
+              "why": "AI agents are moving into specialized engineering domains where expert process knowledge matters.",
+              "action": "Watch domain-agent tools for 3D, CAD, rendering, EDA, and simulation because generic chatbots will not be enough.",
+              "teacher": "Explain domain agents as expert workflow assistants trained around constraints, files, and validation rules.",
+              "link": "https://news.siemens.com/en-gb/siemens-fuse-eda-ai-agent/"
+            },
+            {
+              "n": 9,
+              "category": "Defense AI",
+              "title": "Defense AI deals show guarded enterprise deployment",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "The Pentagon made deals involving Nvidia, Microsoft, and AWS to deploy AI on classified networks, while guardrails remain a point of negotiation.",
+              "why": "The highest-security buyers still want AI, but they care deeply about restrictions, audit, and deployment boundaries.",
+              "action": "When evaluating AI vendors, compare model capability with data location, usage restrictions, and audit trail.",
+              "teacher": "Use this to teach that AI procurement is a governance decision, not only a model benchmark decision.",
+              "link": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/"
+            },
+            {
+              "n": 10,
+              "category": "Salesforce keeps",
+              "title": "Salesforce keeps pushing the agentic enterprise story",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Salesforce CEO Marc Benioff described high expectations for AI across products, with coding agents and humans working together.",
+              "why": "CRM and business-software vendors are turning AI agents into a core product narrative.",
+              "action": "Review customer-service and sales workflows for places where agents can draft, route, or summarize while humans approve.",
+              "teacher": "Teach the human-in-the-loop pattern: the agent prepares and the human decides.",
+              "link": "https://www.techradar.com/pro/its-gonna-be-awesome-salesforce-ceo-marc-benioff-has-high-hopes-for-using-ai-in-its-products-says-its-impossible-to-describe-what-were-gonna-be-able-to-do-for-customers"
+            },
+            {
+              "n": 11,
+              "category": "Build sessions",
+              "title": "Build sessions show AI is becoming the default developer theme",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Coverage of Build 2026 highlights many free sessions around AI, agents, GitHub Copilot, Azure AI Foundry, and developer workflows.",
+              "why": "When the major developer conference is organized around agents, the skill baseline for developers changes.",
+              "action": "Build a learning queue around MCP, agent frameworks, tool calling, evals, and secure deployment.",
+              "teacher": "Frame this as curriculum planning: students need to learn how to supervise AI systems, not only how to prompt them.",
+              "link": "https://www.techradar.com/pro/10-free-microsoft-build-sessions-you-should-absolutely-attend-to-see-ais-future"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, careers, and AI-native client services.",
+          "date": "2026-06-03 · 15:36 GMT+8",
+          "quickRead": [
+            "Apollo economist challenges AI job-loss panic",
+            "Entry-level tech faces cuts but AI skills are demanded",
+            "Tech layoffs pass 100,000 while AI funding continues",
+            "Goldman warning: Gen Z hit hardest in AI economy",
+            "CEO survey expects AI-driven layoffs but ROI remains uncertain",
+            "Layoff and AI-skill demand are rising together"
+          ],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Apollo economist",
+              "title": "Apollo economist challenges AI job-loss panic",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Apollo chief economist Torsten Slok argued there is zero evidence of AI-related job losses, while noting AI is also boosting some sectors.",
+              "why": "The labor story is not one-sided. Some data points show AI fear, while others show job creation in infrastructure-heavy sectors.",
+              "action": "For your dashboard, tag this as counter-signal rather than simple job-loss news.",
+              "teacher": "Teach students to compare headline claims with labor-market data, sector mix, and timing.",
+              "link": "https://www.techradar.com/pro/zero-evidence-apollos-chief-economist-says-ai-related-job-losses-arent-happening"
+            },
+            {
+              "n": 2,
+              "category": "Entry-level tech",
+              "title": "Entry-level tech faces cuts but AI skills are demanded",
+              "source": "techtimes.com",
+              "relevance": "Intermediate",
+              "summary": "TechTimes reported large 2026 tech cuts alongside strong demand for AI skills in early-career postings.",
+              "why": "This shows a split market: generic entry-level work is pressured, but AI-capable candidates still have leverage.",
+              "action": "Create a skills checklist for juniors: automation fluency, data handling, model evaluation, and portfolio projects.",
+              "teacher": "Teach that AI literacy must be demonstrated through projects, not only listed as a skill.",
+              "link": "https://www.techtimes.com/articles/317535/20260601/entry-level-tech-jobs-2026-148092-cuts-expose-which-skills-still-get-you-hired.htm"
+            },
+            {
+              "n": 3,
+              "category": "Tech layoffs",
+              "title": "Tech layoffs pass 100,000 while AI funding continues",
+              "source": "techspot.com",
+              "relevance": "Intermediate",
+              "summary": "TechSpot reported that tech layoffs have passed 100,000 in 2026, with companies cutting jobs while funding AI priorities.",
+              "why": "Companies may reduce headcount and increase AI spend at the same time, which changes career risk.",
+              "action": "Separate career advice into two paths: build AI-operation skills or move toward high-context human judgment roles.",
+              "teacher": "Use this to explain capital reallocation: firms cut one cost center to fund another.",
+              "link": "https://www.techspot.com/news/112493-tech-layoffs-pass-100000-2026-tracker-points-ai.html"
+            },
+            {
+              "n": 4,
+              "category": "Goldman warning:",
+              "title": "Goldman warning: Gen Z hit hardest in AI economy",
+              "source": "fortune.com",
+              "relevance": "Intermediate",
+              "summary": "Fortune reported Goldman-linked analysis warning that young and entry-level white-collar workers are taking the hardest AI-related labor-market hit.",
+              "why": "The first career rung is where AI substitution can hurt most, because junior tasks are easiest to automate or compress.",
+              "action": "Build training around apprenticeship tasks AI cannot fully replace: client judgment, taste, accountability, and synthesis.",
+              "teacher": "Teach the ladder problem: if AI removes junior tasks, companies must still design ways to train senior talent.",
+              "link": "https://fortune.com/2026/06/01/how-many-jobs-is-ai-destroying-goldman-sachs-11000-per-month-gen-z-economy/"
+            },
+            {
+              "n": 5,
+              "category": "CEO survey",
+              "title": "CEO survey expects AI-driven layoffs but ROI remains uncertain",
+              "source": "tomshardware.com",
+              "relevance": "Intermediate",
+              "summary": "Tom's Hardware covered a CEO survey suggesting leaders expect AI-driven layoffs, even while many remain unsure about returns.",
+              "why": "Executives may act on AI pressure before ROI is proven, so workers and teams need defensive upskilling.",
+              "action": "Before adopting a tool, define one measurable business outcome and one worker-impact risk.",
+              "teacher": "Teach students that management narratives can drive behavior even before technology fully delivers.",
+              "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/survey-reveals-that-99-percent-of-ceos-now-expect-ai-driven-layoffs-companies-are-racing-to-replace-junior-workers-with-ai-even-as-many-executives-remain-uncertain-about-the-returns-on-ai-investments"
+            },
+            {
+              "n": 6,
+              "category": "Layoff and",
+              "title": "Layoff and AI-skill demand are rising together",
+              "source": "allwork.space",
+              "relevance": "Intermediate",
+              "summary": "Allwork.Space reported that layoffs are soaring while companies still struggle to hire experienced AI-skilled talent.",
+              "why": "The problem is not simply fewer jobs. It is a mismatch between old roles and new capability requirements.",
+              "action": "For each job role, define a before-and-after AI workflow so training is tied to actual work.",
+              "teacher": "Teach skill adjacency: people can transition faster when new AI skills attach to existing domain knowledge.",
+              "link": "https://allwork.space/2026/05/tech-layoffs-are-soaring-but-companies-still-cant-hire-enough-ai-skilled-talent/"
+            },
+            {
+              "n": 7,
+              "category": "Freshworks and",
+              "title": "Freshworks and Coinbase cuts keep AI replacement debate alive",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar covered Freshworks and Coinbase job cuts in the wider debate over companies replacing work with AI.",
+              "why": "Specific company cuts make the abstract AI-labor debate concrete for workers and investors.",
+              "action": "Track whether companies say AI is the cause, a productivity tool, or a funding priority for each layoff story.",
+              "teacher": "Teach careful attribution: not every layoff with AI language is caused only by AI.",
+              "link": "https://www.techradar.com/pro/freshworks-and-coinbase-announce-more-than-1-in-10-jobs-to-go-as-companies-replace-workforce-with-ai-technologies-tech-company-layoffs-near-100k-in-2026-alone"
+            },
+            {
+              "n": 8,
+              "category": "Generative AI",
+              "title": "Generative AI is reorganizing labor demand",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A recent arXiv paper studies how firms reorganize labor demand as generative AI diffuses.",
+              "why": "Research can reveal structural shifts that news headlines miss, especially changes in task design and hiring patterns.",
+              "action": "Use research papers as dashboard evidence when deciding which news items are high signal.",
+              "teacher": "Teach students to distinguish event news from trend evidence.",
+              "link": "https://arxiv.org/abs/2605.23159"
+            },
+            {
+              "n": 9,
+              "category": "Global job",
+              "title": "Global job postings show AI skill diffusion",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A job-postings analysis studies how generative AI changes skill requirements across sectors and markets.",
+              "why": "Job postings are an early signal of what employers want before formal education catches up.",
+              "action": "Extract repeated skills from postings and turn them into a weekly learning plan.",
+              "teacher": "Teach job-market reading: postings are data, not just advertisements.",
+              "link": "https://arxiv.org/abs/2605.00843"
+            },
+            {
+              "n": 10,
+              "category": "Early-career hiring",
+              "title": "Early-career hiring remains exposed to AI change",
+              "source": "www2.census.gov",
+              "relevance": "Intermediate",
+              "summary": "A Census working paper examines artificial intelligence and early-career hiring patterns.",
+              "why": "Young workers are a key risk group because early jobs often contain routine tasks used for training.",
+              "action": "Design internships and entry-level work around supervised AI use plus human quality review.",
+              "teacher": "Teach that AI should become part of apprenticeship, not a reason to remove apprenticeship.",
+              "link": "https://www2.census.gov/library/working-papers/2026/adrm/ces/CES-WP-26-27.pdf"
+            },
+            {
+              "n": 11,
+              "category": "AI skills",
+              "title": "AI skills shift favors augmentation over pure automation",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A recent paper maps skill obsolescence, emergence, and transition pathways in the LLM era, highlighting many augmentation patterns.",
+              "why": "This is useful because it avoids the simple story that all AI-exposed skills disappear.",
+              "action": "Prioritize skills where AI improves output but human review, listening, reading, and context still matter.",
+              "teacher": "Teach augmentation as the practical goal: use AI to raise output quality while keeping human responsibility.",
+              "link": "https://arxiv.org/abs/2604.06906"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-03 09",
       "label": "2026-06-03 · 09:00",
