@@ -553,7 +553,9 @@
     h += `<div class="lock-or">${bioOk ? "— or use a passphrase —" : ""}</div>` +
       `<input type="password" id="todo-pass-in" placeholder="${hasPass ? "passphrase" : "set a passphrase"}" autocomplete="off" />` +
       `<button id="todo-pass-go" class="lock-go alt">${hasPass ? "Unlock" : "Set & open"}</button>` +
-      '<div class="lock-msg" id="todo-pass-msg"></div></div>';
+      '<div class="lock-msg" id="todo-pass-msg"></div>' +
+      ((hasPass || hasBio) ? '<div class="lock-reset" id="todo-reset">Forgot? Start over</div>' : '') +
+      '</div>';
     lock.innerHTML = h;
     const goPass = () => { const v = ($("todo-pass-in").value || "").trim(); if (!v) return;
       if (hasPass) { if (localStorage.getItem(TPASS_KEY) === hashPass(v)) { todoUnlocked = true; todoPassVal = v; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate(); } else $("todo-pass-msg").textContent = "Wrong passphrase. Try again."; }
@@ -567,6 +569,11 @@
         if (!localStorage.getItem(BIO_KEY)) await bioRegister(); else await bioUnlock();
         todoUnlocked = true; localStorage.setItem(TOPEN_KEY, "1"); renderTodoGate();
       } catch (e) { $("todo-pass-msg").textContent = "Face ID was cancelled or is unavailable here — you can use a passphrase."; }
+    });
+    const rst = $("todo-reset");
+    if (rst) rst.addEventListener("click", () => {
+      localStorage.removeItem(TPASS_KEY); localStorage.removeItem(BIO_KEY); localStorage.removeItem(TOPEN_KEY);
+      todoUnlocked = false; renderTodoGate();
     });
   }
 
