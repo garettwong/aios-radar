@@ -5,10 +5,26 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-04 23:28",
-    "editions": 69
+    "fetchedAt": "2026-06-05 00:27",
+    "editions": 70
   },
   "editions": [
+    {
+      "key": "2026-06-05 00",
+      "label": "2026-06-05 · 00:05",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-05 · 00:05 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": []
+        }
+      ]
+    },
     {
       "key": "2026-06-04 21",
       "label": "2026-06-04 · 21:05",
