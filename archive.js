@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-05 23:40",
+    "fetchedAt": "2026-06-05 23:48",
     "editions": 77
   },
   "editions": [
@@ -21,7 +21,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 21:05 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub lets teams",
+              "title": "GitHub lets teams shape Copilot code review with skills, MCP, and review depth",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub added public previews for Copilot code review that use agent skills, MCP server context, configurable Actions workflows, and a Medium analysis tier for deeper reviews.",
+              "why": "Code review agents are moving from generic comments toward team-specific standards, tool context, and cost-aware reasoning levels.",
+              "action": "Create one small .github/skills/code-review/SKILL.md in an active repo that encodes house rules, then compare Low versus Medium review output on a non-critical PR.",
+              "teacher": "Teach this as review-context design: the best review agent is partly a model choice and partly a reusable checklist of team standards.",
+              "link": "https://github.blog/changelog/2026-06-02-shape-copilot-code-review-around-your-team/"
+            },
+            {
+              "n": 2,
+              "category": "Copilot code review",
+              "title": "Copilot code review enters Azure Repos technical preview",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub brought on-demand Copilot pull request reviews into Azure DevOps Azure Repos, billed via GitHub AI credits and available without a Copilot license during preview.",
+              "why": "Agentic review is becoming infrastructure, not just a GitHub.com feature. Enterprises with older Azure DevOps flows can adopt review automation without migrating first.",
+              "action": "If any client uses Azure DevOps, note this as an adoption wedge: start with review-only automation before proposing full coding-agent workflow changes.",
+              "teacher": "Use it to explain low-friction AI rollout: put the agent where the team already reviews, then expand only after trust is earned.",
+              "link": "https://github.blog/changelog/2026-06-02-github-copilot-code-review-for-azure-repos-is-now-in-technical-preview/"
+            },
+            {
+              "n": 3,
+              "category": "Copilot CLI lands",
+              "title": "Copilot CLI lands inside JetBrains with agent modes, remote control, compact, and chronicle",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "The JetBrains update adds Copilot CLI sessions, agent picker support, remote steering, context compaction, session analysis, Coding Agent in unified sessions, and configurable thinking effort.",
+              "why": "The IDE is becoming an agent cockpit. Planning, execution, remote steering, memory, and session retrospectives are converging in one work surface.",
+              "action": "For Java or multilanguage teams, test whether Plan mode plus /compact reduces long-session drift before allowing full autonomous edit mode.",
+              "teacher": "Frame this as human-in-the-loop ergonomics: good agent products expose mode, memory, context, and review controls instead of hiding them.",
+              "link": "https://github.blog/changelog/2026-06-02-introducing-copilot-cli-and-agentic-capabilities-enhancements-in-jetbrains-ides/"
+            },
+            {
+              "n": 4,
+              "category": "Copilot Memory reaches",
+              "title": "Copilot Memory reaches Business and Enterprise with governance controls",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Copilot Memory now supports user-level preferences for Business and Enterprise in public preview, with admin policy, export, bulk delete, opt-out, and billing-entity isolation.",
+              "why": "Memory is shifting from a personal convenience to a governed enterprise asset. That matters for repeatable agent behavior and auditability.",
+              "action": "Draft a short preference schema for your own agents: communication style, git conventions, test commands, design standards, and forbidden shortcuts.",
+              "teacher": "Teach memory as configuration with lifecycle: capture, scope, audit, delete, and opt out.",
+              "link": "https://github.blog/changelog/2026-06-02-copilot-memory-supports-user-preferences-for-business-enterprise/"
+            },
+            {
+              "n": 5,
+              "category": "Microsoft MAI-Code-1-Flash rolls",
+              "title": "Microsoft MAI-Code-1-Flash rolls into GitHub Copilot as a small-tier coding model",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Microsoft is rolling out MAI-Code-1-Flash to Copilot, starting in VS Code, as a purpose-built small coding model for lightweight workflows.",
+              "why": "The model market is splitting by job size. Not every coding task needs the biggest reasoning model if cheaper small models can handle fast edits.",
+              "action": "When benchmarking agents, separate tasks into quick edit, search/explain, test repair, and architecture work so the model choice matches the job.",
+              "teacher": "Use this to explain model routing: speed, cost, and capability should be selected per task, not by brand loyalty.",
+              "link": "https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot/"
+            },
+            {
+              "n": 6,
+              "category": "GitHub Copilot for",
+              "title": "GitHub Copilot for Eclipse adds BYOK, skills, prompt files, and context usage",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "The Eclipse release adds custom model keys, improved ABAP support, context-window visibility, custom instruction loading preferences, and reusable skills and prompt files.",
+              "why": "Older enterprise stacks are getting the same agent primitives as newer IDEs: model choice, context discipline, and reusable instructions.",
+              "action": "For SAP or ABAP-heavy work, watch this closely: define prompt files for recurring code-review and modernization tasks instead of relying on ad hoc chat.",
+              "teacher": "Good agent adoption is often about boring enterprise coverage. Eclipse support can matter more commercially than another flashy demo.",
+              "link": "https://github.blog/changelog/2026-06-02-github-copilot-in-eclipse-byok-skills-and-chat-updates/"
+            },
+            {
+              "n": 7,
+              "category": "Visual Studio 2026",
+              "title": "Visual Studio 2026 Copilot update emphasizes planning, skill management, and multi-file review",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Visual Studio added a Plan agent, a Skills panel, multi-file change summaries, context-window management, commit-as-context, and C++ build-performance improvements.",
+              "why": "Microsoft is standardizing a safer agent loop: plan first, expose skills, show diffs clearly, manage context, then implement.",
+              "action": "Mirror the workflow in your own coding agents: require a saved plan and a multi-file summary before accepting large automated edits.",
+              "teacher": "Use this as the checklist for professional coding-agent UX: plan, context, skills, diff review, rollback.",
+              "link": "https://github.blog/changelog/2026-06-04-github-copilot-in-visual-studio-may-update/"
+            },
+            {
+              "n": 8,
+              "category": "Microsoft reframes AI",
+              "title": "Microsoft reframes AI impact around the operating system for agents",
+              "source": "blogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft argues that business change comes from the surrounding agent system: context, orchestration, trust, governance, and integration across work data and apps.",
+              "why": "The market signal is clear: buyers are no longer paying only for model access. They are buying the rails that let agents act safely in real workflows.",
+              "action": "When evaluating any AI tool, ask what context layer, permission model, audit trail, and handoff path it provides, not only which model it calls.",
+              "teacher": "Teach the stack view: model, tools, memory, policies, evals, workflow, and user surface all decide agent quality.",
+              "link": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/"
+            },
+            {
+              "n": 9,
+              "category": "MoEngage launches marketer-defined",
+              "title": "MoEngage launches marketer-defined custom agents with MCP architecture",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "MoEngage launched Merlin AI Custom Agents for customer engagement teams, emphasizing visibility, marketer-defined guardrails, and an open MCP architecture.",
+              "why": "Agent tooling is moving into non-developer departments. Marketing teams want agents that operate across customer data and campaign systems with guardrails.",
+              "action": "For creator or brand workflows, prototype one narrow agent: collect brief inputs, draft variants, check brand rules, and require human approval before publishing.",
+              "teacher": "This is a useful example of domain agents: the agent is valuable because it knows the business process, not because it chats well.",
+              "link": "https://www.prnewswire.com/news-releases/moengage-launches-merlin-ai-custom-agents-with-full-visibility-marketer-defined-guardrails-and-open-mcp-architecture-302789285.html"
+            },
+            {
+              "n": 10,
+              "category": "Unterm packages multiple",
+              "title": "Unterm packages multiple coding agents behind one terminal surface",
+              "source": "unterm.app",
+              "relevance": "Intermediate",
+              "summary": "Unterm presents a terminal built for people and AI coding agents, with one-click setup for tools such as Claude Code, Codex CLI, Gemini CLI, OpenCode, and Aider.",
+              "why": "Makers are feeling agent fragmentation. Small tools that normalize setup, switching, and terminal control can become practical glue in multi-agent workflows.",
+              "action": "Try it only in a disposable repo first, then compare whether it reduces setup friction versus your current Codex or Claude terminal routine.",
+              "teacher": "Use it to teach toolchain risk: convenience layers are useful, but inspect permissions, shell behavior, and repo changes before trusting them.",
+              "link": "https://unterm.app/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -756,7 +877,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 06:05 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI extends Codex",
+              "title": "OpenAI extends Codex beyond developers with role-specific plugins, Sites, and annotations",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says Codex now serves non-technical roles with plugins, in-place annotations, and a preview for shareable interactive sites and apps.",
+              "why": "Agentic coding is becoming a general work surface for analysts, marketers, operators, designers, and researchers, not only engineers.",
+              "action": "Test one repeatable non-code workflow: turn a brief, spreadsheet, or client notes into a small internal dashboard or shareable app.",
+              "teacher": "Show the difference between asking for text and asking for an artifact with constraints, review points, and a URL-ready output.",
+              "link": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub Copilot CLI",
+              "title": "GitHub Copilot CLI adds rubber duck review, prompt scheduling, voice input, and an experimental terminal UI",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub refreshed Copilot CLI with a critic agent, /every and /after schedules, local voice input, and tabs for repo work.",
+              "why": "The terminal is turning into an agent operations console where review, automation, and repo navigation sit inside one loop.",
+              "action": "Create a small scheduled CLI prompt for daily test runs or repo health checks, then compare output quality with and without rubber duck review.",
+              "teacher": "Use this as a lesson on agent supervision: plan, critique, scheduled recurrence, and evidence from actual repo state.",
+              "link": "https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub broadens the",
+              "title": "GitHub broadens the Copilot desktop app preview with cloud sessions, automations, browsing, and session search",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "The Copilot app preview is now available to paid Copilot customers and adds cloud agent sessions, scheduled cloud automations, integrated browser actions, and Chronicle search.",
+              "why": "AI coding is moving from chat panes toward persistent work management: sessions, state, diffs, browser verification, and reusable history.",
+              "action": "Evaluate whether desktop agent sessions reduce context loss versus separate IDE, terminal, and browser conversations.",
+              "teacher": "Frame it as a shift from prompt history to work-object history: the artifact, diff, and verification trail matter more than the chat.",
+              "link": "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/"
+            },
+            {
+              "n": 4,
+              "category": "Google releases Gemma",
+              "title": "Google releases Gemma 4 12B for laptop-friendly multimodal agentic work",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "Google introduced Gemma 4 12B, a mid-sized open model aimed at laptop deployment with multimodal reasoning and native audio input.",
+              "why": "Local multimodal models are becoming practical enough for maker workflows that need privacy, latency control, or offline experimentation.",
+              "action": "Try Gemma 4 12B in LM Studio or Ollama on one visual/audio classification task relevant to design references or asset triage.",
+              "teacher": "Explain the tradeoff: smaller local models may not beat frontier cloud models, but they unlock private and low-friction iteration.",
+              "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
+            },
+            {
+              "n": 5,
+              "category": "Runway joins NVIDIA",
+              "title": "Runway joins NVIDIA and other labs in the Cosmos Coalition for open world models",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway announced it is a founding member of the Cosmos Coalition, collaborating on open world models for physical AI with an initial Runway-NVIDIA base model project.",
+              "why": "Video, simulation, robotics, and 3D pipelines are converging around world models that can reason about space, motion, and physical behavior.",
+              "action": "Track the first open base model from the coalition and map possible uses for previs, scene layout, retail simulation, or product-in-space tests.",
+              "teacher": "Use it to teach why world models differ from image/video generators: they aim to predict and manipulate state, not only produce pixels.",
+              "link": "https://runwayml.com/news/introducing-cosmos-coalition"
+            },
+            {
+              "n": 6,
+              "category": "Luma partners on",
+              "title": "Luma partners on Human After All, a Paris AI creator studio with real production support",
+              "source": "lumalabs.ai",
+              "relevance": "Intermediate",
+              "summary": "Luma joined Webedia-Elephant's Human After All studio alongside Google and ElevenLabs, offering creators guided access to AI video workflows through the summer.",
+              "why": "AI video is entering production-service formats where tools, training, and creative direction are bundled for working creators.",
+              "action": "Study the studio model as a template for offering AI-assisted content packages: onboarding, office hours, repeatable looks, and human direction.",
+              "teacher": "Emphasize that creator value shifts toward performance, direction, iteration choices, and consistency across shots.",
+              "link": "https://lumalabs.ai/news/human-after-all"
+            },
+            {
+              "n": 7,
+              "category": "Runway Aleph 2.0",
+              "title": "Runway Aleph 2.0 and Edit Studio push AI video toward controlled revision instead of blind generation",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway launched Aleph 2.0 with Edit Studio, supporting longer 1080p edits, localized changes, and better preservation of source video.",
+              "why": "The market is rewarding controllability: creators need to revise existing footage precisely, not regenerate a whole scene from scratch.",
+              "action": "Build a checklist for AI video tools: source preservation, local edits, duration, resolution, character consistency, and export path.",
+              "teacher": "Use before/after clips to teach surgical revision: protect what is already right, edit only the target area, then verify drift.",
+              "link": "https://runwayml.com/news/introducing-aleph-2-and-edit-studio"
+            },
+            {
+              "n": 8,
+              "category": "NVIDIA publishes a",
+              "title": "NVIDIA publishes a self-evolving Hermes Agent pattern with NemoClaw and OpenShell security",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA shows an open-source agent that connects Outlook, Slack, GitHub, and forums while learning report formats as memories and skills under a secured runtime.",
+              "why": "Self-improving agents are becoming concrete: memory, skill writing, messaging integration, and runtime isolation are being packaged together.",
+              "action": "Borrow the pattern for internal research digests: connectors first, constrained report format second, memory/skill persistence third.",
+              "teacher": "Make students separate capability from governance: an agent that can learn also needs boundaries, auditability, and recoverable state.",
+              "link": "https://developer.nvidia.com/blog/?p=117420"
+            },
+            {
+              "n": 9,
+              "category": "AWS Step Functions",
+              "title": "AWS Step Functions adds an AgentCore-powered reasoning step for auditable workflow agents",
+              "source": "aws.amazon.com",
+              "relevance": "Intermediate",
+              "summary": "AWS added a preview integration so Step Functions workflows can invoke Bedrock AgentCore reasoning, run agents in sequence or parallel, and expose token usage and traces.",
+              "why": "Enterprise agents are being absorbed into normal workflow orchestration with approvals, logs, retries, and audit history.",
+              "action": "Prototype one agent step inside a deterministic workflow, such as document classification followed by human approval before action.",
+              "teacher": "Teach the difference between autonomous and orchestrated agents: autonomy lives inside controlled workflow boundaries.",
+              "link": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-step-functions-agentcore/"
+            },
+            {
+              "n": 10,
+              "category": "NVIDIA and Microsoft",
+              "title": "NVIDIA and Microsoft package secure personal AI agent development for Windows PCs",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA describes new Windows-focused agent tooling with Microsoft execution containers, RTX Spark hardware, NemoClaw, Hermes Agent, and local app integration.",
+              "why": "Powerful local agent workstations are becoming a real category for developers, creators, and teams handling private project context.",
+              "action": "List which workflows should stay local: client assets, source files, browser automation, render notes, and private email/calendar context.",
+              "teacher": "Use this to explain why hardware, sandboxing, and model runtime choices now belong in AI workflow design, not only IT procurement.",
+              "link": "https://developer.nvidia.com/blog/build-personal-ai-agents-on-windows-pcs-with-new-tools-from-microsoft-and-nvidia/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -903,7 +1145,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 03:05 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Anthropic maps AI-enabled",
+              "title": "Anthropic maps AI-enabled cyber threats to MITRE ATTACK",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic analyzed 832 banned accounts tied to malicious cyber activity and mapped observed AI-enabled behavior against the MITRE ATTACK framework.",
+              "why": "Security models for agents need to account for sequential tool use, autonomous command execution, and tactics that old frameworks may not capture well.",
+              "action": "Add an agent security checklist for shell access, credential prompts, network calls, and suspicious multi-step behavior.",
+              "teacher": "Use this as a concrete lesson in why agent safety is an operations problem, not just a model policy problem.",
+              "link": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+            },
+            {
+              "n": 2,
+              "category": "Anthropic expands Project",
+              "title": "Anthropic expands Project Glasswing for AI-assisted vulnerability discovery",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic is extending Project Glasswing to about 150 organizations after partners used Claude Mythos Preview to scan codebases for severe vulnerabilities.",
+              "why": "AI security work is moving from lab benchmark to coordinated maintainer and critical-infrastructure programs.",
+              "action": "Pick one dependency-heavy project and define a responsible disclosure path before running automated vulnerability scans.",
+              "teacher": "Teach the difference between finding flaws and safely coordinating fixes with owners.",
+              "link": "https://www.anthropic.com/news/expanding-project-glasswing"
+            },
+            {
+              "n": 3,
+              "category": "Vercel adds NVIDIA",
+              "title": "Vercel adds NVIDIA Nemotron 3 Ultra to AI Gateway",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Nemotron 3 Ultra is now available through Vercel AI Gateway as an open MoE reasoning model for long-running agent workflows, with 1M context and high throughput claims.",
+              "why": "Model access is becoming a routing problem: builders can swap agent models behind one API instead of committing to a single lab.",
+              "action": "Add a model-router test matrix for one agent task: planning, tool use, recovery, and final synthesis.",
+              "teacher": "Show learners how gateway abstractions make evaluation discipline more important, not less.",
+              "link": "https://vercel.com/changelog/nemotron-3-ultra-now-available-on-ai-gateway"
+            },
+            {
+              "n": 4,
+              "category": "Vercel exposes Qwen",
+              "title": "Vercel exposes Qwen 3.7 Plus as a visual-agent foundation model",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Qwen 3.7 Plus is listed on AI Gateway with vision-language capabilities aimed at GUI, CLI, coding, productivity, and visual-agent tasks.",
+              "why": "The line between coding agent and screen-operating agent is narrowing, especially for UI QA and screenshot-grounded debugging.",
+              "action": "Create a screenshot-to-bug-report eval using three real UI failures and score model patch quality.",
+              "teacher": "Have students inspect where visual reasoning ends and tool execution begins.",
+              "link": "https://vercel.com/changelog/qwen-3-7-plus-now-available-on-ai-gateway"
+            },
+            {
+              "n": 5,
+              "category": "Sema4.ai upgrades enterprise",
+              "title": "Sema4.ai upgrades enterprise agent context and deployment",
+              "source": "sema4.ai",
+              "relevance": "Intermediate",
+              "summary": "Sema4.ai announced a broad platform upgrade focused on agent building, deeper business context capture, and simpler enterprise deployment.",
+              "why": "Enterprise agents are being sold less as demos and more as context-governed systems that fit existing workflows.",
+              "action": "Map any proposed agent to three context sources, two permission boundaries, and one measurable business output.",
+              "teacher": "Use this as a practical case in agent productization versus prompt tinkering.",
+              "link": "https://sema4.ai/newsroom/sema4-ai-releases-advanced-platform-upgrade-delivering-smarter-agents-deeper-business-context-and-simplified-deployment/"
+            },
+            {
+              "n": 6,
+              "category": "Microsoft Project Solara",
+              "title": "Microsoft Project Solara points to agent-first devices",
+              "source": "commandline.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft described Project Solara as a chip-to-cloud platform for agent-first experiences and new device form factors.",
+              "why": "If agents get dedicated hardware surfaces, makers will design workflows around ambient, portable, always-available assistants rather than desktop apps.",
+              "action": "Sketch one agent-first device flow for a studio: capture brief, retrieve references, trigger render checklist, and report status.",
+              "teacher": "Ask what disappears when the app is no longer the primary interface.",
+              "link": "https://commandline.microsoft.com/project-solara-build-2026/"
+            },
+            {
+              "n": 7,
+              "category": "Adobe backs the",
+              "title": "Adobe backs the CREATOR Act for artist style protection",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe argues for the CREATOR Act, focused on protecting artists from mass imitation of signature styles without consent or compensation.",
+              "why": "Creator tooling is not just capability; market trust now depends on provenance, consent, and defensible style rights.",
+              "action": "For client-facing AI visuals, keep a source and rights note beside every reference image, model, and generated output.",
+              "teacher": "Use this to discuss the difference between inspiration, style mimicry, and production risk.",
+              "link": "https://blog.adobe.com/en/publish/2026/06/02/the-creator-act-protection-artists-need-age-of-ai"
+            },
+            {
+              "n": 8,
+              "category": "NVIDIA publishes verified",
+              "title": "NVIDIA publishes verified agent skills for capability governance",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA frames verified agent skills as a way to make portable agent capabilities easier to trust, govern, and reuse.",
+              "why": "Skills are becoming deployable control surfaces: they define what an agent can do, not just what it can say.",
+              "action": "Inventory your reusable agent skills and tag each one with inputs, permissions, tests, and rollback steps.",
+              "teacher": "Teach skills as small operational contracts rather than prompt snippets.",
+              "link": "https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/"
+            },
+            {
+              "n": 9,
+              "category": "Paperclip release adds",
+              "title": "Paperclip release adds managed agents and Cursor Cloud adapter",
+              "source": "newreleases.io",
+              "relevance": "Intermediate",
+              "summary": "Paperclip's v2026.512.0 release expands plugin host surfaces and adds a Cursor Cloud adapter for durable hosted-agent runs.",
+              "why": "Open-source orchestration layers are starting to wrap commercial coding agents, giving teams a neutral control plane.",
+              "action": "Watch for adapter patterns that let one job card run across Codex, Cursor, Claude Code, or OpenHands.",
+              "teacher": "Use this to explain vendor abstraction: useful only if logs, cancellation, and artifacts stay consistent.",
+              "link": "https://newreleases.io/project/github/paperclipai/paperclip/release/v2026.512.0"
+            },
+            {
+              "n": 10,
+              "category": "MCP protocol release",
+              "title": "MCP protocol release candidate is scheduled for July",
+              "source": "newreleases.io",
+              "relevance": "Intermediate",
+              "summary": "The Model Context Protocol project has a 2026-07-28 release-candidate entry, signaling continued standardization work around agent-tool connectivity.",
+              "why": "MCP is becoming the default vocabulary for agent integrations, so changes in the spec can ripple through tools, skills, and security review.",
+              "action": "Pin MCP server versions in active projects and keep a small compatibility test before upgrading clients.",
+              "teacher": "Teach protocol discipline: integrations need versioning, fixtures, and failure-mode examples.",
+              "link": "https://newreleases.io/project/github/modelcontextprotocol/modelcontextprotocol/release/2026-07-28-RC"
+            }
+          ]
         },
         {
           "id": "job",
@@ -1213,7 +1576,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 18:05 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Meshy launches a",
+              "title": "Meshy launches a chat-style 3D Agent beta",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy says its 3D Agent Beta is available from June 4 and lets users create, test, and edit 3D assets through a conversational workflow.",
+              "why": "3D tools are moving from prompt-to-model toward agent-led iteration, which matters for concept design, product visualization, games, and AR/VR pipelines.",
+              "action": "Test it with one controlled asset brief: reference image, dimensions, material notes, and required export format; compare against your current ComfyUI/Blender handoff.",
+              "teacher": "Good teaching example for explaining the difference between a generator and an agent: the useful part is iterative task handling, not just first-pass mesh output.",
+              "link": "https://www.prnewswire.com/de/pressemitteilungen/meshy-brings-ai-agents-to-3d-creation-meshy-3d-agent-beta-launches-302791235.html"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft Work IQ",
+              "title": "Microsoft Work IQ APIs will expose business context to agents",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft says Work IQ APIs become generally available on June 16, giving agents semantic context from Microsoft 365 work patterns, content, people, meetings, and business systems.",
+              "why": "Enterprise agents are shifting from generic chat to context-rich automation inside actual work graphs.",
+              "action": "Map which recurring workflows would benefit from work-context retrieval before action: meeting prep, client follow-up, project summaries, and task routing.",
+              "teacher": "Useful lesson: the moat is no longer only the model; it is permissions, context, and action surfaces around the model.",
+              "link": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/"
+            },
+            {
+              "n": 3,
+              "category": "Microsoft adds agent",
+              "title": "Microsoft adds agent security controls for Codex, Copilot, Claude Code, and OpenClaw",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "At Build, Microsoft highlighted controls for secure agent development, including agentic risk detection across major coding agents and governance through Defender, Purview, and related tooling.",
+              "why": "Agent adoption will be constrained by audit, data leakage, and uncontrolled tool use unless security becomes part of the default development loop.",
+              "action": "Add an agent-risk checklist to every coding workflow: data access, command permissions, secrets exposure, PR review, and trace logging.",
+              "teacher": "Teaching angle: show agent safety as an engineering system, not a policy slide.",
+              "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/"
+            },
+            {
+              "n": 4,
+              "category": "GitHub Copilot metrics",
+              "title": "GitHub Copilot metrics now classify users by AI adoption phase",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub added cohorts to the Copilot usage metrics API so organizations can see not just who is active, but how deeply each user is using Copilot over a rolling 28-day window.",
+              "why": "AI tooling is becoming measurable operational behavior, which lets teams manage adoption, training, and ROI instead of guessing from seat counts.",
+              "action": "For any team rollout, track cohorts weekly and pair low-adoption groups with practical workflows, not generic AI training.",
+              "teacher": "Good classroom point: adoption metrics should measure workflow maturity, not raw prompt volume.",
+              "link": "https://github.blog/changelog/2026-05-29-copilot-usage-metrics-api-adds-cohorts-for-ai-adoption/"
+            },
+            {
+              "n": 5,
+              "category": "GitHub Agentic Workflows",
+              "title": "GitHub Agentic Workflows now scaffolds a Copilot custom agent",
+              "source": "github.github.com",
+              "relevance": "Intermediate",
+              "summary": "The June 1 Agentic Workflows update says gh aw init can scaffold a GitHub Copilot custom agent and publish workflow analytics as charts and discussions.",
+              "why": "Custom agents are becoming repo-native artifacts, which makes agent behavior easier to review, version, and teach.",
+              "action": "Try a small repo workflow where the agent is limited to one repeated job, such as release-note drafting or issue triage.",
+              "teacher": "Teaching note: put the agent definition beside the code so behavior can be inspected like any other project file.",
+              "link": "https://github.github.com/gh-aw/blog/2026-06-01-weekly-update/"
+            },
+            {
+              "n": 6,
+              "category": "Hermes Agent release",
+              "title": "Hermes Agent release adds creative providers, MCP cataloging, and OpenHands orchestration",
+              "source": "newreleases.io",
+              "relevance": "Intermediate",
+              "summary": "Hermes Agent v0.15.0 added Krea and FAL image providers, an MCP catalog picker, OpenHands orchestration, messaging expansion, and xAI integration improvements.",
+              "why": "Open-source agent stacks are rapidly absorbing creative generation, tool discovery, coding orchestration, and multi-channel delivery.",
+              "action": "Borrow the pattern: keep providers modular, catalog tools clearly, and treat image/video generation as pluggable agent capabilities.",
+              "teacher": "Teaching angle: modular provider design prevents one monolithic agent from becoming impossible to maintain.",
+              "link": "https://newreleases.io/project/github/NousResearch/hermes-agent/release/v2026.5.28"
+            },
+            {
+              "n": 7,
+              "category": "Future AGI offers",
+              "title": "Future AGI offers a self-hostable eval and observability stack for AI agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Future AGI positions its open-source platform around tracing, evals, simulations, datasets, gateway controls, guardrails, and voice-agent evaluation.",
+              "why": "As agents move into production, evaluation and simulation become as important as prompt design.",
+              "action": "Create a tiny eval set for one real workflow: expected output, forbidden failure, latency target, and human review criteria.",
+              "teacher": "Useful lesson: an agent without evals is a demo; an agent with repeatable tests can become infrastructure.",
+              "link": "https://github.com/future-agi/future-agi"
+            },
+            {
+              "n": 8,
+              "category": "Hugging Face documents",
+              "title": "Hugging Face documents agents that connect to Hub models, datasets, Spaces, and Skills",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face Agents documentation describes MCP, skills, CLI support, and SDK patterns for agents that can search models, explore datasets, run Spaces, and use community tools.",
+              "why": "The Hub is becoming not just a model repository but an action surface for agents.",
+              "action": "Use HF agents as a discovery workflow: find model, inspect license, run demo Space, and save evaluation notes automatically.",
+              "teacher": "Teaching note: open ecosystems matter because agents need searchable tools, datasets, and provenance, not only model weights.",
+              "link": "https://huggingface.co/docs/hub/agents"
+            },
+            {
+              "n": 9,
+              "category": "AWS Partner Central",
+              "title": "AWS Partner Central agents turn sales opportunity creation into a conversation",
+              "source": "aws.amazon.com",
+              "relevance": "Intermediate",
+              "summary": "AWS says Partner Central agents can create opportunities from natural language, meeting notes, proposals, or cloned deals, then enrich and improve submission quality.",
+              "why": "Back-office and sales workflows are a practical market signal: agents are being embedded where forms, documents, and CRM hygiene waste time.",
+              "action": "Look for any recurring form-heavy workflow and prototype an extract-review-submit agent with human approval at the final step.",
+              "teacher": "Teaching angle: the business win is structured output quality, not the chat interface itself.",
+              "link": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-partner-central-agents-oppo"
+            },
+            {
+              "n": 10,
+              "category": "AWS frontier agents",
+              "title": "AWS frontier agents move security testing and cloud operations into long-running autonomous work",
+              "source": "aws.amazon.com",
+              "relevance": "Intermediate",
+              "summary": "AWS announced Security Agent and DevOps Agent general availability as frontier agents for on-demand penetration testing, incident response, and reliability work.",
+              "why": "Cloud vendors are packaging long-running specialist agents for high-value operational tasks, not just assistant chat.",
+              "action": "For internal ops, define narrow autonomous lanes first: incident summary, log correlation, dependency check, and suggested remediation.",
+              "teacher": "Teaching note: frontier agents need boundaries, telemetry, and handoff rules because they operate over hours or days.",
+              "link": "https://aws.amazon.com/blogs/machine-learning/aws-launches-frontier-agents-for-security-testing-and-cloud-operations/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -1239,7 +1723,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 15:05 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Google releases Gemma",
+              "title": "Google releases Gemma 4 12B for laptop-scale multimodal agents",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "Google introduced Gemma 4 12B, a mid-sized unified multimodal model with native audio input and a smaller memory footprint aimed at laptops and edge-style deployments.",
+              "why": "Local multimodal models are getting good enough for maker tools, booth assistants, offline ideation, and private client-data workflows without always calling a cloud frontier model.",
+              "action": "Test it through Ollama or LM Studio on one visual/audio workflow and compare latency, VRAM use, and answer quality against your current small-model baseline.",
+              "teacher": "Use this as a concrete example of the split between frontier cloud reasoning and practical local multimodal capability.",
+              "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
+            },
+            {
+              "n": 2,
+              "category": "VS Code 1.122",
+              "title": "VS Code 1.122 makes agent work more portable with air-gapped BYOK",
+              "source": "code.visualstudio.com",
+              "relevance": "Intermediate",
+              "summary": "The latest VS Code release improves the Agents Window and adds more flexible bring-your-own-key model management, including air-gapped BYOK and custom endpoint flows.",
+              "why": "Enterprises and privacy-sensitive creators want agentic coding without sending every file to one default cloud vendor.",
+              "action": "Document which local or custom endpoints your own workflow can tolerate, then try one agent task with a non-default model provider.",
+              "teacher": "The key trend is not just better coding agents; it is model-routing control becoming part of the IDE.",
+              "link": "https://code.visualstudio.com/updates"
+            },
+            {
+              "n": 3,
+              "category": "GitHub expands the",
+              "title": "GitHub expands the Copilot app technical preview",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub widened access to the Copilot app preview, positioning it as a desktop home for agent-native software development tied to GitHub projects.",
+              "why": "Coding agents are moving from sidebar assistants into dedicated control surfaces for parallel work, review, and repository-level task management.",
+              "action": "Track whether your GitHub-heavy projects benefit from a desktop agent cockpit or whether Codex/Cursor-style terminal control remains faster.",
+              "teacher": "This is a UI shift: the agent needs a dashboard because the work is no longer one prompt and one diff.",
+              "link": "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/"
+            },
+            {
+              "n": 4,
+              "category": "Zed publishes live",
+              "title": "Zed publishes live Agent Metrics across real coding agents",
+              "source": "zed.dev",
+              "relevance": "Intermediate",
+              "summary": "Zed now shows anonymized adoption and performance metrics for agents used inside its editor, including sessions, turns, latency, and model trends.",
+              "why": "Agent selection is becoming measurable. Builders can compare adoption and responsiveness instead of relying only on social hype.",
+              "action": "Use the metrics as a weekly market pulse: note which agents are gaining sessions and which models are becoming too slow for daily work.",
+              "teacher": "Good AI tooling discussions need telemetry: adoption, latency, accepted edits, and failure modes matter more than demos.",
+              "link": "https://zed.dev/agent-metrics"
+            },
+            {
+              "n": 5,
+              "category": "NVIDIA shows a",
+              "title": "NVIDIA shows a Hermes Agent and NemoClaw pattern for self-evolving research agents",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA published a pattern for research agents that synthesize data, use governed infrastructure, and improve loops with NemoClaw-style agent tooling.",
+              "why": "The enterprise agent story is shifting toward repeatable governed loops rather than unconstrained chatbots with tools.",
+              "action": "Borrow the pattern for any long research workflow: define inputs, tools, evaluation checks, and allowed write actions before autonomy.",
+              "teacher": "Self-evolving does not mean unsupervised chaos; it means measured feedback loops with clear controls.",
+              "link": "https://developer.nvidia.com/blog/deploy-self-evolving-agents-for-faster-more-secure-research-with-a-hermes-agent-and-nvidia-nemoclaw/"
+            },
+            {
+              "n": 6,
+              "category": "NVIDIA JetPack 7.2",
+              "title": "NVIDIA JetPack 7.2 targets agentic AI at the edge",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA highlighted JetPack 7.2 memory-efficiency improvements for running agentic workloads on Jetson-class edge hardware.",
+              "why": "Physical AI, kiosk, installation, robotics, and interactive space projects need local reasoning close to sensors and displays.",
+              "action": "For any installation or booth prototype, separate cloud-only features from edge-safe features that must survive weak connectivity.",
+              "teacher": "Edge agents are about reliability and latency as much as model intelligence.",
+              "link": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2/"
+            },
+            {
+              "n": 7,
+              "category": "Runway opens London",
+              "title": "Runway opens London HQ focused on world model research",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway announced a London headquarters and research hub, with major investment planned around general world models and simulation.",
+              "why": "AI video companies are repositioning as world-model infrastructure for robotics, simulation, industrial training, and spatial design.",
+              "action": "Watch Runway less as a video-toy vendor and more as a future scene-simulation platform for creator and 3D workflows.",
+              "teacher": "World models are the bridge concept connecting generative video, spatial reasoning, robotics, and synthetic production.",
+              "link": "https://runwayml.com/news/runway-opens-london-hq"
+            },
+            {
+              "n": 8,
+              "category": "Hugging Face and",
+              "title": "Hugging Face and IBM argue enterprise AI needs explicit agent logic",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "An IBM Research post on Hugging Face frames agent logic as the missing guide layer for scalable, trustworthy enterprise AI adoption.",
+              "why": "The market is realizing that bigger models alone do not produce dependable workflows; orchestration, policies, and evaluation layers matter.",
+              "action": "When evaluating agent products, ask what their planner, memory, tool policy, and audit story are instead of only asking which model they use.",
+              "teacher": "This is a useful vocabulary shift from model capability to system design.",
+              "link": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption"
+            },
+            {
+              "n": 9,
+              "category": "Stability AI releases",
+              "title": "Stability AI releases Stable Audio 3.0 with open-weight models",
+              "source": "stability.ai",
+              "relevance": "Intermediate",
+              "summary": "Stability AI released Stable Audio 3.0, including open-weight small and medium models on Hugging Face and a larger API/self-host option.",
+              "why": "Creator AI is expanding beyond image and video into licensed, controllable audio assets that can be part of end-to-end production pipelines.",
+              "action": "Test a small loop: generate a short brand sound bed, then check licensing, editability, and how it fits a motion/booth/video mood board.",
+              "teacher": "Open weights plus licensed training data is the important pairing to notice for commercial creator workflows.",
+              "link": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models"
+            },
+            {
+              "n": 10,
+              "category": "OpenEngram packages self-hosted",
+              "title": "OpenEngram packages self-hosted memory infrastructure for MCP agents",
+              "source": "openengram.ai",
+              "relevance": "Intermediate",
+              "summary": "OpenEngram presents an Apache-licensed memory stack with APIs, local embeddings, code search, dashboarding, and MCP support for common agent clients.",
+              "why": "Persistent memory is becoming an infrastructure layer. Agents that remember across tools need portable, inspectable stores, not hidden chat history.",
+              "action": "Try one self-hosted memory layer only on non-sensitive project notes first, then inspect what it stores, retrieves, and forgets.",
+              "teacher": "Agent memory needs the same scrutiny as a database: schema, provenance, retention, privacy, and deletion behavior.",
+              "link": "https://openengram.ai/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -1265,7 +1870,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 12:03 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI pushes Codex",
+              "title": "OpenAI pushes Codex beyond coding into role-specific knowledge work",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI introduced role-specific Codex plugins, workspace-shareable Sites, and annotations, while saying Codex has passed 5 million weekly users and is increasingly used by non-developers.",
+              "why": "The coding-agent category is becoming a broader maker tool for analysts, designers, marketers, and operators, not only engineers.",
+              "action": "Prototype one non-code Codex workflow: turn a brief, spreadsheet, or client deck into a small reviewable artifact with annotations.",
+              "teacher": "Show the class how the same agent loop can inspect context, draft, revise, and publish, then discuss where human taste still matters.",
+              "link": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub Copilot in",
+              "title": "GitHub Copilot in VS Code adds a more stable agent window and remote task controls",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says VS Code Stable now has a preview Agents window, better Git/session handling, BYOK support for air-gapped environments, and remote agent task triggering.",
+              "why": "Agent coding is moving from chat panes into durable work management, especially for long-running or remote jobs.",
+              "action": "Use agent sessions as trackable work units: require branch sync, clear task logs, and a test command before review.",
+              "teacher": "Compare autocomplete, chat, and agent-session workflows so learners see why review trails and Git state matter.",
+              "link": "https://github.blog/changelog/2026-06-03-github-copilot-in-visual-studio-code-may-releases/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub Copilot CLI",
+              "title": "GitHub Copilot CLI gets rubber-duck review, scheduled prompts, voice, and an experimental terminal UI",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "The refreshed Copilot CLI lets a main coding agent hand work to a rubber-duck reviewer, schedule recurring prompts, accept voice input, and test an experimental tabbed terminal interface.",
+              "why": "The terminal is becoming an agent cockpit, with review and cadence controls built into the command line.",
+              "action": "Try a two-agent pattern: one agent implements, then a rubber-duck pass checks assumptions, tests, and edge cases.",
+              "teacher": "Use it to teach critique loops: implementation is only one phase; independent review is where many agent mistakes are caught.",
+              "link": "https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/"
+            },
+            {
+              "n": 4,
+              "category": "Runway MCP lets",
+              "title": "Runway MCP lets external agents drive video generation and creative production workflows",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway introduced an MCP connection so agents can use Runway tools, including examples like turning a product page into a polished marketing video.",
+              "why": "Creative tools are joining the agent-tool ecosystem, making video generation callable from broader automation workflows.",
+              "action": "Map a product-launch pipeline: source page, shot list, brand constraints, generation, review, and final export.",
+              "teacher": "Explain MCP as a connector layer: the agent does not just chat about media, it calls real creative tools with constraints.",
+              "link": "https://runwayml.com/news/mcp"
+            },
+            {
+              "n": 5,
+              "category": "Runway Agent turns",
+              "title": "Runway Agent turns creative briefs into finished multi-scene videos through conversation",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway Agent plans concepts, story beats, visual direction, scenes, voiceover, dialogue, music, and final assembly from a conversational brief.",
+              "why": "Video creation is shifting from single-prompt clips toward end-to-end agentic production systems.",
+              "action": "Create a reusable brief template with audience, brand rules, product facts, forbidden styles, and review criteria.",
+              "teacher": "Have students separate creative direction from execution: the agent can assemble, but the human must define taste and acceptance rules.",
+              "link": "https://runwayml.com/news/introducing-runway-agent"
+            },
+            {
+              "n": 6,
+              "category": "NVIDIA Cosmos 3",
+              "title": "NVIDIA Cosmos 3 opens physical-AI world, reasoning, and action model workflows",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA describes Cosmos 3 as an open physical-AI foundation model combining physical reasoning, world generation, and action generation, with models, scripts, tools, and datasets being opened.",
+              "why": "World models are becoming practical infrastructure for robotics, simulation, autonomous vehicles, and spatial AI.",
+              "action": "For 3D or booth workflows, track where source-locked geometry, camera paths, and physics-aware generation could reduce render drift.",
+              "teacher": "Frame it as the difference between generating a pretty frame and modeling a world that can predict and act.",
+              "link": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/"
+            },
+            {
+              "n": 7,
+              "category": "Runway joins NVIDIA",
+              "title": "Runway joins NVIDIA Cosmos Coalition to build open world models",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway became a founding member of the Cosmos Coalition with NVIDIA, aiming to advance open world models and co-develop a base model with shared infrastructure.",
+              "why": "The video-model and physical-AI worlds are converging, and open ecosystems may define the next production stack.",
+              "action": "Watch for reusable world-model assets, APIs, and evaluation methods that can plug into creator or 3D pipelines.",
+              "teacher": "Use this as a market map: model labs, GPU platforms, and creator tools are forming alliances around the same spatial foundation layer.",
+              "link": "https://runwayml.com/news/introducing-cosmos-coalition"
+            },
+            {
+              "n": 8,
+              "category": "Luma joins Human",
+              "title": "Luma joins Human After All, a production studio for AI-assisted creator workflows",
+              "source": "lumalabs.ai",
+              "relevance": "Intermediate",
+              "summary": "Luma joined Webedia-Elephant Human After All alongside Google and ElevenLabs, focusing on live performance transformation, consistent video-to-video characters, and creator support in Paris.",
+              "why": "AI video is becoming a services-and-production discipline, not just a software demo category.",
+              "action": "Study how they combine tool access, training, office hours, and real production pressure; this is likely how clients will adopt AI creative workflows.",
+              "teacher": "Ask learners to identify which parts are human performance, direction, AI transformation, and post-production quality control.",
+              "link": "https://lumalabs.ai/news/human-after-all"
+            },
+            {
+              "n": 9,
+              "category": "Mistral Vibe becomes",
+              "title": "Mistral Vibe becomes a unified long-horizon productivity and coding agent",
+              "source": "mistral.ai",
+              "relevance": "Intermediate",
+              "summary": "At AI Now Summit, Mistral described Vibe as one agent for long-running work across inbox, calendar, research, deliverables, recurring processes, and coding tasks through web, editor, and terminal.",
+              "why": "European AI vendors are packaging agents as daily operating layers, not just model APIs.",
+              "action": "Compare Vibe-style all-day agents with specialized coding agents: decide which workflows need broad context and which need narrow tool control.",
+              "teacher": "Use it to teach scope design: broad agents need stronger permissions, memory hygiene, and handoff rules.",
+              "link": "https://mistral.ai/news/ai-now-summit-2026"
+            },
+            {
+              "n": 10,
+              "category": "Anthropic acquires Stainless",
+              "title": "Anthropic acquires Stainless to strengthen SDKs, CLIs, and MCP server tooling for agents",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic acquired Stainless, a company known for generating SDKs, CLIs, and MCP servers from API specs, to improve agent connectivity across tools and data.",
+              "why": "Agent usefulness depends on high-quality tool access; API wrappers and MCP servers are becoming strategic infrastructure.",
+              "action": "Audit important tools for clean API specs, SDKs, and MCP readiness before asking agents to use them in production.",
+              "teacher": "Teach that agents fail less when the tool layer is typed, documented, and explicit, instead of improvised through brittle scraping.",
+              "link": "https://www.anthropic.com/news/anthropic-acquires-stainless?guides=image-generation-social-good"
+            }
+          ]
         },
         {
           "id": "job",
@@ -1559,7 +2285,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 06:03 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Snowflake CoCo turns",
+              "title": "Snowflake CoCo turns enterprise data work into governed agent-built apps",
+              "source": "snowflake.com",
+              "relevance": "Intermediate",
+              "summary": "Snowflake expanded CoCo, formerly Cortex Code, into a coding agent for automating workflows, building apps, and operationalizing AI on enterprise data across desktop, mobile, and Slack.",
+              "why": "Enterprise data platforms are turning agents into builder surfaces, not just query helpers.",
+              "action": "Prototype one internal data workflow where an agent can generate the pipeline, app shell, and deployment checklist under governance.",
+              "teacher": "Show the difference between a chatbot over data and an agent that ships a governed data product.",
+              "link": "https://www.snowflake.com/en/news/press-releases/snowflake-coco-redefines-enterprise-ai-development-as-the-coding-agent-built-for-faster-easier-and-more-powerful-innovation-anywhere/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub Copilot app",
+              "title": "GitHub Copilot app becomes a desktop control center for parallel coding agents",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub introduced the Copilot app technical preview with agent sessions, worktrees, canvases, sandboxes, Agent Merge, code review skills, and SDK surfaces.",
+              "why": "Coding-agent UX is moving from chat boxes to command centers where humans supervise multiple isolated work streams.",
+              "action": "Map your current Codex/OpenClaw job-card flow against Copilot app concepts: worktree isolation, visible plan canvas, review gate, merge automation.",
+              "teacher": "Use this to teach agent experience: instruction happens in chat, but verification needs inspectable work surfaces.",
+              "link": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
+            },
+            {
+              "n": 3,
+              "category": "Cohere Command A+",
+              "title": "Cohere Command A+ ships as Apache-licensed enterprise agentic model",
+              "source": "cohere.com",
+              "relevance": "Intermediate",
+              "summary": "Cohere released Command A+ as an open-source enterprise model for reasoning, multimodal and multilingual agentic tasks, with Apache 2.0 licensing and 128K context.",
+              "why": "Open weights with enterprise positioning increase pressure on closed vendors for sovereign, on-prem, and regulated AI deployments.",
+              "action": "Add Command A+ to the watchlist for agent workflows where model ownership, licensing, or local deployment matters more than raw benchmark hype.",
+              "teacher": "Good example of the model-layer trend: agent capability is becoming portable infrastructure, not only an API subscription.",
+              "link": "https://cohere.com/blog/command-a-plus"
+            },
+            {
+              "n": 4,
+              "category": "IBM Bob packages",
+              "title": "IBM Bob packages agentic development with enterprise governance",
+              "source": "newsroom.ibm.com",
+              "relevance": "Intermediate",
+              "summary": "IBM launched Bob globally as an AI development partner covering planning, coding, testing, deployment, modernization, policy enforcement, auditability, and multi-model routing.",
+              "why": "The market signal is clear: enterprises want SDLC orchestration and proof trails, not just faster autocomplete.",
+              "action": "Borrow the pattern: define role-based modes, approval checkpoints, and audit logs for any serious internal agent workflow.",
+              "teacher": "Use Bob to explain why governance is now part of product value, not a boring compliance add-on.",
+              "link": "https://newsroom.ibm.com/2026-04-28-introducing-ibm-bob-ai-development-partner-that-takes-enterprises-from-ai-assisted-coding-to-production-ready-software"
+            },
+            {
+              "n": 5,
+              "category": "SketchUp connects Claude",
+              "title": "SketchUp connects Claude to 3D modeling through MCP",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Trimble announced a Claude integration for SketchUp using an MCP service so Claude can interact directly with .skp files from text or speech prompts.",
+              "why": "For 3D creators, the important shift is AI operating inside actual scene files instead of generating disconnected images.",
+              "action": "Test future booth/render workflows around source-file control: prompts should modify geometry, scale, components, and cameras in the real 3D file.",
+              "teacher": "Great contrast for students: image generation is visual suggestion; MCP-connected 3D tools can become production manipulation.",
+              "link": "https://www.prnewswire.com/news-releases/trimble-links-sketchup-with-anthropics-claude-bringing-new-conversational-ai-powered-capabilities-to-3d-modeling-302756403.html"
+            },
+            {
+              "n": 6,
+              "category": "UiPath for Coding",
+              "title": "UiPath for Coding Agents focuses on making any coding agent enterprise-deployable",
+              "source": "uipath.com",
+              "relevance": "Intermediate",
+              "summary": "UiPath launched a platform-wide integration that lets teams connect coding agents such as Claude Code, Codex, or future agents into governed automation deployment paths.",
+              "why": "The winning layer may be orchestration around agents rather than one agent vendor.",
+              "action": "When evaluating coding tools, score the surrounding execution layer: credentials, RBAC, observability, promotion paths, and audit trails.",
+              "teacher": "Use this as a business case for separating agent output from production execution.",
+              "link": "https://www.uipath.com/newsroom/uipath-for-coding-agents-launch"
+            },
+            {
+              "n": 7,
+              "category": "SkipLabs Skipper aims",
+              "title": "SkipLabs Skipper aims to close the loop from prompt to running service",
+              "source": "fidelity.com",
+              "relevance": "Intermediate",
+              "summary": "SkipLabs launched Skipper, a closed-loop coding agent from Hack creator Julien Verlaguet that turns one prompt into a running, validated service.",
+              "why": "Coding-agent products are racing toward verified runtime output, where the deliverable is not code text but a service that has run.",
+              "action": "Treat this as the bar for internal demos: every agent-built app should include launch command, validation result, and rollback note.",
+              "teacher": "Useful lesson: autonomous coding is only credible when it can prove the software executes.",
+              "link": "https://www.fidelity.com/news/article/technology/202606011200ACCESSWRNAPR_____1172041"
+            },
+            {
+              "n": 8,
+              "category": "Archon reframes AI",
+              "title": "Archon reframes AI coding as repeatable YAML workflows",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Archon is an open-source harness builder for AI coding agents, defining planning, implementation, validation, review, and PR creation as repeatable workflows.",
+              "why": "The maker opportunity is not just better prompts; it is reusable harnesses that make agent behavior deterministic enough to trust.",
+              "action": "Steal the idea for OpenClaw tasks: convert recurring job patterns into explicit workflow files with validation gates.",
+              "teacher": "Compare it to CI: once workflows are codified, agent work becomes teachable, testable, and reusable.",
+              "link": "https://github.com/coleam00/archon"
+            },
+            {
+              "n": 9,
+              "category": "Qwen Code offers",
+              "title": "Qwen Code offers an open-source terminal agent with multi-provider support",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Qwen Code is an open-source terminal coding agent optimized for Qwen models but supporting multiple OpenAI, Anthropic, Gemini-compatible, OpenRouter, Fireworks, and bring-your-own-key providers.",
+              "why": "Terminal agents are becoming model-agnostic shells; the workflow layer may outlast any single model.",
+              "action": "Keep one small benchmark repo for comparing terminal agents on the same task: edit, test, explain, and recover from failure.",
+              "teacher": "Good teaching example for provider abstraction: the tool interface can stay stable while the model changes underneath.",
+              "link": "https://github.com/QwenLM/qwen-code"
+            },
+            {
+              "n": 10,
+              "category": "Fastino Pioneer targets",
+              "title": "Fastino Pioneer targets autonomous fine-tuning and adaptive inference for small models",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Fastino launched Pioneer, an agent for fine-tuning open-source small language models and adapting deployed models from production usage.",
+              "why": "As frontier APIs get expensive and constrained, specialized small models plus autonomous improvement loops become a practical builder strategy.",
+              "action": "Identify one narrow internal classifier or extractor where a small model could beat a large-model call on cost, latency, or privacy.",
+              "teacher": "Use this to teach the tradeoff between general intelligence and specialized production economics.",
+              "link": "https://www.prnewswire.com/news-releases/fastino-launches-pioneer-the-first-agent-for-fine-tuning-and-inference-of-llms-302748105.html"
+            }
+          ]
         },
         {
           "id": "job",
@@ -1837,7 +2684,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 03:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "NVIDIA DGX Station",
+              "title": "NVIDIA DGX Station for Windows moves local AI agents onto enterprise desks",
+              "source": "nvidianews.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA announced a deskside GB300-based Windows AI system for running large local agents and enterprise workflows.",
+              "why": "Local agent hardware creates consulting work around secure creative pipelines, model selection, and workstation deployment.",
+              "action": "Package a creator-studio audit: what tasks should stay local, what can run in cloud, and what hardware/software is needed.",
+              "teacher": "Teach the difference between cloud AI, local inference, and why privacy-sensitive design/client files change the buying decision.",
+              "link": "https://nvidianews.nvidia.com/news/nvidia-dgx-station-for-windows-puts-a-trillion-parameter-ai-supercomputer-on-every-enterprise-desk"
+            },
+            {
+              "n": 2,
+              "category": "NVIDIA Omniverse 26h1",
+              "title": "NVIDIA Omniverse 26h1 makes 3D workflows agent-native with MCP",
+              "source": "catalog.ngc.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "The May 2026 Omniverse production branch adds first-party MCP access to Kit extensions, settings, and templates.",
+              "why": "3D artists can turn agent control of scene setup, QA, and repetitive layout work into a premium workflow service.",
+              "action": "Prototype a small Omniverse/Kit automation demo: scene audit, asset naming check, or camera/version report.",
+              "teacher": "Use this to teach MCP as a bridge between AI chat and real production tools, not just another chatbot feature.",
+              "link": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/omniverse/collections/omniverse_26h1"
+            },
+            {
+              "n": 3,
+              "category": "Autodesk Fusion connects",
+              "title": "Autodesk Fusion connects to Claude for design actions through MCP",
+              "source": "autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk says Fusion can connect with Claude via MCP so AI can work with design data, geometry, and supported actions.",
+              "why": "There is a new service lane around AI-assisted CAD cleanup, product concept iteration, and teachable design automation.",
+              "action": "Build a short workshop for product teams: prompt-to-Fusion actions, human review, and manufacturable-output checks.",
+              "teacher": "Stress that the value is controlled action inside the tool, with the designer still owning final geometry decisions.",
+              "link": "https://www.autodesk.com/products/fusion-360/blog/fusion-comes-to-claude-for-creative-work-bringing-ai-directly-into-the-design-workflow/"
+            },
+            {
+              "n": 4,
+              "category": "Autodesk Flow Studio",
+              "title": "Autodesk Flow Studio adds AI rigging and Neural Layer for character workflows",
+              "source": "adsknews.autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk expanded Flow Studio with AI rigging and Neural Layer to speed character creation and cinematic output.",
+              "why": "Studios and solo creators will need specialists who can turn generated assets into production-ready characters.",
+              "action": "Offer a fixed-price character pipeline check: model quality, rig readiness, motion test, and render pass recommendations.",
+              "teacher": "Teach the gap between generating a 3D asset and making it animate, render, and survive client revision.",
+              "link": "https://adsknews.autodesk.com/en/news/autodesk-flow-studio-expands-character-creation-with-ai-rigging-and-neural-layer/"
+            },
+            {
+              "n": 5,
+              "category": "Adobe frames creative",
+              "title": "Adobe frames creative agents as a new creative-director workflow",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe described Firefly AI Assistant and creative agents that orchestrate multi-step creative work while humans direct taste and judgment.",
+              "why": "Creative direction, brand taste, and review systems become more valuable as automated production volume rises.",
+              "action": "Create a client offer around AI creative QA: brand consistency, thumbnail/cutdown review, and final human art direction.",
+              "teacher": "Teach students that the opportunity is not typing prompts; it is directing, filtering, and finishing work with taste.",
+              "link": "https://blog.adobe.com/en/publish/2026/04/15/the-age-of-creative-agents-rise-creative-director"
+            },
+            {
+              "n": 6,
+              "category": "Microsoft 2026 Work",
+              "title": "Microsoft 2026 Work Trend Index points to human-agent teams",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft's 2026 Work Trend Index focuses on agents, human agency, and how organizations redesign work around AI teammates.",
+              "why": "Managers need practical help converting vague AI ambition into roles, rules, training, and measurable workflows.",
+              "action": "Offer an AI work redesign sprint: map one process, define agent tasks, human approvals, and metrics.",
+              "teacher": "Teach that job opportunity shifts toward workflow design, governance, and change management, not only model use.",
+              "link": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization"
+            },
+            {
+              "n": 7,
+              "category": "KPMG Q1 AI",
+              "title": "KPMG Q1 AI Pulse says agent deployment is now about execution and validation",
+              "source": "kpmg.com",
+              "relevance": "Intermediate",
+              "summary": "KPMG reports broad AI-agent deployment momentum, with leaders prioritizing upskilling and human validation of agent outputs.",
+              "why": "Companies need trainers and validators who can keep agents useful without losing control or accountability.",
+              "action": "Turn this into a service checklist: agent output review, exception logging, staff training, and escalation rules.",
+              "teacher": "Teach why human validation is a billable layer, especially in finance, operations, legal, and client-facing work.",
+              "link": "https://kpmg.com/us/en/media/news/q1-ai-pulse2026.html"
+            },
+            {
+              "n": 8,
+              "category": "BCG sizes the",
+              "title": "BCG sizes the tech-services AI opportunity at billion",
+              "source": "bcg.com",
+              "relevance": "Intermediate",
+              "summary": "BCG argues agentic AI is disrupting technology services while opening a large growth opportunity for providers.",
+              "why": "Small consultancies can specialize around implementation, readiness gaps, and new commercial models for AI services.",
+              "action": "Pick one vertical, write a one-page AI services menu, and price discovery, prototype, and maintenance separately.",
+              "teacher": "Teach learners to sell outcomes and operating models, not generic AI enthusiasm.",
+              "link": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services"
+            },
+            {
+              "n": 9,
+              "category": "Freelance knowledge workers",
+              "title": "Freelance knowledge workers need visible proof of AI upskilling",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A 2026 study on freelance knowledge workers highlights AI-driven upskilling and the problem of invisible competencies.",
+              "why": "Freelancers who learn AI inside tools need credible artifacts that clients can evaluate quickly.",
+              "action": "Build a portfolio evidence pack: before/after workflow, prompt policy, QA checklist, and measurable time saved.",
+              "teacher": "Teach that certification alone is weak; proof-of-work samples and client-ready process notes signal competence better.",
+              "link": "https://arxiv.org/abs/2604.27231"
+            },
+            {
+              "n": 10,
+              "category": "Microsoft research shows",
+              "title": "Microsoft research shows enterprise Copilot use is broad but uneven",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A 2026 Microsoft paper studies how people use M365 Copilot Chat across enterprise work, showing uneven but widespread patterns.",
+              "why": "This creates training demand for role-specific AI habits in sales, operations, admin, design, and management.",
+              "action": "Design a role-based Copilot training session with three tasks per role and a simple adoption scorecard.",
+              "teacher": "Teach that AI training should be mapped to real job tasks, not a generic feature tour.",
+              "link": "https://arxiv.org/abs/2605.23958"
+            }
+          ]
         }
       ]
     },
@@ -1853,7 +2821,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 00:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Lovable scales AI",
+              "title": "Lovable scales AI app creation with Google Cloud and Gemini Enterprise Agent Gallery",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Lovable expanded a multi-year Google Cloud collaboration, citing more than one million new projects per week and a verified Lovable Agent in Gemini Enterprise Agent Gallery.",
+              "why": "Vibe-coding tools are moving from indie prototyping into governed enterprise procurement, security scanning, and marketplace distribution.",
+              "action": "Test one internal-tool workflow in Lovable, but pair it with code scanning and dependency review before production use.",
+              "teacher": "Show makers that prompt-to-app is no longer only speed; the moat is review, governance, and deployment discipline.",
+              "link": "https://www.prnewswire.com/news-releases/lovable-expands-collaboration-with-google-cloud-to-scale-ai-powered-software-creation-302790014.html"
+            },
+            {
+              "n": 2,
+              "category": "Figma Make beta",
+              "title": "Figma Make beta connects visual editing directly to local production code",
+              "source": "figma.com",
+              "relevance": "Intermediate",
+              "summary": "Figma Make added limited-beta desktop capabilities for editing production code, annotations, chat, and PR creation from inside Figma.",
+              "why": "Design tools are becoming code workspaces. For product teams, the design canvas is turning into a place where shipping changes can begin.",
+              "action": "Track the beta and map one design-to-PR workflow: design edit, generated diff, developer review, and merge criteria.",
+              "teacher": "Frame this as round-trip design: canvas to code, code back to canvas, with human taste still deciding the final shape.",
+              "link": "https://www.figma.com/blog/figma-make-now-on-your-local-code/"
+            },
+            {
+              "n": 3,
+              "category": "NVIDIA RTX Spark",
+              "title": "NVIDIA RTX Spark points at local agent hardware for creators and developers",
+              "source": "tomshardware.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA previewed RTX Spark Windows-on-Arm systems with Blackwell GPU, 128GB unified memory, and support for long-running local agents and large creative workloads.",
+              "why": "If local agent hardware matures, 3D, video, and coding workflows can run with more privacy, lower latency, and bigger local context.",
+              "action": "For future workstation buying, watch memory bandwidth, unified memory size, and supported local agent/security frameworks, not only GPU brand.",
+              "teacher": "Explain that personal AI computers are being sold as always-on production assistants, not just faster render boxes.",
+              "link": "https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory"
+            },
+            {
+              "n": 4,
+              "category": "DigitalOcean packages an",
+              "title": "DigitalOcean packages an AI-native cloud for inference-era builders",
+              "source": "investors.digitalocean.com",
+              "relevance": "Intermediate",
+              "summary": "DigitalOcean launched an AI-Native Cloud with inference routing, BYO model options, model catalog, guardrails, RAG knowledge bases, and managed Weaviate.",
+              "why": "Builder clouds are adapting to agent-native apps where cost, latency, RAG, vector stores, and guardrails must be managed together.",
+              "action": "Benchmark one small agent service against a router-based inference setup and record cost per successful task, not just cost per token.",
+              "teacher": "Use this to teach the shift from single API calls to multi-agent systems that need infrastructure as much as models.",
+              "link": "https://investors.digitalocean.com/news/news-details/2026/DigitalOcean-Unveils-AI-Native-Cloud-Built-for-the-Inference-Era/default.aspx"
+            },
+            {
+              "n": 5,
+              "category": "Coder Agents beta",
+              "title": "Coder Agents beta targets self-hosted AI coding in regulated environments",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Coder announced beta Coder Agents, designed to run inside customer-owned infrastructure, including VPC, on-prem, and air-gapped environments.",
+              "why": "Enterprise AI coding adoption is colliding with source-code privacy, auditability, and model-choice requirements.",
+              "action": "For sensitive repos, compare cloud coding agents against self-hosted execution with logs, policy controls, and model routing.",
+              "teacher": "Make clear that agent productivity is only half the story; the other half is where code, prompts, and tool calls actually run.",
+              "link": "https://www.globenewswire.com/news-release/2026/05/06/3288916/0/en/Coder-Sets-a-New-Standard-for-AI-Coding-with-Self-Hosted-AI-Model-Agnostic-Coder-Agents.html"
+            },
+            {
+              "n": 6,
+              "category": "Warp open-sources its",
+              "title": "Warp open-sources its agentic development environment",
+              "source": "warp.dev",
+              "relevance": "Intermediate",
+              "summary": "Warp open-sourced its core agentic development environment and described Oz cloud orchestration for planning, implementing, reviewing, and tracking agent work.",
+              "why": "Coding tools are converging on visible agent orchestration: task intake, diffs, review, progress tracking, and multi-model support.",
+              "action": "Review the repository and borrow its workflow ideas for job cards, visible diffs, and agent progress traces in internal automation.",
+              "teacher": "Use it as a case study in moving from chat-with-agent to operating a managed development environment.",
+              "link": "https://www.warp.dev/newsroom/2026/4/28/warp-open-sources-its-agentic-development-environment"
+            },
+            {
+              "n": 7,
+              "category": "Anthropic and PwC",
+              "title": "Anthropic and PwC push Claude Code into finance transformation work",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "PwC expanded its Anthropic partnership, pairing Claude, Claude Cowork, and Claude Code with finance transformation work in regulated industries.",
+              "why": "AI coding agents are moving beyond software teams into finance operations, planning, controls, and client delivery.",
+              "action": "Look for repeatable finance/admin workflows where Claude Code-style agents can transform messy files into auditable scripts or reports.",
+              "teacher": "Teach this as a signal that coding agents are becoming general workflow builders for business functions.",
+              "link": "https://www.anthropic.com/news/pwc-expanded-partnership?tblci=GiDCKXXyq64VzUUeh6HUnxIcMpwmklJzTa6rDOsBCLiZ1yD3oVMoxNLZ5cbin9Rv"
+            },
+            {
+              "n": 8,
+              "category": "Notion turns its",
+              "title": "Notion turns its workspace into a hub for internal and external AI agents",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "Notion introduced a developer platform with Workers, database sync, External Agent API, and support for partner agents including Claude Code, Cursor, and Codex.",
+              "why": "Knowledge work platforms want to be the control plane where agents receive work, use data, and report progress.",
+              "action": "Prototype a lightweight Notion-style task table for agents: owner, source, status, evidence, output, and human approval.",
+              "teacher": "Explain that agent UX may be less about chat and more about databases, assignments, and observable state.",
+              "link": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/"
+            },
+            {
+              "n": 9,
+              "category": "Camunda ProcessOS applies",
+              "title": "Camunda ProcessOS applies agentic software ideas to business-process generation",
+              "source": "camunda.com",
+              "relevance": "Intermediate",
+              "summary": "Camunda announced ProcessOS, a closed-beta intelligence layer that can generate and modify process solutions, integrations, prompts, decisions, and UI forms.",
+              "why": "Agentic orchestration is spreading from developer tools into deterministic business workflows with governance and human oversight.",
+              "action": "When automating operations, document where deterministic workflow rules must override agent creativity.",
+              "teacher": "Use Camunda as the practical bridge between free-form agents and process engines that companies can audit.",
+              "link": "https://camunda.com/press-releases/camunda-announces-processos-an-agentic-operating-system-for-ai-first-enterprise-transformation/"
+            },
+            {
+              "n": 10,
+              "category": "Siemens Fuse EDA",
+              "title": "Siemens Fuse EDA AI Agent shows domain-specific autonomous engineering workflows",
+              "source": "news.siemens.com",
+              "relevance": "Intermediate",
+              "summary": "Siemens launched Fuse EDA AI Agent for autonomous orchestration across semiconductor, 3D IC, and PCB design workflows, with MCP and NVIDIA support.",
+              "why": "The strongest agent products may be vertical specialists that understand domain files, tools, constraints, and sign-off steps.",
+              "action": "For maker/3D pipelines, copy the pattern: domain data lake, tool-specific parsers, access controls, and staged sign-off.",
+              "teacher": "Teach this as specialized agent architecture: not one generic bot, but an orchestrator grounded in real production tools.",
+              "link": "https://news.siemens.com/en-gb/siemens-fuse-eda-ai-agent/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -2857,11 +3946,140 @@ window.DASHBOARD_ARCHIVE = {
           "id": "trend",
           "title": "AI Trends & Maker Awareness",
           "accent": "cyan",
-          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "subtitle": "English-first market brief for Garett. Focus: AI-native builders, vibe coding, 3D/design workflows, local agents, creator automation, and practical teaching signals.",
           "date": "2026-06-02 · 15:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "OpenAI moving Codex into AWS is a strong sign that coding agents are becoming enterprise infrastructure.",
+            "NVIDIA is pushing local and edge agents hard: Jetson, DGX Spark, NemoClaw, and open physical AI models.",
+            "3D creation is moving from single asset generation into connected workflows: website showcases, classroom visuals, CNC, and physical making.",
+            "HN maker signals point to compute efficiency and deep AI literacy becoming competitive advantages for small teams."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The big shift is not only better models. It is AI workflows becoming deployable infrastructure: agents on AWS, local workstations, edge devices, classrooms, creator websites, and physical fabrication loops. Garett should watch how these systems become teachable repeatable workflows, because that is where consulting value can compound."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Platform shift",
+              "title": "OpenAI frontier models and Codex are now generally available on AWS",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says frontier models and Codex are now available through AWS, including Codex on Amazon Bedrock, so enterprises can use OpenAI inside existing security, procurement, billing, and governance workflows.",
+              "why": "This is the market moving from AI demos to governed deployment. For teaching and consulting, the opportunity is to explain how agentic coding fits into real production constraints, not only how to prompt a tool.",
+              "action": "Watch for AWS Bedrock examples that combine coding agents with security review, app modernization, and private repos.",
+              "teacher": "Bedrock is AWS's managed AI platform. The signal is that companies can buy and govern Codex through a platform they already trust, which lowers adoption friction.",
+              "link": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/"
+            },
+            {
+              "n": 2,
+              "category": "Edge agents",
+              "title": "NVIDIA JetPack 7.2 makes Jetson more agent-ready",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "NVIDIA says JetPack 7.2 supports one-command deployment of NemoClaw on Jetson and introduces Jetson agent skills for device-side and board-support workflows. The update also adds memory and workload improvements for edge AI.",
+              "why": "AI assistants are moving from laptops and browsers into cameras, robots, kiosks, and physical installations. This is relevant to any future consulting around local creative automation or AI-enabled exhibits.",
+              "action": "Track small Jetson demos that run vision agents locally, especially ones that combine camera input with task automation.",
+              "teacher": "Edge AI means running AI close to the sensor or device instead of only in the cloud. Agent skills are reusable instructions that tell an agent how to perform and verify a task.",
+              "link": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2/"
+            },
+            {
+              "n": 3,
+              "category": "Local agents",
+              "title": "NVIDIA DGX Spark targets long-running local AI agents",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "NVIDIA describes DGX Spark updates for running autonomous local agents with NemoClaw, Qwen3.6, OpenClaw-style harnesses, secure sandboxes, and guided multi-node clustering.",
+              "why": "Local agents are becoming a product category. The consulting angle is privacy, predictable cost, and creative pipelines that can run without sending every asset or client file to the cloud.",
+              "action": "Compare cloud-agent workflows with local-agent workflows for file-heavy design or 3D projects.",
+              "teacher": "A local agent runs on your own machine. The main tradeoff is hardware cost versus privacy, control, and no per-token cloud billing for local inference.",
+              "link": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/"
+            },
+            {
+              "n": 4,
+              "category": "Physical AI and 3D",
+              "title": "NVIDIA Cosmos 3 unifies reasoning, world generation, and action models",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "NVIDIA says Cosmos 3 is an open foundation model for physical AI, with Nano and Super checkpoints, code, datasets, post-training scripts, and deployment tools. It combines a reasoning tower with a diffusion generator for world and action generation.",
+              "why": "The 3D and CG market is drifting toward world models that understand motion, scene physics, and actions. That affects how creators will storyboard, simulate, and teach spatial workflows.",
+              "action": "Watch for demos that turn static 3D scenes into controllable video or robotics-style simulations.",
+              "teacher": "A world model tries to predict how a scene changes over time. Physical AI applies that to robots, vehicles, smart spaces, or simulated environments.",
+              "link": "https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/"
+            },
+            {
+              "n": 5,
+              "category": "Hacker News signal",
+              "title": "Launch HN: Expanse uses AI to unlock wasted GPU cluster capacity",
+              "source": "Hacker News",
+              "relevance": "Advanced",
+              "summary": "The Expanse team says datacenters often run at only 30% to 40% effective utilization because users over-request GPU and HPC resources. Their tool predicts resource needs, flags likely failures, and gives line-level optimization suggestions before jobs run.",
+              "why": "Compute literacy is becoming part of AI literacy.",
+              "action": "Add a simple compute-cost lesson to future AI workshops: why over-requesting GPUs wastes money and how profiling helps. *Teacher explanation:* HPC means high-performance computing. SLURM and Kubernetes are schedulers that decide where jobs run. The signal is that AI can optimize infrastructure before humans waste expensive GPUs.",
+              "teacher": "s and consultants who can explain cost, VRAM, batching, and utilization will be more useful than people who only teach prompts.",
+              "link": "https://news.ycombinator.com/item?id=48356312"
+            },
+            {
+              "n": 6,
+              "category": "AI education",
+              "title": "Stanford CS336 puts language-model building into a from-scratch curriculum",
+              "source": "Hacker News",
+              "relevance": "Intermediate",
+              "summary": "Stanford's CS336 course walks students through building language models from data collection and tokenizer implementation to training, scaling, alignment, and deployment. It was actively discussed on Hacker News today.",
+              "why": "The education market is splitting between easy prompting and deep builder literacy. Garett can position teaching around practical intuition without needing every student to become a model researcher.",
+              "action": "Skim the assignment list and convert it into a non-technical lesson map: data, model, training, evaluation, alignment.",
+              "teacher": "From-scratch does not mean no tools. It means students implement the core pieces themselves so they understand what the tools hide.",
+              "link": "https://news.ycombinator.com/item?id=48357075"
+            },
+            {
+              "n": 7,
+              "category": "3D creator workflow",
+              "title": "Tripo and Readdy show a character-to-website workflow for indie creators",
+              "source": "Official",
+              "relevance": "Beginner",
+              "summary": "Tripo describes a workflow where a creator generates a game character as a GLB asset, then uses Readdy to build an interactive web showcase around it. The example turns a Forest Guardian concept into a live presentation page.",
+              "why": "This is a practical creator-client signal: the deliverable is no longer only an image or model, but a fast interactive pitch page. That is teachable and immediately useful for students or clients.",
+              "action": "Test one mini workflow: image prompt to GLB, then embed that asset into a simple landing page.",
+              "teacher": "GLB is a web-friendly 3D file format. It lets viewers rotate and inspect a model in a browser without installing 3D software.",
+              "link": "https://www.tripo3d.ai/blog/tripo-readdy-character-to-website"
+            },
+            {
+              "n": 8,
+              "category": "Digital to physical",
+              "title": "Tripo, Makerables, and Makera point to AI 3D moving into physical fabrication",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Tripo describes a workflow where image or prompt generated 3D models move into community sharing, remixing, relief generation, and desktop CNC production through Makerables and Makera.",
+              "why": "Maker workflows are becoming content, product, and teaching workflows at the same time. This could support consulting around rapid prototyping, retail props, collectible concepts, or class demos.",
+              "action": "Watch whether AI 3D tools start exporting more fabrication-ready files, not just pretty preview models.",
+              "teacher": "CNC means computer numerical control. A CNC machine cuts or engraves real material from a digital file, so AI assets can become physical objects.",
+              "link": "https://www.tripo3d.ai/blog/tripo-makera-ai-3d-creation-workflow"
+            },
+            {
+              "n": 9,
+              "category": "Teaching workflow",
+              "title": "Tripo and YouMind turn flat diagrams into 3D teaching material",
+              "source": "Official",
+              "relevance": "Beginner",
+              "summary": "Tripo's blog list describes a geography-",
+              "why": "This directly matches the long-term teaching/consulting direction. The valuable skill is building simple visual explanations that make abstract content concrete.",
+              "action": "Pick one boring 2D slide and test whether AI 3D can make it easier to teach in under 15 minutes. *Teacher explanation:* Interactive 3D is powerful for education because learners can rotate, inspect, and spatially understand a concept instead of only seeing a fixed diagram.",
+              "teacher": "workflow using YouMind and Tripo to convert abstract geology diagrams into interactive 3D models, reducing PPT creation time from 3 hours to 10 minutes in the case study.",
+              "link": "https://www.tripo3d.ai/blog/tripo-youmind-flat-diagrams-to-3d-models"
+            },
+            {
+              "n": 10,
+              "category": "Mobile capture to AI 3D",
+              "title": "Tripo and KIRI Engine show AI 3D extending mobile scans",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Tripo's blog list describes using AI 3D generation with mobile 3D scans to restyle real objects, create lighter assets, and build mixed real-and-AI 3D scenes.",
+              "why": "This is a realistic bridge for designers: scan a real product or prop, then use AI to stylize, simplify, or extend it. That can speed up client mockups and visual development.",
+              "action": "Test a phone scan of a small object and compare the raw scan, AI-restyled version, and optimized game-ready version.",
+              "teacher": "Photogrammetry or mobile 3D scanning captures real objects. AI 3D can then turn that capture into a cleaner, lighter, or more stylized model.",
+              "link": "https://www.tripo3d.ai/blog/tripo-kiriengine-mobile-3d-scans"
+            }
+          ]
         },
         {
           "id": "job",
@@ -3014,9 +4232,138 @@ window.DASHBOARD_ARCHIVE = {
           "accent": "cyan",
           "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
           "date": "2026-06-02 · 12:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "Agent interfaces are moving beyond chat into RDP, terminal UIs, GitHub review checks, and local-first desktop apps.",
+            "Vibe coding is becoming a workflow discipline: the market is asking for evidence, provenance, approvals, and tests, not only faster code.",
+            "Creator tools are shifting toward canvas IDEs, multiplayer game languages, and assistant-friendly development surfaces.",
+            "3D pipelines keep absorbing open standards such as OpenTimelineIO and USD while improving automated geometry and lookdev workflows."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The important shift is not just smarter models. It is the packaging of agents into controllable work surfaces: sandboxes, review evidence, RDP desktops, terminal apps, and domain-specific maker tools. For teaching and consulting, Garett can win by explaining how to choose and govern these workflows."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Agent desktop sandbox",
+              "title": "Jabsco uses RDP as a computer-use agent harness",
+              "source": "Hacker News / GitHub",
+              "relevance": "Advanced",
+              "summary": "Jabsco is an RDP client that lets Claude control a remote desktop, including Hyper-V virtual machines. The project highlights observe mode, manual interruption, reusable skills and commands, and a sandboxed remote-desktop boundary.",
+              "why": "This is an OpenClaw-style signal: agents are becoming operators inside controlled workspaces, not just text assistants. It is useful for teaching clients how to safely let AI touch real apps without giving it the whole machine.",
+              "action": "Watch for RDP or VM-based agent sandboxes that can run design tools, browsers, or QA tasks with human takeover.",
+              "teacher": "RDP means Remote Desktop Protocol. It lets a user or agent control a separate desktop session, which can become a safer sandbox because the agent is limited to that remote machine or account.",
+              "link": "https://github.com/jrecyclebin/jabsco"
+            },
+            {
+              "n": 2,
+              "category": "AI video workflow",
+              "title": "Bloc positions AI video as a canvas IDE, not a timeline",
+              "source": "Hacker News / Tool launch",
+              "relevance": "Intermediate",
+              "summary": "Bloc appeared on Hacker News as \"Cursor for AI video\" and its page describes a free Seedance 2.0 plus AI video canvas editor. The key message is that creators can compose video work in reusable blocks instead of only editing on a classic timeline.",
+              "why": "Video tools are borrowing from coding IDEs: prompts, blocks, canvases, versions, and reusable steps. That is a consulting signal for creative teams who need repeatable video systems rather than one-off generations.",
+              "action": "Test whether a canvas video tool can keep character, shot, and style continuity better than a prompt-only generator.",
+              "teacher": "A canvas IDE is a workspace where assets and steps are arranged visually, like a design board mixed with a coding environment. It can make complex creative workflows easier to teach than a linear timeline.",
+              "link": "https://vidbloc.com/"
+            },
+            {
+              "n": 3,
+              "category": "Maker game engine",
+              "title": "Easel adds Spaces, contacts, and better 2D physics workflows",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Easel's May 2026 update adds Spaces for multiple independent physics simulations, contact query functions, per-collider continuous collision detection, isometric rhombus shapes, UI fade animations, and other game-building improvements.",
+              "why": "Easel is a sign that small teams and learners are getting higher-level languages for multiplayer games. This kind of tool can become a teaching platform for AI-assisted interactive design and game prototyping.",
+              "action": "Watch whether Easel-style tools integrate AI prompts for scene logic, multiplayer setup, and asset placement.",
+              "teacher": "Continuous collision detection prevents fast objects from passing through walls between frames. Isometric tiles are 2D graphics arranged to look like a 3D world.",
+              "link": "https://easel.games/blog/2026-may-update"
+            },
+            {
+              "n": 4,
+              "category": "Local personal AI",
+              "title": "Jan v0.8.2 improves local AI reliability, MLX support, and model downloads",
+              "source": "GitHub / Official",
+              "relevance": "Beginner",
+              "summary": "Jan's 0.8.2 release includes fixes for RAG attachment limits, MLX model listing, assistant parameter persistence, larger default llama.cpp context size, paused and resumed model downloads, HIP support, and startup reliability.",
+              "why": "Local-first AI is becoming practical enough for ordinary users, not only engineers. For consulting, this matters when clients need privacy, offline demos, or owned workflows instead of fully cloud AI.",
+              "action": "Keep Jan as a candidate for teaching local AI basics, especially document chat and model management.",
+              "teacher": "MLX is Apple's machine-learning framework for Apple Silicon. RAG means retrieval augmented generation: the AI answers with help from attached documents or a knowledge base.",
+              "link": "https://github.com/janhq/jan/releases/tag/v0.8.2"
+            },
+            {
+              "n": 5,
+              "category": "Vibe coding trust",
+              "title": "SageOx asks what software engineering becomes when code generation is free",
+              "source": "Hacker News / Trusted essay",
+              "relevance": "Advanced",
+              "summary": "The piece argues that when coding agents make software cheap to generate, value moves toward trust signals: proof, specifications, provenance, transparency, and evidence of how decisions were made.",
+              "why": "This is exactly the consulting gap: clients will not only ask \"can AI build it?\" They will ask \"can I trust it, explain it, maintain it, and teach my team to evaluate it?\"",
+              "action": "Build a simple rubric for AI-made code or creative systems: source, spec, tests, human review, and rollback plan.",
+              "teacher": "Formal methods are mathematical techniques for proving software properties. Provenance means the recorded origin and reasoning behind an artifact or decision.",
+              "link": "https://sageox.ai/blog/when-generating-code-is-free-part-1"
+            },
+            {
+              "n": 6,
+              "category": "Multi-agent verticals",
+              "title": "TradingAgents v0.2.5 expands multi-agent finance workflows",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "TradingAgents describes a multi-agent LLM trading framework with analyst, researcher, trader, risk, and portfolio-manager roles. The May 2026 update adds a grounded sentiment analyst, broader model/provider coverage, remote Ollama support, non-US benchmarks, and hardening fixes.",
+              "why": "Vertical agent teams are moving from demos into reusable frameworks. This pattern will show up in design studios too: concept agent, layout agent, render agent, QA agent, and delivery agent.",
+              "action": "Sketch a \"3D studio agent team\" map using the same role-based structure, without using it for real financial advice.",
+              "teacher": "LangGraph is a framework for building multi-step agent graphs. Ollama runs local models. A vertical agent is specialized for one domain, such as finance, game QA, or 3D production.",
+              "link": "https://github.com/TauricResearch/TradingAgents"
+            },
+            {
+              "n": 7,
+              "category": "Agent review evidence",
+              "title": "ApprovalOps turns pull request activity into approval evidence",
+              "source": "GitHub Marketplace",
+              "relevance": "Intermediate",
+              "summary": "ApprovalOps summarizes pull request signals into readiness checks, stale review signals, unresolved attention areas, and repository views. It explicitly keeps humans in control instead of auto-approving code.",
+              "why": "AI coding creates more output, so review quality becomes the bottleneck. Consultants who can teach approval evidence, QA, and handoff discipline will be more useful than people who only teach prompting.",
+              "action": "Track tools that summarize readiness and risk before merge, because the same idea applies to render delivery and client approvals.",
+              "teacher": "A pull request is a proposed code change. Approval evidence means clear signals that help a reviewer judge freshness, risk, and whether the work is ready.",
+              "link": "https://github.com/marketplace/approvalops"
+            },
+            {
+              "n": 8,
+              "category": "3D pipeline standards",
+              "title": "Maya 2027.1 adds OpenTimelineIO support, LookdevX projection, Bifrost updates, and USD improvements",
+              "source": "Trusted news",
+              "relevance": "Intermediate",
+              "summary": "CG Channel reports that Maya 2027.1 improves Smart Bevel, adds OpenTimelineIO support in Sequencer, updates MotionMaker, adds LookdevX texture projection modes, improves Bifrost, and improves USD variant handling.",
+              "why": "Maya is becoming more connected to editorial, USD, procedural tools, and generative animation. This matters for consulting because AI workflows still need to fit professional DCC pipelines.",
+              "action": "Watch OTIO and USD support as the bridge between AI-generated assets, edit timelines, and production handoff.",
+              "teacher": "OpenTimelineIO is an open format for exchanging edit timeline data. USD means Universal Scene Description, a standard for exchanging complex 3D scenes and variants.",
+              "link": "https://www.cgchannel.com/2026/05/autodesk-releases-maya-2027-1/"
+            },
+            {
+              "n": 9,
+              "category": "3D modeling automation",
+              "title": "3ds Max 2027.1 improves Smart Bevel and Data Channel automation",
+              "source": "Trusted news",
+              "relevance": "Intermediate",
+              "summary": "CG Channel reports that 3ds Max 2027.1 improves Smart Bevel output, adds new Data Channel modifier operators, and updates Arnold support, including Flow Render and MAXtoA support for tyFlow volumes.",
+              "why": "The practical 3D market is not only text-to-3D. It is also better semi-automated modeling, procedural modifiers, and render pipelines that reduce manual cleanup time.",
+              "action": "Compare Smart Bevel and Data Channel changes with AI retopology or mesh-fix tools to see where manual DCC still wins.",
+              "teacher": "A bevel rounds or chamfers hard edges. The Data Channel modifier lets artists process mesh data procedurally, which is useful for repeatable modeling operations.",
+              "link": "https://www.cgchannel.com/2026/05/autodesk-releases-3ds-max-2027-1/"
+            },
+            {
+              "n": 10,
+              "category": "Terminal maker movement",
+              "title": "Jane Street says AI agents helped restart the terminal UI renaissance",
+              "source": "Hacker News / Trusted engineering blog",
+              "relevance": "Advanced",
+              "summary": "Jane Street describes strace-ui and Bonsai_term, arguing that terminal apps are lightweight, keyboard-centric, testable, and especially friendly to coding agents. They note that Claude Code helped push terminal apps back into focus.",
+              "why": "Vibe coding may not live only in flashy IDEs. Serious builders are using terminal UIs because they are fast, visible to agents, and easy to test, which is a useful lesson for OpenClaw-style workflows.",
+              "action": "Watch for creator tools that use terminal-like panels, logs, and screenshot-style tests for agent feedback.",
+              "teacher": "TUI means terminal user interface. Expect tests compare text output against an expected snapshot, which makes it easier for agents to detect when a change broke something.",
+              "link": "https://blog.janestreet.com/strace-ui-bonsai-term-and-the-tui-renaissance/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -3170,9 +4517,138 @@ window.DASHBOARD_ARCHIVE = {
           "accent": "cyan",
           "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
           "date": "2026-06-02 · 09:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "Agentic coding is moving from chat into governed harnesses with memory, secrets, approvals, and verification.",
+            "Specialized agent tools are appearing around file search, skill management, local model compression, and hardware engineering.",
+            "Creative AI platforms are becoming reusable visual systems: LoRAs, architecture-specific workflows, persistent 3D worlds, and segmented assets.",
+            "The strongest teaching angle is no longer 'use AI'. It is 'design an AI workflow with boundaries, evidence, and reusable assets.'"
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The market is shifting from single AI features toward operating systems for creative and technical work: agent harnesses, skill package managers, persistent memory, model customization, and 3D asset pipelines. Garett can teach this as workflow literacy, not tool chasing."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Agentic engineering",
+              "title": "Normal Computing used AI agents to build a 580K-line open-source Verilog simulator in 43 days",
+              "source": "Hacker News / Official engineering blog",
+              "relevance": "Advanced",
+              "summary": "Normal describes using Claude and Codex agents to land 2,968 commits on a CIRCT fork, adding simulation, VPI/cocotb integration, UVM runtime support, formal checks, and mutation testing. The post frames agentic AI as powerful for well-specified, labor-heavy engineering work.",
+              "why": "This is a clear consulting story: AI is strongest when the task has standards, tests, logs, and measurable acceptance criteria. That maps directly to teaching clients how to use AI without losing quality control.",
+              "action": "Save this as a case study for 'agentic workflow design' and note the ingredients: specs, tests, iteration logs, resource monitoring, and human review.",
+              "teacher": "Verilog is a hardware description language. CIRCT is compiler infrastructure for circuits. The signal is not that AI replaced engineers; it is that agents can push through huge implementation surfaces when the rules and tests are clear.",
+              "link": "https://normalcomputing.com/blog/building-an-open-source-verilog-simulator-with-ai-580k-lines-in-43-days"
+            },
+            {
+              "n": 2,
+              "category": "Agent harness",
+              "title": "Vegvisir appears as a local-first agentic development harness with memory, secrets, approvals, and verification",
+              "source": "Hacker News / GitHub",
+              "relevance": "Advanced",
+              "summary": "Vegvisir is a Rust-based terminal and headless harness that connects models to scoped tools, durable memory, governed skills, browser evidence, approvals, verification, transcripts, and secret isolation.",
+              "why": "This validates the OpenClaw-style direction: serious users want assistants that work in bounded workspaces, not generic chatbots. Teaching can focus on how to operate and supervise these systems.",
+              "action": "Watch the repo for screenshots, install maturity, and whether its memory/secret/skill concepts become copied by other agent tools.",
+              "teacher": "A harness is the runtime around an AI model: tools, permissions, memory, logs, and verification. It is the difference between 'ask AI' and 'AI safely works inside a project.'",
+              "link": "https://github.com/Honorbound-Innovation/Vegvisir-harness"
+            },
+            {
+              "n": 3,
+              "category": "Agent skills",
+              "title": "aweskill argues that AI agents should manage their own skill packages",
+              "source": "Hacker News / Tool launch",
+              "relevance": "Intermediate",
+              "summary": "aweskill presents a CLI-first skill package manager that agents can bootstrap, install, repair, project to different agent runtimes, and verify. It names Codex, Claude Code, Cursor, Gemini CLI, Windsurf, Qwen Code, OpenCode, and others as targets.",
+              "why": "Skills are becoming a teachable layer. Clients will need reusable operating procedures for agents just like they needed design systems for teams.",
+              "action": "Start collecting examples of high-quality SKILL.md files and compare how different coding agents consume them.",
+              "teacher": "An agent skill is a reusable instruction and workflow package. Think of it as a mini operating manual that teaches an AI agent how to do a specific job reliably.",
+              "link": "https://aweskill.webioinfo.top/articles/let-your-ai-agent-manage-aweskill-for-you/"
+            },
+            {
+              "n": 4,
+              "category": "Local models",
+              "title": "reap-mlx brings MoE expert pruning experiments to Apple Silicon",
+              "source": "Hacker News / GitHub",
+              "relevance": "Advanced",
+              "summary": "reap-mlx applies Router-weighted Expert Activation Pruning to MLX-LM mixture-of-experts models on Apple Silicon. It loads, calibrates, prunes, saves, reloads, and writes telemetry for local MoE model experiments.",
+              "why": "Local AI will keep improving for creators who want privacy, lower cost, and offline workflows. Even if he does not prune models himself, this shows the direction of Mac-native optimization.",
+              "action": "Track whether MLX model pruning becomes packaged into easier creator tools for Mac-based local assistants.",
+              "teacher": "MoE means mixture of experts: a model with many specialist sub-networks. Pruning removes less useful experts to reduce size or cost while trying to preserve performance.",
+              "link": "https://github.com/egesabanci/reap-mlx"
+            },
+            {
+              "n": 5,
+              "category": "Agent tooling",
+              "title": "fff trends as a fast file-search toolkit built for AI agents and editors",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "fff offers typo-resistant path and content search, frecency-ranked access, a background watcher, and an in-memory content index. It explicitly supports Claude Code, Codex, OpenCode, Cursor, Cline, MCP clients, Neovim, Rust, C, and NodeJS.",
+              "why": "Better retrieval is a quiet competitive edge. Agents that can find the right file quickly waste fewer tokens and make fewer wrong edits.",
+              "action": "Watch for agent stacks adding specialized search indexes instead of relying on repeated grep calls.",
+              "teacher": "Frecency ranks files by frequency plus recency. MCP is Model Context Protocol, a way for AI tools to expose reusable capabilities to agents.",
+              "link": "https://github.com/dmtrKovalenko/fff"
+            },
+            {
+              "n": 6,
+              "category": "AI education",
+              "title": "train-llm-from-scratch trends as a practical single-GPU LLM learning repo",
+              "source": "GitHub",
+              "relevance": "Beginner",
+              "summary": "The repo implements a transformer in PyTorch based on Attention Is All You Need and explains training data, GPU requirements, code structure, batching, training, saving, and text generation. It positions itself as a straightforward route from data download to generated text.",
+              "why": "For teaching and consulting, simple educational repos are useful props. They help non-ML clients understand what is inside the tools they are buying.",
+              "action": "Use the repo as a visual explainer for tokens, parameters, training data, and why model size affects cost and capability.",
+              "teacher": "A transformer is the architecture behind most modern language models. Parameters are learned numbers inside the model; more parameters can increase capacity but also require more memory and compute.",
+              "link": "https://github.com/FareedKhan-dev/train-llm-from-scratch"
+            },
+            {
+              "n": 7,
+              "category": "AI design systems",
+              "title": "Krea previews Krea 2 LoRA training for reusable styles, characters, and objects",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Krea says selected creators and teams will be able to train LoRAs for Krea 2 Medium and Large, use them in Image, and decide whether they stay private or become public reusable LoRAs.",
+              "why": "This turns AI image generation into repeatable visual identity. The consulting opportunity is helping brands and studios define datasets, style rules, and reuse policies.",
+              "action": "Prepare a small reference set for one controlled visual style and compare normal prompting versus trained style reuse when access is available.",
+              "teacher": "LoRA is a lightweight model adaptation. Instead of training a whole model, you train a compact add-on that teaches a repeatable style, object, or character.",
+              "link": "https://www.krea.ai/index/public-loras-krea-2-train"
+            },
+            {
+              "n": 8,
+              "category": "Architecture AI",
+              "title": "Krea partners with Henning Larsen to build AI creative tools around real architecture workflows",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Krea says Henning Larsen has been testing generative AI across architecture workflows, including technical drawings, wayfinding, flood analysis, LLM plus diffusion workflows, and enhancing 3D renders from Rhino and Revit.",
+              "why": "Serious design firms are not just making pretty images. They are evaluating where AI fits into professional practice, standards, and client communication.",
+              "action": "Build a simple consulting checklist: concept ideation, render enhancement, technical risk, client presentation, and model governance.",
+              "teacher": "Rhino and Revit are major architecture tools. Diffusion models generate or edit images. The important idea is workflow integration: AI must fit the studio pipeline, not sit outside it.",
+              "link": "https://www.krea.ai/index/we-are-partnering-with-henning-larsen"
+            },
+            {
+              "n": 9,
+              "category": "3D world models",
+              "title": "Tripo introduces Project Eden, a persistent world model for multiplayer and agents",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "Tripo describes Project Eden as a research preview of a continuously running world model with persistent state, consistent viewpoints, multiplayer support, editable environments, and agent-training potential.",
+              "why": "This points beyond image-to-video and toward interactive content. For 3D artists, the future competitor may be a persistent scene engine, not just a model generator.",
+              "action": "Watch demos for state consistency: can objects persist, can multiple users see the same change, and can the world be exported or edited?",
+              "teacher": "A world model is not just a video generator. A real world model tracks objects, rules, and state so actions have consequences even when the camera looks away.",
+              "link": "https://www.tripo3d.ai/blog/project-eden"
+            },
+            {
+              "n": 10,
+              "category": "AI 3D pipeline",
+              "title": "Tripo Segmentation v2 cuts 3D models into editable semantic parts in under a minute",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Tripo says Segmentation v2 can split existing or generated 3D models into clean named parts with three precision tiers, semantic boundary detection, editable results, and options for sealing open meshes.",
+              "why": "AI 3D is moving from novelty generation toward production repair: rigging, printing, assembly, and export. That is where professional judgment still matters.",
+              "action": "Test one generated character and one imported model for segmentation quality, naming, boundary placement, and watertight export.",
+              "teacher": "Semantic segmentation means the tool tries to understand meaningful parts, such as head, arm, torso, weapon, or accessory, instead of cutting random mesh regions.",
+              "link": "https://www.tripo3d.ai/blog/tripo-segmentation-v2"
+            }
+          ]
         },
         {
           "id": "job",
@@ -3323,11 +4799,140 @@ window.DASHBOARD_ARCHIVE = {
           "id": "trend",
           "title": "AI Trends & Maker Awareness",
           "accent": "cyan",
-          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "subtitle": "English-first brief for Garett. Focus: practical market signals in AI-native building, vibe coding, design systems, 3D pipelines, and creator automation.",
           "date": "2026-06-02 · 06:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "Production teams are no longer asking if AI coding is allowed. They are writing operating rules for review, responsibility, sandboxes, skills, and memory.",
+            "The next agent UI is fragmenting into cockpits, mobile dashboards, native apps, and voice control, not only IDE sidebars.",
+            "Design and 3D tools are becoming agent-addressable through Figma, Unity, Godot, MCP servers, and even physical 3D printer control.",
+            "The market gap is moving from 'can AI make a thing' to 'can a teacher or consultant create a safe, repeatable workflow that humans trust'."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "Agent work is becoming infrastructure. The winning education and consulting offers will likely teach workflows: scoped agents, reusable skills, memory, review gates, and creative pipeline bridges. Garett can differentiate by teaching artists and builders how to operate AI systems, not only how to prompt them."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Agentic coding governance",
+              "title": "PyTorch publishes a playbook for AI-authored code",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "PyTorch says many PRs are now AI-authored and lays out norms for using coding agents in a production open-source project. The post stresses that humans remain responsible for every line and that review quality becomes the bottleneck when code is cheap.",
+              "why": "This is a strong teaching signal: mature teams need AI workflow literacy, not just prompt tricks. It gives Garett a framework for consulting on safe AI adoption with creative and technical teams.",
+              "action": "Turn the PyTorch review norms into a one-page checklist for AI-assisted project work.",
+              "teacher": "A PR, or pull request, is a proposed code change reviewed before merging. The key idea is that AI makes code generation cheaper, so human review, test design, and accountability become the scarce skills.",
+              "link": "https://docs.pytorch.org/devlogs/ai-agents/2026-05-30-ai-coding-playbook/"
+            },
+            {
+              "n": 2,
+              "category": "Memory-first coding agents",
+              "title": "Letta Code positions memory as the core coding-agent feature",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "Letta Code describes itself as a memory-first agent harness for long-lived agents that can maintain identity and learn across models including Claude, GPT, Gemini, GLM, and Kimi. It supports local CLI, desktop app, browser/mobile access, and messaging integrations.",
+              "why": "Agent memory is becoming a product category. For teaching and consulting, the lesson is that continuity, handoff notes, and reusable context will matter as much as raw model quality.",
+              "action": "Compare Letta Code's memory model with OpenClaw-style memory files and note what would help creative teams preserve project context.",
+              "teacher": "Agent memory means a system stores useful facts, project decisions, preferences, and past outcomes so future sessions do not start from zero. Good memory should be inspectable and editable by humans.",
+              "link": "https://github.com/letta-ai/letta-code"
+            },
+            {
+              "n": 3,
+              "category": "Multi-agent command centers",
+              "title": "Agent of Empires manages Claude Code, OpenCode, Codex CLI, Gemini CLI, and more",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "The repo describes a tool for managing multiple coding agents from either a TUI or the web, with mobile-friendly access. Its description lists support for Claude Code, OpenCode, Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, and Factory Droid Coding.",
+              "why": "The interface for AI work is shifting toward agent operations dashboards. This is directly relevant to OpenClaw-style assistants and to consulting around how teams coordinate multiple AI workers.",
+              "action": "Watch whether agent command centers standardize around terminal control, browser dashboards, or chat surfaces like Telegram and Slack.",
+              "teacher": "A TUI is a text user interface. It looks like a terminal app but can still have panels, menus, status views, and keyboard shortcuts.",
+              "link": "https://github.com/agent-of-empires/agent-of-empires"
+            },
+            {
+              "n": 4,
+              "category": "Agent security",
+              "title": "HOL Guard brands itself as antivirus for developer agents",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "HOL Guard says it protects Codex, Claude Code, Cursor, Gemini, OpenCode, plugins, skills, MCP servers, and AI harnesses before tools run. The framing is that agent toolchains now need scanning and protection, similar to software supply chains.",
+              "why": "As agents touch files, browsers, payment flows, and render pipelines, safety becomes a marketable consulting skill. Clients will need simple explanations of why agent permissions and plugin trust matter.",
+              "action": "Build a short 'agent safety before tools run' checklist for any future AI automation workshop.",
+              "teacher": "MCP, or Model Context Protocol, lets AI apps connect to tools and data sources. The risk is that a malicious or sloppy tool can make an agent do something unsafe before the user notices.",
+              "link": "https://github.com/hashgraph-online/hol-guard"
+            },
+            {
+              "n": 5,
+              "category": "Native agent workspace",
+              "title": "Agent Deck turns terminal agents into a signed Mac workspace",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "Agent Deck is a native macOS platform for agentic coding workflows powered by Pi. It manages agents, skills, prompts, subagents, worktrees, and GitHub work in one signed Swift app while the Pi CLI runs in the background.",
+              "why": "This shows a design opportunity: make agent work visually organized enough for non-engineers. Creative consultants can win by turning terminal workflows into understandable workspaces.",
+              "action": "Screenshot or sketch the agent workspace patterns that make complex AI work easier to explain to clients.",
+              "teacher": "A worktree is a separate working copy of the same Git repository. Agents can use worktrees to try multiple tasks in parallel without overwriting each other.",
+              "link": "https://github.com/a-streetcoder/agent-deck"
+            },
+            {
+              "n": 6,
+              "category": "Voice-controlled builders",
+              "title": "DashVox steers Claude Code and Codex by voice from phone, car, or watch",
+              "source": "Tool launch",
+              "relevance": "Beginner",
+              "summary": "DashVox says users can start and steer Claude Code and Codex sessions running on their own machine over SSH by voice. It supports phone use, CarPlay, Apple Watch, Android Auto, Wear OS, and a self-hosted backend.",
+              "why": "The builder interface is moving beyond keyboard and screen. For teaching, this hints at future workflows where artists direct agents while reviewing, commuting, or working hands-on in 3D tools.",
+              "action": "Watch how voice approval, summaries, and error handling evolve, because trust is the hard part of hands-free agent control.",
+              "teacher": "SSH is a secure way to control another machine. Here, the phone or watch is not doing the coding itself. It is steering an agent session on the user's own computer.",
+              "link": "https://dashvox.ai"
+            },
+            {
+              "n": 7,
+              "category": "Reusable agent skills",
+              "title": "skillkit makes Claude Code skills project-specific and declarative",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "skillkit describes a per-project Claude Code skill manager that can curate personal, team, and external skill collections, then install chosen subsets into a project's .claude/skills directory. It uses a skills.toml file so selections can be committed and synced.",
+              "why": "Skills are becoming the repeatable curriculum of agent work. A consulting package could include custom skills for design review, render validation, client briefing, and file delivery.",
+              "action": "Draft three project-specific skills Garett would want for a 3D artist's AI assistant.",
+              "teacher": "An agent skill is a reusable instruction package for a specific workflow. It is like a mini operating manual that tells the AI what standards, tools, and checks to use.",
+              "link": "https://github.com/narendranag/skillkit"
+            },
+            {
+              "n": 8,
+              "category": "AI design systems",
+              "title": "uSpec generates component design documentation from AI agents and Figma context",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "uSpec says an AI agent can analyze UI components using a Figma file as context and render output back into Figma or into portable Markdown. It works with Cursor, Claude Code, Codex, Figma Console MCP, and native Figma MCP.",
+              "why": "Design documentation is becoming agent-readable. This is useful for teaching clients how to turn visual taste, brand rules, and component behavior into material that AI builders can follow.",
+              "action": "Test whether a small Figma component can produce a useful Markdown spec that another AI can implement accurately.",
+              "teacher": "Design tokens are named values for color, spacing, typography, and other visual rules. They help humans and AI systems keep a product visually consistent.",
+              "link": "https://github.com/redongreen/uSpec"
+            },
+            {
+              "n": 9,
+              "category": "Game and 3D editor agents",
+              "title": "GladeKit MCP connects AI clients directly to Unity and Godot",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "GladeKit MCP says it connects MCP-compatible AI clients such as Claude Code, Cursor, and Windsurf directly to Unity or Godot. The README lists 235 plus Unity tools, a Unity-aware prompt, project context, script semantic search, and 38 Godot tools.",
+              "why": "3D and game tools are being exposed as controllable agent environments. This points toward future artist workflows where agents inspect scenes, adjust assets, and automate repetitive setup inside DCC-adjacent tools.",
+              "action": "Watch for Blender, Houdini, and Unreal bridges that copy this pattern with scene-safe read and write tools.",
+              "teacher": "Semantic search means searching by meaning instead of exact words. In a game project, an agent could find relevant scripts or assets even if the names are not obvious.",
+              "link": "https://github.com/Glade-tool/glade-mcp"
+            },
+            {
+              "n": 10,
+              "category": "AI-to-physical maker pipeline",
+              "title": "Kiln lets agents design, slice, and send models to 3D printers",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "Kiln describes an open-source MCP server that lets agents such as Claude Desktop, Claude Code, Codex, or custom MCP clients drive 3D printers end to end. It supports OctoPrint, Moonraker and Klipper, Creality, Bambu Lab, Prusa Link, Elegoo, and Direct USB.",
+              "why": "This is an early maker signal for AI moving from screen output to physical production. For teaching, it suggests workshops around safe prototyping pipelines: describe, generate, validate, slice, and fabricate.",
+              "action": "Follow whether Kiln adds human approval gates, geometry checks, and printer safety rules before print jobs run.",
+              "teacher": "Slicing converts a 3D model into printer instructions layer by layer. This is where material, strength, supports, and print safety decisions enter the workflow.",
+              "link": "https://github.com/codeofaxel/Kiln"
+            }
+          ]
         },
         {
           "id": "job",
@@ -3478,11 +5083,140 @@ window.DASHBOARD_ARCHIVE = {
           "id": "trend",
           "title": "AI Trends & Maker Awareness",
           "accent": "cyan",
-          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "subtitle": "English-first brief for Garett. Focus: practical market signals around agents, vibe coding, design systems, creator hardware, and AI-native teaching opportunities.",
           "date": "2026-06-02 · 03:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "Agents are moving from chat helpers into governed workforces, browser QA, and web-native tool standards.",
+            "AI design quality is becoming a teachable, repeatable skill layer instead of ad hoc prompting.",
+            "Creator and developer workflows are converging: native mobile apps, local AI PCs, and terminal agents are all becoming maker surfaces.",
+            "The education market is starting to define how AI can guide learners without doing the work for them."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The next competitive edge is not only better prompts. It is packaged operating knowledge: skills, guardrails, verified tools, design vocabularies, QA loops, and teaching policies that make AI output repeatable."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Platform shift",
+              "title": "Google AI Studio can build native Android apps from prompts",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Google says AI Studio can now generate Kotlin-based Android apps from a prompt, preview them in a browser emulator, install to a device, publish to an internal Google Play testing track, and hand off to Android Studio or GitHub.",
+              "why": "This lowers the barrier from idea to mobile prototype. For teaching or consulting, Garett can show creators how a visual product idea becomes a native app workflow instead of just a website mockup.",
+              "action": "Test one small Android concept, such as a portfolio viewer or prop reference app, and judge how much cleanup is needed after export.",
+              "teacher": "Kotlin is Google's preferred language for Android. Jetpack Compose is Android's modern UI toolkit. An internal testing track lets an app be shared privately before public release.",
+              "link": "https://android-developers.googleblog.com/2026/05/build-android-apps-google-ai-studio.html"
+            },
+            {
+              "n": 2,
+              "category": "Web agents",
+              "title": "WebMCP proposes a standard way for websites to expose tools to AI agents",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "Chrome's WebMCP documentation describes a proposed web standard for registering JavaScript functions and annotated HTML form tools so browser agents can act more reliably on pages.",
+              "why": "If this direction sticks, AI-ready websites will not just look good. They will expose structured actions that agents can use. That becomes a new consulting topic for designers and builders.",
+              "action": "Watch for WebMCP examples in booking, checkout, support, and creator portfolio sites where agent navigation matters.",
+              "teacher": "MCP means Model Context Protocol. WebMCP is the browser-facing idea: a site declares what an agent can do instead of forcing the agent to guess from buttons and labels.",
+              "link": "https://developer.chrome.com/docs/ai/webmcp"
+            },
+            {
+              "n": 3,
+              "category": "Agent QA",
+              "title": "Chrome DevTools for agents turns browser QA into an AI workflow",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Google describes Chrome DevTools for agents as a way for AI agents to test responsive layouts, emulate users, debug live browser sessions, and run Lighthouse audits for accessibility, SEO, and performance.",
+              "why": "Agentic QA is becoming part of the build process. This is useful for teaching clients why AI-made apps still need verification loops, especially for visual and UX quality.",
+              "action": "Add browser verification to any vibe-coded landing page or portfolio prototype before showing it to a client.",
+              "teacher": "Lighthouse is a Chrome audit tool. A11y means accessibility, or whether people with different needs can use a site.",
+              "link": "https://developer.chrome.com/docs/devtools/agents"
+            },
+            {
+              "n": 4,
+              "category": "AI design systems",
+              "title": "Impeccable trends as a design language for AI coding harnesses",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "The Impeccable repo says it packages seven design references, 23 commands, and deterministic anti-pattern detection for Claude Code, Cursor, Gemini CLI, Codex CLI, OpenCode, and others.",
+              "why": "This is the design market fighting back against AI slop. Garett can teach clients that taste can be encoded into repeatable checklists, language, and review commands.",
+              "action": "Compare one AI-generated landing page before and after a design-system critique and note which rules improve it fastest.",
+              "teacher": "An AI harness is the tool environment around a model, such as Cursor or Codex. A design skill gives the agent reusable design rules instead of a one-time prompt.",
+              "link": "https://github.com/pbakaus/impeccable"
+            },
+            {
+              "n": 5,
+              "category": "Agent orchestration",
+              "title": "Babysitter packages deterministic orchestration for agent workforces",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "Babysitter says it defines workflows in code, enforces steps and quality gates, records decisions in an immutable journal, and supports Claude Code, Codex, Cursor, Gemini, OpenCode, Pi, and internal headless runs.",
+              "why": "The market is moving beyond one agent doing one task. Clients will need process design: what the AI may do, when to stop, what to verify, and when humans approve.",
+              "action": "Sketch a simple consulting workflow with stages: brief, draft, verify, revise, approve, deliver.",
+              "teacher": "Deterministic orchestration means the process has fixed rules and gates. The model can be creative inside a stage, but it cannot skip the workflow.",
+              "link": "https://github.com/a5c-ai/babysitter"
+            },
+            {
+              "n": 6,
+              "category": "Coding agents",
+              "title": "oh-my-pi highlights the race to build richer terminal coding agents",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "oh-my-pi describes a terminal coding agent with many providers, built-in tools, LSP and debugger operations, subagents, memory, hash-anchored edits, browser search, and IDE-aware workflows.",
+              "why": "Coding agents are becoming full work environments. This helps Garett understand what serious builders expect from AI tools: memory, verification, debugging, and clean handoffs.",
+              "action": "Watch whether terminal agents add design and media-specific skills, not only coding functions.",
+              "teacher": "LSP means Language Server Protocol, the system IDEs use to understand code. A debugger operation lets an agent inspect a running program instead of guessing.",
+              "link": "https://github.com/can1357/oh-my-pi"
+            },
+            {
+              "n": 7,
+              "category": "Enterprise agent building",
+              "title": "Microsoft publishes skills for building Copilot Studio agents from YAML",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "Microsoft's repo provides a plugin for Claude Code, GitHub Copilot CLI, and VS Code to author, manage, test, and advise on Copilot Studio agents through YAML files.",
+              "why": "Enterprise agent creation is becoming a file-based, reviewable workflow. That is a signal that teaching AI consulting may include agent architecture, testing, and content ops, not just prompts.",
+              "action": "Learn the basic idea of agent topics, actions, knowledge, triggers, and tests so enterprise clients are easier to understand.",
+              "teacher": "YAML is a human-readable config format. File-based agents are easier to version, review, and test than agents edited only through a web UI.",
+              "link": "https://github.com/microsoft/skills-for-copilot-studio"
+            },
+            {
+              "n": 8,
+              "category": "AI education",
+              "title": "Stanford CS336 publishes AI agent guidance that protects learning",
+              "source": "Hacker News / GitHub",
+              "relevance": "Beginner",
+              "summary": "A Stanford CS336 CLAUDE.md file on Hacker News tells AI assistants to explain, guide, review, and ask questions, but not complete assignment TODOs, write solutions, run commands, or refactor large parts for students.",
+              "why": "This is directly relevant to Garett's long-term teaching path. The winning educators will design AI policies that create understanding instead of outsourced homework.",
+              "action": "Draft a one-page AI classroom rule set for a design or 3D workshop: what AI may explain, critique, and demonstrate versus what students must do.",
+              "teacher": "CLAUDE.md is a project instruction file for AI assistants. In education, this becomes a contract that tells the AI how to help without replacing the learner.",
+              "link": "https://github.com/stanford-cs336/assignment1-basics/blob/main/CLAUDE.md"
+            },
+            {
+              "n": 9,
+              "category": "Agent governance",
+              "title": "NVIDIA-verified agent skills point to a trust layer for reusable AI capabilities",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "NVIDIA says verified agent skills are cataloged, scanned, signed, and documented with skill cards so developers can understand origin, risks, dependencies, limitations, and whether a skill was modified.",
+              "why": "As agents handle real work, clients will ask which instructions and tools are safe. Teaching AI literacy will include trust, provenance, and risk checks.",
+              "action": "When testing any third-party AI skill, ask: who authored it, what does it access, what risks are listed, and how is it verified?",
+              "teacher": "Provenance means knowing where something came from. Cryptographic signing is a way to verify that files have not been altered after publication.",
+              "link": "https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/"
+            },
+            {
+              "n": 10,
+              "category": "Creator hardware",
+              "title": "NVIDIA RTX Spark frames the PC as an always-on agent and creator machine",
+              "source": "Official / Hacker News signal",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA's RTX Spark page describes a Blackwell RTX GPU, up to 128 GB unified memory, FP4 AI performance, local CUDA development, AI agents, creative apps, real-time 3D rendering, and small desktops designed for 24/7 personal agents.",
+              "why": "The local creator workstation is being rebranded around AI agents, not only rendering. This affects how 3D artists think about hardware investment and offline workflows.",
+              "action": "Track real benchmarks for local image, video, 3D, and coding-agent workflows before recommending any hardware path.",
+              "teacher": "Unified memory means CPU and GPU can share one large memory pool. FP4 is a low-precision format used to run AI models with less memory and more speed.",
+              "link": "https://www.nvidia.com/en-us/products/rtx-spark/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -3633,11 +5367,140 @@ window.DASHBOARD_ARCHIVE = {
           "id": "trend",
           "title": "AI Trends & Maker Awareness",
           "accent": "cyan",
-          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "subtitle": "English-first brief for Garett. Focus: practical market signals around agentic building, creative automation, open tools, and maker workflows.",
           "date": "2026-06-02 · 00:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "Coding agents are moving from chat helpers into operating loops for support tickets, open-source work, and long-running execution.",
+            "Small efficient models and local stacks are becoming important because agent systems need many cheap, fast calls.",
+            "Physical AI and robotics tooling is opening up, with world models and local speech stacks becoming more maker-accessible.",
+            "3D and design signals point toward lighter, more embeddable pipelines: roadmap visibility, browser-native 3D, and AI-assisted workflows."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The strongest pattern today is agent infrastructure becoming productized: memory, cost controls, long-running execution, local models, and specialized workflows. For teaching and consulting, the opportunity is not only explaining AI tools, but helping people design repeatable AI-native work systems."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Coding agents",
+              "title": "Braintrust turns customer requests into code with Codex",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says Braintrust engineers use Codex with GPT-5.5 to run experiments and turn customer requests into code faster. The signal is that user feedback is being wired closer to the implementation loop.",
+              "why": "This is a consulting pattern: teach teams how to convert client pain points into testable agent tasks instead of loose backlog notes.",
+              "action": "Watch for examples of support tickets, design notes, and bug reports becoming agent-ready specs.",
+              "teacher": "Codex is a coding agent. The key idea is not just code generation. It is converting a real business request into a planned, reviewed, testable software change.",
+              "link": "https://openai.com/index/braintrust"
+            },
+            {
+              "n": 2,
+              "category": "Open-source workflows",
+              "title": "Warp uses GPT-5.5 to coordinate coding agents across local, cloud, and open-source work",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "OpenAI describes Warp using GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows. This points to agent orchestration becoming part of everyday dev tools.",
+              "why": "Builders are moving from one AI chat window to multiple agents working across environments. That is a teachable market shift for AI-native workflows.",
+              "action": "Track how Warp, Cursor, Codex, Claude Code, and OpenCode describe multi-agent handoffs.",
+              "teacher": "Agent orchestration means assigning work to several AI workers, giving each the right context, and reviewing the combined result.",
+              "link": "https://openai.com/index/warp"
+            },
+            {
+              "n": 3,
+              "category": "Open models",
+              "title": "JetBrains releases Mellum2, a 12B open MoE model for text and code",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "JetBrains says Mellum2 is a 12B-parameter Mixture-of-Experts model trained on natural language and code, with only 2.5B active parameters per token. It is Apache 2.0 and aimed at routing, RAG, summarization, sub-agents, and private deployments.",
+              "why": "Efficient specialist models make private, low-cost agent systems more realistic for studios,",
+              "action": "Watch whether coding tools use smaller routing models before calling expensive frontier models. *Teacher explanation:* MoE means Mixture-of-Experts. A model has many expert parts but activates only some for each token, which can reduce cost and latency.",
+              "teacher": "s, and small consulting setups.",
+              "link": "https://huggingface.co/blog/JetBrains/mellum2-launch"
+            },
+            {
+              "n": 4,
+              "category": "Physical AI",
+              "title": "NVIDIA Cosmos 3 ships as an open omni-model for physical AI",
+              "source": "Official",
+              "relevance": "Advanced",
+              "summary": "Hugging Face says NVIDIA Cosmos 3 is available with Super and Nano models, Diffusers integration, post-training scripts, and synthetic data resources. It combines world generation, physical reasoning, and action generation in one model.",
+              "why": "3D, simulation, robotics, and design will increasingly share language: world models, synthetic data, and physically plausible generation.",
+              "action": "Follow demos that connect Cosmos-style models to Blender, Omniverse, robotics, or synthetic scene generation.",
+              "teacher": "Physical AI means AI that understands or simulates real-world motion, cause and effect, spatial relationships, and actions.",
+              "link": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
+            },
+            {
+              "n": 5,
+              "category": "Maker robotics",
+              "title": "Reachy Mini goes fully local for speech-to-speech interaction",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face shows how Reachy Mini can run its conversation stack locally using a VAD, STT, LLM, and TTS cascade. The post highlights no cloud, no API keys, and no data leaving the machine.",
+              "why": "Local AI is becoming part of creator hardware. This is useful for workshops, classrooms, privacy-sensitive demos, and small studios.",
+              "action": "Watch local voice stacks as a pattern for desktop assistants, installation art, and interactive booth demos.",
+              "teacher": "VAD means voice activity detection, STT means speech to text, LLM means large language model, and TTS means text to speech.",
+              "link": "https://huggingface.co/blog/local-reachy-mini-conversation"
+            },
+            {
+              "n": 6,
+              "category": "3D pipeline",
+              "title": "Blender introduces a central roadmap for major projects",
+              "source": "Official",
+              "relevance": "Beginner",
+              "summary": "Blender launched a central roadmap that gives artists, studios, and contributors an up-to-date overview of major ongoing projects and recently completed features. Project cards link to technical details, issues, pull requests, or development posts.",
+              "why": "Roadmap transparency helps 3D professionals plan training content, pipeline upgrades, and client advice around where Blender is heading.",
+              "action": "Check the roadmap monthly and note which features could affect modeling, layout, rendering, or studio handoff workflows.",
+              "teacher": "A roadmap is a public planning board. It does not promise every feature date, but it shows direction and priorities.",
+              "link": "https://www.blender.org/news/introducing-the-blender-roadmap/"
+            },
+            {
+              "n": 7,
+              "category": "Browser 3D",
+              "title": "PolyCSS trends as a CSS 3D engine for the DOM",
+              "source": "Hacker News / GitHub",
+              "relevance": "Intermediate",
+              "summary": "PolyCSS renders OBJ, MTL, GLB, and VOX as real HTML elements transformed with CSS matrix3d. It supports colors, textures, lighting, shadows, shapes, animations, and React, Vue, or plain JavaScript.",
+              "why": "This is a maker signal that 3D presentation is escaping heavy engines. Lightweight browser 3D can become teaching material, portfolio polish, or client preview tooling.",
+              "action": "Test whether a simple GLB or product mockup can be embedded in a web page without WebGL complexity.",
+              "teacher": "DOM means the browser's document object model. PolyCSS makes 3D meshes appear as normal page elements using CSS transforms instead of a traditional 3D renderer.",
+              "link": "https://github.com/LayoutitStudio/polycss"
+            },
+            {
+              "n": 8,
+              "category": "Agentic products",
+              "title": "Mistral Vibe launches on Product Hunt for long-running multi-step work and coding",
+              "source": "Tool launch",
+              "relevance": "Beginner",
+              "summary": "Product Hunt lists Mistral Vibe as an AI agent for long-running, multi-step work and coding. The short pitch is not detailed, but the category signal is clear: more products are packaging agent execution as the main interface.",
+              "why": "Early adopters are being trained to expect agents that keep working beyond one prompt. This affects how people will judge assistants, consulting tools, and AI teaching demos.",
+              "action": "Compare its promise against Cursor, Codex, Claude Code, OpenCode, and Gemini CLI to see what users now expect from agent UX.",
+              "teacher": "Long-running agent work means the AI continues through multiple steps, checks results, and may use tools instead of only giving a one-shot answer.",
+              "link": "https://www.producthunt.com/products/mistral-7b"
+            },
+            {
+              "n": 9,
+              "category": "Creator hardware",
+              "title": "Dune Keypad points to context-aware physical controls for AI workflows",
+              "source": "Tool launch",
+              "relevance": "Beginner",
+              "summary": "Product Hunt describes Dune Keypad as a context-aware Mac keypad with Claude and community extensions. The signal is that makers are creating physical interfaces for AI and app automation.",
+              "why": "For creators, speed often comes from workflow ergonomics. AI-native shortcut hardware could matter for design reviews, render pipelines, and teaching studios.",
+              "action": "Watch whether stream-deck-style AI controls become common in designer and maker setups.",
+              "teacher": "Context-aware means the controls change based on the active app, selected file, or current task, so one button can trigger the right action in the right moment.",
+              "link": "https://www.producthunt.com/products/dune-4"
+            },
+            {
+              "n": 10,
+              "category": "AI cost infrastructure",
+              "title": "Tokenwise highlights smart LLM proxy cost control",
+              "source": "Tool launch",
+              "relevance": "Intermediate",
+              "summary": "Product Hunt describes Tokenwise as a smart LLM proxy that shows where teams are overpaying. That points to cost visibility becoming a layer in AI-native operations.",
+              "why": "As agents make many model calls, clients will need help understanding cost, routing, and quality tradeoffs. This is a consulting angle, not just a developer issue.",
+              "action": "Track tools that route cheap tasks to small models and reserve expensive models for high-value steps.",
+              "teacher": "An LLM proxy sits between an app and model providers. It can log usage, route requests, enforce limits, and reduce waste.",
+              "link": "https://www.producthunt.com/products/tokenwise"
+            }
+          ]
         },
         {
           "id": "job",
@@ -3791,9 +5654,138 @@ window.DASHBOARD_ARCHIVE = {
           "accent": "cyan",
           "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
           "date": "2026-06-01 · 21:10 GMT+8",
-          "quickRead": [],
-          "callout": {},
-          "signals": []
+          "quickRead": [
+            "Agent tooling is shifting from single chat windows to workspaces, memory layers, sandboxes, and multi-agent command lines.",
+            "Open-source makers are copying the best parts of Claude, Codex, Cursor, and OpenClaw-style workflows into local-first stacks.",
+            "3D creation keeps moving toward faster asset finishing: better textures, browser remixing, and AI-assisted production shortcuts.",
+            "For teaching and consulting, the opportunity is to explain workflows, safety boundaries, and repeatable creative systems, not only tools."
+          ],
+          "callout": {
+            "label": "Market signal to watch",
+            "text": "The next wave is not just smarter models. It is operational AI: memory, routing, project state, safe execution, and design-to-asset workflows that let non-engineers build and ship in smaller teams."
+          },
+          "signals": [
+            {
+              "n": 1,
+              "category": "Coding agent",
+              "title": "Kimi Code appears as a new terminal coding agent with video input, subagents, and MCP setup",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "MoonshotAI's Kimi Code repo describes a terminal AI coding agent that can read and edit code, run commands, search files, fetch pages, and use Kimi or compatible providers. The README highlights a fast TUI, video input, conversational MCP configuration, focused subagents, and lifecycle hooks.",
+              "why": "Coding agents are becoming full work environments, not just autocomplete. This gives Garett a concrete example for teaching how AI-native builders combine screen context, tools, hooks, and subagents into a repeatable production workflow.",
+              "action": "Watch whether Kimi Code gains adoption among builders who want a non-Node, terminal-first alternative to Claude Code and Codex.",
+              "teacher": "MCP means Model Context Protocol. It is a way for AI apps to connect to tools, files, browsers, databases, and local services through a standard interface. https://github.com/MoonshotAI/kimi-code",
+              "link": null
+            },
+            {
+              "n": 2,
+              "category": "Agent workspace",
+              "title": "PilotDeck open-sources a workspace-centered agent operating system",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "OpenBMB's PilotDeck says it became open source on 2026-05-28. It frames itself as an agent productivity platform built around WorkSpace, with attention to long-running multi-project work, traceable memory, and operational boundaries.",
+              "why": "This is close to the OpenClaw direction: project state, memory, workspaces, and multi-task command centers. For consulting, it is a sign that clients will ask how to structure AI work, not only which model to buy.",
+              "action": "Compare PilotDeck's workspace and memory concepts against Garett's own OpenClaw job-card workflow.",
+              "teacher": "Agent OS does not mean a replacement for Windows or macOS. It usually means a control layer that gives agents projects, memory, tools, permissions, and work queues. https://github.com/OpenBMB/PilotDeck",
+              "link": null
+            },
+            {
+              "n": 3,
+              "category": "Local-first assistant",
+              "title": "Odysseus trends as a self-hosted ChatGPT/Claude-style AI workspace",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "Odysseus describes a local-first, privacy-first AI workspace with chat, agent tools, model comparison, deep research, documents, memory, skills, email triage, notes, tasks, calendar, and mobile-friendly UI.",
+              "why": "Makers are trying to package personal AI operations into one home server style product. That supports a teaching angle around practical personal AI systems for creators and small studios.",
+              "action": "Track whether Odysseus becomes a serious self-hosted alternative for creators who do not want all workflow data inside cloud chat apps.",
+              "teacher": "Local-first means the user's machine or server is the main home for data and workflow. Cloud APIs may still be used, but the workspace is not fully locked inside one vendor. https://github.com/pewdiepie-archdaemon/odysseus",
+              "link": null
+            },
+            {
+              "n": 4,
+              "category": "Agent memory",
+              "title": "ai-memory targets cross-agent handoff between Claude Code, Codex, Cursor, Gemini CLI, and OpenClaw",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "The ai-memory repo presents a long-term memory layer for coding agents. It records prompts, tool calls, and decisions, rewrites session history into a wiki, and supports several agent harnesses including Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and OpenClaw.",
+              "why": "Memory and handoff are becoming a competitive layer. For teaching, this is a clear way to explain why AI projects fail when context lives only in chat history.",
+              "action": "Test the idea on one non-sensitive project: compare a normal agent restart with a restart that has a written memory handoff.",
+              "teacher": "Handoff means the next AI session receives a structured summary of decisions, failed attempts, open questions, and files changed, so it does not start cold. https://github.com/akitaonrails/ai-memory",
+              "link": null
+            },
+            {
+              "n": 5,
+              "category": "Multi-agent CLI",
+              "title": "Agents CLI packages coding agents into pipelines, account rotation, and project-pinned versions",
+              "source": "Tool launch",
+              "relevance": "Advanced",
+              "summary": "Agents CLI says it can run different models through CLI coding agents, rotate across accounts, chain agents in Unix-style pipelines, pin agent versions per project, and run parallel agents with isolated worktrees.",
+              "why": "This shows where vibe coding is heading: orchestration. The market is moving from one agent doing one task to teams of agents with routing, version control, and repeatable scripts.",
+              "action": "Watch for creator demos that use agent pipelines for design QA, code cleanup, documentation, and test writing in one flow.",
+              "teacher": "A worktree is a separate checkout of the same Git project. It lets each agent edit safely without colliding with the main working copy. https://agents-cli.sh",
+              "link": null
+            },
+            {
+              "n": 6,
+              "category": "Agent security",
+              "title": "vmette proposes fast microVM sandboxes for risky local agent work",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "vmette is described as a headless Linux microVM sandbox for macOS using Apple's Virtualization.framework. It aims to boot a hardware-isolated guest in about one second, with default-deny host filesystem and network access.",
+              "why": "As agents run shell commands and fetch untrusted web content, safe execution becomes part of professional AI consulting. Clients will need simple explanations of why sandboxing matters.",
+              "action": "Build a teaching slide that compares three levels: raw local shell, container, and hardware-isolated VM.",
+              "teacher": "A microVM is a small virtual machine. It gives the AI a disposable computer to work inside, so mistakes or malicious code are less likely to touch the real machine. https://github.com/chamuka-inc/vmette",
+              "link": null
+            },
+            {
+              "n": 7,
+              "category": "Model routing",
+              "title": "rotom turns Codex, Grok, Kiro, and Cursor OAuth into a local API gateway",
+              "source": "GitHub",
+              "relevance": "Advanced",
+              "summary": "rotom describes a local Rust gateway for Claude Code, OpenAI SDKs, Anthropic SDKs, and other compatible clients. It lets users log in through OAuth providers and expose a local OpenAI- or Anthropic-compatible server.",
+              "why": "Tool interoperability is becoming a maker obsession. The winning workflows may not be tied to one model brand; they will route work to whichever model and account fits the task.",
+              "action": "Watch for more local gateways that let Claude Code-style interfaces talk to non-Anthropic models.",
+              "teacher": "OAuth is a login flow that grants access without copying a raw API key. A local API gateway translates one tool's expected API shape into another provider's access method. https://github.com/RyanKung/rotom",
+              "link": null
+            },
+            {
+              "n": 8,
+              "category": "AI design workflow",
+              "title": "GordenPPTSkill shows agent skills moving into polished presentation production",
+              "source": "GitHub",
+              "relevance": "Intermediate",
+              "summary": "GordenPPTSkill offers an AI-friendly PPT builder skill with multiple hand-polished PPTX templates, text-only non-destructive editing, python-pptx build scripts, and optional preview rendering. The repo states it is for personal study and research, not commercial use.",
+              "why": "This is a strong signal for teaching and consulting: AI agents are gaining reusable design skills, not just writing slides from scratch. The real value is template discipline, layout preservation, and preview verification.",
+              "action": "Study the workflow pattern, but do not reuse restricted templates commercially. Build a small original template library for Garett's own teaching materials.",
+              "teacher": "Non-destructive editing means the agent changes text or defined fields while preserving the designer's layout, typography, and spacing. https://github.com/GordenSun/GordenPPTSkill",
+              "link": null
+            },
+            {
+              "n": 9,
+              "category": "3D production",
+              "title": "Tripo adds 8K texture generation for 3D models",
+              "source": "Official",
+              "relevance": "Intermediate",
+              "summary": "Tripo says its 8K Texture feature can generate true 8192x8192 BaseColor output in under two minutes, either during new model generation or later through an upscale workflow. The post positions it for hero assets, close-up product visuals, games, and cinematic shots.",
+              "why": "AI 3D tools are attacking the finishing stage, where many generated assets still look weak. This matters for 3D/design consulting because texture quality is often what makes an asset client-presentable.",
+              "action": "Test one existing rough AI model through 2K, 4K, and 8K texture tiers and compare close-up render quality.",
+              "teacher": "BaseColor is the main color texture in a PBR material. It does not include lighting by itself; it describes the surface color that the renderer lights later. https://www.tripo3d.ai/blog/tripo-8k-texture",
+              "link": null
+            },
+            {
+              "n": 10,
+              "category": "Vibe-coded 3D",
+              "title": "Zorilla lets users remix a browser 3D game by typing plain-English changes",
+              "source": "Tool launch",
+              "relevance": "Beginner",
+              "summary": "Zorilla describes a browser 3D world where users type changes such as making a character fly or changing game mechanics, then share a remix link with friends. The page says it is built by Jeff, Raleigh, and Claude for summer 2026.",
+              "why": "This is a maker signal for AI-native creation: the product is not a finished game, but a remixable creative surface. Teaching can focus on how plain-language editing changes the relationship between creator, audience, and tool.",
+              "action": "Try one remix and note where the tool succeeds or fails: code correctness, design quality, multiplayer behavior, and shareability.",
+              "teacher": "Vibe coding means describing the desired behavior in natural language and letting the AI write or modify the code, with the human guiding direction and testing results. https://www.zoril.la/ End of brief. All links were selected as new against the local sent-link ledger available at send time.",
+              "link": null
+            }
+          ]
         },
         {
           "id": "job",
