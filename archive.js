@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-05 23:27",
+    "fetchedAt": "2026-06-05 23:40",
     "editions": 77
   },
   "editions": [
@@ -31,7 +31,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 21:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "NVIDIA opens physical",
+              "title": "NVIDIA opens physical AI agent skills for robotics, factories, and digital twins",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA released open-source agent tools and skills for physical AI workflows across Omniverse, Cosmos, Alpamayo, and Metropolis.",
+              "why": "Physical AI is moving from demos into repeatable workflows for robotics, industrial twins, inspection, synthetic data, and AV pipelines.",
+              "action": "Build a tiny service menu around synthetic-data generation, scene QA, or digital-twin workflow setup for manufacturing or retail-space clients.",
+              "teacher": "Teach agent skills as reusable SOPs: define inputs, tools, checks, and handoff criteria instead of just prompting a model.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/01/3303991/0/en/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai.html"
+            },
+            {
+              "n": 2,
+              "category": "MIT and Georgia",
+              "title": "MIT and Georgia State expand PATH for AI training and hiring",
+              "source": "news.mit.edu",
+              "relevance": "Intermediate",
+              "summary": "MIT RAISE and Georgia State announced expanded PATH work to scale affordable, industry-aligned AI training for entry-level and current workers.",
+              "why": "AI job readiness is becoming a structured education product, especially through community colleges and work-based learning.",
+              "action": "Turn one practical workflow you know into a teachable mini-module with a rubric, exercise, and employer-facing outcome.",
+              "teacher": "Use PATH as a model for training design: affordable access, industry alignment, work-based proof, and job-ready skills.",
+              "link": "https://news.mit.edu/2026/mit-raise-georgia-state-university-announce-path-0604"
+            },
+            {
+              "n": 3,
+              "category": "HighLevel gives agencies",
+              "title": "HighLevel gives agencies and small businesses free summer access to AI tools",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "HighLevel announced its Summer of AI campaign, giving small businesses and agencies access to five AI tools and agents at no extra cost during the summer.",
+              "why": "Local businesses will soon expect agencies to package AI follow-up, review, booking, and lead workflows as normal service.",
+              "action": "Create a one-page AI local business starter pack covering lead capture, reply scripts, appointment booking, and weekly performance reporting.",
+              "teacher": "Show learners how to sell outcomes: missed-call recovery, faster quote replies, review generation, and no-show reduction.",
+              "link": "https://www.prnewswire.com/news-releases/highlevel-puts-advanced-ai-in-the-hands-of-the-36-million-small-businesses-that-power-the-economy-893548713.html"
+            },
+            {
+              "n": 4,
+              "category": "Meta Business Agent",
+              "title": "Meta Business Agent reaches WhatsApp, Instagram, Messenger, and Business Suite",
+              "source": "about.fb.com",
+              "relevance": "Intermediate",
+              "summary": "Meta announced Business Agent and a broader Business Agent Platform for customer conversations and business workflows across its messaging ecosystem.",
+              "why": "AI sales and service agents will become accessible to millions of small businesses already living in messaging channels.",
+              "action": "Audit clients with high DM volume and design safe conversation flows: FAQ, qualification, booking, handoff, and spam protection.",
+              "teacher": "Emphasize channel risk: agents need identity, permissions, escalation, and fraud resistance because customers trust messaging threads.",
+              "link": "https://about.fb.com/news/2026/06/meta-business-agent/"
+            },
+            {
+              "n": 5,
+              "category": "Bullhorn adds Amplify",
+              "title": "Bullhorn adds Amplify Digital Workers for staffing and recruiting teams",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Bullhorn expanded Amplify with digital worker skills for prospecting, verifying, auditing, transcribing, and chat-based staffing workflows.",
+              "why": "Recruiting agencies are turning repetitive sourcing and database work into agent-supported operations, not just better search.",
+              "action": "Build a recruiter automation checklist: clean candidate records, verify details, summarize calls, draft outreach, and log evidence.",
+              "teacher": "Show the difference between automation and accountability: every candidate action needs traceability and human review points.",
+              "link": "https://www.globenewswire.com/news-release/2026/05/28/3302875/0/en/bullhorn-unveils-amplify-digital-workers-at-engage-2026.html"
+            },
+            {
+              "n": 6,
+              "category": "Quali and Cisco",
+              "title": "Quali and Cisco launch Stack Automation for faster AI infrastructure deployment",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Quali and Cisco launched Stack Automation by Quali, combining validated Cisco infrastructure with automation intelligence and NVIDIA AI Enterprise components.",
+              "why": "Companies trying AI pilots need deployment and governance help; infrastructure automation is becoming a consulting wedge.",
+              "action": "Create a lightweight AI lab readiness assessment: hardware, access, environments, model endpoints, rollback, cost tracking, and governance.",
+              "teacher": "Teach the deployment stack: validated architecture, environment templates, observability, access control, and repeatable rollout.",
+              "link": "https://www.prnewswire.com/news-releases/weeks-of-manual-infrastructure-work-condensed-to-hours-quali-and-cisco-launch-stack-automation-platform-at-cisco-live-302790433.html"
+            },
+            {
+              "n": 7,
+              "category": "Hasbro Sixth Wall",
+              "title": "Hasbro Sixth Wall turns licensed characters into an AI experience category",
+              "source": "newsroom.hasbro.com",
+              "relevance": "Intermediate",
+              "summary": "Hasbro launched Sixth Wall, an AI studio for authorized character experiences, and partnered with ElevenLabs around licensed iconic voices.",
+              "why": "Brand-safe AI characters create new work for IP licensing, story design, voice ethics, interactive experiences, and location-based entertainment.",
+              "action": "Sketch a responsible character-agent pitch: audience, allowed behavior, forbidden behavior, voice rights, moderation, and handoff to humans.",
+              "teacher": "Teach AI creativity through rights and constraints: the commercial edge is licensed behavior, not uncontrolled imitation.",
+              "link": "https://newsroom.hasbro.com/news-releases/news-release-details/hasbro-launches-sixth-wall-new-ai-studio-building-next"
+            },
+            {
+              "n": 8,
+              "category": "Workera Ambient verifies",
+              "title": "Workera Ambient verifies skills continuously in the flow of work",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Workera introduced Ambient, an always-on capability measurement agent with AI-personalized coaching for professional growth.",
+              "why": "AI skills are becoming measurable work signals, not just certificates, which changes hiring, promotion, and internal mobility.",
+              "action": "Add evidence to your learning portfolio: before/after tasks, prompts, QA notes, mistakes fixed, and measurable output improvements.",
+              "teacher": "Teach learners to prove skill through artifacts and performance evidence, because seat-time certificates will get weaker.",
+              "link": "https://www.prnewswire.com/news-releases/workeras-new-agent-ambient-verifies-employee-capability-directly-in-the-flow-of-work-302784565.html"
+            },
+            {
+              "n": 9,
+              "category": "No Logo Lola",
+              "title": "No Logo Lola points to AI-assisted creator representation",
+              "source": "hellopartner.com",
+              "relevance": "Intermediate",
+              "summary": "No Logo launched Lola, an AI talent manager intended to help independent creators with brand partnerships and commercial opportunities.",
+              "why": "Creators below agency scale need help finding, pitching, negotiating, and tracking sponsorships; AI can turn that into a solo-operator service.",
+              "action": "Build a creator deal-room template: media kit, rate card, outreach scripts, follow-up cadence, deliverables, invoice, and renewal reminders.",
+              "teacher": "Show creators the business workflow behind sponsorships, not only content production: pipeline, pricing, proof, and relationship management.",
+              "link": "https://hellopartner.com/2026/05/12/no-logo-launches-ai-talent-manager-lola-to-democratise-creator-representation/"
+            },
+            {
+              "n": 10,
+              "category": "Betaworks hosts a",
+              "title": "Betaworks hosts a hands-on hackathon for multimodal agent interfaces",
+              "source": "betaworks.com",
+              "relevance": "Intermediate",
+              "summary": "Betaworks listed a June 6 hackathon focused on multimodal interfaces for agents across voice, creative tools, workflows, and real-time experiences.",
+              "why": "The next opportunity layer is not only smarter models; it is better interfaces for controlling, reviewing, and trusting agents.",
+              "action": "Prototype one tiny interface idea this weekend: voice brief to task board, image markup to render checklist, or chat to deliverable tracker.",
+              "teacher": "Teach interface thinking: agents need controls, preview, correction loops, permissions, and visible state to become usable products.",
+              "link": "https://www.betaworks.com/event/cli-hacks-build-the-interface-for-agents"
+            }
+          ]
         }
       ]
     },
@@ -57,7 +178,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 18:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "three.ws and IBM",
+              "title": "three.ws and IBM push browser-native 3D AI agents toward enterprise use",
+              "source": "streetinsider.com",
+              "relevance": "Intermediate",
+              "summary": "three.ws announced an IBM partnership around browser-native 3D AI agent technology for gaming, animation, product design, AR/VR, architecture, and 3D printing.",
+              "why": "3D service providers can move from asset production only to enterprise workflow demos, configurators, and training content.",
+              "action": "Create a one-page pitch for AI-assisted 3D product visualization: input assets, quality gate, output formats, and revision policy.",
+              "teacher": "Use this to show that 3D AI value is not only model generation; it is controlled pipelines, texturing, review, and deployment.",
+              "link": "https://www.streetinsider.com/Globe%2BNewswire/three.ws%2Band%2BIBM%2BAnnounce%2BStrategic%2BPartnership%2Bto%2BAdvance%2BAI-Powered%2B3D%2BAgent%2BTechnology/26597333.html"
+            },
+            {
+              "n": 2,
+              "category": "Cisco Cloud Control",
+              "title": "Cisco Cloud Control creates demand for agentic IT operations builders",
+              "source": "newsroom.cisco.com",
+              "relevance": "Intermediate",
+              "summary": "Cisco announced Cloud Control, a platform where humans and AI agents operate and defend IT infrastructure, including natural-language agent building and MCP connections.",
+              "why": "IT teams will buy implementation help for policies, playbooks, dashboards, and human approval flows around infrastructure agents.",
+              "action": "Draft a consulting menu for agentic operations: incident triage bot, change-risk checklist, connector map, and rollback drill.",
+              "teacher": "Useful example that automation work is shifting from scripts to governed operational systems with policy and observability.",
+              "link": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m06/cisco-unveils-agentic-platform-for-operating-and-defending-critical-it-infrastructure.html"
+            },
+            {
+              "n": 3,
+              "category": "Workday opens natural-language",
+              "title": "Workday opens natural-language agent building for HR, finance, and IT developers",
+              "source": "newsroom.workday.com",
+              "relevance": "Intermediate",
+              "summary": "Workday launched tools for developers to build, connect, and verify AI agents in Workday using natural language inside agentic coding tools.",
+              "why": "Enterprise app customization is becoming a new lane for consultants who understand both business process and AI-agent verification.",
+              "action": "Practice mapping one HR or finance workflow into trigger, data needed, agent action, exception, and manager approval.",
+              "teacher": "Good classroom exercise for turning vague automation requests into controlled process diagrams and testable agent behavior.",
+              "link": "https://newsroom.workday.com/2026-06-02-Workday-Launches-New-Tools-for-Developers-to-Build%2C-Connect%2C-and-Verify-AI-Agents-For-HR%2C-Finance%2C-and-IT"
+            },
+            {
+              "n": 4,
+              "category": "WTW launches AI",
+              "title": "WTW launches AI Workforce Transformation for job and skills redesign",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "WTW launched an AI Workforce Transformation solution using its WorkVue Agent to analyze jobs, skills, and where AI can improve productivity.",
+              "why": "Companies will need help translating AI hype into role redesign, training plans, and measurable productivity experiments.",
+              "action": "Offer a lightweight AI-readiness audit: top five repetitive workflows, skill gaps, adoption risk, and one pilot recommendation.",
+              "teacher": "Strong material for teaching that AI opportunity discovery starts with work analysis, not tool shopping.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/02/3305122/0/en/wtw-launches-ai-workforce-transformation-solution-to-turn-ai-potential-into-enhanced-workforce-performance.html"
+            },
+            {
+              "n": 5,
+              "category": "IBM and Google",
+              "title": "IBM and Google Cloud scale AI consulting through agent-powered delivery",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "IBM and Google Cloud announced a new Google Cloud Practice combining IBM Consulting Advantage agents with Gemini Enterprise Agent Platform.",
+              "why": "Large consultancies are productizing AI delivery, which signals room for smaller specialists to offer narrower, faster implementation packages.",
+              "action": "Pick one vertical and define a micro-practice: discovery template, prototype scope, governance checklist, and handoff documentation.",
+              "teacher": "Use as evidence that consulting skill now includes reusable delivery assets, not only custom advice.",
+              "link": "https://www.prnewswire.com/news-releases/ibm-and-google-cloud-announce-strategic-partnership-to-scale-ai-with-human-expertise-and-aipowered-delivery-302790899.html"
+            },
+            {
+              "n": 6,
+              "category": "Zendesk frames customer",
+              "title": "Zendesk frames customer support as an autonomous service workforce",
+              "source": "zendesk.com",
+              "relevance": "Intermediate",
+              "summary": "Zendesk announced autonomous service workforce features, including MCP connectivity and quality measurement for service agents and copilots.",
+              "why": "Support teams will need conversation design, knowledge-base cleanup, QA scoring, and escalation logic before agents can safely handle customers.",
+              "action": "Build a demo support-agent audit: ten real tickets, answer quality score, missing docs, and escalation rules.",
+              "teacher": "Good teaching case for why customer-facing AI needs measurement, not just faster response generation.",
+              "link": "https://www.zendesk.com/newsroom/press-releases/relate-2026/"
+            },
+            {
+              "n": 7,
+              "category": "KnowBe4 adds AI-native",
+              "title": "KnowBe4 adds AI-native attack simulation and training agents",
+              "source": "knowbe4.com",
+              "relevance": "Intermediate",
+              "summary": "KnowBe4 launched AI-native security awareness training and another AI defense agent for custom content creation.",
+              "why": "Security training is moving toward personalized simulations, creating work for educators who can design realistic scenarios and assessment loops.",
+              "action": "Create a small AI-safety training module: prompt injection examples, suspicious email drills, and a manager-facing score summary.",
+              "teacher": "Useful for showing students that AI literacy must include risk behavior, verification habits, and role-specific practice.",
+              "link": "https://www.knowbe4.com/press/knowbe4-launches-ai-native-attack-simulation-training-product-and-twelfth-ai-agent"
+            },
+            {
+              "n": 8,
+              "category": "Honeycomb launches observability",
+              "title": "Honeycomb launches observability for production AI-agent workflows",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Honeycomb introduced agent observability features for teams running AI agents in production.",
+              "why": "As agents enter real workflows, clients will need people who can debug traces, failures, latency, tool calls, and business impact.",
+              "action": "Add observability to every automation pitch: logs, success criteria, failure categories, and weekly review dashboard.",
+              "teacher": "Good lesson that reliable AI services require monitoring and postmortems, not just better prompts.",
+              "link": "https://www.prnewswire.com/news-releases/honeycomb-launches-agent-observability-bringing-full-visibility-to-agentic-workflows-in-production-302769398.html"
+            },
+            {
+              "n": 9,
+              "category": "Vonage launches industry-specific",
+              "title": "Vonage launches industry-specific AI agents for contact centers",
+              "source": "cloudcommunications.com",
+              "relevance": "Intermediate",
+              "summary": "Vonage announced vertical-specific AI intelligence for healthcare, financial services, and retail contact centers through partnerships with Avaamo and Syndeo.",
+              "why": "Contact-center AI is splitting into industry playbooks, opening niches for script design, compliance review, and knowledge-base preparation.",
+              "action": "Choose one industry and sketch a contact-center agent pack: intents, forbidden answers, handoff moments, and QA rubric.",
+              "teacher": "Useful example for teaching that industry context often matters more than the base model.",
+              "link": "https://www.cloudcommunications.com/news/vonage-launches-industry-specific-ai-agents?hs_amp=true"
+            },
+            {
+              "n": 10,
+              "category": "Freshworks AI Agent",
+              "title": "Freshworks AI Agent Studio points to fast service-agent customization",
+              "source": "nasdaq.com",
+              "relevance": "Intermediate",
+              "summary": "Freshworks announced AI Agent Studio in Freshservice for building and deploying customized Freddy AI Agents across service workflows.",
+              "why": "SMB and mid-market service teams will want affordable setup help for asset, incident, and internal support automation.",
+              "action": "Design a two-week service automation sprint: workflow map, agent draft, test tickets, escalation rules, and measured rollout.",
+              "teacher": "Good case for teaching practical AI adoption as a scoped service sprint rather than an open-ended transformation project.",
+              "link": "https://www.nasdaq.com/press-release/freshworks-unveils-ai-agent-studio-freshservice-unlock-service-transformation-drives"
+            }
+          ]
         }
       ]
     },
@@ -83,7 +325,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 15:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Meshy launches a",
+              "title": "Meshy launches a conversational 3D Agent Beta",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy announced a chat-to-3D workflow that helps users brainstorm, batch-generate concepts, ask 3D creation questions, and turn selected ideas into downloadable 3D models.",
+              "why": "This is directly relevant to 3D/design freelancers: concepting, model iteration, and asset prep are moving into guided agent workflows.",
+              "action": "Test it on one small prop or booth accessory brief, then compare speed, topology quality, and cleanup time against your normal workflow.",
+              "teacher": "Use this as a lesson in agent-assisted creative direction: prompt, inspect variants, choose, refine, and document where human taste still matters.",
+              "link": "https://www.prnewswire.com/news-releases/meshy-launches-3d-agent-beta-the-worlds-first-ai-agent-for-3d-creation-302790052.html"
+            },
+            {
+              "n": 2,
+              "category": "MWM AI and",
+              "title": "MWM AI and Google Cloud launch AI Mobile Squad for app creators",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "MWM and Google Cloud launched a Designer, Product Manager, and Developer agent team that turns prompts into native iOS and Android app businesses with publishing and growth tooling.",
+              "why": "Solo creators can package niche app ideas faster, while consultants can sell validation, UX cleanup, and launch services around generated apps.",
+              "action": "List three tiny app ideas for a client niche, then sketch what human review would add: branding, user flow, monetization, and app-store positioning.",
+              "teacher": "Good classroom example of multi-agent role separation: designer, PM, and developer each carry different quality risks.",
+              "link": "https://www.prnewswire.com/news-releases/mwm-ai-partners-with-google-cloud-to-launch-new-mobile-agents-for-app-creators-and-entrepreneurs-302790646.html"
+            },
+            {
+              "n": 3,
+              "category": "Cooler Master and",
+              "title": "Cooler Master and Spingence show physical AI in manufacturing",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Cooler Master and Spingence described a global AI manufacturing initiative using visual-inspection agents, simulation, digital twins, and enterprise knowledge systems across production sites.",
+              "why": "Physical AI and digital twins create practical openings for 3D artists, technical visualization people, and automation consultants who can connect visuals to operations.",
+              "action": "Make a mini digital-twin portfolio piece: one product, one process diagram, one inspection view, and one clear business metric.",
+              "teacher": "Use this to teach that AI opportunity is not only chatbots; visual simulation and factory knowledge systems are becoming commercial work.",
+              "link": "https://www.prnewswire.com/apac/news-releases/cooler-master-and-spingence-launch-global-ai-manufacturing-initiative-implementing-nvidia-three-computer-architecture-to-create-a-multinational-digital-brain-302790529.html"
+            },
+            {
+              "n": 4,
+              "category": "Measure Protocol launches",
+              "title": "Measure Protocol launches Predict for behavioral intelligence agents",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Measure Predict gives brand, insights, and media teams agentic access to permissioned consumer-behavior signals through existing data stacks, BI tools, MCP, and CLI.",
+              "why": "Research and strategy work is becoming agent-native, creating openings for people who can turn behavior data into campaign, product, and creator decisions.",
+              "action": "Package a small consulting offer: AI-assisted consumer-behavior scan plus three practical marketing experiments for a client.",
+              "teacher": "Use it to teach source quality: real behavior signals beat generic trend summaries when making business recommendations.",
+              "link": "https://www.prnewswire.com/news-releases/measure-protocol-launches-predict-agentic-cross-platform-intelligence-built-on-real-consumer-behavior-302790859.html"
+            },
+            {
+              "n": 5,
+              "category": "Cornerstone launches Workforce",
+              "title": "Cornerstone launches Workforce AI for skills and readiness",
+              "source": "cornerstoneondemand.com",
+              "relevance": "Intermediate",
+              "summary": "Cornerstone Workforce AI combines people graphs, skills intelligence, labor-market data, and agents for workforce planning, internal mobility, and role readiness.",
+              "why": "AI training is moving from generic courses to role-specific readiness maps, which favors",
+              "action": "Create one role-readiness map for your own work: current tasks, AI-automatable tasks, human-review tasks, and portfolio proof. Teaching notes: Show students how to translate a job title into tasks, skills, evidence, and an AI practice plan.",
+              "teacher": "s who can connect skills to real work output.",
+              "link": "https://www.cornerstoneondemand.com/company/news-room/press-releases/cornerstone-launches-cornerstone-workforce-ai-the-intelligence-platform-for-workforce-readiness-built-to-amplify-human-potential-exponentially-with-ai/"
+            },
+            {
+              "n": 6,
+              "category": "Cloudinary launches AI",
+              "title": "Cloudinary launches AI agents for enterprise visual media teams",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudinary Agents automate media metadata, natural-language search, moderation, and governed workflow creation for large image and video libraries.",
+              "why": "Visual asset operations are becoming a service niche: tagging, search, brand governance, content moderation, and media workflow design.",
+              "action": "Offer an audit for a client asset library: naming, metadata, usage rights, brand rules, and repeatable AI search workflows.",
+              "teacher": "Good lesson for designers: beautiful output is only half the job; searchable, governed asset systems are valuable too.",
+              "link": "https://www.businesswire.com/news/home/20260505410851/en/Cloudinary-Launches-AI-Agents-to-Streamline-Enterprise-Scale-Visual-Media-Management-and-Brand-Governance"
+            },
+            {
+              "n": 7,
+              "category": "OpenHands launches an",
+              "title": "OpenHands launches an Agent Control Plane for software agents",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "OpenHands introduced a control plane to orchestrate, secure, observe, and optimize fleets of software agents with isolated sandboxes and traceable actions.",
+              "why": "Agent operations is becoming a real engineering discipline, and non-engineers can still learn the vocabulary of scope, sandboxing, audit, and ROI.",
+              "action": "For any automation you build, document the owner, allowed tools, rollback path, logs, and success metric before expanding it.",
+              "teacher": "Use this to teach why reliable AI work needs systems thinking, not just clever prompts.",
+              "link": "https://www.businesswire.com/news/home/20260506314667/en/OpenHands-Launches-an-Agent-Control-Plane-to-Manage-Software-Agents"
+            },
+            {
+              "n": 8,
+              "category": "Gambit Cyber launches",
+              "title": "Gambit Cyber launches Vizier AI for autonomous security workflows",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Vizier AI uses coordinated agents to monitor threats, analyze security data, orchestrate response, and manage cyber risk for lean security teams.",
+              "why": "Security teams are resource-constrained, so there is demand for people who can implement AI workflows while preserving human escalation and risk judgment.",
+              "action": "Study one security workflow, such as phishing triage or vulnerability intake, and map where AI can assist versus where approval must stay human.",
+              "teacher": "This is a practical example of automation boundaries: speed matters, but unchecked autonomy can create new risk.",
+              "link": "https://www.businesswire.com/news/home/20260602867546/en/Gambit-Cyber-Launches-Vizier-AI---An-Autonomous-Security-Intelligence-Workspace-for-Continuous-Exposure-Management"
+            },
+            {
+              "n": 9,
+              "category": "Element451 Bolt expands",
+              "title": "Element451 Bolt expands AI agents for higher education",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Element451 says Bolt supports specialized agents across admissions, marketing, student success, continuing education, and workforce journeys.",
+              "why": "Education buyers are adopting agents for enrollment and learner support, which creates work for AI course designers, student-journey writers, and automation consultants.",
+              "action": "Draft one AI-assisted student journey: inquiry, qualification, reminder, resource recommendation, and human handoff.",
+              "teacher": "Use it to teach service design: the agent is only useful when the student journey and handoff points are clear.",
+              "link": "https://www.prnewswire.com/news-releases/element451-launches-bolt-as-the-ai-agent-platform-for-higher-education-surpassing-60-million-ai-powered-student-journeys-302783355.html"
+            },
+            {
+              "n": 10,
+              "category": "HelloTriangle launches an",
+              "title": "HelloTriangle launches an AI agent for 3D engineering workflows",
+              "source": "einpresswire.com",
+              "relevance": "Intermediate",
+              "summary": "HelloTriangle introduced an AI agent for natural-language automation of 3D modeling and simulation workflows, aimed at faster design variation and product development.",
+              "why": "The same pattern affecting creative 3D is hitting engineering 3D: faster variants, more simulation, and higher value on people who can judge results.",
+              "action": "Pick one repetitive 3D workflow and write it as a natural-language process: inputs, constraints, checks, output format, and review criteria.",
+              "teacher": "Teach the difference between generating a 3D result and validating whether it is usable for production or engineering decisions.",
+              "link": "https://www.einpresswire.com/article/911009239/hellotriangle-launches-ai-agent-to-transform-3d-engineering-workflows"
+            }
+          ]
         }
       ]
     },
@@ -109,7 +472,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 12:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "U.S. Commerce opens",
+              "title": "U.S. Commerce opens a $25M AI Upskill Accelerator funding lane",
+              "source": "eda.gov",
+              "relevance": "Intermediate",
+              "summary": "The EDA is making about $25M available for regional AI workforce training programs.",
+              "why": "Grant-backed AI training creates paid curriculum, workshop, and implementation work around real employers, not vague AI awareness.",
+              "action": "Package a 2-hour practical AI workflow class for design, marketing, or operations teams and map it to grant-friendly outcomes.",
+              "teacher": "Teach before/after task redesign, verification habits, and role-specific prompts, then collect productivity evidence.",
+              "link": "https://www.eda.gov/news/press-release/2026/05/11/us-department-commerce-announces-25-million-notice-funding"
+            },
+            {
+              "n": 2,
+              "category": "Trusted TV launches",
+              "title": "Trusted TV launches phone-first AI studio for 30-second commercials",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "Trusted TV says small businesses can create broadcast-ready 30-second ads from a smartphone.",
+              "why": "Local businesses still need taste, scripting, offers, and brand judgment even when production gets automated.",
+              "action": "Offer a fixed-price local-ad sprint: script, AI video draft, voice, legal-safe claims check, and final edit notes.",
+              "teacher": "Show clients the difference between generation, art direction, compliance, and conversion-focused messaging.",
+              "link": "https://www.prweb.com/releases/trusted-tv-launches-self-service-ai-studio-to-create-30-second-tv-commercials-302791376.html"
+            },
+            {
+              "n": 3,
+              "category": "MoEngage launches Merlin",
+              "title": "MoEngage launches Merlin AI Custom Agents for marketers",
+              "source": "en.prnasia.com",
+              "relevance": "Intermediate",
+              "summary": "MoEngage introduced custom marketing agents with visibility, guardrails, and open MCP architecture.",
+              "why": "Marketing teams will need people who can design agent behavior, not just write campaign copy.",
+              "action": "Build a sample lifecycle-agent brief: audience data, allowed actions, brand constraints, approval gates, and KPI dashboard.",
+              "teacher": "Use it to teach guardrails as a creative constraint, where better inputs and review loops beat raw automation.",
+              "link": "https://en.prnasia.com/releases/global/moengage-launches-merlin-ai-custom-agents-with-full-visibility-marketer-defined-guardrails-and-open-mcp-architecture-535802.shtml"
+            },
+            {
+              "n": 4,
+              "category": "Zoom launches ZoomMate",
+              "title": "Zoom launches ZoomMate to turn conversations into completed work",
+              "source": "nasdaq.com",
+              "relevance": "Intermediate",
+              "summary": "ZoomMate is positioned as an AI teammate that searches context and moves meeting conversations into tasks and outputs.",
+              "why": "Meeting-to-execution automation is becoming a common business workflow, creating demand for process cleanup.",
+              "action": "Sell a meeting hygiene audit: templates, action taxonomies, CRM/project-tool routing, and weekly exception review.",
+              "teacher": "Train teams to speak decisions clearly, name owners, and verify AI-created tasks before they become operational noise.",
+              "link": "https://www.nasdaq.com/press-release/zoom-launches-zoommate-first-ai-teammate-built-turn-conversations-completed-work-0"
+            },
+            {
+              "n": 5,
+              "category": "Karbon launches Kai,",
+              "title": "Karbon launches Kai, an AI coworker for accounting firms",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Karbon introduced Kai inside its accounting practice platform, using firm context, workflows, and client communications.",
+              "why": "Professional-service niches are shifting from generic chatbots to embedded AI coworkers with domain memory.",
+              "action": "Create a niche playbook for one vertical: intake checklist, client-history summary, draft response, and review policy.",
+              "teacher": "Explain why source-of-truth systems and permissions matter more than clever prompts in client-service work.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/03/3306285/0/en/karbon-launches-kai-the-ai-coworker-that-knows-your-firm.html"
+            },
+            {
+              "n": 6,
+              "category": "AlphaSense introduces SuperAnalyst",
+              "title": "AlphaSense introduces SuperAnalyst for decision-grade research workflows",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "SuperAnalyst runs multi-step research, monitoring, dashboards, and decision-ready synthesis inside AlphaSense.",
+              "why": "Research jobs are moving toward always-on monitoring plus human judgment, a strong consulting and teaching angle.",
+              "action": "Build a weekly market-intelligence service for one niche: tracked sources, change log, implications, and action memo.",
+              "teacher": "Teach source quality, update cadence, uncertainty labels, and how to separate signal from generated summary polish.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/03/3305976/0/en/alphasense-introduces-superanalyst-the-always-on-ai-agent-for-decision-grade-intelligence.html"
+            },
+            {
+              "n": 7,
+              "category": "7AI adds Threat",
+              "title": "7AI adds Threat Hunt, Threat Intel Hunt, and Skills for security teams",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "7AI launched capabilities that let security teams direct hunts and customize agent behavior through skills.",
+              "why": "The opportunity is not only cybersecurity; it is teaching teams how to express expert procedure as reusable AI skills.",
+              "action": "Turn one repeated expert workflow into a skill spec: trigger, inputs, tools, expected evidence, and human approval point.",
+              "teacher": "Use security as the example for why AI workflows need evidence trails, escalation rules, and domain language.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/01/3304271/0/en/7AI-Launches-Threat-Hunt-Threat-Intel-Hunt-and-Skills-Giving-Security-Teams-the-Power-to-Make-AI-Agents-Work-Their-Way.html"
+            },
+            {
+              "n": 8,
+              "category": "Eon AI Agent",
+              "title": "Eon AI Agent queries backup and archive data without months of prep",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Eon says its agent can query historical, backup, archive, and production data through natural language.",
+              "why": "Many companies have dormant data but no usable AI layer; data-readiness audits become practical service work.",
+              "action": "Offer a data inventory sprint: what exists, who owns it, what questions matter, and what should stay off-limits.",
+              "teacher": "Teach that AI value often starts with data access, permissions, and question design before model selection.",
+              "link": "https://www.globenewswire.com/news-release/2026/04/15/3274511/0/en/Eon-Launches-Agent-to-Deliver-Instant-AI-Ready-Data-with-No-Prep-Required.html"
+            },
+            {
+              "n": 9,
+              "category": "Watershed launches sustainability",
+              "title": "Watershed launches sustainability AI agents and an AI fellowship",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Watershed launched agents for sustainability data work plus a fellowship focused on applying AI in climate operations.",
+              "why": "ESG and sustainability teams have messy data, reporting deadlines, and budget for workflow improvements.",
+              "action": "Prototype a sustainability data-cleaning service: intake spreadsheet, anomaly flags, source notes, and disclosure-ready summary.",
+              "teacher": "Show learners how domain constraints and auditability shape useful AI outputs in regulated or reputation-sensitive work.",
+              "link": "https://www.globenewswire.com/news-release/2026/04/21/3277603/0/en/watershed-launches-new-ai-agents-and-sustainability-ai-fellowship.html"
+            },
+            {
+              "n": 10,
+              "category": "Invisible Agency seeks",
+              "title": "Invisible Agency seeks freelance 3D Modeling and Python specialists for AI training data",
+              "source": "bebee.com",
+              "relevance": "Intermediate",
+              "summary": "A remote freelance listing asks 3D and Python specialists to create collision-accurate meshes, procedural scripts, and structured outputs for AI systems.",
+              "why": "This is a concrete signal that 3D artists who can script and explain geometry are valuable AI-training contributors.",
+              "action": "Prepare a small portfolio sample: reference image, generated mesh, procedural script, JSON metadata, and QA screenshots.",
+              "teacher": "Teach 3D students to document geometry decisions, not only final renders; AI-data work rewards precision and repeatability.",
+              "link": "https://bebee.com/gb/jobs/3d-modeling-python-specialist-freelance-ai-trainer-project-invisible-agency-london--theirstack-677295990"
+            }
+          ]
         }
       ]
     },
@@ -135,7 +619,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 09:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Itential FlowAI makes",
+              "title": "Itential FlowAI makes network automation agents governable",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Itential made FlowAI generally available for building role-scoped agents inside enterprise infrastructure operations.",
+              "why": "Network automation is becoming agent work, which creates demand for people who can translate infrastructure runbooks into governed agent playbooks.",
+              "action": "Package one small service: audit a client network/team SOP and turn it into an agent-ready policy/tool map.",
+              "teacher": "Teach the difference between chatbot demos and production agents: role, tools, boundaries, approval, and logs.",
+              "link": "https://www.prnewswire.com/news-releases/itential-brings-governed-ai-agents-to-enterprise-infrastructure-with-flowai-general-availability-302786111.html"
+            },
+            {
+              "n": 2,
+              "category": "MISUMI IMPRINT highlights",
+              "title": "MISUMI IMPRINT highlights physical AI and generative 3D design",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "MISUMI convened leaders around physical AI, including generative 3D design and digital-to-physical creation.",
+              "why": "3D artists and product designers can move upstream into manufacturing ideation, automation, and AI-assisted prototyping.",
+              "action": "Build a sample workflow that turns a product requirement into concepts, 3D options, vendor parts, and a sourcing note.",
+              "teacher": "Use it to explain physical AI as a bridge between prompt work, CAD judgment, supply chains, and real-world constraints.",
+              "link": "https://www.prnewswire.com/news-releases/misumi-americas-announces-imprint-a-one-day-summit-on-the-future-of-physical-ai-302789050.html"
+            },
+            {
+              "n": 3,
+              "category": "Supademo launches AI",
+              "title": "Supademo launches AI Demo Agent for self-serve SaaS demos",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Supademo launched an AI Demo Agent that lives on websites and answers buyer questions through interactive product demos.",
+              "why": "Demo design, sales enablement, and product storytelling are turning into an AI-native service niche.",
+              "action": "Offer a fixed-scope demo-agent setup: record flows, map buyer questions, build demo branches, and write follow-up copy.",
+              "teacher": "Show students how to design decision trees, not just screens: persona, trigger, proof point, objection, next step.",
+              "link": "https://www.prnewswire.com/news-releases/supademo-launches-ai-demo-agent-that-demos-like-your-best-ae-killing-the-book-a-demo-form-302790311.html"
+            },
+            {
+              "n": 4,
+              "category": "Pearson adds AI",
+              "title": "Pearson adds AI readiness modules across higher-ed courses",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Pearson introduced AI modules for more than 20 disciplines, aimed at practical workforce AI skills.",
+              "why": "AI training is shifting from generic prompts to domain-specific classroom and workplace exercises.",
+              "action": "Create a short workshop template for one field: AI for design review, AI for client briefs, or AI for research summaries.",
+              "teacher": "Anchor lessons in job tasks and assessment rubrics so learners prove they can use AI in context.",
+              "link": "https://www.prnewswire.com/news-releases/pearson-launches-ai-modules-to-address-ai-readiness-gap-between-higher-education-and-work-302784604.html"
+            },
+            {
+              "n": 5,
+              "category": "MedCerts and Pace",
+              "title": "MedCerts and Pace AI link healthcare credentials with AI training",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "MedCerts and Pace AI partnered to expand healthcare career training and track persistence, completion, and credentials.",
+              "why": "AI-supported career pathways are becoming a repeatable model for regulated industries with worker shortages.",
+              "action": "Look for local niches where credential training needs AI tutors, practice scenarios, and progress dashboards.",
+              "teacher": "Emphasize that useful education AI is not just answers; it tracks practice, retention, credential milestones, and employer needs.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/01/3304439/0/en/medcerts-and-pace-ai-announce-strategic-partnership-to-expand-access-to-healthcare-careers-through-ai-powered-training.html"
+            },
+            {
+              "n": 6,
+              "category": "ServiceNow expands autonomous",
+              "title": "ServiceNow expands autonomous workforce across major business functions",
+              "source": "newsroom.servicenow.com",
+              "relevance": "Intermediate",
+              "summary": "ServiceNow announced more AI specialists for IT, CRM, employee service, security, and risk workflows.",
+              "why": "The practical job is becoming agent operations: configuring specialists, supervising handoffs, and proving outcomes.",
+              "action": "Pick one department workflow and document the human-agent handoff: intake, action, exception, approval, report.",
+              "teacher": "Train people to map work as queues and states before choosing any AI tool.",
+              "link": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-brings-Autonomous-Workforce-to-every-major-business-function/default.aspx"
+            },
+            {
+              "n": 7,
+              "category": "Utopai PAI 2.0",
+              "title": "Utopai PAI 2.0 pushes cinematic AI workflows toward long-form production",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Utopai Studios launched PAI 2.0 for cinematic storytelling, variants, keyframes, 4K generation, and long-form extension.",
+              "why": "Creator work is moving from one-off clips to repeatable production systems, which favors people who can direct style, continuity, and review.",
+              "action": "Create a mini showreel workflow: brief, style frame, variants, shot list, review checklist, and final edit notes.",
+              "teacher": "Teach AI video as production management: continuity, shot purpose, asset control, and revision discipline matter more than prompts alone.",
+              "link": "https://www.businesswire.com/news/home/20260602175349/en/Utopai-Studios-Launches-PAI-2.0-Its-Next-Generation-Cinematic-Storytelling-AI-System-for-Creators-and-Professional-Teams"
+            },
+            {
+              "n": 8,
+              "category": "ManpowerGroup says AI",
+              "title": "ManpowerGroup says AI skills are now the hardest to find globally",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "ManpowerGroup launched a VivaTech startup challenge around human-first AI workforce transformation as AI skills become scarce.",
+              "why": "The market is rewarding practical AI enablement: tools, training, change management, and measurable adoption.",
+              "action": "Position services around a concrete business metric: fewer manual hours, faster proposals, better candidate matching, or cleaner reporting.",
+              "teacher": "Frame AI literacy as workplace redesign, not tool trivia; learners need a use case, a workflow, and a before/after metric.",
+              "link": "https://www.prnewswire.com/news-releases/as-ai-skills-become-the-hardest-to-find-manpowergroup-launches-2026-vivatech-startup-challenge-human-first-digital-always-302723055.html"
+            },
+            {
+              "n": 9,
+              "category": "Magnit Gateway gives",
+              "title": "Magnit Gateway gives staffing suppliers AI-driven placement intelligence",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Magnit announced Gateway, a supplier intelligence platform with AI-driven insights for staffing suppliers, expected in mid-June.",
+              "why": "Recruiters and freelancers who understand data-backed positioning can compete better for contract work.",
+              "action": "Turn your service offers into keyword-rich role packages with evidence, availability, rate logic, and case-study bullets.",
+              "teacher": "Teach candidates to optimize for human trust and machine matching: clear skills, proof, constraints, and outcomes.",
+              "link": "https://www.businesswire.com/news/home/20260521218243/en/Magnit-Launches-Gateway-Giving-Staffing-Suppliers-the-Intelligence-They-Need-to-Win-More-Placements"
+            },
+            {
+              "n": 10,
+              "category": "Docebo report says",
+              "title": "Docebo report says most employees cannot apply AI training to real work",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Docebo reported an AI readiness gap, including employees struggling to apply AI training directly to their jobs.",
+              "why": "There is room for consultants who replace abstract AI classes with workflow-specific drills and measurement.",
+              "action": "Design one 90-minute applied AI session around a real workflow, with a before/after output quality checklist.",
+              "teacher": "Measure transfer: can learners complete their own work faster, better, and with fewer review cycles after training?",
+              "link": "https://www.businesswire.com/news/home/20260407928752/en/Docebo-Releases-The-AI-Readiness-Gap-The-2026-Enterprise-Learning-Wake-Up-Call-Report"
+            }
+          ]
         }
       ]
     },
@@ -161,7 +766,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 06:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Asana unveils an",
+              "title": "Asana unveils an operating system for human-agent teams",
+              "source": "investors.asana.com",
+              "relevance": "Intermediate",
+              "summary": "Asana launched a product suite for humans and AI agents working from the same plan, context, and governance model.",
+              "why": "Project operations are becoming an agent-management problem, opening consulting work around workflow design, permissions, and accountability.",
+              "action": "Build a small demo where a creative or production task board includes agent-owned steps, human approval gates, and status reporting.",
+              "teacher": "Use this as a lesson on job reframing: agents can do steps, but humans still design the plan and review risk.",
+              "link": "https://investors.asana.com/news-releases/news-release-details/asana-unveils-operating-system-human-agent-teams"
+            },
+            {
+              "n": 2,
+              "category": "Outreach adds a",
+              "title": "Outreach adds a full MCP suite for revenue teams",
+              "source": "outreach.ai",
+              "relevance": "Intermediate",
+              "summary": "Outreach released MCP server and client capabilities so external AI tools can work across sales sequences, records, and revenue workflows.",
+              "why": "Sales teams will need specialists who can connect CRM context to AI safely without breaking customer trust or data quality.",
+              "action": "Offer a revenue-ops automation audit: identify three repetitive follow-up or CRM-update tasks and define the guardrails before automation.",
+              "teacher": "This is a clean example of MCP as business plumbing: tool access, data access, and governance matter together.",
+              "link": "https://www.outreach.ai/company/newsroom/outreach-becomes-the-first-agentic-ai-platform-for-revenue-teams-with-full-mcp-suite"
+            },
+            {
+              "n": 3,
+              "category": "Lovable expands with",
+              "title": "Lovable expands with Google Cloud and enters Gemini Enterprise Agent Gallery",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Lovable expanded its Google Cloud collaboration and placed its software creation agent into Gemini Enterprise Agent Gallery.",
+              "why": "No-code and AI-app building are moving toward enterprise procurement, so rapid prototype builders can sell internal tools with stronger deployment stories.",
+              "action": "Package a one-week prototype service: requirements interview, Lovable build, database/workflow review, handoff notes, and risk checklist.",
+              "teacher": "Show learners how AI app builders shift effort from typing code to specifying behavior, testing edge cases, and documenting ownership.",
+              "link": "https://www.prnewswire.com/news-releases/lovable-expands-collaboration-with-google-cloud-to-scale-ai-powered-software-creation-302790014.html"
+            },
+            {
+              "n": 4,
+              "category": "Sema4.ai ships a",
+              "title": "Sema4.ai ships a major enterprise AI-agent platform update",
+              "source": "sema4.ai",
+              "relevance": "Intermediate",
+              "summary": "Sema4.ai announced upgrades for building agents, capturing business context, and simplifying enterprise deployment.",
+              "why": "The market is rewarding people who can translate messy company context into reliable agent behavior, especially around internal data and workflows.",
+              "action": "Create a checklist for agent readiness: source systems, owner, allowed actions, audit trail, fallback path, and success metric.",
+              "teacher": "Make context engineering tangible: an agent is only useful when it knows the right business facts and the limits of its authority.",
+              "link": "https://sema4.ai/newsroom/sema4-ai-releases-advanced-platform-upgrade-delivering-smarter-agents-deeper-business-context-and-simplified-deployment/"
+            },
+            {
+              "n": 5,
+              "category": "Guesty launches Agent",
+              "title": "Guesty launches Agent Hub for short-term rental operations",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Guesty introduced a property-management system organized around coordinated AI agents for hospitality operations.",
+              "why": "Vertical agent systems create niche service lanes: onboarding, local rules, guest messaging, pricing checks, and maintenance workflows.",
+              "action": "For a hospitality client, propose one narrow automation: guest FAQ triage, cleaning handoff, maintenance ticket summary, or owner report drafting.",
+              "teacher": "Use this to teach verticalization: the best AI opportunity often comes from knowing one industry workflow better than generic tool sellers.",
+              "link": "https://www.prnewswire.com/il/news-releases/guesty-unleashes-the-agentic-revolution-the-first-pms-built-as-a-coordinated-system-of-ai-agents-302786962.html"
+            },
+            {
+              "n": 6,
+              "category": "Gusto launches Cofounder,",
+              "title": "Gusto launches Cofounder, an AI teammate for small businesses",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Gusto introduced an AI teammate for small businesses with automations around onboarding, payroll, expenses, and compliance tasks.",
+              "why": "Small businesses want outcomes, not AI projects, which creates demand for practical setup, policy cleanup, and workflow maintenance.",
+              "action": "Build a small-business AI operations offer around payroll calendar reminders, onboarding checklists, invoice chasing, and compliance document prep.",
+              "teacher": "Frame automation as reducing missed steps, not replacing the owner: reliability and trust are the selling points.",
+              "link": "https://www.prnewswire.com/news-releases/gusto-launches-cofounder-an-ai-teammate-purpose-built-for-small-business-302787745.html"
+            },
+            {
+              "n": 7,
+              "category": "Crittora launches Agent",
+              "title": "Crittora launches Agent Authority Broker for enterprise AI permissions",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Crittora released an authorization layer designed to control what enterprise AI agents can do across business systems.",
+              "why": "As agents get action privileges, authorization design becomes a high-value consulting and implementation niche.",
+              "action": "Learn to diagram agent permissions: identity, tool, action, data scope, approval trigger, log destination, and rollback process.",
+              "teacher": "Teach the difference between chatbot safety and operational safety: the hard part is controlling actions, not just text output.",
+              "link": "https://www.prnewswire.com/news-releases/crittora-launches-authority-broker-to-enable-enterprise-scale-agentic-ai-deployment-302788250.html"
+            },
+            {
+              "n": 8,
+              "category": "Zip launches AI",
+              "title": "Zip launches AI Superagents and procurement-native MCP",
+              "source": "streetinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Zip announced governed procurement AI agents plus MCP access for finance and procurement workflows.",
+              "why": "Procurement is full of repetitive, policy-heavy work, so specialists who understand approval logic can sell targeted automation.",
+              "action": "Prototype a procurement intake assistant that classifies requests, checks required fields, drafts vendor questions, and routes approvals.",
+              "teacher": "Use procurement to teach constraint-first AI: value comes from respecting policy, budgets, and approval chains.",
+              "link": "https://www.streetinsider.com/Business%2BWire/Zip%2BLaunches%2BAI%2BSuperagents%2Band%2BProcurement-Native%2BMCP%2C%2BDelivering%2Bthe%2BFirst%2BGoverned%2BAI%2BPlatform%2Bfor%2BFinance%2Band%2BProcurement/26587724.html"
+            },
+            {
+              "n": 9,
+              "category": "PeopleReign adds workflow",
+              "title": "PeopleReign adds workflow builder and voice AI for IT and HR service automation",
+              "source": "peoplereign.io",
+              "relevance": "Intermediate",
+              "summary": "PeopleReign announced a Summer 2026 release with a self-service workflow builder and voice AI for employee service automation.",
+              "why": "Internal IT and HR queues are ripe for AI-native service work because the pain is repetitive, measurable, and close to existing business budgets.",
+              "action": "Design a ticketless-service pilot: choose one HR or IT request type, script the voice/chat path, and define when to escalate to a person.",
+              "teacher": "This is a practical automation lesson: start with one repeated request, measure deflection and satisfaction, then expand.",
+              "link": "https://peoplereign.io/peoplereign-announces-self-service-workflow-builder-and-voice-ai-innovation-in-summer-2026-platform-release/"
+            },
+            {
+              "n": 10,
+              "category": "Microsoft introduces Project",
+              "title": "Microsoft introduces Project Solara for agent-first devices",
+              "source": "commandline.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft described Project Solara as a chip-to-cloud platform for specialized devices built around agents rather than traditional apps.",
+              "why": "Agent work is moving beyond screens into retail, field service, healthcare, and physical environments, creating new design and prototype opportunities.",
+              "action": "Sketch one agent-first device/service concept for a 3D, retail, or event workflow, including what the user says, sees, approves, and audits.",
+              "teacher": "Use this to teach interface design for agents: the UI becomes just-in-time, while trust signals and physical context become part of the product.",
+              "link": "https://commandline.microsoft.com/project-solara-build-2026/"
+            }
+          ]
         }
       ]
     },
@@ -187,7 +913,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-05 · 03:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Critical Start SOC",
+              "title": "Critical Start SOC AI packages managed security as auditable multi-agent work",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Critical Start released SOC AI, a production multi-agent framework for managed detection and response with agents for triage, response, hunting, automation building, and continuous improvement.",
+              "why": "Security teams are buying accountable outcomes, not generic copilots. This points to service opportunities around human-validated AI operations, audit trails, and scoped automation.",
+              "action": "Package one narrow SOC-style offer for smaller teams: alert intake, evidence summary, response checklist, and weekly audit notes, with a human review gate.",
+              "teacher": "Use it to teach agent design: every agent needs a role, scope, evidence trail, fallback, and measurable handoff to a human.",
+              "link": "https://www.businesswire.com/news/home/20260602154412/en/Critical-Start-Delivers-SOC-AI-A-Production-Proven-Agentic-Architecture-Built-for-Auditable-Human-Validated-MDR"
+            },
+            {
+              "n": 2,
+              "category": "TrueFoundry Agent Gateway",
+              "title": "TrueFoundry Agent Gateway turns agent governance into a new infrastructure niche",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "TrueFoundry launched Agent Gateway, a control plane for enterprises running AI agents across tools, clouds, frameworks, and teams.",
+              "why": "As companies move from demos to deployed agents, cost control, permissions, retries, observability, and policy become billable problems.",
+              "action": "Build a checklist-based consulting product: agent inventory, tool permissions, cost logging, failure modes, and approval boundaries.",
+              "teacher": "Show students that agent success depends less on prompts and more on runtime controls, evaluation, and governance.",
+              "link": "https://www.businesswire.com/news/home/20260602233322/en/TrueFoundry-Launches-Agent-Gateway-to-Close-the-Enterprise-AI-Governance-Gap"
+            },
+            {
+              "n": 3,
+              "category": "OutSystems Agentic Systems",
+              "title": "OutSystems Agentic Systems Platform makes enterprise agent builders a real role",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "OutSystems introduced an open Agentic Systems Platform with context graph, MCP/A2A services, orchestration, and governance for enterprise apps and agents.",
+              "why": "Low-code platforms are absorbing agent work, creating demand for people who can map business processes into governed agent portfolios.",
+              "action": "Create a demo portfolio around one internal workflow: request intake, approval, data lookup, draft output, and audit log.",
+              "teacher": "Frame the lesson around workflow decomposition: process map first, agent/tool choices second.",
+              "link": "https://www.businesswire.com/news/home/20260601330502/en/OutSystems-Unveils-Open-Agentic-Systems-Platform-for-Enterprise-AI"
+            },
+            {
+              "n": 4,
+              "category": "Dataiku Agent Management",
+              "title": "Dataiku Agent Management makes cross-platform agent governance a service opportunity",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Dataiku launched its Platform for AI Success with Agent Management, Cobuild, and Reasoning Systems to move enterprise AI from pilots into measurable operations.",
+              "why": "Companies will need help comparing, governing, and validating agents that come from different tools, teams, and vendors.",
+              "action": "Offer an agent pilot audit: list active agents, owners, source data, success metrics, evaluation tests, and shutdown criteria.",
+              "teacher": "Teach learners to ask: what business result is measured, who owns failures, and how does the agent prove improvement over the baseline?",
+              "link": "https://www.businesswire.com/news/home/20260309701716/en/Dataiku-Launches-the-Platform-for-AI-Success"
+            },
+            {
+              "n": 5,
+              "category": "Croft MCP shows",
+              "title": "Croft MCP shows niche compliance platforms opening to ChatGPT and Claude",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Croft launched an MCP connector that lets agricultural employers query and act on H-2A labor program data from AI assistants.",
+              "why": "The opportunity is not only broad AI tools. Vertical admin work with regulations, deadlines, and forms is becoming a strong automation lane.",
+              "action": "Look for one regulated niche with repeat forms and deadline checks, then prototype an assistant that answers from the client account data only.",
+              "teacher": "Use it to explain why MCP matters: tools let an assistant act inside a system instead of merely summarizing exported files.",
+              "link": "https://www.prnewswire.com/news-releases/croft-launches-the-first-all-in-one-h-2a-platform-mcp-connector-for-chatgpt-and-claude-302787120.html"
+            },
+            {
+              "n": 6,
+              "category": "Flexcompute autonomous photonic",
+              "title": "Flexcompute autonomous photonic design loop points to AI-engineering service depth",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Flexcompute introduced an autonomous agent-driven loop for photonic chip design, combining simulation, iteration, and engineering agents.",
+              "why": "Specialist engineering domains are getting agent workflows that can compress expert iteration. The premium work is domain setup, constraints, validation, and review.",
+              "action": "For 3D/design work, borrow the pattern: define constraints, generate candidates, simulate/check, reject failures, and keep an evidence log.",
+              "teacher": "Teach students the difference between generation and optimization: an agent loop must measure, compare, and revise.",
+              "link": "https://www.prnewswire.com/news-releases/flexcompute-pioneers-agent-driven-loop-for-autonomous-photonic-design-302787556.html"
+            },
+            {
+              "n": 7,
+              "category": "TwelveLabs Rodeo brings",
+              "title": "TwelveLabs Rodeo brings agentic editing to creator video workflows",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "TwelveLabs released Rodeo, a creative copilot that searches raw footage and assembles clips into finished stories using natural language.",
+              "why": "Creators with large footage libraries can sell speed: turning archives, event captures, and product shoots into usable edits without manual scrubbing.",
+              "action": "Make a service menu: footage ingest, transcript/shot indexing, first-cut assembly, caption variants, and delivery templates.",
+              "teacher": "Teach video AI as retrieval plus editorial judgment, not just generation.",
+              "link": "https://www.prweb.com/releases/twelvelabs-bring-its-video-understanding-technology-directly-to-creators-302786228.html"
+            },
+            {
+              "n": 8,
+              "category": "Zight Agent turns",
+              "title": "Zight Agent turns screen recordings into repeatable workflow automation",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Zight launched an agent that converts screen recordings into one-click workflows that can understand and repeat recorded steps.",
+              "why": "SOPs, onboarding, support, and VA work can become automation products when the workflow is captured visually and converted into actions.",
+              "action": "Record three recurring admin tasks, convert each into a written SOP plus an agent-ready checklist, then price cleanup and monitoring separately.",
+              "teacher": "Teach process capture: record, segment, name decision points, define inputs/outputs, then automate.",
+              "link": "https://www.prnewswire.com/news-releases/zight-agent-transforms-screen-recordings-into-intelligent-actionable-agents-302755812.html"
+            },
+            {
+              "n": 9,
+              "category": "Cognizant Skillspring signals",
+              "title": "Cognizant Skillspring signals demand for AI fluency training tied to roles",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Cognizant unveiled Skillspring, an AI-native learning platform that maps skills to roles, projects, and performance outcomes.",
+              "why": "Companies are moving past generic AI literacy toward role-based training. That creates room for smaller expert-led workshops with measurable workplace outputs.",
+              "action": "Design one role-specific workshop, such as AI for visual production coordinators or AI for proposal writers, with before/after deliverables.",
+              "teacher": "Teach AI skills through job artifacts: briefs, checklists, revisions, and QA rubrics beat abstract prompt lessons.",
+              "link": "https://www.prnewswire.com/news-releases/cognizant-propels-ai-workforce-training-with-cognizant-skillspring-new-talent-transformation-platform-designed-to-accelerate-clients-workforce-ai-readiness-302747436.html"
+            },
+            {
+              "n": 10,
+              "category": "Perceptyx Develop measures",
+              "title": "Perceptyx Develop measures whether AI learning transfers to the job",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Perceptyx launched Develop, a multi-agent learning system that evaluates comprehension during adaptive workplace learning.",
+              "why": "Training buyers will ask whether employees can actually apply AI skills. Proof of comprehension and job transfer becomes a differentiator.",
+              "action": "Add a mini-assessment to every AI training offer: scenario task, rubric, feedback note, and a one-week follow-up assignment.",
+              "teacher": "Teach with evidence: learners should leave with a scored artifact and a clear next practice loop.",
+              "link": "https://www.globenewswire.com/news-release/2026/05/14/3294837/0/en/perceptyx-launches-develop-an-ai-learning-system-that-measures-comprehension-in-real-time.html"
+            }
+          ]
         }
       ]
     },
@@ -229,7 +1076,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 21:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "G-P launches an",
+              "title": "G-P launches an agentic global employment platform",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "G-P announced agentic AI capabilities for global hiring, contractor support, HR workflows, labor-law guidance, and employee lifecycle actions.",
+              "why": "Global hiring and contractor operations are becoming an AI-service lane for HR consultants, recruiters, and operators.",
+              "action": "Build a small offer around AI-assisted contractor onboarding checklists, country-risk briefs, and HR workflow SOPs for remote teams.",
+              "teacher": "Teach EOR, contractor compliance, and agent limits with a before/after workflow exercise, not a generic prompt lesson.",
+              "link": "https://www.prnewswire.com/news-releases/g-p-unveils-worlds-first-agentic-ai-global-employment-platform-302790846.html"
+            },
+            {
+              "n": 2,
+              "category": "Workday adds agent",
+              "title": "Workday adds agent build, MCP access, and Agent Passport verification",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Workday introduced tools for building agents in HR, finance, and IT, including MCP-controlled data access and security verification.",
+              "why": "Enterprise agent work is shifting from demos to governed integration, where implementation skill is billable.",
+              "action": "Prototype a Workday-style agent safety checklist: data access, audit trail, permissions, rollback, and human approval points.",
+              "teacher": "Use this as a case study for why agent builders need compliance thinking, not just prompt fluency.",
+              "link": "https://www.prnewswire.com/news-releases/workday-launches-new-tools-for-developers-to-build-connect-and-verify-ai-agents-for-hr-finance-and-it-302787997.html"
+            },
+            {
+              "n": 3,
+              "category": "Udemy previews Altus",
+              "title": "Udemy previews Altus for agentic workforce upskilling",
+              "source": "investors.udemy.com",
+              "relevance": "Intermediate",
+              "summary": "Udemy previewed Altus, an agentic AI solution for diagnosing skills gaps and building outcome-driven workforce capability.",
+              "why": "AI training demand is moving from course libraries to measurable skill-gap diagnosis and manager-ready learning paths.",
+              "action": "Design a paid AI skills audit: role goals, current tasks, missing capabilities, practice projects, and proof-of-skill artifacts.",
+              "teacher": "Make learners produce a role-specific skills map, then tie each skill to a business outcome and evidence artifact.",
+              "link": "https://investors.udemy.com/news-releases/news-release-details/udemy-previews-agentic-ai-solution-altus-designed-diagnose"
+            },
+            {
+              "n": 4,
+              "category": "agnt8x opens an",
+              "title": "agnt8x opens an AI-agent recruitment and workforce platform",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "agnt8x launched public access for a marketplace-style platform to find, hire, onboard, manage, and audit AI agents across LLM providers.",
+              "why": "Agent marketplaces create a new comparison and procurement problem: which agent is trustworthy enough to hire for a workflow?",
+              "action": "Create an evaluation template for AI agents covering task fit, cost, model dependencies, auditability, failure modes, and handoff rules.",
+              "teacher": "Have learners score two agents against the same job description to practice buyer-side judgment.",
+              "link": "https://www.prnewswire.com/in/news-releases/agnt8x-launches-the-worlds-first-ai-agent-recruitment-and-workforce-management-platform-302787760.html"
+            },
+            {
+              "n": 5,
+              "category": "Greenhouse MCP connects",
+              "title": "Greenhouse MCP connects hiring systems to governed AI tools",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Greenhouse announced an MCP layer for permission-aware AI access inside recruiting workflows and noted rising candidate use of AI agents.",
+              "why": "Recruiting is becoming two-sided automation: candidates use agents, while hiring teams need governed AI inside ATS data.",
+              "action": "Offer AI job-search workflow audits: resume-agent setup, interview tracker, application hygiene, and ATS-safe follow-up systems.",
+              "teacher": "Teach candidates what AI can automate and what still needs personal evidence, taste, and timing.",
+              "link": "https://www.prnewswire.com/news-releases/greenhouse-launches-mcp-giving-hiring-teams-a-governed-way-to-connect-ai-tools-to-greenhouse-302765361.html"
+            },
+            {
+              "n": 6,
+              "category": "ZetaChain pivots Anuma",
+              "title": "ZetaChain pivots Anuma into private cross-model AI memory",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "ZetaChain described Anuma as a consumer AI memory layer that carries user context across models, apps, and future agent marketplaces.",
+              "why": "Personal AI memory is becoming a product category, and professionals will need help structuring reusable context safely.",
+              "action": "Build a personal memory pack service: client profile, writing rules, project context, portfolio facts, and privacy boundaries.",
+              "teacher": "Use this to teach durable context design: what to store, what to exclude, and how to test whether memory improves output.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/01/3304774/0/en/zetachain-the-private-memory-layer-for-ai.html"
+            },
+            {
+              "n": 7,
+              "category": "TraceLink launches no-code",
+              "title": "TraceLink launches no-code OPUS Agents for supply-chain work",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "TraceLink launched OPUS Agents for supply-chain execution, letting business users define agent intent, tasks, decisions, and rules in natural language.",
+              "why": "Domain experts who can encode operating rules are becoming more valuable than generic prompt writers.",
+              "action": "Practice converting one real business process into intent, objective, task, decision, and rule blocks.",
+              "teacher": "Frame agent design as process design: map exceptions and approvals before writing prompts.",
+              "link": "https://www.prnewswire.com/news-releases/tracelink-launches-opus-agents-and-creates-a-new-paradigm-for-supply-chain-management-agentic-business-networks-302740508.html"
+            },
+            {
+              "n": 8,
+              "category": "Gupshup launches Superagent",
+              "title": "Gupshup launches Superagent for customer conversations and campaigns",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Gupshup introduced an autonomous customer-conversation agent that can design campaigns, orchestrate journeys, provision channels, process transactions, and optimize outcomes.",
+              "why": "Small businesses will need operators who can connect messaging, commerce, and support into measurable AI workflows.",
+              "action": "Package a service for WhatsApp or web-chat journey design: lead capture, FAQ, payment handoff, escalation, and reporting.",
+              "teacher": "Teach conversation design with failure paths, tone rules, and human takeover criteria.",
+              "link": "https://www.prnewswire.com/news-releases/gupshup-launches-superagent-the-autonomous-ai-agent-for-customer-conversations-at-scale-302742192.html"
+            },
+            {
+              "n": 9,
+              "category": "Prismforce brings agent-based",
+              "title": "Prismforce brings agent-based talent supply chain workflows to ServiceNow",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Prismforce announced agentic talent-supply applications for ServiceNow covering workforce skills, utilization, fulfillment, talent development, and acquisition.",
+              "why": "Internal talent marketplaces are becoming automation targets, creating demand for skills data cleanup and workflow consulting.",
+              "action": "Offer a skills-inventory sprint: role taxonomy, skill evidence, utilization dashboard, and AI-ready employee profiles.",
+              "teacher": "Teach students to distinguish claimed skills, verified skills, and workflow permissions.",
+              "link": "https://www.prnewswire.com/news-releases/prismforce-announces-agent-based-talent-supply-chain-solution-built-on-the-servicenow-ai-platform-302708104.html"
+            },
+            {
+              "n": 10,
+              "category": "ACTO launches role-based",
+              "title": "ACTO launches role-based SuperAgents for life-sciences field teams",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "ACTO announced role-based AI SuperAgents built around job descriptions for compliant life-sciences field teams.",
+              "why": "The pattern matters beyond pharma: role-specific agents built from job descriptions can become a consulting template.",
+              "action": "Take one client role and draft a role-agent spec: responsibilities, allowed sources, blocked actions, success metrics, and compliance notes.",
+              "teacher": "Show how a job description becomes an agent scope document with guardrails and measurable outcomes.",
+              "link": "https://www.prnewswire.com/news-releases/acto-unveils-first-ever-role-based-ai-superagents-purpose-built-to-orchestrate-work-for-life-sciences-field-teams-302739956.html"
+            }
+          ]
         }
       ]
     },
@@ -307,7 +1275,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 12:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Optilogic Ada makes",
+              "title": "Optilogic Ada makes supply-chain redesign an agentic service lane",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "Optilogic announced Ada, an agentic AI system for supply-chain design that combines AI, mathematical optimization, simulation, and scenario modeling.",
+              "why": "Complex operations teams will pay for people who can translate messy business constraints into agent-readable models and validation loops.",
+              "action": "Package a small offer: map a client supply-chain or operations workflow, define scenarios, and produce an AI-readiness checklist.",
+              "teacher": "Teach agents as decision-support systems: data model, constraints, simulation, human approval, and audit trail.",
+              "link": "https://www.prweb.com/releases/optilogic-launches-ada-the-first-agentic-ai-system-purpose-built-for-supply-chain-design-302789627.html"
+            },
+            {
+              "n": 2,
+              "category": "NVIDIA Cosmos 3",
+              "title": "NVIDIA Cosmos 3 expands physical-AI work into simulation, robotics, and spatial media",
+              "source": "nasdaq.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA launched Cosmos 3, an open physical-AI foundation model for vision reasoning, world generation, video, sound, and action prediction.",
+              "why": "3D artists and technical designers can move closer to synthetic-data, robotics, product simulation, and world-model consulting work.",
+              "action": "Build one portfolio demo that turns a product or object scene into annotated synthetic-data or motion-planning examples.",
+              "teacher": "Frame world models as scene understanding plus future-state prediction, not just video generation.",
+              "link": "https://www.nasdaq.com/press-release/nvidia-launches-cosmos-3-open-frontier-foundation-model-physical-ai-2026-06-01"
+            },
+            {
+              "n": 3,
+              "category": "SketchUp links with",
+              "title": "SketchUp links with Claude for conversational 3D modeling",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Trimble announced a Claude integration that lets SketchUp users create 3D models from conversational text or speech prompts.",
+              "why": "Architecture, booth, event, and retail visualization clients will expect faster first drafts while still needing human spatial judgment.",
+              "action": "Create a prompt-to-mass-model-to-render sample workflow for client pitches, including the checkpoints where a designer must intervene.",
+              "teacher": "Use this to teach the difference between model generation, design intent, scale control, and final presentation quality.",
+              "link": "https://www.prnewswire.com/news-releases/trimble-links-sketchup-with-anthropics-claude-bringing-new-conversational-ai-powered-capabilities-to-3d-modeling-302756403.html"
+            },
+            {
+              "n": 4,
+              "category": "Phenom shows HR",
+              "title": "Phenom shows HR agent workflows for hiring, fraud detection, and workforce planning",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Phenom's IAMPHENOM Agent Center showcased HR agents for intake, candidate fraud detection, sourcing, campaigns, candidate attraction, and workforce planning.",
+              "why": "Recruiting teams need practical operators who can deploy agents without losing compliance, candidate quality, or brand voice.",
+              "action": "Offer an HR-agent audit: job post quality, candidate-screening risks, interview fraud signals, and human-in-the-loop controls.",
+              "teacher": "Teach HR agents as workflow assistants with guardrails, not autonomous hiring decision-makers.",
+              "link": "https://www.businesswire.com/news/home/20260225925546/en/IAMPHENOM-2026-Unveils-Agent-Center-Inside-Expanded-AI-Automation-Learning-Lab"
+            },
+            {
+              "n": 5,
+              "category": "Docebo AgentHub turns",
+              "title": "Docebo AgentHub turns scattered company knowledge into training assets",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Docebo announced AgentHub, Enterprise Knowledge, Skills Intelligence, MCP access, AI Tutor, and tools that convert internal knowledge into learning content.",
+              "why": "There is a strong service opportunity in converting messy internal docs into onboarding, SOPs, and skill-validation programs.",
+              "action": "Pitch a knowledge-to-training sprint for small teams: collect docs, build micro-lessons, add quizzes, and define skill evidence.",
+              "teacher": "Teach closed-loop learning: detect skills, generate learning, validate progress, then update the skills map.",
+              "link": "https://www.businesswire.com/news/home/20260421016608/en/Docebo-Launches-Docebo-AgentHub-and-Unites-Skills-Intelligence-Enterprise-Knowledge-and-Agentic-AI-in-a-Single-Platform"
+            },
+            {
+              "n": 6,
+              "category": "Diligent frames governance",
+              "title": "Diligent frames governance and risk work as an agentic workforce",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Diligent unveiled AI Board Member and autonomous agents across governance, risk, and compliance workflows.",
+              "why": "Boards and compliance teams are high-value buyers, but they need trust, auditability, and careful information boundaries.",
+              "action": "Build a consulting checklist for AI use in sensitive workflows: permissions, evidence logs, escalation rules, and review cadence.",
+              "teacher": "Use GRC agents to teach why agent output must be defensible, traceable, and reviewed by accountable humans.",
+              "link": "https://www.businesswire.com/news/home/20260423571969/en/Diligent-Unveils-AI-Board-Member-and-Agentic-GRC-Workforce-at-Elevate-2026"
+            },
+            {
+              "n": 7,
+              "category": "Enterprise AI skills",
+              "title": "Enterprise AI skills are shifting from prompts to operating agent systems",
+              "source": "techtarget.com",
+              "relevance": "Intermediate",
+              "summary": "TechTarget's current AI skills guide says enterprise AI has moved from experimentation into operations, with agentic systems and open protocols changing skill needs.",
+              "why": "Prompt-only positioning is getting weaker; buyers want people who can operate, evaluate, integrate, and govern AI systems.",
+              "action": "Reposition services around workflow mapping, agent evaluation, data readiness, and rollout training instead of generic prompt training.",
+              "teacher": "Teach learners to document inputs, tools, permissions, expected outputs, failure modes, and acceptance tests.",
+              "link": "https://www.techtarget.com/searchcio/tip/In-demand-AI-skills"
+            },
+            {
+              "n": 8,
+              "category": "Skillenai job data",
+              "title": "Skillenai job data shows agentic AI demand clustering around software, AI, and product roles",
+              "source": "skillenai.com",
+              "relevance": "Intermediate",
+              "summary": "Skillenai indexed 1,239 postings mentioning agentic AI in the 90 days ending 2026-05-24, most often tied to software engineer, AI engineer, and product manager roles.",
+              "why": "Even non-engineers can benefit by becoming the product/operator bridge who translates business work into technical agent requirements.",
+              "action": "Update portfolio language with paired skills: Python basics, LLMs, AWS/cloud, workflow automation, product thinking, and evaluation.",
+              "teacher": "Use live job data to teach learners how to reverse-engineer a learning roadmap from postings, not hype.",
+              "link": "https://skillenai.com/data/skill/agentic-ai"
+            },
+            {
+              "n": 9,
+              "category": "Stanford AI Index",
+              "title": "Stanford AI Index shows agent-related skills spreading through US AI job postings",
+              "source": "hai.stanford.edu",
+              "relevance": "Intermediate",
+              "summary": "The Stanford AI Index economy chapter reports strong growth in agent-related job-posting terms such as agentic systems, LangGraph, and Microsoft Copilot Studio.",
+              "why": "The job market is rewarding implementation vocabulary: agent frameworks, workflow builders, and enterprise assistant platforms.",
+              "action": "Make a one-page skills matrix mapping agent terms to portfolio proof: demo, case study, workflow diagram, and evaluation note.",
+              "teacher": "Teach students to separate broad AI literacy from employable proof of capability.",
+              "link": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf"
+            },
+            {
+              "n": 10,
+              "category": "Adobe survey says",
+              "title": "Adobe survey says creative AI is reshaping demand, not removing creative judgment",
+              "source": "business.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe's 2026 creative-pro survey says AI is helping creatives meet compressed timelines, while concerns remain around brand continuity, commercial safety, and entry-level jobs.",
+              "why": "Creative clients still need taste, review, brand consistency, rights awareness, and final polish; those are billable human layers.",
+              "action": "Offer AI creative QC as a service: brand-fit review, asset cleanup, rights checklist, and final production handoff.",
+              "teacher": "Teach AI creative work as direction, selection, editing, and accountability rather than one-click asset generation.",
+              "link": "https://business.adobe.com/resources/sdk/.ai-helps-creative-pros-meet-growing-demand/ai-helps-creative-pros-meet-growing-demand-adobe-creative-pro-marketer-march-2026-survey.pdf"
+            }
+          ]
         }
       ]
     },
@@ -333,7 +1422,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 09:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Deloitte launches a",
+              "title": "Deloitte launches a Google Cloud agentic transformation practice",
+              "source": "deloitte.com",
+              "relevance": "Intermediate",
+              "summary": "Deloitte is packaging Google Cloud agents, Gemini Enterprise, and industry delivery teams into a formal agentic transformation practice.",
+              "why": "Large consultancies are turning agent deployment into a billable operating-model service, which means smaller specialists can sell audits, prototypes, and governance kits around the same pattern.",
+              "action": "Prepare a one-page offer: map one client workflow, identify agent candidates, define human approvals, and price a two-week pilot.",
+              "teacher": "Teach agentic transformation as workflow redesign first, tool setup second: trigger, context, action, approval, evaluation, owner.",
+              "link": "https://www.deloitte.com/us/en/about/press-room/deloitte-launches-google-cloud-agentic-transformation-practice.html"
+            },
+            {
+              "n": 2,
+              "category": "KPMG rolls out",
+              "title": "KPMG rolls out Gemini-powered agents for regulated finance and operations",
+              "source": "",
+              "relevance": "Intermediate",
+              "summary": "KPMG describes agents for pricing disputes, regulatory processes, and AI-native finance functions powered by Google Cloud Gemini Enterprise.",
+              "why": "Regulated workflows are where clients pay for careful implementation, not flashy demos. The opportunity is validation, controls, and analyst handoff.",
+              "action": "Build a demo around invoice disputes or compliance evidence collection with logs,",
+              "teacher": "Use this to explain why enterprise AI work needs audit trails, escalation rules, and measurable cycle-time reduction. Source: https://kpmg.com/us/en/media/news/kpmg-new-agent-powered-by-google-cloud-gemini-enterprise.html",
+              "link": null
+            },
+            {
+              "n": 3,
+              "category": "Hyland adds Enterprise",
+              "title": "Hyland adds Enterprise Agent Mesh for content-heavy industries",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Hyland announced Enterprise Agent Mesh, Agent Lifecycle Management, and Control Tower features for orchestrating agents over enterprise content.",
+              "why": "Many organizations are drowning in documents before they are ready for autonomous action. Content classification, retrieval, and review workflows are strong service lanes.",
+              "action": "Offer a document-to-action audit: inventory PDFs, forms, policies, and emails, then design one controlled agent workflow.",
+              "teacher": "Teach students to separate content intelligence from automation: first find and trust the right document, then act.",
+              "link": "https://www.prnewswire.com/news-releases/hyland-launches-next-wave-of-ai-platform-innovations-to-unlock-the-content-powered-agentic-enterprise-302786226.html"
+            },
+            {
+              "n": 4,
+              "category": "Calix scales agentic",
+              "title": "Calix scales agentic workflows for broadband service providers",
+              "source": "calix.com",
+              "relevance": "Intermediate",
+              "summary": "Calix says its AI-native platform now supports secure private agents across service, engagement, operations, and subscriber workflows.",
+              "why": "Industry-specific agent templates are becoming real. Local providers need people who can translate generic AI into support, marketing, and operations outcomes.",
+              "action": "Design a small ISP/customer-support automation package: FAQ retrieval, outage triage, escalation notes, and weekly insight reports.",
+              "teacher": "Use telecom as a case study for domain agents: customer context, network status, policy limits, and escalation discipline.",
+              "link": "https://www.calix.com/press-release/2026/05/ai-native-platform-agentic-workflows.html"
+            },
+            {
+              "n": 5,
+              "category": "Herizon Future Skills",
+              "title": "Herizon Future Skills Radar tracks live demand from growth-company job posts",
+              "source": "herizon.io",
+              "relevance": "Intermediate",
+              "summary": "Herizon analyzes tens of thousands of current postings from growth companies and classifies skills, roles, industries, and seniority.",
+              "why": "A live skills radar is useful for choosing what to learn, what to teach, and which services to pitch before the market gets crowded.",
+              "action": "Review the radar weekly and maintain a short portfolio backlog tied to recurring skill signals, not random tutorials.",
+              "teacher": "Teach opportunity scanning: job posts are buyer intent. Turn repeated requirements into project briefs and proof-of-skill artifacts.",
+              "link": "https://www.herizon.io/research/skills-radar"
+            },
+            {
+              "n": 6,
+              "category": "Dice AI Talent",
+              "title": "Dice AI Talent Field Manual shows AI recruiting moving beyond keyword matching",
+              "source": "dice.com",
+              "relevance": "Intermediate",
+              "summary": "Dice uses Lightcast job-posting data to frame how recruiters and expert-led firms can compete for AI talent as skill taxonomies expand.",
+              "why": "Recruiters,",
+              "action": "Create a skills evidence matrix for your own work: tool, workflow, business result, artifact link, and evaluation method. Teaching notes: Teach learners to present AI skills as proof: before/after workflow, constraints, failure checks, and measurable result.",
+              "teacher": "s, and freelancers can all benefit from clearer skill evidence. AI hiring is becoming about verified capability, not buzzword resumes.",
+              "link": "https://www.dice.com/hiring/wp-content/uploads/2026/04/owning-the-ai-talent-market-in-2026-how-expert-led-firms-can-win.pdf"
+            },
+            {
+              "n": 7,
+              "category": "GSDC 2026 GenAI",
+              "title": "GSDC 2026 GenAI salary report highlights consultant and AI PM upside",
+              "source": "gsdcdata.gsdcouncil.org",
+              "relevance": "Intermediate",
+              "summary": "The report benchmarks generative AI roles and points to strong economics for AI consultants, AI product managers, and eval-aware builders.",
+              "why": "Even if the numbers are promotional, the role map is useful: evals, governance, tool use, cost modeling, and consulting practice are premium skills.",
+              "action": "Package your learning into one capstone with cost tracking, eval harness, governance checklist, and client-facing write-up.",
+              "teacher": "Use compensation reports carefully: extract role requirements and portfolio signals, not just salary dreams.",
+              "link": "https://gsdcdata.gsdcouncil.org/gsdc/pdf/GSDC-2026-GenAI-Salary-Report.pdf"
+            },
+            {
+              "n": 8,
+              "category": "Promptly3D targets manufacturable",
+              "title": "Promptly3D targets manufacturable multi-agent CAD generation",
+              "source": "promptly3d.ai",
+              "relevance": "Intermediate",
+              "summary": "Promptly3D is positioning a late-2026 AI CAD platform around multi-agent CSG workflows, manufacturability validation, and professional 3D manipulation.",
+              "why": "For 3D/design work, the opportunity is shifting from pretty meshes to valid parts, constraints, and DFM-aware iteration.",
+              "action": "Start building a comparison sheet for AI CAD tools: geometry validity, editability, measurements, export formats, and fabrication readiness.",
+              "teacher": "Teach 3D AI with acceptance criteria: dimensions, topology, material intent, manufacturability, and revision control.",
+              "link": "https://www.promptly3d.ai/"
+            },
+            {
+              "n": 9,
+              "category": "Zoo Zookeeper makes",
+              "title": "Zoo Zookeeper makes CAD agents conversational but code-defined",
+              "source": "zoo.dev",
+              "relevance": "Intermediate",
+              "summary": "Zoo explains Zookeeper as a conversational CAD agent built around KCL, so natural-language design changes remain tied to explicit geometry and design intent.",
+              "why": "This is the pattern 3D pros should watch: AI as an interface over editable, inspectable design language, not a black-box image generator.",
+              "action": "Experiment with code-defined geometry workflows and document where text commands help versus where manual modeling still wins.",
+              "teacher": "Teach the difference between prompt-to-image, prompt-to-mesh, and prompt-to-parametric-model; clients need the third for serious revisions.",
+              "link": "https://zoo.dev/research/zookeeper"
+            },
+            {
+              "n": 10,
+              "category": "Siemens Fuse EDA",
+              "title": "Siemens Fuse EDA AI Agent shows domain agents for complex engineering workflows",
+              "source": "news.siemens.com",
+              "relevance": "Intermediate",
+              "summary": "Siemens announced Fuse EDA AI Agent for planning and orchestrating semiconductor, 3D IC, PCB design, verification, and sign-off workflows.",
+              "why": "High-value AI work is becoming domain-scoped orchestration with verifier loops. That model also applies to render pipelines, architecture, product design, and operations.",
+              "action": "Borrow the structure: specialist agent, verifier, toolchain map, checkpoints, and acceptance criteria for any client workflow you automate.",
+              "teacher": "Use this as a teaching example of agent boundaries: the agent plans and coordinates, but quality gates decide what ships.",
+              "link": "https://news.siemens.com/en-gb/siemens-fuse-eda-ai-agent/"
+            }
+          ]
         }
       ]
     },
@@ -359,7 +1569,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 06:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft says the",
+              "title": "Microsoft says the enterprise AI opportunity is agent systems, not standalone prompts",
+              "source": "blogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft frames the next enterprise wave as long-running teams of agents across software delivery, support, finance, HR, and operations, governed by identity, context, policy, and human oversight.",
+              "why": "This is a clear consulting lane: companies will need people who can map workflows, permissions, evaluation, and escalation before agents can run real work.",
+              "action": "Package a small agent readiness audit offer: pick one business workflow, document tools/data/approvals, then propose a controlled agent pilot.",
+              "teacher": "Teach the difference between a chatbot demo and an operational agent system: context, tools, policy, logging, fallback, and owner.",
+              "link": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft Build 2026",
+              "title": "Microsoft Build 2026 adds an open trust stack for AI agents",
+              "source": "blogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft highlighted agent controls, model choice in Foundry, and open-source projects such as ASSERT and Agent Control Specification for evaluating and controlling agent loops.",
+              "why": "The job market will reward people who can test, score, and govern agents, not only build them.",
+              "action": "Create a simple evaluation checklist for every automation you build: expected behavior, unsafe actions, regression tests, and human approval points.",
+              "teacher": "Use this as a class exercise: students design a useful agent, then design the tests and controls that would make it acceptable at work.",
+              "link": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+            },
+            {
+              "n": 3,
+              "category": "Cognizant defines Frontier",
+              "title": "Cognizant defines Frontier Certified Engineer and Frontier Business Operator roles",
+              "source": "news.cognizant.com",
+              "relevance": "Intermediate",
+              "summary": "Cognizant announced two AI-era job categories focused on building AI systems and operating blended teams of human and digital labor.",
+              "why": "Large services firms are turning AI orchestration into named career tracks, which is useful language for resumes, training, and freelance positioning.",
+              "action": "Rewrite one portfolio case study using this structure: process design, AI tool orchestration, data interpretation, operational ownership, measurable outcome.",
+              "teacher": "Ask learners to compare engineer vs operator responsibilities so they understand that AI opportunity is not only coding.",
+              "link": "https://news.cognizant.com/2026-06-01-Cognizant-Develops-Frontier-Certified-Engineer-and-Frontier-Business-Operator-Roles-to-Define-the-Next-Generation-of-AI-Powered-Work"
+            },
+            {
+              "n": 4,
+              "category": "IBM Think 2026",
+              "title": "IBM Think 2026 positions agent orchestration as the new enterprise operating model",
+              "source": "newsroom.ibm.com",
+              "relevance": "Intermediate",
+              "summary": "IBM announced expanded agent orchestration and agentic development capabilities for planning, building, deploying, and governing AI agents at scale.",
+              "why": "The opportunity is implementation discipline: architecture, integration, governance, and change management around agents.",
+              "action": "Offer a one-page agent operating model template for clients: use cases, owner, data source, tools, risk, KPI, and review cadence.",
+              "teacher": "Show students that agent projects need an operating model, not just a prompt library.",
+              "link": "https://newsroom.ibm.com/2026-05-05-think-2026-ibm-delivers-the-blueprint-for-the-ai-operating-model-as-the-ai-divide-widens"
+            },
+            {
+              "n": 5,
+              "category": "IBM Consulting packages",
+              "title": "IBM Consulting packages secure agentic AI implementation on AWS",
+              "source": "ibm.com",
+              "relevance": "Intermediate",
+              "summary": "IBM described Enterprise Advantage as an asset-based consulting service for scaling secure, governed agentic AI across business operations on AWS.",
+              "why": "This validates a services market for prebuilt agent foundations, migration help, and governance-heavy deployment work.",
+              "action": "For freelance or boutique consulting, focus on one stack and one repeatable workflow instead of selling vague AI transformation.",
+              "teacher": "Use it to explain why platform knowledge plus workflow knowledge is stronger than generic AI literacy.",
+              "link": "https://www.ibm.com/new/announcements/ibm-consulting-delivers-industrys-first-enterprise-scale-agentic-ai-platform-natively-integrated-with-aws"
+            },
+            {
+              "n": 6,
+              "category": "Maxon and Tencent",
+              "title": "Maxon and Tencent Cloud bring HY 3D AI into Cinema 4D workflows",
+              "source": "maxon.net",
+              "relevance": "Intermediate",
+              "summary": "Maxon announced HY 3D integration for Cinema 4D, first planned for iPad in late 2026 and later desktop, generating base 3D and UV models from text or image references.",
+              "why": "For 3D artists, the opportunity is moving up the value chain: art direction, cleanup, topology judgement, materials, lighting, animation, and client-ready presentation.",
+              "action": "Build a before-after portfolio piece showing AI base mesh generation followed by professional refinement and final render quality control.",
+              "teacher": "Teach students that AI 3D outputs are starting points; production value comes from critique, repair, and finishing.",
+              "link": "https://www.maxon.net/en/article/maxon-and-tencent-cloud-partner-to-integrate-hy-3d-ai-engine-into-cinema-4d"
+            },
+            {
+              "n": 7,
+              "category": "UCI launches an",
+              "title": "UCI launches an AI in Education certificate for educators",
+              "source": "teacheracademy.uci.edu",
+              "relevance": "Intermediate",
+              "summary": "UCI",
+              "why": "Teacher training is becoming a real AI service category: schools need usable policies, classroom examples, and confident facilitators.",
+              "action": "Create a workshop outline for teachers: safe prompting, assignment redesign, feedback use, privacy, and bias checks. Teaching notes: Emphasize practical classroom artifacts over theory: rubrics, lesson plans, parent explanations, and student reflection prompts.",
+              "teacher": "Academy lists a three-course certificate for educators covering research and practical applications of AI for teaching and learning.",
+              "link": "https://teacheracademy.uci.edu/ai-in-education/"
+            },
+            {
+              "n": 8,
+              "category": "Columbia announces AI",
+              "title": "Columbia announces AI literacy training for faculty, researchers, and administrative leaders",
+              "source": "etc.cuit.columbia.edu",
+              "relevance": "Intermediate",
+              "summary": "Columbia University IT announced a June 2026 AI Literacy Training Program for faculty, researchers, and administrative leaders.",
+              "why": "Universities are buying internal AI enablement, which creates demand for trainers who can translate AI into domain-specific workflows.",
+              "action": "Turn one academic/admin workflow into a teachable demo: literature triage, meeting notes, grant outline, policy review, or data-cleaning assistant.",
+              "teacher": "Use role-specific examples so learners see AI as a work practice, not a generic tool demo.",
+              "link": "https://etc.cuit.columbia.edu/events/faculty-researchers-ai-literacy-basic-training-june-2026"
+            },
+            {
+              "n": 9,
+              "category": "Research shows generative",
+              "title": "Research shows generative AI is reorganizing labor demand around hybrid skills",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A May 2026 labor-market paper uses U.S. job postings to measure generative AI exposure and how demand shifts across sectors and tasks.",
+              "why": "It supports a practical career strategy: combine domain knowledge with AI workflow ability instead of chasing AI as a separate identity.",
+              "action": "Audit your resume or portfolio for hybrid proof: domain problem, AI method, human judgement, measured result.",
+              "teacher": "Have learners map one job posting into tasks that AI can assist, tasks that need human accountability, and skills to prove.",
+              "link": "https://arxiv.org/abs/2605.23159"
+            },
+            {
+              "n": 10,
+              "category": "Hiring experiment finds",
+              "title": "Hiring experiment finds AI skills can improve job prospects",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A 2026 hiring experiment studies whether signaling AI skills affects job prospects.",
+              "why": "For job seekers and freelancers, the signal matters only when it is credible and tied to outcomes.",
+              "action": "Add one concrete AI case study to applications: what you automated, what changed, how you checked quality, and what time or money it saved.",
+              "teacher": "Teach evidence-based signaling: certificates help less than a small, inspectable project with clear before-after results.",
+              "link": "https://arxiv.org/abs/2601.13286"
+            }
+          ]
         }
       ]
     },
@@ -375,7 +1706,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 03:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Build 2026",
+              "title": "Microsoft Build 2026 makes agent governance a core developer platform feature",
+              "source": "blogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft announced a Microsoft Agent Platform, Agent 365 for local agents, and an open trust stack including ASSERT and Agent Control Specification.",
+              "why": "The market is moving from isolated agent demos to managed agent estates with identity, security, evaluation, and runtime controls.",
+              "action": "Track Agent Control Specification and ASSERT as possible references for OpenClaw worker governance and acceptance checks.",
+              "teacher": "Frame this as the enterprise phase of agents: build, operate, observe, and govern, not only prompt and ship.",
+              "link": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft Agent Framework",
+              "title": "Microsoft Agent Framework puts multi-agent Foundry patterns on the Build agenda",
+              "source": "devblogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft highlighted Build sessions around agent harnesses, hosted agents, triggers, state management, and file access in Microsoft Foundry.",
+              "why": "The common agent vocabulary is converging around harness, state, triggers, tools, and observability, which mirrors practical automation architecture.",
+              "action": "Compare your job-card and worker-router patterns against these concepts; look for reusable naming and QA structure.",
+              "teacher": "Use it to explain why durable state and controlled file access matter more than flashy chat UX in real agent systems.",
+              "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026/"
+            },
+            {
+              "n": 3,
+              "category": "Claude Opus 4.8",
+              "title": "Claude Opus 4.8 adds stronger coding behavior and Claude Code dynamic workflows",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic released Opus 4.8 with coding and agentic improvements, higher Claude Code rate limits, effort controls, and dynamic workflows for larger problems.",
+              "why": "Agentic coding tools are becoming longer-running and more configurable, which raises both productivity and verification requirements.",
+              "action": "Test dynamic-workflow style task files on one non-critical repo and measure whether the agent finishes with better evidence.",
+              "teacher": "Teach this as a shift from single-shot coding help to managed work sessions with explicit effort and workflow knobs.",
+              "link": "https://www.anthropic.com/news/claude-opus-4-8"
+            },
+            {
+              "n": 4,
+              "category": "Salt Code targets",
+              "title": "Salt Code targets security policy enforcement inside AI coding assistants",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Salt Security launched Salt Code to enforce security policies across AI-generated code workflows and flagged a rise in CVEs tied to AI coding tools.",
+              "why": "As coding agents spread, security is moving into the assistant loop instead of waiting for post-commit scanning.",
+              "action": "Add a simple security gate to agent coding jobs: dependency diff, secret scan, risky command review, and test evidence before delivery.",
+              "teacher": "This is the governance counterweight to vibe coding: speed without policy creates hidden attack surface.",
+              "link": "https://www.prnewswire.com/news-releases/salt-security-launches-salt-code-the-first-agentic-security-solution-to-enforce-security-policies-inside-ai-coding-assistants-302786506.html"
+            },
+            {
+              "n": 5,
+              "category": "LightAgent v0.7 adds",
+              "title": "LightAgent v0.7 adds skills and trace observability to a lightweight open-source agent framework",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "LightAgent now emphasizes reusable skills, persistent memory, MCP/SSE integration, multi-agent collaboration, and opt-in structured traces.",
+              "why": "Small frameworks are copying the same primitives seen in larger agent platforms, making skills plus traces a practical baseline.",
+              "action": "Review its trace export ideas for a leaner run ledger: model request summaries, tool events, errors, and replayable task context.",
+              "teacher": "Use it to show that agent reliability comes from boring records: skills, memory, traces, and tool boundaries.",
+              "link": "https://github.com/wanxingai/LightAgent"
+            },
+            {
+              "n": 6,
+              "category": "Tether QVAC brings",
+              "title": "Tether QVAC brings open-source TurboQuant into local and edge AI workflows",
+              "source": "tether.io",
+              "relevance": "Intermediate",
+              "summary": "Tether AI announced QVAC SDK 0.12.0 with an open-source TurboQuant implementation aimed at reducing memory needs for local AI.",
+              "why": "If long-context memory gets cheaper on everyday devices, personal agents and local maker tools become less dependent on cloud GPUs.",
+              "action": "Watch for reproducible benchmarks and try a local long-context workload only after the implementation and model support are stable.",
+              "teacher": "Explain KV-cache compression as making the model's working memory cheaper, not as making the model smarter by itself.",
+              "link": "https://tether.io/news/tether-ai-upgrades-qvac-sdk-bringing-turboquant-to-everyday-devices-giving-local-ai-data-center-sized-memory/"
+            },
+            {
+              "n": 7,
+              "category": "Tripo AI raises",
+              "title": "Tripo AI raises nearly $200M for AI 3D foundation models and world models",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Tripo AI announced nearly $200M in Series A+/A++ financing to build AI 3D foundation models, world models, creative workspaces, and real-time generative rendering.",
+              "why": "3D generation is moving from asset novelty toward full spatial workflows, which matters for booth, product, and environment design.",
+              "action": "Keep a test set of booth/product references and compare Tripo outputs on geometry consistency, scale, material fidelity, and editability.",
+              "teacher": "Separate image-like 3D previews from production 3D assets: topology, scale, UVs, and repeatability still decide usefulness.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/01/3304603/0/en/Tripo-AI-Raises-Nearly-200-Million-in-Series-A-and-Series-A-Financing-to-Advance-AI-3D-and-World-Model-Roadmap.html"
+            },
+            {
+              "n": 8,
+              "category": "Adobe and NVIDIA",
+              "title": "Adobe and NVIDIA tune Photoshop, Premiere, and Substance 3D for RTX Spark creator hardware",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe said it is partnering with NVIDIA to optimize Photoshop, Premiere, and Substance 3D for RTX Spark, promising faster AI, editing, effects, and creator workflows.",
+              "why": "Creative AI is becoming hardware-aware, with local acceleration positioned as a real advantage for high-resolution design and 3D work.",
+              "action": "When buying or recommending maker hardware, evaluate VRAM/unified memory and app-specific acceleration instead of raw GPU hype alone.",
+              "teacher": "Good maker takeaway: the tool stack is now model plus app plus hardware, not only the generative model.",
+              "link": "https://blog.adobe.com/en/publish/2026/05/31/your-creative-work-supercharge-adobe-nvidia-partner-deliver-powerful-experiences-nvidia-rtx-spark"
+            },
+            {
+              "n": 9,
+              "category": "Digital Domain launches",
+              "title": "Digital Domain launches DDAI for AI-integrated VFX production",
+              "source": "awn.com",
+              "relevance": "Intermediate",
+              "summary": "Digital Domain introduced DDAI, combining CGI pipelines with generative AI in an artist-driven framework focused on provenance, security, and transparent usage.",
+              "why": "High-end VFX is absorbing AI as pipeline infrastructure rather than replacing the production pipeline outright.",
+              "action": "Borrow the same pattern for small studios: provenance folder, approved references, generated candidates, human approval, and final asset log.",
+              "teacher": "Use it to teach clients that AI production quality comes from controlled pipeline design, not random image generation.",
+              "link": "https://www.awn.com/news/digital-domain-launches-ddai-infrastructure-ai-integrated-vfx-production"
+            },
+            {
+              "n": 10,
+              "category": "Google and Kaggle",
+              "title": "Google and Kaggle schedule a June AI Agents Vibe Coding intensive",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "Google and Kaggle are running a free five-day AI Agents Intensive course on June 15-19 focused on natural-language workflows and hands-on agent projects.",
+              "why": "Agent building is being packaged for mainstream makers, which will raise baseline expectations for practical automation.",
+              "action": "Skim the course materials when they land and save any reusable labs for training non-engineers on agent workflows.",
+              "teacher": "Useful framing: vibe coding is teachable when paired with concrete projects, evaluation, and source control.",
+              "link": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/"
+            }
+          ]
         },
         {
           "id": "job",
@@ -411,7 +1863,128 @@ window.DASHBOARD_ARCHIVE = {
           "date": "2026-06-04 · 00:00 GMT+8",
           "quickRead": [],
           "callout": {},
-          "signals": []
+          "signals": [
+            {
+              "n": 1,
+              "category": "PwC expands Claude",
+              "title": "PwC expands Claude into a new AI-first finance consulting unit",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "PwC is expanding its Anthropic partnership and launching an Office of the CFO business group built around Claude-backed finance transformation.",
+              "why": "This is a clear signal that AI consulting is moving from demos into paid enterprise function rebuilds.",
+              "action": "Package one CFO-facing automation offer: monthly close assistant, variance explainer, board-pack draft, or invoice exception triage.",
+              "teacher": "Use it as a case study for selling AI as process redesign, not just model access.",
+              "link": "https://www.anthropic.com/news/pwc-expanded-partnership"
+            },
+            {
+              "n": 2,
+              "category": "Anthropic expands Project",
+              "title": "Anthropic expands Project Glasswing as AI security becomes a service lane",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic says Project Glasswing and Claude Mythos Preview are pushing conversations with industry and governments about securing critical software.",
+              "why": "Security, governance, and software supply-chain audits are becoming high-value AI service categories.",
+              "action": "Build a small audit checklist for client repos: dependency risk, secrets exposure, CI gaps, documentation freshness, and AI-generated-code review.",
+              "teacher": "Teach the difference between using AI to write code and using AI to inspect systems responsibly.",
+              "link": "https://www.anthropic.com/news/expanding-project-glasswing"
+            },
+            {
+              "n": 3,
+              "category": "OpenAI ChatGPT Futures",
+              "title": "OpenAI ChatGPT Futures highlights student builders as a portfolio model",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI introduced the ChatGPT Futures Class of 2026, spotlighting students and young builders using AI for products, research, and social projects.",
+              "why": "Public proof-of-work is becoming more important than credentials alone for young AI-native talent.",
+              "action": "Create one visible project page per month: problem, demo, workflow, screenshots, and lessons learned.",
+              "teacher": "Students should learn to ship and explain small useful systems, not only prompt isolated answers.",
+              "link": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026/"
+            },
+            {
+              "n": 4,
+              "category": "Upwork says top",
+              "title": "Upwork says top AI-enabled skills more than doubled year over year",
+              "source": "investors.upwork.com",
+              "relevance": "Intermediate",
+              "summary": "Upwork reports that demand for AI-enabled skills grew 109% year over year while human expertise remained strong across coding, creative, marketing, and support.",
+              "why": "Freelance buyers are paying for people who can embed AI into normal work, not vague AI enthusiasm.",
+              "action": "Rewrite service listings around outcomes: faster client reporting, AI-assisted QA, campaign automation, design-system production, or support triage.",
+              "teacher": "Show learners how to translate a tool skill into a buyer-facing deliverable and measurable result.",
+              "link": "https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai"
+            },
+            {
+              "n": 5,
+              "category": "Adobe is bringing",
+              "title": "Adobe is bringing creativity connectors into Gemini and Claude workflows",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe says its creativity connector is coming to Google Gemini after bringing 50+ pro-grade creative tools into Claude.",
+              "why": "Creative work is shifting toward chat-driven orchestration across professional apps.",
+              "action": "Design a service around creative-agent setup: brand kit, prompt recipes, asset rules, review checkpoints, and handoff templates.",
+              "teacher": "Teach creators to preserve art direction and review discipline while letting AI handle repetitive production steps.",
+              "link": "https://blog.adobe.com/en/publish/2026/05/19/adobe-creativity-connector-coming-google-gemini"
+            },
+            {
+              "n": 6,
+              "category": "Adobe Firefly Creative",
+              "title": "Adobe Firefly Creative Agent emphasizes creator-led multi-step workflows",
+              "source": "news.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe describes Firefly Creative Agent as an assistant for complex creative workflows that asks contextual questions and keeps creators in control.",
+              "why": "Clients will need operators who can direct, evaluate, and standardize AI creative output rather than only generate images.",
+              "action": "Build before-after examples showing prompt, decision points, rejected outputs, final polish, and brand consistency checks.",
+              "teacher": "Make critique, taste, and constraint setting part of AI creative training.",
+              "link": "https://news.adobe.com/news/2026/04/adobe-new-creative-agent"
+            },
+            {
+              "n": 7,
+              "category": "Autodesk Wonder 3D",
+              "title": "Autodesk Wonder 3D turns text and images into editable 3D assets",
+              "source": "adsknews.autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk introduced Wonder 3D in Flow Studio to help artists and studios create editable 3D characters and objects from text or image inputs.",
+              "why": "3D opportunity is moving toward fast ideation plus professional cleanup, topology, materials, and scene integration.",
+              "action": "Offer an AI-to-production 3D cleanup service: convert rough generated assets into usable, named, UV-ready, render-ready assets.",
+              "teacher": "Teach where AI helps and where craft still matters: scale, topology, UVs, material consistency, and client revision control.",
+              "link": "https://adsknews.autodesk.com/en/news/autodesk-flow-studio-launches-wonder-3d-gen-ai-model-to-help-creators-make-3d-characters-and-objects-faster-and-easier/"
+            },
+            {
+              "n": 8,
+              "category": "NVIDIA RTX Spark",
+              "title": "NVIDIA RTX Spark points to local agentic AI workstations for creators",
+              "source": "tomshardware.com",
+              "relevance": "Intermediate",
+              "summary": "Computex coverage says NVIDIA RTX Spark targets Windows PCs with Arm CPU, Blackwell GPU, and 128GB unified memory for agentic AI workloads.",
+              "why": "Local AI machines could become a new premium setup lane for creators, studios, and privacy-sensitive clients.",
+              "action": "Prepare a buying-guide template comparing local AI workstation, cloud GPU, and hybrid workflow costs for small studios.",
+              "teacher": "Use this to teach total-cost thinking: hardware, model size, privacy, latency, maintenance, and workflow fit.",
+              "link": "https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory"
+            },
+            {
+              "n": 9,
+              "category": "JobBench reframes occupational",
+              "title": "JobBench reframes occupational agents around delegated work humans actually want",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "The JobBench paper argues agent benchmarks should focus on work people want delegated, not only tasks with economic replacement value.",
+              "why": "This favors augmentation products: assistants that remove disliked admin without stealing judgment-heavy work.",
+              "action": "Interview five professionals and list the tasks they would gladly delegate; turn the top pattern into a tiny agent prototype.",
+              "teacher": "Teach students to discover delegation demand before building an agent.",
+              "link": "https://arxiv.org/abs/2605.26329"
+            },
+            {
+              "n": 10,
+              "category": "Job-posting research maps",
+              "title": "Job-posting research maps where generative AI skills are spreading",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A 2026 paper uses job postings to analyze how generative AI skills appear across industries and whether language frames augmentation or automation.",
+              "why": "Job descriptions are a live market signal for which AI skills employers can name and budget for.",
+              "action": "Scrape 30 target job posts this week and extract repeated AI verbs: review, automate, supervise, validate, generate, integrate.",
+              "teacher": "Turn job-posting analysis into a lesson on reading market demand, not guessing from hype.",
+              "link": "https://arxiv.org/abs/2605.00843"
+            }
+          ]
         }
       ]
     },
