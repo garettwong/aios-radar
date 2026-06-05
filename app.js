@@ -584,7 +584,7 @@
 
   /* ---- INSTANT mode: ask Gemini straight from the browser (free tier).
          The key is saved ONLY on this device (localStorage), never in the public code. ---- */
-  const GKEY = "aios_gemini_key_v1", LANS_KEY = "aios_local_answers_v1", GMODEL = "gemini-2.5-flash";
+  const GKEY = "aios_gemini_key_v1", LANS_KEY = "aios_local_answers_v1", GMODEL = "gemini-3.5-flash";
   const getGKey = () => { try { return localStorage.getItem(GKEY) || ""; } catch (e) { return ""; } };
   function loadLocalAnswers() {
     try {
@@ -597,15 +597,19 @@
     d[qid] = obj; try { localStorage.setItem(LANS_KEY, JSON.stringify(d)); } catch (e) {}
     window.AIOS_ANSWERS = window.AIOS_ANSWERS || {}; window.AIOS_ANSWERS[qid] = obj;
   }
-  async function askGemini(key, title, q) {
+  async function askGemini(key, title, q, ctx) {
     const url = "https://generativelanguage.googleapis.com/v1beta/models/" + GMODEL + ":generateContent?key=" + encodeURIComponent(key);
     const prompt = "You are helping a Hong Kong teacher who is a non-native English speaker. " +
-      "He wrote a question while reading an AI-news item titled \"" + (title || "") + "\".\n\n" +
-      "His question: " + q + "\n\n" +
-      "Answer in SIMPLE, FORMAL, PLAIN English. Use short sentences. Define any technical term. No idioms, no slang.\n\n" +
-      "Return ONLY a JSON object with keys: \"a\" (your answer, 2 to 4 short sentences), " +
+      "He is reading the item below and asks a follow-up question. " +
+      "ANSWER HIS EXACT QUESTION, using the item as context. Do NOT just repeat a definition — reply to what he actually asked.\n\n" +
+      "ITEM TITLE: " + (title || "") + "\n" +
+      "ITEM CONTENT: " + (ctx || "(no extra detail given)") + "\n\n" +
+      "HIS QUESTION: " + q + "\n\n" +
+      "Give a direct answer to his specific question and connect it to the item above. " +
+      "Use SIMPLE, FORMAL, PLAIN English. Short sentences. Define any technical term. No idioms, no slang.\n\n" +
+      "Return ONLY a JSON object with keys: \"a\" (your direct answer, 2 to 4 short sentences), " +
       "\"summary\" (one short line, max 12 words), " +
-      "\"action\" (a short to-do line if his question means he wants to DO a task; otherwise an empty string).";
+      "\"action\" (an EMPTY string \"\" in almost all cases; put a short to-do line ONLY if he clearly wants to DO a task himself, e.g. \"remind me\" or \"prepare a slide\").";
     const body = { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json" } };
     const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
     if (!r.ok) { let t = ""; try { t = await r.text(); } catch (e) {} throw new Error("HTTP " + r.status + " " + t.slice(0, 160)); }
@@ -659,9 +663,10 @@
       refreshQA();
       const gkey = getGKey();
       if (gkey) {
-        // INSTANT — ask Gemini directly from the browser
+        // INSTANT — ask Gemini directly from the browser, WITH the card's content as context
         msg.textContent = "🤖 thinking…";
-        askGemini(gkey, item.title || "", q).then((ans) => {
+        const ctx = [item.summary, item.why, item.action, item.teacher || item.plain || item.terms].filter(Boolean).join("  •  ");
+        askGemini(gkey, item.title || "", q, ctx).then((ans) => {
           ans.q = q; ans.ts = new Date().toISOString().slice(0, 16).replace("T", " ");
           saveLocalAnswer(qid, ans); applyAnswers();
           msg.textContent = "✓ answered"; setTimeout(() => (msg.textContent = ""), 2000);
