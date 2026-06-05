@@ -1,4 +1,2 @@
-// AIOS — answers delivered by your own local Claude (no API key).
-// Written by tools/answer_questions.py. Each key is a question id (qid).
-// Shape: { "<qid>": { q, a, summary, action, ts } }
+// AIOS answers — written by tools/answer_questions.py (your local Claude, no API key).
 window.AIOS_ANSWERS = {};
