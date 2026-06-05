@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
   <title>AIOS · OCC AI Opportunity Radar</title>
-  <link rel="stylesheet" href="styles.css?v=1780674485" />
+  <link rel="stylesheet" href="styles.css?v=1780675165" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>" />
   <meta name="theme-color" content="#050607" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,6 +49,17 @@
   </nav>
   <div class="view-help" id="view-help"></div>
 
+  <!-- ====================== GLOBAL SEARCH (everything) ====================== -->
+  <div class="globalsearch">
+    <span class="gs-ico">🔍</span>
+    <input type="search" id="global-search" placeholder="Search everything — all news + your to-dos…" autocomplete="off" />
+    <button id="gs-clear" title="Clear search" hidden>✕</button>
+  </div>
+  <div id="search-view" hidden>
+    <div class="search-meta" id="search-meta"></div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+
   <div id="radar-view">
   <!-- ====================== CONTROLS (top) ====================== -->
   <section class="controls">
@@ -61,7 +72,6 @@
       <button class="vtoggle" id="toggle-read" title="Hide read — show only unread">🔽 Unread only</button>
       <button class="vtoggle" id="toggle-saved" title="Show only saved items">★ Saved</button>
     </div>
-    <input type="search" class="search-box" id="search-box" placeholder="search signals…" autocomplete="off" />
   </section>
 
   <!-- ====================== NEWS (primary, top) ====================== -->
@@ -130,7 +140,6 @@
         <button class="vtoggle" id="lib-toggle-read" title="Hide read — show only unread">🔽 Unread only</button>
         <button class="vtoggle" id="lib-toggle-saved" title="Show only saved items">★ Saved</button>
       </div>
-      <input type="search" class="search-box" id="lib-search" placeholder="search all items…" autocomplete="off" />
     </section>
     <div class="lib-meta" id="lib-meta"></div>
     <div class="lib-cols" id="library-list">
@@ -150,7 +159,6 @@
           <button class="chip todo-filter" data-f="done">Done</button>
           <button class="chip todo-filter" data-f="all">All</button>
         </div>
-        <input type="search" class="search-box" id="todo-search" placeholder="search my to-dos…" autocomplete="off" />
         <button class="vtoggle" id="todo-sync" title="Save to my private Google Sheet">☁ Sync to Google</button>
       </section>
       <div class="todo-howto" id="todo-howto">
@@ -185,10 +193,10 @@
     </div>
   </div>
 
-  <script src="data.js?v=1780674485"></script>
-  <script src="archive.js?v=1780674485"></script>
-  <script src="catalog.js?v=1780674485"></script>
-  <script src="profile.js?v=1780674485"></script>
-  <script src="app.js?v=1780674485"></script>
+  <script src="data.js?v=1780675165"></script>
+  <script src="archive.js?v=1780675165"></script>
+  <script src="catalog.js?v=1780675165"></script>
+  <script src="profile.js?v=1780675165"></script>
+  <script src="app.js?v=1780675165"></script>
 </body>
 </html>

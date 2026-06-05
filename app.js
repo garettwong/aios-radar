@@ -103,7 +103,7 @@
   const tRead = $("toggle-read"), tSaved = $("toggle-saved");
   tRead.addEventListener("click", () => { showRead = !showRead; tRead.classList.toggle("active", !showRead); refreshBoard(); });
   tSaved.addEventListener("click", () => { savedOnly = !savedOnly; tSaved.classList.toggle("active", savedOnly); refreshBoard(); });
-  $("search-box").addEventListener("input", (e) => { query = e.target.value.trim().toLowerCase(); refreshBoard(); });
+  var _sbEl = $("search-box"); if (_sbEl) _sbEl.addEventListener("input", (e) => { query = e.target.value.trim().toLowerCase(); refreshBoard(); });
 
   document.querySelectorAll(".markall").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -435,7 +435,7 @@
     };
     row.appendChild(mkChip("ALL (" + items.length + ")", "ALL"));
     types.forEach((t) => row.appendChild(mkChip((t === "AI Terms" ? "📖 AI Terms" : t) + " (" + (counts[t] || 0) + ")", t)));
-    $("lib-search").addEventListener("input", (e) => { libQuery = e.target.value.trim().toLowerCase(); libLimit = 120; renderLibrary(); });
+    var _lsEl = $("lib-search"); if (_lsEl) _lsEl.addEventListener("input", (e) => { libQuery = e.target.value.trim().toLowerCase(); libLimit = 120; renderLibrary(); });
     const lr = $("lib-toggle-read"), ls = $("lib-toggle-saved");
     lr.addEventListener("click", () => { libShowRead = !libShowRead; lr.classList.toggle("active", !libShowRead); renderLibrary(); });
     ls.addEventListener("click", () => { libSavedOnly = !libSavedOnly; ls.classList.toggle("active", libSavedOnly); renderLibrary(); });
@@ -456,6 +456,9 @@
     document.querySelectorAll(".vnav").forEach((btn) => {
       btn.addEventListener("click", () => {
         const v = btn.dataset.view;
+        var _gs = $("global-search"); if (_gs) _gs.value = "";
+        if ($("search-view")) $("search-view").hidden = true;
+        if ($("gs-clear")) $("gs-clear").hidden = true;
         document.querySelectorAll(".vnav").forEach((b) => b.classList.toggle("active", b === btn));
         $("radar-view").hidden = (v !== "radar");
         $("library-view").hidden = (v !== "library");
@@ -632,7 +635,7 @@
   }
 
   function setupTodo() {
-    $("todo-search").addEventListener("input", (e) => { todoQuery = e.target.value.trim().toLowerCase(); renderTodos(); });
+    var _tsEl = $("todo-search"); if (_tsEl) _tsEl.addEventListener("input", (e) => { todoQuery = e.target.value.trim().toLowerCase(); renderTodos(); });
     document.querySelectorAll(".todo-filter").forEach((b) => b.addEventListener("click", () => {
       todoFilter = b.dataset.f; document.querySelectorAll(".todo-filter").forEach((x) => x.classList.toggle("active", x === b)); renderTodos(); }));
     $("todo-sync").addEventListener("click", syncAll);
@@ -640,9 +643,47 @@
     updateTodoNavCount();
   }
 
+  /* ---------------- GLOBAL SEARCH (news + library + to-dos in one) ---------------- */
+  function renderGlobalSearch() {
+    const sv = $("search-view"), inp = $("global-search");
+    if (!sv || !inp) return;
+    const q = (inp.value || "").trim().toLowerCase();
+    if ($("gs-clear")) $("gs-clear").hidden = !q;
+    if (!q) {
+      sv.hidden = true;
+      const active = document.querySelector(".vnav.active");
+      const v = active ? active.dataset.view : "radar";
+      $("radar-view").hidden = (v !== "radar");
+      $("library-view").hidden = (v !== "library");
+      $("todo-view").hidden = (v !== "todo");
+      return;
+    }
+    $("radar-view").hidden = true; $("library-view").hidden = true; $("todo-view").hidden = true;
+    sv.hidden = false;
+    const libHits = libItems.filter((it) =>
+      [it.title, it.summary, it.why, it.action, it.teacher, it.plain, it.terms, it.type, it.source].join(" ").toLowerCase().includes(q));
+    const todoHits = todos.filter((t) =>
+      ((t.srcTitle || "") + " " + (t.note || "") + " " + (t.category || "") + " " + (t.suggestion || "")).toLowerCase().includes(q));
+    const cap = 200;
+    $("search-meta").innerHTML =
+      `🔍 <b>${todoHits.length}</b> to-do${todoHits.length === 1 ? "" : "s"} &amp; <b>${libHits.length}</b> news / library item${libHits.length === 1 ? "" : "s"} for “<b>${esc(inp.value.trim())}</b>”` +
+      (libHits.length > cap ? ` · showing first ${cap}` : "");
+    const res = $("search-results"); res.innerHTML = "";
+    if (!todoHits.length && !libHits.length) { res.appendChild(el("div", "empty-note", "Nothing found — try another word.")); return; }
+    todoHits.forEach((t) => res.appendChild(todoCard(t)));
+    libHits.slice(0, cap).forEach((it) => res.appendChild(libCard(it)));
+  }
+  function setupGlobalSearch() {
+    const inp = $("global-search"); if (!inp) return;
+    inp.addEventListener("input", renderGlobalSearch);
+    const c = $("gs-clear");
+    if (c) c.addEventListener("click", () => { inp.value = ""; renderGlobalSearch(); inp.focus(); });
+  }
+
   renderProfile();
   setupLibrary();
   setupNav();
   setupTodo();
+  setupGlobalSearch();
   mount();
 })();
