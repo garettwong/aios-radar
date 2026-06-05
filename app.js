@@ -346,6 +346,7 @@
       seen.add(k); out.push(it);
     };
     // Codex bulk archive (incl. 242 AI Terms)
+    (window.AIOS_BASICS && AIOS_BASICS.items ? AIOS_BASICS.items : []).forEach((it) => push(Object.assign({ source2: "Study" }, it)));
     (CAT && CAT.items ? CAT.items : []).forEach((it) => push(Object.assign({ source2: "Archive" }, it)));
     // Every email-brief edition's signals
     if (window.DASHBOARD_ARCHIVE && DASHBOARD_ARCHIVE.editions) {
@@ -422,7 +423,7 @@
     libItems = buildLibraryItems();
     const items = libItems;
     $("lib-nav-count").textContent = items.length.toLocaleString();
-    const order = ["Job / Opportunity", "AI Tools", "Popular AI Tools", "AI Terms", "AI 3D", "AI Trends", "AI News"];
+    const order = ["AI Basic Knowledge 101", "Job / Opportunity", "AI Tools", "Popular AI Tools", "AI Terms", "AI 3D", "AI Trends", "AI News"];
     const present = Array.from(new Set(items.map((x) => x.type)));
     const types = order.filter((t) => present.includes(t)).concat(present.filter((t) => order.indexOf(t) < 0));
     const counts = {};
