@@ -776,5 +776,5 @@
   // Ask-AI: show any answers already delivered, then check for new ones periodically
   applyAnswers();
   setTimeout(pollAnswers, 3000);
-  setInterval(pollAnswers, 60000);
+  setInterval(pollAnswers, 20000);
 })();
