@@ -514,7 +514,7 @@
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScwdkwAgPQvJQ0GAFmYoNJGbuyNg7agvSbl6lQ_gXmUEnwbqA/formResponse",
     entry: "entry.708014478", sep: "|~|"
   };
-  const Q_KEY = "aios_questions_v1", ACT_KEY = "aios_action_added_v1";
+  const Q_KEY = "aios_questions_v1", AADD_KEY = "aios_ask_action_added_v1";
   let askQuestions = (() => { try { return JSON.parse(localStorage.getItem(Q_KEY) || "[]"); } catch (e) { return []; } })();
   const saveQuestions = () => { try { localStorage.setItem(Q_KEY, JSON.stringify(askQuestions)); } catch (e) {} };
   function itemKey(item) {
@@ -558,7 +558,7 @@
         (ans.action ? '<div class="qa-act">✅ Added to To-Do: ' + esc(ans.action) + '</div>' : '');
     });
     // auto-add any AI-flagged actions to the To-Do list (once per question)
-    let added; try { added = JSON.parse(localStorage.getItem(ACT_KEY) || "[]"); } catch (e) { added = []; }
+    let added; try { added = JSON.parse(localStorage.getItem(AADD_KEY) || "[]"); } catch (e) { added = []; }
     const set = new Set(added); let changed = false;
     askQuestions.forEach((rec) => {
       const ans = A[rec.qid];
@@ -567,7 +567,7 @@
         set.add(rec.qid); changed = true;
       }
     });
-    if (changed) localStorage.setItem(ACT_KEY, JSON.stringify([...set]));
+    if (changed) localStorage.setItem(AADD_KEY, JSON.stringify([...set]));
   }
   function pollAnswers() {
     fetch("answers.js?_=" + Date.now(), { cache: "no-store" }).then((r) => r.text()).then((txt) => {
