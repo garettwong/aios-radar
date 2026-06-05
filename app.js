@@ -572,8 +572,60 @@
   function pollAnswers() {
     fetch("answers.js?_=" + Date.now(), { cache: "no-store" }).then((r) => r.text()).then((txt) => {
       const m = txt.match(/AIOS_ANSWERS\s*=\s*(\{[\s\S]*\})\s*;?\s*$/);
-      if (m) { try { window.AIOS_ANSWERS = JSON.parse(m[1]); applyAnswers(); } catch (e) {} }
+      if (!m) return;
+      try {
+        const server = JSON.parse(m[1]);
+        let local = {}; try { local = JSON.parse(localStorage.getItem(LANS_KEY) || "{}"); } catch (e) {}
+        window.AIOS_ANSWERS = Object.assign({}, server, local); // device (instant) answers win
+        applyAnswers();
+      } catch (e) {}
     }).catch(() => {});
+  }
+
+  /* ---- INSTANT mode: ask Gemini straight from the browser (free tier).
+         The key is saved ONLY on this device (localStorage), never in the public code. ---- */
+  const GKEY = "aios_gemini_key_v1", LANS_KEY = "aios_local_answers_v1", GMODEL = "gemini-2.5-flash";
+  const getGKey = () => { try { return localStorage.getItem(GKEY) || ""; } catch (e) { return ""; } };
+  function loadLocalAnswers() {
+    try {
+      const d = JSON.parse(localStorage.getItem(LANS_KEY) || "{}");
+      window.AIOS_ANSWERS = Object.assign({}, window.AIOS_ANSWERS || {}, d);
+    } catch (e) {}
+  }
+  function saveLocalAnswer(qid, obj) {
+    let d; try { d = JSON.parse(localStorage.getItem(LANS_KEY) || "{}"); } catch (e) { d = {}; }
+    d[qid] = obj; try { localStorage.setItem(LANS_KEY, JSON.stringify(d)); } catch (e) {}
+    window.AIOS_ANSWERS = window.AIOS_ANSWERS || {}; window.AIOS_ANSWERS[qid] = obj;
+  }
+  async function askGemini(key, title, q) {
+    const url = "https://generativelanguage.googleapis.com/v1beta/models/" + GMODEL + ":generateContent?key=" + encodeURIComponent(key);
+    const prompt = "You are helping a Hong Kong teacher who is a non-native English speaker. " +
+      "He wrote a question while reading an AI-news item titled \"" + (title || "") + "\".\n\n" +
+      "His question: " + q + "\n\n" +
+      "Answer in SIMPLE, FORMAL, PLAIN English. Use short sentences. Define any technical term. No idioms, no slang.\n\n" +
+      "Return ONLY a JSON object with keys: \"a\" (your answer, 2 to 4 short sentences), " +
+      "\"summary\" (one short line, max 12 words), " +
+      "\"action\" (a short to-do line if his question means he wants to DO a task; otherwise an empty string).";
+    const body = { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json" } };
+    const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (!r.ok) { let t = ""; try { t = await r.text(); } catch (e) {} throw new Error("HTTP " + r.status + " " + t.slice(0, 160)); }
+    const data = await r.json();
+    const parts = (((data.candidates || [])[0] || {}).content || {}).parts || [];
+    const out = parts.map((p) => p.text || "").join("").trim();
+    let o; try { o = JSON.parse(out); } catch (e) { o = { a: out || "(no answer)", summary: "", action: "" }; }
+    return { a: (o.a || "").trim(), summary: (o.summary || "").trim(), action: (o.action || "").trim() };
+  }
+  function setupAiKey() {
+    const btn = $("ai-key-btn"); if (!btn) return;
+    const refresh = () => { btn.textContent = getGKey() ? "🔑 AI ✓" : "🔑 AI"; btn.classList.toggle("on", !!getGKey()); };
+    refresh();
+    btn.addEventListener("click", () => {
+      const v = prompt("Paste your FREE Gemini API key for INSTANT answers.\n\nGet one free (no card) at:\nhttps://aistudio.google.com/apikey\n\nThe key is saved ONLY on this device. To remove it, clear the box and press OK.", "");
+      if (v === null) return;
+      try { if (v.trim()) localStorage.setItem(GKEY, v.trim()); else localStorage.removeItem(GKEY); } catch (e) {}
+      refresh();
+      alert(v.trim() ? "Saved on this device. Your questions are now answered instantly." : "Key removed. Questions will use the slower PC method.");
+    });
   }
 
   function noteBoxHTML(item) {
@@ -602,11 +654,25 @@
       const qid = "q" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
       askQuestions.push({ qid: qid, key: itemKey(item), title: item.title || "", q: q, ts: new Date().toISOString() });
       saveQuestions();
-      askPost(qid, item.title || "", q);
       ta.value = "";
-      const ql = box.querySelector(".qa-list"), html = qaHTML(item);
-      if (ql) ql.outerHTML = html; else box.insertAdjacentHTML("beforeend", html);
-      msg.textContent = "🤖 sent to your AI"; setTimeout(() => (msg.textContent = ""), 2500);
+      const refreshQA = () => { const ql = box.querySelector(".qa-list"), html = qaHTML(item); if (ql) ql.outerHTML = html; else box.insertAdjacentHTML("beforeend", html); };
+      refreshQA();
+      const gkey = getGKey();
+      if (gkey) {
+        // INSTANT — ask Gemini directly from the browser
+        msg.textContent = "🤖 thinking…";
+        askGemini(gkey, item.title || "", q).then((ans) => {
+          ans.q = q; ans.ts = new Date().toISOString().slice(0, 16).replace("T", " ");
+          saveLocalAnswer(qid, ans); applyAnswers();
+          msg.textContent = "✓ answered"; setTimeout(() => (msg.textContent = ""), 2000);
+        }).catch(() => {
+          msg.textContent = "⚠ key problem — tap 🔑 AI at top to fix"; setTimeout(() => (msg.textContent = ""), 4500);
+        });
+      } else {
+        // FALLBACK — send to your PC via the form (slower)
+        askPost(qid, item.title || "", q);
+        msg.textContent = "🤖 sent to your AI"; setTimeout(() => (msg.textContent = ""), 2500);
+      }
     });
   }
 
@@ -767,11 +833,13 @@
     if (c) c.addEventListener("click", () => { inp.value = ""; renderGlobalSearch(); inp.focus(); });
   }
 
+  loadLocalAnswers();   // merge this device's instant answers before the cards render
   renderProfile();
   setupLibrary();
   setupNav();
   setupTodo();
   setupGlobalSearch();
+  setupAiKey();
   mount();
   // Ask-AI: show any answers already delivered, then check for new ones periodically
   applyAnswers();

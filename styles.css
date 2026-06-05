@@ -679,6 +679,7 @@ code {
 .qa-item.waiting .qa-a { color: var(--ink-3); font-style: italic; }
 .qa-sum { margin-top: 6px; font-family: var(--mono); font-size: calc(11px * var(--fs)); color: var(--cyan); }
 .qa-act { margin-top: 6px; font-family: var(--mono); font-size: calc(11px * var(--fs)); color: var(--green); }
+.refresh-btn.on { color: var(--green); border-color: var(--green); }
 
 #todo-lock { display: flex; justify-content: center; padding: 44px 16px; }
 .lock-box { max-width: 380px; width: 100%; text-align: center; background: var(--panel); border: 1px solid var(--cyan-dim); border-radius: 14px; padding: 30px 24px; }
