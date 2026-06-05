@@ -173,7 +173,7 @@
         (isSaved(s) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(s) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       `<p class="signal-summary">${esc(s.summary)}</p>` +
-      '<div class="signal-details">' + detailFrames(s.summary, s.why, s.action, s.teacher) + noteBoxHTML() + sourceRow(s.link) + "</div>";
+      '<div class="signal-details">' + detailFrames(s.summary, s.why, s.action, s.teacher) + noteBoxHTML(s) + sourceRow(s.link) + "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(s); });
     card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(s); });
     card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button") || e.target.closest(".note-box")) return; card.classList.toggle("open"); });
@@ -394,7 +394,7 @@
         (isSaved(it) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(it) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       `<p class="signal-summary">${esc(it.summary)}</p>` +
-      '<div class="signal-details">' + detailFrames(it.summary, it.why, it.action, it.teacher || it.plain || it.terms) + noteBoxHTML() + sourceRow(it.link) + "</div>";
+      '<div class="signal-details">' + detailFrames(it.summary, it.why, it.action, it.teacher || it.plain || it.terms) + noteBoxHTML(it) + sourceRow(it.link) + "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(it); });
     card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(it); });
     card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button") || e.target.closest(".note-box")) return; card.classList.toggle("open"); });
@@ -505,12 +505,85 @@
   function patchTodo(id, patch) { const i = todos.findIndex((x) => x.id === id); if (i < 0) return; Object.assign(todos[i], patch, { synced: false }); saveTodos(); renderTodos(); cloudPush(todos[i]); }
   function dropTodo(id) { todos = todos.filter((x) => x.id !== id); saveTodos(); renderTodos(); }
 
-  function noteBoxHTML() {
+  /* ======================================================================
+     ASK AI — type a question in any card, tap "🤖 Ask AI". The question is
+     sent to your PC (card → Google Form → private Sheet), your own Claude
+     answers it, and the answer + summary come back here. No API key.
+  ====================================================================== */
+  const ASK_CFG = {
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScwdkwAgPQvJQ0GAFmYoNJGbuyNg7agvSbl6lQ_gXmUEnwbqA/formResponse",
+    entry: "entry.708014478", sep: "|~|"
+  };
+  const Q_KEY = "aios_questions_v1", ACT_KEY = "aios_action_added_v1";
+  let askQuestions = (() => { try { return JSON.parse(localStorage.getItem(Q_KEY) || "[]"); } catch (e) { return []; } })();
+  const saveQuestions = () => { try { localStorage.setItem(Q_KEY, JSON.stringify(askQuestions)); } catch (e) {} };
+  function itemKey(item) {
+    const base = (item && (item.title || "")) + "|" + (item && (item.briefDate || item.date || ""));
+    let h = 5381; for (let i = 0; i < base.length; i++) h = (((h << 5) + h) ^ base.charCodeAt(i)) >>> 0;
+    return "k" + h.toString(16);
+  }
+  const questionsFor = (key) => askQuestions.filter((q) => q.key === key);
+  function qaHTML(item) {
+    const qs = questionsFor(itemKey(item)); if (!qs.length) return "";
+    const A = window.AIOS_ANSWERS || {};
+    return '<div class="qa-list">' + qs.map((rec) => {
+      const ans = A[rec.qid];
+      if (ans && ans.a) return '<div class="qa-item" data-qid="' + rec.qid + '">' +
+        '<div class="qa-q">❓ ' + esc(rec.q) + '</div>' +
+        '<div class="qa-a">🤖 ' + esc(ans.a) + '</div>' +
+        (ans.summary ? '<div class="qa-sum">📌 ' + esc(ans.summary) + '</div>' : '') +
+        (ans.action ? '<div class="qa-act">✅ Added to To-Do: ' + esc(ans.action) + '</div>' : '') + '</div>';
+      return '<div class="qa-item waiting" data-qid="' + rec.qid + '">' +
+        '<div class="qa-q">❓ ' + esc(rec.q) + '</div>' +
+        '<div class="qa-a">⏳ Sent to your AI — the answer will appear here shortly.</div></div>';
+    }).join("") + '</div>';
+  }
+  function askPost(qid, title, q) {
+    try {
+      const body = new URLSearchParams();
+      body.append(ASK_CFG.entry, qid + ASK_CFG.sep + (title || "") + ASK_CFG.sep + q);
+      fetch(ASK_CFG.formUrl, { method: "POST", mode: "no-cors", body: body });
+    } catch (e) {}
+  }
+  function applyAnswers() {
+    const A = window.AIOS_ANSWERS || {};
+    document.querySelectorAll(".qa-item.waiting").forEach((elm) => {
+      const qid = elm.getAttribute("data-qid"), ans = A[qid];
+      if (!ans || !ans.a) return;
+      const rec = askQuestions.find((x) => x.qid === qid) || { q: "" };
+      elm.classList.remove("waiting");
+      elm.innerHTML = '<div class="qa-q">❓ ' + esc(rec.q) + '</div>' +
+        '<div class="qa-a">🤖 ' + esc(ans.a) + '</div>' +
+        (ans.summary ? '<div class="qa-sum">📌 ' + esc(ans.summary) + '</div>' : '') +
+        (ans.action ? '<div class="qa-act">✅ Added to To-Do: ' + esc(ans.action) + '</div>' : '');
+    });
+    // auto-add any AI-flagged actions to the To-Do list (once per question)
+    let added; try { added = JSON.parse(localStorage.getItem(ACT_KEY) || "[]"); } catch (e) { added = []; }
+    const set = new Set(added); let changed = false;
+    askQuestions.forEach((rec) => {
+      const ans = A[rec.qid];
+      if (ans && ans.action && !set.has(rec.qid)) {
+        addTodo({ srcTitle: rec.title || "", note: ans.action, category: "From AI", date: "", link: null, remindOn: "" });
+        set.add(rec.qid); changed = true;
+      }
+    });
+    if (changed) localStorage.setItem(ACT_KEY, JSON.stringify([...set]));
+  }
+  function pollAnswers() {
+    fetch("answers.js?_=" + Date.now(), { cache: "no-store" }).then((r) => r.text()).then((txt) => {
+      const m = txt.match(/AIOS_ANSWERS\s*=\s*(\{[\s\S]*\})\s*;?\s*$/);
+      if (m) { try { window.AIOS_ANSWERS = JSON.parse(m[1]); applyAnswers(); } catch (e) {} }
+    }).catch(() => {});
+  }
+
+  function noteBoxHTML(item) {
     return '<div class="note-box">' +
-      '<span class="note-label">📝 My note / follow-up idea</span>' +
-      '<textarea class="note-input" rows="2" placeholder="Type an idea, question, or next step…"></textarea>' +
+      '<span class="note-label">📝 My note / question</span>' +
+      '<textarea class="note-input" rows="2" placeholder="Type a question to ask your AI, or an idea to save…"></textarea>' +
       '<div class="note-row"><label class="note-remind-lbl">⏰ <input type="date" class="note-remind" title="Remind me on this date (optional)"></label>' +
-      '<button class="note-add" type="button">＋ Add to my To-Do</button><span class="note-msg"></span></div></div>';
+      '<button class="note-ask" type="button">🤖 Ask AI</button>' +
+      '<button class="note-add" type="button">＋ To-Do</button><span class="note-msg"></span></div>' +
+      qaHTML(item) + '</div>';
   }
   function wireNoteBox(card, item) {
     const box = card.querySelector(".note-box"); if (!box) return;
@@ -521,6 +594,19 @@
       addTodo({ srcTitle: item.title || "", note: ta.value.trim(), category: item.category || item.type || "Note",
         date: shortDate(item.briefDate || item.date || ""), link: item.link || null, remindOn: rem.value || "" });
       ta.value = ""; rem.value = ""; msg.textContent = "✓ added to To-Do"; setTimeout(() => (msg.textContent = ""), 2500);
+    });
+    const askBtn = box.querySelector(".note-ask");
+    if (askBtn) askBtn.addEventListener("click", () => {
+      const q = ta.value.trim();
+      if (!q) { msg.textContent = "type a question first"; setTimeout(() => (msg.textContent = ""), 2000); return; }
+      const qid = "q" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+      askQuestions.push({ qid: qid, key: itemKey(item), title: item.title || "", q: q, ts: new Date().toISOString() });
+      saveQuestions();
+      askPost(qid, item.title || "", q);
+      ta.value = "";
+      const ql = box.querySelector(".qa-list"), html = qaHTML(item);
+      if (ql) ql.outerHTML = html; else box.insertAdjacentHTML("beforeend", html);
+      msg.textContent = "🤖 sent to your AI"; setTimeout(() => (msg.textContent = ""), 2500);
     });
   }
 
@@ -687,4 +773,8 @@
   setupTodo();
   setupGlobalSearch();
   mount();
+  // Ask-AI: show any answers already delivered, then check for new ones periodically
+  applyAnswers();
+  setTimeout(pollAnswers, 3000);
+  setInterval(pollAnswers, 60000);
 })();

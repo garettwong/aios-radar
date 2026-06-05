@@ -665,6 +665,20 @@ code {
 .note-add { font-family: var(--mono); font-size: calc(11.5px * var(--fs)); letter-spacing: .5px; color: var(--bg); background: var(--cyan); border: 1px solid var(--cyan); border-radius: 7px; padding: 8px 13px; cursor: pointer; font-weight: 600; }
 .note-add:hover { box-shadow: 0 0 14px rgba(54,214,231,.3); }
 .note-msg { font-family: var(--mono); font-size: calc(11px * var(--fs)); color: var(--green); }
+/* Ask AI — the hero button (green = go); To-Do becomes the secondary outline button */
+.note-ask { font-family: var(--mono); font-size: calc(11.5px * var(--fs)); letter-spacing: .5px; color: var(--bg); background: var(--green); border: 1px solid var(--green); border-radius: 7px; padding: 8px 14px; cursor: pointer; font-weight: 700; }
+.note-ask:hover { box-shadow: 0 0 14px rgba(70,227,160,.35); }
+.note-add { background: transparent; color: var(--cyan); border-color: var(--cyan-dim); font-weight: 600; }
+.note-add:hover { box-shadow: none; background: rgba(54,214,231,.08); }
+/* Q&A blocks inside a card */
+.qa-list { margin-top: 11px; display: flex; flex-direction: column; gap: 8px; }
+.qa-item { border: 1px solid var(--border); border-left: 3px solid var(--green); border-radius: 8px; padding: 9px 11px; background: var(--bg-2); }
+.qa-item.waiting { border-left-color: var(--cyan-dim); }
+.qa-q { font-family: var(--sans); font-size: calc(12.5px * var(--fs)); color: var(--ink); font-weight: 600; margin-bottom: 5px; }
+.qa-a { font-family: var(--sans); font-size: calc(13px * var(--fs)); color: var(--ink-2); line-height: 1.55; white-space: pre-wrap; }
+.qa-item.waiting .qa-a { color: var(--ink-3); font-style: italic; }
+.qa-sum { margin-top: 6px; font-family: var(--mono); font-size: calc(11px * var(--fs)); color: var(--cyan); }
+.qa-act { margin-top: 6px; font-family: var(--mono); font-size: calc(11px * var(--fs)); color: var(--green); }
 
 #todo-lock { display: flex; justify-content: center; padding: 44px 16px; }
 .lock-box { max-width: 380px; width: 100%; text-align: center; background: var(--panel); border: 1px solid var(--cyan-dim); border-radius: 14px; padding: 30px 24px; }
