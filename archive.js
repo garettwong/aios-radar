@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-06 16:27",
-    "editions": 80
+    "fetchedAt": "2026-06-06 17:27",
+    "editions": 81
   },
   "editions": [
+    {
+      "key": "2026-06-06 18",
+      "label": "2026-06-06 · 17:10",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-06 · 17:10 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub retires GPT-5.2-Codex",
+              "title": "GitHub retires GPT-5.2-Codex inside Copilot and points teams to GPT-5.3-Codex",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub deprecated GPT-5.2 and GPT-5.2-Codex across most Copilot experiences on June 5, with GPT-5.5 and GPT-5.3-Codex as the suggested replacements.",
+              "why": "Coding-agent stacks now move fast enough that model pinning becomes operational risk. Teams need upgrade checks, not just better prompts.",
+              "action": "Audit any Copilot workflows, policies, docs, and demos that mention GPT-5.2-Codex. Test GPT-5.3-Codex on one real repo task.",
+              "teacher": "Use this to explain model lifecycle discipline: agents are products with dependency management, deprecation windows, and regression tests.",
+              "link": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub brings enterprise-managed",
+              "title": "GitHub brings enterprise-managed Copilot plugins to VS Code public preview",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Enterprise admins can define plugin marketplaces and automatically distribute Copilot CLI and VS Code plugins, including hooks, MCP configurations, agents, and skills.",
+              "why": "The skills/plugin layer is becoming centrally managed infrastructure, not a personal dotfile trick.",
+              "action": "Draft a small internal plugin standard: approved skills, MCP servers, hooks, and install rules for every coding workstation.",
+              "teacher": "Frame this as the next version of IDE setup scripts: teams ship behavior into the agent environment.",
+              "link": "https://github.blog/changelog/2026-06-05-enterprise-managed-plugins-in-vs-code-in-public-preview/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub adds one-click",
+              "title": "GitHub adds one-click Copilot fixes for failing Actions jobs",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "When a GitHub Actions job fails, eligible users can ask Copilot cloud agent to investigate, push a fix to the branch, and tag them for review.",
+              "why": "CI failures are becoming a natural entry point for delegated agents because the task has logs, tests, and a clear success condition.",
+              "action": "Pick one noisy lint/test failure class and design an agent handoff rule: what it may fix, what must stay human-reviewed.",
+              "teacher": "Good agent tasks have tight feedback loops. CI repair is easier to teach than vague feature generation.",
+              "link": "https://github.blog/changelog/2026-06-04-fix-with-copilot-for-failing-actions-now-in-pro-pro-and-max/"
+            },
+            {
+              "n": 4,
+              "category": "GitHub expands Copilot",
+              "title": "GitHub expands Copilot context windows and reasoning controls",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Copilot now offers larger context windows and configurable reasoning levels, giving users more control over depth, cost, and responsiveness.",
+              "why": "Agent quality increasingly depends on context budgeting and reasoning settings, not only model choice.",
+              "action": "Create a two-mode habit: low reasoning for small edits, high reasoning with explicit context for architecture or debugging.",
+              "teacher": "Teach users to select compute deliberately. More context is useful only when the source material is curated.",
+              "link": "https://github.blog/changelog/2026-06-04-larger-context-windows-and-configurable-reasoning-levels-for-github-copilot/"
+            },
+            {
+              "n": 5,
+              "category": "GitHub Copilot Chat",
+              "title": "GitHub Copilot Chat gains richer pull request context",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Copilot Chat can use richer PR context, making discussion, review, and explanation closer to the actual change set.",
+              "why": "Review assistants are shifting from generic code chat toward workflow-native review companions.",
+              "action": "For important PRs, ask Copilot for risk areas, missing tests, and migration notes, then compare against human review.",
+              "teacher": "This is a good example of context placement: the same model improves when embedded at the review surface.",
+              "link": "https://github.blog/changelog/2026-06-04-copilot-chat-brings-richer-context-to-pull-requests/"
+            },
+            {
+              "n": 6,
+              "category": "GitHub Copilot SDK",
+              "title": "GitHub Copilot SDK reaches general availability",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub moved the Copilot SDK to GA, making Copilot functionality more available to custom products and internal tools.",
+              "why": "Copilot is becoming a platform surface that makers can embed, not only an IDE subscription.",
+              "action": "List one internal tool where a Copilot-powered assistant would save handoff time, then prototype the smallest useful integration.",
+              "teacher": "Use this to show the platform shift from AI apps to AI features inside existing workflows.",
+              "link": "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/"
+            },
+            {
+              "n": 7,
+              "category": "GitHub budget APIs",
+              "title": "GitHub budget APIs make AI and agent spend easier to automate",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub expanded billing APIs so teams can programmatically manage budgets, track usage, and filter spend by org, repo, cost center, product, or SKU.",
+              "why": "As agent usage grows, cost control becomes part of the build system. Budget APIs let teams monitor automation instead of waiting for invoices.",
+              "action": "Set a small alerting budget for experimental agent work and review usage by repo each week.",
+              "teacher": "This is the finance layer of maker workflows: autonomy needs spend telemetry and limits.",
+              "link": "https://github.blog/changelog/2026-06-04-budget-and-usage-management-apis-now-generally-available/"
+            },
+            {
+              "n": 8,
+              "category": "GitHub Copilot adds",
+              "title": "GitHub Copilot adds cloud and local sandboxes in public preview",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Copilot sandboxes let agents work in isolated cloud or local environments, improving containment around generated code and tool execution.",
+              "why": "Sandboxing is becoming a basic requirement for serious agent use, especially when agents run commands or touch dependencies.",
+              "action": "Adopt a rule that agent experiments happen in isolated sandboxes first, then merge only reviewed diffs.",
+              "teacher": "Explain sandboxes as guardrails for speed: they let agents act more freely because the blast radius is smaller.",
+              "link": "https://github.blog/changelog/2026-06-02-cloud-and-local-sandboxes-for-github-copilot-now-in-public-preview/"
+            },
+            {
+              "n": 9,
+              "category": "Cursor canvas updates",
+              "title": "Cursor canvas updates let agents edit visual artifacts and report context usage",
+              "source": "cursor.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor added canvas Design Mode, context usage reports, prompt buttons in canvases, and full-screen sharing for agent-created artifacts.",
+              "why": "Coding agents are becoming visual collaboration tools for dashboards, reports, and internal tools, not just code editors.",
+              "action": "Use canvas context reports after long runs to identify oversized rules, tool definitions, or irrelevant files.",
+              "teacher": "This is a strong teaching example for visible agent debugging: show where tokens go, then improve the workspace.",
+              "link": "https://cursor.com/changelog/canvas-improvements"
+            },
+            {
+              "n": 10,
+              "category": "Vercel AI Gateway",
+              "title": "Vercel AI Gateway adds Nemotron 3 Ultra for long-running agent workflows",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel added NVIDIA Nemotron 3 Ultra to AI Gateway, positioning it for planning, tool use, sub-agent delegation, error recovery, and 1M-token context agent work.",
+              "why": "Model routing layers are turning specialized open models into selectable infrastructure for production agents.",
+              "action": "For complex agent experiments, compare one task across a default frontier model and Nemotron-style long-context reasoning.",
+              "teacher": "Use this to teach model selection by task shape: long-running orchestration is different from quick chat or simple code edits.",
+              "link": "https://vercel.com/changelog/nemotron-3-ultra-now-available-on-ai-gateway"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-06 · 17:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "MWM AI Mobile",
+              "title": "MWM AI Mobile Squad gives app creators a prompt-to-native-app agent team",
+              "source": "tmcnet.com",
+              "relevance": "Intermediate",
+              "summary": "MWM and Google Cloud launched AI Mobile Squad: product manager, designer, and developer agents that can turn a prompt into native app output quickly.",
+              "why": "Small founders and creators will expect app prototypes faster, which creates demand for people who can turn rough agent output into polished UX, store-ready assets, and viable product scopes.",
+              "action": "Build a small demo: prompt-to-app concept, then manually improve the UX, icon, onboarding flow, and monetization brief.",
+              "teacher": "Teach clients that agent-generated apps still need product judgment, edge-case testing, design systems, and app-store positioning.",
+              "link": "https://www.tmcnet.com/tmcnet/mobile-world-congress/news/2026/06/04/10394223.htm"
+            },
+            {
+              "n": 2,
+              "category": "Salesforce Agentforce Marketing",
+              "title": "Salesforce Agentforce Marketing shifts campaign operations toward AI team supervision",
+              "source": "salesforce.com",
+              "relevance": "Intermediate",
+              "summary": "Salesforce described marketing agents that can build audiences, launch campaigns, optimize channels, and adapt offers using live context.",
+              "why": "Campaign work is becoming supervision, QA, data hygiene, and workflow design instead of only manual execution.",
+              "action": "Package an audit offer for small teams: map one campaign workflow, identify data gaps, and define where a marketing agent can safely assist.",
+              "teacher": "Emphasize that the valuable skill is not prompting alone; it is knowing goals, customer data, approval gates, and measurement.",
+              "link": "https://www.salesforce.com/news/stories/agentic-marketing-teams-announcement/"
+            },
+            {
+              "n": 3,
+              "category": "AgentMaestroJobs formalizes AI",
+              "title": "AgentMaestroJobs formalizes AI agent orchestration as a career category",
+              "source": "agentmaestrojobs.com",
+              "relevance": "Intermediate",
+              "summary": "A dedicated job board now frames Agent Maestro, AI Automation Architect, LLM Engineer, and Agentic AI Manager as distinct career lanes.",
+              "why": "When niche job boards appear, the market is starting to name and recruit for repeatable responsibilities.",
+              "action": "Update your portfolio language around agent orchestration, reliability, tool integration, evaluation, and human approval loops.",
+              "teacher": "Show learners how to translate vague AI enthusiasm into job-ready verbs: deploy, monitor, integrate, evaluate, document.",
+              "link": "https://www.agentmaestrojobs.com/"
+            },
+            {
+              "n": 4,
+              "category": "Joveo AI Talent",
+              "title": "Joveo AI Talent Campaigns automates recruiter outreach planning",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Joveo launched AI Talent Campaigns, where recruiters describe ideal candidates and campaign goals, then agents generate outreach plans, messages, targeting, and follow-ups.",
+              "why": "Recruiting teams will need operators who can design ethical outreach, tune messaging, and keep candidate experience from becoming spam.",
+              "action": "Create a sample recruiting-agent playbook with consent, tone, segment rules, and escalation points.",
+              "teacher": "This is a strong example for teaching AI governance in ordinary business operations, not just technical teams.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/03/3305912/0/en/joveo-introduces-ai-talent-campaigns-to-help-recruiters-launch-multi-touch-outreach-in-minutes.html"
+            },
+            {
+              "n": 5,
+              "category": "Modern Creative Jobs",
+              "title": "Modern Creative Jobs tracks fresh AI video, image, motion, and 3D roles",
+              "source": "moderncreativejobs.com",
+              "relevance": "Intermediate",
+              "summary": "The board was updated on June 3 and lists AI video, image, motion design, and 3D roles using tools such as Runway, Midjourney, Kling, Veo, ComfyUI, and Claude.",
+              "why": "Creative AI work is separating into practical roles: AI animator, video marketing designer, cinematic editor, and reference designer.",
+              "action": "Check the newest roles and extract the top 10 repeated tool and portfolio requirements into a personal skills checklist.",
+              "teacher": "For 3D/design students, teach hybrid workflow proof: before/after frames, prompt logs, style control, and manual correction.",
+              "link": "https://moderncreativejobs.com/"
+            },
+            {
+              "n": 6,
+              "category": "Mi-Terro AI Algorithm",
+              "title": "Mi-Terro AI Algorithm and Agent intern listing asks for deployed content and listening agents",
+              "source": "capd.mit.edu",
+              "relevance": "Intermediate",
+              "summary": "The listing asks for agents that auto-post to social channels, track competitors, monitor Reddit/Product Hunt, and build analytics dashboards.",
+              "why": "Even internship listings now expect deployed automations tied to business outcomes, not classroom demos.",
+              "action": "Make one working social-listening agent that produces a daily brief from public sources and logs its sources clearly.",
+              "teacher": "Use it to teach production basics: cron, APIs, rate limits,",
+              "link": "https://capd.mit.edu/jobs/mi-terro-ai-algorithm-agent-intern/"
+            },
+            {
+              "n": 7,
+              "category": "TrueFoundry Resilient Agents",
+              "title": "TrueFoundry Resilient Agents hackathon rewards agents that survive real-world failures",
+              "source": "internshala.com",
+              "relevance": "Intermediate",
+              "summary": "The June 7 online hackathon focuses on agents that continue working through rate limits, slow responses, provider outages, tool failures, and broken model calls.",
+              "why": "Reliability is becoming the differentiator between toy agents and paid automation work.",
+              "action": "Add fallback models, retries with limits, state checkpoints, and human handoff to one existing automation.",
+              "teacher": "Teach resilience with failure drills: deliberately break a tool, remove a model, or slow an API and inspect recovery.",
+              "link": "https://internshala.com/competitions/resilient-agents-online-hackathon/"
+            },
+            {
+              "n": 8,
+              "category": "TransRe internship shows",
+              "title": "TransRe internship shows enterprise agent development reaching insurance operations",
+              "source": "transre.com",
+              "relevance": "Intermediate",
+              "summary": "TransRe posted an AI Agent and Agentic Application Development internship covering Copilot agents, RAG, function calling, SharePoint/Teams/Outlook/ServiceNow/GitHub integrations, guardrails, and observability.",
+              "why": "Traditional industries are hiring for practical agent integration across existing enterprise systems.",
+              "action": "Build a small enterprise-style demo: document RAG plus Teams or email workflow plus audit logs.",
+              "teacher": "This is a clean curriculum map for agent classes: RAG, tools, integrations, security, CI/CD, evaluation, and cost.",
+              "link": "https://www.transre.com/wp-content/uploads/2026/03/IT-AI-Agent-Agentic-Application-Development.pdf"
+            },
+            {
+              "n": 9,
+              "category": "Google Cloud Rapid",
+              "title": "Google Cloud Rapid Agent Hackathon offers agent portfolio work with MCP partner tracks",
+              "source": "rapid-agent.devpost.com",
+              "relevance": "Intermediate",
+              "summary": "The Devpost challenge has a June 11 deadline, $60,000 in prizes, 13,000+ participants, and partner MCP tracks with Arize, Elastic, Fivetran, GitLab, MongoDB, and Dynatrace.",
+              "why": "MCP plus real partner systems is a direct signal that tool-connected agents are moving into mainstream developer portfolios.",
+              "action": "Pick one partner track and design an agent around a specific business pain, preferably retail, operations, analytics, or DevOps.",
+              "teacher": "Teach students to submit with a hosted demo, public repo, short video, and clear problem statement.",
+              "link": "https://rapid-agent.devpost.com/"
+            },
+            {
+              "n": 10,
+              "category": "NandaHack turns enterprise",
+              "title": "NandaHack turns enterprise AI bottlenecks into consulting-ready agent infrastructure problems",
+              "source": "nandahack.up.railway.app",
+              "relevance": "Intermediate",
+              "summary": "HCLTech and MIT Media Lab describe a hackathon for trust, coordination, memory, safety, integration layers, and production-like enterprise agent infrastructure.",
+              "why": "The best opportunities are shifting from one-off demos to infrastructure that makes agents usable, governable, and measurable.",
+              "action": "Write three consulting offers from the track list: responsible AI review, RFP agent, and executive AI coaching copilot.",
+              "teacher": "Frame agent work around bottlenecks: deployment, shared memory, security, integration, and measurable business impact.",
+              "link": "https://nandahack.up.railway.app/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-06 15",
       "label": "2026-06-06 · 14:10",
