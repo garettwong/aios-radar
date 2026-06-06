@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-06 10:27",
-    "editions": 78
+    "fetchedAt": "2026-06-06 11:27",
+    "editions": 79
   },
   "editions": [
+    {
+      "key": "2026-06-06 12",
+      "label": "2026-06-06 · 11:10",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-06 · 11:10 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI expands Codex",
+              "title": "OpenAI expands Codex beyond developers with role plugins, Sites, and annotations",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI introduced role-specific Codex plugins, shareable Sites, and annotation-based refinement, while saying non-developers are now a meaningful and fast-growing part of Codex usage.",
+              "why": "Coding agents are becoming general work agents for analysts, marketers, operators, designers, and researchers, not just IDE helpers.",
+              "action": "Test one non-code workflow: turn a brief, spreadsheet, or render note into a small shareable internal tool or review page.",
+              "teacher": "Watch the shift from prompt output to artifact ownership: agent creates, human annotates, workspace shares.",
+              "link": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub Copilot in",
+              "title": "GitHub Copilot in VS Code May releases focus on agent context, checkpoints, and review loops",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub summarized May-to-early-June Copilot for VS Code changes around smarter agent sessions, richer context handling, and practical review mechanics.",
+              "why": "The IDE is turning into an agent operations surface where context, rollback, review, and steering matter as much as generation.",
+              "action": "Audit your coding-agent setup for three basics: saved instructions, reproducible test command, and a review checklist before merge.",
+              "teacher": "The winning pattern is not one giant prompt; it is an operating loop with context, checkpoints, tests, and review.",
+              "link": "https://github.blog/changelog/2026-06-03-github-copilot-in-visual-studio-code-may-releases/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub Copilot CLI",
+              "title": "GitHub Copilot CLI adds prompt scheduling, voice input, and a refreshed terminal experience",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Copilot CLI gained scheduled prompts, voice input, a rubber-duck mode, and an experimental terminal UI with tabs for issues, pull requests, and gists.",
+              "why": "Terminal agents are moving from command helpers to lightweight automation loops that can be scheduled, monitored, and talked to.",
+              "action": "Try scheduled prompts for low-risk recurring work such as dependency checks, release-note drafts, or daily issue triage.",
+              "teacher": "Scheduling changes the mental model: a prompt becomes a small recurring job, so scope and guardrails must be explicit.",
+              "link": "https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/"
+            },
+            {
+              "n": 4,
+              "category": "Cursor adjusts Teams",
+              "title": "Cursor adjusts Teams pricing around heavy agent usage and spend controls",
+              "source": "cursor.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor increased team usage limits, added a Premium seat for heavy agent users, and emphasized forecasting and spend controls for agent-heavy development.",
+              "why": "AI coding cost is becoming a management problem, not only a model-choice problem. Teams need budgets, usage visibility, and power-user lanes.",
+              "action": "Start tracking cost per accepted change or per shipped task instead of only monthly token spend.",
+              "teacher": "Agent economics will separate casual autocomplete from sustained autonomous work; pricing design reveals where vendors expect usage to grow.",
+              "link": "https://cursor.com/blog/teams-pricing-june-2026"
+            },
+            {
+              "n": 5,
+              "category": "Zed 1.6.0 preview",
+              "title": "Zed 1.6.0 preview adds shareable agent skill links and stronger project-skill support",
+              "source": "zed.dev",
+              "relevance": "Intermediate",
+              "summary": "Zed preview 1.6.0 added Fast mode for Anthropic/OpenAI models, shareable agent skill links, symlinked global skill directories, and better project skills in remote workspaces.",
+              "why": "Skills are becoming portable team assets: reusable operating instructions that can travel across projects and machines.",
+              "action": "Create one small project skill for your most repeated review task, then share it with a teammate or another workspace.",
+              "teacher": "A good skill is not a vague persona. It should encode constraints, examples, commands, and verification habits.",
+              "link": "https://zed.dev/releases/preview/1.6.0"
+            },
+            {
+              "n": 6,
+              "category": "Mastra Agent Signals",
+              "title": "Mastra Agent Signals lets people steer running agents across channels",
+              "source": "mastra.ai",
+              "relevance": "Intermediate",
+              "summary": "Mastra shipped Agent Signals, a primitive for steering, waking, observing, and updating long-running agents without breaking stream ownership or prompt caching.",
+              "why": "Long-running agents need live control surfaces. The practical frontier is interruption, collaboration, state updates, and human-in-the-loop steering.",
+              "action": "For any long agent workflow, design a pause/steer/resume control before adding more tools.",
+              "teacher": "Signals separate agent execution from the chat window, which is essential for multi-user and multi-channel agent work.",
+              "link": "https://mastra.ai/blog/announcing-agent-signals"
+            },
+            {
+              "n": 7,
+              "category": "Vercel Chat SDK",
+              "title": "Vercel Chat SDK now exposes AI SDK tools for chat-native agents",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel added a chat/ai subpath so developers can wire Chat SDK read/write actions into AI SDK agents with scoped presets and approval-gated write tools.",
+              "why": "Messaging surfaces are becoming first-class agent runtimes, with approvals and scoped tools built into the framework.",
+              "action": "Prototype a read-only chat agent first, then add one write tool behind approval rather than launching with broad permissions.",
+              "teacher": "Good agent UX is permission design: reader, messenger, and moderator scopes teach users what the agent can safely do.",
+              "link": "https://vercel.com/changelog/chat-sdk-now-includes-ai-sdk-tools"
+            },
+            {
+              "n": 8,
+              "category": "Mistral AI Now",
+              "title": "Mistral AI Now Summit introduces Vibe for long-horizon productivity and industrial engineering",
+              "source": "mistral.ai",
+              "relevance": "Intermediate",
+              "summary": "Mistral summarized AI Now Summit announcements including an industrial engineering stack, Airbus collaboration, and Vibe, a unified agent for long-horizon productivity.",
+              "why": "European AI players are packaging agents around sovereignty, industrial workflows, and productivity rather than only chat benchmarks.",
+              "action": "Watch for agent products that bundle data control, workflow ownership, and domain-specific tools, especially in engineering-heavy industries.",
+              "teacher": "The market signal is verticalization: generic models become useful when wrapped around real industrial constraints and proprietary data.",
+              "link": "https://mistral.ai/news/ai-now-summit-2026"
+            },
+            {
+              "n": 9,
+              "category": "NVIDIA Jetson brings",
+              "title": "NVIDIA Jetson brings agentic AI stacks to robotics and industrial automation",
+              "source": "blogs.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA announced JetPack 7.2 and NemoClaw support on Jetson, positioning edge devices for robotics, inspection, humanoids, and physical-world agentic AI.",
+              "why": "Agents are moving from screens into devices, where perception, latency, and local execution matter.",
+              "action": "For maker projects, think in three layers: perception input, local decision loop, and verifiable physical action.",
+              "teacher": "Physical agents require stricter evaluation than chat agents because errors become motion, safety, and hardware cost.",
+              "link": "https://blogs.nvidia.com/blog/jetson-agentic-ai-physical-world/"
+            },
+            {
+              "n": 10,
+              "category": "Adobe productivity agent",
+              "title": "Adobe productivity agent turns Acrobat document intelligence into an agentic interface",
+              "source": "news.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe introduced a productivity agent for Acrobat Express and Acrobat Studio to help users understand, create, edit, and share information from PDFs and document workflows.",
+              "why": "Document-heavy creative and business workflows are becoming agent surfaces, especially for reports, source packs, presentations, and client communication.",
+              "action": "Use document agents for source extraction and first-pass structure, but keep final wording, citations, and visual hierarchy under human review.",
+              "teacher": "PDF agents are strongest when they preserve source traceability; teach users to ask where each claim came from.",
+              "link": "https://news.adobe.com/news/2026/05/adobes-new-productivity-agent"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-06 00",
       "label": "2026-06-06 · 00:05",
