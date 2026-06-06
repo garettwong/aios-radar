@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-06 19:27",
-    "editions": 81
+    "fetchedAt": "2026-06-06 20:27",
+    "editions": 82
   },
   "editions": [
+    {
+      "key": "2026-06-06 21",
+      "label": "2026-06-06 · 20:10",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-06 · 20:10 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Cisco Cloud Control",
+              "title": "Cisco Cloud Control frames AgenticOps for IT and security teams",
+              "source": "newsroom.cisco.com",
+              "relevance": "Intermediate",
+              "summary": "Cisco announced an agentic platform for operating and defending critical infrastructure, centered on Cloud Control and shared data for humans and agents.",
+              "why": "Enterprise agents are moving into infrastructure operations, where uptime, security, and cost controls must be visible.",
+              "action": "Watch for agent features that expose logs, approvals, rollback paths, and spend, not just automation demos.",
+              "teacher": "Use this to teach that production agents need observability and governance before autonomy.",
+              "link": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m06/cisco-unveils-agentic-platform-for-operating-and-defending-critical-it-infrastructure.html"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft Foundry introduces",
+              "title": "Microsoft Foundry introduces an open trust stack for agent evaluation and controls",
+              "source": "devblogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft announced open evals and ASSERT, a policy-driven framework for evaluating agents across frameworks.",
+              "why": "Agent quality is becoming a control problem: teams need repeatable tests for policies, risks, and tool behavior.",
+              "action": "Add a small eval suite for any agent workflow that touches files, cloud resources, or customer data.",
+              "teacher": "Explain evals as the agent equivalent of unit tests plus compliance checks.",
+              "link": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+            },
+            {
+              "n": 3,
+              "category": "Autodesk Wonder 3D",
+              "title": "Autodesk Wonder 3D moves AI asset generation into Flow Studio production workflows",
+              "source": "adsknews.autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk introduced Wonder 3D inside Flow Studio to generate editable 3D characters and objects from text or images.",
+              "why": "AI 3D is entering established production tools instead of living only in separate novelty apps.",
+              "action": "Test generated assets on mesh quality, retopology needs, materials, and handoff into existing DCC tools.",
+              "teacher": "Teach artists to judge AI 3D by downstream editability, not only by a rendered preview.",
+              "link": "https://adsknews.autodesk.com/en/news/autodesk-flow-studio-launches-wonder-3d-gen-ai-model-to-help-creators-make-3d-characters-and-objects-faster-and-easier/"
+            },
+            {
+              "n": 4,
+              "category": "Thunderbolt packages a",
+              "title": "Thunderbolt packages a self-hostable enterprise AI client around data control",
+              "source": "thunderbolt.io",
+              "relevance": "Intermediate",
+              "summary": "Mozilla's MZLA announced Thunderbolt, an open-source AI client designed for self-hosting, customization, and data ownership.",
+              "why": "The market signal is clear: some teams want agent capability without giving up infrastructure independence.",
+              "action": "Track self-hostable clients for private workflows where SaaS AI is blocked by policy or client confidentiality.",
+              "teacher": "Use this as a privacy architecture example: model choice, data storage, tool access, and audit trail are separate decisions.",
+              "link": "https://www.thunderbolt.io/announcing-thunderbolt"
+            },
+            {
+              "n": 5,
+              "category": "Linux Foundation report",
+              "title": "Linux Foundation report puts open source and agents at the center of AI strategy",
+              "source": "linuxfoundation.org",
+              "relevance": "Intermediate",
+              "summary": "The Linux Foundation's 2026 report highlights open source AI and agents as defining forces in the AI landscape.",
+              "why": "Open ecosystems are shaping standards, trust, and builder adoption around agents.",
+              "action": "Keep a short list of open agent projects and standards worth testing quarterly.",
+              "teacher": "Good discussion prompt: open source does not automatically mean safe, but it makes inspection and adaptation possible.",
+              "link": "https://www.linuxfoundation.org/hubfs/Research%20Reports/Open%20Source%20and%20the%20Future%20of%20AI_Report_2026.pdf?hsLang=en"
+            },
+            {
+              "n": 6,
+              "category": "MIT AI Agent",
+              "title": "MIT AI Agent Index tracks agent safety and technical feature gaps",
+              "source": "aiagentindex.mit.edu",
+              "relevance": "Intermediate",
+              "summary": "MIT's AI Agent Index documents technical and safety features across agent systems, including computer-use and coding agents.",
+              "why": "Buyers and builders need a way to compare agents beyond benchmark scores and vendor claims.",
+              "action": "Turn its categories into a lightweight checklist for choosing or approving agent tools.",
+              "teacher": "Teach students to ask what an agent can do, what it can access, and how failure is contained.",
+              "link": "https://aiagentindex.mit.edu/data/2025-AI-Agent-Index.pdf"
+            },
+            {
+              "n": 7,
+              "category": "A new 3D",
+              "title": "A new 3D asset generation survey highlights topology and production-readiness as the bottleneck",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "The paper surveys AI 3D asset generation and emphasizes topology, UVs, PBR materials, rigging, and physics-aware layout.",
+              "why": "The hard part is no longer only making a plausible shape; it is making assets that survive real pipelines.",
+              "action": "Build an AI 3D QA checklist around topology, UVs, materials, scale, rigging, and export compatibility.",
+              "teacher": "Use it to separate visual synthesis from production-ready assetization.",
+              "link": "https://arxiv.org/abs/2604.23629"
+            },
+            {
+              "n": 8,
+              "category": "AWS extends Bedrock",
+              "title": "AWS extends Bedrock AgentCore Gateway for enterprise MCP deployments",
+              "source": "aws.amazon.com",
+              "relevance": "Intermediate",
+              "summary": "AWS added richer MCP support to AgentCore Gateway, including tool schemas, prompts, resources, discovery, streaming, elicitation, and OAuth delegation.",
+              "why": "MCP is moving from developer experiment to governed enterprise integration layer.",
+              "action": "Map which internal APIs could become agent tools, then define credentials and logging before exposure.",
+              "teacher": "Teach MCP as a contract layer; production use still needs identity, permissions, and observability.",
+              "link": "https://aws.amazon.com/blogs/machine-learning/extending-mcp-support-for-amazon-bedrock-agentcore-gateway-2/"
+            },
+            {
+              "n": 9,
+              "category": "Reachy Mini adds",
+              "title": "Reachy Mini adds MCP tools from Hugging Face Spaces",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Reachy Mini can now add remote MCP-compatible tools hosted in public Hugging Face Spaces without modifying the local app.",
+              "why": "Tool ecosystems are spreading from software agents into embodied and robotics-adjacent maker projects.",
+              "action": "Publish one simple stateless tool Space and test how reliably an assistant discovers and calls it.",
+              "teacher": "Good demo for MCP: the assistant gains a new ability through a tool registry, not a bigger prompt.",
+              "link": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini"
+            },
+            {
+              "n": 10,
+              "category": "ServiceNow AI Control",
+              "title": "ServiceNow AI Control Tower expands runtime governance for enterprise agents",
+              "source": "newsroom.servicenow.com",
+              "relevance": "Intermediate",
+              "summary": "ServiceNow expanded AI Control Tower to discover, observe, govern, secure, and measure AI systems and agents across enterprise stacks.",
+              "why": "As agents get permission to act, companies need runtime visibility, kill switches, risk controls, and cost tracking.",
+              "action": "Add governance requirements to any agent purchase or pilot: discovery, logs, access graph, and ROI measurement.",
+              "teacher": "Use it to explain why agent management is becoming an operations discipline, not only an AI feature.",
+              "link": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-expands-AI-Control-Tower-to-discover-observe-govern-secure-and-measure-AI-deployed-across-any-system-in-the-enterprise/default.aspx"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-06 · 20:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Lifesight MCP turns",
+              "title": "Lifesight MCP turns marketing measurement into an AI-assistant service layer",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Lifesight launched an MCP connector so teams can query live marketing measurement models from Claude and ChatGPT.",
+              "why": "Marketing analytics is moving from dashboards to conversational, tool-connected workflows that agencies can implement for clients.",
+              "action": "Build a small demo: connect one marketing dataset to an assistant and produce weekly budget/pacing recommendations.",
+              "teacher": "Explain MCP as the adapter layer that lets an AI assistant use trusted business data instead of guessing.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/02/3305247/0/en/Lifesight-Launches-MCP-to-Bring-Unified-Marketing-Measurement-Directly-Into-Claude-and-ChatGPT.html"
+            },
+            {
+              "n": 2,
+              "category": "three.ws and IBM",
+              "title": "three.ws and IBM point 3D AI agents toward enterprise design workflows",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "three.ws announced an IBM partnership around browser-native 3D AI agent technology for 3D creation and enterprise deployment.",
+              "why": "Enterprise clients will need people who can supervise generated 3D experiences and make them usable, branded, and credible.",
+              "action": "Build a portfolio page showing AI-to-3D workflows: generated asset, correction notes, final scene, and QA checklist.",
+              "teacher": "Make students reject weak generated output and document exactly what was fixed.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/03/3306249/0/en/three-ws-and-IBM-Announce-Strategic-Partnership-to-Advance-AI-Powered-3D-Agent-Technology.html"
+            },
+            {
+              "n": 3,
+              "category": "Noma Agent Access",
+              "title": "Noma Agent Access Control creates a security niche around governing AI agents",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Noma launched Agent Access Control to discover, govern, and enforce policies for AI agents and MCP servers.",
+              "why": "As agents get connected to real systems, clients will pay for permission design, policy review, and risk reduction.",
+              "action": "Offer an agent-governance checklist for small teams: inventory, allowed tools, data boundaries, logging, and approval gates.",
+              "teacher": "Teach agent safety as access control plus observability, not just a better system prompt.",
+              "link": "https://www.prnewswire.com/news-releases/noma-launches-agentic-access-control-to-govern-ai-agents-and-mcp-servers-across-the-enterprise-302788534.html"
+            },
+            {
+              "n": 4,
+              "category": "OutSystems Agent Experience",
+              "title": "OutSystems Agent Experience signals demand for governed enterprise agent portfolios",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "OutSystems announced agentic platform capabilities including Agent Experience, A2A, and MCP tools for building and governing agent portfolios.",
+              "why": "Enterprises need builders who can move agent ideas into controlled apps and workflows without bypassing compliance.",
+              "action": "Prototype a low-code agent workflow for one boring internal process, then write the governance and handoff notes.",
+              "teacher": "Show the difference between a demo agent and a maintained business process with owners, limits, and review.",
+              "link": "https://www.prnewswire.com/apac/news-releases/outsystems-unveils-open-agentic-systems-platform-for-enterprise-ai-302788291.html"
+            },
+            {
+              "n": 5,
+              "category": "Creatify AI Product",
+              "title": "Creatify AI Product Design Intern role shows AI ad agents need design judgment",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Creatify is hiring for product design around an AI advertising agent that automates video ad scripting, generation, testing, and publishing.",
+              "why": "AI-native ad tools still need UX, brand taste, and creative testing systems, which is a good fit for design-minded builders.",
+              "action": "Build a mini case study redesigning an AI ad workflow: brief input, variant review, approval, and performance feedback.",
+              "teacher": "Show learners that design jobs in AI are about shaping human control over automated output.",
+              "link": "https://wellfound.com/jobs/3994727-product-design-intern-2026"
+            },
+            {
+              "n": 6,
+              "category": "DriveWealth AI Consulting",
+              "title": "DriveWealth AI Consulting Associate Program signals enterprise agent consulting demand",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "DriveWealth lists an AI consulting engineering internship focused on agentic automation, tool-calling, retrieval, and evaluation.",
+              "why": "Companies are formalizing junior lanes for internal AI consultants who can prototype and evaluate workflow agents.",
+              "action": "Prepare a portfolio demo that includes one RAG workflow, one tool-calling agent, and one evaluation checklist.",
+              "teacher": "Teach agent delivery as a consulting cycle: business problem, prototype, evaluation, rollout risk, and maintenance.",
+              "link": "https://wellfound.com/jobs/4004941-ai-consulting-associate-program-ai-cap-engineering-intern-summer-2026"
+            },
+            {
+              "n": 7,
+              "category": "Vibe Coding Instructor",
+              "title": "Vibe Coding Instructor role turns AI-native development into a teaching product",
+              "source": "bebee.com",
+              "relevance": "Intermediate",
+              "summary": "A Vibe Coding Instructor listing asks for teaching students to build AI products with OpenAI APIs, agent frameworks, vector databases, and modern tools.",
+              "why": "Teaching AI-native building is itself becoming a job category and a freelance workshop opportunity.",
+              "action": "Draft a two-hour paid workshop: build a tiny agent app, add retrieval, test failure cases, then deploy.",
+              "teacher": "Keep the lesson practical: students should leave with a working artifact and a checklist for improving it.",
+              "link": "https://bebee.com/us/jobs/vibe-coding-instructor-inferenceai-redwood-city-ca--theirstack-678855054"
+            },
+            {
+              "n": 8,
+              "category": "Hightouch Enterprise Growth",
+              "title": "Hightouch Enterprise Growth Marketer role shows agentic marketing needs systems operators",
+              "source": "jobs.sapphireventures.com",
+              "relevance": "Intermediate",
+              "summary": "Hightouch describes AI agents that reimagine marketing workflows while hiring for growth systems, sequences, analytics, and pipeline conversion.",
+              "why": "The market needs operators who combine marketing taste with automation, metrics, and AI workflow supervision.",
+              "action": "Create a service menu for agentic growth ops: lead routing, nurture sequence testing, reporting, and campaign QA.",
+              "teacher": "Use this as a case for hybrid skills: marketing strategy plus workflow instrumentation beats prompt-only work.",
+              "link": "https://jobs.sapphireventures.com/companies/hightouch-2/jobs/74299108-enterprise-growth-marketer"
+            },
+            {
+              "n": 9,
+              "category": "Eightfold content contractor",
+              "title": "Eightfold content contractor role points to short-term agentic AI content work",
+              "source": "app.eightfold.ai",
+              "relevance": "Intermediate",
+              "summary": "Eightfold is looking for a short-term content marketer with experience in agentic AI workflows or automated content pipelines.",
+              "why": "Short contracts are a realistic entry point for freelancers who can document and improve AI-assisted content operations.",
+              "action": "Build a sample content pipeline: research brief, outline, draft, fact check, brand edit, and publishing handoff.",
+              "teacher": "Teach that content automation should preserve source evidence, voice, and review gates, not just produce more text.",
+              "link": "https://app.eightfold.ai/careers/job/68761257488?domain=aexp.com%3Futm_source%3Djobfront"
+            },
+            {
+              "n": 10,
+              "category": "Siemens Eigen Engineering",
+              "title": "Siemens Eigen Engineering Agent shows industrial automation becoming conversational",
+              "source": "press.siemens.com",
+              "relevance": "Intermediate",
+              "summary": "Siemens launched Eigen Engineering Agent for industrial automation engineering inside real project contexts.",
+              "why": "Factory and engineering clients will need AI operators who understand technical constraints and can translate workflows into agent tasks.",
+              "action": "Study one industrial workflow and map which steps are search, diagnosis, change proposal, and human approval.",
+              "teacher": "Use this to explain why domain knowledge matters more as agents move closer to real equipment and production systems.",
+              "link": "https://press.siemens.com/global/en/pressrelease/siemens-launches-eigen-engineering-agent-bringing-purpose-built-ai-industrial"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-06 18",
       "label": "2026-06-06 · 17:10",
