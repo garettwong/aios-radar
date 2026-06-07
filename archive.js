@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 02:28",
-    "editions": 87
+    "fetchedAt": "2026-06-08 03:28",
+    "editions": 88
   },
   "editions": [
+    {
+      "key": "2026-06-08 03",
+      "label": "2026-06-08 · 03:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-08 · 02:54 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Tomsguide reads Build",
+              "title": "Tomsguide reads Build 2026 as Microsoft turning agentic AI into a full platform stack",
+              "source": "tomsguide.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Build 2026 coverage frames the event around agentic systems, including Microsoft IQ, GitHub Copilot app workflows, Foundry, and prototype-to-production infrastructure.",
+              "why": "The market is moving from single assistant features to layered agent stacks: context, models, runtimes, app surfaces, and governance.",
+              "action": "Track which parts of your own workflow need a stable context layer before adding more agents.",
+              "teacher": "Teach agents to name their context source and confidence level before acting; it reduces hallucinated business logic.",
+              "link": "https://www.tomsguide.com/news/live/microsoft-build-2026"
+            },
+            {
+              "n": 2,
+              "category": "Q2 embeds agents",
+              "title": "Q2 embeds agents across banking operations with Q2 Assistant",
+              "source": "q2.com",
+              "relevance": "Intermediate",
+              "summary": "Q2 launched Q2 Assistant as a unified agent layer across banking products, beginning with customer-care workflows inside digital banking.",
+              "why": "Regulated industries are adopting agent interfaces inside existing trusted platforms rather than as generic chatbots.",
+              "action": "For client-facing automation ideas, design the agent around a narrow operational lane first: triage, lookup, resolution, or handoff.",
+              "teacher": "Use this as a case study for domain agents: the value is not creativity, it is safe workflow compression.",
+              "link": "https://www.q2.com/company/news/pr/q2-launches-q2-assistant-embedding-ai-agents-across-banking-operations"
+            },
+            {
+              "n": 3,
+              "category": "SkillsMD exposes agent",
+              "title": "SkillsMD exposes agent skills as an installable open-source registry signal",
+              "source": "skillsmd.dev",
+              "relevance": "Intermediate",
+              "summary": "SkillsMD tracks installable agent skills and repositories, showing skills becoming a publishable capability layer across coding agents.",
+              "why": "Skills are turning prompts into reusable infrastructure: versioned, shareable, searchable, and portable across tools.",
+              "action": "Convert repeated local instructions into small skills with trigger rules, verification steps, and examples.",
+              "teacher": "A good skill should teach when to use it, what to inspect first, and what counts as done.",
+              "link": "https://skillsmd.dev/"
+            },
+            {
+              "n": 4,
+              "category": "Cursor 3.7 turns",
+              "title": "Cursor 3.7 turns visual UI feedback into more concrete agent steering",
+              "source": "cursor.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor 3.7 adds design-mode improvements such as multi-select, voice input while agents run, context-usage reports, and custom SDK tooling.",
+              "why": "Coding agents are getting better eyes and better controls for frontend work, which matters for design-sensitive production tasks.",
+              "action": "When revising UI with agents, give them selected elements, screenshots, and layout relationships, not only text descriptions.",
+              "teacher": "Teach frontend agents to compare target and actual states visually before editing CSS or component structure.",
+              "link": "https://cursor.com/changelog"
+            },
+            {
+              "n": 5,
+              "category": "X publishes MCP",
+              "title": "X publishes MCP servers for API and documentation access from AI tools",
+              "source": "docs.x.com",
+              "relevance": "Intermediate",
+              "summary": "X documents MCP servers for calling X API endpoints and searching X API docs from MCP-compatible tools such as Cursor or custom agents.",
+              "why": "Social platforms are becoming agent-callable surfaces, which raises both research opportunities and posting-risk controls.",
+              "action": "Keep social MCP tools read-only by default; explicitly allow posting only for approved workflows.",
+              "teacher": "This is a clean example for explaining tool allow-lists, OAuth risk, and the difference between research and publishing authority.",
+              "link": "https://docs.x.com/tools/mcp"
+            },
+            {
+              "n": 6,
+              "category": "Reddit production-agent discussion",
+              "title": "Reddit production-agent discussion says MCP pain is tool overload and weak descriptions, not just protocol immaturity",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A production-agent discussion argues that day-to-day MCP friction often comes from noisy tools, bad descriptions, and overloaded agent menus.",
+              "why": "Adding more MCP servers can make agents worse if the tool surface is not curated.",
+              "action": "Audit your MCP list monthly; remove unused tools and shorten descriptions around the actual decision boundary.",
+              "teacher": "Teach agents to ask: “Which tool has the smallest authority needed for this step?” before calling anything broad.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1tuqqpn/i_ship_ai_agents_in_production_the_mess_is_mcp/"
+            },
+            {
+              "n": 7,
+              "category": "Hacker News front-page",
+              "title": "Hacker News front-page market signal links AI exposure to index inclusion limits for OpenAI and Anthropic",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A June 6 Hacker News front-page discussion highlighted an Ars Technica story about S&P 500 inclusion rules affecting SpaceX and indirectly blocking OpenAI and Anthropic exposure.",
+              "why": "AI market access is becoming a public-equity structure issue, not just a model race.",
+              "action": "Watch second-order AI exposure: cloud vendors, chip suppliers, design tools, data platforms, and workflow software.",
+              "teacher": "Useful market lesson: adoption can be obvious while investable exposure stays indirect.",
+              "link": "https://news.ycombinator.com/front?day=2026-06-06"
+            },
+            {
+              "n": 8,
+              "category": "Reddit MCP builders",
+              "title": "Reddit MCP builders flag GitHub MCP tool-schema bloat as a real token tax",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Reddit MCP builders discussed how large GitHub MCP tool menus can burn thousands of tokens before the agent asks a useful question.",
+              "why": "Tool schemas are now part of agent cost, speed, and reasoning quality.",
+              "action": "Prefer staged tools: expose high-level capabilities first, then load detailed issue, PR, or code-search tools only when needed.",
+              "teacher": "Teach “progressive tool disclosure” as an agent design pattern, the same way humans open menus only when relevant.",
+              "link": "https://www.reddit.com/r/mcp/comments/1tyc89k/the_github_mcp_server_can_burn_17k_tokens_before/"
+            },
+            {
+              "n": 9,
+              "category": "Skills Registry packages",
+              "title": "Skills Registry packages AI agent capability discovery as one GitHub-backed repo",
+              "source": "skills-registry.dev",
+              "relevance": "Intermediate",
+              "summary": "Skills Registry presents a GitHub-backed registry for discovering and distributing agent skills with a stable MCP surface.",
+              "why": "The maker ecosystem is converging on small, portable capability modules instead of one giant assistant configuration.",
+              "action": "Keep a private skills registry for your own best workflows, especially render QA, PDF delivery, Gmail, and project routing.",
+              "teacher": "A registry makes skills teachable: examples, versions, owners, and rollback become part of the workflow.",
+              "link": "https://skills-registry.dev/"
+            },
+            {
+              "n": 10,
+              "category": "Outreach ships an",
+              "title": "Outreach ships an MCP Server and MCP Client suite for revenue agents",
+              "source": "outreach.ai",
+              "relevance": "Intermediate",
+              "summary": "Outreach announced an MCP suite that lets external agents access revenue workflows while also allowing Outreach agents to use external systems.",
+              "why": "MCP adoption is moving into sales and revenue operations, where agents can touch sensitive customer actions.",
+              "action": "Treat CRM/revenue agents like financial tools: require scopes, logs, approvals, and clear rollback paths.",
+              "teacher": "Good teaching example for two-way MCP: agents can be both callers and callable services.",
+              "link": "https://www.outreach.ai/company/newsroom/outreach-becomes-the-first-agentic-ai-platform-for-revenue-teams-with-full-mcp-suite"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 03:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Salesforce Marketing Cloud",
+              "title": "Salesforce Marketing Cloud Engagement MCP Server is generally available",
+              "source": "developer.salesforce.com",
+              "relevance": "Intermediate",
+              "summary": "Salesforce says its hosted Marketing Cloud Engagement MCP server is now GA, exposing data extensions, journeys, automations, and other marketing actions to MCP-compatible agents.",
+              "why": "Marketing ops is becoming a headless agent-control problem, which creates implementation work for people who understand campaigns, data schemas, approvals, and AI tooling.",
+              "action": "Build a small demo service around one common use case: create a segment, draft a journey, ask for missing fields, and produce an approval checklist.",
+              "teacher": "Teach MCP through a marketer workflow, not a protocol lecture: goal, data source, safe action, human approval, audit trail.",
+              "link": "https://developer.salesforce.com/blogs/2026/06/the-mcp-server-for-marketing-cloud-engagement-is-now-ga"
+            },
+            {
+              "n": 2,
+              "category": "SnapLogic is teaching",
+              "title": "SnapLogic is teaching enterprise teams how to govern AI agent execution",
+              "source": "snaplogic.com",
+              "relevance": "Intermediate",
+              "summary": "SnapLogic has a June 10 session on secure agent access, identity, control, auditability, and MCP server architecture for enterprise workflows.",
+              "why": "The consulting gap is shifting from “can we build an agent?” to “can we let it execute safely inside the company?”",
+              "action": "Turn this into a reusable audit offer: map an agent workflow, list tool permissions, define approvals, and write a rollback plan.",
+              "teacher": "A strong class exercise is to compare a demo agent with a production agent and identify what governance is missing.",
+              "link": "https://www.snaplogic.com/resources/webcasts/governing-ai-agents-enterprise-security"
+            },
+            {
+              "n": 3,
+              "category": "Cierra warns every",
+              "title": "Cierra warns every business may wire up many agent APIs in 2026",
+              "source": "cierra.ai",
+              "relevance": "Intermediate",
+              "summary": "Cierra’s June 5 post argues that SaaS vendors are shipping MCP endpoints quickly, creating sprawl across agent APIs, auth, costs, and risk.",
+              "why": "MCP sprawl is a service opportunity for automation consultants: inventory, prioritize, consolidate, and govern the tools a company exposes to AI.",
+              "action": "Create a one-page MCP inventory template covering owner, data touched, actions allowed, cost risk, auth method, and review date.",
+              "teacher": "Use this as a lesson on why integration work is not glamorous but becomes valuable when every app wants to be agent-ready.",
+              "link": "https://cierra.ai/en/wissen/blog/mcp-sprawl-agenten-apis-2026"
+            },
+            {
+              "n": 4,
+              "category": "Wellfound remote game-design",
+              "title": "Wellfound remote game-design board shows same-day 3D level and artist openings",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Wellfound’s remote game designer page shows current remote 3D level designer and 3D artist roles, including same-day listings.",
+              "why": "Even with generative tools rising, teams still need production-minded 3D people who can build usable levels, assets, and interactive scenes.",
+              "action": "Keep a tight portfolio slice for AI-assisted 3D production: blockout, reference board, asset generation, cleanup, and engine-ready delivery.",
+              "teacher": "For students, require a before/after artifact trail so they can prove judgment, not just tool usage.",
+              "link": "https://wellfound.com/role/r/game-designer"
+            },
+            {
+              "n": 5,
+              "category": "Wellfound 3D artist",
+              "title": "Wellfound 3D artist listings surface KitBash3D SaaS design contract demand",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Wellfound’s remote 3D artist board shows KitBash3D hiring for a remote SaaS product design contract, alongside other 3D and creator roles.",
+              "why": "3D asset companies increasingly need product designers who understand creators, libraries, licensing, search, previews, and AI-assisted workflows.",
+              "action": "Prototype a creator-tool UI: asset search, scene preview, license state, prompt metadata, and export handoff.",
+              "teacher": "Good design teaching here is workflow literacy: how an artist actually finds, tests, modifies, and ships an asset.",
+              "link": "https://wellfound.com/role/r/3d-artist"
+            },
+            {
+              "n": 6,
+              "category": "Parker is hiring",
+              "title": "Parker is hiring a lead product designer for an AI marketing brain",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Wellfound lists Parker as an AI marketing brain hiring a remote lead product designer, with the listing surfaced as active today.",
+              "why": "AI-native marketing products need designers who can make analytics, creative generation, approvals, and optimization feel controllable.",
+              "action": "Build a case study around an AI ad-control panel: inputs, variants, performance explanation, brand guardrails, and human signoff.",
+              "teacher": "Teach AI product design around trust states: what the system knows, what it guessed, what it changed, and what the user approved.",
+              "link": "https://wellfound.com/role/l/front-end-designer/united-states"
+            },
+            {
+              "n": 7,
+              "category": "Reddit production-agent thread",
+              "title": "Reddit production-agent thread says MCP operations are the messy paid problem",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/ClaudeAI thread from someone shipping production agents argues that MCP’s hard parts are auth, repeatability, vaulting, and operational setup.",
+              "why": "This is useful early pain evidence: buyers may not pay for another demo, but they will pay to make brittle agent integrations reproducible.",
+              "action": "Offer an “agent ops hardening” package: dedicated service accounts, refresh-token storage, permission review, setup docs, and recovery tests.",
+              "teacher": "Turn the thread into a checklist exercise: what breaks when the original builder leaves the company?",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1tuqqpn/i_ship_ai_agents_in_production_the_mess_is_mcp/"
+            },
+            {
+              "n": 8,
+              "category": "X publishes MCP",
+              "title": "X publishes MCP servers for X API and documentation access",
+              "source": "docs.x.com",
+              "relevance": "Intermediate",
+              "summary": "X documentation describes MCP servers for calling X API endpoints and searching X API docs from AI tools, including local and hosted options.",
+              "why": "Social listening, creator research, and trend-monitoring agents become more practical when the platform itself documents agent-facing access patterns.",
+              "action": "Design a read-only social research agent that searches posts, summarizes audience pains, and outputs a weekly opportunity brief without posting.",
+              "teacher": "Stress permission boundaries: start read-only, log every query, and separate research from automated publishing.",
+              "link": "https://docs.x.com/tools/mcp"
+            },
+            {
+              "n": 9,
+              "category": "Cloudinary AI Agents",
+              "title": "Cloudinary AI Agents turn enterprise visual media operations into governed workflows",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudinary launched AI agents for visual media management and brand governance, including workflow automation for asset operations.",
+              "why": "This is directly relevant to 3D/design teams because asset tagging, moderation, transformation, and delivery are repetitive but brand-sensitive.",
+              "action": "Build a visual-ops automation service: audit a DAM, define taxonomy, generate naming rules, and automate approval-ready derivatives.",
+              "teacher": "Use media libraries as a teaching dataset: students can learn metadata, rights, brand consistency, and automation together.",
+              "link": "https://www.businesswire.com/news/home/20260505410851/en/Cloudinary-Launches-AI-Agents-to-Streamline-Enterprise-Scale-Visual-Media-Management-and-Brand-Governance"
+            },
+            {
+              "n": 10,
+              "category": "Reddit Business webinar",
+              "title": "Reddit Business webinar positions Reddit conversation as AI adoption research signal",
+              "source": "business.reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Reddit Business is promoting a June 16 webinar on using conversation to drive AI adoption, noting strong year-over-year growth in AI mentions on the platform.",
+              "why": "For freelancers and educators, public AI conversations can reveal tool confusion, buyer objections, niche workflows, and content ideas before polished reports appear.",
+              "action": "Create a weekly Reddit research routine: collect questions, tag pains, identify repeated workflows, and convert them into tutorials or service packages.",
+              "teacher": "Teach ethical community research: summarize patterns, do not scrape private data, and avoid pretending a few posts are a full market study.",
+              "link": "https://www.business.reddit.com/webinar/aiconversation"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 00",
       "label": "2026-06-08 · 00:03",
