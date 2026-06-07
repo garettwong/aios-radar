@@ -615,7 +615,15 @@
       try { localStorage.setItem(FKEY, f); } catch (e) {}
     }
     document.querySelectorAll("#feedtabs .ftab").forEach(function (b) {
-      b.addEventListener("click", function () { setFeed(b.dataset.feed); window.scrollTo({ top: 0, behavior: "smooth" }); });
+      b.addEventListener("click", function () {
+        setFeed(b.dataset.feed);
+        var ft = $("feedtabs"), tb = document.querySelector(".topbar");
+        if (ft) {
+          var off = (tb ? tb.getBoundingClientRect().height : 0) + 12;
+          var y = ft.getBoundingClientRect().top + window.pageYOffset - off;
+          window.scrollTo(0, y > 0 ? y : 0);  // land at the tabs+news, not the brand header
+        }
+      });
     });
     var saved = null; try { saved = localStorage.getItem(FKEY); } catch (e) {}
     setFeed(saved || "trend");
