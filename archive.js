@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-07 20:27",
-    "editions": 85
+    "fetchedAt": "2026-06-07 21:27",
+    "editions": 86
   },
   "editions": [
+    {
+      "key": "2026-06-07 21",
+      "label": "2026-06-07 · 20:54",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-07 · 20:54 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI Dreaming updates",
+              "title": "OpenAI Dreaming updates ChatGPT memory synthesis for freshness and continuity",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI began rolling out a more scalable memory synthesis system for ChatGPT, aimed at keeping long-term memory fresh, relevant, and less stale over multi-year use.",
+              "why": "Agent usefulness increasingly depends on memory quality, not just context length. Bad memory turns assistants into confident repeaters of outdated assumptions.",
+              "action": "Audit any persistent assistant memory you rely on: what is stored, what expires, what needs user confirmation, and what should never be remembered.",
+              "teacher": "Teach memory as a lifecycle: capture, synthesize, retrieve, verify, update, and forget.",
+              "link": "https://openai.com/index/chatgpt-memory-dreaming/"
+            },
+            {
+              "n": 2,
+              "category": "Walrus Memory launches",
+              "title": "Walrus Memory launches portable verifiable memory for multi-agent workflows",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Walrus announced a portable memory layer for AI agents with shared memory spaces and verifiability, targeting agents that move across apps and sessions.",
+              "why": "The market is clearly forming around agent memory as infrastructure. Builders want memory that is portable, not trapped inside one chat product.",
+              "action": "For your own workflows, keep durable task memory in user-owned files or databases so tools can change without losing operational history.",
+              "teacher": "Contrast product memory with portable memory: one improves a single assistant, the other becomes shared infrastructure for many agents.",
+              "link": "https://www.prnewswire.com/news-releases/walrus-launches-walrus-memory-as-portable-memory-layer-for-ai-agents-302790486.html"
+            },
+            {
+              "n": 3,
+              "category": "GitHub adds one-click",
+              "title": "GitHub adds one-click Copilot cloud-agent fixes for failing Actions jobs",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub now lets eligible subscribers ask Copilot cloud agent to fix failed GitHub Actions jobs directly from the failure path.",
+              "why": "CI failure repair is becoming a standard agent entry point because the context is bounded, verifiable, and tied to a concrete pass/fail signal.",
+              "action": "Pick one repo and document which CI failures are safe for agent repair versus which require human approval.",
+              "teacher": "This is a clean example of agent where verification is automatic: the workflow reruns and gives an objective answer.",
+              "link": "https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent/"
+            },
+            {
+              "n": 4,
+              "category": "AWS MCP Server",
+              "title": "AWS MCP Server reaches GA with IAM, CloudWatch, and CloudTrail guardrails for agents",
+              "source": "aws.amazon.com",
+              "relevance": "Intermediate",
+              "summary": "AWS made its MCP Server generally available, giving agents auditable access to AWS APIs through IAM, CloudWatch metrics, and CloudTrail logging.",
+              "why": "Enterprise agent adoption is becoming an identity, logging, and permissioning problem as much as a model problem.",
+              "action": "For any cloud-connected agent, require a least-privilege role, audit logs, and a dry-run path before write operations.",
+              "teacher": "Explain MCP as a controlled tool boundary: the agent asks, deterministic infrastructure authenticates, authorizes, and records.",
+              "link": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/"
+            },
+            {
+              "n": 5,
+              "category": "Kurrent Capacitor turns",
+              "title": "Kurrent Capacitor turns coding-agent session history into searchable team memory",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Kurrent launched Capacitor in private preview to capture coding-agent sessions, decisions, tool calls, tests, and reasoning into a searchable shared memory layer.",
+              "why": "Teams are discovering that the expensive part of agent work is lost context: why a change happened, what failed, and what was already tried.",
+              "action": "Start saving agent session receipts next to PRs, even with a lightweight markdown log, before buying a platform.",
+              "teacher": "Teach agent work must leave a trail: changed files, commands run, tests attempted, risks noticed, and unresolved questions.",
+              "link": "https://www.businesswire.com/news/home/20260604607217/en/Kurrent-Launches-Capacitor-a-First-of-Its-Kind-Solution-for-Humans-and-Coding-Agents-Building-Software-Together"
+            },
+            {
+              "n": 6,
+              "category": "Roblox Studio lays",
+              "title": "Roblox Studio lays out agentic creation workflows for parallel creator assistants",
+              "source": "about.roblox.com",
+              "relevance": "Intermediate",
+              "summary": "Roblox described work on agents that can run in parallel, handle long-form cloud workflows, expose node-graph visualization, and support richer creator input methods.",
+              "why": "Game and 3D creation tools are shifting from single-prompt generation to guided, inspectable multi-step creative systems.",
+              "action": "For 3D/design work, define agent stages explicitly: reference lock, concept variants, geometry pass, material pass, QA pass.",
+              "teacher": "Use Roblox as an example of why creative agents need visible workflow state, not just final images or meshes.",
+              "link": "https://about.roblox.com/newsroom/2026/04/roblox-studio-going-agentic"
+            },
+            {
+              "n": 7,
+              "category": "Meta Business Agent",
+              "title": "Meta Business Agent shows customer-service agents moving into small-business channels",
+              "source": "about.fb.com",
+              "relevance": "Intermediate",
+              "summary": "Meta introduced Business Agent for automated customer responses and personalized business interactions across Meta surfaces.",
+              "why": "Agent adoption is not only developer-led. Small businesses are getting always-on agents inside channels where customers already message them.",
+              "action": "Watch for practical agent UX patterns: escalation, approval, product lookup, policy constraints, and conversation handoff.",
+              "teacher": "Teach this as the difference between chatbot and business agent: it must know catalog, policy, customer context, and when to stop.",
+              "link": "https://about.fb.com/news/2026/06/meta-business-agent/"
+            },
+            {
+              "n": 8,
+              "category": "GitHub topic activity",
+              "title": "GitHub topic activity shows agent skills becoming a cross-tool packaging layer",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub's agent-skills topic shows active repositories packaging skills, hooks, commands, and agent instructions for Claude Code, Codex, Gemini, Cursor, OpenCode, and other tools.",
+              "why": "The maker ecosystem is converging on reusable skill bundles as the portable layer above individual agents.",
+              "action": "Keep reusable workflows as small skill files with examples, limits, and verification steps instead of burying them in long project prompts.",
+              "teacher": "Demonstrate progressive disclosure: load the right skill only when the task needs it, so context stays focused.",
+              "link": "https://github.com/topics/agent-skills"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News debate",
+              "title": "Hacker News debate says MCP value is shifting toward observability, audit, and enterprise control",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Hacker News discussion around MCP versus CLI tools surfaced a practical split: makers like CLIs for speed, while teams value MCP-style boundaries for telemetry, authorization, and auditable tool use.",
+              "why": "This is the market signal behind agent infrastructure: organizations want fewer mysterious shell actions and more inspectable tool contracts.",
+              "action": "For serious workflows, classify tools into read, write, external-send, and destructive categories, then require explicit approval for the last two.",
+              "teacher": "Teach MCP/CLI tradeoffs as control versus convenience, not as a religious protocol argument.",
+              "link": "https://news.ycombinator.com/item?id=47380270"
+            },
+            {
+              "n": 10,
+              "category": "Reddit GitHub Copilot",
+              "title": "Reddit GitHub Copilot users push back on usage-based billing after the June 1 switch",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Reddit Copilot users are reacting to the June 1 shift toward usage-based billing and model/price changes, with concern about high-cost agent queries and unclear value.",
+              "why": "Agent pricing is becoming a workflow design constraint. Expensive models and long-running agents force teams to budget tasks, not just subscriptions.",
+              "action": "Track agent cost per accepted PR, per fixed bug, or per shipped asset, and set budgets before running broad autonomous loops.",
+              "teacher": "Teach makers to start with bounded tasks, cheaper review loops, and explicit stop conditions before escalating to premium models.",
+              "link": "https://www.reddit.com/r/GithubCopilot/comments/1ttd1hl/end_of_an_era_june_1_2026_github_copilot_models/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-07 · 20:49 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "ZoomMate turns meetings",
+              "title": "ZoomMate turns meetings into an agentic work surface for follow-through",
+              "source": "news.zoom.com",
+              "relevance": "Intermediate",
+              "summary": "Zoom announced ZoomMate, an agentic AI work surface that connects live conversation context to search, workflow execution, custom agents, and AI content creation.",
+              "why": "The opportunity is meeting-to-work automation: teams need help converting calls into tasks, drafts, decisions, reminders, and approved actions across their tools.",
+              "action": "Create a small service around one recurring meeting type: capture decisions, produce follow-up drafts, create tasks, and route approvals before anything is sent.",
+              "teacher": "Teach the difference between transcription and execution. The useful layer is not notes alone; it is the controlled handoff from conversation to accountable work.",
+              "link": "https://news.zoom.com/zoom-launches-zoommate/"
+            },
+            {
+              "n": 2,
+              "category": "Stensul MCP makes",
+              "title": "Stensul MCP makes safe AI-generated campaign production a marketing-ops niche",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Stensul launched an MCP Server for enterprise marketers so AI-generated campaigns can connect to governed creation workflows, brand controls, compliance checks, and marketing systems.",
+              "why": "Brands want AI speed without off-brand or non-compliant campaign assets. That creates work for people who can design guardrails, review flows, and campaign assembly systems.",
+              "action": "Build a campaign safety checklist: brand tokens, required claims review, approval roles, link checks, localization checks, and final-send gates.",
+              "teacher": "Use this to teach creative governance: faster generation only helps when the workflow preserves brand, legal, data, and channel constraints.",
+              "link": "https://www.businesswire.com/news/home/20260602060590/en/Stensul-Launches-MCP-Server-to-Help-Enterprise-Marketers-Ship-AI-Generated-Campaigns-Safely"
+            },
+            {
+              "n": 3,
+              "category": "Rezonate funding points",
+              "title": "Rezonate funding points to enterprise AI-agent demand in customer and workforce engagement",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Rezonate raised US$5 million to expand in the U.S. and accelerate its enterprise AI agent platform across sectors including healthcare, insurance, financial services, and sports.",
+              "why": "Enterprise AI-agent work is moving beyond demos into customer and workforce engagement, where domain workflows and local market rollout support matter.",
+              "action": "For consulting, choose one sector and write a sample engagement-agent map: user intents, data sources, escalation rules, handoff scripts, and KPIs.",
+              "teacher": "Teach that enterprise agent value is vertical. The same chatbot shell means little until it understands the sector's workflows, vocabulary, risks, and approval paths.",
+              "link": "https://www.prnewswire.com/apac/news-releases/rezonate-raises-us5-million-and-unveils-new-brand-identity-to-accelerate-us-expansion-302792304.html"
+            },
+            {
+              "n": 4,
+              "category": "Reddit product tracker",
+              "title": "Reddit product tracker says approval UX is the next agent opportunity, not just reasoning",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit analysis of 47 agent products argues that the next wave will be agents with better per-action approval surfaces, especially when the deliverable is a sent email, posted comment, or CRM update.",
+              "why": "This is early user pain with practical commercial value: buyers fear false-positive actions more than weak reasoning benchmarks.",
+              "action": "Add an approval screen to any agent demo: show proposed action, source evidence, risk level, undo path, and explicit approve/reject controls.",
+              "teacher": "Use it to teach agent product design: trust is built at the action boundary, where users inspect what will happen before it happens.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tn12df/i_tracked_47_new_agent_products_launched_in_2026/"
+            },
+            {
+              "n": 5,
+              "category": "Greenhouse MCP rollout",
+              "title": "Greenhouse MCP rollout creates recruiting-automation work around governed hiring data",
+              "source": "greenhouse.com",
+              "relevance": "Intermediate",
+              "summary": "Greenhouse announced an MCP capability for connecting AI tools directly to hiring data, built with design partners and planned for customer rollout starting in June.",
+              "why": "Recruiting teams want AI help but cannot casually expose applicant data. Governed connectors create demand for workflow setup, policy writing, and candidate-screening review systems.",
+              "action": "Create a recruiting-agent checklist: permitted data, forbidden decisions, audit log, human review, email templates, and bias-risk review.",
+              "teacher": "Frame this as responsible automation: AI can speed sourcing and summaries, but final employment decisions need clear human accountability.",
+              "link": "https://www.greenhouse.com/newsroom/greenhouse-launches-mcp-giving-hiring-teams-a-governed-way-to-connect-ai-tools-to-greenhouse"
+            },
+            {
+              "n": 6,
+              "category": "Ketryx MCP beta",
+              "title": "Ketryx MCP beta makes compliance-aware AI workflows a regulated-industry opportunity",
+              "source": "ketryx.com",
+              "relevance": "Intermediate",
+              "summary": "Ketryx launched an MCP beta so AI tools can securely access live compliance data across regulated product-development workflows.",
+              "why": "Medical, aerospace, automotive, and safety-critical teams need AI help without losing traceability. Specialists who can connect engineering speed to compliance evidence will be valuable.",
+              "action": "Draft a compliance automation service menu: traceability gap review, Jira/GitHub/TestRail mapping, controlled AI summaries, and release-evidence packet generation.",
+              "teacher": "Teach the core principle: in regulated work, the output is not just a feature; it is the evidence trail proving how the feature was built and checked.",
+              "link": "https://www.ketryx.com/press-release/ketryx-announces-mcp"
+            },
+            {
+              "n": 7,
+              "category": "Datasite MCP brings",
+              "title": "Datasite MCP brings live deal-room content to AI assistants without moving documents",
+              "source": "datasite.com",
+              "relevance": "Intermediate",
+              "summary": "Datasite launched an MCP server that lets deal teams use AI assistants to create, permission, organize, access, and analyze live virtual data-room content while keeping documents in Datasite.",
+              "why": "M&A, fundraising, legal, and due-diligence teams are rich targets for AI workflow services because they handle large document sets under strict permissions.",
+              "action": "Build a due-diligence assistant prototype using non-sensitive sample docs: index, question set, permission model, summary format, and red-flag review workflow.",
+              "teacher": "Use this to teach source-locking: assistants should answer from controlled deal-room material, cite the source document, and avoid copying sensitive files elsewhere.",
+              "link": "https://www.datasite.com/en/company/news/datasite-becomes-the-first-vdr-provider-to-connect-ai-assistants-directly-to-live-deal-content-with-mcp-server-launch"
+            },
+            {
+              "n": 8,
+              "category": "Arc remote AI",
+              "title": "Arc remote AI listings show freelance demand for agent infrastructure and AI product design",
+              "source": "arc.dev",
+              "relevance": "Intermediate",
+              "summary": "Arc's June remote AI board lists active freelance and remote roles including ClickHouse + AI Agent Infrastructure Specialist, Staff Product Designer, and AI/ML Engineer listings.",
+              "why": "The market is splitting into practical lanes: agent infrastructure, product design for AI experiences, synthetic data, and part-time build work.",
+              "action": "Refresh a portfolio around one lane: an agent monitoring dashboard, AI UX case study, data pipeline demo, or fixed-scope infrastructure offer.",
+              "teacher": "Teach job seekers to reverse-engineer boards into skills: collect 20 postings, count repeated tools and responsibilities, then build one proof artifact for the highest-frequency gap.",
+              "link": "https://arc.dev/remote-jobs/ai"
+            },
+            {
+              "n": 9,
+              "category": "Reddit freelancer offer",
+              "title": "Reddit freelancer offer shows small-business AI automation packages are already being sold cheaply",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit freelancer is selling AI agents, email automation, invoice extraction, lead workflows, CRM automation, custom n8n workflows, and business process automation with low starter pricing.",
+              "why": "This is live market evidence: buyers can understand concrete pain-killer automations faster than broad AI consulting. Pricing is compressing, so packaging and proof matter.",
+              "action": "Build a sharper offer than generic automation: choose one vertical, show before/after screenshots, define setup price plus monthly support, and include a free workflow audit.",
+              "teacher": "Use it to teach offer design: name the painful task, state the saved time, show the workflow stack, and reduce buyer risk with a prototype.",
+              "link": "https://www.reddit.com/r/Programmers_forhire/comments/1twico9/for_hire_i_automate_repetitive_business_tasks/"
+            },
+            {
+              "n": 10,
+              "category": "VSCO Staff Product",
+              "title": "VSCO Staff Product Designer role shows AI-agent UX is becoming a senior creative discipline",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "VSCO is hiring a Staff Product Designer to own Workspace strategy and define AI-agent interaction models, behaviors, escalation logic, tone, handoff to UI, and AI-assisted design workflows.",
+              "why": "For designers and 3D/creative professionals, the emerging job is not only making assets; it is designing how agents behave, explain themselves, and hand control back to people.",
+              "action": "Create a mini case study: design an AI agent flow with states for planning, asking, acting, failing, escalating, and handing off to normal UI.",
+              "teacher": "Teach AI UX as state design: agent behavior, confidence, permissions, tone, user correction, and system tokens are now part of product craft.",
+              "link": "https://job-boards.greenhouse.io/vsco39/jobs/8567712002"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-07 18",
       "label": "2026-06-07 · 17:56",
