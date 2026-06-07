@@ -617,6 +617,20 @@ code {
 .f-teach .frame-label { color: var(--green); }   .f-teach .frame-ico { color: var(--green);  background: rgba(74,222,128,.08); border-color: var(--green-dim); }
 .frame-source { margin-top: 4px; }
 
+/* ===================== AI OPPORTUNITIES (Painpoint Scout) — 3rd feed ===================== */
+#col-painpoint { margin-top: 16px; border-left: 3px solid var(--violet); }
+.pp-list { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 760px) { .pp-list { grid-template-columns: 1fr 1fr; } }
+#painpoint-signals .signal { cursor: pointer; }
+#painpoint-signals .signal-details { max-height: 0; overflow: hidden; }
+#painpoint-signals .signal.open .signal-details { max-height: none !important; overflow: visible; margin-top: 11px; }
+#painpoint-signals .signal-title::after { content: " ▸"; color: var(--ink-3); font-weight: 400; }
+#painpoint-signals .signal.open .signal-title::after { content: " ▾"; color: var(--violet); }
+.tag.pp-score { font-weight: 700; }
+.pp-score.pp-hi { color: var(--green); border-color: var(--green-dim); }
+.pp-score.pp-mid { color: var(--amber); border-color: #7a5a12; }
+.pp-score.pp-lo { color: var(--ink-3); }
+
 /* ===================== INDEPENDENT COLUMN SCROLL (desktop) ===================== */
 @media (min-width: 821px) {
   #trend-signals, #job-signals { max-height: calc(100vh - 250px); overflow-y: auto; padding-right: 8px; }

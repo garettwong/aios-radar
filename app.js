@@ -181,6 +181,41 @@
     wireNoteBox(card, s);
     return card;
   }
+  function painpointCard(s) {
+    const card = el("article", "signal pp-card" + (isRead(s) ? " is-read" : "") + (isSaved(s) ? " is-saved" : ""));
+    const scoreNum = parseFloat(s.score || "0");
+    const scoreCls = scoreNum >= 8 ? "pp-hi" : scoreNum >= 6 ? "pp-mid" : "pp-lo";
+    const fr = (ico, label, txt, cls) => txt
+      ? `<div class="frame ${cls}"><div class="frame-ico">${ico}</div><div class="frame-body"><span class="frame-label">${label}</span><div class="frame-text">${esc(txt)}</div></div></div>`
+      : "";
+    card.innerHTML =
+      '<div class="signal-top">' +
+        `<span class="tag cat">💡 ${esc(s.category || "Opportunity")}</span>` +
+        `<span class="tag src">${esc(s.source || "—")}</span>` +
+        (s.score ? `<span class="tag pp-score ${scoreCls}">★ ${esc(s.score)}/10</span>` : "") +
+        '<span class="card-actions">' +
+          `<span class="tag num">#${esc(s.n)}</span>` +
+          `<button class="ca save${isSaved(s) ? " on" : ""}" title="Save">★</button>` +
+          `<button class="ca read${isRead(s) ? " on" : ""}" title="Mark read / hide">✓</button>` +
+        "</span>" +
+      "</div>" +
+      `<h3 class="signal-title">${esc(s.title)}</h3>` +
+      `<div class="signal-meta"><span class="signal-date">🗓 ${esc(shortDate(s.briefDate))}</span>` +
+        (isSaved(s) ? '<span class="saved-flag">★ SAVED</span>' : "") +
+        (isRead(s) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
+      '<div class="signal-details">' +
+        fr("🎯", "PAINPOINT", s.painpoint, "f-sum") +
+        fr("👥", "WHO HAS THE PAIN", s.who, "f-why") +
+        fr("💰", "WHY THIS BECOMES MONEY", s.why, "f-teach") +
+        fr("🚀", "FIRST MOVE THIS WEEK", s.action, "f-act") +
+        fr("🧰", "SERVICE / MINI-SAAS IDEA", s.service, "f-sum") +
+        sourceRow(s.link) +
+      "</div>";
+    card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(s); });
+    card.querySelector(".ca.save").addEventListener("click", (e) => { e.stopPropagation(); toggleSave(s); });
+    card.addEventListener("click", (e) => { if (e.target.closest("a") || e.target.closest("button")) return; card.classList.toggle("open"); });
+    return card;
+  }
   function block(label, text) {
     if (!text) return "";
     return `<div class="detail-block"><span class="detail-label">${label}</span><span class="detail-text">${esc(text)}</span></div>`;
@@ -221,6 +256,22 @@
         host.appendChild(el("div", "empty-note", savedOnly ? "No saved items here yet — tap ★ on a card to save it." : "Nothing unread — switch off “Unread only” to see your read items."));
       }
     });
+    // 3rd feed — AI OPPORTUNITIES (Painpoint Scout), full-width; shows only when present
+    var ppSec = $("col-painpoint");
+    if (ppSec) {
+      var pp = (DATA.briefs || []).find(function (b) { return b && b.id === "painpoint"; });
+      var psigs = pp ? (pp.signals || []) : [];
+      if (psigs.length) {
+        ppSec.hidden = false;
+        if ($("painpoint-title")) $("painpoint-title").textContent = (pp.title || "AI OPPORTUNITIES").toUpperCase();
+        if ($("painpoint-subtitle")) $("painpoint-subtitle").textContent = pp.subtitle || "";
+        var ph = $("painpoint-signals"); ph.innerHTML = "";
+        var pl = psigs.filter(function (s) { return passFilter(s) && passView(s); });
+        pl.forEach(function (s) { ph.appendChild(painpointCard(Object.assign({ briefDate: pp.date, briefId: "painpoint" }, s))); });
+        if ($("painpoint-count")) $("painpoint-count").textContent = psigs.filter(function (s) { return passFilter(s) && !isRead(s); }).length + " new";
+        if (!pl.length) ph.appendChild(el("div", "empty-note", "Nothing unread here — toggle Unread-only off."));
+      } else { ppSec.hidden = true; }
+    }
   }
 
   /* ---------------- stats / relevance / actions ---------------- */
