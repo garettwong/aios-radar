@@ -287,9 +287,13 @@ code {
   transition: max-height .28s ease, margin-top .28s ease;
 }
 .signal.open .signal-details { max-height: none; overflow: visible; margin-top: 11px; }
-/* RADAR news cards: show the full card + the note box WITHOUT tapping, and never clip (big fonts) */
-#trend-signals .signal-details, #job-signals .signal-details { max-height: none !important; overflow: visible; margin-top: 11px; }
+/* RADAR news cards: COLLAPSED by default — tap a card to expand, tap again to collapse. */
+#trend-signals .signal, #job-signals .signal { cursor: pointer; }
+#trend-signals .signal-details, #job-signals .signal-details { max-height: 0; overflow: hidden; margin-top: 0; }
+#trend-signals .signal.open .signal-details, #job-signals .signal.open .signal-details { max-height: none !important; overflow: visible; margin-top: 11px; }
 #trend-signals .signal-summary, #job-signals .signal-summary { display: none; }
+#trend-signals .signal-title::after, #job-signals .signal-title::after { content: " ▸"; color: var(--ink-3); font-weight: 400; }
+#trend-signals .signal.open .signal-title::after, #job-signals .signal.open .signal-title::after { content: " ▾"; color: var(--cyan); }
 .detail-block { margin-bottom: 13px; }
 .detail-label {
   font-family: var(--mono);

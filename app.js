@@ -311,7 +311,19 @@
       (next ? `<div class="hq-next"><b>next:</b> ${esc(next)}</div>` : "") + `</div>`;
   }
   function renderHQ() {
-    if (!HQ) return;
+    var HQ = window.DASHBOARD_HQ;
+    var _lock = $("hq-lock"), _content = $("hq-content");
+    if (!HQ) {
+      // Locked (encrypted cockpit present but not yet unlocked) → show the password screen.
+      if (window.DASHBOARD_HQ_ENC && window.HQ_UNLOCK && _lock) {
+        if (_content) _content.hidden = true;
+        _lock.hidden = false;
+        window.HQ_UNLOCK.renderLock(_lock, function (obj) { window.DASHBOARD_HQ = obj; renderHQ(); });
+      }
+      return;
+    }
+    if (_lock) _lock.hidden = true;
+    if (_content) _content.hidden = false;
     const hello = $("hq-hello");
     if (hello) hello.innerHTML = (HQ.hello || "") + (HQ.updated ? `<span class="hq-upd">⟳ updated ${esc(HQ.updated)}</span>` : "");
     if ($("hq-today-date")) $("hq-today-date").textContent = (HQ.today && HQ.today.date) || "";
@@ -528,9 +540,8 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     });
-    if (!HQ) {
-      // No cockpit data (e.g. the PUBLIC github.io copy excludes the private hq.js):
-      // behave exactly like the classic radar — hide the HQ tab, default to RADAR.
+    if (!window.DASHBOARD_HQ && !window.DASHBOARD_HQ_ENC) {
+      // No cockpit at all — behave exactly like the classic radar: hide the HQ tab, default to RADAR.
       var _hqb = document.querySelector('.vnav[data-view="hq"]');
       if (_hqb) { _hqb.style.display = "none"; _hqb.classList.remove("active"); }
       var _rb = document.querySelector('.vnav[data-view="radar"]');
