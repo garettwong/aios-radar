@@ -110,14 +110,14 @@
 .hq-row.done .hq-name { text-decoration: line-through; }
 
 /* up/down reorder arrows */
-.hq-ord { display: inline-flex; flex-direction: column; gap: 2px; flex: 0 0 auto; }
-.hq-arrow { width: 26px; height: 18px; line-height: 1; padding: 0; border: 1px solid var(--border-2); background: var(--bg-2); color: var(--ink-2); border-radius: 5px; font-size: 9px; cursor: pointer; }
+.hq-ord { display: inline-flex; flex-direction: column; gap: 4px; flex: 0 0 auto; }
+.hq-arrow { width: 40px; height: 32px; line-height: 1; padding: 0; border: 1px solid var(--border-2); background: var(--bg-2); color: var(--ink-2); border-radius: 7px; font-size: 14px; cursor: pointer; }
 .hq-arrow:hover { color: var(--cyan); border-color: var(--cyan-dim); }
 .hq-arrow:active { background: var(--panel-2); }
 .hq-row-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
 .hq-rt { display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto; }
 .hq-focus li, .hq-actions li, .hq-bs li { position: relative; }
-.hq-focus li .hq-ord, .hq-actions li .hq-ord, .hq-bs li .hq-ord { position: absolute; top: 8px; right: 8px; }
-.hq-focus li { padding-right: 48px; }
-.hq-actions li { padding-right: 42px; }
-.hq-bs li { padding-right: 42px; }
+.hq-focus li .hq-ord, .hq-actions li .hq-ord, .hq-bs li .hq-ord { position: absolute; top: 10px; right: 10px; }
+.hq-focus li { padding-right: 62px; }
+.hq-actions li { padding-right: 56px; }
+.hq-bs li { padding-right: 56px; }
