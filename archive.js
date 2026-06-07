@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 05:28",
-    "editions": 88
+    "fetchedAt": "2026-06-08 06:30",
+    "editions": 89
   },
   "editions": [
+    {
+      "key": "2026-06-08 06",
+      "label": "2026-06-08 · 06:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-08 · 06:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "TechRadar reads Build",
+              "title": "TechRadar reads Build 2026 as the shift from code-first to intent-first software work",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar frames Microsoft Build 2026 as a sign that software work is moving from hand-authored code toward intent, agents, and platform orchestration.",
+              "why": "The competitive surface is becoming the workflow around code: issue intake, agent execution, review, governance, and deployment loops.",
+              "action": "Map your own repeatable coding/render/document tasks as intent-to-output workflows, then identify where an agent can safely run with checks.",
+              "teacher": "Useful for explaining the market shift: coding skill still matters, but the leverage is moving into directing and verifying systems.",
+              "link": "https://www.techradar.com/pro/from-code-first-to-intent-first-microsoft-build-2026-could-be-the-end-of-programming-as-we-know-it"
+            },
+            {
+              "n": 2,
+              "category": "The New Stack",
+              "title": "The New Stack says Claude Code, Cursor, Codex, and Antigravity are converging on one agentic coding blueprint",
+              "source": "thenewstack.io",
+              "relevance": "Intermediate",
+              "summary": "The New Stack compares major coding agents and argues they are converging around terminal/IDE agents, MCP-style tool access, parallel execution, and review habits.",
+              "why": "Tool choice still matters, but workflows are standardizing; makers can design portable habits instead of betting on one vendor UI.",
+              "action": "Keep project instructions, verification commands, and agent handoff notes in repo files so they travel across tools.",
+              "teacher": "Good comparison point for teaching durable agent literacy: learn the control loop, not only the brand.",
+              "link": "https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/"
+            },
+            {
+              "n": 3,
+              "category": "AI Engineer World",
+              "title": "AI Engineer World Fair puts coding agents and software factories on the main-stage agenda",
+              "source": "ai.engineer",
+              "relevance": "Intermediate",
+              "summary": "The AI Engineer World Fair schedule lists an opening keynote on coding agents and software factories, with a large conference footprint around applied AI engineering.",
+              "why": "Agents are now a professional discipline with conferences, tracks, tooling vendors, and hiring signals, not just a product feature.",
+              "action": "Watch the event agenda for talks on evals, agent operations, MCP, and software factories; those usually become the next practical playbooks.",
+              "teacher": "Use conference programming as market signal: when a topic becomes a track, teams need shared vocabulary and training.",
+              "link": "https://www.ai.engineer/worldsfair/llms.md"
+            },
+            {
+              "n": 4,
+              "category": "Claude Code changelog",
+              "title": "Claude Code changelog shows reliability and project-state cleanup becoming daily agent features",
+              "source": "code.claude.com",
+              "relevance": "Intermediate",
+              "summary": "Claude Code release notes highlight practical fixes like stalled stream handling, project state purge commands, and model/gateway picker behavior.",
+              "why": "Coding agents are maturing through boring reliability work: cleanup, retries, state management, and predictable integrations.",
+              "action": "Add a simple maintenance checklist for agent tools: update version, clear stale project state, verify MCP config, run a small smoke task.",
+              "teacher": "Good reminder that production agent skill includes operations hygiene, not only prompt craft.",
+              "link": "https://code.claude.com/docs/en/changelog"
+            },
+            {
+              "n": 5,
+              "category": "BMAD-METHOD shows structured",
+              "title": "BMAD-METHOD shows structured agent workflows becoming installable maker infrastructure",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The BMAD-METHOD GitHub project packages agile AI-driven development as installable workflows, specialized agents, skills, and lifecycle guidance.",
+              "why": "The market is converging on repeatable scaffolds for agents: roles, checklists, handoffs, and quality gates are becoming reusable assets.",
+              "action": "Maintain a small library of project-local agent roles and acceptance checklists for recurring build, render, and document jobs.",
+              "teacher": "Strong example for teaching why agent systems need process design; the skill is increasingly orchestration, not just prompting.",
+              "link": "https://github.com/bmad-code-org/BMAD-METHOD"
+            },
+            {
+              "n": 6,
+              "category": "Chrome DevTools MCP",
+              "title": "Chrome DevTools MCP makes browser debugging a first-class agent tool surface",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "ChromeDevTools/chrome-devtools-mcp exposes browser input, navigation, console, network, screenshot, and performance tools to MCP-compatible agents.",
+              "why": "Coding agents are getting closer to real frontend QA loops: inspect page, catch console errors, trace performance, patch code, repeat.",
+              "action": "Add browser-tool verification to web-app agent workflows so UI claims are checked through screenshots, console logs, and network traces.",
+              "teacher": "Good practical lesson: agents become more reliable when they can inspect the real runtime instead of guessing from source files.",
+              "link": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+            },
+            {
+              "n": 7,
+              "category": "Hacker News debate",
+              "title": "Hacker News debate says agentic coding needs harnesses, not blind autonomy",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A recent HN thread around Agentic Coding Is a Trap shows skepticism, but the useful signal is repeated: short, scoped agents with tests and review work better.",
+              "why": "The adoption fight is no longer agents or no agents; it is whether teams can build harnesses that keep cheap code from becoming expensive maintenance.",
+              "action": "Split agent tasks into small work packets with explicit tests, diff review, and stop conditions before allowing longer autonomous runs.",
+              "teacher": "Use this when teaching responsible agent workflows: autonomy should rise only after verification quality rises.",
+              "link": "https://news.ycombinator.com/item?id=48002442"
+            },
+            {
+              "n": 8,
+              "category": "Reddit makers package",
+              "title": "Reddit makers package a production-agent standard as Claude Code skills",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker shared an open production-agent standard with an autonomy ladder, composition patterns, harness layers, eval discipline, and production definition of done.",
+              "why": "Grassroots agent builders are turning field lessons into installable skill packs, which is how workflows spread across tools quickly.",
+              "action": "Review the structure for ideas you can adapt into local skills: task intake, evals, tool constraints, and completion criteria.",
+              "teacher": "Good example of community workflow codification: once a pattern becomes a skill, it becomes teachable and portable.",
+              "link": "https://www.reddit.com/r/claudeskills/comments/1tz5bh9/a_standard_for_building_production_ai_agents/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit automation thread",
+              "title": "Reddit automation thread shows creator teams using agents as research and content ops loops",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "In a high-signal r/AI_Agents thread, users described agents pulling from GitHub trends, arXiv, HN, subreddits, X lists, and newsletters for content and research workflows.",
+              "why": "Maker adoption is moving from single-task automation to always-on radar systems that gather, filter, draft, and review recurring outputs.",
+              "action": "Build one repeatable radar workflow per domain, with a dedupe ledger and explicit source-quality rules, instead of doing ad hoc searches.",
+              "teacher": "This is a clean example of agent value in operations: the agent is not replacing taste, it is reducing the search and sorting load.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tugo0h/whats_the_coolest_thing_youve_automated_with_ai/"
+            },
+            {
+              "n": 10,
+              "category": "Public X feedback",
+              "title": "Public X feedback flags Figma MCP connection reliability as the practical adoption bottleneck",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X reply to Figma MCP enthusiasm said the older and newer versions had connection problems, a useful counter-signal to launch excitement.",
+              "why": "Design-agent workflows will not stick if setup and connectivity are fragile, especially for designers who expect canvas tools to feel immediate.",
+              "action": "Before selling any design-agent workflow, run a connection checklist: auth, file permissions, component access, retry behavior, and recovery steps.",
+              "teacher": "Useful adoption lesson: the best demo is not enough; reliability and handoff friction decide whether teams keep using the workflow.",
+              "link": "https://x.com/codyplof/status/2036518263681589431"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 06:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Buzzy Builder MCP",
+              "title": "Buzzy Builder MCP turns enterprise app delivery into an agent-ready service",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "Buzzy announced general availability of Buzzy Builder MCP on June 5, letting Codex, Claude Code, Cursor, and other agents generate structured app definitions with privacy controls plus beta testing and security review.",
+              "why": "The market is moving from AI can code to AI can produce governed app specs inside maintained platforms. That creates consulting work around app schemas, permission models, QA, and handoff between business users and agents.",
+              "action": "Build a small demo package: one client intake form, one internal approval app, one privacy-field map, and one agent prompt pack showing how to turn requirements into a Buzzy-style governed app spec.",
+              "teacher": "Teach the difference between vibe-coded apps and semantic app definitions. Have learners mark which fields need runtime, editor, REST, and MCP privacy rules.",
+              "link": "https://www.prweb.com/releases/buzzy-adds-mcp-support-bringing-governed-enterprise-app-creation-to-codex-claude-code-cursor-and-ai-agents-302791408.html"
+            },
+            {
+              "n": 2,
+              "category": "Megaport MCP makes",
+              "title": "Megaport MCP makes cloud networking a natural-language automation lane",
+              "source": "megaport.com",
+              "relevance": "Intermediate",
+              "summary": "Megaport released its MCP Server open beta on June 5 for read-only access to network infrastructure through agentic workflows.",
+              "why": "Networking is becoming explainable and inspectable through AI assistants before it becomes fully writable. That favors specialists who can package infrastructure visibility audits for non-network teams.",
+              "action": "Offer a lightweight service: map a client cloud connectivity, turn it into an agent-readable inventory, then deliver plain-English risk, cost, and redundancy notes.",
+              "teacher": "Use this as a lesson in safe autonomy: read-only tools first, then approvals, then narrow write actions. Show why network automation needs stricter guardrails than content workflows.",
+              "link": "https://www.megaport.com/blog/bridging-ai-and-infrastructure-introducing-the-megaport-mcp-server-for-agentic-networking/"
+            },
+            {
+              "n": 3,
+              "category": "Arena Agent Mode",
+              "title": "Arena Agent Mode makes real-world agent evaluation a product category",
+              "source": "arena.ai",
+              "relevance": "Intermediate",
+              "summary": "Arena introduced Agent Mode on June 4 for autonomous multi-step workflows such as building a small business website, planning a launch, or running deep research in a sandbox.",
+              "why": "Buyers will need proof that an agent can finish realistic work, recover from errors, and avoid tool hallucinations. Agent evaluation can become a freelance or consulting offer, not just a lab benchmark.",
+              "action": "Create a simple agent readiness test for client workflows: task brief, tools allowed, success criteria, error log, and a before and after productivity estimate.",
+              "teacher": "Ask students to compare static prompts with agent workflows. Grade on task success, steering, recovery, and whether the agent asked useful follow-up questions.",
+              "link": "https://arena.ai/blog/agent-mode/"
+            },
+            {
+              "n": 4,
+              "category": "Hightouch is hiring",
+              "title": "Hightouch is hiring an AI Creative Designer for agentic ads",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Hightouch Greenhouse listing for AI Creative Designer, Ads asks for someone who can translate brand guidelines into agentic workflows and produce on-brand creative for enterprise marketing teams.",
+              "why": "This is a clean signal for designers and 3D or visual artists: the new role is taste, art direction, workflow design, and enterprise proof that AI creative can meet brand standards.",
+              "action": "Build a portfolio case with one brand system, 20 AI-assisted ad variants, rejection notes, final selects, and the workflow that kept the outputs on-brand.",
+              "teacher": "Teach brand context to generation system as a repeatable pipeline: constraints, references, negative examples, review rubrics, and performance feedback.",
+              "link": "https://job-boards.greenhouse.io/hightouch/jobs/5982446004"
+            },
+            {
+              "n": 5,
+              "category": "Synthesia wants product",
+              "title": "Synthesia wants product design for AI-native surfaces",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Synthesia Senior or Staff Product Designer role focuses on conversational AI, agentic workflows, employee learning, dubbing and localisation, trust, transparency, and user control.",
+              "why": "AI-native product design is becoming a senior discipline. Designers who understand autonomy, consent, localization, and enterprise learning will be more valuable than designers who only make static screens.",
+              "action": "Add one AI-native case study to a design portfolio: show user control states, failure states, handoff to human, audit trail, and localization edge cases.",
+              "teacher": "Run a workshop where learners redesign a video-training tool as an agentic flow, including where the user can pause, correct, approve, or roll back the AI.",
+              "link": "https://jobs.ashbyhq.com/synthesia/4721d2c3-3d94-45d3-b9f7-ea5e1f549ce2/"
+            },
+            {
+              "n": 6,
+              "category": "AIDJ shows AI-company",
+              "title": "AIDJ shows AI-company design hiring as its own niche",
+              "source": "aidj.work",
+              "relevance": "Intermediate",
+              "summary": "AIDJ updated on June 6 with a curated board for design jobs at AI companies, listing 96 open roles across 75 companies with filters for product, brand, motion, design engineering, remote, and seniority.",
+              "why": "Designers can now search AI-specific opportunities without drowning in generic UX listings. For coaches and recruiters, this also reveals a sellable niche: AI-company portfolio positioning.",
+              "action": "Audit your portfolio against three AI-company patterns: product thinking around agents, comfort with technical systems, and evidence of shipping under ambiguity.",
+              "teacher": "Have students pick five roles from the board and reverse-engineer the portfolio proof each role would need.",
+              "link": "https://aidj.work/"
+            },
+            {
+              "n": 7,
+              "category": "Reddit UX designers",
+              "title": "Reddit UX designers are worried interviews are extracting AI workflow methods",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A June 5 r/UXDesign thread says senior candidates are being asked to reveal AI-augmented research workflows, agentic prototyping methods, LLM-native feature thinking, and tool stacks during hiring loops.",
+              "why": "The pain signal is strong: AI design methodology is valuable enough that candidates feel it can be extracted without compensation. That opens room for paid workshops, protected playbooks, and clearer portfolio boundaries.",
+              "action": "Create a public vs paid version of your AI design process. Share outcomes and principles publicly, but keep templates, prompts, scoring rubrics, and client-ready systems behind a paid engagement.",
+              "teacher": "Discuss interview ethics and IP hygiene. Teach learners to explain process at the right altitude without handing over a full consulting deliverable.",
+              "link": "https://www.reddit.com/r/UXDesign/comments/1txtgz5/is_the_2026_hiring_loop_just_a_methodology/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit MCP builders",
+              "title": "Reddit MCP builders are warning about low-quality MCP server sprawl",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A June 3 r/mcp post compares the MCP server rush to the old AI-powered rebrand wave and claims many servers fail basic health checks soon after launch.",
+              "why": "When every vendor ships an MCP server, the scarce skill becomes verification: auth, schemas, rate limits, observability, docs, and whether the tool is better than the existing API.",
+              "action": "Offer an MCP audit checklist as a small paid product: install test, auth test, action safety, schema quality, error handling, health checks, and docs score.",
+              "teacher": "Use one good and one weak MCP server in class. Let students grade them and write a short buyer recommendation.",
+              "link": "https://www.reddit.com/r/mcp/comments/1tvr6zr/the_mcp_server_gold_rush_feels_exactly_like_the/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit salary posts",
+              "title": "Reddit salary posts show agentic AI roles appearing in mainstream remote-job lists",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A June 7 r/remotearmy salary roundup includes roles such as Senior Machine Learning Scientist, Agentic AI at Natera and other remote product or AI openings with listed pay.",
+              "why": "Agentic AI is no longer only a startup-founder keyword. It is appearing in ordinary remote-job aggregation, which means job seekers should align resumes to agent evaluation, orchestration, and applied workflow outcomes.",
+              "action": "Add a resume section called Agentic AI systems with two measurable bullets: tools connected, workflow automated, evaluation method, and business result.",
+              "teacher": "Show students how to translate AI experiments into hiring language: problem, agent role, tools, human approval, metric, and risk control.",
+              "link": "https://www.reddit.com/r/remotearmy/comments/1tznjqc/remote_jobs_with_listed_salary_06062026_usa/"
+            },
+            {
+              "n": 10,
+              "category": "Agentic Engineering Jobs",
+              "title": "Agentic Engineering Jobs is carving out remote MCP roles",
+              "source": "agentic-engineering-jobs.com",
+              "relevance": "Intermediate",
+              "summary": "The MCP remote page on Agentic Engineering Jobs lists roles such as Staff AI Engineer in marketing ops and Staff Software Engineer for data AI agents, with MCP, CrewAI, LangChain, and Databricks appearing as filters and signals.",
+              "why": "Specialized boards are forming around agent infrastructure. That helps freelancers and job seekers track the exact stack buyers now associate with agentic engineering.",
+              "action": "Build a one-page skills map: MCP, agent frameworks, data connectors, evals, observability, and one business domain such as marketing ops, recruiting, or support.",
+              "teacher": "Have learners choose one job listing and identify which portfolio artifact would prove the skill fastest: demo repo, architecture diagram, case study, or client-style audit.",
+              "link": "https://agentic-engineering-jobs.com/jobs/mcp/remote"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 03",
       "label": "2026-06-08 · 03:06",
