@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-07 17:27",
-    "editions": 84
+    "fetchedAt": "2026-06-07 18:27",
+    "editions": 85
   },
   "editions": [
+    {
+      "key": "2026-06-07 18",
+      "label": "2026-06-07 · 17:56",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-07 · 17:56 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Windows Central reads",
+              "title": "Windows Central reads Build 2026 as the maturation of Microsoft agent infrastructure",
+              "source": "windowscentral.com",
+              "relevance": "Intermediate",
+              "summary": "Windows Central argues Microsoft spent the past year turning the agentic web groundwork from Build 2025 into usable developer tools, models, and workplace agents.",
+              "why": "The signal is not one feature; it is a full pipeline from agent building to deployment, context, and daily work.",
+              "action": "Watch Microsoft, GitHub, and Windows announcements as one connected agent stack, not as separate product news.",
+              "teacher": "Use this as a market-pattern example: platform companies win by connecting models, tools, identity, governance, and distribution.",
+              "link": "https://www.windowscentral.com/microsoft/windows-11/build-2026-only-makes-sense-if-you-remember-build-2025-a-look-back-at-the-groundwork-of-the-age-of-ai-agents"
+            },
+            {
+              "n": 2,
+              "category": "Asana launches an",
+              "title": "Asana launches an operating system for human-agent teams",
+              "source": "investors.asana.com",
+              "relevance": "Intermediate",
+              "summary": "Asana announced Agentic Work Management, AI Teammates, Asana Dash, and upcoming apps for IT, builders, and client work, all built around shared plans and governance.",
+              "why": "This is a clear market signal that agents are being packaged as teammates inside existing work systems, not only chatbots or coding tools.",
+              "action": "Prototype one internal workflow where an agent owns status drafting, asset checklist updates, or client follow-up summaries while a human keeps approval.",
+              "teacher": "Good classroom example: agents need shared context, roles, permissions, and memory before they become useful team members.",
+              "link": "https://investors.asana.com/news-releases/news-release-details/asana-unveils-operating-system-human-agent-teams"
+            },
+            {
+              "n": 3,
+              "category": "Cursor 3.7 turns",
+              "title": "Cursor 3.7 turns visual UI feedback and SDK persistence into agent controls",
+              "source": "cursor.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor's latest changelog highlights browser Design Mode improvements, voice feedback, multi-select UI targeting, custom stores, custom tools, and nested subagents.",
+              "why": "Coding agents are becoming visual production tools. The next leverage point is steering UI work by pointing, selecting, speaking, and preserving run state.",
+              "action": "Test a UI revision workflow where the designer selects two components in-browser and asks the agent to match spacing, hierarchy, or states.",
+              "teacher": "Show the difference between text prompting and grounded visual prompting: the agent gets element context instead of guessing from a screenshot.",
+              "link": "https://cursor.com/en-US/changelog"
+            },
+            {
+              "n": 4,
+              "category": "Vercel updates legal",
+              "title": "Vercel updates legal terms around autonomous AI actions and shared responsibility",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel's changelog notes that agentic workflows now grant tools access to infrastructure, so terms are clarifying responsibility for actions by AI functionality and connected third-party tools.",
+              "why": "Platforms are normalizing agents that can deploy, spend, and mutate production systems. Legal and operational controls will matter as much as prompt quality.",
+              "action": "Add an agent permission checklist before giving any tool deploy, billing, database, or secrets access.",
+              "teacher": "Use this to teach the new risk model: when agents act through your account, the boundary between user action and tool action gets blurry.",
+              "link": "https://vercel.com/changelog"
+            },
+            {
+              "n": 5,
+              "category": "Open Design brings",
+              "title": "Open Design brings local-first design artifacts to mainstream coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The GitHub project positions itself as an open-source Claude Design alternative with design systems, skills, plugins, HTML/PDF/PPTX/MP4 export, and adapters for Claude Code, Codex, Cursor, Copilot, and more.",
+              "why": "Design workflows are moving into agent-readable files and reusable skills. This is especially relevant for 3D/design makers who need brand-consistent output fast.",
+              "action": "Study its DESIGN.md and skill structure as a reference for your own branded agent workflow templates.",
+              "teacher": "Strong example of the shift from canvas-only design to design systems as executable instructions for agents.",
+              "link": "https://github.com/nexu-io/open-design"
+            },
+            {
+              "n": 6,
+              "category": "Hacker News makers",
+              "title": "Hacker News makers are exploring VM-like sandboxes for unsafe vibe-coding loops",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Show HN thread around seven-up discusses isolating coding agents with local VM-like workflows and disk snapshots when agents need shell access, browsers, and dependencies.",
+              "why": "Maker adoption is hitting the same wall repeatedly: autonomy needs permissions, but permissions create real local-machine risk.",
+              "action": "For agent experiments, use disposable worktrees, containers, or VM/sandbox layers before enabling broad shell access.",
+              "teacher": "Good safety lesson: the more autonomous the agent, the more the environment must be disposable and observable.",
+              "link": "https://news.ycombinator.com/item?id=46913404"
+            },
+            {
+              "n": 7,
+              "category": "Reddit design-system discussion",
+              "title": "Reddit design-system discussion shows teams testing AI-first workflows beyond Figma",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/DesignSystems thread asks whether teams are moving away from Figma toward Claude, MCP, Claude Design, or other AI-driven workflows.",
+              "why": "Designers are not only asking which tool is best; they are rethinking whether the central artifact is a Figma file, a design system, code, or an agent workflow.",
+              "action": "Track which parts of your design workflow must remain visual and which can become reusable agent instructions or component rules.",
+              "teacher": "Useful prompt for students: what should stay in a human canvas, and what should become machine-readable design operations?",
+              "link": "https://www.reddit.com/r/DesignSystems/comments/1tuhvu2/anyone_without_using_figma_love_to_hear_your_new/"
+            },
+            {
+              "n": 8,
+              "category": "Public X discussion",
+              "title": "Public X discussion frames Figma MCP as design-system-native agent handoff",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A widely viewed X post highlights Figma's use_figma MCP tool and skills, arguing that agents can write native Figma assets against real component libraries and tokens.",
+              "why": "The strongest design-agent workflows will not generate random mockups; they will read the existing design system and modify native assets.",
+              "action": "If using Figma, create one small skill that defines spacing, type scale, component rules, and forbidden visual patterns before agent handoff.",
+              "teacher": "This is a good example of grounding: the agent should use the team's actual components, not invent a new visual language.",
+              "link": "https://x.com/kloss_xyz/status/2036518085507813663"
+            },
+            {
+              "n": 9,
+              "category": "AgenticDev tracks the",
+              "title": "AgenticDev tracks the new cost, privacy, and proxy layer around coding agents",
+              "source": "agenticdev.blog",
+              "relevance": "Intermediate",
+              "summary": "AgenticDev is collecting signals around tools such as token reducers, privacy proxies, and enterprise spend controls for agent fleets.",
+              "why": "The market is forming around the unglamorous layer: cost control, redaction, logs, model routing, and policy enforcement.",
+              "action": "Start logging token spend and failure reasons per agent task, not just per model call.",
+              "teacher": "Teach agent ROI as an operations question: time saved minus review time, failure cleanup, model cost, and security overhead.",
+              "link": "https://agenticdev.blog/"
+            },
+            {
+              "n": 10,
+              "category": "GitAgentProtocol proposes git-native",
+              "title": "GitAgentProtocol proposes git-native identity and collaboration patterns for agents",
+              "source": "gitagent.sh",
+              "relevance": "Intermediate",
+              "summary": "GitAgentProtocol presents an open standard for git-native agents with customizable agent repos, skills, environment-based credentials, and upstream collaboration.",
+              "why": "Agent identity, provenance, and portable skill bundles are becoming important as people run more than one agent across projects.",
+              "action": "Keep agent behavior in versioned files such as skills, prompts, policies, and job cards so outputs are auditable and reusable.",
+              "teacher": "Use git-native agents to explain why provenance matters: who changed what, under which instructions, using which tools.",
+              "link": "https://www.gitagent.sh/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-07 15",
       "label": "2026-06-07 · 14:55",
