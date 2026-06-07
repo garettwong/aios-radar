@@ -204,11 +204,14 @@
         (isSaved(s) ? '<span class="saved-flag">★ SAVED</span>' : "") +
         (isRead(s) ? '<span class="read-flag">✓ READ</span>' : "") + "</div>" +
       '<div class="signal-details">' +
+        fr("📡", "SIGNAL", s.detail, "f-why") +
         fr("🎯", "PAINPOINT", s.painpoint, "f-sum") +
         fr("👥", "WHO HAS THE PAIN", s.who, "f-why") +
         fr("💰", "WHY THIS BECOMES MONEY", s.why, "f-teach") +
         fr("🚀", "FIRST MOVE THIS WEEK", s.action, "f-act") +
         fr("🧰", "SERVICE / MINI-SAAS IDEA", s.service, "f-sum") +
+        fr("🔎", "CONFIDENCE", s.confidence, "f-teach") +
+        (s.source ? `<div class="frame-source pp-srcs">📚 ${esc(s.source)}</div>` : "") +
         sourceRow(s.link) +
       "</div>";
     card.querySelector(".ca.read").addEventListener("click", (e) => { e.stopPropagation(); toggleRead(s); });
@@ -256,22 +259,22 @@
         host.appendChild(el("div", "empty-note", savedOnly ? "No saved items here yet — tap ★ on a card to save it." : "Nothing unread — switch off “Unread only” to see your read items."));
       }
     });
-    // 3rd feed — AI OPPORTUNITIES (Painpoint Scout), full-width; shows only when present
-    var ppSec = $("col-painpoint");
-    if (ppSec) {
-      var pp = (DATA.briefs || []).find(function (b) { return b && b.id === "painpoint"; });
-      var psigs = pp ? (pp.signals || []) : [];
-      if (psigs.length) {
-        ppSec.hidden = false;
-        if ($("painpoint-title")) $("painpoint-title").textContent = (pp.title || "AI OPPORTUNITIES").toUpperCase();
-        if ($("painpoint-subtitle")) $("painpoint-subtitle").textContent = pp.subtitle || "";
-        var ph = $("painpoint-signals"); ph.innerHTML = "";
-        var pl = psigs.filter(function (s) { return passFilter(s) && passView(s); });
-        pl.forEach(function (s) { ph.appendChild(painpointCard(Object.assign({ briefDate: pp.date, briefId: "painpoint" }, s))); });
-        if ($("painpoint-count")) $("painpoint-count").textContent = psigs.filter(function (s) { return passFilter(s) && !isRead(s); }).length + " new";
-        if (!pl.length) ph.appendChild(el("div", "empty-note", "Nothing unread here — toggle Unread-only off."));
-      } else { ppSec.hidden = true; }
-    }
+    // 3rd + 4th feeds — AI OPPORTUNITIES (Painpoint) + AI NEWS (Hermes); full-width, shown only when present
+    [["col-painpoint", "painpoint"], ["col-hermes", "hermes"]].forEach(function (pair) {
+      var sec = $(pair[0]); if (!sec) return;
+      var brief = (DATA.briefs || []).find(function (b) { return b && b.id === pair[1]; });
+      var sg = brief ? (brief.signals || []) : [];
+      if (sg.length) {
+        sec.hidden = false;
+        if ($(pair[1] + "-title")) $(pair[1] + "-title").textContent = (brief.title || "").toUpperCase();
+        if ($(pair[1] + "-subtitle")) $(pair[1] + "-subtitle").textContent = brief.subtitle || "";
+        var h = $(pair[1] + "-signals"); h.innerHTML = "";
+        var l = sg.filter(function (s) { return passFilter(s) && passView(s); });
+        l.forEach(function (s) { h.appendChild(painpointCard(Object.assign({ briefDate: brief.date, briefId: pair[1] }, s))); });
+        if ($(pair[1] + "-count")) $(pair[1] + "-count").textContent = sg.filter(function (s) { return passFilter(s) && !isRead(s); }).length + " new";
+        if (!l.length) h.appendChild(el("div", "empty-note", "Nothing unread here — toggle Unread-only off."));
+      } else { sec.hidden = true; }
+    });
   }
 
   /* ---------------- stats / relevance / actions ---------------- */
