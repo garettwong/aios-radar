@@ -97,3 +97,14 @@
 .hq-lock-btn:disabled { opacity: .6; cursor: default; }
 .hq-lock-msg { color: var(--amber); font-size: calc(12.5px * var(--fs)); min-height: 18px; margin-top: 12px; }
 .hq-lock-diag { margin-top: 14px; font-family: var(--mono); font-size: 10px; letter-spacing: .3px; color: var(--ink-3); opacity: .85; }
+
+/* tap-to-check cockpit items */
+.hq-taphint { margin-top: 10px; font-size: calc(12px * var(--fs)); color: var(--cyan); opacity: .9; }
+.hq-focus li, .hq-actions li, .hq-row[data-k] { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.hq-focus li.done:before { content: "✓"; background: rgba(74,222,128,.18); color: var(--green); border-color: var(--green-dim); }
+.hq-focus li.done .hq-t { text-decoration: line-through; color: var(--ink-3); }
+.hq-focus li.done .hq-why { opacity: .55; }
+.hq-actions li.done { color: var(--green); text-decoration: line-through; }
+.hq-actions li.done:before { content: "☑"; color: var(--green); }
+.hq-row.done { opacity: .5; }
+.hq-row.done .hq-name { text-decoration: line-through; }

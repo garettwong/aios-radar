@@ -297,6 +297,11 @@
   }
 
   /* ---------------- HQ cockpit (once) ---------------- */
+  var HQ_CHK = "hq_checks_v1";
+  var hqChecks = (function () { try { return JSON.parse(localStorage.getItem(HQ_CHK) || "{}"); } catch (e) { return {}; } })();
+  function hqSaveChecks() { try { localStorage.setItem(HQ_CHK, JSON.stringify(hqChecks)); } catch (e) {} }
+  function hqKey(s) { var h = 5381, t = String(s || ""); for (var i = 0; i < t.length; i++) h = (((h << 5) + h) ^ t.charCodeAt(i)) >>> 0; return "k" + h.toString(16); }
+  function hqIsDone(s) { return !!hqChecks[hqKey(s)]; }
   function hqTagClass(tag) {
     const t = String(tag || "").toLowerCase();
     if (/\$|money|bill|teach|client/.test(t)) return "tag-money";
@@ -305,7 +310,7 @@
     return "";
   }
   function hqRow(name, tag, note, next) {
-    return `<div class="hq-row"><div class="hq-row-top"><span class="hq-name">${esc(name)}</span>` +
+    return `<div class="hq-row ${hqIsDone(name) ? "done" : ""}" data-k="${hqKey(name)}" title="Tap to mark done"><div class="hq-row-top"><span class="hq-name">${esc(name)}</span>` +
       (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + `</div>` +
       (note ? `<div class="hq-note">${esc(note)}</div>` : "") +
       (next ? `<div class="hq-next"><b>next:</b> ${esc(next)}</div>` : "") + `</div>`;
@@ -325,13 +330,13 @@
     if (_lock) _lock.hidden = true;
     if (_content) _content.hidden = false;
     const hello = $("hq-hello");
-    if (hello) hello.innerHTML = (HQ.hello || "") + (HQ.updated ? `<span class="hq-upd">⟳ updated ${esc(HQ.updated)}</span>` : "");
+    if (hello) hello.innerHTML = (HQ.hello || "") + (HQ.updated ? `<span class="hq-upd">⟳ updated ${esc(HQ.updated)}</span>` : "") + `<div class="hq-taphint">💡 Tap any task or ☐ box to check it off — your ticks are saved on this device.</div>`;
     if ($("hq-today-date")) $("hq-today-date").textContent = (HQ.today && HQ.today.date) || "";
     const today = $("hq-today");
     if (today) {
       const f = (HQ.today && HQ.today.focus) || [];
       today.innerHTML = f.length
-        ? `<ul class="hq-focus">` + f.map((x) => `<li><div class="hq-t">${esc(x.t)}</div>${x.why ? `<div class="hq-why">${esc(x.why)}</div>` : ""}</li>`).join("") + `</ul>`
+        ? `<ul class="hq-focus">` + f.map((x) => `<li class="${hqIsDone(x.t) ? "done" : ""}" data-k="${hqKey(x.t)}" title="Tap to mark done"><div class="hq-t">${esc(x.t)}</div>${x.why ? `<div class="hq-why">${esc(x.why)}</div>` : ""}</li>`).join("") + `</ul>`
         : `<div class="hq-why">No focus set yet — your morning agent will fill this in.</div>`;
     }
     const m = HQ.money || {};
@@ -342,8 +347,8 @@
         (m.thisMonth ? `<div class="hq-money-head">${esc(m.thisMonth)}</div>` : "") +
         `<div class="hq-label">BRAINSTORM — pick what fits, ignore the rest</div>` +
         `<ul class="hq-bs">` + (m.brainstorm || []).map((b) => `<li><div class="bs-idea">${esc(b.idea)}</div><div class="bs-how">${esc(b.how)}</div></li>`).join("") + `</ul>` +
-        `<div class="hq-label">DO THIS</div>` +
-        `<ul class="hq-actions">` + (m.actions || []).map((a) => `<li>${esc(a)}</li>`).join("") + `</ul>`;
+        `<div class="hq-label">DO THIS — tap to tick off</div>` +
+        `<ul class="hq-actions">` + (m.actions || []).map((a) => `<li class="${hqIsDone(a) ? "done" : ""}" data-k="${hqKey(a)}" title="Tap to tick off">${esc(a)}</li>`).join("") + `</ul>`;
     }
     const pend = HQ.pending || [];
     if ($("hq-pending-count")) $("hq-pending-count").textContent = pend.length;
@@ -360,6 +365,18 @@
         (l.headline ? `<div class="hq-label">${esc(l.headline)}</div>` : "") +
         `<ul class="hq-learn-points">` + (l.points || []).map((p) => `<li>${p}</li>`).join("") + `</ul>` +
         (l.more ? `<div class="hq-more">${esc(l.more)}</div>` : "");
+    }
+    if (!renderHQ._wired) {
+      var hc = $("hq-content");
+      if (hc) hc.addEventListener("click", function (e) {
+        var it = e.target.closest("[data-k]");
+        if (!it || !hc.contains(it) || e.target.closest("a")) return;
+        var k = it.getAttribute("data-k");
+        if (hqChecks[k]) delete hqChecks[k]; else hqChecks[k] = 1;
+        hqSaveChecks();
+        it.classList.toggle("done");
+      });
+      renderHQ._wired = true;
     }
   }
 
