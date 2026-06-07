@@ -365,6 +365,13 @@
   function hqApplyOrder(sec) { var arr = hqSecArr(sec); if (!Array.isArray(arr) || !hqOrd[sec]) return arr; var o = hqOrd[sec]; arr.sort(function (a, b) { var ia = o.indexOf(hqSecKey(sec, a)); var ib = o.indexOf(hqSecKey(sec, b)); return (ia < 0 ? 9999 : ia) - (ib < 0 ? 9999 : ib); }); return arr; }
   function hqMove(sec, idx, dir) { var arr = hqSecArr(sec); if (!Array.isArray(arr)) return; var j = idx + dir; if (j < 0 || j >= arr.length) return; var t = arr[idx]; arr[idx] = arr[j]; arr[j] = t; hqOrd[sec] = arr.map(function (x) { return hqSecKey(sec, x); }); hqSaveOrd(); renderHQ(); }
   function hqOrdCtrl(sec, idx) { return '<span class="hq-ord"><button class="hq-arrow" data-move="-1" data-sec="' + sec + '" data-i="' + idx + '" title="Move up" aria-label="Move up">▲</button><button class="hq-arrow" data-move="1" data-sec="' + sec + '" data-i="' + idx + '" title="Move down" aria-label="Move down">▼</button></span>'; }
+  /* delete = hide on THIS device (the published page is read-only, so it can't touch the master copy on your PC).
+     To erase from the source everywhere, the tool does it ("remove X" to Claude/OpenClaw). */
+  var HQ_DEL = "hq_deleted_v1";
+  var hqDel = (function () { try { return JSON.parse(localStorage.getItem(HQ_DEL) || "{}"); } catch (e) { return {}; } })();
+  function hqSaveDel() { try { localStorage.setItem(HQ_DEL, JSON.stringify(hqDel)); } catch (e) {} }
+  function hqIsDeleted(name) { return !!hqDel[hqKey(name)]; }
+  function hqDelCtrl() { return '<button class="hq-del" data-del="1" title="Delete" aria-label="Delete">🗑</button>'; }
   function hqTagClass(tag) {
     const t = String(tag || "").toLowerCase();
     if (/\$|money|bill|teach|client/.test(t)) return "tag-money";
@@ -374,7 +381,7 @@
   }
   function hqRow(name, tag, note, next, sec, idx) {
     return `<div class="hq-row ${hqIsDone(name) ? "done" : ""}" data-k="${hqKey(name)}" title="Tap to mark done"><div class="hq-row-top"><span class="hq-name">${esc(name)}</span>` +
-      `<span class="hq-rt">` + (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + hqOrdCtrl(sec, idx) + `</span></div>` +
+      `<span class="hq-rt">` + (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + hqOrdCtrl(sec, idx) + hqDelCtrl() + `</span></div>` +
       (note ? `<div class="hq-note">${esc(note)}</div>` : "") +
       (next ? `<div class="hq-next"><b>next:</b> ${esc(next)}</div>` : "") + `</div>`;
   }
@@ -415,11 +422,11 @@
         `<div class="hq-label">DO THIS — tap to tick off</div>` +
         `<ul class="hq-actions">` + acts.map((a, i) => `<li class="${hqIsDone(a) ? "done" : ""}" data-k="${hqKey(a)}" title="Tap to tick off">${hqOrdCtrl("actions", i)}${esc(a)}</li>`).join("") + `</ul>`;
     }
-    const pend = hqApplyOrder("pending") || [];
+    const pend = (hqApplyOrder("pending") || []).filter(function (p) { return !hqIsDeleted(p.name); });
     if ($("hq-pending-count")) $("hq-pending-count").textContent = pend.length;
     const pendHost = $("hq-pending");
     if (pendHost) pendHost.innerHTML = pend.map((p, i) => hqRow(p.name, p.tag, p.note, null, "pending", i)).join("");
-    const wish = hqApplyOrder("wishlist") || [];
+    const wish = (hqApplyOrder("wishlist") || []).filter(function (w) { return !hqIsDeleted(w.name); });
     if ($("hq-wish-count")) $("hq-wish-count").textContent = wish.length;
     const wishHost = $("hq-wish");
     if (wishHost) wishHost.innerHTML = wish.map((w, i) => hqRow(w.name, w.status, null, w.next, "wishlist", i)).join("");
@@ -436,6 +443,15 @@
       if (hc) hc.addEventListener("click", function (e) {
         var mv = e.target.closest("[data-move]");
         if (mv && hc.contains(mv)) { hqMove(mv.getAttribute("data-sec"), +mv.getAttribute("data-i"), +mv.getAttribute("data-move")); return; }
+        var del = e.target.closest("[data-del]");
+        if (del && hc.contains(del)) {
+          var drow = del.closest("[data-k]");
+          var dnm = drow && drow.querySelector(".hq-name") ? drow.querySelector(".hq-name").textContent : "this item";
+          if (window.confirm("Delete “" + dnm + "”?\n\nThis removes it from your list on THIS device. To erase it everywhere, tell Claude or OpenClaw:  remove " + dnm)) {
+            if (drow) { hqDel[drow.getAttribute("data-k")] = 1; hqSaveDel(); renderHQ(); }
+          }
+          return;
+        }
         var it = e.target.closest("[data-k]");
         if (!it || !hc.contains(it) || e.target.closest("a")) return;
         var k = it.getAttribute("data-k");
