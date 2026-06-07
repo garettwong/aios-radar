@@ -606,6 +606,20 @@
       ? `📝 <b>TO-DO</b> — your private notes &amp; follow-ups. Add one from the box at the bottom of any news card; set a date to get a reminder.`
       : `📡 <b>RADAR</b> — your <b>newest</b> email brief only (auto-pulled every 3h). Step back through past briefs with 📅 EDITION; the full history is in 📚 LIBRARY.`;
   }
+  function setupFeedTabs() {
+    var rv = $("radar-view"); if (!rv) return;
+    var FKEY = "aios_feed_v1";
+    function setFeed(f) {
+      rv.setAttribute("data-feed", f);
+      document.querySelectorAll("#feedtabs .ftab").forEach(function (b) { b.classList.toggle("active", b.dataset.feed === f); });
+      try { localStorage.setItem(FKEY, f); } catch (e) {}
+    }
+    document.querySelectorAll("#feedtabs .ftab").forEach(function (b) {
+      b.addEventListener("click", function () { setFeed(b.dataset.feed); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    });
+    var saved = null; try { saved = localStorage.getItem(FKEY); } catch (e) {}
+    setFeed(saved || "trend");
+  }
   function setupNav() {
     document.querySelectorAll(".vnav").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -1009,6 +1023,7 @@
   renderProfile();
   setupLibrary();
   setupNav();
+  setupFeedTabs();
   setupTodo();
   setupGlobalSearch();
   setupAiKey();

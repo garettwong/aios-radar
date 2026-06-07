@@ -628,6 +628,24 @@ code {
 .pp-list .signal-title::after { content: " ▸"; color: var(--ink-3); font-weight: 400; }
 .pp-list .signal.open .signal-title::after { content: " ▾"; color: var(--cyan); }
 .pp-srcs { color: var(--ink-3); font-size: calc(12px * var(--fs)); margin-top: 8px; line-height: 1.5; }
+
+/* ===================== RADAR feed tabs (switch between the 4 feeds) ===================== */
+.feedtabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 2px 0 14px; }
+.ftab { font-family: var(--mono); font-size: calc(12.5px * var(--fs)); padding: 10px 15px; border: 1px solid var(--border-2); background: var(--panel); color: var(--ink-2); border-radius: 9px; cursor: pointer; white-space: nowrap; }
+.ftab:hover { color: var(--ink); border-color: var(--border-2); }
+.ftab.active { background: rgba(54,214,231,.14); color: var(--cyan); border-color: var(--cyan-dim); font-weight: 600; }
+/* show ONE feed at a time based on the selected tab */
+#radar-view[data-feed] .grid > .column,
+#radar-view[data-feed] .side-rail,
+#radar-view[data-feed] #col-painpoint,
+#radar-view[data-feed] #col-hermes { display: none; }
+#radar-view[data-feed="trend"] .grid,
+#radar-view[data-feed="job"] .grid { display: block; }
+#radar-view[data-feed="trend"] #col-trend { display: block; }
+#radar-view[data-feed="job"] #col-job { display: block; }
+#radar-view[data-feed="painpoint"] #col-painpoint { display: block; }
+#radar-view[data-feed="hermes"] #col-hermes { display: block; }
+#radar-view[data-feed] #col-painpoint, #radar-view[data-feed] #col-hermes { margin-top: 0; }
 .tag.pp-score { font-weight: 700; }
 .pp-score.pp-hi { color: var(--green); border-color: var(--green-dim); }
 .pp-score.pp-mid { color: var(--amber); border-color: #7a5a12; }
