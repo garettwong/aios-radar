@@ -302,6 +302,14 @@
   function hqSaveChecks() { try { localStorage.setItem(HQ_CHK, JSON.stringify(hqChecks)); } catch (e) {} }
   function hqKey(s) { var h = 5381, t = String(s || ""); for (var i = 0; i < t.length; i++) h = (((h << 5) + h) ^ t.charCodeAt(i)) >>> 0; return "k" + h.toString(16); }
   function hqIsDone(s) { return !!hqChecks[hqKey(s)]; }
+  var HQ_ORD = "hq_order_v1";
+  var hqOrd = (function () { try { return JSON.parse(localStorage.getItem(HQ_ORD) || "{}"); } catch (e) { return {}; } })();
+  function hqSaveOrd() { try { localStorage.setItem(HQ_ORD, JSON.stringify(hqOrd)); } catch (e) {} }
+  function hqSecArr(sec) { var H = window.DASHBOARD_HQ || {}; return sec === "today" ? (H.today || {}).focus : sec === "brainstorm" ? (H.money || {}).brainstorm : sec === "actions" ? (H.money || {}).actions : sec === "pending" ? H.pending : sec === "wishlist" ? H.wishlist : null; }
+  function hqSecKey(sec, it) { return sec === "today" ? hqKey(it.t) : sec === "brainstorm" ? hqKey(it.idea) : sec === "actions" ? hqKey(it) : hqKey(it.name); }
+  function hqApplyOrder(sec) { var arr = hqSecArr(sec); if (!Array.isArray(arr) || !hqOrd[sec]) return arr; var o = hqOrd[sec]; arr.sort(function (a, b) { var ia = o.indexOf(hqSecKey(sec, a)); var ib = o.indexOf(hqSecKey(sec, b)); return (ia < 0 ? 9999 : ia) - (ib < 0 ? 9999 : ib); }); return arr; }
+  function hqMove(sec, idx, dir) { var arr = hqSecArr(sec); if (!Array.isArray(arr)) return; var j = idx + dir; if (j < 0 || j >= arr.length) return; var t = arr[idx]; arr[idx] = arr[j]; arr[j] = t; hqOrd[sec] = arr.map(function (x) { return hqSecKey(sec, x); }); hqSaveOrd(); renderHQ(); }
+  function hqOrdCtrl(sec, idx) { return '<span class="hq-ord"><button class="hq-arrow" data-move="-1" data-sec="' + sec + '" data-i="' + idx + '" title="Move up" aria-label="Move up">▲</button><button class="hq-arrow" data-move="1" data-sec="' + sec + '" data-i="' + idx + '" title="Move down" aria-label="Move down">▼</button></span>'; }
   function hqTagClass(tag) {
     const t = String(tag || "").toLowerCase();
     if (/\$|money|bill|teach|client/.test(t)) return "tag-money";
@@ -309,9 +317,9 @@
     if (/coded|idea|pending|after|ready/.test(t)) return "tag-status";
     return "";
   }
-  function hqRow(name, tag, note, next) {
+  function hqRow(name, tag, note, next, sec, idx) {
     return `<div class="hq-row ${hqIsDone(name) ? "done" : ""}" data-k="${hqKey(name)}" title="Tap to mark done"><div class="hq-row-top"><span class="hq-name">${esc(name)}</span>` +
-      (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + `</div>` +
+      `<span class="hq-rt">` + (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + hqOrdCtrl(sec, idx) + `</span></div>` +
       (note ? `<div class="hq-note">${esc(note)}</div>` : "") +
       (next ? `<div class="hq-next"><b>next:</b> ${esc(next)}</div>` : "") + `</div>`;
   }
@@ -334,30 +342,32 @@
     if ($("hq-today-date")) $("hq-today-date").textContent = (HQ.today && HQ.today.date) || "";
     const today = $("hq-today");
     if (today) {
-      const f = (HQ.today && HQ.today.focus) || [];
+      const f = hqApplyOrder("today") || [];
       today.innerHTML = f.length
-        ? `<ul class="hq-focus">` + f.map((x) => `<li class="${hqIsDone(x.t) ? "done" : ""}" data-k="${hqKey(x.t)}" title="Tap to mark done"><div class="hq-t">${esc(x.t)}</div>${x.why ? `<div class="hq-why">${esc(x.why)}</div>` : ""}</li>`).join("") + `</ul>`
+        ? `<ul class="hq-focus">` + f.map((x, i) => `<li class="${hqIsDone(x.t) ? "done" : ""}" data-k="${hqKey(x.t)}" title="Tap to mark done">${hqOrdCtrl("today", i)}<div class="hq-t">${esc(x.t)}</div>${x.why ? `<div class="hq-why">${esc(x.why)}</div>` : ""}</li>`).join("") + `</ul>`
         : `<div class="hq-why">No focus set yet — your morning agent will fill this in.</div>`;
     }
     const m = HQ.money || {};
     if ($("hq-money-tag")) $("hq-money-tag").textContent = "this month";
     const money = $("hq-money");
     if (money) {
+      var bs = hqApplyOrder("brainstorm") || [];
+      var acts = hqApplyOrder("actions") || [];
       money.innerHTML =
         (m.thisMonth ? `<div class="hq-money-head">${esc(m.thisMonth)}</div>` : "") +
         `<div class="hq-label">BRAINSTORM — pick what fits, ignore the rest</div>` +
-        `<ul class="hq-bs">` + (m.brainstorm || []).map((b) => `<li><div class="bs-idea">${esc(b.idea)}</div><div class="bs-how">${esc(b.how)}</div></li>`).join("") + `</ul>` +
+        `<ul class="hq-bs">` + bs.map((b, i) => `<li>${hqOrdCtrl("brainstorm", i)}<div class="bs-idea">${esc(b.idea)}</div><div class="bs-how">${esc(b.how)}</div></li>`).join("") + `</ul>` +
         `<div class="hq-label">DO THIS — tap to tick off</div>` +
-        `<ul class="hq-actions">` + (m.actions || []).map((a) => `<li class="${hqIsDone(a) ? "done" : ""}" data-k="${hqKey(a)}" title="Tap to tick off">${esc(a)}</li>`).join("") + `</ul>`;
+        `<ul class="hq-actions">` + acts.map((a, i) => `<li class="${hqIsDone(a) ? "done" : ""}" data-k="${hqKey(a)}" title="Tap to tick off">${hqOrdCtrl("actions", i)}${esc(a)}</li>`).join("") + `</ul>`;
     }
-    const pend = HQ.pending || [];
+    const pend = hqApplyOrder("pending") || [];
     if ($("hq-pending-count")) $("hq-pending-count").textContent = pend.length;
     const pendHost = $("hq-pending");
-    if (pendHost) pendHost.innerHTML = pend.map((p) => hqRow(p.name, p.tag, p.note, null)).join("");
-    const wish = HQ.wishlist || [];
+    if (pendHost) pendHost.innerHTML = pend.map((p, i) => hqRow(p.name, p.tag, p.note, null, "pending", i)).join("");
+    const wish = hqApplyOrder("wishlist") || [];
     if ($("hq-wish-count")) $("hq-wish-count").textContent = wish.length;
     const wishHost = $("hq-wish");
-    if (wishHost) wishHost.innerHTML = wish.map((w) => hqRow(w.name, w.status, null, w.next)).join("");
+    if (wishHost) wishHost.innerHTML = wish.map((w, i) => hqRow(w.name, w.status, null, w.next, "wishlist", i)).join("");
     const l = HQ.learn || {};
     const learn = $("hq-learn");
     if (learn) {
@@ -369,6 +379,8 @@
     if (!renderHQ._wired) {
       var hc = $("hq-content");
       if (hc) hc.addEventListener("click", function (e) {
+        var mv = e.target.closest("[data-move]");
+        if (mv && hc.contains(mv)) { hqMove(mv.getAttribute("data-sec"), +mv.getAttribute("data-i"), +mv.getAttribute("data-move")); return; }
         var it = e.target.closest("[data-k]");
         if (!it || !hc.contains(it) || e.target.closest("a")) return;
         var k = it.getAttribute("data-k");
