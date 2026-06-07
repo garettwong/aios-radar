@@ -211,6 +211,7 @@
         fr("🚀", "FIRST MOVE THIS WEEK", s.action, "f-act") +
         fr("🧰", "SERVICE / MINI-SAAS IDEA", s.service, "f-sum") +
         fr("🔎", "CONFIDENCE", s.confidence, "f-teach") +
+        fr("🎓", "TEACHER NOTE", s.teacher, "f-teach") +
         (s.source ? `<div class="frame-source pp-srcs">📚 ${esc(s.source)}</div>` : "") +
         sourceRow(s.link) +
       "</div>";
@@ -525,6 +526,15 @@
     return true;
   }
   function libCard(it) {
+    var _rk = it.id || (it.title || "").slice(0, 120);
+    var _rf = window.AIOS_REFORMAT && window.AIOS_REFORMAT[_rk];
+    if (_rf && _rf.kind === "opp") {  // reformatted into the Hermes opportunity style
+      return painpointCard(Object.assign({}, it, {
+        category: it.type || "Opportunity", detail: _rf.signal, painpoint: _rf.painpoint,
+        who: _rf.who, why: _rf.why_money, action: _rf.first_move, service: "",
+        confidence: _rf.confidence, score: _rf.score, teacher: _rf.teacher || it.teacher || ""
+      }));
+    }
     const isTerm = it.type === "AI Terms";
     const card = el("article", "signal lib-card" + (isRead(it) ? " is-read" : "") + (isSaved(it) ? " is-saved" : ""));
     const link = it.link
