@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
   <title>AIOS · OCC AI Opportunity Radar</title>
-  <link rel="stylesheet" href="styles.css?v=1780806443" />
+  <link rel="stylesheet" href="styles.css?v=1780810041" />
+  <link rel="stylesheet" href="hq.css?v=10" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>" />
   <meta name="theme-color" content="#050607" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -44,7 +45,8 @@
 
   <!-- ====================== VIEW NAV ====================== -->
   <nav class="viewnav">
-    <button class="vnav active" data-view="radar">📡 RADAR <span class="vnav-sub">live</span></button>
+    <button class="vnav active" data-view="hq">🧭 HQ <span class="vnav-sub">today</span></button>
+    <button class="vnav" data-view="radar">📡 RADAR <span class="vnav-sub">live</span></button>
     <button class="vnav" data-view="library">📚 LIBRARY <span class="vnav-count" id="lib-nav-count">0</span></button>
     <button class="vnav" data-view="todo">📝 TO-DO <span class="vnav-count" id="todo-nav-count">0</span></button>
   </nav>
@@ -61,7 +63,34 @@
     <div class="search-results" id="search-results"></div>
   </div>
 
-  <div id="radar-view">
+  <!-- ====================== HQ / COCKPIT VIEW (default) ====================== -->
+  <div id="hq-view">
+    <section class="hq-hello" id="hq-hello"></section>
+    <div class="hq-grid">
+      <section class="panel hq-panel" id="hq-today-panel">
+        <div class="panel-head"><span class="panel-title">◎ TODAY</span><span class="panel-count" id="hq-today-date"></span></div>
+        <div id="hq-today"></div>
+      </section>
+      <section class="panel hq-panel" id="hq-money-panel">
+        <div class="panel-head"><span class="panel-title">💰 MONEY</span><span class="panel-count" id="hq-money-tag"></span></div>
+        <div id="hq-money"></div>
+      </section>
+      <section class="panel hq-panel" id="hq-pending-panel">
+        <div class="panel-head"><span class="panel-title">▤ PENDING</span><span class="panel-count" id="hq-pending-count">0</span></div>
+        <div id="hq-pending"></div>
+      </section>
+      <section class="panel hq-panel" id="hq-wish-panel">
+        <div class="panel-head"><span class="panel-title">⭐ WISHLIST</span><span class="panel-count" id="hq-wish-count">0</span></div>
+        <div id="hq-wish"></div>
+      </section>
+      <section class="panel hq-panel" id="hq-learn-panel">
+        <div class="panel-head"><span class="panel-title">📡 KEEP ME CURRENT</span></div>
+        <div id="hq-learn"></div>
+      </section>
+    </div>
+  </div>
+
+  <div id="radar-view" hidden>
   <!-- ====================== CONTROLS (top) ====================== -->
   <section class="controls">
     <div class="edition-wrap" id="edition-wrap" hidden>
@@ -194,12 +223,13 @@
     </div>
   </div>
 
-  <script src="data.js?v=1780806443"></script>
-  <script src="archive.js?v=1780806443"></script>
-  <script src="catalog.js?v=1780806443"></script>
-  <script src="profile.js?v=1780806443"></script>
-  <script src="basics.js?v=1780806443"></script>
-  <script src="answers.js?v=1780806443"></script>
-  <script src="app.js?v=1780806443"></script>
+  <script src="data.js?v=1780810041"></script>
+  <script src="archive.js?v=1780810041"></script>
+  <script src="catalog.js?v=1780810041"></script>
+  <script src="profile.js?v=1780810041"></script>
+  <script src="hq.js?v=10"></script>
+  <script src="basics.js?v=1780810041"></script>
+  <script src="answers.js?v=1780810041"></script>
+  <script src="app.js?v=1780810041"></script>
 </body>
 </html>

@@ -22,6 +22,7 @@
   const DATA = window.DASHBOARD_DATA;
   const ARCHIVE = window.DASHBOARD_ARCHIVE;
   const PROFILE = window.DASHBOARD_PROFILE;
+  const HQ = window.DASHBOARD_HQ;
   const CAT = window.AIOS_CATALOG;
   if (!DATA) {
     document.body.innerHTML = '<p style="font-family:monospace;color:#f87171;padding:40px">data.js failed to load.</p>';
@@ -295,6 +296,61 @@
     });
   }
 
+  /* ---------------- HQ cockpit (once) ---------------- */
+  function hqTagClass(tag) {
+    const t = String(tag || "").toLowerCase();
+    if (/\$|money|bill|teach|client/.test(t)) return "tag-money";
+    if (/messy|noise|todo|setup|dev/.test(t)) return "tag-messy";
+    if (/coded|idea|pending|after|ready/.test(t)) return "tag-status";
+    return "";
+  }
+  function hqRow(name, tag, note, next) {
+    return `<div class="hq-row"><div class="hq-row-top"><span class="hq-name">${esc(name)}</span>` +
+      (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + `</div>` +
+      (note ? `<div class="hq-note">${esc(note)}</div>` : "") +
+      (next ? `<div class="hq-next"><b>next:</b> ${esc(next)}</div>` : "") + `</div>`;
+  }
+  function renderHQ() {
+    if (!HQ) return;
+    const hello = $("hq-hello");
+    if (hello) hello.innerHTML = (HQ.hello || "") + (HQ.updated ? `<span class="hq-upd">⟳ updated ${esc(HQ.updated)}</span>` : "");
+    if ($("hq-today-date")) $("hq-today-date").textContent = (HQ.today && HQ.today.date) || "";
+    const today = $("hq-today");
+    if (today) {
+      const f = (HQ.today && HQ.today.focus) || [];
+      today.innerHTML = f.length
+        ? `<ul class="hq-focus">` + f.map((x) => `<li><div class="hq-t">${esc(x.t)}</div>${x.why ? `<div class="hq-why">${esc(x.why)}</div>` : ""}</li>`).join("") + `</ul>`
+        : `<div class="hq-why">No focus set yet — your morning agent will fill this in.</div>`;
+    }
+    const m = HQ.money || {};
+    if ($("hq-money-tag")) $("hq-money-tag").textContent = "this month";
+    const money = $("hq-money");
+    if (money) {
+      money.innerHTML =
+        (m.thisMonth ? `<div class="hq-money-head">${esc(m.thisMonth)}</div>` : "") +
+        `<div class="hq-label">BRAINSTORM — pick what fits, ignore the rest</div>` +
+        `<ul class="hq-bs">` + (m.brainstorm || []).map((b) => `<li><div class="bs-idea">${esc(b.idea)}</div><div class="bs-how">${esc(b.how)}</div></li>`).join("") + `</ul>` +
+        `<div class="hq-label">DO THIS</div>` +
+        `<ul class="hq-actions">` + (m.actions || []).map((a) => `<li>${esc(a)}</li>`).join("") + `</ul>`;
+    }
+    const pend = HQ.pending || [];
+    if ($("hq-pending-count")) $("hq-pending-count").textContent = pend.length;
+    const pendHost = $("hq-pending");
+    if (pendHost) pendHost.innerHTML = pend.map((p) => hqRow(p.name, p.tag, p.note, null)).join("");
+    const wish = HQ.wishlist || [];
+    if ($("hq-wish-count")) $("hq-wish-count").textContent = wish.length;
+    const wishHost = $("hq-wish");
+    if (wishHost) wishHost.innerHTML = wish.map((w) => hqRow(w.name, w.status, null, w.next)).join("");
+    const l = HQ.learn || {};
+    const learn = $("hq-learn");
+    if (learn) {
+      learn.innerHTML =
+        (l.headline ? `<div class="hq-label">${esc(l.headline)}</div>` : "") +
+        `<ul class="hq-learn-points">` + (l.points || []).map((p) => `<li>${p}</li>`).join("") + `</ul>` +
+        (l.more ? `<div class="hq-more">${esc(l.more)}</div>` : "");
+    }
+  }
+
   /* ---------------- profile (once) ---------------- */
   function renderProfile() {
     if (!PROFILE) return;
@@ -447,7 +503,9 @@
     const h = $("view-help"); if (!h) return;
     const briefs = libItems.filter((x) => x.source2 === "Brief").length;
     const arch = libItems.filter((x) => x.source2 === "Archive").length;
-    h.innerHTML = v === "library"
+    h.innerHTML = v === "hq"
+      ? `🧭 <b>HQ</b> — your cockpit: today's focus, money moves, pending work, and wishlist. Auto-updated each morning.`
+      : v === "library"
       ? `📚 <b>LIBRARY</b> — everything archived &amp; searchable: <b>${briefs}</b> signals from all your email briefs + <b>${arch}</b> reference items (incl. 242 AI terms).`
       : v === "todo"
       ? `📝 <b>TO-DO</b> — your private notes &amp; follow-ups. Add one from the box at the bottom of any news card; set a date to get a reminder.`
@@ -461,6 +519,7 @@
         if ($("search-view")) $("search-view").hidden = true;
         if ($("gs-clear")) $("gs-clear").hidden = true;
         document.querySelectorAll(".vnav").forEach((b) => b.classList.toggle("active", b === btn));
+        $("hq-view").hidden = (v !== "hq");
         $("radar-view").hidden = (v !== "radar");
         $("library-view").hidden = (v !== "library");
         $("todo-view").hidden = (v !== "todo");
@@ -469,7 +528,19 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     });
-    setViewHelp("radar");
+    if (!HQ) {
+      // No cockpit data (e.g. the PUBLIC github.io copy excludes the private hq.js):
+      // behave exactly like the classic radar — hide the HQ tab, default to RADAR.
+      var _hqb = document.querySelector('.vnav[data-view="hq"]');
+      if (_hqb) { _hqb.style.display = "none"; _hqb.classList.remove("active"); }
+      var _rb = document.querySelector('.vnav[data-view="radar"]');
+      if (_rb) _rb.classList.add("active");
+      if ($("hq-view")) $("hq-view").hidden = true;
+      if ($("radar-view")) $("radar-view").hidden = false;
+      setViewHelp("radar");
+    } else {
+      setViewHelp("hq");
+    }
   }
   function mount() {
     $("meta-updated").textContent = editions[currentIdx].label || META.latestBrief || "—";
@@ -481,6 +552,7 @@
       ? `<b>● DATA PARTIAL</b> &nbsp;${samples} sample card(s) — click ⟳ REFRESH.`
       : `<b>● LIVE</b> &nbsp;edition <b>${esc(editions[currentIdx].label || "")}</b> · ${editions.length} editions archived · ✓ marks read (stays, shaded) · ★ saves`;
     renderFocus(); renderStrip(); renderColumns(); renderStats(); renderRelevance(); renderActions();
+    renderHQ();
   }
 
   /* ======================================================================
@@ -811,12 +883,13 @@
       sv.hidden = true;
       const active = document.querySelector(".vnav.active");
       const v = active ? active.dataset.view : "radar";
+      $("hq-view").hidden = (v !== "hq");
       $("radar-view").hidden = (v !== "radar");
       $("library-view").hidden = (v !== "library");
       $("todo-view").hidden = (v !== "todo");
       return;
     }
-    $("radar-view").hidden = true; $("library-view").hidden = true; $("todo-view").hidden = true;
+    $("hq-view").hidden = true; $("radar-view").hidden = true; $("library-view").hidden = true; $("todo-view").hidden = true;
     sv.hidden = false;
     const libHits = libItems.filter((it) =>
       [it.title, it.summary, it.why, it.action, it.teacher, it.plain, it.terms, it.type, it.source].join(" ").toLowerCase().includes(q));

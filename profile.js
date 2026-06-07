@@ -10,11 +10,14 @@
 ============================================================================= */
 
 window.DASHBOARD_PROFILE = {
-  // Active projects — seeded from your real ongoing work; edit freely.
+  // Active projects — shown in the RADAR side-rail. The fuller picture
+  // (today / money / pending / wishlist) lives in the 🧭 HQ tab (hq.js).
   projects: [
-    { name: "Booth Render Pipeline",   status: "ACTIVE", note: "Deck → 8 photoreal renders (Blender depth + FLUX-Krea)" },
-    { name: "AIOS Opportunity Radar",  status: "LIVE",   note: "This dashboard — auto-refreshes from Gmail every hour" },
-    { name: "KOL Marketing Notes",     status: "ACTIVE", note: "HK ERB cert student booklet (python-docx build)" },
-    { name: "Trellis2 / ComfyUI 3D",   status: "ACTIVE", note: "Local image-to-3D server (FP8, port 8189)" },
+    { name: "ERB · 4 AI certs (instructor)", status: "ACTIVE", note: "Reusable slides + handout per course — recurring income" },
+    { name: "Booth Render Pipeline",         status: "ACTIVE", note: "Deck → 8 photoreal renders (Blender depth + FLUX-Krea). Consolidate 4 folders → 1" },
+    { name: "FlyTaxi app",                    status: "DEV",    note: "Define the smallest usable MVP" },
+    { name: "AIOS Cockpit + Radar",           status: "LIVE",   note: "This dashboard — HQ tab + news auto-refresh every 3h" },
+    { name: "garett-3d Experiment 1",         status: "ACTIVE", note: "Coded; run run_all.py → 65% gate" },
+    { name: "ComfyUI course",                 status: "ACTIVE", note: "Notes → sellable syllabus" },
   ],
 };
