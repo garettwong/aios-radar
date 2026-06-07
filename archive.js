@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-07 14:27",
-    "editions": 83
+    "fetchedAt": "2026-06-07 15:27",
+    "editions": 84
   },
   "editions": [
+    {
+      "key": "2026-06-07 15",
+      "label": "2026-06-07 · 14:55",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-07 · 14:55 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Sema4.ai upgrades enterprise",
+              "title": "Sema4.ai upgrades enterprise agent deployment with deeper business context and simplified rollout",
+              "source": "sema4.ai",
+              "relevance": "Intermediate",
+              "summary": "Sema4.ai announced a June 2 platform upgrade focused on smarter enterprise agents, business context capture, and easier deployment.",
+              "why": "Enterprise agent vendors are converging on context, governance, and rollout friction rather than only model choice.",
+              "action": "Watch for agent platforms that can ingest company process context without turning every deployment into custom consulting.",
+              "teacher": "Explain this as the move from demo agents to operating systems for repeatable internal work.",
+              "link": "https://sema4.ai/newsroom/sema4-ai-releases-advanced-platform-upgrade-delivering-smarter-agents-deeper-business-context-and-simplified-deployment/"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft explains the",
+              "title": "Microsoft explains the new Agent Experience stack for SDKs, CLIs, docs, MCP tools, and error messages",
+              "source": "developer.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft breaks down how coding agents assemble context, select tools, call MCP servers, consume docs, generate code, and self-correct.",
+              "why": "Tool makers now need to design for agents as first-class users, not just human developers.",
+              "action": "Audit your own tools: clear MCP descriptions, short examples, deterministic errors, and agent-readable docs.",
+              "teacher": "Useful framing: your docs, CLI output, and error messages are now part of the agent UX.",
+              "link": "https://developer.microsoft.com/blog/how-ai-coding-agents-actually-use-your-technology"
+            },
+            {
+              "n": 3,
+              "category": "Miasma worm shows",
+              "title": "Miasma worm shows AI coding agents are now a source-repo supply-chain attack surface",
+              "source": "safedep.io",
+              "relevance": "Intermediate",
+              "summary": "SafeDep reports a GitHub-repo arm of the Miasma worm that planted triggers across Claude Code, Gemini CLI, Cursor, VS Code, and npm test paths.",
+              "why": "Agent config files can become execution surfaces when developers clone and open compromised repos.",
+              "action": "Treat .claude, .cursor, .gemini, .vscode/tasks, and package scripts as security-reviewed code, especially in unknown repos.",
+              "teacher": "This is a strong example for teaching why agent permissions and repo trust boundaries matter.",
+              "link": "https://safedep.io/miasma-worm-ai-coding-agent-config-injection/"
+            },
+            {
+              "n": 4,
+              "category": "Runcap appears on",
+              "title": "Runcap appears on Hacker News as a local hard budget cap for coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Runcap is a MIT local CLI/gateway that estimates, caps, and compresses agent spending before calls hit OpenAI or Anthropic APIs.",
+              "why": "Token cost control is becoming a maker workflow feature, especially as multi-agent runs loop and re-read files.",
+              "action": "Test budget caps around long Codex/Claude runs and log when the cap prevents runaway work.",
+              "teacher": "Teach it as the circuit breaker pattern for agent work: estimate before launch, stop when stuck.",
+              "link": "https://github.com/kirder24-code/ai-agent-manager"
+            },
+            {
+              "n": 5,
+              "category": "PMB ships local-first",
+              "title": "PMB ships local-first persistent memory for Claude Code, Cursor, and Codex through MCP",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "PMB offers local-first agent memory via MCP, with code, PDF, Markdown, and chat import paths and no required cloud API key.",
+              "why": "Persistent memory is shifting from product-side magic to portable local infrastructure that multiple agents can share.",
+              "action": "Try a small project index and compare whether recall reduces repeated onboarding prompts across sessions.",
+              "teacher": "Good example of memory as retrieval infrastructure rather than another chat transcript.",
+              "link": "https://github.com/oleksiijko/pmb"
+            },
+            {
+              "n": 6,
+              "category": "Agents Remember adds",
+              "title": "Agents Remember adds drift-aware repository memory for coding agents in complex codebases",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Agents Remember stores repository memory by path, semantics, and code-graph relationships, with drift-aware updates as the code changes.",
+              "why": "Agent memory has to decay and update with the repo, or it becomes stale guidance that confidently misleads future runs.",
+              "action": "For large codebases, write memory next to high-friction modules and require updates when agents touch those paths.",
+              "teacher": "Teach the difference between static notes and drift-aware memory tied to actual code change.",
+              "link": "https://github.com/Foxfire1st/agents-remember-md"
+            },
+            {
+              "n": 7,
+              "category": "NVIDIA frames physical",
+              "title": "NVIDIA frames physical AI agent skills as a way to turn sensor data into editable 3D simulation worlds",
+              "source": "blogs.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA describes Cosmos 3-powered physical AI agent skills for data generation, reconstruction, simulation, policy training, and evaluation.",
+              "why": "3D and robotics workflows are moving toward agents that create and edit simulation worlds, not just generate images.",
+              "action": "Track Omniverse/Cosmos-style reconstruction tools for product visualization, synthetic data, and 3D scene iteration.",
+              "teacher": "Use this to connect creator 3D workflows with physical AI: editable scenes become training and design assets.",
+              "link": "https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/"
+            },
+            {
+              "n": 8,
+              "category": "PayPal uses APIMatic",
+              "title": "PayPal uses APIMatic context plugins to ground MCP-aware coding agents in real SDK behavior",
+              "source": "developer.paypal.com",
+              "relevance": "Intermediate",
+              "summary": "PayPal highlights an APIMatic Context Plugin that gives Claude Code, Cursor, and other MCP-aware agents authoritative PayPal SDK context.",
+              "why": "API companies are turning documentation into agent-callable context plugins to reduce hallucinated SDK usage.",
+              "action": "When integrating payment or API SDKs, prefer official context plugins or MCP tools over generic model memory.",
+              "teacher": "Strong teaching line: agent grounding should come from the API owner, not from whatever the model remembers.",
+              "link": "https://developer.paypal.com/community/blog/A%20New%20Context%20Plugin%20for%20AI-Assisted%20Coding%20with%20PayPal%20SDKs/"
+            },
+            {
+              "n": 9,
+              "category": "shadcn MCP server",
+              "title": "shadcn MCP server makes UI component registries directly callable from Claude Code, Cursor, and VS Code",
+              "source": "ui.shadcn.com",
+              "relevance": "Intermediate",
+              "summary": "shadcn/ui documents an MCP server that lets agentic editors access components, blocks, charts, and registry items directly.",
+              "why": "Frontend agents are becoming better when they can pull real design-system primitives instead of inventing UI from memory.",
+              "action": "Wire component registries into coding agents before asking for production UI revisions.",
+              "teacher": "This is the cleanest current example of design-system context becoming an agent tool.",
+              "link": "https://ui.shadcn.com/docs/mcp"
+            },
+            {
+              "n": 10,
+              "category": "Reddit maker signal:",
+              "title": "Reddit maker signal: AgentTrace turns Claude Code sessions into local receipts and risk flags",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker shared AgentTrace, an open-source local recorder that turns Claude Code sessions into receipts showing files, commands, failures, and risky actions.",
+              "why": "Builders want verifiable agent work, not just a confident final summary.",
+              "action": "Add a local trace or receipt step to long agent runs, especially before accepting changes in auth, secrets, deploy, or dependency files.",
+              "teacher": "Teach this as agent accountability: what changed, what ran, what failed, and what risk flags appeared.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1sly3jm/built_with_claude_project_showcase_megathread/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-07 · 14:49 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Flowgear Builder MCP",
+              "title": "Flowgear Builder MCP makes integration workflow building an AI-chat task",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "Flowgear launched Builder MCP so teams can build and test enterprise integration workflows directly from AI chat or IDE environments.",
+              "why": "Integration work is moving closer to prompt-led development, but clients will still need secure workflow design, testing, and handoff.",
+              "action": "Create a demo where an AI agent scaffolds one back-office integration, then document the security checks and approval points.",
+              "teacher": "Teach workflow automation as inputs, transformations, tool actions, error paths, and logs, not as a single magic prompt.",
+              "link": "https://www.prweb.com/releases/flowgear-launches-builder-mcp-to-bring-enterprise-integration-into-any-ai-chat-or-ide-302789942.html"
+            },
+            {
+              "n": 2,
+              "category": "TrustLogix TrustAI shows",
+              "title": "TrustLogix TrustAI shows agent data-security governance becoming paid work",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "TrustLogix launched TrustAI integration for Snowflake Cortex AI, focusing on access policies across users, agents, tools, and data.",
+              "why": "As agents touch real company data, governance becomes a practical consulting niche, especially for analytics and enterprise AI teams.",
+              "action": "Build a simple agent-governance checklist: data source, allowed fields, user role, tool scope, audit log, and denial behavior.",
+              "teacher": "Teach that useful agents need permission design; security is part of the product, not a final checkbox.",
+              "link": "https://www.prweb.com/releases/trustlogix-launches-trustai-integration-with-snowflake-ai-data-cloud-bringing-scalable-agentic-ai-data-security-to-enterprise-teams-302788964.html"
+            },
+            {
+              "n": 3,
+              "category": "Docusign AI Agents",
+              "title": "Docusign AI Agents make agreement workflows a sellable automation niche",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Docusign unveiled AI assistant and agent capabilities for agreement work, with AI-assisted web forms becoming available globally in June.",
+              "why": "Contracts, onboarding, and approvals are document-heavy workflows where small automation gains are easy for clients to value.",
+              "action": "Productize an agreement-flow audit: intake form, missing fields, routing rules, signature status, renewal reminders, and risk flags.",
+              "teacher": "Teach document agents with extraction, validation, approval, and exception handling as separate steps.",
+              "link": "https://www.prnewswire.com/news-releases/docusign-unveils-ai-assistant-and-agents-to-power-the-next-era-of-agreement-work-302777909.html"
+            },
+            {
+              "n": 4,
+              "category": "Siemens Fuse EDA",
+              "title": "Siemens Fuse EDA AI Agent shows specialist automation entering 3D IC and PCB workflows",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Siemens announced Fuse EDA AI Agent for semiconductor, 3D IC, and PCB workflows, using RAG, multimodal EDA data, MCP, and agent skills.",
+              "why": "Deep technical domains are adopting agents, which rewards specialists who can translate expert workflows into controlled automation.",
+              "action": "For 3D/design positioning, make a case-study template that maps domain constraints, reference data, tool actions, and review gates.",
+              "teacher": "Teach this as proof that agent skills are most valuable when attached to a real discipline, not generic prompt writing.",
+              "link": "https://www.prnewswire.com/news-releases/siemens-launches-fuse-eda-ai-agent-for-automation-across-semiconductor-3d-ic-and-pcb-system-workflows-302714880.html"
+            },
+            {
+              "n": 5,
+              "category": "Form.io governed agentic",
+              "title": "Form.io governed agentic coding stack creates compliance-aware app-building work",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Form.io introduced MCP Server, Skills, an agentic coding plugin, and a Universal Agent Gateway for governed app generation.",
+              "why": "Businesses want AI-built internal tools, but regulated teams need schema control, validation rules, permissions, and auditability.",
+              "action": "Offer an internal-tool prototype that includes a schema, access roles, validation rules, and agent-generated UI changes under review.",
+              "teacher": "Good lesson: a governed AI app is data model first, UI second, agent third.",
+              "link": "https://www.prnewswire.com/news-releases/formio-launches-enterprise-grade-toolset-for-governed-agentic-coding-302750946.html"
+            },
+            {
+              "n": 6,
+              "category": "FutureVault MCP turns",
+              "title": "FutureVault MCP turns document infrastructure into advisor-workflow automation",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "FutureVault launched MCP and an AI orchestration layer for financial-service document workflows, including next-best actions and secure document requests.",
+              "why": "Advisors, brokers, and operations teams pay for document chasing, prep summaries, and recurring review workflows to be reduced.",
+              "action": "Build a sample document-ops service: intake, missing-doc checklist, prep summary, follow-up task, and compliance note.",
+              "teacher": "Teach document automation around trust: permissions, source traceability, and human review before client-facing actions.",
+              "link": "https://www.prnewswire.com/news-releases/futurevault-launches-mcp-and-ai-orchestration-layer-enabling-enterprise-firms-to-connect-ai-directly-to-their-document-infrastructure-and-broader-ai-ecosystem-302747294.html"
+            },
+            {
+              "n": 7,
+              "category": "Mediabistro 3D Modeler",
+              "title": "Mediabistro 3D Modeler listing shows robotics and data-center visualization demand",
+              "source": "mediabistro.com",
+              "relevance": "Intermediate",
+              "summary": "A listing for a freelance 3D modeler in robotics and data centers asks for visualization skills in a technical design pipeline.",
+              "why": "AI infrastructure growth is creating visualization work around data centers, robotics, hardware, and future-facing industrial concepts.",
+              "action": "Prepare a mini portfolio section for AI infrastructure: server halls, robotic workcells, cutaways, lighting studies, and AI-assisted workflow notes.",
+              "teacher": "Useful 3D teaching angle: combine technical accuracy, reference discipline, and AI speed without making generic sci-fi renders.",
+              "link": "https://www.mediabistro.com/jobs/3539177292-3d-modeler-robotics-data-centers"
+            },
+            {
+              "n": 8,
+              "category": "Reddit part-time AI",
+              "title": "Reddit part-time AI Agent Engineer post shows learner-support agents as contract work",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Reddit hiring post seeks a part-time remote AI Agent Engineer for learner-support assistants in challenges and activities.",
+              "why": "Education companies need agents that tutor, coach, and guide without simply giving answers.",
+              "action": "Prototype a learning assistant that asks clarifying questions, gives hints, tracks progress, and escalates confusion to a human mentor.",
+              "teacher": "Teach the tutor pattern: diagnose, hint, check understanding, avoid answer-dumping, and log learning evidence.",
+              "link": "https://www.reddit.com/r/DeveloperJobs/comments/1tupvsg/hiring_ai_agent_engineer_parttime_remote_36_months/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit game-dev post",
+              "title": "Reddit game-dev post exposes a 3D preproduction service gap for AI-assisted concepts",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A game developer asked for an AI image generation agent to turn rough ideas into concept images before handing them to 3D artists.",
+              "why": "This is a real client pain: the market needs concept-to-production handoff, not just pretty AI images.",
+              "action": "Offer a service that converts rough prompts into approved concept sheets, model notes, turnaround references, and 3D artist briefs.",
+              "teacher": "Teach the handoff stack: prompt iterations, reference boards, proportions, materials, topology notes, and rejection criteria.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tqscic/looking_for_an_ai_image_generation_agent_that/"
+            },
+            {
+              "n": 10,
+              "category": "Remote NVIDIA K-Career",
+              "title": "Remote NVIDIA K-Career AI Education Manager signal highlights AI teaching pathways",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit job-board post surfaced a remote NVIDIA K-Career AI Education Manager role focused on education goals, developer needs, workforce priorities, and industry innovation.",
+              "why": "AI education is becoming a career lane across schools, developers, and workforce training, not just a classroom add-on.",
+              "action": "Build a short AI literacy workshop outline for creators or designers: tools, workflows, ethics, portfolio proof, and hands-on automation.",
+              "teacher": "Good course structure: one concept, one demo, one guided exercise, one job-market application per lesson.",
+              "link": "https://www.reddit.com/r/jobhuntify/comments/1ttva5p/remote_job_nvidia_kcareer_ai_education_manager/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-07 12",
       "label": "2026-06-07 · 11:59",
