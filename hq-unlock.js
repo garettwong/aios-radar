@@ -24,7 +24,7 @@
       host.innerHTML = shell(
         '<div class="hq-lock-ico">🔒</div>' +
         '<div class="hq-lock-title">Cockpit not set up yet</div>' +
-        '<div class="hq-lock-sub">On your PC, run <code>tools\\set-hq-password.ps1</code> to choose a password. Your private data is encrypted before it ever reaches this page.</div>');
+        '<div class="hq-lock-sub">On your PC, double-click <code>tools\\set-hq-password.bat</code> to choose a password. Your private data is encrypted before it ever reaches this page.</div>');
       return;
     }
     host.innerHTML = shell(
