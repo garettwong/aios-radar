@@ -38,18 +38,35 @@
     var input = host.querySelector("#hq-pw"), btn = host.querySelector("#hq-pw-go"),
         msg = host.querySelector("#hq-pw-msg"), rem = host.querySelector("#hq-pw-remember");
 
+    var inFlight = false;
     async function tryPw(pw, fromCache) {
+      pw = (pw || "").trim();
       if (!pw) { msg.textContent = "Type your password."; return; }
-      btn.disabled = true; msg.textContent = "Unlocking…";
+      if (inFlight) return;
+      if (!window.isSecureContext || !(window.crypto && window.crypto.subtle)) {
+        msg.textContent = "Secure unlock isn't available here — open the https:// link in Safari or Chrome.";
+        return;
+      }
+      inFlight = true; btn.disabled = true; msg.textContent = "Unlocking…";
+      var watchdog = setTimeout(function () {
+        if (!inFlight) return;
+        inFlight = false; btn.disabled = false;
+        msg.textContent = "Took too long — fully reload the page and try again.";
+      }, 12000);
       try {
         var obj = await decrypt(blob, pw);
+        clearTimeout(watchdog); inFlight = false;
         if (rem && rem.checked) { try { localStorage.setItem(PW_KEY, pw); } catch (e) {} }
         onUnlock(obj);
       } catch (e) {
-        btn.disabled = false;
-        msg.textContent = fromCache ? "Saved password no longer works — type it again." : "Wrong password.";
+        clearTimeout(watchdog); inFlight = false; btn.disabled = false;
+        var nm = (e && e.name) || "Error";
+        msg.textContent = (nm === "OperationError")
+          ? (fromCache ? "Saved password no longer works — type it again." : "Wrong password — try again.")
+          : ("Couldn't unlock (" + nm + "). Fully reload & retry.");
+        try { console.error("[HQ unlock]", e); } catch (e3) {}
         try { localStorage.removeItem(PW_KEY); } catch (e2) {}
-        if (input) { input.value = ""; input.focus(); }
+        if (input && !fromCache) { input.value = ""; input.focus(); }
       }
     }
 
