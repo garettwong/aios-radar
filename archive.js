@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-07 11:27",
-    "editions": 82
+    "fetchedAt": "2026-06-07 12:27",
+    "editions": 83
   },
   "editions": [
+    {
+      "key": "2026-06-07 12",
+      "label": "2026-06-07 · 11:59",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-07 · 11:59 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Anthropic maps a",
+              "title": "Anthropic maps a year of AI-enabled cyber threat patterns",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic mapped AI-enabled cyber activity against MITRE ATT&CK, showing models used for research, scripting, social engineering, and operations support.",
+              "why": "Agent adoption raises the cost of sloppy security. AI tools will be used on both the productivity and abuse sides.",
+              "action": "Add a lightweight threat-model step to agent projects: tools allowed, data exposed, logging, review gates, and abuse cases.",
+              "teacher": "Agent safety is not only model refusal; it is permissions, observability, and scoped tool access.",
+              "link": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+            },
+            {
+              "n": 2,
+              "category": "Google Colab CLI",
+              "title": "Google Colab CLI makes remote GPU runs agent-callable from the terminal",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google released a Colab CLI for requesting GPUs/TPUs, running local Python remotely, recovering artifacts, and saving notebook logs.",
+              "why": "Agent workflows need elastic compute without humans opening dashboards. This bridges local coding agents and cloud accelerator work.",
+              "action": "Add Colab CLI to the experimental ML toolkit and test one remote QLoRA or image-processing job with artifact recovery.",
+              "teacher": "Good agent tools return logs and files, not just terminal text.",
+              "link": "https://developers.googleblog.com/introducing-the-google-colab-cli/"
+            },
+            {
+              "n": 3,
+              "category": "Gemma 4 12B",
+              "title": "Gemma 4 12B targets local multimodal agents on ordinary laptops",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google shows Gemma 4 12B running local analysis, voice editing, coding, and LiteRT-LM local serving for agentic tools.",
+              "why": "Local agents are becoming realistic for private references, creator files, and fast offline iteration.",
+              "action": "Benchmark Gemma 4 12B through an OpenAI-compatible local endpoint against one writing task and one code-analysis task.",
+              "teacher": "Separate local-agent value into privacy, cost control, and responsiveness; do not sell it as frontier replacement.",
+              "link": "https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/"
+            },
+            {
+              "n": 4,
+              "category": "Google is consolidating",
+              "title": "Google is consolidating Gemini CLI into Antigravity CLI for multi-agent workflows",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google says Gemini CLI consumer traffic will transition to Antigravity CLI while keeping skills, hooks, subagents, and extensions in a unified platform.",
+              "why": "CLI agents are converging around shared harnesses, background execution, and multi-agent orchestration.",
+              "action": "Inventory any Gemini CLI-dependent scripts and note whether they need migration before June 18, 2026.",
+              "teacher": "Use this as a case study in avoiding single-vendor workflow lock-in around agent CLIs.",
+              "link": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
+            },
+            {
+              "n": 5,
+              "category": "Google A2UI v0.9",
+              "title": "Google A2UI v0.9 points to agent-generated UI using existing design systems",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "A2UI v0.9 gives agents a framework-agnostic way to declare UI intent while clients render with existing component catalogs across web and mobile.",
+              "why": "Generative UI is shifting from demos to production interfaces that can respect brand systems and frontend constraints.",
+              "action": "Prototype one small agent response rendered through a fixed component catalog instead of free-form HTML.",
+              "teacher": "Teach designers that agent UI should express intent and constraints, not bypass the design system.",
+              "link": "https://developers.googleblog.com/en/a2ui-v0-9-generative-ui/"
+            },
+            {
+              "n": 6,
+              "category": "Google ADK tutorial",
+              "title": "Google ADK tutorial shows how long-running agents can pause and resume safely",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google demonstrates an ADK onboarding agent that survives days or weeks using durable state, event-driven waits, and multi-agent delegation.",
+              "why": "Real workflows are not five-minute chats. Durable state and resumability are becoming core agent architecture.",
+              "action": "Create a simple paused-job pattern for one workflow: state schema, wait reason, resume trigger, and final artifact.",
+              "teacher": "Teach the difference between chat history and explicit workflow state.",
+              "link": "https://developers.googleblog.com/build-long-running-ai-agents-that-pause-resume-and-never-lose-context-with-adk/"
+            },
+            {
+              "n": 7,
+              "category": "Google Agents CLI",
+              "title": "Google Agents CLI packages cloud agent lifecycle work for coding assistants",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google introduced Agents CLI as a programmatic backbone for creating, evaluating, and deploying agents through coding tools such as Gemini CLI, Claude Code, and Cursor.",
+              "why": "Cloud platforms are making agent build/deploy paths agent-consumable, reducing documentation drag and local-to-cloud friction.",
+              "action": "Study the command shape and copy the pattern for internal wrappers: one clear command, skill context, deterministic output.",
+              "teacher": "The best infrastructure docs may become executable skills and CLIs that agents can call directly.",
+              "link": "https://developers.googleblog.com/agents-cli-in-agent-platform-create-to-production-in-one-cli/"
+            },
+            {
+              "n": 8,
+              "category": "Google I/O developer",
+              "title": "Google I/O developer recap puts WebMCP and Android CLI on the agent roadmap",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google framed I/O 2026 around independent agents, Antigravity 2.0, Android CLI skills, Chrome DevTools for agents, and WebMCP for browser-exposed tools.",
+              "why": "Agent interfaces are moving into operating systems, browsers, and mobile tooling, not just IDE sidebars.",
+              "action": "Track WebMCP and browser-agent APIs for future maker workflows that need reliable tool execution in web apps.",
+              "teacher": "Show how agent capability depends on structured tool surfaces, not just smarter prompts.",
+              "link": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/"
+            },
+            {
+              "n": 9,
+              "category": "Meshy 3D Agent",
+              "title": "Meshy 3D Agent brings conversational multi-step workflows to AI 3D creation",
+              "source": "meshy.ai",
+              "relevance": "Intermediate",
+              "summary": "Meshy launched a beta 3D agent that brainstorms, generates concepts, converts a selected direction into 3D, answers 3D questions, and exports standard formats.",
+              "why": "3D AI is moving from single-shot prompt outputs toward guided workflows that match how makers iterate.",
+              "action": "Run a small test brief with style constraints, export GLB/STL, and inspect geometry quality before trusting it for production.",
+              "teacher": "Judge AI 3D on topology, scale, export format, editability, and print/game readiness.",
+              "link": "https://www.meshy.ai/blog/meshy-3d-agent"
+            },
+            {
+              "n": 10,
+              "category": "Meshy Faithful Contouring",
+              "title": "Meshy Faithful Contouring tackles production bottlenecks in 3D voxel representation",
+              "source": "meshy.ai",
+              "relevance": "Intermediate",
+              "summary": "Meshy describes Faithful Contouring, a CVPR 2026 oral approach for sparse voxel tokens without SDF, watertighting, or Marching Cubes, targeting fast high-resolution mesh representation.",
+              "why": "AI 3D usefulness depends on geometry quality and representation, not only pretty previews.",
+              "action": "Add representation quality checks to AI 3D reviews: holes, watertightness, voxel/mesh fidelity, and downstream editability.",
+              "teacher": "Use this to explain why 3D generation has different failure modes than image generation.",
+              "link": "https://www.meshy.ai/blog/faithful-contouring-near-lossless-3d-voxel-representation"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-07 · 11:52 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Creatify Software Engineer",
+              "title": "Creatify Software Engineer Intern shows AI ad agents need full-stack builders",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Creatify is hiring a full-stack software engineering intern for its AI video advertising agent, with React/Python work across frontend, backend, product, and design collaboration.",
+              "why": "AI ad production is becoming an end-to-end operating system, not a single generator. That creates demand for people who can connect UX, data, publishing, and optimization.",
+              "action": "Build a small demo that takes a product brief, creates ad variants, logs performance hypotheses, and outputs a review dashboard.",
+              "teacher": "This is a good lesson for students: portfolio projects should show the whole workflow, not just a prompt result.",
+              "link": "https://wellfound.com/jobs/3994728-software-engineer-intern-2026"
+            },
+            {
+              "n": 2,
+              "category": "Klaviyo AI Engineer",
+              "title": "Klaviyo AI Engineer Intern shows marketing agents moving into production systems",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Klaviyo's internship focuses on backend systems, agentic architecture, evals, and production AI for marketing/customer experiences.",
+              "why": "Brands need agents that can plan campaigns, execute messages, and measure outcomes against business metrics.",
+              "action": "Package a consulting offer around AI marketing ops: data cleanup, campaign agent prototypes, and evaluation checklists.",
+              "teacher": "Teach agent work as reliability engineering plus marketing logic, not as prompt writing alone.",
+              "link": "https://wellfound.com/jobs/3484498-ai-engineer-intern-summer-2026"
+            },
+            {
+              "n": 3,
+              "category": "Northspyre AI Engineer",
+              "title": "Northspyre AI Engineer Intern applies agents to real-estate development operations",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Northspyre is hiring for autonomous agents that monitor, flag, and resolve issues across permitting, procurement, and project closeout.",
+              "why": "Complex offline industries are now looking for workflow agents that understand messy project data and human escalation.",
+              "action": "Prototype a real-estate project risk tracker that ingests emails, permits, budgets, and deadlines, then drafts next actions.",
+              "teacher": "This is a strong case study for vertical AI: choose one industry, learn its documents, then automate repeated coordination.",
+              "link": "https://wellfound.com/jobs/4109426-ai-engineer-intern-summer-2026"
+            },
+            {
+              "n": 4,
+              "category": "SubPlot AI Entrepreneurial",
+              "title": "SubPlot AI Entrepreneurial Intern blends agent platforms with sales and product validation",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "SubPlot is hiring a remote entrepreneurial intern for an AI SDR platform, combining product work, sales calls, and spin-out validation.",
+              "why": "AI-native jobs increasingly reward people who can test a market, talk to customers, and ship rough prototypes quickly.",
+              "action": "Create a niche AI SDR offer for one vertical: lead list, message variants, follow-up logic, and weekly conversion report.",
+              "teacher": "Useful lesson: agent builders need GTM taste. The product is only real when someone responds or pays.",
+              "link": "https://wellfound.com/jobs/4199335-ai-entrepreneurial-intern"
+            },
+            {
+              "n": 5,
+              "category": "Ditto.ai Engineering Intern",
+              "title": "Ditto.ai Engineering Intern frames consumer products around agent-driven experiences",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Ditto.ai describes an agentic social product where AI handles execution while engineers shape user-facing experiences.",
+              "why": "Consumer AI roles are moving from chatbot screens to agents that make decisions and coordinate real-world outcomes.",
+              "action": "For a portfolio, design a simple agent-driven consumer flow with observability: what the agent decided, why, and when a human can override.",
+              "teacher": "Teach UX for agents as trust design: visibility, feedback, correction, and graceful failure.",
+              "link": "https://wellfound.com/jobs/4053097-engineering-intern"
+            },
+            {
+              "n": 6,
+              "category": "Sendbird Product Marketing",
+              "title": "Sendbird Product Marketing Intern turns AI-agent customer service into GTM work",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Sendbird's product marketing internship includes tracking AI customer-service news, sales enablement, launch support, FAQs, and messaging.",
+              "why": "AI-agent companies need translators who can explain technical capability as business value for sales teams and clients.",
+              "action": "Build a sample enablement pack for an AI support agent: objection handling, competitor matrix, ROI calculator, and demo script.",
+              "teacher": "This is a practical path for non-engineers: become the person who turns AI capability into clear market positioning.",
+              "link": "https://wellfound.com/jobs/3541409-product-marketing-intern-spring-part-time"
+            },
+            {
+              "n": 7,
+              "category": "ScriptChain Health AI",
+              "title": "ScriptChain Health AI Agent Engineer Intern points agents at healthcare workflow automation",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "ScriptChain Health lists AI agent engineering internships inside a healthcare platform using AI to streamline back-office processes.",
+              "why": "Healthcare admin work is full of repeatable forms, calls, records, and compliance-sensitive decisions where assisted automation can save time.",
+              "action": "Study one healthcare admin workflow and map where an agent can draft, check, escalate, and log actions without pretending to replace clinicians.",
+              "teacher": "This is a good safety lesson: regulated workflows need audit trails and human approval, not black-box autonomy.",
+              "link": "https://wellfound.com/company/onyx-6/jobs"
+            },
+            {
+              "n": 8,
+              "category": "Tasklet Staff AI",
+              "title": "Tasklet Staff AI Agent Engineer shows senior demand for agent-core product infrastructure",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Tasklet is hiring a staff-level AI agent engineer for an agent app for knowledge work, pointing to demand for core agent architecture skills.",
+              "why": "The market is separating casual AI use from engineering roles that build memory, tool use, orchestration, evaluation, and product reliability.",
+              "action": "Build a reference agent stack: task queue, browser/tool calls, memory, eval logs, permission gates, and recovery from failed actions.",
+              "teacher": "Teach advanced students to document failure modes. Agent infrastructure portfolios should show how the system behaves when things go wrong.",
+              "link": "https://wellfound.com/jobs/3541203-staff-ai-agent-engineer"
+            },
+            {
+              "n": 9,
+              "category": "OtterlyAI API and",
+              "title": "OtterlyAI API and Claude Skill create sellable AI-search workflow services",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "OtterlyAI launched a public API, Claude Skill, and marketplace of 101+ AI-search marketing workflows for brand visibility across AI answer engines.",
+              "why": "AI search optimization is turning into a service category for agencies, freelancers, and automation consultants.",
+              "action": "Offer a monthly AI-search visibility audit: brand prompts, missing citations, content briefs, and automated reporting.",
+              "teacher": "Good teaching angle: AI SEO is not old keyword stuffing; it is evidence, citations, structured content, and answer-engine monitoring.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/01/3304018/0/en/OtterlyAI-Launches-a-Public-API-a-Claude-Skill-and-a-Marketplace-of-101-Marketing-Workflows-for-AI-Search.html"
+            },
+            {
+              "n": 10,
+              "category": "Hostinger Agentic Mail",
+              "title": "Hostinger Agentic Mail makes email infrastructure a niche for automation builders",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Hostinger launched Agentic Mail for developers building agents and automated workflows that need email to behave like infrastructure.",
+              "why": "Email remains the gateway for support, sales, invoices, approvals, and client coordination, so reliable agent-email plumbing is a valuable niche.",
+              "action": "Build a small email triage agent for a freelancer or studio: classify inbound work, draft replies, create tasks, and escalate sensitive threads.",
+              "teacher": "Teach email automation with strict guardrails: never send without approval, keep logs, and separate drafts from final actions.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/03/3306296/0/en/stop-duct-taping-human-email-into-machine-workflows-meet-hostinger-agentic-mail.html"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-06 21",
       "label": "2026-06-06 · 20:10",
