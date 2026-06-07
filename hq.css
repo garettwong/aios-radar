@@ -95,3 +95,4 @@
 .hq-lock-btn:hover { filter: brightness(1.08); }
 .hq-lock-btn:disabled { opacity: .6; cursor: default; }
 .hq-lock-msg { color: var(--amber); font-size: calc(12.5px * var(--fs)); min-height: 18px; margin-top: 12px; }
+.hq-lock-diag { margin-top: 14px; font-family: var(--mono); font-size: 10px; letter-spacing: .3px; color: var(--ink-3); opacity: .85; }

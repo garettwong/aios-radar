@@ -34,7 +34,8 @@
       '<input id="hq-pw" type="password" class="hq-lock-input" placeholder="password" autocomplete="current-password" />' +
       '<label class="hq-lock-remember"><input id="hq-pw-remember" type="checkbox" checked /> Remember on this device</label>' +
       '<button id="hq-pw-go" class="hq-lock-btn" type="button">Unlock</button>' +
-      '<div id="hq-pw-msg" class="hq-lock-msg"></div>');
+      '<div id="hq-pw-msg" class="hq-lock-msg"></div>' +
+      '<div id="hq-diag" class="hq-lock-diag">checking engine…</div>');
     var input = host.querySelector("#hq-pw"), btn = host.querySelector("#hq-pw-go"),
         msg = host.querySelector("#hq-pw-msg"), rem = host.querySelector("#hq-pw-remember");
 
@@ -76,6 +77,21 @@
 
     var cached = null; try { cached = localStorage.getItem(PW_KEY); } catch (e) {}
     if (cached) { if (rem) rem.checked = true; tryPw(cached, true); }
+
+    (async function selfTest() {
+      var d = host.querySelector("#hq-diag"); if (!d) return;
+      var p = ["build hq3", (window.isSecureContext ? "secure✓" : "secure✗"), ((window.crypto && window.crypto.subtle) ? "subtle✓" : "subtle✗")];
+      try {
+        var e2 = new TextEncoder();
+        var b = await crypto.subtle.importKey("raw", e2.encode("t"), "PBKDF2", false, ["deriveKey"]);
+        var k = await crypto.subtle.deriveKey({ name: "PBKDF2", salt: e2.encode("salt1234"), iterations: 1000, hash: "SHA-256" }, b, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+        var iv = crypto.getRandomValues(new Uint8Array(12));
+        var ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, k, e2.encode("ok"));
+        var pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: iv }, k, ct);
+        p.push(new TextDecoder().decode(pt) === "ok" ? "engine✓" : "engine✗");
+      } catch (err) { p.push("engine FAIL: " + ((err && err.name) || err)); }
+      d.textContent = p.join(" · ");
+    })();
   }
 
   window.HQ_UNLOCK = { renderLock: renderLock, decrypt: decrypt, forget: function () { try { localStorage.removeItem(PW_KEY); } catch (e) {} } };
