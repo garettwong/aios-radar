@@ -5,13 +5,150 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-07 23:28",
-    "editions": 86
+    "fetchedAt": "2026-06-08 00:27",
+    "editions": 87
   },
   "editions": [
     {
+      "key": "2026-06-08 00",
+      "label": "2026-06-08 · 00:03",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 00:03 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Asana turns project",
+              "title": "Asana turns project management into a human-agent operating system",
+              "source": "investors.asana.com",
+              "relevance": "Intermediate",
+              "summary": "Asana unveiled a product suite for teams where humans and AI agents work from the same plan, context, and governance layer.",
+              "why": "Professional-services, IT, and client-management teams will need people who can map messy work into agent-ready workflows.",
+              "action": "Package a small consulting offer: audit one client workflow, define agent handoffs, approval checkpoints, and dashboards.",
+              "teacher": "Good lesson topic: how to convert a normal task board into an agent operating model with ownership, context, and review gates.",
+              "link": "https://investors.asana.com/news-releases/news-release-details/asana-unveils-operating-system-human-agent-teams"
+            },
+            {
+              "n": 2,
+              "category": "MoEngage launches marketer-defined",
+              "title": "MoEngage launches marketer-defined AI custom agents with MCP",
+              "source": "newswire.ca",
+              "relevance": "Intermediate",
+              "summary": "MoEngage launched Merlin AI Custom Agents so lifecycle and CRM teams can design agents on their own customer data with guardrails and visibility.",
+              "why": "This makes agent design a marketing-ops skill, not just an engineering skill.",
+              "action": "Build a demo playbook for abandoned-cart, reactivation, or loyalty campaigns: data inputs, allowed actions, tone rules, and approval steps.",
+              "teacher": "Use it to teach marketers how to write agent policies and evaluate campaign automation safely.",
+              "link": "https://www.newswire.ca/news-releases/moengage-launches-merlin-ai-custom-agents-with-full-visibility-marketer-defined-guardrails-and-open-mcp-architecture-897750046.html"
+            },
+            {
+              "n": 3,
+              "category": "Sema4.ai adds SOP-to-agent",
+              "title": "Sema4.ai adds SOP-to-agent runbooks for enterprise automation",
+              "source": "sema4.ai",
+              "relevance": "Intermediate",
+              "summary": "Sema4.ai says business users can speak, type, or upload SOPs to generate functional agent runbooks through an AI-guided workflow.",
+              "why": "A strong opportunity is cleaning real-world SOPs so they become usable automation specs.",
+              "action": "Offer an SOP-to-agent readiness service: rewrite procedures, identify missing exceptions, and define test cases.",
+              "teacher": "Teach students to separate policy, steps, tools, exceptions, and human approvals before asking an agent to execute.",
+              "link": "https://sema4.ai/newsroom/sema4-ai-releases-advanced-platform-upgrade-delivering-smarter-agents-deeper-business-context-and-simplified-deployment/"
+            },
+            {
+              "n": 4,
+              "category": "Q2 embeds AI",
+              "title": "Q2 embeds AI agents across banking operations",
+              "source": "investors.q2.com",
+              "relevance": "Intermediate",
+              "summary": "Q2 launched Q2 Assistant as a unified AI layer across banking products, with product-specific agents such as Customer Care Agent.",
+              "why": "Regulated industries need explainable, trusted, narrow agents. That creates work for workflow designers, trainers, and QA reviewers.",
+              "action": "Study banking support flows and build a reusable checklist for agent escalation, audit trails, and customer-risk language.",
+              "teacher": "Good case study for why enterprise AI jobs reward domain knowledge plus careful process design.",
+              "link": "https://investors.q2.com/news/investor-news/news-details/2026/Q2-Launches-Q2-Assistant-Embedding-AI-Agents-Across-Banking-Operations/default.aspx"
+            },
+            {
+              "n": 5,
+              "category": "Optilogic launches Ada",
+              "title": "Optilogic launches Ada for supply-chain design",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "Optilogic announced Ada, an agentic AI system for modeling, analyzing, and redesigning supply chains.",
+              "why": "Vertical agent products are moving into specialist planning domains where consultants can add value without owning the whole software stack.",
+              "action": "Create a portfolio sample showing scenario design: inputs, constraints, tradeoffs, and executive summary for a supply-chain change.",
+              "teacher": "Teach agents as decision partners: they generate scenarios, but humans still frame constraints and judge business risk.",
+              "link": "https://www.prweb.com/releases/optilogic-launches-ada-the-first-agentic-ai-system-purpose-built-for-supply-chain-design-302789627.html"
+            },
+            {
+              "n": 6,
+              "category": "Airtable is hiring",
+              "title": "Airtable is hiring an AI Agent Architect for customer experience",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Airtable's Customer Experience AI Agent Architect role asks for deep LLM fluency, agent architecture experience, and partnership with engineering on production systems.",
+              "why": "Support and CX agent design is becoming a senior hybrid role across product, operations, prompt design, and systems thinking.",
+              "action": "Build a case-study deck: one support queue, intent taxonomy, knowledge gaps, eval set, escalation rules, and rollout plan.",
+              "teacher": "Useful teaching angle: the job is not just prompting; it is architecture, evaluation, and operational trust.",
+              "link": "https://job-boards.greenhouse.io/airtable/jobs/8409168002"
+            },
+            {
+              "n": 7,
+              "category": "Tasklet is hiring",
+              "title": "Tasklet is hiring a Staff Design Engineer for an agent OS",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Tasklet's listing asks for a designer-engineer who can own the UX of a cloud agent operating system and ship production UI.",
+              "why": "AI-agent UX is becoming a high-compensation design specialty, especially for people who can implement their own design decisions.",
+              "action": "Make a small interactive prototype for agent task routing, generated UI, status, approvals, and recovery from failure.",
+              "teacher": "Teach design students to prototype agent states, not just screens: idle, planning, acting, blocked, waiting for approval, and done.",
+              "link": "https://wellfound.com/jobs/4240792-staff-design-engineer"
+            },
+            {
+              "n": 8,
+              "category": "Hightouch is hiring",
+              "title": "Hightouch is hiring for AI-agent engineering in marketing data",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Hightouch's Software Engineer, AI Agents role focuses on agentic systems for a customer-data and marketing-automation platform.",
+              "why": "Customer data platforms are a rich lane for AI-native service work: segmentation, campaign ops, compliance, and analytics.",
+              "action": "Build a sample agent spec that creates a campaign audience from CRM data, explains assumptions, and requests approval before activation.",
+              "teacher": "Good classroom exercise: compare a brittle automation script with an agent workflow that asks clarifying questions and logs decisions.",
+              "link": "https://job-boards.greenhouse.io/hightouch/jobs/5542602004"
+            },
+            {
+              "n": 9,
+              "category": "Reddit builder signal:",
+              "title": "Reddit builder signal: AI Pair experiments with discoverable collaborating agents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit builder described AI Pair, a platform where agents register, get discovered, and collaborate in real time across vertical domains.",
+              "why": "Even small builders are moving from single assistants to agent directories and coordination layers, which points to demand for orchestration UX and governance.",
+              "action": "Watch for small-business opportunities around connecting separate tools: research agent, sales agent, design agent, and reporting agent.",
+              "teacher": "Use this as a discussion prompt: what makes a multi-agent system trustworthy enough for client work?",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1twhy4e/i_built_a_decentralized_multiagent_platform_that/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit builder signal:",
+              "title": "Reddit builder signal: local workspaces for Codex and Claude agents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit post about C-Lantor frames a local-first desktop workspace for coordinating coding agents with tasks, memory, handoffs, and visual tools.",
+              "why": "Solo professionals need operating systems for multiple AI workers, not just better chat windows. That is a product and services opportunity.",
+              "action": "Build your own local-agent workflow checklist: task brief, workspace boundaries, memory files, artifacts, review step, and delivery proof.",
+              "teacher": "Teach the difference between using one chatbot and managing an AI team with roles, state, and verification.",
+              "link": "https://www.reddit.com/r/OpenaiCodex/comments/1tvecfn/i_built_clantor_a_local_workspace_for/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "key": "2026-06-07 21",
-      "label": "2026-06-07 · 20:54",
+      "label": "2026-06-07 · 23:54",
       "briefs": [
         {
           "id": "trend",
