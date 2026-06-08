@@ -1,18 +1,21 @@
 /* AIOS Sync (client) — keeps your ticks + to-dos the same on PC and iPhone.
  *
- * - The dashboard page is read-only, so it can't save your taps to itself.
- * - Instead your taps (ticks, to-dos, deletes, order) are ENCRYPTED with your HQ
- *   password and parked in your own free Google Apps Script store.
- * - Reads use JSONP GET; writes use POST (both work fine from a real browser).
- *   Everything is encrypted before it leaves the page — Google only sees gibberish.
+ * - Your taps (ticks, to-dos, deletes, order) are ENCRYPTED with your HQ password
+ *   and parked in your own free Google Apps Script store. Reads use JSONP GET,
+ *   writes use POST. Google only ever sees gibberish.
+ * - CONVERGENT MERGE (not "newest clock wins"): on every pull we UNION the cloud
+ *   state with this device's, so a cross-off / new to-do made on EITHER device shows
+ *   up everywhere and the two devices always settle on the same set. No clocks to
+ *   drift, no stuck "one's ahead of the other".
+ *   (Trade-off: UN-crossing / deleting a to-do may bounce back from the other device.
+ *    Crossing-off and adding always sync. Un-do sync can be added later if needed.)
  *
- * Turn it on: tap  ☁ Sync  (top bar) and paste your Web App URL (see AIOS-sync-code.txt).
- * Stays OFF and inert until configured — never breaks the dashboard.
+ * Turn on: tap ☁ Sync, paste your Web App URL. Inert until configured.
  */
 (function () {
   "use strict";
   var SYNC_KEYS = ["hq_checks_v1", "hq_deleted_v1", "hq_order_v1", "aios_todos_v1"];
-  var URL_KEY = "aios_sync_url", PW_KEY = "hq_pw_v1", TS_KEY = "aios_sync_ts";
+  var URL_KEY = "aios_sync_url", PW_KEY = "hq_pw_v1";
   var _set = localStorage.setItem.bind(localStorage);   // raw setter, captured before we patch
 
   function getURL() { try { return localStorage.getItem(URL_KEY) || ""; } catch (e) { return ""; } }
@@ -43,9 +46,11 @@
       .then(function (pt) { return JSON.parse(new TextDecoder().decode(pt)); });
   }
 
-  /* ---- merge helpers (first connect only, so nothing is lost) ---- */
+  /* ---- merge helpers ---- */
   function parseObj(s) { try { var o = JSON.parse(s || "{}"); return (o && typeof o === "object" && !Array.isArray(o)) ? o : {}; } catch (e) { return {}; } }
   function parseArr(s) { try { var a = JSON.parse(s || "[]"); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+  function canon(mapStr) { var o = parseObj(mapStr), s = {}; Object.keys(o).sort().forEach(function (k) { s[k] = o[k]; }); return JSON.stringify(s); }
+  function unionMap(a, b) { return canon(JSON.stringify(Object.assign({}, parseObj(a), parseObj(b)))); }
   function mergeTodos(a, b) {
     var map = {}, seen = {}, out = [];
     (a || []).forEach(function (t) { if (t && t.id != null) map[t.id] = t; });
@@ -53,22 +58,21 @@
     (a || []).concat(b || []).forEach(function (t) { if (t && t.id != null && !seen[t.id]) { seen[t.id] = 1; out.push(map[t.id]); } });
     return out;
   }
-  function mergeKV(remoteKV) {
-    var out = {};
-    ["hq_checks_v1", "hq_deleted_v1"].forEach(function (k) {
-      out[k] = JSON.stringify(Object.assign({}, parseObj(localStorage.getItem(k)), parseObj(remoteKV[k])));
-    });
-    var ro = parseObj(remoteKV["hq_order_v1"]);
-    out["hq_order_v1"] = (ro && Object.keys(ro).length) ? remoteKV["hq_order_v1"] : (localStorage.getItem("hq_order_v1") || remoteKV["hq_order_v1"] || "{}");
-    out["aios_todos_v1"] = JSON.stringify(mergeTodos(parseArr(localStorage.getItem("aios_todos_v1")), parseArr(remoteKV["aios_todos_v1"])));
-    return out;
+  // union of cloud state + this device's state (canonical, so equal sets compare equal)
+  function unionState(rkv) {
+    var ro = parseObj(rkv["hq_order_v1"]);
+    return {
+      "hq_checks_v1": unionMap(rkv["hq_checks_v1"], localStorage.getItem("hq_checks_v1")),
+      "hq_deleted_v1": unionMap(rkv["hq_deleted_v1"], localStorage.getItem("hq_deleted_v1")),
+      "aios_todos_v1": JSON.stringify(mergeTodos(parseArr(rkv["aios_todos_v1"]), parseArr(localStorage.getItem("aios_todos_v1")))),
+      "hq_order_v1": (ro && Object.keys(ro).length) ? JSON.stringify(ro) : (localStorage.getItem("hq_order_v1") || "{}")
+    };
   }
 
   function gatherKV() { var kv = {}; SYNC_KEYS.forEach(function (k) { var v = localStorage.getItem(k); if (v !== null) kv[k] = v; }); return kv; }
-  function applyKV(kv) { var changed = false; SYNC_KEYS.forEach(function (k) { if (k in kv && kv[k] !== localStorage.getItem(k)) { _set(k, kv[k]); changed = true; } }); return changed; }
   function rerender() { if (typeof window.AIOS_RERENDER === "function") { try { window.AIOS_RERENDER(); } catch (e) {} } }
 
-  /* ---- pull (JSONP GET reads across origins) ---- */
+  /* ---- pull (JSONP GET) ---- */
   function pull() {
     if (!active()) return;
     var pw = getPW(), url = getURL();
@@ -76,8 +80,11 @@
     window[cb] = function (resp) {
       done = true;
       try {
-        if (resp && resp.ok && resp.data) decryptB64(resp.data, pw).then(applyRemote).catch(function () { applyRemote(null); });
-        else applyRemote(null);
+        if (resp && resp.ok && resp.data) {
+          decryptB64(resp.data, pw).then(applyRemote).catch(function () { /* can't read store (transient/foreign) — don't clobber */ });
+        } else {
+          applyRemote(null);   // empty store -> publish this device's state
+        }
       } finally { delete window[cb]; if (s.parentNode) s.remove(); }
     };
     s.onerror = function () { if (!done) { delete window[cb]; if (s.parentNode) s.remove(); } };
@@ -85,35 +92,29 @@
     document.body.appendChild(s);
   }
 
+  // union cloud + local; show the union here; if we have anything the cloud lacks, push the union up
   function applyRemote(state) {
-    var firstConnect = localStorage.getItem(TS_KEY) === null;
-    if (firstConnect) {                       // union local+remote so nothing is lost, then push it up
-      var merged = mergeKV((state && state.kv) || {}), changed = applyKV(merged);
-      var ts = Math.max(Date.now(), ((state && state.ts) || 0) + 1);
-      _set(TS_KEY, String(ts));
-      if (changed) rerender();
-      pushNow(ts);
-      return;
-    }
-    if (!state || typeof state.ts !== "number") return;
-    var localTs = +(localStorage.getItem(TS_KEY) || 0);
-    if (state.ts <= localTs) return;          // already have this or newer
-    var changed2 = applyKV(state.kv || {});
-    _set(TS_KEY, String(state.ts));
-    if (changed2) rerender();
+    var rkv = (state && state.kv) || {};
+    var merged = unionState(rkv);
+    var changed = false;
+    SYNC_KEYS.forEach(function (k) { if (merged[k] !== localStorage.getItem(k)) { _set(k, merged[k]); changed = true; } });
+    if (changed) rerender();
+    var contributes =
+      (merged["hq_checks_v1"] !== canon(rkv["hq_checks_v1"] || "{}")) ||
+      (merged["hq_deleted_v1"] !== canon(rkv["hq_deleted_v1"] || "{}")) ||
+      (parseArr(merged["aios_todos_v1"]).length !== parseArr(rkv["aios_todos_v1"]).length);
+    if (contributes) pushNow();
   }
 
-  /* ---- push (POST; encrypted body, any size) ---- */
+  /* ---- push (POST; encrypted, any size) ---- */
   var pushing = false, pushAgain = false;
-  function pushNow(forceTs) {
+  function pushNow() {
     if (!active()) return;
     if (pushing) { pushAgain = true; return; }
     pushing = true;
     var url = getURL(), pw = getPW();
-    var ts = forceTs || Math.max(Date.now(), (+(localStorage.getItem(TS_KEY) || 0)) + 1);
     function finish() { pushing = false; if (pushAgain) { pushAgain = false; schedulePush(); } }
-    encryptJSON({ ts: ts, kv: gatherKV() }, pw).then(function (data) {
-      _set(TS_KEY, String(ts));
+    encryptJSON({ ts: Date.now(), kv: gatherKV() }, pw).then(function (data) {
       fetch(url, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({ action: "set", data: data }) }).then(finish, finish);
     }).catch(finish);
@@ -121,7 +122,7 @@
 
   /* ---- detect local changes by patching setItem for our keys ---- */
   var pushTimer = null;
-  function schedulePush() { if (!active()) return; if (pushTimer) clearTimeout(pushTimer); pushTimer = setTimeout(function () { pushTimer = null; pushNow(); }, 1200); }
+  function schedulePush() { if (!active()) return; if (pushTimer) clearTimeout(pushTimer); pushTimer = setTimeout(function () { pushTimer = null; pushNow(); }, 1000); }
   try { localStorage.setItem = function (k, v) { _set(k, v); if (SYNC_KEYS.indexOf(k) >= 0) schedulePush(); }; } catch (e) {}
 
   /* ---- the ☁ Sync button ---- */
@@ -156,7 +157,7 @@
     refreshBtn();
     var b = document.getElementById("sync-btn"); if (b) b.addEventListener("click", setup);
     pull();
-    setInterval(pull, 10000);
+    setInterval(pull, 8000);
     window.addEventListener("focus", pull);
     document.addEventListener("visibilitychange", function () { if (!document.hidden) pull(); });
   }
