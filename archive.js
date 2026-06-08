@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 18:35",
+    "fetchedAt": "2026-06-08 19:35",
     "editions": 93
   },
   "editions": [
     {
       "key": "2026-06-08 18",
-      "label": "2026-06-08 · 18:00",
+      "label": "2026-06-08 · 19:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Before installing any skill pack, inspect its file writes, network calls, dependency installs, and outbound-message behavior.",
               "teacher": "Turn skill adoption into a checklist: source authority, permissions, update cadence, test task, and rollback path.",
               "link": "https://capelry.com/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 19:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Ideogram 4.0 opens",
+              "title": "Ideogram 4.0 opens a production-design model lane",
+              "source": "ideogram.ai",
+              "relevance": "Intermediate",
+              "summary": "Ideogram released 4.0 as an open-weight frontier image model with commercial licensing, stronger typography, dense small text, packaging copy, signage, API access, and enterprise fine-tuning/deployment options.",
+              "why": "Brand-safe image generation is moving from prompt demos into production systems that need layers, text accuracy, private deployment, and repeatable visual standards.",
+              "action": "Test it on packaging mockups, booth signage, UI hero images, bilingual layout stress tests, and brand-style prompts; save winning prompts as a client-ready visual QA checklist.",
+              "teacher": "Use this to teach why visual AI evaluation must include typography, layout density, brand lock, and editability instead of only pretty-image scoring.",
+              "link": "https://ideogram.ai/news/ideogram-4.0/"
+            },
+            {
+              "n": 2,
+              "category": "BrandStudios.AI launches brand-governance",
+              "title": "BrandStudios.AI launches brand-governance infrastructure for AI creative",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "BrandStudios.AI launched as an operating system for AI brand creative, focused on persistent Brand Memory and governance for enterprise teams and agencies scaling AI-generated assets.",
+              "why": "The pain is no longer image generation itself; the opportunity is keeping thousands of AI outputs on brand, approved, and usable across business units.",
+              "action": "Package a small consulting offer: brand-memory intake, approved prompt library, output review rubric, and weekly creative QA for marketing teams adopting AI tools.",
+              "teacher": "Explain the difference between generation, governance, and operations. Students should learn that enterprise AI creative work is mostly standards and review loops.",
+              "link": "https://www.prnewswire.com/news-releases/brandstudiosai-launches-as-the-operating-system-for-ai-brand-creative-with-human-intelligence-302791118.html"
+            },
+            {
+              "n": 3,
+              "category": "Qualified is hiring",
+              "title": "Qualified is hiring a lead designer for autonomous AI sales agents",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Qualified, now tied to Salesforce, is hiring a Lead Product Designer for AI Products to design Piper, an AI SDR that handles autonomous sales conversations, follow-ups, prospect reasoning, live chat, and video presence.",
+              "why": "The role description is a strong market signal: AI product design now requires LLM behavior, latency, streaming, failure modes, personality tuning, and autonomous workflow design.",
+              "action": "Build a portfolio case study around an AI sales/CS agent: states, confidence display, escalation, turn-taking, objection handling, and human override.",
+              "teacher": "Turn this job post into a class module on agent UX: what the agent knows, what it plans, what it says, when it should stop, and how users regain control.",
+              "link": "https://jobs.ashbyhq.com/qualified/28cb33f7-333d-4ddd-9276-0423cf4731a2"
+            },
+            {
+              "n": 4,
+              "category": "Root Global contract",
+              "title": "Root Global contract role asks product designers to use AI-assisted tools",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Root Global is hiring a fixed-term Product Designer starting around June 2026, explicitly mentioning prototyping in Figma and AI-assisted tools across farmer-facing and enterprise supply-chain products.",
+              "why": "AI tool fluency is appearing in ordinary product design contracts, not just AI-company roles. That makes AI-assisted prototyping a baseline employability skill.",
+              "action": "Prepare a fast product-design demo: research summary, user flow, prototype, component cleanup, and implementation notes completed with AI assistance in one day.",
+              "teacher": "Teach designers how to show AI use responsibly: decision logs, before/after artifacts, user reasoning, and what the human designer corrected.",
+              "link": "https://jobs.ashbyhq.com/rootglobal/6d22c3dd-6561-44ad-837b-200bc506f794"
+            },
+            {
+              "n": 5,
+              "category": "Fast AI Jobs",
+              "title": "Fast AI Jobs shows the AI startup hiring market as a searchable specialty",
+              "source": "fastaijobs.com",
+              "relevance": "Intermediate",
+              "summary": "Fast AI Jobs presents a large live AI-startup job index across frontier infrastructure, agent labs, and AI companies, with thousands of listings and company-level context.",
+              "why": "Specialized AI job boards are becoming useful market maps: they show which roles cluster around agents, infrastructure, product, design, data, and go-to-market.",
+              "action": "Use it weekly to scrape a target list of 20 companies hiring design, creative, ops, and automation roles; pitch portfolio pieces to match their exact product category.",
+              "teacher": "Show students how to read job boards as market research, not only applications: count role types, repeated skills, and language that reveals emerging services.",
+              "link": "https://www.fastaijobs.com/"
+            },
+            {
+              "n": 6,
+              "category": "StackAdapt production designer",
+              "title": "StackAdapt production designer role ties creative craft to AI-powered ad systems",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "StackAdapt is hiring a Production Designer in Japan/Singapore for static, HTML5, animated, interactive, DOOH, and native ad units on an AI-powered marketing platform.",
+              "why": "Asia-Pacific creative production roles are blending classic production craft with automated optimization platforms, opening demand for designers who can ship many variants cleanly.",
+              "action": "Create a sample ad-variant pack: static, animated, HTML5 storyboard, DOOH crop, and performance-testing notes for one brand campaign.",
+              "teacher": "Teach production designers how AI changes throughput: more versions, tighter brand QA, cleaner file hygiene, and stronger handoff documentation.",
+              "link": "https://job-boards.greenhouse.io/stackadapt/jobs/4229611009"
+            },
+            {
+              "n": 7,
+              "category": "WITHIN is hiring",
+              "title": "WITHIN is hiring AI Creative Specialists for image and video workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "WITHIN lists an AI Creative Specialist role focused on generative imagery and video, prompt engineering, model training, ComfyUI-like workflows, and commercially viable brand-consistent outputs.",
+              "why": "This is a direct job-market signal for AI-native creative operators who can combine tools, taste, model adaptation, and post-production discipline.",
+              "action": "Assemble a portfolio page with three workflows: product image generation, short-form video concepting, and model/style adaptation with brand-consistency notes.",
+              "teacher": "Use this as a practical syllabus for AI creative roles: model choice, prompting, ComfyUI graphs, consistency, post-production, client review, and ethics.",
+              "link": "https://job-boards.greenhouse.io/agencywithin/jobs/4676963007?gh_src=3ac68e527us"
+            },
+            {
+              "n": 8,
+              "category": "Public X discussion",
+              "title": "Public X discussion says product jobs now favor AI-native PMs",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from ProductFaculty argues that winning PM candidates now define automatable workflows, choose AI architecture, prototype loops, build evals, add guardrails, optimize cost/latency, and ship feedback loops.",
+              "why": "Even if the post is opinionated, it captures a useful hiring-language shift: product work is being reframed around end-to-end AI systems, not document coordination.",
+              "action": "Rewrite resume bullets around shipped AI loops: workflow mapped, data/context designed, prototype built, evals created, guardrails added, and business result measured.",
+              "teacher": "Turn the post into a workshop checklist for AI-native product thinking: inputs, reasoning, outputs, actions, evals, guardrails, UX, and cost.",
+              "link": "https://x.com/ProductFaculty/status/2036904523277754763"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Customer Success",
+              "title": "Reddit Customer Success thread points to AI process-building as career defense",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A CustomerSuccess discussion says future CS work may shift toward developing AI tools, automations, processes, data awareness, product knowledge, and strategic customer value rather than support-style execution.",
+              "why": "This is useful user-pain signal: customer-facing teams feel AI pressure but still need people who can translate relationships and workflows into practical systems.",
+              "action": "Offer CS teams an AI workflow audit: renewal-risk signals, meeting-note extraction, follow-up drafting, QBR deck automation, and escalation criteria.",
+              "teacher": "Teach non-technical professionals to map repeatable customer workflows and decide which parts need automation, judgment, or human relationship handling.",
+              "link": "https://www.reddit.com/r/CustomerSuccess/comments/1t6qdsa/curious_how_people_view_the_long_term_future_of/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit agent-ecosystem data",
+              "title": "Reddit agent-ecosystem data warns that agent supply is exploding",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit AI_Agents post claims open-source AI agent project creation has exploded, with many projects failing to attract sustained creator traction.",
+              "why": "The signal is not just hype; it suggests differentiation will come from domain knowledge, deployment reliability, UX, documentation, and support rather than another generic agent wrapper.",
+              "action": "Avoid generic agent products. Pick one painful niche, document the workflow deeply, ship a working demo, and build onboarding/support assets clients can actually use.",
+              "teacher": "Use this to teach market filtering: abundant tools reduce build value, while domain-specific implementation, QA, and adoption support increase service value.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1sysoju/6_months_of_data_on_the_opensource_ai_agent/"
             }
           ]
         }
