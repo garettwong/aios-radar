@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 17:35",
-    "editions": 92
+    "fetchedAt": "2026-06-08 18:35",
+    "editions": 93
   },
   "editions": [
+    {
+      "key": "2026-06-08 18",
+      "label": "2026-06-08 · 18:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-08 · 18:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Copilot cloud agents",
+              "title": "Copilot cloud agents become scriptable through GitHub's Agent tasks API",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says Copilot Pro, Pro+, and Max users can now programmatically start and track Copilot cloud agent tasks through a public-preview REST API.",
+              "why": "Coding agents are becoming callable infrastructure, not just UI sessions. That enables repo-wide migrations, release prep, and internal developer-portal automations.",
+              "action": "Prototype one read-heavy automation first, such as opening tracking tasks for stale docs, before letting an API-triggered agent modify code.",
+              "teacher": "Teach agent APIs as job queues. Every task needs scope, auth, logs, result review, and a rollback path.",
+              "link": "https://github.blog/changelog/2026-06-04-agent-tasks-rest-api-now-available-for-copilot-pro-pro-and-max/"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft rolls MAI-Code-1-Flash",
+              "title": "Microsoft rolls MAI-Code-1-Flash into GitHub Copilot as an efficient coding model lane",
+              "source": "microsoft.ai",
+              "relevance": "Intermediate",
+              "summary": "Microsoft introduced MAI-Code-1-Flash, a coding model trained for GitHub Copilot harnesses, with rollout through VS Code Copilot individual users and Auto/model picker routing.",
+              "why": "Platform owners are optimizing coding agents with cheaper, task-specific models instead of routing every step to frontier models.",
+              "action": "Use lighter models for routine edits, lint fixes, and explanations, then reserve stronger models for architecture, unfamiliar code, and high-risk changes.",
+              "teacher": "Explain model routing as a budget skill. Match model cost and reasoning depth to task risk, not personal habit.",
+              "link": "https://microsoft.ai/news/introducingmai-code-1-flash/"
+            },
+            {
+              "n": 3,
+              "category": "OpenAI release notes",
+              "title": "OpenAI release notes surface Codex app and workspace agent safeguards for Enterprise/Edu",
+              "source": "help.openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI notes workspace agent safeguards for app actions and says the Codex app for macOS acts as a command center for managing multiple coding agents in parallel.",
+              "why": "Enterprise AI buying is shifting from model access toward governable agent work, including permissions, app actions, and multi-session control.",
+              "action": "Audit which internal agent actions should be read-only, require confirmation, or be blocked before expanding automation.",
+              "teacher": "Use this to explain permission tiers. Context access is different from write access, and both need separate policy.",
+              "link": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes"
+            },
+            {
+              "n": 4,
+              "category": "Ryza points 3D",
+              "title": "Ryza points 3D creation toward real-time browser agents",
+              "source": "ryza.io",
+              "relevance": "Intermediate",
+              "summary": "Ryza positions itself as AI-native 3D built for production, with WebGPU browser path tracing and an agent that updates objects, materials, lighting, and animation in real time.",
+              "why": "For creators, the interesting shift is not prompt-to-asset alone. It is interactive scene steering inside a tool where lighting, materials, and animation remain adjustable.",
+              "action": "Evaluate any 3D AI tool by edit loop speed, material control, export path, and whether a human artist can recover from bad generations.",
+              "teacher": "Use Ryza to discuss live direction. Describe, inspect, correct, and lock decisions instead of accepting a single generated render.",
+              "link": "https://www.ryza.io/"
+            },
+            {
+              "n": 5,
+              "category": "Figma May release",
+              "title": "Figma May release notes explain code-to-canvas and canvas-to-code MCP workflows",
+              "source": "help.figma.com",
+              "relevance": "Intermediate",
+              "summary": "Figma describes May workflows where MCP, Make, and agentic tools capture running UI into editable canvas layers and send design context back into coding agents.",
+              "why": "Design handoff is becoming bidirectional. Agents can read design systems and also write inspectable design layers back to Figma.",
+              "action": "Pick one component and test the round trip: design token source, generated UI, Figma capture, then agent correction against the component library.",
+              "teacher": "Have designers judge hierarchy, spacing, typography, and component fidelity, while developers judge code maintainability.",
+              "link": "https://help.figma.com/hc/en-us/articles/40219873508247-Release-notes-roundup-May-2026"
+            },
+            {
+              "n": 6,
+              "category": "Crit focuses the",
+              "title": "Crit focuses the AI-agent bottleneck on inline review, not more generation",
+              "source": "crit.md",
+              "relevance": "Intermediate",
+              "summary": "Crit presents a local-first review tool for pointing at specific lines in AI-agent output and feeding precise comments back into the coding loop.",
+              "why": "As agents generate larger diffs, the scarce skill is increasingly review quality and correction specificity.",
+              "action": "Use it or copy the pattern: annotate exact lines, require agent responses to each comment, and keep the review artifact in the repo.",
+              "teacher": "Show that vague feedback burns tokens. Line-level critique produces better repairs and a useful audit trail.",
+              "link": "https://crit.md/"
+            },
+            {
+              "n": 7,
+              "category": "Reddit maker tests",
+              "title": "Reddit maker tests AgentFlow, a DSL that compiles workflows into MCP tools",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker posted AgentFlow, where .aflow workflow files are exposed as MCP tools for Claude Code, asking whether a declarative layer above MCP is the right abstraction.",
+              "why": "Grassroots builders are trying to make repeatable agent workflows portable instead of leaving orchestration hidden in prompts.",
+              "action": "Watch for the security and observability question: a single MCP tool can hide many underlying actions unless logs and permissions are clear.",
+              "teacher": "Use it to teach workflow boundaries. Declaration, execution, logging, rollback, and permission prompts should be separable.",
+              "link": "https://www.reddit.com/r/mcp/comments/1txucvy/i_built_a_dsl_that_compiles_aflow_files_to_mcp/"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News front",
+              "title": "Hacker News front page highlights tokenomics and harness engineering for agentic software",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "The June 7 Hacker News front page carried agent-focused discussion around Codex harness engineering and token usage in agentic software engineering.",
+              "why": "The market conversation is maturing from agent capability to the harness, cost model, and review loop that make agents economically sane.",
+              "action": "Track token spend per accepted change, not per session, and compare against manually reviewed output quality.",
+              "teacher": "Teach cost accounting with three numbers: tokens burned, human review minutes saved, and defects caught before merge.",
+              "link": "https://news.ycombinator.com/front?day=2026-06-07"
+            },
+            {
+              "n": 9,
+              "category": "X publishes AI",
+              "title": "X publishes AI agent resources for its API ecosystem",
+              "source": "docs.x.com",
+              "relevance": "Intermediate",
+              "summary": "X documents AI-agent resources including llms.txt, skill.md, MCP servers, OpenAPI specs, and integration guides for Grok, Cursor, and Windsurf.",
+              "why": "Major platforms are packaging docs and APIs for direct agent consumption, which makes social/search workflows easier to automate but also raises permission risk.",
+              "action": "If building X-aware agents, start from official API docs and restrict write actions such as posting, liking, or following behind explicit approval.",
+              "teacher": "Use X as an example of read-versus-write separation. Search and summarization are low risk, while public posting is external action and needs hard gates.",
+              "link": "https://docs.x.com/tools/ai"
+            },
+            {
+              "n": 10,
+              "category": "Capelry shows agent",
+              "title": "Capelry shows agent skill registries fragmenting into live marketplaces",
+              "source": "capelry.com",
+              "relevance": "Intermediate",
+              "summary": "Capelry lists public namespaces and thousands of agent skills, commands, and rules, with many entries updated on June 8.",
+              "why": "Skills are becoming a distribution layer for agent behavior, but discovery, trust, duplication, and supply-chain review are still unresolved.",
+              "action": "Before installing any skill pack, inspect its file writes, network calls, dependency installs, and outbound-message behavior.",
+              "teacher": "Turn skill adoption into a checklist: source authority, permissions, update cadence, test task, and rollback path.",
+              "link": "https://capelry.com/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 15",
       "label": "2026-06-08 · 16:06",
