@@ -400,7 +400,7 @@
     if (_lock) _lock.hidden = true;
     if (_content) _content.hidden = false;
     const hello = $("hq-hello");
-    if (hello) hello.innerHTML = (HQ.hello || "") + (HQ.updated ? `<span class="hq-upd">⟳ updated ${esc(HQ.updated)}</span>` : "") + `<div class="hq-taphint">💡 Tap any task or ☐ box to check it off — your ticks are saved on this device.</div>`;
+    if (hello) { hello.innerHTML = ""; hello.hidden = true; hello.style.display = "none"; }  // removed: intro fluff was no use (Garett, 8 Jun)
     if ($("hq-today-date")) $("hq-today-date").textContent = (HQ.today && HQ.today.date) || "";
     const today = $("hq-today");
     if (today) {
@@ -624,9 +624,9 @@
     const h = $("view-help"); if (!h) return;
     const briefs = libItems.filter((x) => x.source2 === "Brief").length;
     const arch = libItems.filter((x) => x.source2 === "Archive").length;
-    h.innerHTML = v === "hq"
-      ? `🧭 <b>HQ</b> — your cockpit: today's focus, money moves, pending work, and wishlist. Auto-updated each morning.`
-      : v === "library"
+    if (v === "hq") { h.innerHTML = ""; h.hidden = true; h.style.display = "none"; return; }  // HQ needs no description line
+    h.hidden = false; h.style.display = "";
+    h.innerHTML = v === "library"
       ? `📚 <b>LIBRARY</b> — everything archived &amp; searchable: <b>${briefs}</b> signals from all your email briefs + <b>${arch}</b> reference items (incl. 242 AI terms).`
       : v === "todo"
       ? `📝 <b>TO-DO</b> — your private notes &amp; follow-ups. Add one from the box at the bottom of any news card; set a date to get a reminder.`
