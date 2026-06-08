@@ -379,9 +379,9 @@
     if (/coded|idea|pending|after|ready/.test(t)) return "tag-status";
     return "";
   }
-  function hqRow(name, tag, note, next, sec, idx) {
+  function hqRow(name, tag, note, next, sec, idx, noOrder) {
     return `<div class="hq-row ${hqIsDone(name) ? "done" : ""}" data-k="${hqKey(name)}" title="Tap to mark done"><div class="hq-row-top"><span class="hq-name">${esc(name)}</span>` +
-      `<span class="hq-rt">` + (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + hqOrdCtrl(sec, idx) + hqDelCtrl() + `</span></div>` +
+      `<span class="hq-rt">` + (tag ? `<span class="hq-tag ${hqTagClass(tag)}">${esc(tag)}</span>` : "") + (noOrder ? "" : hqOrdCtrl(sec, idx)) + hqDelCtrl() + `</span></div>` +
       (note ? `<div class="hq-note">${esc(note)}</div>` : "") +
       (next ? `<div class="hq-next"><b>next:</b> ${esc(next)}</div>` : "") + `</div>`;
   }
@@ -417,15 +417,24 @@
       var acts = hqApplyOrder("actions") || [];
       money.innerHTML =
         (m.thisMonth ? `<div class="hq-money-head">${esc(m.thisMonth)}</div>` : "") +
-        `<div class="hq-label">BRAINSTORM — pick what fits, ignore the rest</div>` +
+        `<div class="hq-label">💼 PIPELINE — every job &amp; where it's stuck (🟠 delivered + 🟡 invoiced = your money)</div>` +
         `<ul class="hq-bs">` + bs.map((b, i) => `<li>${hqOrdCtrl("brainstorm", i)}<div class="bs-idea">${esc(b.idea)}</div><div class="bs-how">${esc(b.how)}</div></li>`).join("") + `</ul>` +
-        `<div class="hq-label">DO THIS — tap to tick off</div>` +
+        `<div class="hq-label">💰 MONEY MOVES — tap when done</div>` +
         `<ul class="hq-actions">` + acts.map((a, i) => `<li class="${hqIsDone(a) ? "done" : ""}" data-k="${hqKey(a)}" title="Tap to tick off">${hqOrdCtrl("actions", i)}${esc(a)}</li>`).join("") + `</ul>`;
     }
     const pend = (hqApplyOrder("pending") || []).filter(function (p) { return !hqIsDeleted(p.name); });
     if ($("hq-pending-count")) $("hq-pending-count").textContent = pend.length;
     const pendHost = $("hq-pending");
-    if (pendHost) pendHost.innerHTML = pend.map((p, i) => hqRow(p.name, p.tag, p.note, null, "pending", i)).join("");
+    if (pendHost) {
+      var zoneOf = function (t) { t = String(t || "").toUpperCase(); if (t.indexOf("ACTIVE") >= 0 || t.indexOf("🔥") >= 0) return 0; if (t.indexOf("WAIT") >= 0 || t.indexOf("⏳") >= 0) return 1; return 2; };
+      var Z = [[], [], []];
+      pend.forEach(function (p, i) { Z[zoneOf(p.tag)].push(hqRow(p.name, p.tag, p.note, null, "pending", i, true)); });
+      var ph = "";
+      if (Z[0].length) ph += `<div class="hq-zone hz-active">🔥 ACTIVE — finish these first</div>` + Z[0].join("");
+      if (Z[1].length) ph += `<div class="hq-zone hz-wait">⏳ WAITING ON</div>` + Z[1].join("");
+      if (Z[2].length) ph += `<details class="hq-parked"><summary>🧊 PARKED — ${Z[2].length} (tap to show)</summary>` + Z[2].join("") + `</details>`;
+      pendHost.innerHTML = ph || `<div class="hq-why">Nothing pending. 🎉</div>`;
+    }
     const wish = (hqApplyOrder("wishlist") || []).filter(function (w) { return !hqIsDeleted(w.name); });
     if ($("hq-wish-count")) $("hq-wish-count").textContent = wish.length;
     const wishHost = $("hq-wish");
