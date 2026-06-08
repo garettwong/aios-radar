@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 04:11",
+    "fetchedAt": "2026-06-09 04:14",
     "editions": 96
   },
   "editions": [
     {
       "key": "2026-06-09 03",
-      "label": "2026-06-09 · 03:06",
+      "label": "2026-06-09 · 04:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Copy the workflow split: Plan, Implement, Research, Build Context, and Browse/Inspect, each with its own tools and review stop.",
               "teacher": "This is a clean teaching model for agent control: separate the workflow graph from the model, then make each step inspectable.",
               "link": "https://www.reddit.com/r/LLMDevs/comments/1twokm0/coding_agent_built_as_developerdriven_workflows/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-09 · 04:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Meshy launches a",
+              "title": "Meshy launches a 3D creation agent beta",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy announced Meshy 3D Agent Beta on June 4, a conversational workflow that can brainstorm, generate batches of visual concepts, answer 3D/printing questions, and move selected ideas into downloadable 3D models.",
+              "why": "3D creation is shifting from one-shot text-to-3D toward guided, multi-step art direction. That is closer to how real product, booth, game, and print work actually happens.",
+              "action": "Test it on one controlled asset brief: reference board, dimensions, style constraints, then compare geometry cleanup time against your current pipeline.",
+              "teacher": "Teach clients the difference between idea exploration, production mesh cleanup, UV/material validation, and final art direction.",
+              "link": "https://www.prnewswire.com/news-releases/meshy-launches-3d-agent-beta-the-worlds-first-ai-agent-for-3d-creation-302790052.html"
+            },
+            {
+              "n": 2,
+              "category": "Napster launches NV2",
+              "title": "Napster launches NV2 real-time conversational video agents",
+              "source": "napster.com",
+              "relevance": "Intermediate",
+              "summary": "Napster launched NV2 on June 8, positioning it as a real-time conversational video model available through the Napster Omniagent API.",
+              "why": "If video agents become cheap enough for small businesses, there is service demand for setup, scripts, persona design, QA, and workflow integration.",
+              "action": "Draft a demo offer for one niche: showroom concierge, course assistant, product explainer, or onboarding guide.",
+              "teacher": "Emphasize that the sellable work is not just the avatar; it is the knowledge base, conversation boundaries, fallback handling, and conversion path.",
+              "link": "https://www.napster.com/news/napster-launches-nv2-realtime-conversational-ai-video-that-costs-just-one-cent-per-minute"
+            },
+            {
+              "n": 3,
+              "category": "Hightouch is hiring",
+              "title": "Hightouch is hiring an AI Creative Designer for enterprise ad workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Hightouch's AI Creative Designer, Ads role asks for prompt engineering across generative models to create polished, on-brand ad imagery, video, and copy for enterprise guidelines.",
+              "why": "Brand-safe AI creative is becoming a real operating role, not just a hobby prompt skill.",
+              "action": "Build a mini portfolio page with three ad systems: brand rules, prompt variants, generated outputs, human edits, and performance assumptions.",
+              "teacher": "Train designers to show process, not just final images: brand constraints, rejected outputs, QA checklist, and adaptation across formats.",
+              "link": "https://job-boards.greenhouse.io/hightouch/jobs/5982446004"
+            },
+            {
+              "n": 4,
+              "category": "Modern Creative Jobs",
+              "title": "Modern Creative Jobs shows a live market for AI video, image, and content creator roles",
+              "source": "moderncreativejobs.com",
+              "relevance": "Intermediate",
+              "summary": "Modern Creative Jobs lists fresh AI creative openings dated June 2026, including AI-native product design, AI video marketing, AI animation, motion design, and content creator contracts.",
+              "why": "The market is fragmenting into tool-specific creative roles around Runway, Veo, Kling, Midjourney, Higgsfield, Claude, and ChatGPT.",
+              "action": "Track five recurring role titles and map each to a portfolio artifact you can produce in one week.",
+              "teacher": "For students, make a role-to-evidence matrix: title, tools, sample deliverable, quality bar, and client problem solved.",
+              "link": "https://moderncreativejobs.com/"
+            },
+            {
+              "n": 5,
+              "category": "Troupe AI is",
+              "title": "Troupe AI is hiring product design for agentic user experiences",
+              "source": "troupe.ai",
+              "relevance": "Intermediate",
+              "summary": "Troupe's Product Designer role centers on conversational and agentic AI experiences, including natural-language interfaces, agent-driven workflows, and AI-generated outputs inside traditional UI.",
+              "why": "Product design is moving into AI behavior design: deciding what the agent should show, hide, ask, remember, and hand off.",
+              "action": "Create one case study that redesigns a dense workflow into an agent-assisted interface with states, guardrails, and user controls.",
+              "teacher": "Teach agent UX as a system: intent capture, confidence, reversibility, audit trail, and clear human override.",
+              "link": "https://www.troupe.ai/careers/career-product-designer"
+            },
+            {
+              "n": 6,
+              "category": "Unity AI product",
+              "title": "Unity AI product design role points to agent-guided game creation",
+              "source": "unity.com",
+              "relevance": "Intermediate",
+              "summary": "Unity describes Unity AI as guided game creation where an agent plans, executes, and iterates with the creator, targeting faster iteration and richer creative exploration.",
+              "why": "Game and interactive design skills can become more valuable when paired with agent workflow design and quality control.",
+              "action": "Prototype a tiny agent-guided scene workflow: brief, assets, constraints, iteration log, and final playable result.",
+              "teacher": "Separate ideation speed from production readiness; teach students to inspect gameplay, asset consistency, performance, and rights.",
+              "link": "https://unity.com/careers/positions/7947331"
+            },
+            {
+              "n": 7,
+              "category": "Back Market recruitment",
+              "title": "Back Market recruitment ops role includes AI tool pilots and team training",
+              "source": "nogigiddy.com",
+              "relevance": "Intermediate",
+              "summary": "A Back Market recruitment operations role includes identifying AI use cases such as job description generation, CV screening support, candidate communication automation, adoption tracking, and team training.",
+              "why": "AI operations work is spreading beyond engineering into HR, recruiting, and process ownership.",
+              "action": "Offer a recruiting-ops audit package: map workflow pain, pick two automations, define metrics, and train staff.",
+              "teacher": "Make privacy, bias, escalation, and candidate experience part of the lesson, not afterthoughts.",
+              "link": "https://www.nogigiddy.com/jobs/global-recruitment-ops-specialist-back-market-1wj6mki"
+            },
+            {
+              "n": 8,
+              "category": "Cognizant names Frontier",
+              "title": "Cognizant names Frontier Certified Engineer and Frontier Business Operator roles",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Cognizant announced two AI-era job categories: Frontier Certified Engineer and Frontier Business Operator, tied to turning enterprise AI investment into measurable outcomes.",
+              "why": "Large services firms are formalizing the hybrid roles between technical build, process redesign, and operational ownership.",
+              "action": "Reframe consulting offers around business outcomes: cycle-time reduction, handoff removal, content throughput, or support deflection.",
+              "teacher": "Teach the job language buyers use: process architecture, adoption, governance, measurable value, and operating model.",
+              "link": "https://www.prnewswire.com/news-releases/cognizant-develops-frontier-certified-engineer-and-frontier-business-operator-roles-to-define-the-next-generation-of-ai-powered-work-302787084.html"
+            },
+            {
+              "n": 9,
+              "category": "Reddit UX designers",
+              "title": "Reddit UX designers report postings merging design, AI, analytics, and front-end skills",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/UXDesign thread says postings increasingly combine UX, UI, product thinking, design systems, AI tool proficiency, analytics, and sometimes front-end skills in one role.",
+              "why": "This is a stress signal, but also an opportunity for designers who can show AI-assisted prototyping without losing design judgment.",
+              "action": "Build one case study that moves from research insight to coded prototype, with AI assistance documented and design decisions defended.",
+              "teacher": "Warn learners not to become generic tool operators; the edge is taste, systems thinking, user evidence, and implementation literacy.",
+              "link": "https://www.reddit.com/r/UXDesign/comments/1txgj18/is_anyone_else_seeing_ux_job_postings_slowly_turn/"
+            },
+            {
+              "n": 10,
+              "category": "Public X creator",
+              "title": "Public X creator shows AI strategist work packaging client-ready promotional video workflows",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from an AI/n8n automation creator shows a promotional video workflow built from website scraping, prompt templating, Claude Code, and Remotion, then frames the role as an AI power user/strategist for startups.",
+              "why": "This is a concrete creator-service pattern: turn client context into repeatable video, landing, or social assets with automation plus taste.",
+              "action": "Package a fixed-scope offer: one startup page in, one 30-second promo video plus reusable prompt/template pack out.",
+              "teacher": "Teach students to document inputs, prompts, edits, render settings, and client review checkpoints so the work is repeatable and billable.",
+              "link": "https://x.com/I_amDamola/status/2040764964084834399"
             }
           ]
         }
