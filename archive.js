@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 22:16",
+    "fetchedAt": "2026-06-08 22:42",
     "editions": 94
   },
   "editions": [
     {
       "key": "2026-06-08 21",
-      "label": "2026-06-08 · 21:00",
+      "label": "2026-06-08 · 22:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Treat each automation as an identity with scoped access, approval requirements, and evidence of what it touched.",
               "teacher": "Good business signal: the winning agent products will prove who acted, under what policy, and with what audit trail.",
               "link": "https://www.prnewswire.com/news-releases/workday-launches-new-tools-for-developers-to-build-connect-and-verify-ai-agents-for-hr-finance-and-it-302787997.html"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 22:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Daz Studio 6",
+              "title": "Daz Studio 6 puts AI help inside a 3D creation tool",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Daz 3D released Daz Studio 6 with faster asset loading, better content organization, viewport improvements, newer NVIDIA GPU support, strand-based hair editing, and built-in Victoria AI Chat for help and troubleshooting.",
+              "why": "3D software is moving from pure tool operation into guided production. That creates an opening for artists who can package scene setup, character workflows, and client-ready training around AI-assisted 3D pipelines.",
+              "action": "Build a small Daz Studio 6 test: one character, one lighting preset, one product-scene layout, and a short checklist showing where AI help speeds or fails the workflow.",
+              "teacher": "Teach students to separate production acceleration from quality judgment: AI chat can unblock workflow questions, but anatomy, lighting, materials, and final taste still need a trained eye.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/04/3307011/0/en/daz-3d-launches-daz-studio-6-the-next-generation-of-its-flagship-3d-creation-platform.html"
+            },
+            {
+              "n": 2,
+              "category": "Salesforce Agentforce design",
+              "title": "Salesforce Agentforce design role shows enterprise agents need senior UX craft",
+              "source": "careers.salesforce.com",
+              "relevance": "Intermediate",
+              "summary": "Salesforce posted a Lead Product Designer role for Agentforce, describing autonomous agents that make decisions and act across customer cases, lead qualification, campaigns, and complex workflows.",
+              "why": "Agent work is no longer only engineering. Enterprise teams need designers who can shape trust, permissions, failure states, handoff, and monitoring around autonomous systems.",
+              "action": "Create an Agentforce-style portfolio case study: map one business workflow, define where the agent acts, where humans approve, and how errors are surfaced.",
+              "teacher": "Use this as a class exercise in agent UX: students must design status, audit trail, escalation, and rollback screens before making any chat interface.",
+              "link": "https://careers.salesforce.com/en/jobs/jr344276/lead-product-designer-agentforce/"
+            },
+            {
+              "n": 3,
+              "category": "Freelancer AI Design",
+              "title": "Freelancer AI Design listings show short-form ad work becoming AI-assisted production",
+              "source": "freelancer.com",
+              "relevance": "Intermediate",
+              "summary": "Freelancer currently shows AI design projects asking for AI-enhanced vertical ads, dynamic captions, motion graphics, color matching, and A/B-friendly social formats.",
+              "why": "Small clients are not asking for abstract AI art; they want measurable ad assets. Designers who can turn raw UGC and product footage into polished variants can sell clear packages.",
+              "action": "Offer a fixed-scope service: 5 vertical ad variants from supplied clips, with hooks, captions, thumbnail frames, and a simple performance-testing plan.",
+              "teacher": "Teach the workflow as a repeatable production system: intake, hook selection, edit template, AI enhancement, QC, export specs, and client review.",
+              "link": "https://www.freelancer.com/jobs/ai-design"
+            },
+            {
+              "n": 4,
+              "category": "Freelancer AI Animation",
+              "title": "Freelancer AI Animation demand favors realistic emotion, lip sync, and bilingual ads",
+              "source": "freelancer.com",
+              "relevance": "Intermediate",
+              "summary": "Current AI animation projects include TVC-style ads requiring realistic emotion, facial expression control, lip-sync accuracy, voice alignment, and delivery for social channels.",
+              "why": "The commodity part is generation. The valuable part is directing believable performance and fixing the weirdness that clients notice immediately.",
+              "action": "Make a demo reel with three 10-second AI character ads: one product pitch, one service explainer, one bilingual version, each with notes on tools and cleanup.",
+              "teacher": "Train students to critique eyes, mouth shapes, timing, accent consistency, and brand safety instead of only comparing prompts.",
+              "link": "https://www.freelancer.com/jobs/ai-animation"
+            },
+            {
+              "n": 5,
+              "category": "SoraJobs concentrates AI",
+              "title": "SoraJobs concentrates AI video and media production roles in one market view",
+              "source": "sorajobs.com",
+              "relevance": "Intermediate",
+              "summary": "SoraJobs lists AI media roles such as AI animator, AI video creator, VFX supervisor for AI animation, AI-native brand designer, AI agent analytics, and MCP protocol engineering.",
+              "why": "A dedicated board makes it easier to see adjacent lanes: creative direction, technical writing, agent ops, analytics, and production roles are all forming around AI media.",
+              "action": "Use the board as a weekly scan source and tag roles by skill stack: creative, design, coding, ops, sales, and teaching. Pick one lane to build proof for this week.",
+              "teacher": "Have learners compare job descriptions and extract evidence: required tools, deliverables, salary ranges, and portfolio artifacts.",
+              "link": "https://sorajobs.com/jobs"
+            },
+            {
+              "n": 6,
+              "category": "Cad Crowd remote",
+              "title": "Cad Crowd remote 3D listings keep showing practical product-modeling demand",
+              "source": "cadcrowd.com",
+              "relevance": "Intermediate",
+              "summary": "Cad Crowd lists remote and part-time 2D/3D modeling work around rugged electronics cases, drone plates, reverse engineering, 3D printing, cabinetry, robotics, and product design services.",
+              "why": "Not every opportunity is generative AI. There is still paid demand for accurate geometry, manufacturing-aware modeling, scan-to-CAD, and physical-product visualization that AI tools can accelerate but not replace.",
+              "action": "Build a portfolio mini-pack with three practical models: enclosure, furniture or cabinetry part, and reverse-engineered scan cleanup, each with production notes.",
+              "teacher": "Teach AI as support around CAD: reference cleanup, documentation, render previews, and client communication, while keeping dimensions and manufacturability human-verified.",
+              "link": "https://www.cadcrowd.com/jobs/l/us/2d-3d-modeling"
+            },
+            {
+              "n": 7,
+              "category": "Public X post",
+              "title": "Public X post points to Firecrawl plus n8n as a marketable automation stack",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from Firecrawl founder Eric Ciarla says Firecrawl integrates with n8n Cloud for web search, clean structured extraction, markdown/JSON output, and AI-assisted page interaction.",
+              "why": "This is a practical small-business automation signal: research, scraping, enrichment, and reporting can be sold as repeatable workflows instead of one-off manual data pulls.",
+              "action": "Create one demo automation: pull competitor pages, extract pricing/features into a table, summarize changes, and email a weekly client report.",
+              "teacher": "Teach students to document permission, robots.txt/common-sense boundaries, data freshness, and manual review before handing web automation to clients.",
+              "link": "https://x.com/ericciarla/status/2037202150690844778"
+            },
+            {
+              "n": 8,
+              "category": "Reddit animation thread",
+              "title": "Reddit animation thread says AI video still struggles with long-form continuity",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/animationcareer discussion argues that current AI video tools still work best for short isolated scenes and struggle with long videos, continuity, and complex consistent characters.",
+              "why": "This is opportunity evidence, not just anxiety. Clients still need animators and 3D artists who can manage continuity, staging, character consistency, and edit decisions.",
+              "action": "Package an AI-assisted previz service: rough 3D blocking, shot list, keyframes, short generated clips, and continuity notes for each shot.",
+              "teacher": "Teach the limitation directly: students should test a character across five shots and document what breaks before promising AI animation services.",
+              "link": "https://www.reddit.com/r/animationcareer/comments/1tyitn5/al_failed_to_replace_artists/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit UX thread",
+              "title": "Reddit UX thread shows product design roles merging with AI and front-end skills",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A r/UXDesign post reports job listings asking for UX, UI, product thinking, design systems, AI tool proficiency, analytics, and sometimes front-end skills in one role.",
+              "why": "The market is rewarding hybrid builders. A designer who can prototype, instrument, and explain AI-assisted workflows is easier to hire or sell as a consultant.",
+              "action": "Update your portfolio structure: for each project, show design decision, AI workflow, prototype, metrics plan, and final visual polish.",
+              "teacher": "Use one assignment that combines Figma, a coded prototype, analytics questions, and an AI prompt/process appendix.",
+              "link": "https://www.reddit.com/r/UXDesign/comments/1txgj18/is_anyone_else_seeing_ux_job_postings_slowly_turn/"
+            },
+            {
+              "n": 10,
+              "category": "Upwork reports top",
+              "title": "Upwork reports top AI skill demand more than doubled",
+              "source": "investors.upwork.com",
+              "relevance": "Intermediate",
+              "summary": "Upwork analyzed completed marketplace jobs and reported that demand for top AI skills more than doubled as AI became embedded into everyday work categories.",
+              "why": "Completed-job data is stronger than hype. It supports freelance offers around practical AI adoption, not vague AI expertise.",
+              "action": "Create three offers matched to completed-job demand: AI workflow audit, automation buildout, and AI-enabled content/design production.",
+              "teacher": "Show learners how to validate a service idea with marketplace evidence: completed work, repeated buyer language, price range, and portfolio proof.",
+              "link": "https://investors.upwork.com/node/12681/pdf"
             }
           ]
         }
