@@ -129,7 +129,8 @@
     if (contributes) pushNow();
   }
 
-  /* ---- push (POST) ---- */
+  /* ---- push: WRITE via GET (works on iPhone Safari too; POST's body is dropped through
+          Google's redirect on Safari, which silently broke phone saves) ---- */
   var pushing = false, pushAgain = false;
   function pushNow() {
     if (!active()) return;
@@ -138,7 +139,8 @@
     var url = getURL(), pw = getPW();
     function finish() { pushing = false; if (pushAgain) { pushAgain = false; schedulePush(); } }
     encryptJSON({ ts: Date.now(), kv: gatherKV() }, pw).then(function (data) {
-      fetch(url, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "set", data: data }) }).then(finish, finish);
+      var src = url + (url.indexOf("?") < 0 ? "?" : "&") + "action=set&t=" + Date.now() + "&data=" + encodeURIComponent(data);
+      fetch(src, { mode: "no-cors" }).then(finish, finish);
     }).catch(finish);
   }
 
