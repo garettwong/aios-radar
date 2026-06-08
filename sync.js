@@ -3,12 +3,11 @@
  * - The dashboard page is read-only, so it can't save your taps to itself.
  * - Instead your taps (ticks, to-dos, deletes, order) are ENCRYPTED with your HQ
  *   password and parked in your own free Google Apps Script store.
- * - Reads + writes both go over GET (the only thing that survives Google's redirect
- *   reliably). Writes are split into small chunks the server reassembles, so any
- *   size works. Everything is encrypted before it leaves the page.
+ * - Reads use JSONP GET; writes use POST (both work fine from a real browser).
+ *   Everything is encrypted before it leaves the page — Google only sees gibberish.
  *
  * Turn it on: tap  ☁ Sync  (top bar) and paste your Web App URL (see AIOS-sync-code.txt).
- * Stays OFF and inert until you do — never breaks the dashboard.
+ * Stays OFF and inert until configured — never breaks the dashboard.
  */
 (function () {
   "use strict";
@@ -69,24 +68,21 @@
   function applyKV(kv) { var changed = false; SYNC_KEYS.forEach(function (k) { if (k in kv && kv[k] !== localStorage.getItem(k)) { _set(k, kv[k]); changed = true; } }); return changed; }
   function rerender() { if (typeof window.AIOS_RERENDER === "function") { try { window.AIOS_RERENDER(); } catch (e) {} } }
 
-  /* ---- JSONP GET (reads cross-origin; also carries each write chunk) ---- */
-  function jsonpGet(src) {
-    return new Promise(function (resolve) {
-      var cb = "aiosSync" + Math.floor(Math.random() * 1e9), s = document.createElement("script"), done = false;
-      window[cb] = function (resp) { done = true; try { resolve(resp); } finally { delete window[cb]; if (s.parentNode) s.remove(); } };
-      s.onerror = function () { if (!done) { delete window[cb]; if (s.parentNode) s.remove(); resolve(null); } };
-      s.src = src + (src.indexOf("?") < 0 ? "?" : "&") + "cb=" + cb + "&t=" + Date.now();
-      document.body.appendChild(s);
-    });
-  }
-
+  /* ---- pull (JSONP GET reads across origins) ---- */
   function pull() {
     if (!active()) return;
     var pw = getPW(), url = getURL();
-    jsonpGet(url + (url.indexOf("?") < 0 ? "?" : "&") + "action=get").then(function (resp) {
-      if (resp && resp.ok && resp.data) decryptB64(resp.data, pw).then(applyRemote).catch(function () {});
-      else applyRemote(null);
-    });
+    var cb = "aiosSync" + Math.floor(Math.random() * 1e9), s = document.createElement("script"), done = false;
+    window[cb] = function (resp) {
+      done = true;
+      try {
+        if (resp && resp.ok && resp.data) decryptB64(resp.data, pw).then(applyRemote).catch(function () { applyRemote(null); });
+        else applyRemote(null);
+      } finally { delete window[cb]; if (s.parentNode) s.remove(); }
+    };
+    s.onerror = function () { if (!done) { delete window[cb]; if (s.parentNode) s.remove(); } };
+    s.src = url + (url.indexOf("?") < 0 ? "?" : "&") + "action=get&cb=" + cb + "&t=" + Date.now();
+    document.body.appendChild(s);
   }
 
   function applyRemote(state) {
@@ -107,7 +103,7 @@
     if (changed2) rerender();
   }
 
-  /* ---- chunked GET write: small pieces the server reassembles + commits ---- */
+  /* ---- push (POST; encrypted body, any size) ---- */
   var pushing = false, pushAgain = false;
   function pushNow(forceTs) {
     if (!active()) return;
@@ -117,15 +113,9 @@
     var ts = forceTs || Math.max(Date.now(), (+(localStorage.getItem(TS_KEY) || 0)) + 1);
     function finish() { pushing = false; if (pushAgain) { pushAgain = false; schedulePush(); } }
     encryptJSON({ ts: ts, kv: gatherKV() }, pw).then(function (data) {
-      var CH = 1200, chunks = [];
-      for (var k = 0; k < data.length; k += CH) chunks.push(data.substring(k, k + CH));
-      if (!chunks.length) chunks = [""];
-      var sid = "s" + Math.floor(Math.random() * 1e9).toString(36), n = chunks.length, idx = 0;
-      (function sendNext() {
-        if (idx >= n) { _set(TS_KEY, String(ts)); finish(); return; }
-        var src = url + (url.indexOf("?") < 0 ? "?" : "&") + "action=put&sid=" + sid + "&i=" + idx + "&n=" + n + "&data=" + encodeURIComponent(chunks[idx]);
-        jsonpGet(src).then(function () { idx++; sendNext(); });
-      })();
+      _set(TS_KEY, String(ts));
+      fetch(url, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "set", data: data }) }).then(finish, finish);
     }).catch(finish);
   }
 
