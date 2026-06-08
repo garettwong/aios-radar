@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 03:16",
-    "editions": 95
+    "fetchedAt": "2026-06-09 03:19",
+    "editions": 96
   },
   "editions": [
+    {
+      "key": "2026-06-09 03",
+      "label": "2026-06-09 · 03:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 03:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI turns Codex",
+              "title": "OpenAI turns Codex work into harness engineering",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI described an internal beta product built from an empty repository with Codex writing application logic, tests, CI, docs, tooling, observability, and review loops. The lesson is that teams need repository-local knowledge, agent-readable tools, strict architecture rules, and continuous cleanup.",
+              "why": "The competitive edge is moving from prompt tricks to agent operating systems: maps, feedback loops, observability, mechanical taste, and review automation.",
+              "action": "Add one short AGENTS.md map, put deeper rules in linked docs, and create one lint/test rule that turns taste into an enforceable invariant.",
+              "teacher": "Teach this as harness before autonomy: if the agent cannot see, verify, or repair a workflow, it cannot own that workflow.",
+              "link": "https://openai.com/index/harness-engineering/"
+            },
+            {
+              "n": 2,
+              "category": "Jane Street shows",
+              "title": "Jane Street shows designers using Claude as a production design partner",
+              "source": "blog.janestreet.com",
+              "relevance": "Intermediate",
+              "summary": "A Jane Street design essay on the HN front page argues that Claude can be useful for design work beyond mockups: exploring variations, producing concrete artifacts, and helping designers think through interface systems.",
+              "why": "The maker workflow shift is not just code generation. Designers are starting to use agents as iterative production partners when the output can be inspected, revised, and connected to implementation constraints.",
+              "action": "Pick one UI concept and ask an agent for three concrete interaction alternatives, then judge them against layout, typography, and implementation cost.",
+              "teacher": "Teach this as agent-assisted taste is still taste: the model can multiply options, but the designer must keep the standard.",
+              "link": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/"
+            },
+            {
+              "n": 3,
+              "category": "Claude release notes",
+              "title": "Claude release notes show agentic desktop work moving beyond coding",
+              "source": "support.claude.com",
+              "relevance": "Intermediate",
+              "summary": "Claude's release notes show Cowork bringing Claude Code-style local, VM-isolated, MCP-connected capabilities into desktop knowledge work, while Claude Design expands visual-output workflows.",
+              "why": "Agentic patterns are spreading from coding terminals into files, presentations, analytics, design artifacts, and desktop work. That is where non-engineering adoption may accelerate.",
+              "action": "Identify one repeatable desktop workflow that touches local files and has clear output criteria; write it as a skill or checklist before trying agent execution.",
+              "teacher": "Distinguish chat assistant from desktop coworker: the latter needs filesystem scope, isolation, app context, and approval boundaries.",
+              "link": "https://support.claude.com/en/articles/12138966-release-notes"
+            },
+            {
+              "n": 4,
+              "category": "Miro packages its",
+              "title": "Miro packages its MCP server as portable plugins, extensions, and skills",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Miro's MCP registry repo documents support across Claude Code plugins, Gemini CLI extensions, Codex local plugins, Kiro powers, agent skills, and generic MCP clients.",
+              "why": "Whiteboards are becoming agent-readable workspaces. Specs, diagrams, tables, and planning boards can move from meeting artifacts into direct agent context.",
+              "action": "Try one diagram-to-code-review workflow: have an agent summarize a Miro architecture board, then compare that summary to the repo's actual module boundaries.",
+              "teacher": "Teach this as a design handoff upgrade, but warn that OAuth, board scope, and duplicate MCP entries need clean governance.",
+              "link": "https://github.com/mcp/miroapp/mcp-server"
+            },
+            {
+              "n": 5,
+              "category": "Lathe turns LLMs",
+              "title": "Lathe turns LLMs into hands-on domain learning instead of shortcut answers",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Lathe is an open-source project for generating hands-on, multi-part technical tutorials that the learner works through manually, with LLM skills tuned for approachable explanations.",
+              "why": "A counter-trend is emerging: using AI to make humans better learners instead of replacing the learning step. That matters for teams trying to build durable skill, not just ship faster.",
+              "action": "Use Lathe-style prompts to create one tutorial for an unfamiliar codebase or 3D workflow, then require manual checkpoints before moving on.",
+              "teacher": "This is a useful maker education pattern: generate structure, examples, and feedback, but leave the motor learning and judgment to the human.",
+              "link": "https://github.com/devenjarvis/lathe"
+            },
+            {
+              "n": 6,
+              "category": "Hacker News rewards",
+              "title": "Hacker News rewards AI learning tools that keep the human doing the work",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "The HN discussion around Lathe put a learning-focused AI tool high on the June 7 front page, showing appetite for tools that use LLMs to teach domains rather than skip past them.",
+              "why": "Community attention is shifting toward agency-preserving workflows: AI as scaffold, tutor, reviewer, and context builder, not only executor.",
+              "action": "When evaluating a maker tool, ask whether it increases user skill over time or merely hides the underlying process.",
+              "teacher": "Good debate prompt: the best AI learning product may slow the user down in the short term so they can move faster later.",
+              "link": "https://news.ycombinator.com/item?id=48433756"
+            },
+            {
+              "n": 7,
+              "category": "Microsoft MAI-Thinking-1 points",
+              "title": "Microsoft MAI-Thinking-1 points to platform owners building their own reasoning models",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar's Build 2026 roundup notes Microsoft's MAI-Thinking-1 as a reasoning-focused model that was easy to miss amid larger agent announcements.",
+              "why": "Major platforms are reducing dependence on third-party frontier providers by adding owned model lanes for reasoning, coding, and product-specific workloads.",
+              "action": "Track which tools let you choose model lanes by task type, especially for coding, review, planning, and cheap utility work.",
+              "teacher": "Teach the model market as a stack: UI, agent runtime, model routing, governance, and billing may all come from different vendors.",
+              "link": "https://www.techradar.com/pro/from-quantum-to-containers-4-big-things-you-might-have-missed-at-microsoft-build-2026"
+            },
+            {
+              "n": 8,
+              "category": "A GitHub directory",
+              "title": "A GitHub directory maps the widening AI coding-tool landscape",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "QAInsights' awesome-ai-tools repo curates AI IDEs, editor extensions, terminal agents, autonomous agents, browser builders, review tools, and workflow products.",
+              "why": "The coding-agent market is fragmenting fast. Builders need a taxonomy to compare tools by workflow role instead of hype category.",
+              "action": "Create a shortlist by job-to-be-done: IDE help, terminal autonomy, code review, browser app building, security, and team workflow.",
+              "teacher": "Use directories as market maps, not truth. The useful exercise is categorizing tool roles and gaps for your own stack.",
+              "link": "https://github.com/QAInsights/awesome-ai-tools"
+            },
+            {
+              "n": 9,
+              "category": "Harness-engineering lists are",
+              "title": "Harness-engineering lists are becoming a practical agent discipline",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The awesome-harness-engineering repo collects patterns around skills, compaction, MCP, permissions, observability, orchestration, evals, and agent control surfaces.",
+              "why": "Harness engineering is becoming its own practical craft. The winning workflows are not just better prompts; they are better containers around model behavior.",
+              "action": "Audit your current agent setup against five primitives: skills, scoped tools, memory, permissions, and verification harnesses.",
+              "teacher": "Teach harness engineering as the bridge between demos and production: it turns model ability into repeatable work.",
+              "link": "https://github.com/ai-boost/awesome-harness-engineering"
+            },
+            {
+              "n": 10,
+              "category": "Reddit maker open-sources",
+              "title": "Reddit maker open-sources a human-in-the-loop coding workbench",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker described an open-source coding agent built around developer-triggered LangGraph workflows, editable plans, hybrid code search, local reranking, Playwright inspection, and per-file diff approval.",
+              "why": "Maker adoption is pushing back against fire-and-forget autonomy. Human-in-the-loop workbenches may be the practical middle ground for serious code changes.",
+              "action": "Copy the workflow split: Plan, Implement, Research, Build Context, and Browse/Inspect, each with its own tools and review stop.",
+              "teacher": "This is a clean teaching model for agent control: separate the workflow graph from the model, then make each step inspectable.",
+              "link": "https://www.reddit.com/r/LLMDevs/comments/1twokm0/coding_agent_built_as_developerdriven_workflows/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 00",
       "label": "2026-06-09 · 01:06",
