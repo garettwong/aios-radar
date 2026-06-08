@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 01:12",
+    "fetchedAt": "2026-06-09 01:15",
     "editions": 95
   },
   "editions": [
     {
       "key": "2026-06-09 00",
-      "label": "2026-06-09 · 00:13",
+      "label": "2026-06-09 · 01:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Before building an agent product, ask what it can do that Claude Code/Codex cannot: unique data, runtime trigger, customer-facing embed, or regulated execution.",
               "teacher": "Can a foundation model copy this next month? is now a product-design filter for agent startups.",
               "link": "https://www.reddit.com/r/AI_Agents/comments/1tz9ix4/your_first_ai_agent_is_just_a_worse_claude_code/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-09 · 01:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Handshake AI Tutor",
+              "title": "Handshake AI Tutor contract highlights paid pedagogy and curriculum evaluation",
+              "source": "careerservices.fas.harvard.edu",
+              "relevance": "Intermediate",
+              "summary": "Handshake is listing an AI Tutor, Education Specialist contract that asks for educational content, pedagogy, curriculum design, and learning assessment work.",
+              "why": "Teaching expertise is becoming a direct AI-training input, not just classroom labor.",
+              "action": "Package a sample AI tutor evaluation portfolio: one lesson, one rubric, one corrected model answer, and one curriculum-risk note.",
+              "teacher": "Useful angle for educators: sell reasoning, grading quality, and student-safety judgment rather than generic prompt writing. *",
+              "link": "https://careerservices.fas.harvard.edu/jobs/handshake-ai-tutor-education-specialist-contract-handshake-ai/"
+            },
+            {
+              "n": 2,
+              "category": "Docusign agents turn",
+              "title": "Docusign agents turn agreement review into a setup and governance service",
+              "source": "investor.docusign.com",
+              "relevance": "Intermediate",
+              "summary": "Docusign announced AI assistant, agents, and Agent Studio for agreement review, standards checks, approvals, and forms.",
+              "why": "Contract workflows are a strong consulting wedge because the pain is repetitive, high-value, and measurable.",
+              "action": "Build a small demo service: intake form to clause checklist to redline summary to approval route.",
+              "teacher": "Teach clients the difference between document summarization and governed agreement workflow automation. *",
+              "link": "https://investor.docusign.com/news-and-events/press-releases/news-details/2026/Docusign-Unveils-AI-Assistant-and-Agents-to-Power-the-Next-Era-of-Agreement-Work/default.aspx"
+            },
+            {
+              "n": 3,
+              "category": "Procare AI Automation",
+              "title": "Procare AI Automation Specialist shows customer-ops agent ownership becoming a real role",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Procare listing centers on owning AI agents, chatbots, prompt quality, internal workflows, onboarding, support, and troubleshooting.",
+              "why": "This is the practical job shape many small businesses need before they need a full AI engineer.",
+              "action": "Create a one-page offer for customer-support AI operations: audit, prompt repair, escalation rules, and monthly monitoring.",
+              "teacher": "Emphasize maintenance and accuracy checks; the value is keeping automations alive after launch. *",
+              "link": "https://job-boards.greenhouse.io/procaresolutions/jobs/5204978008"
+            },
+            {
+              "n": 4,
+              "category": "Hacker News June",
+              "title": "Hacker News June hiring thread shows AI-native operations tools seeking builders",
+              "source": "nchelluri.github.io",
+              "relevance": "Intermediate",
+              "summary": "The June hiring index includes AI-native operations, agentic e-commerce, healthcare AI operating systems, and AI observability roles.",
+              "why": "Early teams are hiring people who can turn messy domain workflows into reliable software, not just prototype demos.",
+              "action": "Pick one niche workflow and document a before-and-after automation case study with costs, failure modes, and handoff rules.",
+              "teacher": "Good lesson topic: how to scope an AI workflow so it has a human fallback and a measurable business result. *",
+              "link": "https://nchelluri.github.io/hnjobs/"
+            },
+            {
+              "n": 5,
+              "category": "Deel Senior Staff",
+              "title": "Deel Senior Staff Product Designer role puts AI workflow design at executive product level",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Deel is hiring a senior designer to lead its AI vertical, including conversational AI, agent-driven workflows, and human-in-the-loop experiences.",
+              "why": "AI product design is moving from novelty UI into core operating-system design for work.",
+              "action": "Refresh portfolio pieces to show states: uncertain answer, approval needed, handoff, audit trail, and user correction.",
+              "teacher": "Train designers to design AI behavior and trust boundaries, not only screens. *",
+              "link": "https://jobs.ashbyhq.com/deel/d806d38e-3cd2-4692-937a-b82e60396570"
+            },
+            {
+              "n": 6,
+              "category": "Rocket Lawyer AI",
+              "title": "Rocket Lawyer AI and automation internship points to legal workflow automation demand",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Rocket Lawyer AI and automation internship runs June to August 2026 and focuses on workflow automation in legal services.",
+              "why": "Legal-tech automation is expanding beyond lawyers into operators who can map documents, approvals, and client journeys.",
+              "action": "Build a starter automation around intake, missing-info checks, document generation, and client follow-up reminders.",
+              "teacher": "Keep the compliance lesson clear: AI can prepare and route work, but legal review remains a controlled checkpoint. *",
+              "link": "https://job-boards.greenhouse.io/rocketlawyer/jobs/5203906008"
+            },
+            {
+              "n": 7,
+              "category": "3D AI Studio",
+              "title": "3D AI Studio public API creates a 3D automation and e-commerce asset pipeline opportunity",
+              "source": "3daistudio.com",
+              "relevance": "Intermediate",
+              "summary": "3D AI Studio opened its platform as an API covering text-to-3D, image-to-3D, AI texturing, retopology, mesh repair, conversion, rendering, and production flows.",
+              "why": "3D work is becoming programmable, which favors artists who can design repeatable asset pipelines.",
+              "action": "Prototype an e-commerce pipeline: product photo to rough 3D asset to texture pass to web-ready preview to QA checklist.",
+              "teacher": "For 3D/design students, teach source locking, mesh inspection, scale checks, and when AI output is only a blocking proxy. *",
+              "link": "https://www.3daistudio.com/media/press-releases/3dai-studio-public-api-launch"
+            },
+            {
+              "n": 8,
+              "category": "Q2 Assistant embeds",
+              "title": "Q2 Assistant embeds AI agents across banking operations",
+              "source": "q2.com",
+              "relevance": "Intermediate",
+              "summary": "Q2 launched an assistant layer and product-specific agents for banking operations, beginning with customer-care tasks.",
+              "why": "Regulated industries will need specialists who can translate domain processes into monitored agent workflows.",
+              "action": "Offer a regulated agent readiness audit: data access, escalation, logging, policy gaps, and customer-facing scripts.",
+              "teacher": "Teach that banking AI work sells governance, not magic; traceability and exception handling are the differentiators. *",
+              "link": "https://www.q2.com/company/news/pr/q2-launches-q2-assistant-embedding-ai-agents-across-banking-operations"
+            },
+            {
+              "n": 9,
+              "category": "Reddit freelancing market",
+              "title": "Reddit freelancing market report says winners sell outcomes, not generic AI tooling",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit freelancing guide thread argues that 2026 winners use AI to sell business outcomes, while generic low-price automation is crowded.",
+              "why": "This is useful street-level signal from freelancers: positioning and sales skill matter as much as tool skill.",
+              "action": "Rewrite offers around one outcome such as fewer support tickets, faster product visuals, better lead qualification, or weekly reporting.",
+              "teacher": "Have learners practice turning I build AI automations into a measurable client promise and a paid discovery call script. *",
+              "link": "https://www.reddit.com/r/freelancerguide/comments/1taq7f5/freelancing_market_report_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Public X post",
+              "title": "Public X post flags privacy and compliance AI agents as a near-term service niche",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from Techzine highlights Veeam AI agents for privacy and compliance, with Consent Agent available and more planned for Q3 2026.",
+              "why": "Compliance agents create implementation work around consent records, audit trails, policy mapping, and risk reporting.",
+              "action": "Create a checklist-driven offer for small teams: where consent lives, who can access it, what AI touches, and how exceptions are logged.",
+              "teacher": "Good workshop topic: map one compliance workflow before adding AI, then define what the agent may never decide alone. *",
+              "link": "https://x.com/techzine/status/2062129470916743505"
             }
           ]
         }
