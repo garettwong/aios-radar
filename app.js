@@ -1066,4 +1066,17 @@
   applyAnswers();
   setTimeout(pollAnswers, 3000);
   setInterval(pollAnswers, 20000);
+
+  // Sync hook (sync.js calls this after it pulls fresh state from your private cloud)
+  // — re-read the device-state maps from localStorage, then repaint, so a tick made on
+  // another device appears here without a reload.
+  window.AIOS_RERENDER = function () {
+    try { hqChecks = JSON.parse(localStorage.getItem(HQ_CHK) || "{}"); } catch (e) {}
+    try { hqDel = JSON.parse(localStorage.getItem(HQ_DEL) || "{}"); } catch (e) {}
+    try { hqOrd = JSON.parse(localStorage.getItem(HQ_ORD) || "{}"); } catch (e) {}
+    try { todos = loadTodos(); } catch (e) {}
+    try { renderHQ(); } catch (e) {}
+    try { renderTodos(); } catch (e) {}
+    try { updateTodoNavCount(); } catch (e) {}
+  };
 })();

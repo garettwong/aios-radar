@@ -107,6 +107,7 @@ code {
   transition: all .15s ease;
 }
 .refresh-btn:hover { background: rgba(54,214,231,.18); box-shadow: 0 0 14px rgba(54,214,231,.25); }
+.refresh-btn.on { color: var(--green); border-color: var(--green-dim); background: rgba(74,222,128,.10); }
 
 /* ========================= STATUS BANNER ========================= */
 .status-banner {
