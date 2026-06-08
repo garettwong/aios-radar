@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 20:28",
-    "editions": 93
+    "fetchedAt": "2026-06-08 21:48",
+    "editions": 94
   },
   "editions": [
+    {
+      "key": "2026-06-08 21",
+      "label": "2026-06-08 · 21:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-08 · 21:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI makes memory",
+              "title": "OpenAI makes memory freshness and safety controls more visible in product release notes",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's June 4 release notes highlight fresher memory behavior plus Lockdown Mode limits on network-enabled capabilities such as browsing, deep research, agent mode, and downloads.",
+              "why": "Agent products are moving from raw capability toward controllable operating modes, which matters for any personal automation or client-facing workflow.",
+              "action": "Add a visible network allowed or network locked state to agent jobs and record when memory or persistent context was used.",
+              "teacher": "Useful example of teaching users that good agents need state, but state must be inspectable and revocable.",
+              "link": "https://openai.com/products/release-notes/"
+            },
+            {
+              "n": 2,
+              "category": "Figma frames its",
+              "title": "Figma frames its design agent as code-to-canvas-to-code workflow, not just mockup generation",
+              "source": "figma.com",
+              "relevance": "Intermediate",
+              "summary": "Figma says its agent can work alongside designers on the canvas, pull code into Figma, apply design systems, and send work back through MCP.",
+              "why": "The design handoff is turning into a shared agent workspace where design systems become executable constraints.",
+              "action": "For UI/client work, keep a design-system-ready prompt pack: tokens, spacing rules, component names, and unacceptable visual drift examples.",
+              "teacher": "Good case study for explaining why source-locked design context beats screenshot-only prompting.",
+              "link": "https://www.figma.com/blog/the-figma-agent-is-here/"
+            },
+            {
+              "n": 3,
+              "category": "NVIDIA pushes Omniverse",
+              "title": "NVIDIA pushes Omniverse Cloud APIs and ChatUSD as OpenUSD adoption accelerators",
+              "source": "nvidianews.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA's recent Omniverse update emphasizes Cloud APIs for OpenUSD adoption and a generative AI model, ChatUSD, for working with 3D scene data.",
+              "why": "The 3D market is converging on scene-language infrastructure, not only prettier image generation.",
+              "action": "For render pipelines, keep asset metadata, camera, materials, and scene hierarchy in structured files so future agents can manipulate them reliably.",
+              "teacher": "Show makers that USD-like structure is the bridge between creative intent and repeatable multi-angle output.",
+              "link": "https://nvidianews.nvidia.com/_gallery/download_pdf/64d26a1f3d6332b7261acf38/"
+            },
+            {
+              "n": 4,
+              "category": "Reddit maker rebuilds",
+              "title": "Reddit maker rebuilds a Claude Code-style agent loop to demystify the harness",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker shared a from-scratch Claude Code-style coding agent tutorial, arguing the core loop is small while sessions, compaction, tools, subagents, skills, MCP, and streaming form the real harness.",
+              "why": "Builders are learning that agent quality is less about one magic model call and more about the surrounding control system.",
+              "action": "When evaluating a coding agent, score its harness: state handling, tool scoping, review loop, recovery path, and audit trail.",
+              "teacher": "Useful teaching hook: the loop is simple; production reliability lives in everything around the loop.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tva2cv/i_rebuilt_a_claude_codestyle_coding_agent_from/"
+            },
+            {
+              "n": 5,
+              "category": "Hacker News discussion",
+              "title": "Hacker News discussion revives dynamic tool registration as the MCP context-bloat answer",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Show HN thread argues that MCP is not dead if tools can be dynamically loaded as abilities instead of dumping every tool definition into context.",
+              "why": "Tool overload is becoming the practical bottleneck for agent adoption; progressive disclosure is now a product requirement.",
+              "action": "Design agent tool catalogs with search/load steps, not always-on mega tool lists.",
+              "teacher": "Contrast static MCP dumping with tab-, task-, or ability-scoped tools to explain why smaller context can make agents smarter.",
+              "link": "https://news.ycombinator.com/item?id=47412133"
+            },
+            {
+              "n": 6,
+              "category": "GitHub Copilot SDK",
+              "title": "GitHub Copilot SDK repo exposes Copilot as an embeddable agent runtime",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub's Copilot SDK repository presents multi-language SDKs for embedding Copilot agent workflows into apps and services.",
+              "why": "Coding agents are becoming infrastructure components that other tools can host, extend, and meter.",
+              "action": "Watch for internal tools that should call an agent runtime directly instead of shelling out to a desktop/CLI assistant.",
+              "teacher": "Good example of the platform shift from assistant UI to agent runtime API.",
+              "link": "https://github.com/github/copilot-sdk"
+            },
+            {
+              "n": 7,
+              "category": "Agent-skills registries move",
+              "title": "Agent-skills registries move toward validated, searchable capability packs",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Tech Leads Club agent-skills repo packages a validated skill registry and MCP server with search-first, fetch-only-what-is-needed behavior.",
+              "why": "Skills are turning into a distribution layer for agent behavior, similar to plugin marketplaces but lighter and more auditable.",
+              "action": "Maintain a small internal skills registry for repeatable tasks: render QA, Telegram delivery, PDF generation, client-deck extraction.",
+              "teacher": "Teach skills as compressed team know-how that agents load only when relevant.",
+              "link": "https://github.com/tech-leads-club/agent-skills"
+            },
+            {
+              "n": 8,
+              "category": "Supabase ships agent",
+              "title": "Supabase ships agent skills for database and app-building work",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Supabase's agent-skills repo gives AI agents instructions for Supabase products, CLI, migrations, auth, RLS, storage, vectors, cron, and edge functions.",
+              "why": "Tool vendors are starting to publish agent-native operating manuals, not just human docs.",
+              "action": "For any stack you use often, check whether the vendor has an agent skill/MCP package before writing custom glue.",
+              "teacher": "Useful example of domain-specific skills reducing hallucinated APIs and unsafe database changes.",
+              "link": "https://github.com/supabase/agent-skills"
+            },
+            {
+              "n": 9,
+              "category": "Cohere positions Command",
+              "title": "Cohere positions Command A+ as an open-source enterprise agent model",
+              "source": "cohere.com",
+              "relevance": "Intermediate",
+              "summary": "Cohere's model overview now highlights Command A+ as an open-source, Apache 2.0 model for high-performance enterprise agents with tool use and reasoning.",
+              "why": "Enterprise buyers want strong agent models they can deploy with sovereignty, not only closed hosted endpoints.",
+              "action": "Keep a shortlist of open/deployable models for private workflows where client files, unreleased art, or regulated data cannot leave the environment.",
+              "teacher": "Frame model choice around deployment rights, latency, tool use, and data policy, not benchmark rank alone.",
+              "link": "https://cohere.com/models-overview"
+            },
+            {
+              "n": 10,
+              "category": "Workday adds Developer",
+              "title": "Workday adds Developer Agent, agent-ready tools, and Agent Passport verification",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Workday announced developer tools for building and connecting AI agents, including MCP access to HR/finance data and an Agent Passport concept for trusted verification.",
+              "why": "Enterprise agent adoption is shifting toward identity, permissions, and verification rather than free-form automation.",
+              "action": "Treat each automation as an identity with scoped access, approval requirements, and evidence of what it touched.",
+              "teacher": "Good business signal: the winning agent products will prove who acted, under what policy, and with what audit trail.",
+              "link": "https://www.prnewswire.com/news-releases/workday-launches-new-tools-for-developers-to-build-connect-and-verify-ai-agents-for-hr-finance-and-it-302787997.html"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 18",
       "label": "2026-06-08 · 19:06",
