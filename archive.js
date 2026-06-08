@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 11:33",
-    "editions": 90
+    "fetchedAt": "2026-06-08 12:35",
+    "editions": 91
   },
   "editions": [
+    {
+      "key": "2026-06-08 12",
+      "label": "2026-06-08 · 12:07",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 12:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Ory Talos targets",
+              "title": "Ory Talos targets AI-agent identity and API-key risk",
+              "source": "natlawreview.com",
+              "relevance": "Intermediate",
+              "summary": "Ory launched Talos to help secure API keys and generate dynamic tokens for non-human identities, including AI agents.",
+              "why": "As companies connect agents to real tools, identity, access, and key rotation become practical consulting and ops work.",
+              "action": "Create a small service checklist for agent security: inventory keys, map tool permissions, rotate secrets, and add least-privilege access.",
+              "teacher": "Good teaching angle: agents are not just prompts; they are identities that need governance like service accounts.",
+              "link": "https://natlawreview.com/press-releases/ory-launches-ory-talos-lock-down-ai-agents-and-non-human-identities-running"
+            },
+            {
+              "n": 2,
+              "category": "Hasbro launches Sixth",
+              "title": "Hasbro launches Sixth Wall for authorized AI character experiences",
+              "source": "thewrap.com",
+              "relevance": "Intermediate",
+              "summary": "Hasbro's new Sixth Wall studio is focused on licensed AI experiences and is partnering with ElevenLabs for character voice access.",
+              "why": "Brand-safe AI content is becoming a licensing and production niche, especially for creators who understand IP, voice, and visual consistency.",
+              "action": "Prepare a pitch deck for authorized character or mascot experiences: consent, style guides, voice rules, moderation, and prototype examples.",
+              "teacher": "Use this to explain why creative AI work is shifting from random generation to rights-managed production systems.",
+              "link": "https://www.thewrap.com/industry-news/business/hasbro-ai-studio-sixth-wall-launch/"
+            },
+            {
+              "n": 3,
+              "category": "Reallusion AI Studio",
+              "title": "Reallusion AI Studio links 3D control to cinematic AI workflows",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Reallusion unveiled AI Studio with ByteDance's Seedance 2.0, positioning existing 3D skills as control inputs for AI-assisted animation and video.",
+              "why": "3D artists can defend their value by owning character setup, camera control, motion, and consistency before AI generation.",
+              "action": "Create one portfolio case showing a 3D scene, camera pass, AI video result, and revision notes; sell it as controlled AI previs or ad concept work.",
+              "teacher": "Strong classroom exercise: compare prompt-only video against a 3D-controlled workflow and grade consistency.",
+              "link": "https://www.prnewswire.com/news-releases/3d-precision-control-meets-cinematic-ai-reallusion-unveils-ai-studio-in-creative-alliance-with-bytedances-seedance-2-0--302781097.html"
+            },
+            {
+              "n": 4,
+              "category": "Centric AI Studio",
+              "title": "Centric AI Studio turns product creation and merchandising into connected AI work",
+              "source": "centricsoftware.com",
+              "relevance": "Intermediate",
+              "summary": "Centric Software launched Centric AI Studio for product creation, merchandising, sourcing, and marketing using connected product visuals and live data.",
+              "why": "Consumer-product teams need visual operators who understand both product data and image generation, not just standalone mockups.",
+              "action": "Offer an AI product-visual workflow audit: where images are created, where data changes, and where teams lose consistency.",
+              "teacher": "Teach product visuals as operational assets tied to PLM, merchandising, and launch calendars.",
+              "link": "https://www.centricsoftware.com/press-releases/centric-software-unveils-centric-ai-studio-powering-a-new-era-of-ai-driven-product-creation"
+            },
+            {
+              "n": 5,
+              "category": "Apple is hiring",
+              "title": "Apple is hiring a Product Designer for Creator Studio",
+              "source": "jobs.apple.com",
+              "relevance": "Intermediate",
+              "summary": "Apple has a Creator Studio product-design listing asking for cross-platform UI/product design experience.",
+              "why": "Major creative platforms are staffing around creator workflows, which validates AI-assisted creative tooling as a serious design career lane.",
+              "action": "Update portfolio framing around creator workflows: timeline, asset browser, prompt/edit loop, export, and error states.",
+              "teacher": "Use the listing as a rubric for students: platform thinking, polished UI craft, and workflow depth matter more than isolated prompt tricks.",
+              "link": "https://jobs.apple.com/en-ca/details/200645370-3337/product-designer-creator-studio"
+            },
+            {
+              "n": 6,
+              "category": "Twine freelance role",
+              "title": "Twine freelance role asks for Unreal Engine 5 real-estate visualization",
+              "source": "pitchmeai.com",
+              "relevance": "Intermediate",
+              "summary": "A freelance 3D designer listing on Twine centers on UE5, walkable environments, material customization, real-time interaction, and external asset integration.",
+              "why": "ArchViz is moving toward interactive sales tools, which favors artists who can bridge visual quality, optimization, and client-facing UX.",
+              "action": "Build a small Unreal demo room or streetscape with material toggles, camera bookmarks, and a polished one-page project breakdown.",
+              "teacher": "Teach 3D portfolios as interactive systems, not only still renders; buyers increasingly want configurators and virtual tours.",
+              "link": "https://pitchmeai.com/jobs/twine/freelance-3d-designer-unreal-engine-bfliovzd6d"
+            },
+            {
+              "n": 7,
+              "category": "Remote 3D artist",
+              "title": "Remote 3D artist boards show active demand for visualization and digital sampling",
+              "source": "globalwork.ai",
+              "relevance": "Intermediate",
+              "summary": "GlobalWork.ai's current 3D artist feed shows remote roles across 3D animation, visualization, architectural rendering, and technical art.",
+              "why": "The job market still rewards strong 3D production, but the edge is shifting toward pipeline speed, presentation outputs, and tool fluency.",
+              "action": "Build a compact remote-ready reel: one ArchViz scene, one product turntable, one technical breakdown, and clear software list.",
+              "teacher": "Have learners map each role to deliverables: render stills, turntables, material variants, CAD cleanup, or real-time interaction.",
+              "link": "https://globalwork.ai/en/remote-jobs/usa/3d-artist"
+            },
+            {
+              "n": 8,
+              "category": "Glassdoor remote 3D",
+              "title": "Glassdoor remote 3D listings show CLO3D and AI-fit matching demand",
+              "source": "glassdoor.com",
+              "relevance": "Intermediate",
+              "summary": "Glassdoor's remote 3D listings include CLO3D apparel work and AI-assisted job matching around design skills.",
+              "why": "Apparel and product teams are moving physical sampling into virtual simulation, creating a practical 3D design niche outside games and VFX.",
+              "action": "If targeting fashion/product clients, add CLO3D-style virtual sampling examples: fabric library, avatar fit, flat lays, turntable, and vendor-ready notes.",
+              "teacher": "Good module: digital sampling reduces waste and sample rounds; students should learn to explain business impact, not only visuals.",
+              "link": "https://www.glassdoor.com/Job/3d-artist-jobs-SRCH_IS11047_KO0%2C9.htm"
+            },
+            {
+              "n": 9,
+              "category": "Reddit UX thread",
+              "title": "Reddit UX thread shows designers are asking how to catch up on AI",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent UXDesign thread has a product designer asking how to catch up on AI after feeling behind, with discussion around AI agents and job search pressure.",
+              "why": "Anxiety is turning into demand for practical AI-design learning: workflows, discovery agents, portfolio updates, and realistic tool use.",
+              "action": "Create a short workshop or coaching package: AI for UX discovery, competitive analysis, microcopy, prototype critique, and portfolio positioning.",
+              "teacher": "Use the thread as a needs-analysis source; learners are not asking for theory, they are asking what to practice next week.",
+              "link": "https://www.reddit.com/r/UXDesign/comments/1tximg2/i_missed_the_ai_turn_how_do_i_catch_up/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit automation thread",
+              "title": "Reddit automation thread asks whether AI automation can still make a living in 2026",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A current automation discussion asks if selling AI automation is viable, with comments warning that cheap build work is crowded.",
+              "why": "The opportunity is moving from generic bot building to diagnosis, maintenance, integration quality, and measurable business outcomes.",
+              "action": "Avoid selling 'AI automation' broadly; choose one vertical pain such as invoice intake, lead follow-up, creator repurposing, or reporting cleanup.",
+              "teacher": "Teach pricing around outcomes and support: discovery, workflow map, pilot, handoff docs, and monthly maintenance.",
+              "link": "https://www.reddit.com/r/automation/comments/1tv6tvu/can_you_actually_make_a_living_selling_ai/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 09",
       "label": "2026-06-08 · 09:07",
