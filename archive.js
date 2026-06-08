@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 00:16",
-    "editions": 94
+    "fetchedAt": "2026-06-09 00:20",
+    "editions": 95
   },
   "editions": [
+    {
+      "key": "2026-06-09 00",
+      "label": "2026-06-09 · 00:13",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 00:13 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Agent Control",
+              "title": "Microsoft Agent Control Specification moves agent guardrails into portable policy files",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft is pushing Agent Control Specification as a way to define what agents may do, when they need approval, and what evidence must be logged across frameworks.",
+              "why": "Agent adoption is shifting from demos to controlled execution; policy portability is becoming as important as model choice.",
+              "action": "For any internal agent workflow, write a one-page policy map: blocked actions, approval actions, evidence logs, and rollback path.",
+              "teacher": "Teach agents as governed workers: instruction, tool, policy, receipt. Without the policy layer, the prompt is doing too much work.",
+              "link": "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way-to-control-ai-agent-behavior/"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft Scout signals",
+              "title": "Microsoft Scout signals OpenClaw-style personal agents are becoming platform strategy",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "Axios reports Microsoft debuted Scout, a personal agent built on top of OpenClaw, alongside its own MAI-Thinking-1 reasoning model.",
+              "why": "Big platforms are copying the background-agent pattern: persistent tasks, personal context, and tool use, not just chat.",
+              "action": "Watch which daily workflows Scout targets first; those are the categories likely to become default OS/platform expectations.",
+              "teacher": "The market is moving from assistant as answer box to assistant as task runner with state.",
+              "link": "https://www.axios.com/2026/06/02/microsoft-debuts-scout-agent-homegrown-reasoning-model"
+            },
+            {
+              "n": 3,
+              "category": "Microsoft Project Solara",
+              "title": "Microsoft Project Solara points toward agent-first edge devices for frontline work",
+              "source": "tomshardware.com",
+              "relevance": "Intermediate",
+              "summary": "Project Solara is described as a chip-to-cloud platform for devices designed around agents instead of traditional apps.",
+              "why": "Agent UX may leave the laptop: badges, edge devices, local sensors, and cloud state are a new maker surface.",
+              "action": "For physical-installation or retail concepts, prototype a voice/photo/task loop instead of only a dashboard.",
+              "teacher": "Agent-first hardware means the device is an interface to a workflow, not the workflow itself.",
+              "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-unveils-project-solara-ai-a-chip-to-cloud-platform-built-to-power-a-new-generation-of-agent-first-enterprise-devices-hardware-designed-to-run-ai-agents-instead-of-traditional-apps"
+            },
+            {
+              "n": 4,
+              "category": "X open-sources an",
+              "title": "X open-sources an MCP server that turns its API into agent-callable tools",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "X's developer platform publishes XMCP, a Model Context Protocol server that converts X API operations into tools for Cursor, Windsurf, or custom agents.",
+              "why": "Social platforms are becoming direct agent tool surfaces, which changes social listening, publishing, and automation design.",
+              "action": "Treat social automation as read-only first: search, summarize, and draft before allowing any post/write action.",
+              "teacher": "MCP makes integration easy; allow-lists and OAuth scope design decide whether it is safe.",
+              "link": "https://github.com/xdevplatform/xmcp"
+            },
+            {
+              "n": 5,
+              "category": "CSA warns AI",
+              "title": "CSA warns AI developer tooling is becoming a software supply-chain attack surface",
+              "source": "labs.cloudsecurityalliance.org",
+              "relevance": "Intermediate",
+              "summary": "Cloud Security Alliance's June research note covers attacks targeting AI developer tooling and Codex-style interfaces.",
+              "why": "Agent tools now sit close to repositories, credentials, build scripts, and local machines, making them high-value targets.",
+              "action": "Audit MCP configs, agent skills, shell hooks, and package installs as part of normal repo security review.",
+              "teacher": "The agent harness is part of the software supply chain; review it like CI/CD, not like a chat preference.",
+              "link": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/06/CSA_research_note_ai_developer_supply_chain_codexui_20260601-csa-styled.pdf"
+            },
+            {
+              "n": 6,
+              "category": "Hugging Face publishes",
+              "title": "Hugging Face publishes portable skills for Claude Code, Codex, Gemini CLI, and Cursor",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face's skills repo packages ecosystem capabilities as reusable Agent Skills that multiple coding agents can load.",
+              "why": "Skills are becoming the portable layer above model vendors, similar to plugins or recipes for repeated workflows.",
+              "action": "Build a small private skill library for repeated 3D/design/render checks: source lock, typography QA, asset export, and delivery verification.",
+              "teacher": "Good skills are not long prompts; they are compact procedures with tools, references, and done conditions.",
+              "link": "https://github.com/huggingface/skills"
+            },
+            {
+              "n": 7,
+              "category": "agentskill-sh/ags packages skill",
+              "title": "agentskill-sh/ags packages skill search and installation across coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "ags offers search, install, update, and feedback commands for skills across Claude Code, Codex, Cursor, Copilot, Windsurf, Gemini CLI, and more.",
+              "why": "Agent skills are fragmenting into a marketplace layer, and discovery quality will determine which workflows spread.",
+              "action": "Track skills that include validation scripts or evals; avoid installing prompt-only packs into production work without review.",
+              "teacher": "A skill registry needs trust signals: source, version, scope, tests, and uninstall path.",
+              "link": "https://github.com/agentskill-sh/ags"
+            },
+            {
+              "n": 8,
+              "category": "sub-agents-skills routes work",
+              "title": "sub-agents-skills routes work across Codex, Claude Code, Cursor, and Gemini from one skill",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The project lets a parent agent delegate to different CLI backends using markdown agent definitions.",
+              "why": "Builders want model/tool arbitrage without rewriting workflows for each vendor.",
+              "action": "For complex jobs, define which backend is best for refactor, long reasoning, large context, browsing, and verification.",
+              "teacher": "Multi-agent orchestration works best when each worker has a narrow role, structured output, and a clear acceptance check.",
+              "link": "https://github.com/shinpr/sub-agents-skills"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News Show",
+              "title": "Hacker News Show HN Eve tests managed OpenClaw-style background work with specialist sub-agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Eve is pitched as a managed agent harness with filesystem, browser, connectors, specialist models, parallel sub-agents, and persistent memory.",
+              "why": "The HN discussion shows appetite for agent-as-colleague products, but also pressure to prove reliability and cost.",
+              "action": "Study the onboarding: credits, visible work logs, and async messaging are becoming standard expectations for agent products.",
+              "teacher": "A credible agent product must show its work while staying concise enough that users do not become the debugger.",
+              "link": "https://news.ycombinator.com/item?id=47721255"
+            },
+            {
+              "n": 10,
+              "category": "Reddit builders say",
+              "title": "Reddit builders say custom agents make most sense for unattended runtime judgment, not generic Claude Code clones",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh r/AI_Agents thread argues many first agents are weaker Claude Code clones; the useful gap is cron, webhooks, embedded product agents, continuity, and runtime judgment.",
+              "why": "Maker energy is moving from general agents to owned workflow agents with distribution, data, and unattended execution.",
+              "action": "Before building an agent product, ask what it can do that Claude Code/Codex cannot: unique data, runtime trigger, customer-facing embed, or regulated execution.",
+              "teacher": "Can a foundation model copy this next month? is now a product-design filter for agent startups.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tz9ix4/your_first_ai_agent_is_just_a_worse_claude_code/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 21",
       "label": "2026-06-08 · 22:06",
