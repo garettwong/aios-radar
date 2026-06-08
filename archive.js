@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 06:09",
-    "editions": 96
+    "fetchedAt": "2026-06-09 06:11",
+    "editions": 97
   },
   "editions": [
+    {
+      "key": "2026-06-09 06",
+      "label": "2026-06-09 · 06:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 06:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "JetBrains Junie makes",
+              "title": "JetBrains Junie makes MCP setup an assisted CLI workflow",
+              "source": "junie.jetbrains.com",
+              "relevance": "Intermediate",
+              "summary": "Junie CLI now documents an /mcp flow with an MCP Installation Assistant that can add registry servers or configure a server from scratch, prompt for secrets, write the JSON config, and verify startup.",
+              "why": "The tooling layer is moving from expert-only JSON wiring to guided agent setup. That lowers friction for IDE-native agents and makes MCP a normal product surface.",
+              "action": "Test one project-scoped MCP config in Junie-style layout and compare the install flow against Codex/OpenClaw skills for clarity, secret handling, and startup verification.",
+              "teacher": "Teach MCP as configuration plus trust boundaries: project scope is shareable, user scope is private, and startup verification is part of the workflow, not an afterthought.",
+              "link": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html"
+            },
+            {
+              "n": 2,
+              "category": "Google moves consumer",
+              "title": "Google moves consumer Gemini CLI users toward Antigravity CLI",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Gemini CLI maintainer says Google is transitioning terminal users to Antigravity CLI, with consumer/free Gemini CLI access stopping June 18, 2026 while enterprise/API-key paths remain.",
+              "why": "CLI agents are becoming platform strategies, not standalone toys. The painful part is migration, billing, model access, and whether open-source continuity remains meaningful.",
+              "action": "Audit any Gemini CLI dependency before June 18 and keep a provider-neutral fallback for terminal agent workflows, especially if API-key login or free tiers matter.",
+              "teacher": "Use this as a case study in tool lock-in: an open repository can survive while the preferred hosted access path changes underneath users.",
+              "link": "https://github.com/google-gemini/gemini-cli/discussions/27274"
+            },
+            {
+              "n": 3,
+              "category": "Gartner says enterprise",
+              "title": "Gartner says enterprise coding agents are entering competitive realignment",
+              "source": "gartner.com",
+              "relevance": "Intermediate",
+              "summary": "Gartner frames enterprise AI coding agents as moving into a new expansion phase where product quality must be weighed against governance, support, commercial clarity, and enterprise deployment maturity.",
+              "why": "The buying criteria are shifting from benchmark demos to operational fit. That favors tools with admin controls, auditability, procurement clarity, and support.",
+              "action": "When comparing coding agents, score governance and deployment model next to SWE-bench-style ability: permissions, logs, data residency, support, and billing predict real adoption.",
+              "teacher": "Teach the market map as two axes: agent capability and enterprise readiness. The winner in a lab may not be the deployable choice for a client.",
+              "link": "https://www.gartner.com/en/newsroom/press-releases/2026-05-20-gartner-says-the-market-for-enterprise-ai-coding-agents-is-entering-a-new-phase-of-expansion-and-competitive-realignment"
+            },
+            {
+              "n": 4,
+              "category": "Meshy puts a",
+              "title": "Meshy puts a conversational agent in the 3D asset pipeline",
+              "source": "meshy.ai",
+              "relevance": "Intermediate",
+              "summary": "Meshy announcements list Meshy 3D Agent Beta on June 4, positioning chat as a way to brainstorm, generate batches, and move selected ideas toward 3D models.",
+              "why": "3D generation is turning into workflow orchestration: ideation, consistency, texturing, download, printing, and game assets in one guided loop.",
+              "action": "For product or booth asset work, test chat-to-3D as an ideation layer only, then keep topology, scale, material, and render QA in Blender or a controlled pipeline.",
+              "teacher": "Make students separate concept speed from production readiness. AI can propose many forms quickly, but usable 3D still needs inspection and cleanup.",
+              "link": "https://www.meshy.ai/blog/category/announcements"
+            },
+            {
+              "n": 5,
+              "category": "Daz Studio 6",
+              "title": "Daz Studio 6 adds Victoria AI Chat inside a creator tool",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Daz 3D launched Daz Studio 6 with Victoria AI Chat, faster loading, improved content organization, hair editing, viewport upgrades, and current NVIDIA GPU support.",
+              "why": "AI is being embedded into established creative software as contextual help and workflow acceleration, not only as asset generation.",
+              "action": "Watch whether in-app assistants reduce search/support friction for large 3D libraries. For production teams, the real value may be faster scene setup and troubleshooting.",
+              "teacher": "Use Daz as an example of practical AI UX: the assistant sits near the work, while traditional viewport, content, and render improvements still matter.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/04/3307011/0/en/daz-3d-launches-daz-studio-6-the-next-generation-of-its-flagship-3d-creation-platform.html"
+            },
+            {
+              "n": 6,
+              "category": "Public X signal:",
+              "title": "Public X signal: privacy/compliance agents are moving into enterprise marketing",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A Techzine X post highlights Veeam launching three AI agents for privacy and compliance on DataAI Command Platform, with Consent Agent available and two more planned for Q3 2026.",
+              "why": "This is a useful market signal because agent governance is being packaged as named agents for compliance buyers, not just as developer controls.",
+              "action": "Track privacy-agent claims against actual audit artifacts: consent lifecycle logs, data subject request evidence, assessment outputs, and integration coverage.",
+              "teacher": "Show how public X snippets can surface early product positioning, then verify claims against official pages before treating them as implementation truth.",
+              "link": "https://x.com/techzine/status/2062129470916743505"
+            },
+            {
+              "n": 7,
+              "category": "Tessera organizes parallel",
+              "title": "Tessera organizes parallel Claude Code, Codex, and OpenCode sessions",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Tessera is an Apache-licensed workspace for running AI coding sessions across projects, collections, tabs, panes, and Git worktrees, with Claude Code, Codex, and OpenCode named in the README.",
+              "why": "The pain is no longer only generating code. Makers need a cockpit for many agents, branches, diffs, logs, and reviews at once.",
+              "action": "Try Tessera or borrow its interaction model: every agent task should map to a worktree, status, diff, and review lane instead of disappearing in chat history.",
+              "teacher": "Teach agent operations as project management plus version control. Parallel agents without visible state become chaos quickly.",
+              "link": "https://github.com/horang-labs/tessera"
+            },
+            {
+              "n": 8,
+              "category": "Reddit maker builds",
+              "title": "Reddit maker builds C-Lantor for local Codex and Claude coordination",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker post describes C-Lantor as a local workspace for coordinating Codex, Claude Code, aider, and local agent workflows, asking for feedback from users already running multi-agent setups.",
+              "why": "Early builders are converging on local agent-team control planes: routing, state, and coordination matter as much as model choice.",
+              "action": "Mine the comments and project shape for pain points: handoff, shared context, permissions, file conflicts, and how much UI is needed before a CLI becomes limiting.",
+              "teacher": "Use this as community evidence that advanced users are inventing their own command centers before mainstream tools fully solve orchestration.",
+              "link": "https://www.reddit.com/r/OpenaiCodex/comments/1tvecfn/i_built_clantor_a_local_workspace_for/"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News hiring",
+              "title": "Hacker News hiring thread shows AI shipping expectations entering job specs",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "The June 2026 Ask HN hiring thread includes roles and comments that explicitly mention using AI to ship high-quality code and production systems faster.",
+              "why": "Hiring language is a practical market signal. AI fluency is moving from optional tool preference into expectations around velocity, automation, and product execution.",
+              "action": "Update portfolio notes to show agent-assisted workflows with verification: tests, screenshots, diffs, review notes, and what the human decided.",
+              "teacher": "Teach candidates to document judgment, not just speed. Employers will care that you can use agents without losing quality control.",
+              "link": "https://news.ycombinator.com/item?id=48357725"
+            },
+            {
+              "n": 10,
+              "category": "Anthropic AWS Summit",
+              "title": "Anthropic AWS Summit agenda emphasizes governed Claude Code deployments",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic lists a June 30 AWS Summit DC session on Claude on AWS, including Claude Code under managed policy, data isolation, zero retention, audit trails, modernization, and secure code review.",
+              "why": "Enterprise agent adoption is being sold through governance and cloud controls. The buyer wants proof that agents can work inside policy, not just demos that they can code.",
+              "action": "For client-facing agent proposals, include a deployment-control page: data path, retention, credential handling, audit trail, and which tools are allowed.",
+              "teacher": "Frame enterprise agents as controlled workers. The technical lesson is that permissions, logging, and environment boundaries are part of the product.",
+              "link": "https://www.anthropic.com/events/anthropic-at-aws-summit-dc-2026"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 03",
       "label": "2026-06-09 · 04:06",
