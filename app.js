@@ -633,7 +633,7 @@
     const h = $("view-help"); if (!h) return;
     const briefs = libItems.filter((x) => x.source2 === "Brief").length;
     const arch = libItems.filter((x) => x.source2 === "Archive").length;
-    if (v === "hq") { h.innerHTML = ""; h.hidden = true; h.style.display = "none"; return; }  // HQ needs no description line
+    if (v === "hq" || v === "board") { h.innerHTML = ""; h.hidden = true; h.style.display = "none"; return; }  // HQ + Board need no description line
     h.hidden = false; h.style.display = "";
     h.innerHTML = v === "library"
       ? `📚 <b>LIBRARY</b> — everything archived &amp; searchable: <b>${briefs}</b> signals from all your email briefs + <b>${arch}</b> reference items (incl. 242 AI terms).`
@@ -663,6 +663,62 @@
     var saved = null; try { saved = localStorage.getItem(FKEY); } catch (e) {}
     setFeed(saved || "trend");
   }
+  /* ---------------- BOARD (Option B kanban) ---------------- */
+  var BOARD_OV = "aios_board_ov_v1";          // per-device status overrides {id: status}
+  function boardOv() { try { return JSON.parse(localStorage.getItem(BOARD_OV) || "{}"); } catch (e) { return {}; } }
+  function boardSaveOv(o) { try { localStorage.setItem(BOARD_OV, JSON.stringify(o)); } catch (e) {} }
+  var BOARD_FLOW = ["inbox", "active", "waiting", "done", "tobill", "billed"];
+  function renderBoard() {
+    var host = $("board-view"); if (!host) return;
+    var HQ = window.DASHBOARD_HQ;
+    if (!HQ) { host.innerHTML = '<div class="board-locked">🔒 Unlock 🧭 HQ first — your board uses the same password.</div>'; return; }
+    var ov = boardOv();
+    var tasks = (HQ.tasks || []).map(function (t) { return { id: t.id, title: t.title, client: t.client, amount: t.amount, due: t.due, next: t.next, _s: (ov[t.id] || t.status || "inbox") }; })
+      .filter(function (t) { return t._s !== "billed"; });
+    var COLS = [
+      { k: "inbox", t: "📥 INBOX", sub: "caught, not sorted", c: "#8aa0ad", pill: "NEW" },
+      { k: "active", t: "🔥 ACTIVE", sub: "finish before starting", c: "#4ade80", pill: "IN PROGRESS", pc: "#36d6e7", cap: 3 },
+      { k: "waiting", t: "⏳ WAITING", sub: "blocked on someone", c: "#f0a93b", pill: "WAITING" },
+      { k: "done", t: "✅ DONE", sub: "finished — bill it next", c: "#36d6e7", pill: "DONE", pc: "#4ade80" },
+      { k: "tobill", t: "💰 TO-BILL", sub: "cash on the table", c: "#f4c542", pill: "TO BILL" }
+    ];
+    function card(t, col) {
+      var pc = col.pc || col.c;
+      var title = (col.k === "tobill") ? ("INVOICE " + (t.client || t.title)) : t.title;
+      var meta = [t.client, t.amount, t.due].filter(Boolean).join(" · ");
+      var nxt = (col.k === "tobill") ? (t.next ? "→ " + t.next : "→ send the invoice") : (t.next ? "→ " + t.next : "");
+      return '<div class="ab-card" data-id="' + esc(t.id) + '" title="Tap to move this forward →">' +
+        '<div class="ab-t">' + esc(title) + '</div>' +
+        '<span class="ab-pill" style="color:' + pc + ';border-color:' + pc + '66;background:' + pc + '1f">' + esc(col.pill) + '</span>' +
+        (meta ? '<div class="ab-meta">' + esc(meta) + '</div>' : "") +
+        (nxt ? '<div class="ab-next">' + esc(nxt) + '</div>' : "") + '</div>';
+    }
+    var html = '<div class="board-rule">One task, flowing left → right.  🔥 <b>Active capped at 3</b> · ✅ Done → 💰 To-Bill ·  <b>tap a card to move it forward</b>.</div><div class="aios-board">';
+    COLS.forEach(function (col) {
+      var items = tasks.filter(function (t) { return t._s === col.k; });
+      var cnt = col.cap ? (items.length + "/" + col.cap + (items.length >= col.cap ? " · full" : "")) : (items.length ? String(items.length) : "");
+      html += '<div class="ab-col" style="border-top-color:' + col.c + '">' +
+        '<div class="ab-ct" style="color:' + col.c + '">' + col.t + (cnt ? ' <span class="ab-cnt">' + cnt + "</span>" : "") + "</div>" +
+        (col.sub ? '<div class="ab-cs">' + col.sub + "</div>" : "") +
+        (items.length ? items.map(function (t) { return card(t, col); }).join("") : '<div class="ab-empty">—</div>') + "</div>";
+    });
+    html += "</div>";
+    host.innerHTML = html;
+    if (!renderBoard._wired) {
+      host.addEventListener("click", function (e) {
+        var c = e.target.closest(".ab-card"); if (!c || !host.contains(c)) return;
+        var id = c.getAttribute("data-id"); if (!id) return;
+        var o = boardOv();
+        var base = ((window.DASHBOARD_HQ.tasks || []).filter(function (x) { return x.id === id; })[0] || {}).status || "inbox";
+        var cur = o[id] || base;
+        var i = BOARD_FLOW.indexOf(cur);
+        o[id] = BOARD_FLOW[(i < 0 ? 0 : i + 1) % BOARD_FLOW.length];
+        boardSaveOv(o); renderBoard();
+      });
+      renderBoard._wired = true;
+    }
+  }
+
   function setupNav() {
     document.querySelectorAll(".vnav").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -672,10 +728,12 @@
         if ($("gs-clear")) $("gs-clear").hidden = true;
         document.querySelectorAll(".vnav").forEach((b) => b.classList.toggle("active", b === btn));
         $("hq-view").hidden = (v !== "hq");
+        if ($("board-view")) $("board-view").hidden = (v !== "board");
         $("radar-view").hidden = (v !== "radar");
         $("library-view").hidden = (v !== "library");
         $("todo-view").hidden = (v !== "todo");
         if (v === "todo") renderTodoGate();
+        if (v === "board") renderBoard();
         setViewHelp(v);
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
@@ -1035,11 +1093,13 @@
       const active = document.querySelector(".vnav.active");
       const v = active ? active.dataset.view : "radar";
       $("hq-view").hidden = (v !== "hq");
+      if ($("board-view")) $("board-view").hidden = (v !== "board");
       $("radar-view").hidden = (v !== "radar");
       $("library-view").hidden = (v !== "library");
       $("todo-view").hidden = (v !== "todo");
       return;
     }
+    if ($("board-view")) $("board-view").hidden = true;
     $("hq-view").hidden = true; $("radar-view").hidden = true; $("library-view").hidden = true; $("todo-view").hidden = true;
     sv.hidden = false;
     const libHits = libItems.filter((it) =>
