@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 08:32",
-    "editions": 89
+    "fetchedAt": "2026-06-08 09:32",
+    "editions": 90
   },
   "editions": [
+    {
+      "key": "2026-06-08 09",
+      "label": "2026-06-08 · 09:07",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-08 · 08:54 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI super-app direction",
+              "title": "OpenAI super-app direction",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch says OpenAI is still working on a ChatGPT revamp with coding tools and personal-agent behavior.",
+              "why": "The product center is shifting from chatbot to operating layer.",
+              "action": "Move repeatable personal and work tasks into durable agent workflows.",
+              "teacher": "Watch for memory, permissions, and shareable outputs, not just UI polish.",
+              "link": "https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/"
+            },
+            {
+              "n": 2,
+              "category": "Figma MCP has",
+              "title": "Figma MCP has business traction",
+              "source": "investor.figma.com",
+              "relevance": "Intermediate",
+              "summary": "Figma reports MCP weekly active users in Figma Design grew 5x quarter-over-quarter.",
+              "why": "Agent-readable design systems are now tied to customer expansion.",
+              "action": "Clean component names, variables, tokens, and annotations for agent use.",
+              "teacher": "Design files are becoming production context, not just mockups.",
+              "link": "https://investor.figma.com/news-events/news/news-details/2026/Figma-Announces-First-Quarter-2026-Financial-Results/default.aspx"
+            },
+            {
+              "n": 3,
+              "category": "Anthropic teaches context",
+              "title": "Anthropic teaches context engineering",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic's AWS Summit agenda covers token-efficient tools, just-in-time retrieval, compaction, memory, and subagents.",
+              "why": "Agent quality is becoming systems engineering.",
+              "action": "Audit local agents for tool bloat, stale memory, and repeated context.",
+              "teacher": "Context budget and verification are design choices.",
+              "link": "https://www.anthropic.com/events/anthropic-at-aws-summit-la-2026"
+            },
+            {
+              "n": 4,
+              "category": "Reddit docs go",
+              "title": "Reddit docs go agent-native",
+              "source": "developers.reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Reddit's developer AI docs position Devvit MCP for Claude Code and other coding tools.",
+              "why": "Platforms are starting to ship official agent-readable docs and workflows.",
+              "action": "Prefer official MCP or llms.txt surfaces before writing custom wrappers.",
+              "teacher": "Agent-native docs reduce hallucinated API use.",
+              "link": "https://developers.reddit.com/docs/guides/ai"
+            },
+            {
+              "n": 5,
+              "category": "agent-zero-to-hero explains the",
+              "title": "agent-zero-to-hero explains the harness",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "This GitHub course builds a Claude-Code-style agent with tools, sessions, compaction, subagents, skills, MCP, and multi-provider support.",
+              "why": "Makers increasingly need to understand the loop, not only the model.",
+              "action": "Use it as a reference when debugging failed agent runs.",
+              "teacher": "Reliability often lives in the harness around the LLM.",
+              "link": "https://github.com/KeWang0622/agent-zero-to-hero"
+            },
+            {
+              "n": 6,
+              "category": "MCP pain is",
+              "title": "MCP pain is tool scope",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit MCP thread argues that global tool loading, not MCP itself, causes many context-window failures.",
+              "why": "Tool definitions can become a real token and quality tax.",
+              "action": "Scope tools by task, page, project, or role.",
+              "teacher": "Agents should load tools like CLIs: only when needed.",
+              "link": "https://www.reddit.com/r/mcp/comments/1txvimj/the_mcp_is_dying_takes_are_really_my_context/"
+            },
+            {
+              "n": 7,
+              "category": "gaal tackles config",
+              "title": "gaal tackles config drift",
+              "source": "getgaal.com",
+              "relevance": "Intermediate",
+              "summary": "gaal syncs skills, MCP servers, repos, rules, and slash commands from one YAML into many coding agents.",
+              "why": "Multi-agent users are hitting config drift across machines and tools.",
+              "action": "Keep agent config in versioned source-of-truth files.",
+              "teacher": "Portability at the config layer is becoming maker infrastructure.",
+              "link": "https://getgaal.com/"
+            },
+            {
+              "n": 8,
+              "category": "Sem adds semantic",
+              "title": "Sem adds semantic Git context",
+              "source": "ataraxy-labs.github.io",
+              "relevance": "Intermediate",
+              "summary": "Sem offers entity-level history, semantic diffs, impact analysis, and dependency graphs on top of Git.",
+              "why": "Coding agents need better repo maps than raw file search.",
+              "action": "Watch symbol and history tools that can feed agents compact repo context.",
+              "teacher": "Semantic history helps answer why behavior changed.",
+              "link": "https://ataraxy-labs.github.io/sem/"
+            },
+            {
+              "n": 9,
+              "category": "AI market structure",
+              "title": "AI market structure matters",
+              "source": "arstechnica.com",
+              "relevance": "Intermediate",
+              "summary": "Ars reports S&P will not fast-track SpaceX, which also affects possible OpenAI and Anthropic IPO index timing.",
+              "why": "Passive-fund mechanics can shape capital access for AI leaders.",
+              "action": "Track profitability, index eligibility, liquidity, and IPO timing.",
+              "teacher": "Product momentum and market mechanics are separate signals.",
+              "link": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/"
+            },
+            {
+              "n": 10,
+              "category": "HN shows real",
+              "title": "HN shows real adoption moments",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A large Ask HN thread collects practical moments when GenAI became useful for debugging, automation, reverse engineering, writing, and software work.",
+              "why": "These stories reveal demand better than polished demos.",
+              "action": "Mine the thread for repeatable workflow patterns.",
+              "teacher": "Adoption starts when AI removes one stubborn personal bottleneck.",
+              "link": "https://news.ycombinator.com/item?id=48406174"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 09:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Supademo AI Demo",
+              "title": "Supademo AI Demo Agent turns product demos into a service niche",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Supademo launched an AI Demo Agent that qualifies buyer intent and runs personalized software demos on a website.",
+              "why": "Demo-building, sales enablement, and product-tour work is becoming agent-operated instead of only static Looms and forms.",
+              "action": "Build a small demo-agent audit offer: map one SaaS site, turn its FAQs/collateral into demo paths, and price setup plus monthly tuning.",
+              "teacher": "Teach founders that agents need structured discovery questions, source collateral, escalation rules, and demo analytics, not just a chatbot.",
+              "link": "https://www.prnewswire.com/news-releases/supademo-launches-ai-demo-agent-that-demos-like-your-best-ae-killing-the-book-a-demo-form-302790311.html"
+            },
+            {
+              "n": 2,
+              "category": "Luma and Webedia-Elephant",
+              "title": "Luma and Webedia-Elephant launch Human After All AI Creator Studio",
+              "source": "lumalabs.ai",
+              "relevance": "Intermediate",
+              "summary": "Luma joined Webedia-Elephant's Human After All AI Creator Studio, showing real-time talent transformation and consistent video-to-video worlds.",
+              "why": "AI video is moving toward production services where a human performer remains the anchor and the world changes around them.",
+              "action": "Prototype a 15-second before/after creator reel offer for brands, artists, or events using performance-first shot planning.",
+              "teacher": "Emphasize source locking: stable actor, fixed camera intent, shot list, then style transformation. This is the part clients can understand.",
+              "link": "https://lumalabs.ai/news/human-after-all"
+            },
+            {
+              "n": 3,
+              "category": "TwelveLabs Rodeo brings",
+              "title": "TwelveLabs Rodeo brings video-understanding agents to creator editing",
+              "source": "prweb.com",
+              "relevance": "Intermediate",
+              "summary": "TwelveLabs announced Rodeo, an app-layer video copilot that searches, understands, and assembles raw footage through natural language.",
+              "why": "Footage libraries are a pain point for creators, agencies,",
+              "action": "Offer a video-library cleanup package: ingest footage, tag moments, create reusable prompt recipes, and deliver 5 short edits. Teaching notes: Show students the difference between generation and retrieval: the money is often in finding the right existing clip fast.",
+              "teacher": "s, and event teams; indexing and assembly can be sold as a workflow service.",
+              "link": "https://www.prweb.com/releases/twelvelabs-bring-its-video-understanding-technology-directly-to-creators-302786228.html"
+            },
+            {
+              "n": 4,
+              "category": "2026 AI Creativity",
+              "title": "2026 AI Creativity Awards create a portfolio signal for AI-shaped creative work",
+              "source": "graphiccompetitions.com",
+              "relevance": "Intermediate",
+              "summary": "The 2026 AI Creativity Awards opened June 1 for AI-enabled image, motion, brand, interactive, spatial, fashion, and responsible-AI work.",
+              "why": "Awards with disclosure requirements give AI creatives a credibility path beyond social posts and tool demos.",
+              "action": "Pick one existing design/render piece and rebuild it as a documented AI-assisted case study before the November 1 deadline.",
+              "teacher": "Require process notes: tools used, generated parts, human direction, source material, and judgment calls. That becomes portfolio proof.",
+              "link": "https://graphiccompetitions.com/viewaspdfA5.php?contest=2026-ai-creativity-awards"
+            },
+            {
+              "n": 5,
+              "category": "Aircall is hiring",
+              "title": "Aircall is hiring a Product Designer for AI Agents",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Aircall is hiring a Product Designer for AI voice and messaging agent products, focused on setup experiences for high-quality agents.",
+              "why": "Agent UX is now a design discipline: onboarding, configuration, trust, testing, and guardrails matter as much as model output.",
+              "action": "Create a small case study redesigning an AI-agent setup flow: persona, knowledge source, approval, test call, analytics.",
+              "teacher": "Teach agent setup as a wizard plus simulator: users need to see what the agent will do before it talks to customers.",
+              "link": "https://jobs.lever.co/aircall/399ef97b-86e7-4454-9bdd-d3f3e03a1f8a?lever-source%5B%5D=careers.hardyaka.com"
+            },
+            {
+              "n": 6,
+              "category": "360Learning is hiring",
+              "title": "360Learning is hiring an AI Engineer for agentic learning workflows",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "360Learning is hiring an AI Engineer for an AI Squad building agentic learning features such as bulk catalog operations and conversational BI.",
+              "why": "Corporate learning ops is a strong automation niche: tagging, archiving, author assignment, search, and analytics are repetitive and structured.",
+              "action": "Pitch a learning-content ops agent to course creators or internal training teams: catalog cleanup, metadata, summaries, and reporting.",
+              "teacher": "Frame education agents as admin assistants first. Do not sell AI teacher replacement; sell better course maintenance and learner discovery.",
+              "link": "https://jobs.lever.co/360learning/705f8577-c37e-48a9-a4c0-8277164bc0c0"
+            },
+            {
+              "n": 7,
+              "category": "Binance listings show",
+              "title": "Binance listings show Asia-Pacific AI agent, AI data, and product-design hiring",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Binance listings include applied AI agent engineering, CV/agentic AI data science, LLM processing, AI QA, UX writing, and product design roles across Asia-Pacific.",
+              "why": "Large platforms are splitting AI work into engineering, QA, data, content, and design tracks, which creates multiple entry points.",
+              "action": "For an Asia-based profile, build a role map: one portfolio piece for AI QA, one for UX writing, one for agent workflow design.",
+              "teacher": "Show learners that AI careers are not one job title. The same agent product needs data, safety, operations, interface, and documentation work.",
+              "link": "https://jobs.lever.co/binance"
+            },
+            {
+              "n": 8,
+              "category": "Yuno is hiring",
+              "title": "Yuno is hiring around AI agent infrastructure and remote product roles",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Yuno's board shows remote Product Designer, AI Engineer, and Senior Platform Engineer for AI Agent Infrastructure roles.",
+              "why": "Fintech and payments companies need AI infrastructure and product craft, not only model research.",
+              "action": "Prepare a payment-support automation case study: dispute triage, compliance handoff, payment-status explanations, and human review.",
+              "teacher": "Use regulated workflows to teach constraints: permissions, audit trail, escalation, and clear user-facing language.",
+              "link": "https://jobs.lever.co/yuno"
+            },
+            {
+              "n": 9,
+              "category": "Reddit GenAI freelance",
+              "title": "Reddit GenAI freelance thread shows builders looking for agent/RAG deal flow",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit AI_Agents thread asks how builders actually find freelance GenAI work in RAG, multi-agent workflows, retrieval, and internal copilots.",
+              "why": "The pain is not just building agents; it is packaging services, finding buyers, and explaining business value.",
+              "action": "Turn technical skills into three productized offers: internal knowledge search, workflow automation, and monthly agent maintenance.",
+              "teacher": "Teach a simple sales diagnostic: where is the repeated decision, what data proves it, who approves the output, and what breaks if it is wrong?",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1trx8cc/what_is_the_scope_of_freelance_for_gen_ai/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit creative-assistant offer",
+              "title": "Reddit creative-assistant offer packages AI visuals, scripts, editing, and strategy",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit for-hire post packages AI visuals, short scripts, video editing, social strategy, Canva/Photoshop, and AI-assisted landing pages.",
+              "why": "Small creators are bundling AI with human taste and execution; that is closer to a real freelance offer than generic AI content.",
+              "action": "Make a one-page service menu for AI-assisted creator support: hooks, scripts, visuals, edits, posting calendar, and landing-page tests.",
+              "teacher": "Point out the positioning: AI speeds up formatting and production, but the seller claims ownership of ideas and taste. That is the trust signal.",
+              "link": "https://www.reddit.com/r/forhire/comments/1tx1y1r/for_hire_usaonline_creative_assistant_ai_visuals/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 06",
       "label": "2026-06-08 · 06:06",
