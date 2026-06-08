@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 07:10",
+    "fetchedAt": "2026-06-09 07:12",
     "editions": 97
   },
   "editions": [
     {
       "key": "2026-06-09 06",
-      "label": "2026-06-09 · 06:06",
+      "label": "2026-06-09 · 07:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "For client-facing agent proposals, include a deployment-control page: data path, retention, credential handling, audit trail, and which tools are allowed.",
               "teacher": "Frame enterprise agents as controlled workers. The technical lesson is that permissions, logging, and environment boundaries are part of the product.",
               "link": "https://www.anthropic.com/events/anthropic-at-aws-summit-dc-2026"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-09 · 07:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Atria creative strategist",
+              "title": "Atria creative strategist role makes AI creative intelligence a client-service job",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Atria is hiring a remote Creative Strategist to own enterprise brand relationships using proprietary AI and pattern recognition across ad spend data.",
+              "why": "Creative strategy is becoming a measurable AI-backed consulting service, not just taste and presentation work.",
+              "action": "Package a one-page offer around AI-assisted ad creative diagnosis: audit, pattern library, test plan, and weekly creative recommendations.",
+              "teacher": "Teach students to separate concept, hook, format, performance signal, and production system. The job rewards people who can explain creative choices in business terms.",
+              "link": "https://jobs.ashbyhq.com/atria/cd1336e4-ad92-408c-ae9c-3f658f111a37/"
+            },
+            {
+              "n": 2,
+              "category": "Vocal Media role",
+              "title": "Vocal Media role formalizes AI creative automation as a production job",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Vocal Media is hiring an AI Creative + Automation Associate to build templates, prompts, pipelines, and automated short-form content workflows.",
+              "why": "The role describes the exact middle layer many companies lack: translating creative strategy into repeatable AI production systems.",
+              "action": "Build a sample content pipeline with brief intake, prompt set, asset generation, quality checklist, publishing handoff, and performance feedback.",
+              "teacher": "This is a strong class exercise: make students document not only the output, but the reusable system that made it.",
+              "link": "https://jobs.lever.co/get-vocal-pbc/fbe93017-a69b-4a01-aa20-26c924d10e55"
+            },
+            {
+              "n": 3,
+              "category": "Lockwood wants an",
+              "title": "Lockwood wants an AI product designer for a 3D virtual world",
+              "source": "jobs.workable.com",
+              "relevance": "Intermediate",
+              "summary": "Lockwood Publishing is hiring an AI Product Designer for Avakin Life, a 3D mobile virtual world, with Claude, ChatGPT, Figma AI, and Midjourney listed as relevant tools.",
+              "why": "3D world design is being pulled into AI-first product iteration, LiveOps, monetization, and weekly shipping.",
+              "action": "Create a portfolio case around an AI-assisted virtual-world feature: user journey, economy impact, UI, prompt workflow, and measurable retention goal.",
+              "teacher": "Great prompt for students: redesign one 3D social feature with AI, then defend how it improves engagement without breaking the world.",
+              "link": "https://jobs.workable.com/view/1TdaRvVSUCKbTgTNsmhwJ1/remote-ai-product-designer-in-united-kingdom-at-lockwood-publishing"
+            },
+            {
+              "n": 4,
+              "category": "Chainlink people systems",
+              "title": "Chainlink people systems role shows AI operations moving into HR automation",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Chainlink Labs is hiring a remote People Systems & AI Operations Engineer to own integrations, automation, and Claude deployment across people technology.",
+              "why": "Internal operations teams now need people who can turn messy admin workflows into reliable AI-assisted systems.",
+              "action": "Offer an HR automation mini-audit: onboarding checklist, support ticket patterns, policy Q&A, approval routing, and escalation rules.",
+              "teacher": "Emphasize governance. HR automation is valuable only if permissions, audit trails, and human escalation are designed from the start.",
+              "link": "https://jobs.ashbyhq.com/chainlink-labs/a77caf10-7178-444b-acb3-c31062000247"
+            },
+            {
+              "n": 5,
+              "category": "FLORA applied AI",
+              "title": "FLORA applied AI engineer role points to agentic multimodal creative canvases",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "FLORA is hiring an Applied AI Engineer to build agentic workflows that let creatives orchestrate text, image, and video models on an infinite canvas.",
+              "why": "Creative tools are moving from single generators toward orchestration surfaces, where taste, model routing, and workflow design matter.",
+              "action": "Prototype a visual creative-board workflow: mood references, model choices, prompt branches, image/video outputs, and revision notes in one canvas.",
+              "teacher": "Teach the difference between generating an asset and designing a creative operating system for repeated work.",
+              "link": "https://jobs.ashbyhq.com/embedding-vc/b330775d-910b-492e-8477-b0820ee83e62/"
+            },
+            {
+              "n": 6,
+              "category": "Owlet is hiring",
+              "title": "Owlet is hiring an AI-native brand designer to replace manual brand workflows",
+              "source": "apply.workable.com",
+              "relevance": "Intermediate",
+              "summary": "Owlet is looking for an AI-Native Brand Designer who can build brand systems where templates, campaigns, and content variants scale with AI.",
+              "why": "Brand designers who can preserve emotion while automating production will be more valuable than generic prompt users.",
+              "action": "Make a brand-system demo: one campaign idea expanded into hero, social, email, product card, and ad variants with a quality rubric.",
+              "teacher": "A useful critique exercise: ask what should be automated, what must stay hand-crafted, and where the brand loses trust.",
+              "link": "https://apply.workable.com/owlet-baby-care-1/j/D320968C4C/"
+            },
+            {
+              "n": 7,
+              "category": "Render Foundation UI/UX",
+              "title": "Render Foundation UI/UX role ties neural rendering, 3D assets, and AI creative tools",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Render Foundation is hiring a UI/UX Designer for interfaces around neural rendering pipelines, 3D asset management, and AI-powered creative tools.",
+              "why": "3D artists who understand UX can move upstream into tool design for AI compute, rendering, and creator workflows.",
+              "action": "Build a mock UX case for an AI render queue: asset upload, prompt/reference locking, cost estimate, preview, approval, and version history.",
+              "teacher": "This is a strong bridge for 3D students: show how artist pain points become product requirements.",
+              "link": "https://jobs.ashbyhq.com/renderfoundation/3f113eba-ea12-41c2-ae60-c5c35c07532c"
+            },
+            {
+              "n": 8,
+              "category": "Sleek Events wants",
+              "title": "Sleek Events wants 3D designers who use generative AI in experiential design",
+              "source": "jobs.workable.com",
+              "relevance": "Intermediate",
+              "summary": "Sleek Events is hiring a Senior Creative 3D Designer and explicitly mentions AI-generated studies during spatial concept experimentation.",
+              "why": "Exhibition and event design is becoming a hybrid workflow: mood, sketch, low-res model, AI study, feasibility, and client-ready narrative.",
+              "action": "Turn one booth concept into a three-stage service: AI mood exploration, 3D blockout, and production-feasible render pack.",
+              "teacher": "Teach students to label AI studies as exploration, not final truth. The production constraints still decide whether the concept works.",
+              "link": "https://jobs.workable.com/view/mv2qn32ywZxxob1EjjD13T/senior-creative-3d-designer-in-london-at-sleek-events"
+            },
+            {
+              "n": 9,
+              "category": "Reddit UGC post",
+              "title": "Reddit UGC post shows paid creator programs forming around AI apps",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit hiring post offers $700/month plus performance bonuses for daily short-form UGC promoting a growing AI app.",
+              "why": "AI companies need credible creators who can explain and demo tools every day, not just polished launch videos.",
+              "action": "Prepare a UGC sample pack for AI tools: 5 hooks, 3 demo scripts, 2 comparison formats, and one daily posting calendar.",
+              "teacher": "Students should learn the difference between production quality and platform-native trust. UGC needs both speed and believability.",
+              "link": "https://www.reddit.com/r/UGCForBrands/comments/1u0m4hq/hiring_700month_ugc_creators_for_ai_app_apply/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit hiring post",
+              "title": "Reddit hiring post shows editors paid to fix AI-generated ad footage",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit hiring post seeks a remote video editor for AI-generated ad content, noting artifacts, inconsistent footage, Higgsfield asset generation, and 9:16 social ads.",
+              "why": "AI video does not remove editing demand; it creates a cleanup, continuity, pacing, and conversion-specialist lane.",
+              "action": "Build a portfolio reel called AI footage rescue: before/after edits, artifact management, pacing notes, and ad-structure rationale.",
+              "teacher": "This is a practical assignment: give students flawed AI clips and grade them on continuity, retention, and conversion clarity.",
+              "link": "https://www.reddit.com/r/FindVideoEditors/comments/1u03mic/hiring_video_editor_for_aigenerated_ad_content/"
             }
           ]
         }
