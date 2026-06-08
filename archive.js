@@ -5,10 +5,159 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-08 12:35",
-    "editions": 91
+    "fetchedAt": "2026-06-08 16:34",
+    "editions": 92
   },
   "editions": [
+    {
+      "key": "2026-06-08 15",
+      "label": "2026-06-08 · 16:06",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-08 · 16:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Work IQ",
+              "title": "Microsoft Work IQ APIs create a new enterprise-agent integration lane",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft says Work IQ APIs will be generally available on June 16, giving developers programmatic access to Microsoft 365 context for enterprise agents.",
+              "why": "Companies will need people who can connect real work context, permissions, billing controls, and agent workflows without making a governance mess.",
+              "action": "Package a small consulting offer: audit Microsoft 365 workflows, choose one repeatable agent use case, and design a Work IQ-ready integration map.",
+              "teacher": "Explain that useful agents need identity, context, tools, spending limits, and review paths - not just a prompt.",
+              "link": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/"
+            },
+            {
+              "n": 2,
+              "category": "IBM and Google",
+              "title": "IBM and Google Cloud frame AI rollout as a services opportunity",
+              "source": "newsroom.ibm.com",
+              "relevance": "Intermediate",
+              "summary": "IBM and Google Cloud announced a new Google Cloud Practice combining IBM Consulting Advantage, Gemini Enterprise Agent Platform, cybersecurity, data, and industry workflows.",
+              "why": "The money is moving toward implementation teams that can turn AI platforms into production workflows for specific industries.",
+              "action": "Build a portfolio case study showing how you would turn one client process into an agent-assisted workflow with data, review, and security checkpoints.",
+              "teacher": "Use this as proof that AI consulting is becoming workflow design plus change management, not generic chatbot setup.",
+              "link": "https://newsroom.ibm.com/2026-06-04-ibm-and-google-cloud-announce-strategic-partnership-to-scale-ai-with-human-expertise-and-ai-powered-delivery"
+            },
+            {
+              "n": 3,
+              "category": "Asana Dash signals",
+              "title": "Asana Dash signals demand for AI chief-of-staff workflows",
+              "source": "itpro.com",
+              "relevance": "Intermediate",
+              "summary": "ITPro reports Asana introduced Dash, AI Teammates updates, and integrations with Gmail, Outlook, Slack, HubSpot, Figma, and Canva.",
+              "why": "Teams will ask for help turning scattered messages, design files, and project updates into reliable weekly operating rhythms.",
+              "action": "Offer a dashboard cleanup service: map project sources, define decision summaries, and write repeatable status-update templates.",
+              "teacher": "Show students the difference between an AI assistant that chats and an AI operating layer that tracks work across tools.",
+              "link": "https://www.itpro.com/software/asana-wants-every-enterprise-to-have-an-ai-chief-of-staff"
+            },
+            {
+              "n": 4,
+              "category": "Arc remote Generative",
+              "title": "Arc remote Generative AI listings show AI-enabled design and 3D demand",
+              "source": "arc.dev",
+              "relevance": "Intermediate",
+              "summary": "Arc lists remote generative AI roles, including AI-enabled graphic design, packaging, branding, and 3D-lighting-adjacent work.",
+              "why": "Creative hiring is shifting toward people who can blend production taste with model/tool fluency.",
+              "action": "Create a one-page portfolio section called AI-enabled production: show prompts, iterations, retouching, final assets, and what you manually corrected.",
+              "teacher": "Tell learners that the portfolio should prove judgment and craft, not just that they can run a model.",
+              "link": "https://arc.dev/remote-jobs/generative-ai"
+            },
+            {
+              "n": 5,
+              "category": "AI Creative Roles",
+              "title": "AI Creative Roles is carving out a dedicated market for AI creatives",
+              "source": "aicreativeroles.com",
+              "relevance": "Intermediate",
+              "summary": "The board lists AI creative jobs across Midjourney, Runway, ComfyUI, Figma, Unity, Unreal, Claude, Cursor, and similar tools.",
+              "why": "A dedicated board means employers now have enough AI-creative demand to separate it from normal design hiring.",
+              "action": "Track 20 listings and extract the recurring tool stack, deliverables, and salary language into a personal skill roadmap.",
+              "teacher": "Use job boards as curriculum: teach the tools and deliverables employers are actually naming.",
+              "link": "https://aicreativeroles.com/"
+            },
+            {
+              "n": 6,
+              "category": "Glassdoor remote AI",
+              "title": "Glassdoor remote AI designer listings mention 3D geometry evaluation",
+              "source": "glassdoor.com",
+              "relevance": "Intermediate",
+              "summary": "Glassdoor search results include remote AI designer work asking for NURBS-based 3D modeling, product design, freeform geometry, and AI-content evaluation.",
+              "why": "3D artists can sell expertise as model-output QA: shape fidelity, topology sense, proportion checks, and visual polish.",
+              "action": "Prepare a before/after sheet that grades AI-generated 3D or product visuals and shows the fixes you would make.",
+              "teacher": "Frame AI QA as a teachable professional skill: spotting bad geometry is valuable because clients often cannot describe it precisely.",
+              "link": "https://www.glassdoor.com/Job/remote-ai-designer-jobs-SRCH_IL.0%2C6_IS11047_KO7%2C18.htm"
+            },
+            {
+              "n": 7,
+              "category": "Vibehackers highlights AI-assisted",
+              "title": "Vibehackers highlights AI-assisted UX and agent-integration roles",
+              "source": "",
+              "relevance": "Intermediate",
+              "summary": "Vibehackers lists AI-assisted roles across design, UX, product, operations, marketing, and agent integrations, updated June",
+              "why": "",
+              "action": "",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 2,
+              "category": "Why it matters:",
+              "title": "Why it matters: There is room for hybrid operators who can design interfaces and understand how agents actually plug into workflows.",
+              "source": "vibehackers.io",
+              "relevance": "Intermediate",
+              "summary": "",
+              "why": "",
+              "action": "Make a compact demo of an agent UX: task queue, approval state, error state, audit trail, and handoff back to a human.",
+              "teacher": "Teach agent UX around states and accountability, not magic chat windows.",
+              "link": "https://vibehackers.io/jobs/in/us"
+            },
+            {
+              "n": 8,
+              "category": "Glassdoor generative AI",
+              "title": "Glassdoor generative AI artist listings emphasize constant tool testing",
+              "source": "glassdoor.com",
+              "relevance": "Intermediate",
+              "summary": "Remote generative AI artist listings mention AI tools, generative design, prototyping, and continuous testing of image and video generation solutions.",
+              "why": "The job is becoming creative R&D plus production: know what each tool can do this week, then turn it into usable client output.",
+              "action": "Start a weekly model test log with the same prompt across image, video, and editing tools; save wins, failures, and production notes.",
+              "teacher": "This is a simple class exercise: same brief, multiple tools, compare controllability, artifacts, speed, and final quality.",
+              "link": "https://www.glassdoor.com/Job/remote-us-generative-ai-artist-jobs-SRCH_IL.0%2C9_IS11047_KO10%2C30.htm"
+            },
+            {
+              "n": 9,
+              "category": "Reddit builders are",
+              "title": "Reddit builders are sharing AI-agent automations that find leads and support teaching businesses",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh r/AI_Agents thread includes examples like scanning AI news, GitHub, Reddit, and niche sources, plus a freelance",
+              "why": "Early practitioner pain points show service ideas: lead discovery, research briefings, course ops, and niche-market monitoring.",
+              "action": "Prototype one narrow radar for a target client type, then sell the weekly brief plus qualified-opportunity handoff. Teaching notes: Use Reddit as weak-signal research: do not copy posts; extract workflows, bottlenecks, and buying intent.",
+              "teacher": "using automation around remote courses.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tugo0h/whats_the_coolest_thing_youve_automated_with_ai/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit teacher discussion",
+              "title": "Reddit teacher discussion shows AI anxiety and curriculum-development demand",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A high-engagement Reddit discussion around",
+              "why": "Schools and tutors need practical AI literacy, assignment redesign, and teacher-safe workflows, not hype.",
+              "action": "Create a short workshop: AI for lesson prep, AI-resistant assessment, source checking, and when students should work without AI. Teaching notes: Lead with teacher concerns. The opportunity is helping educators protect learning while reducing preparation workload.",
+              "teacher": "views on AI points to both classroom use and concern that students may lose thinking practice.",
+              "link": "https://www.reddit.com/r/Futurology/comments/1tys0o2/most_k12_teachers_say_ais_impact_on_education/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-08 12",
       "label": "2026-06-08 · 12:07",
