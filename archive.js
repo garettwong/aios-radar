@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 16:11",
-    "editions": 99
+    "fetchedAt": "2026-06-09 16:15",
+    "editions": 100
   },
   "editions": [
+    {
+      "key": "2026-06-09 15",
+      "label": "2026-06-09 · 16:06",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-09 · 16:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Indeed remote AI",
+              "title": "Indeed remote AI UX designer listings show AI fluency becoming a mainstream design filter",
+              "source": "indeed.com",
+              "relevance": "Intermediate",
+              "summary": "Indeed has a current remote AI UX designer listing page, with search results emphasizing AI UX, mentoring, product design, and remote design roles.",
+              "why": "AI design hiring is no longer limited to AI labs. General job boards now surface AI UX language, which means ordinary designers need proof of AI-era workflow judgment.",
+              "action": "Search the page weekly, capture repeated requirements, and update the portfolio headline, case studies, and skills section around those repeated phrases.",
+              "teacher": "Use this as a job-description mining exercise: separate durable design skills from trend terms, then rewrite one resume bullet for each durable skill.",
+              "link": "https://www.indeed.com/q-ai-ux-designer-l-remote-jobs.html"
+            },
+            {
+              "n": 2,
+              "category": "Ideogram is hiring",
+              "title": "Ideogram is hiring a Technical Brand Designer with AI coding tool fluency",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Ideogram wants a brand designer who can build systems, landing pages, internal tools, and prototypes using Figma plus AI coding tools such as Claude Code and Cursor.",
+              "why": "Brand design is being pulled closer to product and code. The opportunity is not just better images; it is faster shipping of interactive brand surfaces.",
+              "action": "Build one sample landing page in Figma plus code, then document how AI coding sped up variants, QA, and iteration without lowering craft.",
+              "teacher": "Show students the new designer stack: visual identity, design systems, experimentation, and AI-assisted prototyping as one workflow.",
+              "link": "https://jobs.ashbyhq.com/ideogram/54badc32-92ba-45b2-9ca7-a467a0b58545"
+            },
+            {
+              "n": 3,
+              "category": "Jasper Senior Brand",
+              "title": "Jasper Senior Brand Designer role makes AI-assisted creative libraries part of brand work",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Jasper is hiring a remote senior brand designer to create campaigns, interactive web experiences, illustration systems, photography, and motion using AI-assisted workflows.",
+              "why": "Enterprise marketing teams need designers who can scale visual systems while preserving taste, typography, and art direction.",
+              "action": "Package a service around scalable campaign libraries: moodboards, prompt systems, illustration rules, landing pages, and final art-direction QA.",
+              "teacher": "Use this as a case study for the difference between generating visuals and owning a brand system that can survive many channels.",
+              "link": "https://jobs.ashbyhq.com/Jasper%20AI/21bc886c-a193-408a-a32b-1f512c4584b4/"
+            },
+            {
+              "n": 4,
+              "category": "Recraft AI Designer",
+              "title": "Recraft AI Designer role pays designers to evaluate generative model quality from real briefs",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Recraft is hiring practicing designers to apply generative models to real design scenarios, judge outputs, document gaps, and curate rights-cleared references.",
+              "why": "Taste, critique, and source discipline are becoming paid AI-model feedback skills, especially for image, vector, icon, product, and brand assets.",
+              "action": "Create a mini evaluation portfolio: three real briefs, source references, ranked AI outputs, rejection reasons, and final corrected direction.",
+              "teacher": "Teach visual QA as a rubric: composition, usability, consistency, licensing, brand fit, and where manual design still beats model output.",
+              "link": "https://jobs.ashbyhq.com/recraft/64655615-7a15-4e41-bd92-d2c91201b7a8"
+            },
+            {
+              "n": 5,
+              "category": "Guild.ai Brand and",
+              "title": "Guild.ai Brand and Marketing Designer role defines AI-first design operations",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Guild.ai, a control plane for AI agents, wants a designer to own marketing surfaces, lifecycle templates, campaigns, and repeatable AI-first creative workflows.",
+              "why": "Agent infrastructure companies need designers who can explain complex systems clearly, not just make attractive graphics.",
+              "action": "Make one developer-tool explainer page that combines product narrative, diagrams, lifecycle emails, and fast AI-assisted creative variants.",
+              "teacher": "Good class exercise: translate a technical agent platform into a landing page for three audiences: founder, engineer, and enterprise buyer.",
+              "link": "https://jobs.ashbyhq.com/guild/8828f4ed-b7e0-49c3-af6c-a557c29048ce"
+            },
+            {
+              "n": 6,
+              "category": "n8n Community shows",
+              "title": "n8n Community shows live demand for AI agent workflow builders",
+              "source": "community.n8n.io",
+              "relevance": "Intermediate",
+              "summary": "The n8n jobs category shows recent posts for AI automation engineers and freelance builders of AI agent workflows, including EU-overlap and agency projects.",
+              "why": "The market is moving from generic automation claims to concrete workflow delivery: lead gen, CRM, scheduling, follow-up, RAG, and agent orchestration.",
+              "action": "Offer a narrow starter package: audit one manual workflow, build one n8n prototype, record a handoff video, and include maintenance pricing.",
+              "teacher": "Use the board to teach opportunity validation: a real niche needs repeated job posts, clear deliverables, budget signals, and visible user pain.",
+              "link": "https://community.n8n.io/c/jobs/13?page=1&tl=pt_BR"
+            },
+            {
+              "n": 7,
+              "category": "Reddit hiring post",
+              "title": "Reddit hiring post seeks a remote n8n AI automation developer",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n post asks for an experienced developer to build and maintain AI-powered automation workflows.",
+              "why": "Reddit is showing small-business and agency demand before it appears as polished job ads. Builders who can prove maintenance discipline have an edge.",
+              "action": "Prepare a public n8n portfolio with three maintained workflows, error handling screenshots, and before-after time savings.",
+              "teacher": "Point out that automation jobs are not only build tasks; clients also need monitoring, failure recovery, documentation, and version control.",
+              "link": "https://www.reddit.com/r/n8n/comments/1tz0vq4/n8n_ai_automation_developer_remote/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit n8n AI",
+              "title": "Reddit n8n AI recruiter workflow shows HR automation as a sellable micro-product",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A public Reddit post describes an n8n-based agentic recruiter that screens resumes quickly and alerts through Telegram, with the author framing it around cost reduction.",
+              "why": "Whether or not that exact workflow is production-ready, it reveals a service category: lightweight recruiting ops automations for small teams.",
+              "action": "Build a safer demo version with consent, audit logs, human review, bias warnings, and clear rejection of fully automated hiring decisions.",
+              "teacher": "Use this to teach responsible automation: speed is useful, but hiring workflows need explainability, privacy, and human approval checkpoints.",
+              "link": "https://www.reddit.com/r/n8n_ai_agents/comments/1u0k6jv/built_an_autonomous_agentic_ai_recruiter_in_n8n/"
+            },
+            {
+              "n": 9,
+              "category": "Fairmarkit Total Agentic",
+              "title": "Fairmarkit Total Agentic Sourcing turns procurement agents into implementation work",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Fairmarkit launched Total Agentic Sourcing, positioning AI agents across enterprise spend workflows with ERP integrations and guided intake.",
+              "why": "Procurement teams will need help converting messy purchase requests into complete requirements, approval flows, vendor checks, and measurable savings.",
+              "action": "Offer a procurement automation discovery sprint: map intake, supplier search, approval routing, and reporting before proposing agent deployment.",
+              "teacher": "Use this as an operations lesson: agents create value when they reduce incomplete inputs, not when they simply chat over a broken process.",
+              "link": "https://www.businesswire.com/news/home/20260429737522/en/Fairmarkit-Launches-Total-Agentic-Sourcing-the-First-Platform-to-Put-AI-to-Work-Across-All-Enterprise-Spend-with-Leading-ERPs"
+            },
+            {
+              "n": 10,
+              "category": "Outreach Omni shows",
+              "title": "Outreach Omni shows sales-agent studios becoming revenue-ops work",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Outreach announced Omni, Agent Studio, AI Topics Explorer, coaching automation, and new agents for revenue-team execution.",
+              "why": "Sales teams are moving toward configurable agent systems, which creates demand for people who can design playbooks, data signals, coaching loops, and QA.",
+              "action": "Build a consulting offer around one revenue motion: define triggers, message rules, CRM fields, human approvals, and weekly performance review.",
+              "teacher": "Teach this as agent workflow design: the hard part is not writing sales copy, it is connecting timing, context, governance, and measurable outcomes.",
+              "link": "https://www.businesswire.com/news/home/20260427304135/en/Outreach-Launches-Omni-Reimagining-How-Revenue-Teams-Execute-with-AI-Agents"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 12",
       "label": "2026-06-09 · 13:06",
