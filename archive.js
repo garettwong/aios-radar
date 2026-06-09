@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 09:12",
-    "editions": 97
+    "fetchedAt": "2026-06-09 09:15",
+    "editions": 98
   },
   "editions": [
+    {
+      "key": "2026-06-09 09",
+      "label": "2026-06-09 · 09:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 09:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Anthropic and Google",
+              "title": "Anthropic and Google Cloud focus Claude Agent SDK on identity, guardrails, and audit traces",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic's Google Cloud session is about building Claude agents with scoped identity, IAM policies, Agent Gateway, Model Armor, OpenTelemetry traces, and audit events.",
+              "why": "Enterprise buyers are moving past demos and asking how agents prove who acted, what tool was called, and what policy was enforced.",
+              "action": "Add an identity, permission, and trace checklist to any agent proposal before discussing model choice.",
+              "teacher": "Explain the production agent stack as model plus tools plus identity plus policy plus logs.",
+              "link": "https://www.anthropic.com/webinars/claude-on-google-cloud-monitoring-and-securing-agents-at-scale"
+            },
+            {
+              "n": 2,
+              "category": "RelationalAI adds agentic",
+              "title": "RelationalAI adds agentic decision intelligence and coding-agent skills inside Snowflake",
+              "source": "globenewswire.com",
+              "relevance": "Intermediate",
+              "summary": "RelationalAI announced new decision-agent capabilities for Snowflake, including semantic context, prescriptive and predictive reasoners, post-training, and coding-agent skills for Snowflake CoCo, Claude Code, Codex, and Copilot.",
+              "why": "Enterprise agents are being paired with domain reasoners and governed data models instead of relying only on generic LLM reasoning.",
+              "action": "For business agents, identify the domain-specific reasoner or rule system the model should call before it recommends action.",
+              "teacher": "Teach that high-value agents need structured business context and explicit reasoning tools, not only natural-language chat.",
+              "link": "https://www.globenewswire.com/news-release/2026/06/02/3305546/0/en/RelationalAI-Closes-the-AI-Value-Gap-with-New-Agentic-Decision-Intelligence-Capabilities-for-the-Snowflake-AI-Data-Cloud.html"
+            },
+            {
+              "n": 3,
+              "category": "Cloudflare Mesh frames",
+              "title": "Cloudflare Mesh frames private networking as agent infrastructure",
+              "source": "cloudflare.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudflare Mesh is positioned as a secure fabric for connecting humans, code, agents, and private infrastructure without exposing internal services to the public internet.",
+              "why": "As agents need deeper access to staging databases, internal APIs, and private services, networking and identity become core product requirements.",
+              "action": "For any agent that touches internal systems, document network path, identity, allowed resources, and production-blocking rules.",
+              "teacher": "Use this as a simple model: useful agents need access, but access needs a private route and scoped identity.",
+              "link": "https://www.cloudflare.com/en-au/press/press-releases/2026/cloudflare-launches-mesh-to-secure-the-ai-agent-lifecycle/"
+            },
+            {
+              "n": 4,
+              "category": "Fiserv agentOS brings",
+              "title": "Fiserv agentOS brings governed agent marketplaces to regulated banking workflows",
+              "source": "press.aboutamazon.com",
+              "relevance": "Intermediate",
+              "summary": "Fiserv launched agentOS for banks, with first-party and third-party agents, policy controls, auditability, human oversight, OpenAI collaboration, and AWS Bedrock AgentCore support.",
+              "why": "Agent marketplaces are moving into regulated industries where governance, audit trails, and human oversight are selling points, not afterthoughts.",
+              "action": "When pitching agents to serious clients, lead with controls, approval points, and operational proof before autonomy claims.",
+              "teacher": "Teach agent marketplaces as curated deployment lanes: identity, policy, audit, domain workflows, and measurable adoption.",
+              "link": "https://press.aboutamazon.com/aws/2026/5/fiserv-launches-agentos-the-operating-system-for-agentic-ai-in-banking"
+            },
+            {
+              "n": 5,
+              "category": "All3DP tests AI",
+              "title": "All3DP tests AI 3D generators as practical starting points, not CAD replacements",
+              "source": "all3dp.com",
+              "relevance": "Intermediate",
+              "summary": "All3DP tested Meshy, Tripo, and Hitem3D with photos, sketches, slicers, and actual prints, concluding they are useful for decorative prints, concepts, tabletop pieces, and prototypes, but still need retries and realistic expectations.",
+              "why": "The maker signal is practical: AI 3D is leaving novelty-demo territory, but production QA and manual cleanup remain part of the workflow.",
+              "action": "Use AI 3D tools for first-pass forms, then verify manifold geometry, wall thickness, scale, topology, UVs, and material readiness.",
+              "teacher": "Teach AI 3D as rough blocking plus iteration, not as a replacement for modeling judgment.",
+              "link": "https://all3dp.com/2/ai-generated-3d-model-best-tools/"
+            },
+            {
+              "n": 6,
+              "category": "Antigravity Awesome Skills",
+              "title": "Antigravity Awesome Skills shows agent skills becoming installable operating playbooks",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The GitHub project packages 1,500+ SKILL.md playbooks and installers for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, and Copilot workflows.",
+              "why": "The market is standardizing around reusable agent instructions as software artifacts, not one-off prompts.",
+              "action": "Keep a small curated internal skill library for high-value tasks instead of installing broad catalogs blindly.",
+              "teacher": "Teach skill design around trigger conditions, source authority, verification steps, and failure modes.",
+              "link": "https://github.com/sickn33/antigravity-awesome-skills"
+            },
+            {
+              "n": 7,
+              "category": "XLI tackles the",
+              "title": "XLI tackles the terminal UX layer for custom coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "XLI is a Python terminal UI toolkit for agent transcripts with streaming markdown, mutable tool cards, inline approvals, slash commands, file mentions, and native scrollback.",
+              "why": "Builders are discovering that the agent loop is easy; good human control, approvals, visibility, and interrupt handling are product work.",
+              "action": "If building an internal agent CLI, prototype the UX layer separately from the model loop and require interrupt, approval, and audit affordances.",
+              "teacher": "Show agent UI as a safety system, not decoration: the user needs to see, approve, stop, and recover work.",
+              "link": "https://github.com/vitalops/xli"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News Hmem",
+              "title": "Hacker News Hmem thread highlights portable memory as an agent infrastructure gap",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Hmem proposes a local SQLite-backed MCP memory file with hierarchical recall so agent memory can travel across Claude Code, Cursor, Windsurf, OpenCode, and Gemini CLI.",
+              "why": "Memory is becoming a cross-tool asset, and users are tired of each agent forgetting decisions after compaction or tool switching.",
+              "action": "For long-running projects, store decisions and provenance in repo files or a portable memory system rather than tool-private chat history.",
+              "teacher": "Separate memory into levels: durable decisions, project facts, transient notes, and raw logs.",
+              "link": "https://news.ycombinator.com/item?id=47103237"
+            },
+            {
+              "n": 9,
+              "category": "Reddit automation builders",
+              "title": "Reddit automation builders push back against overbuilt multi-agent stacks",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit automation thread argues that many teams choose agent platforms because they trend, while simpler tools like n8n can be cheaper and easier to maintain for straightforward workflows.",
+              "why": "The adoption signal is healthy skepticism: reliability, failure handling, and maintainability often beat advanced architecture.",
+              "action": "Before using a multi-agent framework, ask what the workflow does, how often it runs, what happens if it fails, and who maintains it.",
+              "teacher": "Teach agents as one option in an automation toolbox, not the default answer for every workflow.",
+              "link": "https://www.reddit.com/r/automation/comments/1tuugzk/best_ai_agent_builders_as_of_2026_ranked_by_use/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit agent builders",
+              "title": "Reddit agent builders are converging on production gaps, not demo loops",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit thread on four ways to build agents surfaced a useful consensus: prototypes are easy, but production still needs state management, rate limits, error handling, governance, and review.",
+              "why": "The practical market signal is that buyers and builders are less impressed by agent demos and more interested in reliability and operating discipline.",
+              "action": "Before starting a custom agent, decide whether to build, adapt open source, use an SDK, or orchestrate an existing coding agent with strict acceptance tests.",
+              "teacher": "Teach agent strategy as a build-vs-buy-vs-harness decision, with maintenance cost as the main hidden variable.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tylqry/there_are_4_ways_to_build_an_ai_agent_in_2026/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 06",
       "label": "2026-06-09 · 07:06",
