@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 00:06",
-    "editions": 102
+    "fetchedAt": "2026-06-10 00:11",
+    "editions": 103
   },
   "editions": [
+    {
+      "key": "2026-06-10 00",
+      "label": "2026-06-10 · 00:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 00:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "DepEd and Google",
+              "title": "DepEd and Google are training more than 1 million educators on AI",
+              "source": "gmanetwork.com",
+              "relevance": "Intermediate",
+              "summary": "The Philippines Department of Education is expanding a Google for Education partnership into Project S.I.N.A.G., with no-cost Google and Gemini AI certifications for public school",
+              "why": "AI literacy for teachers is becoming an institutional training market, not just individual experimentation.",
+              "action": "Package a short teacher-facing workshop: lesson planning prompts, rubric checking, admin automation, and student-safety boundaries. Teaching notes: Emphasize classroom workflows first, tools second; show before/after examples for lesson prep and feedback drafts.",
+              "teacher": "s and personnel.",
+              "link": "https://www.gmanetwork.com/news/topstories/nation/990219/deped-google-teacher-training-ai/story/"
+            },
+            {
+              "n": 2,
+              "category": "Digital Promise opened",
+              "title": "Digital Promise opened an $8M open-source AI tutoring grant lane",
+              "source": "edtechinnovationhub.com",
+              "relevance": "Intermediate",
+              "summary": "Digital Promise launched an EDU AI effort backed by the Gates Foundation to improve open-source AI tutoring with education-specific datasets and learning-science support.",
+              "why": "Tutoring, curriculum QA, and educational data preparation are turning into fundable build areas.",
+              "action": "Draft a concept note for a tutoring micro-tool around one narrow subject, with transparent",
+              "teacher": "controls and assessment rubrics. Teaching notes: The strongest angle is not replacing teachers; it is making tutoring explainable, measurable, and adaptable to learner variability.",
+              "link": "https://www.edtechinnovationhub.com/news/digital-promise-program-opens-8-million-ai-tutoring-grant-backed-by-gates-foundation"
+            },
+            {
+              "n": 3,
+              "category": "CAST AI says",
+              "title": "CAST AI says its OpsPilot agent is autonomously managing DevOps optimization",
+              "source": "cast.ai",
+              "relevance": "Intermediate",
+              "summary": "CAST AI's newsroom highlights OpsPilot, an AI agent for DevOps and SRE workload optimization, now managing optimization tasks autonomously.",
+              "why": "Cloud-cost and infrastructure automation is moving from dashboards into agent-operated services.",
+              "action": "Build a small consulting offer that audits wasted cloud spend, then delivers an approval-based automation playbook.",
+              "teacher": "Teach clients the guardrails: what the agent can change automatically, what needs human approval, and how rollback works.",
+              "link": "https://cast.ai/newsroom/"
+            },
+            {
+              "n": 4,
+              "category": "Superside is hiring",
+              "title": "Superside is hiring AI creatives for brand and campaign production",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Superside's AI Creative contractor role asks for generative AI visual concepting, design refinement, and workflow experimentation for large-brand creative work.",
+              "why": "AI design work is becoming a production craft role, not just a prompt hobby.",
+              "action": "Create a portfolio page with three AI-assisted campaign systems: moodboard, generated variations, human polish, and final assets.",
+              "teacher": "Document decisions, rejected outputs, and brand-control steps; that proves taste and reliability better than raw generations.",
+              "link": "https://jobs.lever.co/superside/f3d3064a-6df5-4a65-af08-132eeaf3688c"
+            },
+            {
+              "n": 5,
+              "category": "CSC Generation wants",
+              "title": "CSC Generation wants an AI Creative Automation Lead for retail brands",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "CSC Generation is hiring a remote Senior AI Creative Automation Lead to build workflows, generate production-grade assets, and create an operating system for creative automation across paid, ecommerce, and brand channels.",
+              "why": "Ecommerce groups need people who can connect AI image/video production to measurable testing loops.",
+              "action": "Offer a 2-week ecommerce creative sprint: product-angle matrix, AI visual variants, ad-ready exports, and performance tagging.",
+              "teacher": "Use a repeatable creative QA checklist: product fidelity, brand fit, legal risk, channel specs, and test hypothesis.",
+              "link": "https://jobs.lever.co/cscgeneration-2/c39c8e67-810a-4c47-a83a-fe5be4a25c0e"
+            },
+            {
+              "n": 6,
+              "category": "CSC Generation is",
+              "title": "CSC Generation is also hiring a Director of AI Creative Systems",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Another CSC role focuses on building a new AI-native creative production and testing capability from scratch, including photoreal imagery, video, copy, and structured testing loops.",
+              "why": "The market is separating single-asset creators from systems designers who can run creative pipelines.",
+              "action": "Turn your design/render workflow into a named system: intake, source lock, generation, retouch, review, delivery, and analytics.",
+              "teacher": "Teach the difference between 'make an image' and 'operate a repeatable creative system' with clear inputs and acceptance criteria.",
+              "link": "https://jobs.lever.co/cscgeneration-2/f2fa5f84-e093-4f03-ab43-b16aea273806"
+            },
+            {
+              "n": 7,
+              "category": "Reddit hiring post",
+              "title": "Reddit hiring post seeks an AI automation engineer and agent builder",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/DeveloperJobs post asks for AI agent development, workflow automation, CRM integrations, lead qualification, dashboards, assistants, APIs, cloud deployment, and end-to-end product delivery.",
+              "why": "Small clients increasingly describe the same bundle: agents plus CRM plus lead handling plus dashboards.",
+              "action": "Build one demo that qualifies leads, updates a CRM, sends follow-ups, and produces a daily dashboard.",
+              "teacher": "Show the whole lifecycle, not isolated prompts; clients buy closed-loop outcomes.",
+              "link": "https://www.reddit.com/r/DeveloperJobs/comments/1u012q8/hiring_ai_automation_engineeragent_builder_needed/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit automation builders",
+              "title": "Reddit automation builders say niching beats generic AI consulting",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "In r/AiAutomations, a 2026 thread from someone starting out gets practical advice: generic AI automation is crowded, but industry-specific workflow offers still have room.",
+              "why": "Freelance AI service positioning is moving from 'I know AI' to 'I solve this painful process for this niche.'",
+              "action": "Pick one niche such as real estate follow-up, salon booking, event proposal drafting, or 3D product shot QA, then write one offer page.",
+              "teacher": "Teach students to identify repeatable pain, volume, existing tools, approval points, and measurable ROI before building.",
+              "link": "https://www.reddit.com/r/AiAutomations/comments/1t1mer4/is_ai_automation_still_worth_getting_into_in_2026/"
+            },
+            {
+              "n": 9,
+              "category": "Siemens' Eigen Engineering",
+              "title": "Siemens' Eigen Engineering Agent shows industrial automation work becoming agentic",
+              "source": "press.siemens.com",
+              "relevance": "Intermediate",
+              "summary": "Siemens launched Eigen Engineering Agent for automation engineering, connected to TIA Portal and designed to carry out engineering tasks with project-specific validation.",
+              "why": "Agentic workflows are entering industrial engineering, where validation, standards, and traceability matter more than flashy demos.",
+              "action": "For technical consulting, position AI as a documented assistant that drafts, checks, and standardizes engineering work under human review.",
+              "teacher": "Use this as a case study for regulated-domain AI: source context, standards, validation, self-correction, and audit trail.",
+              "link": "https://press.siemens.com/global/en/pressrelease/siemens-launches-eigen-engineering-agent-bringing-purpose-built-ai-industrial"
+            },
+            {
+              "n": 10,
+              "category": "Reddit for Business",
+              "title": "Reddit for Business is teaching brands how Reddit visibility feeds AI search",
+              "source": "business.reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Reddit for Business is running a June 16 event on how Reddit ad formats and conversations can drive bottom-funnel performance while feeding the AI content layer that LLMs retrieve from.",
+              "why": "AI search visibility is becoming a marketing service that blends community proof, Reddit posts, AMAs, and search-visible content.",
+              "action": "Offer a lightweight AI visibility audit: what Reddit, forums, reviews, and help pages say about a brand before LLMs summarize it.",
+              "teacher": "Teach ethical community work: answer real questions, disclose affiliations, avoid fake seeding, and track recurring pain language.",
+              "link": "https://www.business.reddit.com/events"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 21",
       "label": "2026-06-09 · 21:00",
