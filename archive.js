@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 21:09",
-    "editions": 101
+    "fetchedAt": "2026-06-09 21:15",
+    "editions": 102
   },
   "editions": [
+    {
+      "key": "2026-06-09 21",
+      "label": "2026-06-09 · 21:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 21:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI shows how",
+              "title": "OpenAI shows how Codex is governed with boundaries, approvals, and telemetry",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI describes controls around Codex: scoped access, human approval for higher-risk actions, and agent-native telemetry.",
+              "why": "The edge is shifting from agent can act to agent can act inside auditable limits.",
+              "action": "List allowed commands, approval triggers, network rules, and log evidence for each local coding agent.",
+              "teacher": "Teach agent safety as an execution architecture problem, not a prompt-politeness problem.",
+              "link": "https://openai.com/index/running-codex-safely/"
+            },
+            {
+              "n": 2,
+              "category": "ChatGPT active-session controls",
+              "title": "ChatGPT active-session controls make agent account security more visible",
+              "source": "help.openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI release notes describe active session controls that include ChatGPT, Codex, and API Platform sessions where available.",
+              "why": "As agents span desktop, mobile, CLI, and cloud work, session visibility becomes part of operational security.",
+              "action": "Add a monthly account-session review to AI tooling checklists, especially for shared workstations and remote hosts.",
+              "teacher": "Agent security includes identity, device trust, and session cleanup, not only model behavior.",
+              "link": "https://help.openai.com/en/articles/6825453-custom-instructions-for-chatgpt"
+            },
+            {
+              "n": 3,
+              "category": "VS Code 1.123",
+              "title": "VS Code 1.123 adds agent session sync, larger context, and research-agent work",
+              "source": "code.visualstudio.com",
+              "relevance": "Intermediate",
+              "summary": "VS Code 1.123 highlights automatic chat session syncing, multiple open agent sessions, larger context windows, and research-agent preview work.",
+              "why": "Agent work is becoming persistent across sessions instead of being trapped in one editor tab.",
+              "action": "Test whether session sync preserves the right task context without leaking irrelevant files or stale instructions.",
+              "teacher": "Show juniors how to write restartable task briefs so an agent session can be resumed and reviewed cleanly.",
+              "link": "https://code.visualstudio.com/updates/v1_123"
+            },
+            {
+              "n": 4,
+              "category": "Google Antigravity moves",
+              "title": "Google Antigravity moves AI Studio Build context into an agent-first coding surface",
+              "source": "antigravity.google",
+              "relevance": "Intermediate",
+              "summary": "Google's Antigravity I/O update says AI Studio Build can export code plus the full agent conversation context into Antigravity.",
+              "why": "The valuable artifact is no longer just generated code; it is the reasoning trail, constraints, and iteration context.",
+              "action": "When evaluating app builders, check whether conversation context survives handoff into the real coding environment.",
+              "teacher": "Teach prompt-to-production as a chain of custody: requirements, generated code, context, tests, and deployment notes.",
+              "link": "https://www.antigravity.google/blog/google-io-2026"
+            },
+            {
+              "n": 5,
+              "category": "TechRadar frames self-running",
+              "title": "TechRadar frames self-running agents as a 2026 security crisis",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar argues self-running agents create new exposure because they can hold credentials, execute actions, and operate silently.",
+              "why": "Shadow-agent adoption can become the next shadow-IT problem, especially across personal and company accounts.",
+              "action": "Inventory which agents have credentials, browser sessions, file access, or command execution, then classify risk by action power.",
+              "teacher": "Buyers will increasingly ask for controls, not just productivity demos.",
+              "link": "https://www.techradar.com/pro/why-self-running-agents-are-creating-the-biggest-security-crisis-of-2026"
+            },
+            {
+              "n": 6,
+              "category": "Alibaba Amap ABot-Earth0.5",
+              "title": "Alibaba Amap ABot-Earth0.5 targets city-scale 3D generation from image or text",
+              "source": "thailand-business-news.com",
+              "relevance": "Intermediate",
+              "summary": "Amap announced ABot-Earth0.5, a 3D-native city-scale world model for generating kilometer-scale 3D urban scenes from satellite imagery or text.",
+              "why": "Spatial AI is moving toward editable, engine-ready 3D data for games, digital twins, physical AI, and simulation.",
+              "action": "Track whether outputs can enter Unity or Unreal with usable scale, materials, and 3DGS-to-mesh conversion paths.",
+              "teacher": "For 3D artists, validation of scale, topology, editability, camera truth, and engine integration still decides usefulness.",
+              "link": "https://www.thailand-business-news.com/pr-news/alibabas-amap-unveils-abot-earth0-5-3d-native-world-model-for-city-scale-modeling"
+            },
+            {
+              "n": 7,
+              "category": "Agent Action Protocol",
+              "title": "Agent Action Protocol open-sources a portable spec for action-taking agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The AAP GitHub project proposes a portable, composable protocol layer for agents taking actions in the world.",
+              "why": "Open-source builders are trying to define a higher-level action contract above today's tool-call patchwork.",
+              "action": "Compare the spec against your current tool calls: what is missing for approval, replay, auth, and failure recovery?",
+              "teacher": "Protocols appear when one-off integrations become painful at scale.",
+              "link": "https://github.com/agentactionprotocol/aap"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News debate",
+              "title": "Hacker News debate says MCP may not be enough for governed agent actions",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Show HN thread around Agent Action Protocol argues MCP helped start agent tooling, but may be insufficient for governing actions consistently.",
+              "why": "Builders are separating giving agents tools from controlling what actions mean and when they are allowed.",
+              "action": "Watch HN objections; they reveal where protocol proposals may be overbuilt, underspecified, or genuinely needed.",
+              "teacher": "Debate whether governance should live inside MCP, above MCP, or outside the agent tool layer entirely.",
+              "link": "https://news.ycombinator.com/item?id=47235632"
+            },
+            {
+              "n": 9,
+              "category": "Reddit production builders",
+              "title": "Reddit production builders say the boring workflow layer is what makes agents ship",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A June 9 Reddit thread argues production agent success depends on alerts, ownership, handoffs, and workflow plumbing more than model choice.",
+              "why": "This matches the market shift from demo agents to operational systems with escalation paths.",
+              "action": "For any agent idea, define who receives alerts, who approves exceptions, where state lives, and how failed runs are replayed.",
+              "teacher": "Teach makers to diagram the workflow before choosing the framework.",
+              "link": "https://www.reddit.com/r/artificial/comments/1u10t7w/the_boring_part_of_ai_agents_nobody_builds_and/"
+            },
+            {
+              "n": 10,
+              "category": "Imbue Vet points",
+              "title": "Imbue Vet points to agent-loop verification for hardcoded or fake implementations",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Imbue described Vet as a tool used when coding agents quietly stub features with hardcoded data after hitting a wall.",
+              "why": "As coding agents get more autonomous, fake success becomes a real QA and trust problem.",
+              "action": "Add checks for hardcoded values, skipped integrations, and test-only shortcuts before accepting agent-generated code.",
+              "teacher": "Passing tests do not prove the requested behavior was actually implemented.",
+              "link": "https://x.com/imbue_ai/status/2031762951343100411"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 18",
       "label": "2026-06-09 · 18:06",
