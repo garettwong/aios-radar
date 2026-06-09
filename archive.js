@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 13:11",
+    "fetchedAt": "2026-06-09 13:14",
     "editions": 99
   },
   "editions": [
     {
       "key": "2026-06-09 12",
-      "label": "2026-06-09 · 12:06",
+      "label": "2026-06-09 · 13:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Try a lightweight repo memory file plus task-state checklist before adding vector databases or heavy orchestration.",
               "teacher": "The lowest-friction memory often wins because humans and agents can both inspect it.",
               "link": "https://www.reddit.com/r/developersIndia/comments/1txyz98/my_coding_agents_share_context_and_stopped/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-09 · 13:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Capgemini intern role",
+              "title": "Capgemini intern role makes agentic AI development a formal training lane",
+              "source": "careers.capgemini.com",
+              "relevance": "Intermediate",
+              "summary": "Capgemini lists a Summer 2026 Agentic AI Developer internship focused on multi-agent systems and autonomous workflows.",
+              "why": "Agent building is moving into entry-level training, not only senior R&D.",
+              "action": "Make a small demo portfolio: one multi-agent workflow, one evaluation log, one short write-up on failure handling.",
+              "teacher": "Good class exercise: have students map a business process, split it into agents, then define handoff and approval rules.",
+              "link": "https://careers.capgemini.com/job/austin%2C-tx-intern-agentic-ai-developer-%28summer-2026%29-tx-73301/1398428533"
+            },
+            {
+              "n": 2,
+              "category": "Vocal Media AI",
+              "title": "Vocal Media AI Content Coordinator turns GenAI social accounts into a paid operations role",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Vocal is hiring for day-to-day operation of AI-powered social accounts, high-volume publishing, workflow architecture, and performance loops.",
+              "why": "Creator work is becoming systems work: prompts, schedules, approvals, analytics, and taste checks.",
+              "action": "Package a creator ops service around one niche account: content calendar, prompt library, review checklist, and weekly metrics.",
+              "teacher": "Teach students to separate ideation, generation, curation, publishing, and postmortem instead of treating AI content as one prompt.",
+              "link": "https://jobs.lever.co/get-vocal-pbc/d24cc02d-a6e6-43ce-a924-9c2968d06264"
+            },
+            {
+              "n": 3,
+              "category": "Reddit PythonJobs hiring",
+              "title": "Reddit PythonJobs hiring post asks for AI video automation developer with Python and Remotion",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A hiring post seeks a full-time developer to build a script-plus-voiceover-to-edited-video automation system.",
+              "why": "The market is paying for complete video pipelines, not isolated AI clips.",
+              "action": "Build a proof-of-work reel: input script, generated assets, timeline assembly, captions, and final export.",
+              "teacher": "Stress production readiness: deterministic steps, retry logic, asset naming, and human review beat flashy one-off generations.",
+              "link": "https://www.reddit.com/r/PythonJobs/comments/1tx8h0v/hiring_ai_video_automation_developer_python/"
+            },
+            {
+              "n": 4,
+              "category": "Reddit n8n and",
+              "title": "Reddit n8n and RAG builder post shows freelancers packaging business automation retainers",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A freelancer is positioning n8n workflows plus RAG bots trained on real business data as a remote contract service.",
+              "why": "Buyers understand concrete outcomes like onboarding, email, calendar, Notion, and support knowledge, even when they do not care about the model stack.",
+              "action": "Offer one narrow retainer: client intake automation or internal knowledge bot, with setup fee plus monthly maintenance.",
+              "teacher": "Have learners write the service promise before tool selection: trigger, data source, action, audit trail, and owner.",
+              "link": "https://www.reddit.com/r/remotepython/comments/1tzporl/for_hire_fully_remote_n8n_automation_engineer_rag/"
+            },
+            {
+              "n": 5,
+              "category": "MINISFORUM private AI",
+              "title": "MINISFORUM private AI Agent NAS targets one-person companies and creator workflows",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "MINISFORUM announced AI Agent NAS devices aimed at SMBs and one-person companies, with local LLMs, private storage, and creator workflow acceleration.",
+              "why": "Local private AI is becoming a sellable setup niche for studios that handle client assets, 3D libraries, photos, or confidential docs.",
+              "action": "Design a small-studio offer: local asset search, private assistant, backup plan, and model/tool install checklist.",
+              "teacher": "Use this to teach the cloud vs local tradeoff: privacy, latency, cost, maintenance, and GPU/storage limits.",
+              "link": "https://www.prnewswire.com/news-releases/benefiting-smbs-and-opcs-minisforum-unveils-private-ai-agent-nas-ecosystems-at-computex-2026-302788403.html"
+            },
+            {
+              "n": 6,
+              "category": "HorizonOS Labs cohort",
+              "title": "HorizonOS Labs cohort tests AI marketing and creator-scoring tools for clients",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "Horizon Media is testing a new cohort of marketing tech partners, including predictive audience modeling and creator-specific scoring.",
+              "why": "Agencies need people who can evaluate tools, run controlled pilots, and translate results into client recommendations.",
+              "action": "Build a mini audit template for brands: use case, baseline, test plan, creative variants, decision metric, and rollout risk.",
+              "teacher": "Teach AI consulting as experiment design, not tool enthusiasm. The deliverable is a decision memo clients can trust.",
+              "link": "https://www.prnewswire.com/news-releases/horizon-media-holdings-advances-open-ecosystem-with-horizonos-labs-cohort-2-allowing-clients-to-tap-into-on-going-innovation-302790842.html"
+            },
+            {
+              "n": 7,
+              "category": "OPAQUE hires Microsoft",
+              "title": "OPAQUE hires Microsoft Agent Governance Toolkit creator to build verifiable agent controls",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "OPAQUE brought in the creator of Microsoft's Agent Governance Toolkit to bridge policy and hardware-enforced proof for high-stakes AI agents.",
+              "why": "Governance, evidence packs, and runtime controls are becoming real enterprise buying criteria.",
+              "action": "Add an agent governance audit to automation proposals: data access map, permissions, logs, rollback, and approval points.",
+              "teacher": "Students should learn to describe what an agent is allowed to do, how that is enforced, and how a reviewer proves it happened.",
+              "link": "https://www.prnewswire.com/news-releases/opaque-names-creator-of-microsofts-agent-governance-toolkit-as-chief-platform-officer-302789222.html"
+            },
+            {
+              "n": 8,
+              "category": "MegazoneCloud deploys multi-agent",
+              "title": "MegazoneCloud deploys multi-agent shopping agent for Golfzon Commerce",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "MegazoneCloud built a retail shopping agent using more than 500,000 fitting records and over 10 specialized agents for golf equipment recommendations.",
+              "why": "Product recommendation is shifting from generic chat to domain-specific agents backed by proprietary data.",
+              "action": "For retail clients, pitch one category-specific advisor using their best data: sizing, fit, compatibility, installation, or use case matching.",
+              "teacher": "Teach that the moat is not just the chatbot. It is the data cleanup, specialist agent roles, evaluation, and merchandising logic.",
+              "link": "https://www.prnewswire.com/news-releases/megazonecloud-deploys-multi-agent-ai-shopping-agent-for-golfzon-commerce-302791661.html"
+            },
+            {
+              "n": 9,
+              "category": "Givebutter Design Engineer",
+              "title": "Givebutter Design Engineer role asks for production-grade AI-generated explorations",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Givebutter is hiring a design engineer to turn Figma, prototypes, and AI-generated explorations into production-grade motion and interaction.",
+              "why": "Design jobs increasingly reward people who can move from AI-assisted concept to shipped UI quality.",
+              "action": "Create a small before-after case study: AI exploration, chosen direction, manual refinement, code implementation, and accessibility check.",
+              "teacher": "Teach AI as an exploration partner, then grade the final result on interaction quality, performance, clarity, and maintainability.",
+              "link": "https://jobs.ashbyhq.com/givebutter/642f7a29-dff1-4770-a331-635ef31856d3/"
+            },
+            {
+              "n": 10,
+              "category": "LawVu LegalOS packages",
+              "title": "LawVu LegalOS packages in-house legal work into an AI operating system",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "LawVu introduced LegalOS for corporate legal teams, positioning intake, contracts, matters, spend, reporting, and AI workflows in one system.",
+              "why": "Legal ops is a strong consulting niche because teams have repeatable document flows, high risk, and messy handoffs.",
+              "action": "Build a legal-ops automation starter: intake form, document triage, clause library, approval routing, and audit log.",
+              "teacher": "Good lesson: automation in regulated work must include source grounding, escalation rules, and a human sign-off trail.",
+              "link": "https://www.prnewswire.com/news-releases/lawvu-introduces-legalos-the-ai-powered-operating-system-built-for-in-house-legal-302787620.html"
             }
           ]
         }
