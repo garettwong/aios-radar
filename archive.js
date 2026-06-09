@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 00:11",
+    "fetchedAt": "2026-06-10 00:16",
     "editions": 103
   },
   "editions": [
     {
       "key": "2026-06-10 00",
-      "label": "2026-06-10 · 00:00",
+      "label": "2026-06-10 · 00:08",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 00:08 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI workspace agents",
+              "title": "OpenAI workspace agents show shared Codex-powered agents becoming team infrastructure",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI is positioning workspace agents as shared, Codex-powered agents that run in the cloud, use organizational permissions, and can be reused by teams in ChatGPT or Slack.",
+              "why": "The useful agent unit is shifting from personal chat thread to governed team worker with shared context, schedules, and tool access.",
+              "action": "For internal workflows, start documenting which tasks need shared ownership, auditability, and handoff rather than just a faster solo assistant.",
+              "teacher": "Explain this as the difference between a personal macro and a team service: same AI core, but different trust, permissions, and maintenance needs.",
+              "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/"
+            },
+            {
+              "n": 2,
+              "category": "Kilo Agent Manager",
+              "title": "Kilo Agent Manager isolates parallel agents with git worktrees inside VS Code",
+              "source": "blog.kilo.ai",
+              "relevance": "Intermediate",
+              "summary": "Kilo's June 8 Agent Manager gives each parallel coding agent its own git worktree, card, branch, status, terminal, and diff review surface inside VS Code.",
+              "why": "Multi-agent coding is becoming a coordination problem more than a raw model problem. Isolation, review, and merge flow are now core UX.",
+              "action": "When running more than one coding agent, standardize worktree-per-task and require a diff review before merge.",
+              "teacher": "Show juniors that parallel agents are like parallel developers: shared folders create conflicts; isolated branches make review possible.",
+              "link": "https://blog.kilo.ai/p/agent-manager-run-multiple-agents"
+            },
+            {
+              "n": 3,
+              "category": "KiloBench shifts model",
+              "title": "KiloBench shifts model choice from leaderboard score to cost per completed agent task",
+              "source": "blog.kilo.ai",
+              "relevance": "Intermediate",
+              "summary": "KiloBench argues that generic SWE scores are saturated and that real production choice depends on cost per attempt, cost to complete, harness behavior, retries, and token overhead.",
+              "why": "Teams will stop buying models by leaderboard rank and start measuring model plus agent harness plus workload economics.",
+              "action": "Add per-task cost, retry count, wall time, and pass/fail logging to any agent workflow you run repeatedly.",
+              "teacher": "A cheap model can be expensive if it loops; an expensive model can be cheap if it finishes cleanly. Measure the whole run.",
+              "link": "https://blog.kilo.ai/p/kilobench-because-your-benchmark"
+            },
+            {
+              "n": 4,
+              "category": "Kurrent frames durable",
+              "title": "Kurrent frames durable run history as the missing substrate for agent governance",
+              "source": "kurrent.io",
+              "relevance": "Intermediate",
+              "summary": "Kurrent's June 8 post says the next agent infrastructure gap is not just memory or orchestration, but a durable record of how the work happened.",
+              "why": "Agent governance, debugging, and improvement all fail if the final output exists but the decision path, retries, and handoffs disappear.",
+              "action": "Preserve agent run logs, tool calls, approvals, test results, and final diffs in a searchable project record.",
+              "teacher": "Treat agent history like source control for decisions: if you cannot reconstruct the run, you cannot trust or improve it.",
+              "link": "https://www.kurrent.io/blog/two-surfaces-one-substrate/"
+            },
+            {
+              "n": 5,
+              "category": "Meshy 3D Agent",
+              "title": "Meshy 3D Agent Beta turns 3D creation into a chat-based maker workflow",
+              "source": "fidelity.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy announced a 3D Agent Beta that lets users brainstorm, generate batches of concepts, ask 3D and printing questions, and turn selected concepts into downloadable 3D models through chat.",
+              "why": "AI 3D is moving from one-shot model generation toward guided creation flows that match how artists and makers iterate.",
+              "action": "For 3D concept work, test chat-to-batch-to-select workflows, then verify topology, scale, UVs, and printability in Blender or your target tool.",
+              "teacher": "Make clear that agentic 3D can accelerate ideation, but inspection and cleanup still decide whether an asset is production-ready.",
+              "link": "https://www.fidelity.com/news/article/default/202606041100PR_NEWS_USPR_____CN74960"
+            },
+            {
+              "n": 6,
+              "category": "Lovable expands Google",
+              "title": "Lovable expands Google Cloud footprint as AI app builders move into high-volume infrastructure deals",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch reports Lovable signed a multiyear Google Cloud deal expected to increase its platform usage fivefold, including AI usage and model access.",
+              "why": "Vibe coding platforms are no longer small demo tools; their economics now depend on cloud capacity, model supply, and enterprise distribution.",
+              "action": "Watch AI app builders for infra partnerships, pricing changes, and quota behavior. These signals predict reliability and cost before feature pages do.",
+              "teacher": "When a tool scales, the bottleneck often becomes compute and margins, not UI polish.",
+              "link": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/"
+            },
+            {
+              "n": 7,
+              "category": "last30days-skill trends on",
+              "title": "last30days-skill trends on GitHub by packaging social research into an agent skill",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The GitHub repo packages Reddit, X, YouTube, Hacker News, Polymarket, GitHub, and web research into an installable agent skill that synthesizes recent signals.",
+              "why": "Research workflows are becoming reusable agent capabilities, not one-off prompts. Makers are encoding source coverage as installable skills.",
+              "action": "Build or adopt small skills for repeated research lanes: product monitoring, competitor scans, creator trend checks, and client due diligence.",
+              "teacher": "A good skill is a repeatable research method with source rules, not just a longer prompt.",
+              "link": "https://github.com/mvanhorn/last30days-skill"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News Statewright",
+              "title": "Hacker News Statewright thread highlights state machines and smaller tool spaces for reliable agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "HN discussion around Statewright focuses on phase-gated agents, compact tool access, and state machines to reduce unreliable loops.",
+              "why": "Builders are converging on constrained agent design: smaller tool surfaces, explicit phases, guards, and retries instead of open-ended autonomy.",
+              "action": "For important agent workflows, define phases like read, plan, edit, test, and deliver, and unlock tools only when each phase passes.",
+              "teacher": "Reliability often improves by reducing choices. Give the agent the right next tool, not every possible tool.",
+              "link": "https://news.ycombinator.com/item?id=48108778"
+            },
+            {
+              "n": 9,
+              "category": "Reddit maker builds",
+              "title": "Reddit maker builds a local CLI to estimate and cap coding-agent spend before expensive runs",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker shared an MIT local CLI aimed at estimating and limiting AI coding-agent spend before long runs get costly.",
+              "why": "Cost anxiety is becoming a practical builder pain point as autonomous coding sessions consume hidden reasoning tokens and repeated context.",
+              "action": "Add budget ceilings to agent runs and make the agent report projected cost before starting broad refactors or test-generation loops.",
+              "teacher": "Teach cost as an engineering constraint like memory or latency. Unlimited autonomy with no budget is not a workflow.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1ty61w8/i_built_a_local_cli_to_estimate_and_cap_ai/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit AI game-dev",
+              "title": "Reddit AI game-dev makers share practical AI 3D generation lessons from six months in production",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "AI game-dev discussion points to batch generation, reference-led workflows, cleanup expectations, and tool choice as practical lessons from using AI 3D generators in production.",
+              "why": "Maker communities are separating usable AI 3D workflows from marketing claims. The signal is moving toward mesh quality, UVs, retopo, and cleanup time.",
+              "action": "When testing AI 3D tools, score outputs on downstream cleanup hours, separated parts, texture quality, rigging needs, and engine import success.",
+              "teacher": "The real question is not whether the preview looks good; it is whether the asset survives Blender, engine import, and revision.",
+              "link": "https://www.reddit.com/r/aigamedev/comments/1tmh6r5/best_practices_for_ai_3d_generation_in_game/"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
