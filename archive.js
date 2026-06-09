@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 03:05",
-    "editions": 103
+    "fetchedAt": "2026-06-10 03:09",
+    "editions": 104
   },
   "editions": [
+    {
+      "key": "2026-06-10 03",
+      "label": "2026-06-10 · 03:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 03:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "NiCE launches a",
+              "title": "NiCE launches a suite for managing hybrid human-plus-AI customer workforces",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "NiCE announced a Workforce Empowerment Suite at NiCE World 2026 for operational excellence across people and AI workers.",
+              "why": "Contact-center and customer-experience teams will need people who can map workflows, monitor compliance, and tune agent-human handoffs.",
+              "action": "Package a small CX automation audit: inventory queues, draft escalation rules, and prototype one AI-assisted quality review flow.",
+              "teacher": "Use this as a class example of AI operations replacing generic prompt lessons with measurable service KPIs.",
+              "link": "https://www.businesswire.com/news/home/20260609856670/en/NiCE-Launches-Workforce-Empowerment-Suite-for-the-Hybrid-AI-Workforce"
+            },
+            {
+              "n": 2,
+              "category": "Reply showcases AI-native",
+              "title": "Reply showcases AI-native engineering services at VivaTech",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "Reply is presenting generative AI plus coding agents across requirements, coding, testing, deployment, and documentation.",
+              "why": "The opportunity is less learn one coding assistant and more sell a full delivery workflow that clients can trust.",
+              "action": "Build a demo service that converts a client brief into user stories, prototype code, test notes, and a deployment checklist.",
+              "teacher": "Teach students to compare agent outputs against a traceable spec, not just judge whether the app looks done.",
+              "link": "https://www.businesswire.com/news/home/20260608667672/en/Reply-at-VivaTech-2026-Making-AI-Agents-and-Robotics-Happen-Across-the-Enterprise"
+            },
+            {
+              "n": 3,
+              "category": "agnt8x launches an",
+              "title": "agnt8x launches an AI-agent recruitment and management platform",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "agnt8x says it is building a marketplace and management layer for finding, onboarding, governing, and orchestrating AI agents.",
+              "why": "This frames agents as managed labor, creating work in evaluation, governance, procurement, and workflow integration.",
+              "action": "Create an agent vendor scorecard template covering task fit, data access, audit logs, failure modes, and replacement cost.",
+              "teacher": "Good discussion prompt: when does an AI tool become a workforce asset that needs HR-style governance?",
+              "link": "https://www.businesswire.com/news/home/20260603904734/en/agnt8x-Launches-the-Worlds-First-AI-Agent-Recruitment-and-Workforce-Management-Platform"
+            },
+            {
+              "n": 4,
+              "category": "Meshy is hiring",
+              "title": "Meshy is hiring for generative 3D graphics engineering",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy lists a Generative AI - Graphics Engineer role focused on high-performance graphics systems for 3D generation.",
+              "why": "3D generative AI is moving from prompt toys into real graphics infrastructure, which benefits artists who understand pipelines and constraints.",
+              "action": "Build a portfolio page that shows before and after 3D asset generation, topology cleanup, texture fixes, and production handoff notes.",
+              "teacher": "Teach AI 3D QA as a practical skill: scale, silhouette, UVs, material naming, export formats, and render consistency.",
+              "link": "https://jobs.ashbyhq.com/meshy/1806f5d3-9f34-4e7e-8238-4e53fc4e579b"
+            },
+            {
+              "n": 5,
+              "category": "Hoopdreams posts an",
+              "title": "Hoopdreams posts an AI Automation Engineer role with ownership close to the CEO",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "A Wellfound listing says Hoopdreams wants an AI Automation Engineer to build the future of work, with remote possible and a July 1 target hire date.",
+              "why": "Smaller companies are hiring automation builders as first technical operators, not just enterprise AI teams.",
+              "action": "For freelance positioning, pitch a founder automation sprint that ships one revenue, ops, or support workflow in seven days.",
+              "teacher": "Students should learn how to scope automations around owner pain: lead capture, scheduling, reporting, billing, and follow-up.",
+              "link": "https://wellfound.com/jobs/4307479-ai-automation-engineer"
+            },
+            {
+              "n": 6,
+              "category": "Remote graphic design",
+              "title": "Remote graphic design AI-trainer work continues to appear on Greenhouse boards",
+              "source": "job-boards.eu.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "A Graphic Designer Specialist freelance AI trainer project asks designers to help models understand layout, hierarchy, color, and creative decision-making.",
+              "why": "Model evaluation is becoming a paid side lane for designers with taste, not only engineers with ML degrees.",
+              "action": "Prepare a sample evaluation pack: five design critiques with visual hierarchy notes, prompt rewrite, and pass/fail rubric.",
+              "teacher": "This is a clean exercise for design students: explain why a generated layout fails without using vague words like bad or ugly.",
+              "link": "https://job-boards.eu.greenhouse.io/agency/jobs/4718957101"
+            },
+            {
+              "n": 7,
+              "category": "Jobgether shows remote",
+              "title": "Jobgether shows remote AI-design listings across motion, product, and trainer roles",
+              "source": "jobgether.com",
+              "relevance": "Intermediate",
+              "summary": "Jobgether's AI design category includes roles like Senior Motion Designer with AI and beauty experience and freelance AI trainer product-design work.",
+              "why": "The market is splitting into specialists: AI-assisted motion, AI quality review, conversational UX, and model-facing product design.",
+              "action": "Split your CV and portfolio into one AI production lane and one AI evaluation lane so recruiters can map you to both role types.",
+              "teacher": "Have learners rewrite one generic design resume bullet into three AI-specific bullets: workflow speed, QA rubric, and model/tool fluency.",
+              "link": "https://jobgether.com/remote-jobs/ai-design"
+            },
+            {
+              "n": 8,
+              "category": "Tutoring specialists are",
+              "title": "Tutoring specialists are being hired to challenge and evaluate AI teaching behavior",
+              "source": "job-boards.eu.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "A Greenhouse listing seeks instructional experts for realistic education scenarios, reasoning quality, pedagogical logic, and gold-standard teaching examples.",
+              "why": "",
+              "action": "Build a small bank of tutoring test cases: one misconception, one weak explanation, one over-helpful answer, and one strong guided response. Teaching notes: This is ideal for showing that good AI tutoring should ask, scaffold, and diagnose rather than simply answer.",
+              "teacher": "s and curriculum builders can sell evaluation judgment as AI tutoring products scale.",
+              "link": "https://job-boards.eu.greenhouse.io/agency/jobs/4796064101"
+            },
+            {
+              "n": 9,
+              "category": "Reddit freelancer post",
+              "title": "Reddit freelancer post prices applied AI engineering at $45/hour",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/forhire post offers backend APIs, RAG, automation, and production hardening for short contracts, trials, or part-time projects.",
+              "why": "Public freelancer positioning shows clients buying practical integration and reliability, not abstract AI strategy.",
+              "action": "Copy the structure, not the content: list best-fit work, proof of production experience, hourly rate, and trial-project options.",
+              "teacher": "Useful example for students learning to turn technical ability into a client-facing offer with clear boundaries.",
+              "link": "https://www.reddit.com/r/forhire/comments/1tu6m0b/for_hire_senior_backend_applied_ai_engineer_apis/"
+            },
+            {
+              "n": 10,
+              "category": "Botpool public X",
+              "title": "Botpool public X profile signals marketplace formation around AI freelancers",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Botpool's search-visible X posts highlight a freelancer marketplace for AI automation agencies and claim over 10,000 registered freelancers.",
+              "why": "Even if individual posts are promotional, the signal is that AI automation work is organizing into talent marketplaces and agency supply chains.",
+              "action": "Track marketplace categories and build a profile around one narrow offer: n8n workflows, CRM agents, sales ops, support bots, or creative automation.",
+              "teacher": "Ask learners to compare marketplace claims with actual job posts so they learn evidence quality, not hype-chasing.",
+              "link": "https://x.com/botpoolai"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 00",
       "label": "2026-06-10 · 00:08",
