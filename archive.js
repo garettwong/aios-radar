@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 10:09",
+    "fetchedAt": "2026-06-09 10:12",
     "editions": 98
   },
   "editions": [
     {
       "key": "2026-06-09 09",
-      "label": "2026-06-09 · 09:06",
+      "label": "2026-06-09 · 10:06",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Before starting a custom agent, decide whether to build, adapt open source, use an SDK, or orchestrate an existing coding agent with strict acceptance tests.",
               "teacher": "Teach agent strategy as a build-vs-buy-vs-harness decision, with maintenance cost as the main hidden variable.",
               "link": "https://www.reddit.com/r/AI_Agents/comments/1tylqry/there_are_4_ways_to_build_an_ai_agent_in_2026/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-09 · 10:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "WPP HEX turns",
+              "title": "WPP HEX turns AI marketing talent into a visible training lane",
+              "source": "wpp.com",
+              "relevance": "Intermediate",
+              "summary": "WPP launched HEX, a frontier studio for AI-era marketing talent, built around operationalizing models, media intelligence, creative production, and WPP Open.",
+              "why": "Agencies are turning AI fluency into a talent pipeline, not just a software purchase. That creates room for creative operators who can combine taste, client judgment, and production systems.",
+              "action": "Build one portfolio page showing an AI-assisted campaign workflow: brief, references, generation, QA, variants, delivery files, and performance learning loop.",
+              "teacher": "Good for a workshop on moving from prompts to operating models: roles, approval points, asset governance, and how creative judgment remains billable.",
+              "link": "https://www.wpp.com/en/news/wpp-launches-hex-creating-a-new-kind-of-talent-pipeline-designed-for-the-ai-era"
+            },
+            {
+              "n": 2,
+              "category": "Workday agent tools",
+              "title": "Workday agent tools create HR, finance, and IT implementation work",
+              "source": "investor.workday.com",
+              "relevance": "Intermediate",
+              "summary": "Workday announced developer tools to build, connect, and verify AI agents across HR, finance, and IT, with early access now and broader availability projected later in 2026.",
+              "why": "Enterprise agents need configuration, validation, integrations, and governance. That favors consultants who understand messy back-office workflows more than generic prompt libraries.",
+              "action": "Pick one HR or finance process and document the before/after agent map, including source systems, human approvals, audit logs, and failure cases.",
+              "teacher": "Use this as a case study for agent readiness: data access, permissions, verification, exception handling, and rollout stages.",
+              "link": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-Launches-New-Tools-for-Developers-to-Build-Connect-and-Verify-AI-Agents-For-HR-Finance-and-IT/default.aspx"
+            },
+            {
+              "n": 3,
+              "category": "Cognizant and Snowflake",
+              "title": "Cognizant and Snowflake push governed enterprise agents beyond pilots",
+              "source": "news.cognizant.com",
+              "relevance": "Intermediate",
+              "summary": "Cognizant and Snowflake expanded work around Cortex-powered intelligent agents for analytics, contract intelligence, compliance automation, financial workflows, and anomaly detection.",
+              "why": "The opportunity is not just building agents; it is packaging governed templates that fit existing data platforms and regulated business workflows.",
+              "action": "Create a small demo offer: 'agent workflow audit for Snowflake-heavy teams' with checks for data quality, permissions, handoffs, and measurable business outcomes.",
+              "teacher": "Emphasize the difference between a demo agent and a production agent: observability, governed data, domain workflow, and accountability.",
+              "link": "https://news.cognizant.com/2026-06-03-Cognizant-Accelerates-Enterprise-AI-Adoption-with-Snowflakes-Cortex-Powered-Intelligent-Agents"
+            },
+            {
+              "n": 4,
+              "category": "Docebo AgentHub points",
+              "title": "Docebo AgentHub points to AI-first learning operations",
+              "source": "docebo.inc",
+              "relevance": "Intermediate",
+              "summary": "Docebo launched AgentHub and tied agentic AI to skills intelligence, enterprise knowledge, MCP, AI tutor features, and learning platform automation.",
+              "why": "Training departments will need people who can turn company knowledge into teachable agent workflows, not just upload courses.",
+              "action": "Productize a 'team AI tutor setup' service: collect FAQs, map role skills, build retrieval sources, write escalation rules, and test learner answers.",
+              "teacher": "Useful for teaching AI in education: separate content, skill model, tutor behavior, assessment, and human review.",
+              "link": "https://www.docebo.inc/news/news-details/2026/Docebo-Launches-Docebo-AgentHub-and-Unites-Skills-Intelligence-Enterprise-Knowledge-and-Agentic-AI-in-a-Single-Platform/default.aspx"
+            },
+            {
+              "n": 5,
+              "category": "Zapier virtual programs",
+              "title": "Zapier virtual programs role connects AI transformation with event operations",
+              "source": "dynamitejobs.com",
+              "relevance": "Intermediate",
+              "summary": "A Zapier Virtual Programs Specialist listing owns webinars, workshops, executive sessions, run-of-show, assets, registration, and follow-up for Demand Gen and AI Transformation.",
+              "why": "AI transformation creates non-engineering roles for people who can run educational programs, coordinate speakers, and automate the attendee journey.",
+              "action": "Build a sample AI workshop ops kit: agenda, speaker prep, landing page checklist, CRM routing, follow-up sequence, and post-event report.",
+              "teacher": "This is a strong example that AI jobs include operations and enablement, not only model work.",
+              "link": "https://dynamitejobs.com/company/zapier/remote-job/virtual-programs-specialist"
+            },
+            {
+              "n": 6,
+              "category": "n8n AI Automation",
+              "title": "n8n AI Automation Specialist project prices practical workflow builds",
+              "source": "nocodejobs.org",
+              "relevance": "Intermediate",
+              "summary": "NoCodeJobs lists a remote n8n AI automation project at $1,500-$3,500 to triage inbound requests, enrich records, route exceptions, and create a readable audit trail.",
+              "why": "Small businesses are buying concrete automations with logs and handoff rules. This is a freelance lane for AI workflow builders who can document clearly.",
+              "action": "Make three reusable n8n templates: lead triage, support intake, and invoice/document intake, each with audit notes and human review steps.",
+              "teacher": "Teach this as a fixed-scope consulting offer: inputs, integrations, AI step, guardrails, runbook, and acceptance test.",
+              "link": "https://nocodejobs.org/agentic-jobs/n8n-ai-automation-specialist"
+            },
+            {
+              "n": 7,
+              "category": "Braintrust AI-enabled packaging",
+              "title": "Braintrust AI-enabled packaging designer role rewards GenAI craft plus polish",
+              "source": "graphic-design.thecreativeloft.com",
+              "relevance": "Intermediate",
+              "summary": "A Braintrust listing seeks a senior designer using GenAI for high-fidelity prompt architecture, ideation, compositing, Adobe production, and final on-brand packaging/branding assets.",
+              "why": "The market is rewarding hybrid designers who can use AI for speed but still finish work to commercial standards.",
+              "action": "Add a portfolio case that shows AI-generated options beside final retouched packaging mockups, with notes on prompt, curation, typography, and print constraints.",
+              "teacher": "Good lesson topic: AI can widen exploration, but senior design value is selection, typography, brand consistency, and production accuracy.",
+              "link": "https://graphic-design.thecreativeloft.com/graphic-design/jobs/sr-graphic-designer-pack-2"
+            },
+            {
+              "n": 8,
+              "category": "Invoca agentic implementation",
+              "title": "Invoca agentic implementation role shows customer-facing AI deployment becoming a job",
+              "source": "invoca.com",
+              "relevance": "Intermediate",
+              "summary": "Invoca's Agentic Implementation Specialist role focuses on activating AI-powered workflows across marketing, contact center, and revenue operations for customers.",
+              "why": "Companies need translators who can configure agents, debug integrations, validate outcomes, and convert early patterns into repeatable implementations.",
+              "action": "Prepare a case-study resume section around one customer workflow: problem, systems connected, agent behavior, testing method, and business metric.",
+              "teacher": "Use this to explain the new 'implementation specialist' category: half customer success, half systems thinking, half AI QA.",
+              "link": "https://www.invoca.com/company/job-listings/?gh_jid=8462959002"
+            },
+            {
+              "n": 9,
+              "category": "Reddit AskMarketing thread",
+              "title": "Reddit AskMarketing thread says AI ad tools still need human editors and testing",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent AskMarketing discussion says AI ad generators can be useful, but hidden costs come from rejected outputs, credits, weak UGC video quality, and the need for human editing/testing.",
+              "why": "This is user pain with direct service potential: clients do not only need tools; they need someone to choose, test, edit, and manage waste.",
+              "action": "Offer an 'AI ad tool audit' for creators or small brands: compare tools, estimate rejection rate, create editing standards, and define when to switch to manual production.",
+              "teacher": "Teaches students to read market complaints as offer design: every repeated frustration can become a checklist, service, or template.",
+              "link": "https://www.reddit.com/r/AskMarketing/comments/1trw3qz/what_are_the_best_ai_ad_generatorssaas_tools_in/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit hiring post",
+              "title": "Reddit hiring post shows ongoing paid AI-generated ad editing work",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Reddit hiring post seeks a remote video editor comfortable with AI-generated footage for ongoing DTC ad work, with monthly pay and performance bonus.",
+              "why": "Even small gigs show the shape of demand: AI footage still needs hooks, pacing, cleanup, captions, brand fit, and performance iteration.",
+              "action": "Build a short reel specifically labeled 'AI footage edited into paid-social ads' with three before/after examples and metrics or testing assumptions.",
+              "teacher": "For 3D/design students, position AI video editing as a bridge skill: storytelling, continuity repair, product focus, and conversion-aware editing.",
+              "link": "https://www.reddit.com/r/VideoEditor_forhire/comments/1u03lqb/hiring_video_editor_for_aigenerated_ad_content/"
             }
           ]
         }
