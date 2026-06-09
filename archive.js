@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 18:11",
-    "editions": 100
+    "fetchedAt": "2026-06-09 18:16",
+    "editions": 101
   },
   "editions": [
+    {
+      "key": "2026-06-09 18",
+      "label": "2026-06-09 · 18:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 18:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI release notes",
+              "title": "OpenAI release notes make Codex plugins, Sites, and app permissions operational for teams",
+              "source": "help.openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's Enterprise/Edu release notes show Codex moving into admin-managed workplace use: app permissions, plugin sharing, Sites, role-specific plugins, and compliance logs are now part of the operating surface.",
+              "why": "Agents are becoming managed workplace infrastructure, not just clever local tools. The interesting change is permissioning, logs, and shareable internal apps around the agent.",
+              "action": "Treat every internal agent workflow as a product: define owner, allowed apps, approval rules, logs, and reusable plugin packaging.",
+              "teacher": "Show this as the bridge from prompt craft to operations. The class takeaway is that agent adoption depends on governance and repeatability as much as model quality.",
+              "link": "https://help.openai.com/en/articles/10128477"
+            },
+            {
+              "n": 2,
+              "category": "Figma says taste",
+              "title": "Figma says taste remains the differentiator as AI enters design execution",
+              "source": "figma.com",
+              "relevance": "Intermediate",
+              "summary": "Figma's June 8 design essay argues that AI changes execution speed, but not the need for taste, judgment, critique, and a strong point of view.",
+              "why": "For design and 3D work, this is the right framing: AI can produce options fast, but the valuable human layer is selection, refinement, and visual standards.",
+              "action": "Build a taste board before generating: accepted typography, composition references, material rules, lighting rules, and examples of rejected looks.",
+              "teacher": "Use this to explain why AI output review should be taught as a design skill, not as a passive acceptance step.",
+              "link": "https://www.figma.com/blog/you-never-stop-cultivating-taste/"
+            },
+            {
+              "n": 3,
+              "category": "TechCrunch says Antigravity",
+              "title": "TechCrunch says Antigravity 2.0 is becoming a multi-agent desktop, CLI, and SDK platform",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch reports Google's Antigravity 2.0 adds a desktop app, CLI, SDK, multi-agent orchestration, scheduled background tasks, and custom subagent workflows.",
+              "why": "The coding-agent market is converging on the same shape: desktop control room, terminal agent, SDK, scheduled runs, and app integrations.",
+              "action": "Compare your own agent stack against that pattern: local control, async execution, repeatable workflows, and clean handoff between desktop and CLI.",
+              "teacher": "This is a good market-signal slide: tools are competing less on chat UI and more on orchestration surfaces.",
+              "link": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/"
+            },
+            {
+              "n": 4,
+              "category": "Meshy help docs",
+              "title": "Meshy help docs show 3D Agent moving from launch story to usable workflow",
+              "source": "help.meshy.ai",
+              "relevance": "Intermediate",
+              "summary": "Meshy's support docs now describe how users access Meshy Agent, ask for 3D models, create batches, texture assets, and send work toward slicer or model workflows.",
+              "why": "3D generation is becoming conversational and task-based. The frontier is no longer only text-to-mesh quality; it is whether the tool can manage a sequence of asset decisions.",
+              "action": "Test a small asset pack prompt with style consistency constraints, then inspect topology, scale, texture usefulness, and export cleanup needs.",
+              "teacher": "Teach the tool as a pipeline assistant: concept, batch exploration, selected model, texture, export, cleanup. Do not teach it as magic one-shot modeling.",
+              "link": "https://help.meshy.ai/en/articles/15297780-getting-started-with-meshy-agent-beta"
+            },
+            {
+              "n": 5,
+              "category": "Conductor OSS turns",
+              "title": "Conductor OSS turns markdown boards into local parallel coding-agent runs",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Conductor OSS is a local-first dashboard that launches Claude Code, Codex, Gemini, and other CLIs in isolated git worktrees from markdown-native task boards.",
+              "why": "The practical bottleneck in agent coding is coordination: branches, worktrees, review, previews, retries, and state. This project makes that coordination visible.",
+              "action": "Try the worktree-per-task pattern on one repo and require every card to include acceptance criteria and a verification command.",
+              "teacher": "Use it to teach that parallel agents need boring software-engineering rails: isolation, review, rollback, and durable task state.",
+              "link": "https://github.com/charannyk06/conductor-oss"
+            },
+            {
+              "n": 6,
+              "category": "Claude Code Skills",
+              "title": "Claude Code Skills packages two-agent AI review and production delivery skills",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Claude Code Skills repo packages plugins, MCP servers, workflow skills, and a two-agent review pattern where Claude and Codex can review each other's work.",
+              "why": "Skill ecosystems are turning prompts into installable operating procedures. Cross-agent review is an emerging pattern for catching blind spots.",
+              "action": "Create one tiny internal skill for a repeat job, then add an external-review step that asks a second model to check assumptions, tests, and scope creep.",
+              "teacher": "This is a strong example for explaining skills as portable team practice, not just prompt snippets.",
+              "link": "https://github.com/levnikolaevich/claude-code-skills"
+            },
+            {
+              "n": 7,
+              "category": "Meshy AI MCP",
+              "title": "Meshy AI MCP Server exposes text-to-3D, retexture, rigging, and animation to agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The open-source Meshy MCP server wraps Meshy API capabilities for MCP clients, including text-to-3D, image-to-3D, multi-image-to-3D, retexture, remesh, rigging, and animation.",
+              "why": "Creative tools are being pulled into agent toolchains. A coding or production agent can start to call 3D generation APIs as part of a broader asset pipeline.",
+              "action": "Prototype a controlled MCP flow: generate concept image, produce 3D model, retexture, export, then run a human QA checklist before any client-facing render.",
+              "teacher": "Use this to teach tool-calling boundaries. The agent can request assets, but QA must inspect geometry, scale, UVs, and client accuracy.",
+              "link": "https://github.com/pasie15/meshy-ai-mcp-server"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News developers",
+              "title": "Hacker News developers are naming code quality, not raw autonomy, as the next coding-agent bottleneck",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current HN thread asks how to improve Claude Code and Codex output quality when agents duplicate utilities, miss architecture, or need repeated prompting.",
+              "why": "Early adopters are moving from 'can it build?' to 'can it preserve design intent and codebase taste?' That is a more mature and useful question.",
+              "action": "Add architecture notes, reuse rules, and a required grep/read-before-create step to agent instructions. Then measure duplicate-code reductions.",
+              "teacher": "This is a good discussion prompt: autonomy without taste and codebase memory can create cleanup debt.",
+              "link": "https://news.ycombinator.com/item?id=48033774"
+            },
+            {
+              "n": 9,
+              "category": "Reddit 3D community",
+              "title": "Reddit 3D community spots TripoSplat as an open-source single-image 3DGS path",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit 3D thread highlights TripoSplat, described as a free open-source image-to-3D Gaussian Splatting tool from a single 2D image.",
+              "why": "Makers are experimenting with lighter open workflows around 3D capture and generation. Gaussian splats are becoming part of the practical creative toolbox.",
+              "action": "Test one object photo through TripoSplat and compare it against Meshy/Tripo mesh output for inspection, render use, and cleanup burden.",
+              "teacher": "Teach the distinction between mesh generation and splat reconstruction. They solve different parts of the 3D/maker pipeline.",
+              "link": "https://www.reddit.com/r/TopologyAI/comments/1txiyr8/new_free_ai_imageto3d_generation_tool_3dgs_open/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit Meshy users",
+              "title": "Reddit Meshy users show classroom 3D model generation becoming normal maker practice",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Meshy subreddit post describes a",
+              "why": "Adoption does not always look like enterprise transformation. Small, regular maker uses are a strong signal that AI 3D is becoming ordinary workflow infrastructure.",
+              "action": "Build a small education/demo asset workflow: prompt, model, printability check, labeling, and reuse library. Teaching notes: This is a useful reminder that the killer workflow may be humble: fast custom teaching props, prototypes, and context-specific objects.",
+              "teacher": "using generated 3D models for classroom demonstrations, only a few models per month but enough to change preparation.",
+              "link": "https://www.reddit.com/r/meshyai/comments/1u0zrxz/teacher_here_using_meshy_to_make_3d_models_for_my/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 15",
       "label": "2026-06-09 · 16:06",
