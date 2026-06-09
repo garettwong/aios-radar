@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 06:03",
-    "editions": 104
+    "fetchedAt": "2026-06-10 06:06",
+    "editions": 105
   },
   "editions": [
+    {
+      "key": "2026-06-10 06",
+      "label": "2026-06-10 · 06:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 06:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Zapier is hiring",
+              "title": "Zapier is hiring marketing operations leaders who turn AI tooling into business leverage",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Zapier posted a Senior Manager, Marketing Operations role on June 2, calling for automation, AI tooling, and operational rigor across growth systems.",
+              "why": "AI is moving from experiments into revenue operations, where people who can design repeatable systems get managerial leverage.",
+              "action": "Build a small portfolio showing campaign intake, tracking, content handoff, and reporting automated with Zapier/n8n plus one AI review step.",
+              "teacher": "Teach AI ops through a marketing funnel case study: trigger, enrich, draft, approve, measure.",
+              "link": "https://jobs.ashbyhq.com/zapier/09eb1ac8-2a49-44e0-8463-bfa6e72000cf"
+            },
+            {
+              "n": 2,
+              "category": "Iru is hiring",
+              "title": "Iru is hiring an AI security and automation engineer around telemetry, monitoring, and Tines workflows",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Iru lists a role focused on AI logging, monitoring, dashboards, governance visibility, threat detection, and operational automation.",
+              "why": "As companies deploy agents, they need people who can prove what AI systems did, where data went, and how incidents are handled.",
+              "action": "Package an AI governance demo: log prompts/tool calls, alert on risky patterns, and route remediation through a workflow tool.",
+              "teacher": "Frame this as the next DevOps lesson: observability for AI behavior, not just servers.",
+              "link": "https://jobs.lever.co/iru/10eeba78-0882-4b7a-936a-900d898457bc"
+            },
+            {
+              "n": 3,
+              "category": "Upwork has fresh",
+              "title": "Upwork has fresh AI automation requests for n8n, Make, API integrations, and AI agents",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A job posted within the last day asks for an AI Automation Engineer to enhance agents using n8n and Make, with API integration and workflow automation.",
+              "why": "Even small budgets show where demand is forming: clients want working systems more than generic AI advice.",
+              "action": "Offer a fixed-scope audit first: map one workflow, identify APIs, quote a pilot, then upsell maintenance.",
+              "teacher": "Use it to teach pricing discipline: discovery, build, handover docs, and monitoring are separate deliverables.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-n8n-Make-Agents_~022064217953684591546/"
+            },
+            {
+              "n": 4,
+              "category": "n8n community hiring",
+              "title": "n8n community hiring post describes project-based AI automation contractors for client work",
+              "source": "community.n8n.io",
+              "relevance": "Intermediate",
+              "summary": "A recent n8n community job post asks for a flexible specialist, freelancer, or contractor to own AI automation projects end to end, with potential for broader partnership.",
+              "why": "Agencies are subcontracting execution, which creates an opening for independent builders who can be reliable implementation partners.",
+              "action": "Create a short case-study deck: problem, workflow diagram, stack, before/after hours saved, and maintenance terms.",
+              "teacher": "Show students how to turn a tool skill into a service package with acceptance criteria and handoff notes.",
+              "link": "https://community.n8n.io/t/hiring-ai-automation-engineer-n8n-ai-agent-developer/294904?tl=en"
+            },
+            {
+              "n": 5,
+              "category": "Reddit RemoteJobs weekly",
+              "title": "Reddit RemoteJobs weekly post surfaces high-paying bot and AI automation roles",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent RemoteJobs thread lists roles such as Sr Technical Product Manager, Bot & AI Automation Intelligence and AI Process Forward Deployed Engineer, with strong salary ranges.",
+              "why": "Community job roundups can reveal role naming before mainstream job boards normalize the titles.",
+              "action": "Track title patterns: bot automation intelligence, AI process engineer, forward deployed AI, and AI workflow PM.",
+              "teacher": "Use this as a job-market research exercise: collect titles, required outputs, salary bands, and portfolio gaps.",
+              "link": "https://www.reddit.com/r/RemoteJobs/comments/1tz49em/top_work_from_anywhere_jobs_hiring_this_week/"
+            },
+            {
+              "n": 6,
+              "category": "Public X discussion",
+              "title": "Public X discussion says AI automation builders should position around n8n, Make, Zapier, and specific outcomes",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X post advises creating profiles around labels like AI Automation Builder or n8n Automation Specialist and applying to tool-tagged jobs.",
+              "why": "The signal is not the post alone; it matches job-board demand for concrete automation stacks and marketable service titles.",
+              "action": "Rewrite profiles and proposals around one niche outcome, not the broad label AI consultant.",
+              "teacher": "Have learners compare generic positioning against niche titles and test which gets clearer client interest.",
+              "link": "https://x.com/DeRonin_/status/2058843938220388371"
+            },
+            {
+              "n": 7,
+              "category": "Meshy is hiring",
+              "title": "Meshy is hiring for 3D foundation model work as generative 3D matures",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy lists a Generative AI - 3D Foundation Model role focused on advancing 3D AI and applying ML lessons to 3D generation.",
+              "why": "This is directly relevant to 3D artists: the opportunity is shifting toward judging, directing, cleaning, and productizing AI 3D output.",
+              "action": "Build a 3D AI evaluation sheet: prompt, mesh quality, topology cleanup time, texture issues, render readiness, and client-fit score.",
+              "teacher": "Teach artists to speak both visual quality and model limitations, because that combination is rare.",
+              "link": "https://jobs.ashbyhq.com/meshy/636fc439-83ad-4bf5-96a3-e25d8824d092"
+            },
+            {
+              "n": 8,
+              "category": "Accelerate opens 2026-27",
+              "title": "Accelerate opens 2026-27 grants for effective AI and education technology",
+              "source": "accelerate.us",
+              "relevance": "Intermediate",
+              "summary": "Accelerate says its 2026-27 Call for Effective Technology offers grants of $150K-$250K for AI-driven and education technology tools already used with students during the school day.",
+              "why": "Teaching opportunities are not only courses; funders want measurable implementations with real learners and evidence.",
+              "action": "If building an AI teaching product, gather usage proof,",
+              "teacher": "workflow evidence, and measurable learning outcomes now. Teaching notes: Use this to explain grant readiness: evidence, deployment context, implementation plan, and student impact.",
+              "link": "https://accelerate.us/2026-2027-call-for-effective-technology/"
+            },
+            {
+              "n": 9,
+              "category": "Stanford AI teaching",
+              "title": "Stanford AI teaching and learning grants show institutions funding practical classroom AI work",
+              "source": "acceleratelearning.stanford.edu",
+              "relevance": "Intermediate",
+              "summary": "Stanford lists 2026 AI teaching and learning support including project grants, commissions, and awards tied to implementation timelines.",
+              "why": "Universities are treating AI teaching experiments as funded work, not side projects.",
+              "action": "Turn one class or workshop idea into a proposal: learner problem, AI use, assessment plan, and reusable materials.",
+              "teacher": "Show the difference between AI as a toy demo and AI as a learning intervention with evaluation.",
+              "link": "https://acceleratelearning.stanford.edu/how-we-work/ai-in-teaching-and-learning-at-stanford/"
+            },
+            {
+              "n": 10,
+              "category": "Deloitte warns many",
+              "title": "Deloitte warns many agentic AI projects will fail without integration discipline",
+              "source": "deloitte.com",
+              "relevance": "Intermediate",
+              "summary": "Deloitte highlights the agentic reality check: legacy systems, APIs, data pipelines, and execution constraints can block autonomous AI projects.",
+              "why": "This creates consulting work for people who can bridge AI demos with messy enterprise systems.",
+              "action": "Sell an agent readiness audit: process inventory, API availability, permission model, failure modes, and human approval points.",
+              "teacher": "Teach agent design as systems integration: goals, tools, data boundaries, permissions, logs, and rollback.",
+              "link": "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/agentic-ai-strategy.html"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 03",
       "label": "2026-06-10 · 03:04",
