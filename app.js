@@ -633,7 +633,7 @@
     const h = $("view-help"); if (!h) return;
     const briefs = libItems.filter((x) => x.source2 === "Brief").length;
     const arch = libItems.filter((x) => x.source2 === "Archive").length;
-    if (v === "hq" || v === "board") { h.innerHTML = ""; h.hidden = true; h.style.display = "none"; return; }  // HQ + Board need no description line
+    if (v === "hq" || v === "board" || v === "wishlist") { h.innerHTML = ""; h.hidden = true; h.style.display = "none"; return; }  // these have their own headers
     h.hidden = false; h.style.display = "";
     h.innerHTML = v === "library"
       ? `📚 <b>LIBRARY</b> — everything archived &amp; searchable: <b>${briefs}</b> signals from all your email briefs + <b>${arch}</b> reference items (incl. 242 AI terms).`
@@ -668,6 +668,23 @@
   function boardOv() { try { return JSON.parse(localStorage.getItem(BOARD_OV) || "{}"); } catch (e) { return {}; } }
   function boardSaveOv(o) { try { localStorage.setItem(BOARD_OV, JSON.stringify(o)); } catch (e) {} }
   var BOARD_FLOW = ["inbox", "active", "waiting", "done", "tobill", "billed"];
+  var BOARD_ADD = "aios_board_add_v1";        // tasks you add with + (this device for now)
+  var BOARD_TAB = "aios_board_tab_v1";        // which column shows on phone
+  function boardAdds() { try { var a = JSON.parse(localStorage.getItem(BOARD_ADD) || "[]"); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+  function boardSaveAdds(a) { try { localStorage.setItem(BOARD_ADD, JSON.stringify(a)); } catch (e) {} }
+  var BOARD_COLS = [
+    { k: "inbox", t: "📥 INBOX", sub: "caught, not sorted", c: "#8aa0ad", pill: "NEW" },
+    { k: "active", t: "🔥 ACTIVE", sub: "finish before starting", c: "#4ade80", pill: "IN PROGRESS", pc: "#36d6e7", cap: 3 },
+    { k: "waiting", t: "⏳ WAITING", sub: "blocked on someone", c: "#f0a93b", pill: "WAITING" },
+    { k: "done", t: "✅ DONE", sub: "finished — bill it next", c: "#36d6e7", pill: "DONE", pc: "#4ade80" },
+    { k: "tobill", t: "💰 TO-BILL", sub: "cash on the table", c: "#f4c542", pill: "TO BILL" }
+  ];
+  function boardTasks() {
+    var HQ = window.DASHBOARD_HQ || {}, ov = boardOv();
+    return (HQ.tasks || []).concat(boardAdds())
+      .map(function (t) { return { id: t.id, title: t.title, client: t.client, amount: t.amount, due: t.due, next: t.next, _s: (ov[t.id] || t.status || "inbox") }; })
+      .filter(function (t) { return t._s !== "billed"; });
+  }
   function renderBoard() {
     var host = $("board-view"); if (!host) return;
     var HQ = window.DASHBOARD_HQ;
@@ -680,16 +697,9 @@
       }
       return;
     }
-    var ov = boardOv();
-    var tasks = (HQ.tasks || []).map(function (t) { return { id: t.id, title: t.title, client: t.client, amount: t.amount, due: t.due, next: t.next, _s: (ov[t.id] || t.status || "inbox") }; })
-      .filter(function (t) { return t._s !== "billed"; });
-    var COLS = [
-      { k: "inbox", t: "📥 INBOX", sub: "caught, not sorted", c: "#8aa0ad", pill: "NEW" },
-      { k: "active", t: "🔥 ACTIVE", sub: "finish before starting", c: "#4ade80", pill: "IN PROGRESS", pc: "#36d6e7", cap: 3 },
-      { k: "waiting", t: "⏳ WAITING", sub: "blocked on someone", c: "#f0a93b", pill: "WAITING" },
-      { k: "done", t: "✅ DONE", sub: "finished — bill it next", c: "#36d6e7", pill: "DONE", pc: "#4ade80" },
-      { k: "tobill", t: "💰 TO-BILL", sub: "cash on the table", c: "#f4c542", pill: "TO BILL" }
-    ];
+    var tasks = boardTasks();
+    var COLS = BOARD_COLS;
+    var activeTab = localStorage.getItem(BOARD_TAB) || "active";
     function card(t, col) {
       var pc = col.pc || col.c;
       var title = (col.k === "tobill") ? ("INVOICE " + (t.client || t.title)) : t.title;
@@ -701,29 +711,75 @@
         (meta ? '<div class="ab-meta">' + esc(meta) + '</div>' : "") +
         (nxt ? '<div class="ab-next">' + esc(nxt) + '</div>' : "") + '</div>';
     }
-    var html = '<div class="board-rule">One task, flowing left → right.  🔥 <b>Active capped at 3</b> · ✅ Done → 💰 To-Bill ·  <b>tap a card to move it forward</b>.</div><div class="aios-board">';
+    var tabs = '<div class="board-tabs">' + COLS.map(function (col) {
+      var n = tasks.filter(function (t) { return t._s === col.k; }).length;
+      return '<button class="btab' + (col.k === activeTab ? " on" : "") + '" data-col="' + col.k + '" style="--bc:' + col.c + '">' + esc(col.t) + (n ? ' <span class="btab-n">' + n + "</span>" : "") + "</button>";
+    }).join("") + "</div>";
+    var html = '<div class="board-rule">Tasks flow left → right. 🔥 <b>Active capped at 3</b> · ✅ Done → 💰 To-Bill · <b>tap a card to move it</b>, <b>＋</b> to add.</div>' +
+      tabs + '<div class="aios-board" data-col="' + esc(activeTab) + '">';
     COLS.forEach(function (col) {
       var items = tasks.filter(function (t) { return t._s === col.k; });
       var cnt = col.cap ? (items.length + "/" + col.cap + (items.length >= col.cap ? " · full" : "")) : (items.length ? String(items.length) : "");
-      html += '<div class="ab-col" style="border-top-color:' + col.c + '">' +
-        '<div class="ab-ct" style="color:' + col.c + '">' + col.t + (cnt ? ' <span class="ab-cnt">' + cnt + "</span>" : "") + "</div>" +
+      html += '<div class="ab-col" data-col-k="' + col.k + '" style="border-top-color:' + col.c + '">' +
+        '<div class="ab-ct" style="color:' + col.c + '">' + col.t + (cnt ? ' <span class="ab-cnt">' + cnt + "</span>" : "") + '<button class="ab-add" data-add="' + col.k + '" title="Add a task here" aria-label="Add task">＋</button></div>' +
         (col.sub ? '<div class="ab-cs">' + col.sub + "</div>" : "") +
-        (items.length ? items.map(function (t) { return card(t, col); }).join("") : '<div class="ab-empty">—</div>') + "</div>";
+        (items.length ? items.map(function (t) { return card(t, col); }).join("") : '<div class="ab-empty">— tap ＋</div>') + "</div>";
     });
     html += "</div>";
     host.innerHTML = html;
     if (!renderBoard._wired) {
       host.addEventListener("click", function (e) {
-        var c = e.target.closest(".ab-card"); if (!c || !host.contains(c)) return;
-        var id = c.getAttribute("data-id"); if (!id) return;
-        var o = boardOv();
-        var base = ((window.DASHBOARD_HQ.tasks || []).filter(function (x) { return x.id === id; })[0] || {}).status || "inbox";
-        var cur = o[id] || base;
-        var i = BOARD_FLOW.indexOf(cur);
-        o[id] = BOARD_FLOW[(i < 0 ? 0 : i + 1) % BOARD_FLOW.length];
-        boardSaveOv(o); renderBoard();
+        var addBtn = e.target.closest("[data-add]");
+        if (addBtn && host.contains(addBtn)) {
+          var st = addBtn.getAttribute("data-add");
+          var title = window.prompt("New task in " + st.toUpperCase() + ":", "");
+          if (title && title.trim()) {
+            var a = boardAdds();
+            a.push({ id: "u" + Date.now().toString(36) + Math.floor(Math.random() * 1e4), title: title.trim(), status: st });
+            boardSaveAdds(a); renderBoard();
+          }
+          return;
+        }
+        var tab = e.target.closest(".btab");
+        if (tab && host.contains(tab)) { try { localStorage.setItem(BOARD_TAB, tab.getAttribute("data-col")); } catch (x) {} renderBoard(); return; }
+        var c = e.target.closest(".ab-card");
+        if (c && host.contains(c)) {
+          var id = c.getAttribute("data-id"); if (!id) return;
+          var o = boardOv();
+          var all = (window.DASHBOARD_HQ.tasks || []).concat(boardAdds());
+          var base = (all.filter(function (x) { return x.id === id; })[0] || {}).status || "inbox";
+          var cur = o[id] || base;
+          var i = BOARD_FLOW.indexOf(cur);
+          o[id] = BOARD_FLOW[(i < 0 ? 0 : i + 1) % BOARD_FLOW.length];
+          boardSaveOv(o); renderBoard();
+        }
       });
       renderBoard._wired = true;
+    }
+  }
+
+  /* ---------------- WISHLIST view ---------------- */
+  var WISH_ADD = "aios_wish_add_v1";
+  function wishAdds() { try { var a = JSON.parse(localStorage.getItem(WISH_ADD) || "[]"); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+  function wishSaveAdds(a) { try { localStorage.setItem(WISH_ADD, JSON.stringify(a)); } catch (e) {} }
+  function renderWishlist() {
+    var host = $("wishlist-view"); if (!host) return;
+    var HQ = window.DASHBOARD_HQ;
+    if (!HQ) { host.innerHTML = '<div class="board-locked">🔒 Open 📋 BOARD once to unlock, then come back.</div>'; return; }
+    var items = (HQ.wishlist || []).concat(wishAdds());
+    var html = '<div class="wish-head"><span>⭐ WISHLIST — someday / ideas</span><button class="wish-addbtn" data-wadd="1">＋ add</button></div>';
+    html += items.length ? '<div class="wish-list">' + items.map(function (w) {
+      return '<div class="wish-card"><div class="wish-top"><span class="wish-t">' + esc(w.name) + '</span>' + (w.status ? '<span class="wish-st">' + esc(w.status) + '</span>' : "") + '</div>' + (w.next ? '<div class="wish-next"><b>next:</b> ' + esc(w.next) + '</div>' : "") + '</div>';
+    }).join("") + '</div>' : '<div class="ab-empty">No wishes yet — tap ＋ add.</div>';
+    host.innerHTML = html;
+    if (!renderWishlist._wired) {
+      host.addEventListener("click", function (e) {
+        var b = e.target.closest("[data-wadd]"); if (!b || !host.contains(b)) return;
+        var name = window.prompt("Add to wishlist:", ""); if (!name || !name.trim()) return;
+        var nx = window.prompt("First small step (optional):", "") || "";
+        var a = wishAdds(); a.push({ name: name.trim(), status: "IDEA", next: nx.trim() }); wishSaveAdds(a); renderWishlist();
+      });
+      renderWishlist._wired = true;
     }
   }
 
@@ -737,11 +793,13 @@
         document.querySelectorAll(".vnav").forEach((b) => b.classList.toggle("active", b === btn));
         $("hq-view").hidden = (v !== "hq");
         if ($("board-view")) $("board-view").hidden = (v !== "board");
+        if ($("wishlist-view")) $("wishlist-view").hidden = (v !== "wishlist");
         $("radar-view").hidden = (v !== "radar");
         $("library-view").hidden = (v !== "library");
         $("todo-view").hidden = (v !== "todo");
         if (v === "todo") renderTodoGate();
         if (v === "board") renderBoard();
+        if (v === "wishlist") renderWishlist();
         setViewHelp(v);
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
@@ -1102,12 +1160,14 @@
       const v = active ? active.dataset.view : "radar";
       $("hq-view").hidden = (v !== "hq");
       if ($("board-view")) $("board-view").hidden = (v !== "board");
+      if ($("wishlist-view")) $("wishlist-view").hidden = (v !== "wishlist");
       $("radar-view").hidden = (v !== "radar");
       $("library-view").hidden = (v !== "library");
       $("todo-view").hidden = (v !== "todo");
       return;
     }
     if ($("board-view")) $("board-view").hidden = true;
+    if ($("wishlist-view")) $("wishlist-view").hidden = true;
     $("hq-view").hidden = true; $("radar-view").hidden = true; $("library-view").hidden = true; $("todo-view").hidden = true;
     sv.hidden = false;
     const libHits = libItems.filter((it) =>
