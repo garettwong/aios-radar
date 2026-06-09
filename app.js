@@ -671,7 +671,15 @@
   function renderBoard() {
     var host = $("board-view"); if (!host) return;
     var HQ = window.DASHBOARD_HQ;
-    if (!HQ) { host.innerHTML = '<div class="board-locked">🔒 Unlock 🧭 HQ first — your board uses the same password.</div>'; return; }
+    if (!HQ) {
+      if (window.DASHBOARD_HQ_ENC && window.HQ_UNLOCK) {
+        host.innerHTML = '<div id="board-lock"></div>';
+        window.HQ_UNLOCK.renderLock(document.getElementById("board-lock"), function (obj) { window.DASHBOARD_HQ = obj; renderBoard(); });
+      } else {
+        host.innerHTML = '<div class="board-locked">Set your cockpit password on PC first (tools\\set-hq-password.bat), then reload.</div>';
+      }
+      return;
+    }
     var ov = boardOv();
     var tasks = (HQ.tasks || []).map(function (t) { return { id: t.id, title: t.title, client: t.client, amount: t.amount, due: t.due, next: t.next, _s: (ov[t.id] || t.status || "inbox") }; })
       .filter(function (t) { return t._s !== "billed"; });
@@ -739,16 +747,16 @@
       });
     });
     if (!window.DASHBOARD_HQ && !window.DASHBOARD_HQ_ENC) {
-      // No cockpit at all — behave exactly like the classic radar: hide the HQ tab, default to RADAR.
-      var _hqb = document.querySelector('.vnav[data-view="hq"]');
-      if (_hqb) { _hqb.style.display = "none"; _hqb.classList.remove("active"); }
+      // No cockpit at all — classic radar: default to RADAR, hide the work board.
+      var _bb = document.querySelector('.vnav[data-view="board"]');
+      if (_bb) { _bb.style.display = "none"; _bb.classList.remove("active"); }
       var _rb = document.querySelector('.vnav[data-view="radar"]');
       if (_rb) _rb.classList.add("active");
-      if ($("hq-view")) $("hq-view").hidden = true;
+      if ($("board-view")) $("board-view").hidden = true;
       if ($("radar-view")) $("radar-view").hidden = false;
       setViewHelp("radar");
     } else {
-      setViewHelp("hq");
+      setViewHelp("board");
     }
   }
   function mount() {
@@ -761,7 +769,7 @@
       ? `<b>● DATA PARTIAL</b> &nbsp;${samples} sample card(s) — click ⟳ REFRESH.`
       : `<b>● LIVE</b> &nbsp;edition <b>${esc(editions[currentIdx].label || "")}</b> · ${editions.length} editions archived · ✓ marks read (stays, shaded) · ★ saves`;
     renderFocus(); renderStrip(); renderColumns(); renderStats(); renderRelevance(); renderActions();
-    renderHQ();
+    renderBoard();   // BOARD is the default work view now (HQ + TO-DO tabs removed); it also drives the password unlock
   }
 
   /* ======================================================================
