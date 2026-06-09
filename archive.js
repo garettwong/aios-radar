@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-09 12:13",
-    "editions": 98
+    "fetchedAt": "2026-06-09 12:16",
+    "editions": 99
   },
   "editions": [
+    {
+      "key": "2026-06-09 12",
+      "label": "2026-06-09 · 12:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-09 · 12:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft details Miasma",
+              "title": "Microsoft details Miasma npm credential theft against developer workflows",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Threat Intelligence described the Miasma campaign against Red Hat npm packages, a credential-stealing supply-chain attack aimed at developer environments.",
+              "why": "The agent era makes ordinary package and repo trust more dangerous because compromised code can trigger inside IDEs, terminals, and coding-assistant workflows.",
+              "action": "Check projects for affected package families, rotate exposed developer tokens, and quarantine agent sessions that opened suspicious repos.",
+              "teacher": "Teach this as an agent-supply-chain pattern: the target is no longer just runtime production code; it is the developer's automated workbench.",
+              "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/"
+            },
+            {
+              "n": 2,
+              "category": "Cloud Security Alliance",
+              "title": "Cloud Security Alliance flags VS Code and GitHub token theft risk around AI agents",
+              "source": "labs.cloudsecurityalliance.org",
+              "relevance": "Intermediate",
+              "summary": "CSA's June research note calls out token-theft paths around VS Code, GitHub credentials, and AI developer tooling.",
+              "why": "Agent adoption increases the blast radius of IDE tokens, Codespaces credentials, and automated command execution.",
+              "action": "Separate agent workspaces from personal dev work, use short-lived tokens, and make credential access explicit instead of ambient.",
+              "teacher": "The core lesson is that coding agents need CI-grade secrets discipline, not casual laptop permissions.",
+              "link": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/06/CSA_research_note_vscode_github_token_theft_zero_day_20260604-csa-styled.pdf"
+            },
+            {
+              "n": 3,
+              "category": "Salt Code turns",
+              "title": "Salt Code turns security policy into MCP-era guidance for coding assistants",
+              "source": "salt.security",
+              "relevance": "Intermediate",
+              "summary": "Salt Security launched Salt Code to enforce security policies inside AI coding assistants across the development lifecycle.",
+              "why": "The market is shifting from after-the-fact AI code review to policy that travels into prompts, tools, MCP servers, and generated code.",
+              "action": "Convert your top security rules into short, testable agent instructions and map which tools can enforce them before pull request review.",
+              "teacher": "Security for agent coding should happen at prompt time, tool-call time, and review time; one scanner at the end is too late.",
+              "link": "https://salt.security/press-releases/salt-security-launches-salt-code-the-first-agentic-security-solution-to-enforce-security-policies-inside-ai-coding-assistants"
+            },
+            {
+              "n": 4,
+              "category": "Canva AI 2.0",
+              "title": "Canva AI 2.0 pushes editable design generation into agentic orchestration",
+              "source": "canva.com",
+              "relevance": "Intermediate",
+              "summary": "Canva's AI 2.0 messaging emphasizes editable design creation plus orchestration across Canva's design engine.",
+              "why": "Creator tools are moving from flat image generation toward structured, brand-aware, editable workflows.",
+              "action": "Build a small test pack with a brand kit, product images, and a campaign brief; compare Canva AI output against manual design QA.",
+              "teacher": "The useful distinction is editable structured design versus a pretty bitmap that cannot survive revision.",
+              "link": "https://www.canva.com/en_in/newsroom/news/canva-create-2026-ai/"
+            },
+            {
+              "n": 5,
+              "category": "Google Antigravity migration",
+              "title": "Google Antigravity migration shows terminal agents consolidating into platforms",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Coverage of Google's Antigravity move says Gemini CLI users are being steered toward a unified agent-first platform with CLI, desktop, SDK, skills, hooks, subagents, and plugins.",
+              "why": "Standalone terminal agents are being absorbed into larger platforms with shared backends and multi-agent orchestration.",
+              "action": "Keep prompts, skills, and project playbooks portable so a workflow can move between Codex, Claude Code, Gemini/Antigravity, Cursor, and local tools.",
+              "teacher": "This is a platform-shift signal: the CLI is becoming one surface of a broader agent operating environment.",
+              "link": "https://www.techradar.com/pro/google-is-making-gemini-cli-users-switch-to-its-new-antigravity-20-so-what-will-it-mean-for-you"
+            },
+            {
+              "n": 6,
+              "category": "Gemini CLI releases",
+              "title": "Gemini CLI releases keep shipping MCP and automation fixes during migration window",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Gemini CLI release stream continues to show practical MCP and automation fixes, including calendar-related MCP fields and release maintenance.",
+              "why": "Even during platform migration, active release notes reveal which integration seams builders are actually using.",
+              "action": "Watch release notes for small MCP, auth, and calendar/tool fixes; they often predict where agent workflows are breaking in real use.",
+              "teacher": "Tiny changelog entries are market research for agent infrastructure pain.",
+              "link": "https://github.com/google-gemini/gemini-cli/releases"
+            },
+            {
+              "n": 7,
+              "category": "TUI-use gives AI",
+              "title": "TUI-use gives AI agents a way to drive interactive terminal programs",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "TUI-use is an open-source project for letting AI agents control interactive terminal user interfaces.",
+              "why": "Many real tools are not clean APIs; agents need reliable ways to operate CLIs, TUIs, prompts, and stateful shells.",
+              "action": "Test one TUI-heavy workflow, such as git rebase, package prompts, or server dashboards, and document where agent control breaks.",
+              "teacher": "Agent tooling is not only web automation and APIs; terminal interaction is a first-class interface layer.",
+              "link": "https://github.com/onesuper/tui-use"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News maker",
+              "title": "Hacker News maker shows a visual control room for many terminal agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Show HN thread presents Arcane Agents, a visual control plane for tmux-based terminal agents with status detection and spatial grouping.",
+              "why": "As makers run many agents at once, the bottleneck shifts to supervision, attention, and knowing which session needs input.",
+              "action": "For any multi-agent setup, add a dashboard that shows owner, task, status, last action, and blocking question before adding more workers.",
+              "teacher": "Multi-agent productivity is mostly queue management and verification, not just parallelism.",
+              "link": "https://news.ycombinator.com/item?id=47265928"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Copilot users",
+              "title": "Reddit Copilot users are reacting to usage-based agent economics",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A high-engagement r/GithubCopilot thread shows users discussing pain and behavior changes around Copilot's June usage-based pricing shift.",
+              "why": "Agent cost visibility changes which tools developers use, when they delegate, and whether they reserve cloud agents for complex work.",
+              "action": "Track cost per successful task, not monthly subscription price; define which tasks deserve cloud-agent spend versus local/manual work.",
+              "teacher": "Pricing is product design. When agent runs feel unpredictable, users self-throttle or switch tools.",
+              "link": "https://www.reddit.com/r/GithubCopilot/comments/1tv77df/pov_youre_still_using_github_copilot_after_june/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit maker ships",
+              "title": "Reddit maker ships aictx for repo-local continuity across coding agents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A developer shared aictx, an open-source repo-local continuity layer meant to stop Codex, Claude, Copilot, and other agents from starting cold each session.",
+              "why": "Persistent context and handoff discipline are becoming practical maker problems, not just enterprise knowledge-management theory.",
+              "action": "Try a lightweight repo memory file plus task-state checklist before adding vector databases or heavy orchestration.",
+              "teacher": "The lowest-friction memory often wins because humans and agents can both inspect it.",
+              "link": "https://www.reddit.com/r/developersIndia/comments/1txyz98/my_coding_agents_share_context_and_stopped/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-09 09",
       "label": "2026-06-09 · 10:06",
