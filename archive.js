@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 06:12",
+    "fetchedAt": "2026-06-10 06:16",
     "editions": 105
   },
   "editions": [
     {
       "key": "2026-06-10 06",
-      "label": "2026-06-10 · 06:00",
+      "label": "2026-06-10 · 06:04",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 06:04 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Chrome WebMCP guidance",
+              "title": "Chrome WebMCP guidance turns browser-agent security into concrete developer rules",
+              "source": "developer.chrome.com",
+              "relevance": "Intermediate",
+              "summary": "Chrome developer guidance for WebMCP warns that browser agents may operate inside authenticated user sessions, so tool exposure needs protections against malicious untrusted content.",
+              "why": "As agents move into the browser, web pages become both interface and attack surface. The permission model has to be designed before tools are exposed.",
+              "action": "For any browser-agent experiment, list every exposed tool, what user data it can touch, and which untrusted page content can influence it.",
+              "teacher": "Teach WebMCP as a useful but risky bridge: structured tools are powerful only when paired with origin boundaries, confirmation, and least privilege.",
+              "link": "https://developer.chrome.com/docs/agents/security?hl=en"
+            },
+            {
+              "n": 2,
+              "category": "Claude Fable 5",
+              "title": "Claude Fable 5 lands in GitHub Copilot with explicit data-retention tradeoffs",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub added Anthropic Claude Fable 5 to Copilot surfaces for long-horizon autonomous coding, but administrators must opt in because the model requires temporary prompt/output retention for safety classifiers.",
+              "why": "Model choice is becoming a policy decision: performance, cost, and data handling now sit in the same picker.",
+              "action": "When testing Fable 5, document which repos and data classes are allowed, then compare tool calls, token spend, and review defects against the current default model.",
+              "teacher": "Use this as a practical example of AI governance: a better model may still be the wrong model for sensitive work.",
+              "link": "https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/"
+            },
+            {
+              "n": 3,
+              "category": "Wasmer says Codex",
+              "title": "Wasmer says Codex compressed a Node.js edge-runtime project from a year to two weeks",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI reports Wasmer used Codex to help build Node.js workloads inside a WebAssembly sandbox, enabling JavaScript apps, MCPs, and agents to run at the edge without Docker.",
+              "why": "This is a concrete maker signal: agents are not only writing app code, they are accelerating infrastructure work that changes what can be deployed.",
+              "action": "Look for projects where a hard platform migration can be broken into tests, compatibility layers, and repeated agent-assisted implementation passes.",
+              "teacher": "The lesson is to pair agents with a strong technical harness: specs, tests, benchmarks, and a sandboxed target make ambitious automation safer.",
+              "link": "https://openai.com/index/wasmer/"
+            },
+            {
+              "n": 4,
+              "category": "Microsoft shows how",
+              "title": "Microsoft shows how Claude Code GitHub Action exposed CI/CD secrets risk",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Threat Intelligence reported that untrusted GitHub content could reach agent tools in ways that exposed secrets, highlighting a sandbox gap around what an agent can read versus execute.",
+              "why": "Agentic CI turns issue text, PR comments, and repository files into active input. That expands the attack surface beyond normal workflow scripts.",
+              "action": "Audit agent workflows for untrusted text ingestion, secret visibility, and tool read permissions. Prefer least-privilege tokens and separate agent sandboxes.",
+              "teacher": "Explain prompt injection as a permissions problem, not just a prompt problem: the damage happens when text can steer privileged tools.",
+              "link": "https://www.microsoft.com/en-us/security/blog/2026/06/05/securing-ci-cd-in-agentic-world-claude-code-github-action-case/"
+            },
+            {
+              "n": 5,
+              "category": "Apple Siri agent",
+              "title": "Apple Siri agent news shows privacy is becoming the consumer-agent wedge",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "Axios reports Apple is positioning a more conversational, context-aware Siri around privacy and on-device personal data while rivals push further into agentic task execution.",
+              "why": "Consumer agents may split into two markets: maximum autonomy versus trusted personal context. Apple is betting the trust angle can still matter.",
+              "action": "For creator tools, watch whether users prefer powerful cloud agents or smaller private agents that can safely access personal/project context.",
+              "teacher": "Use this as a market-positioning lesson: technical capability is not the only buying reason; trust, latency, privacy, and ecosystem access can define adoption.",
+              "link": "https://www.axios.com/2026/06/09/apple-siri-ai-agents-wwdc"
+            },
+            {
+              "n": 6,
+              "category": "Anthropic Services Track",
+              "title": "Anthropic Services Track pushes Claude Code and Claude agents into partner delivery",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic announced a services and partner hub where firms such as Infosys build industry agents and PwC rolls out Claude Code and Claude Cowork across large teams.",
+              "why": "Consultancies are packaging agent adoption as transformation work, which is a strong market signal for training, governance, and workflow redesign.",
+              "action": "Watch which workflows partners standardize first: code review, migration, analytics, documentation, and repeatable back-office automations.",
+              "teacher": "This is a reminder that enterprise AI adoption is mostly change management plus tooling, not just access to a stronger model.",
+              "link": "https://www.anthropic.com/news/services-track-partner-hub"
+            },
+            {
+              "n": 7,
+              "category": "Meshy keeps moving",
+              "title": "Meshy keeps moving AI 3D toward practical creator education and tool comparison",
+              "source": "meshy.ai",
+              "relevance": "Intermediate",
+              "summary": "Meshy published fresh 3D-modelling comparison content around SketchUp alternatives, keeping AI-assisted 3D in the same buying conversation as everyday modelling, printing, and asset tools.",
+              "why": "AI 3D tools are trying to win by fitting into existing maker decisions, not only by demoing text-to-3D magic.",
+              "action": "For 3D workflow research, compare AI tools against real production needs: export formats, mesh cleanup, texture quality, scale, and downstream editability.",
+              "teacher": "Teach creators to judge AI 3D by pipeline friction: Can the result be edited, printed, rigged, textured, and delivered?",
+              "link": "https://www.meshy.ai/blog"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News developers",
+              "title": "Hacker News developers describe agent workflows as planning and ticket decomposition",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "An Ask HN thread on AI dev stacks emphasized plan mode, question-asking, ticket creation, fresh sessions, commits, and closing work incrementally.",
+              "why": "Experienced users are converging on process discipline, not just bigger context windows, as the way to keep coding agents useful.",
+              "action": "Turn larger agent tasks into explicit tickets with acceptance checks and commit boundaries before handing them to an agent.",
+              "teacher": "The teachable workflow is: align plan, split work, preserve context, verify each unit, and avoid one giant ambiguous prompt.",
+              "link": "https://news.ycombinator.com/item?id=48413629"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Claude users",
+              "title": "Reddit Claude users are experimenting with dynamic workflows and parallel subagents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit discussion describes Claude Code writing orchestration scripts, fanning work out across many subagents, and verifying results before user review.",
+              "why": "The maker community is stress-testing the next workflow frontier: many agents coordinated by generated scripts and verification loops.",
+              "action": "If trying parallel subagents, start with read-only analysis or test-generation tasks, then require a verifier pass before any write-heavy merge.",
+              "teacher": "Parallelism multiplies both throughput and failure. The key lesson is to design the verifier before scaling the worker count.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1tq9ofy/introducing_dynamic_workflows_in_claude_code/"
+            },
+            {
+              "n": 10,
+              "category": "X discussion frames",
+              "title": "X discussion frames loop engineering as the new agent prompt pattern",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post argues that Codex and Claude Code are moving developers from step-by-step prompting toward goal loops that run until a validator model confirms the task.",
+              "why": "Even if the phrasing is early and informal, the market signal is clear: builders are naming the harness pattern, not only the model.",
+              "action": "Create one reusable loop for a narrow task, such as fix lint, rerun tests, summarize diff, and stop only when a validator checklist passes.",
+              "teacher": "Use this to explain why agents need stop conditions, validators, and budgets. A loop without a brake is just automated drift.",
+              "link": "https://x.com/lalkaka/status/2064045071029485714"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
