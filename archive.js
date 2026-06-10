@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 21:21",
+    "fetchedAt": "2026-06-10 21:25",
     "editions": 110
   },
   "editions": [
@@ -13,6 +13,137 @@ window.DASHBOARD_ARCHIVE = {
       "key": "2026-06-10 21",
       "label": "2026-06-10 · 21:15",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 21:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Codex release adds",
+              "title": "Codex release adds direct web search inside code mode",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The latest Codex GitHub release says code mode can call standalone web search from code and nested JavaScript tool calls.",
+              "why": "Coding agents are becoming research capable work loops where search and code edits happen in one surface.",
+              "action": "Use a repeatable pattern for dependency work: search then cite then patch then verify.",
+              "teacher": "Tool access inside tools means agent instructions need source discipline and verification gates.",
+              "link": "https://github.com/openai/codex/releases"
+            },
+            {
+              "n": 2,
+              "category": "Cursor public X",
+              "title": "Cursor public X signal shows Design Mode moving visual prompts into canvases",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor posted that Design Mode is available in canvases so users can select and annotate UI elements for faster iteration.",
+              "why": "Agentic UI work is becoming visual and conversational. The canvas is becoming the instruction surface.",
+              "action": "For frontend fixes capture the rendered problem and give visual instructions tied to selected elements.",
+              "teacher": "This is a maker signal that visual prompting is entering normal product workflow.",
+              "link": "https://x.com/cursor_ai/status/2062611884742980037"
+            },
+            {
+              "n": 3,
+              "category": "Claude Code safe",
+              "title": "Claude Code safe mode and /cd show agent tools maturing around operational reliability",
+              "source": "releasebot.io",
+              "relevance": "Intermediate",
+              "summary": "Claude Code update tracking shows safe mode plus /cd plus bundled skill controls plus remote session and background agent improvements.",
+              "why": "Agent reliability and troubleshooting now matter as much as raw model quality.",
+              "action": "Keep a clean boot path for each agent setup with hooks MCP servers skills and plugins disabled first.",
+              "teacher": "Teach agent tooling like devops: isolate the environment then the model then the prompt.",
+              "link": "https://releasebot.io/updates/anthropic/claude-code"
+            },
+            {
+              "n": 4,
+              "category": "Anthropic splits stronger",
+              "title": "Anthropic splits stronger model capability into guarded public access and trusted partner access",
+              "source": "wired.com",
+              "relevance": "Intermediate",
+              "summary": "WIRED reports Claude Fable 5 is public with guardrails while Claude Mythos 5 is limited to trusted partners and selected researchers.",
+              "why": "Frontier model access is being segmented by capability trust and safety policy.",
+              "action": "Track access tier guardrails rerouting behavior and cost when choosing a model provider.",
+              "teacher": "Capability is no longer one public SKU. Access policy is part of product strategy.",
+              "link": "https://www.wired.com/story/anthropic-releases-claude-fable-5-mythos-5/"
+            },
+            {
+              "n": 5,
+              "category": "Tripo Smart Mesh",
+              "title": "Tripo Smart Mesh keeps pushing AI 3D toward production-grade topology",
+              "source": "finance.yahoo.com",
+              "relevance": "Intermediate",
+              "summary": "Tripo Smart Mesh P1.0 is positioned around cleaner engine ready assets instead of messy generated meshes that need heavy cleanup.",
+              "why": "AI 3D is now competing on topology export retopo burden and game readiness.",
+              "action": "Grade AI 3D tools in Blender or the target DCC before judging the preview image.",
+              "teacher": "Image quality is marketing. Mesh quality is production.",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/tripo-ai-launches-smart-mesh-162600191.html"
+            },
+            {
+              "n": 6,
+              "category": "NVIDIA says DLSS",
+              "title": "NVIDIA says DLSS 4.5 Ray Reconstruction is coming to Blender 5.3",
+              "source": "nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA says DLSS 4.5 Ray Reconstruction will improve ray traced and path traced image quality and will come to Blender 5.3 this fall.",
+              "why": "AI rendering is moving deeper into mainstream DCC workflows and faster lookdev feedback.",
+              "action": "Prepare a benchmark Blender scene for before and after testing in Blender 5.3.",
+              "teacher": "This is AI improving the feedback loop rather than replacing the artist.",
+              "link": "https://www.nvidia.com/en-us/geforce/news/computex-2026-nvidia-geforce-rtx-announcements/"
+            },
+            {
+              "n": 7,
+              "category": "Adobe Firefly updates",
+              "title": "Adobe Firefly updates show multi-step creative agents entering the creator stack",
+              "source": "helpx.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe Firefly updates describe an AI Assistant beta for conversational generation editing and refinement across formats.",
+              "why": "Creative AI is moving from single output generation toward assistants that plan edit refine and chain steps.",
+              "action": "Look for repeatable workflows such as product variations social crops and review changes where an assistant can remove app switching.",
+              "teacher": "The useful frame is creator led automation. The artist keeps taste and approval while the agent handles steps.",
+              "link": "https://helpx.adobe.com/firefly/web/whats-new/new-features/whats-new.html"
+            },
+            {
+              "n": 8,
+              "category": "GitHub Copilot usage-based",
+              "title": "GitHub Copilot usage-based billing turns token cost control into a normal maker habit",
+              "source": "docs.github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub Docs says Copilot moved to usage based billing on June 1 2026 where cost depends on model choice and token consumption.",
+              "why": "Agentic coding cost is now a workflow design problem.",
+              "action": "Add cost checkpoints: plan first cap context use cheaper models for search or lint loops and reserve expensive models for hard reasoning.",
+              "teacher": "Prompts are now both instructions and cost controls.",
+              "link": "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/what-changed-with-billing"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News Codex",
+              "title": "Hacker News Codex users report strict AGENTS.md files and planning loops as practical leverage",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current HN discussion has Codex users describing strict AGENTS.md files coding standard docs and 5 to 30 minute planning loops before implementation.",
+              "why": "Durable local instructions and planning discipline can matter more than tool switching.",
+              "action": "Keep a project AGENTS.md with examples test commands style rules and known traps. Review it monthly.",
+              "teacher": "The best prompt is often a maintained project document.",
+              "link": "https://news.ycombinator.com/item?id=48463982"
+            },
+            {
+              "n": 10,
+              "category": "Reddit LocalLLaMA makers",
+              "title": "Reddit LocalLLaMA makers are still sorting practical local coding-agent stacks",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh LocalLLaMA thread asks for polls across coding assistants agents inference engines and hardware choices with replies naming Open Code Pi Hermes llama.cpp and GPU only setups.",
+              "why": "Local agent adoption is real but uneven and makers still need clearer defaults.",
+              "action": "Treat local agents as a lab setup. Pick one assistant one inference engine one model and one benchmark task before buying more hardware.",
+              "teacher": "This is useful because it shows workflow pain rather than hype.",
+              "link": "https://www.reddit.com/r/LocalLLaMA/comments/1tsyng6/we_need_some_polls_on_many_topics_2026/"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
