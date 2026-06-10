@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 06:17",
-    "editions": 112
+    "fetchedAt": "2026-06-11 06:22",
+    "editions": 113
   },
   "editions": [
+    {
+      "key": "2026-06-11 06",
+      "label": "2026-06-11 · 06:15",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-11 · 06:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "10x Team is",
+              "title": "10x Team is hiring freelance Visual Designer AI Trainers for remote creative evaluation",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh 10x Team posting asks visual designers to evaluate AI responses for creative quality, practicality, and compliance on flexible 8-20 hour weekly remote assignments.",
+              "why": "This is a clean bridge for designers who can judge taste, layout, brand fit, and usefulness without becoming full-time ML engineers.",
+              "action": "Package 5 before-and-after examples showing how you critique AI visual output: composition, typography, realism, client usefulness, and compliance risk.",
+              "teacher": "Good module idea: train students to grade AI images with a rubric instead of only prompting for pretty output.",
+              "link": "https://jobs.ashbyhq.com/10xteam/f855de79-8005-40cb-b954-adaf438b6f7e"
+            },
+            {
+              "n": 2,
+              "category": "10x Team is",
+              "title": "10x Team is hiring freelance Graphic Designer AI Trainers for remote creative systems work",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Another 10x Team role, posted last week, targets graphic designers for 8-20 hour remote freelance AI training work.",
+              "why": "The market is splitting creative AI work into production and evaluation; senior taste is now directly sellable as model feedback.",
+              "action": "Create a small portfolio section called AI Creative Evaluation with logo, poster, deck, and ad examples annotated for what the AI got wrong.",
+              "teacher": "Teach the difference between generating, art-directing, and evaluating. The evaluation layer is easier to monetize for experienced designers.",
+              "link": "https://jobs.ashbyhq.com/10xteam/ceed48ff-dfa1-42e6-88ae-df93ac93d0d3"
+            },
+            {
+              "n": 3,
+              "category": "10x Team VP",
+              "title": "10x Team VP Marketing AI Trainer role shows senior GTM judgment becoming freelance AI labor",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "A new 10x Team posting seeks senior marketing leaders for flexible remote AI training assignments that shape how AI understands modern marketing.",
+              "why": "This points to a high-value consulting lane: teach AI systems how campaigns, positioning, funnels, and brand tradeoffs actually work.",
+              "action": "Write a one-page GTM critique sample: prompt, model answer, what is wrong, corrected strategy, and business rationale.",
+              "teacher": "Students should see that domain judgment beats generic prompt fluency when AI is used for business decisions.",
+              "link": "https://jobs.ashbyhq.com/10xteam/d7b4cba1-09a3-42c1-9648-c8327a7a8969"
+            },
+            {
+              "n": 4,
+              "category": "n8n Labs remote",
+              "title": "n8n Labs remote Senior or Staff Engineer role validates workflow automation as an AI product category",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "n8n is hiring a remote Senior/Staff Engineer for n8n Labs, with an application deadline listed for June 29, 2026.",
+              "why": "n8n is no longer just a freelancer tool; it is becoming a platform where experiments around agents, workflow UX, and integrations turn into paid product work.",
+              "action": "Build two polished n8n demos: one client-facing lead workflow and one internal production tracker, each with error handling and docs.",
+              "teacher": "Use this as a case study for turning no-code workflows into software engineering: tests, observability, permissions, and handoff docs.",
+              "link": "https://jobs.ashbyhq.com/n8n/7c4adbd2-5405-4c4a-960a-bd3ed0cacd3b/application"
+            },
+            {
+              "n": 5,
+              "category": "n8n Technical Account",
+              "title": "n8n Technical Account Manager role asks for AI, LLM integrations, and agentic workflow fluency",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "n8n is hiring a remote Europe Technical Account Manager, with familiarity in AI/LLM integrations, agentic workflows, and automation use cases called out.",
+              "why": "Client success and support roles are becoming AI implementation roles. You do not need to be the core model builder to get paid for deployment expertise.",
+              "action": "Prepare a consulting checklist for client automation: discovery, workflow map, tool stack, failure modes, access control, training, and monthly review.",
+              "teacher": "For non-engineers, this is the most realistic entry path: become the person who translates client pain into robust automations.",
+              "link": "https://jobs.ashbyhq.com/n8n/062fa075-dbda-4bbf-b264-ac339d5ab9de"
+            },
+            {
+              "n": 6,
+              "category": "Owner.com is hiring",
+              "title": "Owner.com is hiring an AI Creative Engineer to scale restaurant marketing creative",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Owner.com lists an AI Creative Engineer role focused on building and scaling creative systems for a remote-first company serving restaurants.",
+              "why": "Local-business marketing is a strong AI services niche: repeatable assets, measurable revenue impact, and clients who need speed more than novelty.",
+              "action": "Prototype a restaurant creative system: menu-to-ad copy, image variants, short video storyboard, offer calendar, and review-response automation.",
+              "teacher": "Teach AI creative engineering as a pipeline: inputs, brand rules, generation, review, publishing, and performance feedback.",
+              "link": "https://jobs.ashbyhq.com/owner/a385d68e-7c43-46a3-ba07-50ee302120f4"
+            },
+            {
+              "n": 7,
+              "category": "Intangible GTM Ops",
+              "title": "Intangible GTM Ops Specialist links generative AI with spatial intelligence and 3D markets",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Intangible says it is moving generative AI beyond prompts toward spatial intelligence and 3D understanding, and is hiring for GTM operations.",
+              "why": "3D/design people can position themselves around spatial AI: demos, asset pipelines, visual QA, and customer education for tools that understand objects and spaces.",
+              "action": "Build a short spatial-AI opportunity deck for retail, booth, and product visualization: pain, workflow, sample output, QA checklist, pricing.",
+              "teacher": "This is a good lesson in selling technical creative tools: the job is not only making images, but explaining use cases and reducing buyer risk.",
+              "link": "https://jobs.ashbyhq.com/intangible.ai/8d5f4114-a107-4588-8e85-ff37bfe48603"
+            },
+            {
+              "n": 8,
+              "category": "Raspberry AI Engineering",
+              "title": "Raspberry AI Engineering Lead role targets generative AI for fashion and creative intelligence",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Raspberry is hiring an AI Engineering Lead to drive generative AI capabilities for creative intelligence in fashion workflows.",
+              "why": "Fashion, product, and visual commerce are hiring around domain-specific creative AI, not just generic image generation.",
+              "action": "Make a portfolio sample around fashion/product iteration: moodboard input, generated variants, material notes, fit constraints, and buyer-facing presentation.",
+              "teacher": "Show students why vertical specialization matters: the best AI creative systems encode industry constraints, vocabulary, and approval habits.",
+              "link": "https://jobs.ashbyhq.com/raspberry/5c90f7da-4022-48f3-8c66-36434f3c4706"
+            },
+            {
+              "n": 9,
+              "category": "Reddit thread shows",
+              "title": "Reddit thread shows entry-level AI integration freelancers need a faster first-client path",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A two-day-old r/AI_Agents thread has a self-taught Python developer moving into AI integration and database automation asking how to get an entry-level job or first freelance client.",
+              "why": "The pain is market access, not only skill. Beginners need proof, niche targeting, and small paid deployments more than more tutorials.",
+              "action": "Offer a starter service: audit one messy spreadsheet/CRM process, automate one handoff, record a Loom, and sell it as a fixed-price pilot.",
+              "teacher": "Teach job seekers to build proof loops: small business problem, working demo, documented outcome, testimonial, then a repeatable offer.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1u0hcko/how_do_you_pull_an_entry_level_job_freelance/"
+            },
+            {
+              "n": 10,
+              "category": "Public X hiring",
+              "title": "Public X hiring chatter points to remote AI video roles with Runway, Kling, Sora, Veo, and similar tools",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Search-visible X posts from NGLPRZ describe remote flexible video work where familiarity with AI video generation tools such as Runway, Kling, Sora, Veo, or Grok Imagine is a bonus.",
+              "why": "AI video is moving into everyday hiring language for editors and content teams, which creates a practical lane for 3D artists who can control motion, continuity, and taste.",
+              "action": "Create a 30-second AI video reel with one product, one environment, one transition, and a breakdown showing prompts, edits, and manual fixes.",
+              "teacher": "The key lesson: AI video skill is judged by control and post-production discipline, not by one lucky generation.",
+              "link": "https://x.com/nglprz"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-11 03",
       "label": "2026-06-11 · 03:23",
