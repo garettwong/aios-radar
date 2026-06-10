@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 21:17",
-    "editions": 109
+    "fetchedAt": "2026-06-10 21:21",
+    "editions": 110
   },
   "editions": [
+    {
+      "key": "2026-06-10 21",
+      "label": "2026-06-10 · 21:15",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 21:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Serotonin AI and",
+              "title": "Serotonin AI and GTM Engineer turns marketing execution into buildable AI systems",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Serotonin is hiring an AI & GTM Engineer to find where AI can compress marketing timelines, improve output quality, and build those systems for internal teams and clients.",
+              "why": "This is the consulting lane moving from advice to implementation: strategy, workflows, marketing ops, and AI tools in one role.",
+              "action": "Package a small portfolio around three GTM automations: campaign research, lead enrichment, and weekly creative/report generation.",
+              "teacher": "Good lesson topic: how to translate a messy marketing request into a scoped AI workflow with inputs, review points, and measurable output.",
+              "link": "https://jobs.lever.co/serotonin/f94ffd74-386f-4c9c-9390-4da5b6d37cf3"
+            },
+            {
+              "n": 2,
+              "category": "FOX is hiring",
+              "title": "FOX is hiring an AI Animation Producer for next-generation production workflows",
+              "source": "foxcareers.com",
+              "relevance": "Intermediate",
+              "summary": "FOX Entertainment posted a June 3 role for a Producer, AI Animation at FoxNXT, focused on AI-powered animation workflow execution.",
+              "why": "AI animation is no longer just tool demos; large studios are creating producer roles to manage pipelines, quality, and delivery.",
+              "action": "Build a one-page AI animation pipeline demo: concept frames, style lock, animatic, shot list, revision log, and rights notes.",
+              "teacher": "Teach producers how to compare AI animation outputs against normal production checkpoints: continuity, style, editability, and approvals.",
+              "link": "https://www.foxcareers.com/Search/JobDetail/R50032430/producer-ai-animation-foxnxt-fox-entertainment"
+            },
+            {
+              "n": 3,
+              "category": "FOX VP AI",
+              "title": "FOX VP AI Production Support role shows AI workflow support becoming a production department",
+              "source": "foxcareers.com",
+              "relevance": "Intermediate",
+              "summary": "FOX is also hiring a VP, AI Production Support to oversee AI workflows across scripted, unscripted, animation, marketing, shoots, editing, VFX, and post.",
+              "why": "The opportunity is not only making AI assets; studios need operators who can standardize, troubleshoot, and scale AI across teams.",
+              "action": "Turn your render/revision discipline into a service offer: AI production support, QA checklists, source locking, and delivery handoff.",
+              "teacher": "Useful class exercise: students design an AI support checklist for a shoot-to-post pipeline and identify where humans must approve.",
+              "link": "https://www.foxcareers.com/Search/JobDetail/R50030918/vice-president-ai-production-support-foxnxt-fox-entertainment"
+            },
+            {
+              "n": 4,
+              "category": "OceanX AI Immersive",
+              "title": "OceanX AI Immersive Technologist links generative AI with real-time 3D education",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "OceanX Education is hiring an AI Immersive Technologist to combine generative AI, real-time 3D, and interactive storytelling for exploration-driven learning.",
+              "why": "This is a strong 3D/design opportunity: education clients need immersive explainers, not just slides or static visuals.",
+              "action": "Create a demo scene that turns one science topic into a guided 3D learning moment with narration, hotspots, and AI-generated variants.",
+              "teacher": "Good teaching angle: how to storyboard an immersive lesson so AI supports comprehension instead of becoming visual noise.",
+              "link": "https://job-boards.greenhouse.io/dforeferrals/jobs/5990813004"
+            },
+            {
+              "n": 5,
+              "category": "Via Motion and",
+              "title": "Via Motion and AI Video Designer role rewards AI video plus 3D motion craft",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Via is hiring a Motion & AI Video Designer and explicitly welcomes Cinema 4D/Blender understanding alongside After Effects, Rive, and AI video creation.",
+              "why": "The strongest creative roles are becoming hybrid: motion design, interaction, 3D literacy, and AI-assisted production.",
+              "action": "Refresh your reel with a short AI-assisted motion sequence, then show the production breakdown and manual polish steps.",
+              "teacher": "Teach a before/after critique: AI-generated motion idea, designer correction, typography pass, and final delivery constraints.",
+              "link": "https://job-boards.greenhouse.io/via/jobs/8478199002"
+            },
+            {
+              "n": 6,
+              "category": "Monks Creative Director",
+              "title": "Monks Creative Director role asks for AI-forward production efficiency",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Monks posted a Creative Director role that calls for narrative strategy, systemic thinking, and an AI-forward approach to production efficiency.",
+              "why": "Senior creative value is shifting toward directing AI-enabled systems while protecting brand logic and executive-level storytelling.",
+              "action": "Draft a consulting offer around “AI-ready campaign systems”: brand-safe prompts, asset templates, review gates, and reusable production boards.",
+              "teacher": "Good workshop: separate concept quality from production speed, then show how AI can accelerate one without weakening the other.",
+              "link": "https://job-boards.greenhouse.io/monks/jobs/5839052004"
+            },
+            {
+              "n": 7,
+              "category": "Figma Marketing Engineer",
+              "title": "Figma Marketing Engineer AI Deployment role makes internal automation a marketing job",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Figma is hiring a Marketing Engineer, AI Deployment to design programmatic GTM systems and AI-powered workflows across marketing.",
+              "why": "Marketing automation is moving into builder territory; the winning profile can understand campaign needs and implement the system.",
+              "action": "Build a sample Figma-to-campaign workflow: asset inventory, landing page checklist, social variants, and performance report automation.",
+              "teacher": "Teach marketers a simple automation spec: trigger, data source, transformation, human review, output, and metric.",
+              "link": "https://job-boards.greenhouse.io/figma/jobs/6013495004?gh_jid=6013495004"
+            },
+            {
+              "n": 8,
+              "category": "Comfy Creative Producer",
+              "title": "Comfy Creative Producer role signals open-source AI tooling needs sharp GTM operators",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Comfy is hiring a Creative Producer to support go-to-market operations as the ComfyUI ecosystem grows.",
+              "why": "AI tool companies need people who can turn technical capability into demos, narratives, events, examples, and user education.",
+              "action": "Build a ComfyUI-style demo package for one client niche: workflow screenshot, inputs, outputs, failure cases, and business use case.",
+              "teacher": "Strong teaching module: how to explain node-based AI workflows to non-technical clients without hiding quality risks.",
+              "link": "https://jobs.ashbyhq.com/comfy-org/7be2d690-7a2b-4ebf-b1c4-6907b273d3d9"
+            },
+            {
+              "n": 9,
+              "category": "Reddit freelancer thread",
+              "title": "Reddit freelancer thread exposes a design-to-sales handoff pain point",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/freelance thread centers on being good at design work but losing leads during the sales process.",
+              "why": "This is service opportunity evidence: many creatives do not need “more AI art”; they need intake, proposal, follow-up, and proof systems.",
+              "action": "Offer a small “creative lead rescue” package: inquiry form, qualification script, portfolio proof deck, proposal template, and follow-up automation.",
+              "teacher": "Teach freelancers how to turn a DM into a structured brief, then into a priced proposal with clear next steps.",
+              "link": "https://www.reddit.com/r/freelance/comments/1tztssg/im_great_at_the_design_work_but_i_keep_losing/"
+            },
+            {
+              "n": 10,
+              "category": "Public X remote",
+              "title": "Public X remote video editor post asks directly for AI video creation experience",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X job post for a remote video editor specifically asks for experience with AI video creation.",
+              "why": "AI video is becoming a line-item requirement even in ordinary remote creator roles, not only specialist AI studios.",
+              "action": "Add a clear “AI video workflow” section to your portfolio: tools used, rights-safe inputs, editing pass, and final platform formats.",
+              "teacher": "Teaching angle: AI video is not a replacement for editing judgment; students should learn pacing, continuity, typography, and disclosure.",
+              "link": "https://x.com/TrybeCityJobs/status/2061364189948444803"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 18",
       "label": "2026-06-10 · 18:15",
