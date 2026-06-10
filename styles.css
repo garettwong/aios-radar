@@ -3,24 +3,27 @@
 ============================================================================= */
 
 :root {
-  --bg:        #050607;
-  --bg-2:      #0a0c0e;
-  --panel:     #0e1114;
-  --panel-2:   #12161a;
-  --border:    #1d242b;
-  --border-2:  #2a343d;
-  --ink:       #e7edf2;
-  --ink-2:     #aab6c0;
-  --ink-3:     #6b7884;
-  --cyan:      #36d6e7;
-  --cyan-dim:  #1b6b74;
-  --green:     #4ade80;
-  --green-dim: #1f6b40;
-  --amber:     #f0b429;
-  --violet:    #a78bfa;
-  --red:       #f87171;
+  /* Claude warm theme — ivory / beige / terracotta. Variable NAMES kept from the
+     old dark theme (--cyan = the accent slot) so every var() reference still works. */
+  --bg:        #F0EDE4;
+  --bg-2:      #E7E3D6;
+  --panel:     #FAF8F2;
+  --panel-2:   #F3F0E6;
+  --border:    #E0DACA;
+  --border-2:  #CBC2AC;
+  --ink:       #292419;
+  --ink-2:     #5C5546;
+  --ink-3:     #8C8470;
+  --cyan:      #C96442;   /* terracotta — primary accent */
+  --cyan-dim:  #DDAE99;
+  --green:     #5E8C5A;   /* sage */
+  --green-dim: #AFC6A8;
+  --amber:     #B07E22;
+  --violet:    #7C5FB8;
+  --red:       #BC4B4B;
   --mono: "Cascadia Code", "Cascadia Mono", Consolas, "SF Mono", ui-monospace, monospace;
   --sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
   --radius: 10px;
   --fs: 1; /* font scale multiplier — set by the A- / A+ buttons */
 }
