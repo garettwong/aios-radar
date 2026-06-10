@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 18:22",
-    "editions": 108
+    "fetchedAt": "2026-06-10 18:26",
+    "editions": 109
   },
   "editions": [
+    {
+      "key": "2026-06-10 18",
+      "label": "2026-06-10 · 18:15",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 18:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Cohere releases North",
+              "title": "Cohere releases North Mini Code as an Apache-licensed local agentic coding model",
+              "source": "docs.cohere.com",
+              "relevance": "Intermediate",
+              "summary": "Cohere announced North Mini Code, a 30B total / 3B active MoE model trained for agentic coding, with 256K input context, 64K output context, open weights, API access, and Model Vault deployment.",
+              "why": "The local-agent market is getting serious options that can run with lower active compute while still targeting tool use and software engineering loops.",
+              "action": "Put North Mini Code on the short list for offline coding-agent experiments, especially for private repos or local maker machines.",
+              "teacher": "Watch active parameters, context length, license, and tool-call parsing support. Those matter more than raw parameter count for agent work.",
+              "link": "https://docs.cohere.com/changelog"
+            },
+            {
+              "n": 2,
+              "category": "Microsoft Rayfin targets",
+              "title": "Microsoft Rayfin targets the missing backend layer for agent-built production apps",
+              "source": "azure.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft says Rayfin, an open-source SDK and CLI for Fabric, lets developers and coding agents describe an application backend and deploy database, auth, security, and scale into Microsoft Fabric.",
+              "why": "Agent-built prototypes still fail at production basics. Vendors are now racing to make the backend, permissions, and deployment path agent-friendly.",
+              "action": "For agent-generated apps, require a backend plan before UI generation: database, identity, permissions, state, deployment, monitoring.",
+              "teacher": "Prompt-to-app is not enough. Prompt-to-production needs boring systems that agents can safely instantiate.",
+              "link": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/"
+            },
+            {
+              "n": 3,
+              "category": "Cisco warns MCP",
+              "title": "Cisco warns MCP supply-chain attacks make native agent security a platform requirement",
+              "source": "blogs.cisco.com",
+              "relevance": "Intermediate",
+              "summary": "Cisco describes a real MCP supply-chain attack where a malicious clone of an Oura Ring MCP server was submitted to legitimate registries, then positions Cisco AI Defense inside Agent Builder as lifecycle security for agent integrations.",
+              "why": "Agents expand the blast radius of every connector they can call. Tool registries are becoming a software supply-chain risk, not a convenience list.",
+              "action": "Treat every MCP/tool connector like a package dependency: pin it, review provenance, sandbox it, and log every credential or filesystem capability.",
+              "teacher": "The teaching frame is simple: model safety is not enough if the tool layer is compromised.",
+              "link": "https://blogs.cisco.com/ai/ai-agents-need-built-in-security-here-is-how-cisco-does-it"
+            },
+            {
+              "n": 4,
+              "category": "Cloudflare AI Gateway",
+              "title": "Cloudflare AI Gateway adds spend limits for runaway multi-provider AI usage",
+              "source": "blog.cloudflare.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudflare says AI Gateway now supports real-time spend limits across providers, with Cloudflare Access integration for identity-driven budgets and policies.",
+              "why": "Agent loops can turn small experiments into surprise token bills. Cost control is becoming an execution safety feature.",
+              "action": "Put hard spend caps on agent sandboxes, separate human chat budgets from autonomous-run budgets, and alert before retry loops scale.",
+              "teacher": "Teach cost as a runtime constraint. An agent without budget limits is like a script without timeouts.",
+              "link": "https://blog.cloudflare.com/ai-gateway-spend-limits/"
+            },
+            {
+              "n": 5,
+              "category": "Microsoft Foundry Toolkit",
+              "title": "Microsoft Foundry Toolkit adds Toolbox Guardrails and hosted-agent samples",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Foundry Toolkit for VS Code 1.4.2 release adds Toolbox Guardrails for safer agent execution and expands hosted-agent sample coverage with LangGraph examples for chat, MCP, workflows, files, human-in-the-loop, observability, and invocations.",
+              "why": "Agent development is moving into IDE-native tool catalogs, guardrails, deploy flows, traces, and evaluations.",
+              "action": "Use the changelog as a checklist for any internal agent workbench: tools, guardrails, human approval, observability, and deployment samples.",
+              "teacher": "Good agent education should include the boring lifecycle around the model, not just prompts and demos.",
+              "link": "https://github.com/microsoft/vscode-ai-toolkit/blob/main/WHATS_NEW.md"
+            },
+            {
+              "n": 6,
+              "category": "roborev packages continuous",
+              "title": "roborev packages continuous background code review for coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "roborev is an open-source tool that reviews commits immediately and can delegate review and fix tasks to AI coding agents, using read-only review agents and isolated worktrees for fix agents.",
+              "why": "The next coding-agent bottleneck is accountability. Background review loops can catch agent mistakes while context is still fresh.",
+              "action": "Try roborev on a throwaway branch, then compare findings against normal lint/test/PR review before trusting it on production work.",
+              "teacher": "Good agent systems split roles: builder, reviewer, fixer, and verifier. Isolation matters because review agents still read prompt-injectable diffs.",
+              "link": "https://github.com/kenn-io/roborev"
+            },
+            {
+              "n": 7,
+              "category": "Tripo AI 3D",
+              "title": "Tripo AI 3D Rendering Challenge pushes AI-generated assets into finished 6-second creator work",
+              "source": "tripo3d.ai",
+              "relevance": "Intermediate",
+              "summary": "Tripo's June challenge asks creators to build a six-second 3D render around the theme Out There using Tripo Studio AI 3D model generation plus professional rendering, animation, and post-production.",
+              "why": "AI 3D is being judged less as isolated meshes and more as complete creator output: scene, motion, render quality, and polish.",
+              "action": "Use short rendered clips as a QA format for AI-generated 3D assets, because motion reveals bad topology, scale, and material issues faster than a still.",
+              "teacher": "For 3D/design workflows, teach the final artifact first. A model is only useful if it survives lighting, camera, animation, and export.",
+              "link": "https://www.tripo3d.ai/event/s3-3d-rendering-challenge"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News builders",
+              "title": "Hacker News builders say AGENTS.md files are becoming practical control surfaces for coding agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "In a fresh HN discussion, practitioners describe AGENTS.md-style files as a useful way to encode repo-specific habits, review loops, tool preferences, and operating instructions for agents.",
+              "why": "Agent performance is increasingly shaped by local context files and repeatable rituals, not just model choice.",
+              "action": "Keep a short AGENTS.md per active project with build/test commands, design preferences, forbidden actions, review expectations, and delivery rules.",
+              "teacher": "Treat instruction files like onboarding docs for a tireless junior teammate: concise, current, and verified against real workflows.",
+              "link": "https://news.ycombinator.com/item?id=48441589"
+            },
+            {
+              "n": 9,
+              "category": "Reddit LocalLLaMA adoption",
+              "title": "Reddit LocalLLaMA adoption signal: Cohere North Mini Code gets immediate deployment feedback from local-model makers",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Cohere posted North Mini Code to r/LocalLLaMA, and the thread immediately moved into practical details: weights, FP8, OpenCode, vLLM main, melody parser support, MLX support, and local compatibility.",
+              "why": "Reddit is surfacing the real local-model adoption test: can makers actually run the model in their agent harness without waiting for polished vendor docs?",
+              "action": "Track install friction as a first-class metric for any local coding model: vLLM support, MLX/Ollama status, quant availability, and parser compatibility.",
+              "teacher": "Community launch threads are useful because they reveal missing glue code before official examples catch up.",
+              "link": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: YC Spring 2026 appears heavily agent-native across coding, vertical workers, and infrastructure",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article/snippet summarizing YC Spring 2026 says the batch is overwhelmingly agent-native, with many one-liners around coding agents, agent infrastructure, and vertical AI workers.",
+              "why": "Startup formation is a market signal. If new companies are defaulting to agents, expect more tooling around evals, permissions, memory, connectors, and domain-specific workers.",
+              "action": "When scanning startups, tag each one by agent layer: interface, orchestration, memory, tool gateway, vertical workflow, compliance, or data moat.",
+              "teacher": "Teach market awareness by looking at company one-liners. Repeated wording shows where founders believe budget and urgency are moving.",
+              "link": "https://x.com/RatheeJaisal/article/2063966120139235429"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 18:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Fiverr Business Trends",
+              "title": "Fiverr Business Trends Index 2026 turns AI automation into a buyer-demand map",
+              "source": "fiverr.com",
+              "relevance": "Intermediate",
+              "summary": "Fiverr published its June 2026 Business Trends Index focused on AI automation, video content, Shopify execution, and content-led marketing demand.",
+              "why": "This is a direct market signal from a freelance marketplace, not just AI hype. It shows where small businesses are spending.",
+              "action": "Package one clear offer: audit a business process, automate the workflow, and deliver a before/after metric in a short Loom-style demo.",
+              "teacher": "Teach students to read marketplace trend pages as client-intent data: demand categories, buyer language, and deliverable shape.",
+              "link": "https://www.fiverr.com/resources/guides/reports/business-trends-index-june-2026"
+            },
+            {
+              "n": 2,
+              "category": "10x Team offers",
+              "title": "10x Team offers remote AI trainer work for machine-learning operations at EUR102-EUR160/hour",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "The role is flexible, remote, project-based freelance work for 8-20 hours per week, focused on machine-learning operations expertise.",
+              "why": "High-rate AI trainer roles are becoming structured expert gigs. They reward practical domain judgment more than generic prompting.",
+              "action": "Build a one-page AI training profile: domain, examples of evaluation rubrics, QA habits, and before/after model feedback samples.",
+              "teacher": "Use this to explain the difference between using AI and evaluating AI: trainers need criteria, edge cases, and clear feedback.",
+              "link": "https://jobs.ashbyhq.com/10xteam/2f0ea6ed-0a85-40af-9058-8638df6e3b6a"
+            },
+            {
+              "n": 3,
+              "category": "Purchasing Platform apprenticeship",
+              "title": "Purchasing Platform apprenticeship makes AI integration a paid entry lane",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "A paid part-time apprenticeship includes AI-powered features and workflows, automation, and hands-on platform work.",
+              "why": "AI work is no longer only senior research. Smaller companies are building junior paths around workflow integration.",
+              "action": "For career switching, prepare a mini portfolio with one procurement, invoice, or inventory automation rather than a generic chatbot.",
+              "teacher": "Good classroom exercise: map one purchasing workflow, identify repetitive decisions, then design the AI assist points.",
+              "link": "https://jobs.lever.co/purchasingplatform/7041b9b7-3af5-4750-9fa2-9834283a987e"
+            },
+            {
+              "n": 4,
+              "category": "Wonder Studios is",
+              "title": "Wonder Studios is hiring an AI Artist for pitch and production assets",
+              "source": "job-boards.eu.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "The AI Artist role is hands-on, creating AI-generated assets for pitches and live productions across commercials, music videos, episodic, and long-form work.",
+              "why": "Creative studios are turning AI art into production labor, especially for pitches where speed and visual range matter.",
+              "action": "For 3D/design work, create a pitch-asset case study: mood frames, reference discipline, prompt log, cleanup pass, and final client-ready board.",
+              "teacher": "Teach AI art as production direction: references, consistency, selection, compositing, and critique matter more than one lucky prompt.",
+              "link": "https://job-boards.eu.greenhouse.io/wonderstudios/jobs/4750752101"
+            },
+            {
+              "n": 5,
+              "category": "Upwork 2026 skills",
+              "title": "Upwork 2026 skills report says AI integration grew 178 percent and AI video 329 percent",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "Upwork reports AI-related freelance skills grew 109 percent year over year, with AI video, AI integration, AI image work, data labeling, and chatbot development among the fastest growers.",
+              "why": "The strongest freelance openings are applied AI inside existing workflows: video, integration, image editing, labeling, and chatbot operations.",
+              "action": "Choose one vertical and one format: for example, real-estate video cleanup, Shopify support automation, or design-studio asset generation.",
+              "teacher": "Use the numbers to teach positioning: broad AI knowledge is weak; a named workflow plus measurable outcome is stronger.",
+              "link": "https://www.upwork.com/research/in-demand-skills-2026"
+            },
+            {
+              "n": 6,
+              "category": "Upwork n8n listings",
+              "title": "Upwork n8n listings show fresh demand for Make, APIs, agents, and workflow builders",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "The n8n job category includes recent client requests for AI automation engineers who can connect n8n, Make, AI agents, APIs, and operational systems.",
+              "why": "Small clients are buying glue work: connecting tools, triggering actions, and maintaining automations that save staff time.",
+              "action": "Create a reusable n8n demo pack: CRM lead intake, email triage, invoice reminder, and AI summary-to-task workflow.",
+              "teacher": "Teach students that automation work has three layers: trigger, decision, and handoff. Debugging handoffs is where trust is won.",
+              "link": "https://www.upwork.com/freelance-jobs/n8n/"
+            },
+            {
+              "n": 7,
+              "category": "Reddit n8n agency",
+              "title": "Reddit n8n agency thread says buyers care about savings, not AI labels",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A practitioner discussion says agencies often avoid selling the AI label directly and instead sell labor-cost reduction and workflow outcomes.",
+              "why": "This is early buyer-language signal: clients may be tired of AI claims but still want automation that cuts cost or increases revenue.",
+              "action": "Rewrite service pages around outcomes: hours saved, fewer manual steps, faster replies, cleaner reports, or fewer missed leads.",
+              "teacher": "Use it to teach offer design: translate technical capability into business language before pitching.",
+              "link": "https://www.reddit.com/r/n8n/comments/1lp23sh/if_youre_running_an_automationai_agency_what_do/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit freelancer pain",
+              "title": "Reddit freelancer pain point: inactive social feeds are costing client trust",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A freelancer reports losing prospects because an inactive Instagram looked dead, while AI tools saved only a few hours and still needed heavy editing.",
+              "why": "This points to a practical creator-service opportunity: not generic AI content, but credible, human-edited presence maintenance.",
+              "action": "Offer a monthly portfolio pulse service: batch posts, before/after reels, project snippets, captions, and manual quality control.",
+              "teacher": "Teach AI as assistance, not replacement: consistency, taste, and editing are the actual product.",
+              "link": "https://www.reddit.com/r/freelance/comments/1pku5yi/lost_potential_clients_because_my_instagram/"
+            },
+            {
+              "n": 9,
+              "category": "Public X post",
+              "title": "Public X post frames a USD150/hour AI freelancer setup around Upwork skill demand",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X post references Upwork 2026 demand for AI integration consultants, Zapier, n8n automation builders, and related freelance skills.",
+              "why": "The useful signal is positioning: public freelance content is converging on proof, stacks, and client outcomes rather than model trivia.",
+              "action": "Document your stack visibly: n8n or Make, Zapier, API integration, prompt/eval samples, and a small set of client-style demos.",
+              "teacher": "Ask learners to turn a tool stack into proof: screenshot, workflow diagram, failure case, and measurable result.",
+              "link": "https://x.com/leopardracer/status/2062834201817198751"
+            },
+            {
+              "n": 10,
+              "category": "Netflix INKubator shows",
+              "title": "Netflix INKubator shows GenAI-native animation studios are becoming real production units",
+              "source": "theverge.com",
+              "relevance": "Intermediate",
+              "summary": "The Verge reports Netflix is developing an internal AI animation studio focused on short-form GenAI-native content and experimental production pipelines.",
+              "why": "For 3D/design creators, the opportunity is hybrid pipeline literacy: art direction, asset consistency, animation cleanup, and production judgment.",
+              "action": "Build a short AI animation pipeline test: style board, character consistency sheet, generated shots, cleanup notes, edit, and delivery checklist.",
+              "teacher": "Teach the pipeline, not the button: preproduction, consistency control, shot selection, post, rights risk, and audience fit.",
+              "link": "https://www.theverge.com/column/930118/netflix-gen-ai-animation-inkubator"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 15",
       "label": "2026-06-10 · 15:09",
