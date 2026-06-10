@@ -5,7 +5,7 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 09:09",
+    "fetchedAt": "2026-06-10 09:12",
     "editions": 106
   },
   "editions": [
@@ -13,6 +13,137 @@ window.DASHBOARD_ARCHIVE = {
       "key": "2026-06-10 09",
       "label": "2026-06-10 · 09:07",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 09:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI extends Codex",
+              "title": "OpenAI extends Codex from coding into desktop app operation",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI describes Codex moving beyond repository work into background computer use, where multiple agents can operate Mac apps in parallel while the user keeps working.",
+              "why": "The boundary between coding agent, QA agent, and desktop operator is dissolving. For design and 3D workflows, the next useful agent may click through local tools, not just edit code.",
+              "action": "Identify one repeatable desktop task, such as exporting previews or checking a UI flow, and write a strict checklist that an agent could execute safely.",
+              "teacher": "Teach this as a shift from prompt output to supervised tool operation: permissions, observability, and rollback matter more than clever prompting.",
+              "link": "https://openai.com/index/codex-for-almost-everything/"
+            },
+            {
+              "n": 2,
+              "category": "OpenAI GPT-5.5 raises",
+              "title": "OpenAI GPT-5.5 raises the bar for execution-heavy coding and analysis",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI positions GPT-5.5 as a stronger model for complex coding, research, data analysis, and longer execution-heavy work, with enterprise testers citing faster end-to-end feature work.",
+              "why": "Tooling quality will increasingly depend on how well products exploit longer, harder model runs without wasting budget.",
+              "action": "Re-test your hardest agent benchmark against current top models instead of assuming last month's routing still holds.",
+              "teacher": "Separate model capability from workflow capability: a better model still needs scoped tasks, tests, and human review gates.",
+              "link": "https://openai.com/index/introducing-gpt-5-5/"
+            },
+            {
+              "n": 3,
+              "category": "VS Code 1.124",
+              "title": "VS Code 1.124 tightens Agents window session behavior",
+              "source": "code.visualstudio.com",
+              "relevance": "Intermediate",
+              "summary": "VS Code 1.124 includes Agents window quality-of-life work, including scoping chat input history to the current session.",
+              "why": "Small UX details matter when developers manage multiple agent sessions. Cleaner session boundaries reduce accidental prompt leakage and confusion.",
+              "action": "When teaching agent workflows, standardize one session per task and reset context deliberately before starting a new ticket.",
+              "teacher": "Use this as a concrete example that agent productivity is partly interface design, not only model intelligence.",
+              "link": "https://code.visualstudio.com/updates/v1_124"
+            },
+            {
+              "n": 4,
+              "category": "Anthropic says new",
+              "title": "Anthropic says new compute capacity is raising Claude Code and API limits",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic says a SpaceX compute deal, alongside other capacity deals, allowed it to increase usage limits for Claude Code and the Claude API.",
+              "why": "Compute supply is becoming a product feature. Limits, latency, and quota stability now influence which agent stack makers can rely on.",
+              "action": "Track your critical agent workflows by provider, monthly cap, and failure mode so quota changes do not surprise production work.",
+              "teacher": "Frame model subscriptions as capacity contracts: great workflows fail if the compute pool disappears mid-run.",
+              "link": "https://www.anthropic.com/news/higher-limits-spacex"
+            },
+            {
+              "n": 5,
+              "category": "GitHub community workflow",
+              "title": "GitHub community workflow shows planning-to-issue-to-coding-agent handoff becoming normal",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A GitHub Community discussion describes a workflow that moves from Copilot planning to issue creation through MCP, then to Coding Agent implementation.",
+              "why": "The market is converging on ticketized agent work: plan, package context, assign, review, repeat.",
+              "action": "For any repo you care about, create an agent-ready issue template with acceptance criteria, test commands, and forbidden changes.",
+              "teacher": "Show makers that agents perform best when the task is shaped like a production ticket, not a vague wish.",
+              "link": "https://github.com/orgs/community/discussions/163572"
+            },
+            {
+              "n": 6,
+              "category": "Copilot token pricing",
+              "title": "Copilot token pricing backlash signals agentic coding cost sensitivity",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports user backlash after GitHub Copilot's token-usage pricing shift, with power users seeing costs rise when heavy agent usage consumes credits quickly.",
+              "why": "Agentic coding is moving from novelty pricing to usage economics. Budget visibility is now part of tool selection.",
+              "action": "Add cost notes to agent playbooks: preferred model, max iterations, when to stop, and when to downgrade to a cheaper model.",
+              "teacher": "Teach AI coding like cloud computing: every loop has a cost, and runaway loops are a product risk.",
+              "link": "https://www.businessinsider.com/github-copilot-token-uage-pricing-change-reaction-2026-6"
+            },
+            {
+              "n": 7,
+              "category": "HN discussion frames",
+              "title": "HN discussion frames AI subscription economics as a maker workflow risk",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Hacker News thread discusses whether high AI usage is being subsidized by subscriptions and what happens when providers normalize usage-based economics.",
+              "why": "Builders who rely on cheap unlimited plans may be building on temporary pricing rather than durable unit economics.",
+              "action": "Keep a fallback path for core workflows: local model, smaller model, cached context, or manual mode.",
+              "teacher": "Use this to explain why market signals belong in technical planning. The best workflow is fragile if its pricing model breaks.",
+              "link": "https://news.ycombinator.com/item?id=48434342"
+            },
+            {
+              "n": 8,
+              "category": "Reddit Claude users",
+              "title": "Reddit Claude users flag scheduled Agent SDK billing as a workflow shock",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit ClaudeAI thread warns that Claude Agent SDK and non-interactive usage may no longer fit the same plan expectations as watched terminal usage.",
+              "why": "Makers are noticing that cron jobs, hooks, GitHub Actions, and background agents may be priced differently from interactive use.",
+              "action": "Audit any unattended agent automation and set explicit caps before leaving it to run.",
+              "teacher": "Distinguish interactive assistance from autonomous execution. The second needs budget guardrails, logging, and stop conditions.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u0y424/june_15_your_pro_plan_stops_subsidizing_agent/"
+            },
+            {
+              "n": 9,
+              "category": "X discussion says",
+              "title": "X discussion says managing the agent loop is becoming the expensive part of coding",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post highlights a useful builder meme: the costly part of AI coding is no longer writing code, but managing the agent loop and its failure modes.",
+              "why": "This matches what practical agent users feel: orchestration, review, retries, and state management determine real productivity.",
+              "action": "Build reusable runbooks for common loops: plan, implement, test, verify, summarize, and handoff.",
+              "teacher": "Teach loop design as a first-class skill: prompts are only one component inside a controlled feedback system.",
+              "link": "https://x.com/sachinrekhi/status/2064013928892645786"
+            },
+            {
+              "n": 10,
+              "category": "Cinema 4D for",
+              "title": "Cinema 4D for iPad brings AI 3D generation into a mainstream artist tool",
+              "source": "creativebloq.com",
+              "relevance": "Intermediate",
+              "summary": "Creative Bloq reports that Maxon plans Cinema 4D for iPad with AI 3D generation powered by Tencent's HY 3D engine, aimed at early ideation and prototyping.",
+              "why": "AI 3D is moving from standalone generators into established creative suites where artists can refine, sculpt, animate, and render.",
+              "action": "Treat generated 3D as blockout material: test topology, UVs, scale, and editability before counting it as production-ready.",
+              "teacher": "For 3D artists, emphasize that the winning workflow is AI-assisted iteration plus traditional craft, not raw generation as final output.",
+              "link": "https://www.creativebloq.com/ai/cinema-4d-is-coming-to-ipad-and-its-bringing-an-ai-3d-model-generator-with-it"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
