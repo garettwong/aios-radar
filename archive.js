@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 12:07",
-    "editions": 106
+    "fetchedAt": "2026-06-10 12:10",
+    "editions": 107
   },
   "editions": [
+    {
+      "key": "2026-06-10 12",
+      "label": "2026-06-10 · 12:04",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 12:04 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Laurel AI Ops,",
+              "title": "Laurel AI Ops, Marketing role turns campaign work into agent-building work",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Laurel is hiring an AI Ops, Marketing role at $120K-$170K to build and deploy AI agents and automations using tools such as Dust and Claude Code.",
+              "why": "Marketing operations is becoming a hands-on automation function, not just campaign coordination.",
+              "action": "Package one offer around replacing a recurring marketing task with a monitored agent workflow, then document before/after time saved.",
+              "teacher": "Teach marketers to map triggers, data sources, approvals, and rollback paths before touching the model.",
+              "link": "https://jobs.ashbyhq.com/laurel/1fa4a2ba-d8a1-49fe-9e1e-e0f13ec68b1c"
+            },
+            {
+              "n": 2,
+              "category": "Laurel AI Ops",
+              "title": "Laurel AI Ops and Strategy Generalist pays for cross-functional automation opportunity spotting",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Laurel is also hiring an AI Ops & Strategy Generalist at $120K-$160K to find and attack high-leverage automation opportunities across functions.",
+              "why": "Companies need translators who can identify valuable workflow targets before engineers build anything.",
+              "action": "Build a small audit template: process, pain, frequency, owner, data access, risk, expected ROI, and first prototype.",
+              "teacher": "This is a strong consulting lesson: discovery quality often matters more than tool choice.",
+              "link": "https://jobs.ashbyhq.com/laurel/33be981a-ff33-4243-bc07-499e85ce1839"
+            },
+            {
+              "n": 3,
+              "category": "Zapier Automation Strategist",
+              "title": "Zapier Automation Strategist role makes customer automation strategy a paid consulting lane",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Zapier is hiring an Automation Strategist to help customers shape automation strategy, identify use cases, and deploy high-value workflows.",
+              "why": "AI automation is maturing into customer success and advisory work, which favors people who can explain, scope, and measure change.",
+              "action": "Create a client-facing automation roadmap sample with three phases: quick win, integrated workflow, governed AI agent.",
+              "teacher": "Train students to speak in business outcomes: cycle time, lead response, support deflection, content throughput, and error reduction.",
+              "link": "https://jobs.ashbyhq.com/zapier/45b2c110-f8e0-497a-914c-72fddf447ed0"
+            },
+            {
+              "n": 4,
+              "category": "ServiceNow expands Autonomous",
+              "title": "ServiceNow expands Autonomous Workforce specialists across business functions",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "ServiceNow says L1 IT Service Desk, CRM, and employee-service AI specialists are available now, with IT, security, and risk specialists arriving in June and September 2026.",
+              "why": "Enterprise clients will need implementers who can adapt prebuilt agents to real service processes, data permissions, and audit requirements.",
+              "action": "Learn one service workflow deeply, then design the handoff points where an agent should escalate to a human.",
+              "teacher": "Use this to teach governance: identity, permissions, incident logs, audit trails, and measurable containment rates.",
+              "link": "https://www.businesswire.com/news/home/20260505237676/en/ServiceNow-brings-Autonomous-Workforce-to-every-major-business-function"
+            },
+            {
+              "n": 5,
+              "category": "WRITER event-based triggers",
+              "title": "WRITER event-based triggers move enterprise agents from chat to autonomous workflow starts",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "WRITER launched event-based triggers for its enterprise agent platform, with connectors including Gmail, Gong, Calendar, Drive, SharePoint, and Slack.",
+              "why": "The opportunity is shifting from prompt writing to event design: knowing which business signal should start which workflow.",
+              "action": "Prototype one event-triggered service, such as meeting-ended to follow-up draft, customer feedback to issue triage, or deadline-near to status report.",
+              "teacher": "Teach trigger hygiene: false positives, approval gates, logs, retry behavior, and human override.",
+              "link": "https://www.businesswire.com/news/home/20260430878904/en/WRITER-Launches-Event-Based-Triggers-for-Enterprise-AI-Agents-Extending-Automation-Across-Systems-Without-Human-Initiation"
+            },
+            {
+              "n": 6,
+              "category": "F5 STEM and",
+              "title": "F5 STEM and AI education grants are open until June 14",
+              "source": "f5.com",
+              "relevance": "Intermediate",
+              "summary": "F5's 2026 STEM & AI Education Grants are open June 1-14, with notification planned for July 2026.",
+              "why": "AI education funding is creating short-window opportunities for curriculum builders, nonprofit partners, and",
+              "action": "Draft a one-page grant support offer for schools or nonprofits: AI curriculum outline, workshop plan, outcomes, and evaluation method. Teaching notes: Good AI education proposals need equity, practical projects, teacher support, and proof that students are learning transferable skills.",
+              "teacher": "-enablement consultants.",
+              "link": "https://www.f5.com/company/global-good/us-stem-grant"
+            },
+            {
+              "n": 7,
+              "category": "xAI AI Tutor",
+              "title": "xAI AI Tutor Chinese role shows multilingual audio model training as a specialist lane",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "xAI is hiring an AI Tutor specialized in multilingual audio capabilities to train and refine Grok for voice interactions, speech recognition, and accents.",
+              "why": "Domain evaluation work is expanding from text into speech, culture, accent, and audio UX.",
+              "action": "Build a portfolio sample that evaluates voice-agent responses for clarity, accent robustness, cultural fit, and correction quality.",
+              "teacher": "For language specialists, teach annotation rubrics and error taxonomy instead of only translation.",
+              "link": "https://job-boards.greenhouse.io/xai/jobs/5090180007"
+            },
+            {
+              "n": 8,
+              "category": "Reddit corporate AI",
+              "title": "Reddit corporate AI agents discussion says adoption is real but operational, not magical",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A public Reddit thread on corporate AI agents reports real company adoption of Cursor, Codex, and Claude Code, while warning that the change is less dramatic than replacement hype.",
+              "why": "The near-term opportunity is enablement, workflow redesign, and internal training for non-engineering staff.",
+              "action": "Offer a small-team AI adoption package: tool setup, safe-use policy, three role-specific workflows, and a weekly review loop.",
+              "teacher": "Use social discussion as a reality check: adoption succeeds when habits and workflows change, not when a tool is merely purchased.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1t25omv/state_of_ai_agents_in_corporates_in_mid2026/"
+            },
+            {
+              "n": 9,
+              "category": "Public X automation",
+              "title": "Public X automation thread points builders toward one deep workflow stack and useful client outcomes",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X post argues that builders should pick one stack such as n8n, Make, or Zapier and go deep enough to build useful workflows reliably.",
+              "why": "The market is punishing generic AI agency claims and rewarding specific implementation skill.",
+              "action": "Choose one tool stack and publish three proof demos: lead intake, invoice follow-up, and content repurposing with human approval.",
+              "teacher": "Teach depth before breadth: authentication, webhooks, retries, logs, data cleanup, and client handover docs.",
+              "link": "https://x.com/__dolani/status/2055543775062016450/photo/1"
+            },
+            {
+              "n": 10,
+              "category": "Creative Bloq says",
+              "title": "Creative Bloq says 3D artists can differentiate with hybrid AI concept, model, and upscaling workflows",
+              "source": "creativebloq.com",
+              "relevance": "Intermediate",
+              "summary": "Creative Bloq predicts 3D artists will increasingly use AI for concept development, model generation, automated texturing, retopology, UV mapping, and render upscaling.",
+              "why": "3D/design opportunity is not just making images; it is building controlled hybrid pipelines that keep artistic direction intact.",
+              "action": "Create a case study showing one product scene moving from AI mood board to mesh draft, Blender cleanup, material pass, and upscaled final.",
+              "teacher": "Stress taste, source locking, geometry checks, and render QA as the human premium in AI-assisted 3D work.",
+              "link": "https://www.creativebloq.com/3d/3d-artists-will-lose-the-fight-against-ai-in-2026"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 09",
       "label": "2026-06-10 · 09:07",
