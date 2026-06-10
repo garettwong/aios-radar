@@ -37,7 +37,7 @@
 .hq-focus li:before {
   counter-increment: f; content: counter(f);
   position: absolute; left: 12px; top: 12px; width: 26px; height: 26px; border-radius: 50%;
-  background: rgba(54,214,231,.12); color: var(--cyan); border: 1px solid var(--cyan-dim);
+  background: rgba(201,100,66,.12); color: var(--cyan); border: 1px solid var(--cyan-dim);
   font-family: var(--mono); font-weight: 700; font-size: 13px;
   display: flex; align-items: center; justify-content: center;
 }
@@ -72,8 +72,8 @@
 .hq-row .hq-next { color: var(--cyan); font-size: calc(12.5px * var(--fs)); margin-top: 6px; font-family: var(--mono); line-height: 1.45; }
 .hq-row .hq-next b { color: var(--ink-2); font-family: var(--sans); }
 .hq-tag.tag-money { color: var(--green); border-color: var(--green-dim); }
-.hq-tag.tag-messy { color: var(--amber); border-color: #7a5a12; }
-.hq-tag.tag-status { color: var(--violet); border-color: #5b4a8f; }
+.hq-tag.tag-messy { color: var(--amber); border-color: #D6BC7E; }
+.hq-tag.tag-status { color: var(--violet); border-color: #B7A4DC; }
 
 /* 📡 LEARN */
 .hq-learn-points { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: calc(13.5px * var(--fs)); line-height: 1.6; }
@@ -92,7 +92,7 @@
 .hq-lock-input { width: 100%; box-sizing: border-box; background: var(--bg-2); border: 1px solid var(--border-2); border-radius: 9px; color: var(--ink); font-size: calc(16px * var(--fs)); padding: 12px 14px; outline: none; font-family: var(--sans); }
 .hq-lock-input:focus { border-color: var(--cyan); }
 .hq-lock-remember { display: flex; align-items: center; gap: 7px; justify-content: center; color: var(--ink-3); font-size: calc(12px * var(--fs)); margin: 12px 0; }
-.hq-lock-btn { width: 100%; background: var(--cyan); color: #001316; border: none; border-radius: 9px; padding: 13px; font-size: calc(15px * var(--fs)); font-weight: 700; cursor: pointer; font-family: var(--sans); }
+.hq-lock-btn { width: 100%; background: var(--cyan); color: #FAF8F2; border: none; border-radius: 9px; padding: 13px; font-size: calc(15px * var(--fs)); font-weight: 700; cursor: pointer; font-family: var(--sans); }
 .hq-lock-btn:hover { filter: brightness(1.08); }
 .hq-lock-btn:disabled { opacity: .6; cursor: default; }
 .hq-lock-msg { color: var(--amber); font-size: calc(12.5px * var(--fs)); min-height: 18px; margin-top: 12px; }
@@ -101,7 +101,7 @@
 /* tap-to-check cockpit items */
 .hq-taphint { margin-top: 10px; font-size: calc(12px * var(--fs)); color: var(--cyan); opacity: .9; }
 .hq-focus li, .hq-actions li, .hq-row[data-k] { cursor: pointer; -webkit-tap-highlight-color: transparent; }
-.hq-focus li.done:before { content: "✓"; background: rgba(74,222,128,.18); color: var(--green); border-color: var(--green-dim); }
+.hq-focus li.done:before { content: "✓"; background: rgba(94,140,90,.18); color: var(--green); border-color: var(--green-dim); }
 .hq-focus li.done .hq-t { text-decoration: line-through; color: var(--ink-3); }
 .hq-focus li.done .hq-why { opacity: .55; }
 .hq-actions li.done { color: var(--green); text-decoration: line-through; }
@@ -116,12 +116,12 @@
 .hq-arrow:active { background: var(--panel-2); }
 /* delete (this-device hide) */
 .hq-del { width: 40px; height: 32px; line-height: 1; padding: 0; border: 1px solid var(--border-2); background: var(--bg-2); color: var(--ink-2); border-radius: 7px; font-size: 15px; cursor: pointer; flex: 0 0 auto; }
-.hq-del:hover { color: #ff6b6b; border-color: #ff6b6b; }
+.hq-del:hover { color: #BC4B4B; border-color: #BC4B4B; }
 .hq-del:active { background: var(--panel-2); }
 /* redesigned cockpit: pending zones + parked + today hero */
 .hq-zone { font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: var(--ink-2); margin: 14px 0 6px; text-transform: uppercase; }
 .hq-zone.hz-active { color: var(--green); }
-.hq-zone.hz-wait { color: #f0a93b; }
+.hq-zone.hz-wait { color: #B07E22; }
 .hq-parked { margin-top: 12px; border-top: 1px dashed var(--border-2); padding-top: 6px; }
 .hq-parked > summary { cursor: pointer; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: var(--ink-2); list-style: none; padding: 5px 0; text-transform: uppercase; }
 .hq-parked > summary::-webkit-details-marker { display: none; }

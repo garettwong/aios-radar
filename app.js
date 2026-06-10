@@ -25,7 +25,7 @@
   const HQ = window.DASHBOARD_HQ;
   const CAT = window.AIOS_CATALOG;
   if (!DATA) {
-    document.body.innerHTML = '<p style="font-family:monospace;color:#f87171;padding:40px">data.js failed to load.</p>';
+    document.body.innerHTML = '<p style="font-family:monospace;color:#BC4B4B;padding:40px">data.js failed to load.</p>';
     return;
   }
   const META = DATA.meta || {};
@@ -673,11 +673,11 @@
   function boardAdds() { try { var a = JSON.parse(localStorage.getItem(BOARD_ADD) || "[]"); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
   function boardSaveAdds(a) { try { localStorage.setItem(BOARD_ADD, JSON.stringify(a)); } catch (e) {} }
   var BOARD_COLS = [
-    { k: "inbox", t: "📥 INBOX", sub: "caught, not sorted", c: "#8aa0ad", pill: "NEW" },
-    { k: "active", t: "🔥 ACTIVE", sub: "finish before starting", c: "#4ade80", pill: "IN PROGRESS", pc: "#36d6e7", cap: 3 },
-    { k: "waiting", t: "⏳ WAITING", sub: "blocked on someone", c: "#f0a93b", pill: "WAITING" },
-    { k: "done", t: "✅ DONE", sub: "finished — bill it next", c: "#36d6e7", pill: "DONE", pc: "#4ade80" },
-    { k: "tobill", t: "💰 TO-BILL", sub: "cash on the table", c: "#f4c542", pill: "TO BILL" }
+    { k: "inbox", t: "📥 INBOX", sub: "caught, not sorted", c: "#8C8470", pill: "NEW" },
+    { k: "active", t: "🔥 ACTIVE", sub: "finish before starting", c: "#C96442", pill: "IN PROGRESS", cap: 3 },
+    { k: "waiting", t: "⏳ WAITING", sub: "blocked on someone", c: "#B07E22", pill: "WAITING" },
+    { k: "done", t: "✅ DONE", sub: "finished — bill it next", c: "#5E8C5A", pill: "DONE" },
+    { k: "tobill", t: "💰 TO-BILL", sub: "cash on the table", c: "#4A6FA5", pill: "TO BILL" }
   ];
   function boardTasks() {
     var HQ = window.DASHBOARD_HQ || {}, ov = boardOv();
