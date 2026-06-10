@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 12:12",
+    "fetchedAt": "2026-06-10 12:15",
     "editions": 107
   },
   "editions": [
     {
       "key": "2026-06-10 12",
-      "label": "2026-06-10 · 12:04",
+      "label": "2026-06-10 · 12:10",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 12:10 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Nextdoor uses Codex",
+              "title": "Nextdoor uses Codex for issue investigation on a core product team",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI published a Nextdoor customer story showing Codex used to investigate issues and support product engineers on the core platform team.",
+              "why": "Agentic coding is moving from demo tasks into production incident and platform work, where context gathering is often the real bottleneck.",
+              "action": "Try one bounded issue-investigation run: give the agent logs, repro notes, and repository context, then require a written root-cause brief before code edits.",
+              "teacher": "Teach this as the shift from autocomplete to investigative teammates: the first artifact is understanding, not a patch.",
+              "link": "https://openai.com/index/nextdoor/"
+            },
+            {
+              "n": 2,
+              "category": "Codex Security turns",
+              "title": "Codex Security turns agentic code review toward validated vulnerability fixing",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI describes Codex Security as a research-preview application-security agent that builds project context, creates editable threat models, validates findings, and proposes patches.",
+              "why": "The market is converging on agents that do the boring verification work, not just generate code or generic SAST noise.",
+              "action": "For any agent-written project, keep a short threat model beside the repo and ask the coding agent to update it when architecture changes.",
+              "teacher": "Useful lesson: good security agents need project-specific trust boundaries and validation loops, not only pattern matching.",
+              "link": "https://openai.com/index/codex-security-now-in-research-preview/"
+            },
+            {
+              "n": 3,
+              "category": "Project Glasswing expands",
+              "title": "Project Glasswing expands critical-infrastructure AI security scanning",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic says Project Glasswing is expanding to about 150 more organizations across more than 15 countries, focused on critical infrastructure codebases.",
+              "why": "Frontier-model cyber capability is becoming institutional infrastructure, and access control is becoming part of the product.",
+              "action": "Watch for downstream practices: vetted access, restricted model tiers, patch-suggestion workflows, and audit trails will likely become default expectations.",
+              "teacher": "Frame this as a governance pattern: advanced agents may be released through trust programs before they become general tools.",
+              "link": "https://www.anthropic.com/news/expanding-project-glasswing"
+            },
+            {
+              "n": 4,
+              "category": "Worktrunk packages git",
+              "title": "Worktrunk packages git worktrees for parallel AI agent runs",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Worktrunk GitHub repo positions itself as a git worktree manager built for running AI agents in parallel.",
+              "why": "Parallel agents are only useful if the repo workflow keeps branches, state, and review surfaces understandable.",
+              "action": "Adopt a naming convention for agent worktrees: task id, base branch, owner, and cleanup date.",
+              "teacher": "Teach worktrees as a core agent safety primitive: isolation makes multiple attempts cheap without polluting the main workspace.",
+              "link": "https://github.com/max-sixty/worktrunk"
+            },
+            {
+              "n": 5,
+              "category": "Hermes Agent emphasizes",
+              "title": "Hermes Agent emphasizes self-improving skills and persistent memory",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Nous Research describes Hermes Agent as an agent with a built-in learning loop that creates skills from experience and persists knowledge across sessions.",
+              "why": "Open-source agents are racing toward continuity: memory, reusable skills, and remote operation are now part of the baseline pitch.",
+              "action": "Evaluate any memory-enabled agent with three tests: what it stores, how it forgets, and whether skills are reviewable in git.",
+              "teacher": "Good teaching contrast: memory is powerful only when it is inspectable, scoped, and easy to correct.",
+              "link": "https://github.com/nousresearch/hermes-agent"
+            },
+            {
+              "n": 6,
+              "category": "DLSS coming to",
+              "title": "DLSS coming to Blender points at AI-assisted lookdev speedups",
+              "source": "creativebloq.com",
+              "relevance": "Intermediate",
+              "summary": "Creative Bloq reports that Nvidia DLSS with Ray Reconstruction is coming to Blender, aimed at faster and cleaner Cycles preview workflows.",
+              "why": "For 3D artists, AI value is not only generation. Faster previews change lighting, lookdev, client review, and iteration cadence.",
+              "action": "Track Blender 5.3 compatibility and prepare a before/after viewport test scene with noisy reflections, glass, and interior lighting.",
+              "teacher": "Teach this as practical AI in the render loop: less waiting changes creative decisions, not just render time.",
+              "link": "https://www.creativebloq.com/3d/nvidias-game-changing-dlss-is-finally-coming-to-blender"
+            },
+            {
+              "n": 7,
+              "category": "Hacker News cost",
+              "title": "Hacker News cost breakdown shows caching can make heavy agent use survivable",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "An HN discussion around a six-week AI coding-agent spend report highlights cache hit rate, expensive requests, and model mix as key cost drivers.",
+              "why": "Agent economics are becoming operational literacy. The winners will track cost per completed task, not just monthly subscription price.",
+              "action": "Add a lightweight run log: task, model, duration, token estimate, cache hit notes, outcome, and whether a cheaper model could have done it.",
+              "teacher": "Teaching angle: cost control is a workflow design skill, similar to profiling performance in code.",
+              "link": "https://news.ycombinator.com/item?id=45914307"
+            },
+            {
+              "n": 8,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are actively hunting open-source ways to cut Claude Code token burn",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/ClaudeAI post shares open-source repositories and workflow ideas aimed at reducing Claude Code token costs by large margins.",
+              "why": "Grassroots maker behavior is clear: as usage-based billing bites, people will reward tools that compress context and prevent waste.",
+              "action": "Before long agent runs, ask for a context budget and require the agent to state which files it will read before reading broadly.",
+              "teacher": "Use this as a classroom example of market pressure: pricing changes create tool categories around compression, planning, and guardrails.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u0m6q8/6_free_open_source_repos_that_cut_my_claude_code/"
+            },
+            {
+              "n": 9,
+              "category": "X signal: Tripo",
+              "title": "X signal: Tripo Smart Mesh is being marketed around structured meshes in seconds",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Search-visible X posts from VAST AI Research mention Tripo Studio Smart Mesh generating structured 3D meshes in about two seconds for game, real-time, and web 3D pipelines.",
+              "why": "The 3D AI race is shifting from pretty previews to pipeline assets: topology, exportability, and engine readiness are the real adoption tests.",
+              "action": "For AI 3D tools, compare outputs by topology cleanliness, UVs, material slots, rigging path, and Blender or Unreal import behavior.",
+              "teacher": "Teach artists to judge AI 3D by downstream editability, not by the first rendered thumbnail.",
+              "link": "https://x.com/VastAIResearch"
+            },
+            {
+              "n": 10,
+              "category": "X signal: high-spend",
+              "title": "X signal: high-spend agent users are normalizing voice-led coding workflows",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X post says one power user spends heavily on AI coding agents and mostly talks through coding instead of typing code.",
+              "why": "This is an early behavior signal: agent power users are optimizing for orchestration, supervision, and throughput, not keystrokes.",
+              "action": "Test one voice-to-agent workflow for a small feature: dictate intent, ask for a plan, then review diffs and tests manually.",
+              "teacher": "Teaching note: the new skill is precise delegation plus verification. Voice can speed intent capture, but it raises the bar for review discipline.",
+              "link": "https://x.com/paytkaleiwahea/status/2062191796373877199"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
