@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 15:15",
+    "fetchedAt": "2026-06-10 15:18",
     "editions": 108
   },
   "editions": [
     {
       "key": "2026-06-10 15",
-      "label": "2026-06-10 · 15:06",
+      "label": "2026-06-10 · 15:09",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-10 · 15:09 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Vercel production index",
+              "title": "Vercel production index shows low-cost models entering real coding-agent traffic",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel reports that DeepSeek V4 jumped to meaningful production token share in May while Anthropic still captured most spend in high-stakes use cases such as app generation, back-office agents, and coding agents.",
+              "why": "The model market is splitting into cheap high-volume routing and expensive frontier work, which directly affects agent workflow economics.",
+              "action": "Start tagging agent runs by task difficulty and try routing low-risk subtasks to cheaper models while keeping review-heavy work on frontier models.",
+              "teacher": "Use this as a pricing lesson: model choice is now part of workflow design, not just a preference setting.",
+              "link": "https://vercel.com/blog/ai-gateway-production-index-june-2026"
+            },
+            {
+              "n": 2,
+              "category": "Google frames Gemini",
+              "title": "Google frames Gemini 3 agents around open-source framework interoperability",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google highlights building agents with Gemini 3 through open-source frameworks and the Vercel AI SDK, including streaming, tool use, and structured generation.",
+              "why": "Platform competition is shifting from single chat apps to model access through the frameworks developers already use.",
+              "action": "Keep agent code modular enough to swap model providers and framework adapters without rewriting the whole workflow.",
+              "teacher": "Teach the stack as model plus framework plus tools plus evals; none of those layers should be treated as permanent.",
+              "link": "https://developers.googleblog.com/building-ai-agents-with-google-gemini-3-and-open-source-frameworks/"
+            },
+            {
+              "n": 3,
+              "category": "Cloudflare Agent Memory",
+              "title": "Cloudflare Agent Memory points at managed persistent memory for production agents",
+              "source": "blog.cloudflare.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudflare announced a private beta for Agent Memory, a managed service that extracts useful information from agent conversations and recalls it later without filling the context window.",
+              "why": "Long-running maker and business agents need memory that is retrievable, scoped, and forgettable rather than one giant prompt history.",
+              "action": "For any persistent assistant, define what should be remembered, what should expire, and what should never enter memory.",
+              "teacher": "This is the difference between context and memory: context helps this run, memory changes future runs.",
+              "link": "https://blog.cloudflare.com/introducing-agent-memory/"
+            },
+            {
+              "n": 4,
+              "category": "Cloudflare Agent Lee",
+              "title": "Cloudflare Agent Lee turns dashboard operations into an account-aware prompt surface",
+              "source": "blog.cloudflare.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudflare introduced Agent Lee, an in-dashboard assistant that understands account resources, retrieves operational context, and renders visualizations for account questions.",
+              "why": "Enterprise tools are adding agents directly where operational data lives, reducing tab-switching and creating stronger demand for permissions, auditability, and source grounding.",
+              "action": "When choosing SaaS tools, check whether their agents can cite live account data and show what actions they are about to take.",
+              "teacher": "Show this as embedded-agent UX: the agent is not a separate chatbot, it becomes part of the control panel.",
+              "link": "https://blog.cloudflare.com/introducing-agent-lee/"
+            },
+            {
+              "n": 5,
+              "category": "Adobe backs the",
+              "title": "Adobe backs the CREATOR Act as style imitation becomes a market issue",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe argues that creators need legal protection against mass AI imitation of a signature style without consent or compensation.",
+              "why": "For makers and 3D/design professionals, provenance, consent, and style ownership are becoming business constraints, not just ethics debates.",
+              "action": "Keep source references, client approvals, and generation prompts archived for any commercial AI-assisted visual work.",
+              "teacher": "Teach students to separate inspiration, reference, licensed source material, and protected living-artist style imitation.",
+              "link": "https://blog.adobe.com/en/publish/2026/06/02/the-creator-act-protection-artists-need-age-of-ai"
+            },
+            {
+              "n": 6,
+              "category": "Apple WWDC coverage",
+              "title": "Apple WWDC coverage shows privacy is the consumer-agent wedge",
+              "source": "barrons.com",
+              "relevance": "Intermediate",
+              "summary": "Barron's reports that Apple emphasized privacy far more than agents at WWDC, using privacy as the differentiator while others push broader agent systems.",
+              "why": "Consumer AI agents will not be judged only by capability; trust, local processing, data retention, and permission clarity are becoming product positioning.",
+              "action": "When evaluating a new assistant or creative agent, ask where data is stored, what actions require confirmation, and how memory can be deleted.",
+              "teacher": "This is a good contrast case: same AI trend, different adoption wedge.",
+              "link": "https://www.barrons.com/livecoverage/apple-wwdc-event-ai-tim-cook/card/-privacy-overshadows-agents-as-apple-announces-new-ai-efforts-3fy7MPaVQ4oHpLsV0nqu"
+            },
+            {
+              "n": 7,
+              "category": "GitHub repo curates",
+              "title": "GitHub repo curates real-world agent skills across Codex, Claude, Copilot, Cursor, and Gemini",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The awesome-agent-skills repository curates text-based skills intended to teach coding assistants task-specific practices across multiple agent platforms.",
+              "why": "Agent skill distribution is becoming a lightweight open-source layer between raw prompts and full MCP/tool integrations.",
+              "action": "Collect only skills that match repeated work, then test them against a small benchmark before adding them to your default agent context.",
+              "teacher": "Teach skills as reusable operating instructions; useful when specific, risky when bloated or untested.",
+              "link": "https://github.com/heilcheng/awesome-agent-skills"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News debates",
+              "title": "Hacker News debates whether agent skills create real control or token overhead",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Hacker News thread around a test-driven-development agent skill includes skepticism and practical debate about whether skills reliably improve agent behavior.",
+              "why": "The market is moving toward portable skills, but serious users still want evidence that they improve outcomes and do not just consume more context.",
+              "action": "For every skill you use, keep a before/after example and a failure case; delete skills that do not measurably help.",
+              "teacher": "This is a useful lesson in evaluation: instructions are not infrastructure unless they change behavior under test.",
+              "link": "https://news.ycombinator.com/item?id=48398925"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Claude users",
+              "title": "Reddit Claude users surface self-hosted sandboxes and MCP tunnels for managed agents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit post highlights public-beta self-hosted sandboxes and MCP tunnels for Claude Managed Agents, pointing to agents running in user-controlled environments.",
+              "why": "Power users want agent execution closer to their own infrastructure, where dependencies, secrets, networking, and compliance can be controlled.",
+              "action": "For any agent that touches real assets, prefer sandboxed environments with limited network and explicit secret handling.",
+              "teacher": "Use this to explain why where the agent runs matters as much as which model powers it.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1thg711/selfhosted_sandboxes_and_mcp_tunnels_for_claude/"
+            },
+            {
+              "n": 10,
+              "category": "Public X article",
+              "title": "Public X article frames dynamic workflows as the next Claude Code primitive",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X article describes dynamic workflows as JavaScript that Claude writes on the fly using agent, parallel, and pipeline patterns.",
+              "why": "Maker discussion is moving from single-agent prompts toward agent orchestration patterns that can fan out, verify, and recombine work.",
+              "action": "Experiment with one small parallel workflow, such as research to implementation to verification, before trusting large fan-out automation.",
+              "teacher": "Teach dynamic workflows as orchestration code: useful only when each branch has a clear contract and verification step.",
+              "link": "https://x.com/Av1dlive/article/2064292484856041558"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
