@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 03:25",
+    "fetchedAt": "2026-06-11 03:30",
     "editions": 112
   },
   "editions": [
     {
       "key": "2026-06-11 03",
-      "label": "2026-06-11 · 03:15",
+      "label": "2026-06-11 · 03:23",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 03:23 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Stack Overflow launches",
+              "title": "Stack Overflow launches Stack Overflow for Agents as a knowledge layer for coding agents",
+              "source": "stackoverflow.blog",
+              "relevance": "Intermediate",
+              "summary": "Stack Overflow announced a product direction aimed at giving AI coding agents access to structured, trusted developer knowledge instead of relying only on raw web retrieval or model memory.",
+              "why": "Coding agents are moving from autocomplete into autonomous work, so the next bottleneck is reliable domain knowledge and provenance.",
+              "action": "Watch how Stack Overflow packages accepted answers, citations, and licensing for agent use; this may become a safer knowledge source than random snippets.",
+              "teacher": "Explain this as “agent RAG with reputation”: the value is not just content, but curated trust and source discipline.",
+              "link": "https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/"
+            },
+            {
+              "n": 2,
+              "category": "WorkOS frames secrets",
+              "title": "WorkOS frames secrets management as a core blocker for production AI agents",
+              "source": "workos.com",
+              "relevance": "Intermediate",
+              "summary": "WorkOS published guidance on managing API keys, tokens, and secrets for AI agents, including environment isolation, scoped credentials, and short-lived access.",
+              "why": "As agents gain tool access, bad credential design turns a normal mistake into production damage.",
+              "action": "For any agent workflow, separate staging and production credentials, prefer short-lived tokens, and audit every tool that can mutate external systems.",
+              "teacher": "Teach agent security with the phrase “least privilege plus short lifetime”; the model is not the boundary, the credential is.",
+              "link": "https://workos.com/blog/ai-agent-secrets-management"
+            },
+            {
+              "n": 3,
+              "category": "Signal AI MCP",
+              "title": "Signal AI MCP exposes reputation and risk intelligence directly to agents",
+              "source": "signal-ai.com",
+              "relevance": "Intermediate",
+              "summary": "Signal AI launched an MCP connector that exposes entity search, narrative analysis, and risk intelligence as callable tools for AI agents.",
+              "why": "Enterprise agent value is shifting toward specialized, high-trust data tools rather than generic chatbot access.",
+              "action": "Map which premium data sources in your own workflows should become tool calls instead of pasted context.",
+              "teacher": "This is a clean example of MCP turning a database or SaaS product into an agent-native capability layer.",
+              "link": "https://signal-ai.com/insights/press_release/signal-ai-puts-decision-intelligence-directly-inside-your-ai-agent-with-launch-of-mcp-connector/"
+            },
+            {
+              "n": 4,
+              "category": "Langfuse lets agents",
+              "title": "Langfuse lets agents create and manage evaluation rules through MCP",
+              "source": "langfuse.com",
+              "relevance": "Intermediate",
+              "summary": "Langfuse added MCP support for setting up evaluators and evaluation rules, plus public API support for code evaluators.",
+              "why": "Agent teams need evaluation to be part of the workflow itself, not a separate dashboard humans remember to update later.",
+              "action": "Add evaluator creation to your agent project templates: every new workflow should define what “good” means before it runs at scale.",
+              "teacher": "Position this as the feedback loop layer: agents propose, tools execute, evaluators keep score.",
+              "link": "https://langfuse.com/changelog/2026-06-10-evaluators-via-mcp"
+            },
+            {
+              "n": 5,
+              "category": "Rubrik Agent Cloud",
+              "title": "Rubrik Agent Cloud for Claude Code highlights machine-speed recovery for agent-driven risk",
+              "source": "blocksandfiles.com",
+              "relevance": "Intermediate",
+              "summary": "Blocks & Files reported Rubrik announcements around Rubrik AI, Rubrik Agent Cloud for Claude Code and Claude Cowork, and autonomous recovery for cloud applications.",
+              "why": "Backup and recovery vendors are treating AI agents as both productivity tools and new operational risk surfaces.",
+              "action": "For agent-enabled repos, document rollback paths for code, data, and cloud configuration before expanding write access.",
+              "teacher": "A useful lesson for makers: autonomy without recovery is not autonomy, it is just faster failure.",
+              "link": "https://www.blocksandfiles.com/ai-ml/2026/06/10/rubrik-using-ai-for-a-service-interface-anthropic-claude-safety-net-and-cloud-app-stack-recovery/5253408"
+            },
+            {
+              "n": 6,
+              "category": "claude-context packages repo-scale",
+              "title": "claude-context packages repo-scale code search as an MCP layer for coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The zilliztech/claude-context GitHub project provides code search MCP infrastructure so agents can query a whole codebase more reliably.",
+              "why": "Long context alone is not enough; agents need fast, targeted retrieval that respects code structure.",
+              "action": "Test code-search MCP tools on one large repo and compare token use, answer quality, and edit accuracy against plain file stuffing.",
+              "teacher": "Teach this as “search before context”: retrieval should narrow the work before the model reasons.",
+              "link": "https://github.com/zilliztech/claude-context"
+            },
+            {
+              "n": 7,
+              "category": "Hivemind experiments with",
+              "title": "Hivemind experiments with shared session memory across Claude Code and Codex",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Activeloop’s Hivemind repo describes auto-capture and auto-recall memory that can share session context across Claude Code, Codex, and related agent tools.",
+              "why": "Memory is becoming a product category around coding agents, especially for teams that bounce between tools.",
+              "action": "Track which memories are facts, preferences, decisions, or transient task state; mixing them will make recall noisy.",
+              "teacher": "The important distinction is durable memory versus session transcript. Good systems compress decisions, not everything.",
+              "link": "https://github.com/activeloopai/hivemind"
+            },
+            {
+              "n": 8,
+              "category": "HN discussion tests",
+              "title": "HN discussion tests demand for Stack Overflow-style shared learning for agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Hacker News picked up the Stack Overflow for Agents announcement, creating early discussion around whether shared agent knowledge is useful and trustworthy.",
+              "why": "HN is a good temperature check for developer skepticism; adoption will depend on source quality, incentives, and how much agents can verify.",
+              "action": "Read the comments for objections before pitching any “knowledge for agents” product; the resistance points are product requirements.",
+              "teacher": "Use this as a critique exercise: ask what an agent should trust, what it should verify, and what it should ignore.",
+              "link": "https://news.ycombinator.com/item?id=48466112"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Claude Code",
+              "title": "Reddit Claude Code users are reacting to agent usage-plan shifts before June 15",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit ClaudeCode thread shows users discussing upcoming June 15 usage changes for agent and claude -p workflows, with concern from heavy users.",
+              "why": "Pricing and quota pressure is now shaping how makers design workflows, not just which model they prefer.",
+              "action": "Build a simple weekly cost dashboard for agent usage: model, tokens, retries, failed runs, and background jobs.",
+              "teacher": "Explain that agent economics are workflow design. Long-running autonomy must include budget controls.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1tddnkh/claude_code_has_announced_that_starting_june_15th/"
+            },
+            {
+              "n": 10,
+              "category": "Public X article",
+              "title": "Public X article surfaces a practical logging layer for AI coding tools",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article describes logging Claude Code, Cursor, and Codex activity into Splunk to understand what AI coding tools leave on disk and do locally.",
+              "why": "Power users are starting to treat coding agents like observable software systems, not mysterious assistants.",
+              "action": "Add local logging for agent commands, file writes, tool calls, and generated artifacts; redact secrets before indexing.",
+              "teacher": "This is the maker-friendly version of governance: if an agent acts on your machine, you should be able to inspect its trail.",
+              "link": "https://x.com/robrounsavall/article/2063771275835633766"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
