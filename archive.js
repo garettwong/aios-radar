@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 00:20",
-    "editions": 110
+    "fetchedAt": "2026-06-11 00:26",
+    "editions": 111
   },
   "editions": [
+    {
+      "key": "2026-06-11 00",
+      "label": "2026-06-11 · 00:15",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 00:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Scout reframes",
+              "title": "Microsoft Scout reframes Copilot as an always-on work autopilot",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft is positioning Scout as an autonomous, always-on work agent that can watch context across Microsoft 365 and act in the background.",
+              "why": "The category shift from chat assistant to monitored worker is becoming mainstream enterprise language.",
+              "action": "Watch for workflows where persistent memory, permissions, and proactive monitoring matter more than prompt quality.",
+              "teacher": "Explain this as the move from ask-an-assistant to manage-a-small-delegated-worker with policy controls.",
+              "link": "https://www.techradar.com/pro/a-new-category-of-agents-microsoft-reveals-scout-its-first-autopilot-which-wants-to-change-how-you-work-for-good"
+            },
+            {
+              "n": 2,
+              "category": "AI tool costs",
+              "title": "AI tool costs are forcing companies to put agents on a budget",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Enterprises are tightening AI usage as token-based pricing, internal caps, and ROI pressure replace the earlier all-you-can-eat phase.",
+              "why": "Agent adoption will increasingly be constrained by unit economics, not just model capability.",
+              "action": "Track cost per completed task, cache aggressively, and reserve premium models for judgment-heavy steps.",
+              "teacher": "Teach makers to think like production managers: model choice, context size, retries, and review loops are budget decisions.",
+              "link": "https://www.businessinsider.com/ai-companies-raising-prices-internal-token-limits-openai-anthropic-ipo-2026-6"
+            },
+            {
+              "n": 3,
+              "category": "OpenAI winds down",
+              "title": "OpenAI winds down no-code Agent Builder and points agent work back to SDKs and Workspace Agents",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI updated its AgentKit page to say Agent Builder and Evals are being wound down, with code-first workflows pointed to the Agents SDK.",
+              "why": "Platform strategy is separating serious programmable agents from natural-language workspace automation.",
+              "action": "Keep durable agent logic in code, version prompts/tools, and avoid depending on no-code builders for core operations.",
+              "teacher": "The lesson is portability: if an agent matters, its behavior should live in files, tests, and deployable code.",
+              "link": "https://openai.com/index/introducing-agentkit/"
+            },
+            {
+              "n": 4,
+              "category": "Cursor Enterprise Organizations",
+              "title": "Cursor Enterprise Organizations adds separate security, governance, budget, and feature controls",
+              "source": "cursor.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor now lets enterprise customers manage multiple teams with separate security, budget, governance, and feature settings.",
+              "why": "AI coding tools are moving from individual subscriptions into admin-managed software fleets.",
+              "action": "For teams, define which models, tools, and review modes are allowed per repo or client before scaling agent use.",
+              "teacher": "This is a good example of the boring but important layer that makes agents acceptable in real companies.",
+              "link": "https://cursor.com/changelog/enterprise-organizations"
+            },
+            {
+              "n": 5,
+              "category": "GitHub Copilot product",
+              "title": "GitHub Copilot product page makes June 2026 code-review billing visible to normal buyers",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub's Copilot page now surfaces that code-review workflows consume GitHub Actions minutes beginning June 1, 2026.",
+              "why": "AI review is becoming a metered CI resource, not a free add-on.",
+              "action": "Use AI review selectively on risky diffs, batch review jobs, and measure whether it reduces human review time.",
+              "teacher": "Tie this to agent economics: automated review is useful, but every loop has a compute and billing footprint.",
+              "link": "https://github.com/features/copilot"
+            },
+            {
+              "n": 6,
+              "category": "A new GitHub",
+              "title": "A new GitHub repo curates 2026 AI agent frameworks, tools, protocols, and resources",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Zijian-Ni awesome-ai-agents-2026 repo is another sign that agent tooling has fragmented into many frameworks and categories.",
+              "why": "Discovery is now a workflow problem: builders need a map of harnesses, protocols, browser agents, local agents, and evaluation tools.",
+              "action": "Maintain a short internal shortlist rather than chasing every repo; evaluate tools by integration depth and maintenance signals.",
+              "teacher": "Use this to teach tool taxonomy: model, harness, memory, eval, browser control, deployment, and governance are different layers.",
+              "link": "https://github.com/Zijian-Ni/awesome-ai-agents-2026"
+            },
+            {
+              "n": 7,
+              "category": "Tripo 8K Texture",
+              "title": "Tripo 8K Texture pushes AI 3D assets closer to Blender, Unity, and Unreal delivery",
+              "source": "tripo3d.ai",
+              "relevance": "Intermediate",
+              "summary": "Tripo says its 8K exports include 8192x8192 BaseColor plus Normal and ORM maps for common 3D workflows.",
+              "why": "AI 3D is shifting from novelty meshes toward asset pipeline compatibility.",
+              "action": "Test outputs in Blender with real lighting, UV inspection, and target-engine texture budgets before promising production quality.",
+              "teacher": "For artists, the key question is not can-it-generate but does-it-survive-the-downstream-pipeline.",
+              "link": "https://www.tripo3d.ai/blog/tripo-8k-texture"
+            },
+            {
+              "n": 8,
+              "category": "HN Superset launch",
+              "title": "HN Superset launch shows demand for IDEs that run multiple coding agents in parallel",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Superset launched on Hacker News as an open-source agentic IDE for running Claude Code, Codex, OpenCode, and similar agents in parallel.",
+              "why": "The market is forming around agent coordination surfaces, not just better single-agent chat.",
+              "action": "Prototype parallel-agent workflows only with strong branch isolation, clear task scopes, and a final human integration pass.",
+              "teacher": "Teach parallel agents like parallel interns: useful for independent work, dangerous when their outputs collide.",
+              "link": "https://news.ycombinator.com/item?id=48236770"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Claude Code",
+              "title": "Reddit Claude Code users are searching for cloud-agent isolation beyond plain worktrees",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A ClaudeAI thread asks how to dispatch multiple cloud agents against one repo without agents clashing, noting that worktrees can still confuse commits and PRs.",
+              "why": "Real users are hitting orchestration problems after adopting multi-agent coding, especially around isolation and handoff.",
+              "action": "Standardize branch naming, PR ownership, worktree cleanup, and agent logs before scaling beyond one agent per repo.",
+              "teacher": "This is a practical pain signal: orchestration quality is now part of developer productivity.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1tzri9h/cloud_agent_solutions/"
+            },
+            {
+              "n": 10,
+              "category": "Public X loop-mode",
+              "title": "Public X loop-mode discussion frames coding agents as background operations",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article/snippet argues that loop mode signals a shift from one-off prompts to background coding operations.",
+              "why": "The language around coding agents is converging on run loops, monitoring, and supervision rather than chat turns.",
+              "action": "Build checklists for when an agent may loop, when it must stop, and what evidence it must produce before review.",
+              "teacher": "Show learners that autonomy is a control problem: define stop conditions, artifacts, and verification before starting the loop.",
+              "link": "https://x.com/mvanhorn/article/2063865685558903149"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-11 · 00:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Planet AI Engineer,",
+              "title": "Planet AI Engineer, Marketing role turns revenue work into automation engineering.",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Planet is hiring an AI Engineer for Marketing, with explicit emphasis on automation and AI reshaping revenue workflows.",
+              "why": "Marketing teams now need builders who can translate campaign and data problems into working internal tools.",
+              "action": "Package one portfolio demo: a campaign-intake agent that drafts briefs, routes approvals, and produces reporting snapshots.",
+              "teacher": "Teach this as marketing operations becomes product work: map trigger, data, decision, human approval, and measurable lift.",
+              "link": "https://job-boards.greenhouse.io/planetlabs/jobs/7782580"
+            },
+            {
+              "n": 2,
+              "category": "Neuroscale Forward Deployed",
+              "title": "Neuroscale Forward Deployed Engineer points to client-side AI workflow deployment work.",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Neuroscale describes a role building integrations, prototypes, AI workflows, troubleshooting deployments, and working close to product and engineering.",
+              "why": "This is the consulting pattern: clients do not just buy models, they buy someone who can make messy systems run.",
+              "action": "Create a one-page offer around AI workflow deployment sprint for CRM, support, or creative ops teams.",
+              "teacher": "Show learners the difference between a chatbot demo and a deployed workflow: integration, logging, fallback, support, and iteration.",
+              "link": "https://jobs.ashbyhq.com/neuroscale/02674783-e6dd-4a27-90a8-e727407c2e32"
+            },
+            {
+              "n": 3,
+              "category": "Leadtech AI Automation",
+              "title": "Leadtech AI Automation Engineer role asks for multi-agent systems in customer workflows.",
+              "source": "jobs.workable.com",
+              "relevance": "Intermediate",
+              "summary": "Leadtech is hiring a remote AI Automation Engineer to design multi-agent systems for customer-facing workflows like email triage, refunds, and escalation.",
+              "why": "Customer operations is becoming one of the clearest paid lanes for practical agent builders.",
+              "action": "Build a sample support automation with three agents: classifier, resolver, and escalation writer, with a human review queue.",
+              "teacher": "Use it to teach agent boundaries: each agent needs a narrow responsibility, shared state, and a stop condition.",
+              "link": "https://jobs.workable.com/view/gzm67fKY8TMRmypo7EHCiQ/remote-ai-automation-engineer-in-spain-at-leadtech"
+            },
+            {
+              "n": 4,
+              "category": "Deeplocal Experience Designer",
+              "title": "Deeplocal Experience Designer job values AI tools plus spatial 3D thinking.",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Deeplocal wants an Experience Designer who can communicate ideas using AI tools, decks, 3D software, and spatial thinking for physical experiences.",
+              "why": "For 3D/design talent, the opportunity is not only rendering faster; it is selling physical ideas more clearly.",
+              "action": "Turn one past booth or installation concept into a mini case study: AI mood board, rough 3D blockout, interaction sketch, and final deck page.",
+              "teacher": "Teach the workflow as concept compression: use AI for breadth, then 3D craft for scale, material, and believable constraints.",
+              "link": "https://job-boards.greenhouse.io/deeplocal/jobs/7942188"
+            },
+            {
+              "n": 5,
+              "category": "Nike Generative AI",
+              "title": "Nike Generative AI Design Expert shows major brands hiring for AI-native design craft.",
+              "source": "careers.nike.com",
+              "relevance": "Intermediate",
+              "summary": "Nike lists a full-time Generative AI Design Expert role in its design career area.",
+              "why": "Generative design is moving from side experiment to named role inside major brand teams.",
+              "action": "Prepare a brand-safe AI design portfolio: controlled variations, prompt and process notes, rights-aware sources, and final human art direction.",
+              "teacher": "Make students document decisions, not just outputs: why this shape, why this material, why this variation fits the brand.",
+              "link": "https://careers.nike.com/generative-ai-design-expert/job/R-71324"
+            },
+            {
+              "n": 6,
+              "category": "Minitab Graphic Design",
+              "title": "Minitab Graphic Design Intern role includes AI in design workflows.",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Minitab lists interest in emerging technologies, including AI in design workflows, as part of a graphic design internship.",
+              "why": "AI literacy is becoming expected even at entry-level creative roles.",
+              "action": "Create a beginner-friendly lesson on AI-assisted layout cleanup, copy variants, and production-ready export checks.",
+              "teacher": "Frame AI as a junior production assistant: useful for options and cleanup, but final taste, hierarchy, and typography remain human responsibilities.",
+              "link": "https://job-boards.greenhouse.io/minitab/jobs/7584591003"
+            },
+            {
+              "n": 7,
+              "category": "Upwork post asks",
+              "title": "Upwork post asks for n8n, Make, GoHighLevel, Claude, and API automation.",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Upwork listing asks for workflows across n8n, Make, GoHighLevel, Claude, OpenAI, APIs, webhooks, CRM automation, reporting, and troubleshooting.",
+              "why": "Buyers are bundling agents with ordinary business plumbing; the freelancer who can connect the whole stack is more valuable.",
+              "action": "Offer an audit package for lead capture, routing, follow-up, and reporting automations, with a fixed-scope repair plan.",
+              "teacher": "Teach students to read job posts as specs: list systems, triggers, data fields, error cases, and handoff points.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-n8n-Make-com-GoHighLevel-Claude-API-Integrations_~022064415388367802049/"
+            },
+            {
+              "n": 8,
+              "category": "n8n community remote",
+              "title": "n8n community remote hiring post offers monthly AI automation workflow work.",
+              "source": "community.n8n.io",
+              "relevance": "Intermediate",
+              "summary": "A June 7 n8n community job post seeks a remote developer to build and maintain AI-powered automation workflows for $1,500 per month.",
+              "why": "Community job posts show the lower-mid market for recurring automation retainers, not just one-off builds.",
+              "action": "Create a retainer menu: workflow maintenance, monitoring, bug fixes, small improvements, and monthly documentation.",
+              "teacher": "Teach pricing by responsibility level: build-only, maintain-and-monitor, or own-the-business-outcome.",
+              "link": "https://community.n8n.io/t/hiring-n8n-ai-automation-developer-remote/298577"
+            },
+            {
+              "n": 9,
+              "category": "Reddit beginners ask",
+              "title": "Reddit beginners ask if n8n automation can become a real career.",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit discussion asks whether deep n8n learning can lead to real jobs or freelance opportunities, and what companion skills matter.",
+              "why": "This is useful demand signal: people are actively looking for a learning path, not just a tool.",
+              "action": "Create a short curriculum: n8n basics, APIs, JavaScript, webhooks, auth, error handling, and client discovery.",
+              "teacher": "Start with one business process and one API before teaching agents; durable automation fundamentals still matter.",
+              "link": "https://www.reddit.com/r/n8n/comments/1rqssag/can_n8n_automation_become_a_real_career/"
+            },
+            {
+              "n": 10,
+              "category": "Public X posts",
+              "title": "Public X posts position AI Automation Builder and n8n specialist as marketable identities.",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Search-visible X posts from Riddham Jain recommend positioning around titles like AI Automation Builder or n8n Automation Specialist, and mention lead generation as a common 2026 request.",
+              "why": "The social-market signal is that buyers and creators are converging on simple job labels, not abstract AI expertise.",
+              "action": "Test a profile headline and offer around one vertical, such as AI automation for design studios or n8n lead-gen systems for agencies.",
+              "teacher": "Teach positioning as a constraint: one audience, one painful workflow, one proof artifact, one measurable outcome.",
+              "link": "https://x.com/riddhamjain"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 21",
       "label": "2026-06-10 · 21:15",
