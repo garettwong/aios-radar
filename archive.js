@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 09:07",
-    "editions": 105
+    "fetchedAt": "2026-06-10 09:09",
+    "editions": 106
   },
   "editions": [
+    {
+      "key": "2026-06-10 09",
+      "label": "2026-06-10 · 09:07",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 09:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Aris Search AI",
+              "title": "Aris Search AI Automation Specialist role demands builders who can deploy, test, and improve real business workflows",
+              "source": "wayup.com",
+              "relevance": "Intermediate",
+              "summary": "A live AI Automation Specialist listing asks for someone who can deploy Claude or ChatGPT inside businesses, build n8n or Zapier workflows, connect tools to daily operations, and improve production systems.",
+              "why": "This is the clearest job-market signal: clients do not want prompt theory, they want operators who can make reliable internal automation.",
+              "action": "Package a portfolio demo around one messy business process: intake, CRM update, follow-up email, dashboard, error alert, and a short QA checklist.",
+              "teacher": "Teach automation as operations design first, tools second. Show the before and after process map, then the n8n or Zapier build, then the test cases.",
+              "link": "https://www.wayup.com/i-j-AI-Automation-Specialist-Aris-Search-412018508873556/"
+            },
+            {
+              "n": 2,
+              "category": "Wuzzuf lists a",
+              "title": "Wuzzuf lists a remote n8n, Zapier, and Make workflow developer role for smart business infrastructure",
+              "source": "wuzzuf.net",
+              "relevance": "Intermediate",
+              "summary": "A remote full-time workflow developer role centers on n8n, Zapier, Make, sales, operations, and workflow optimization for smart businesses.",
+              "why": "Automation work is becoming a named production role, not a side skill hidden inside admin or marketing jobs.",
+              "action": "Build a reusable workflow audit offer: find 5 repetitive tasks, estimate savings, build one pilot, then quote maintenance.",
+              "teacher": "Have learners compare n8n, Zapier, and Make on the same workflow so they learn tradeoffs, not just node clicking.",
+              "link": "https://wuzzuf.net/jobs/p/dnqlob931x79-automation-workflow-developer-n8n-zapier-make-remote-full-time-richmond-united-states"
+            },
+            {
+              "n": 3,
+              "category": "Indeed India shows",
+              "title": "Indeed India shows broad remote demand for AI automation, n8n, APIs, Playwright, Zapier, and Make",
+              "source": "in.indeed.com",
+              "relevance": "Intermediate",
+              "summary": "Indeed results show multiple AI automation roles asking for n8n, APIs, Zapier, Make, and sometimes Playwright or browser automation.",
+              "why": "The skill cluster is stabilizing: workflow automation plus API integration plus browser automation is employable across regions.",
+              "action": "Create a small credential-style proof: one API workflow, one browser automation, one human approval step, and one monitoring report.",
+              "teacher": "Frame this as automation stack literacy: trigger, transform, model call, external action, exception path, and audit log.",
+              "link": "https://in.indeed.com/q-ai-automation-n8n-jobs.html"
+            },
+            {
+              "n": 4,
+              "category": "NOK is hiring",
+              "title": "NOK is hiring an AI Designer / Generative Image Maker for campaign-quality generative visuals",
+              "source": "sg.indeed.com",
+              "relevance": "Intermediate",
+              "summary": "NextOfKin Creatives is recruiting an AI Designer / Generative Image Maker with visual taste, object conceptualization, motion thinking, prompt engineering, and emerging image workflows.",
+              "why": "Creative AI hiring is moving toward high-end visualization and art direction, which suits 3D and design people better than generic prompting.",
+              "action": "Make a 6-image campaign-quality case study: concept, references, prompt iterations, retouching notes, motion extension, and final brand-safe outputs.",
+              "teacher": "Teach students to critique AI images like production art: silhouette, material logic, type safety, perspective, artifacts, and brand fit.",
+              "link": "https://sg.indeed.com/q-designer-ai-jobs.html"
+            },
+            {
+              "n": 5,
+              "category": "ZipRecruiter shows generative",
+              "title": "ZipRecruiter shows generative 3D work as a live job category with hundreds of listings",
+              "source": "ziprecruiter.com",
+              "relevance": "Intermediate",
+              "summary": "ZipRecruiter generative 3D listings describe work around procedural modeling, AI-generated 3D content, gaming, animation, architecture, and VR.",
+              "why": "Generative 3D is becoming a searchable labor market category, which means clients can understand and buy the service.",
+              "action": "Offer AI-to-3D cleanup as a niche: generate draft assets, repair topology and materials, render contact sheets, and deliver usable Blender or GLB files.",
+              "teacher": "Teach a hybrid workflow: AI draft, manual topology and material correction, scale check, lighting test, and final asset packaging.",
+              "link": "https://www.ziprecruiter.com/Jobs/Generative-3D"
+            },
+            {
+              "n": 6,
+              "category": "AI Digital launches",
+              "title": "AI Digital launches an AI Creative Studio as a full-service production unit for programmatic advertising",
+              "source": "businesswire.com",
+              "relevance": "Intermediate",
+              "summary": "AI Digital announced AI Creative Studio, a production unit for AI-native programmatic advertising and creative output.",
+              "why": "Agencies are turning AI creative into an operational service line, not just a tool demo.",
+              "action": "Prototype a creative variant factory offer for ecommerce: one product, 20 ad variants, localizations, naming convention, and performance tagging.",
+              "teacher": "Use this to teach creative operations: briefs, templates, generation rules, approval gates, asset naming, and measurement feedback.",
+              "link": "https://www.businesswire.com/news/home/20260527812632/en/AI-Digital-Launches-AI-Creative-Studio-Closing-the-Creative-Gap-in-Programmatic-Advertising"
+            },
+            {
+              "n": 7,
+              "category": "Microsoft Project Solara",
+              "title": "Microsoft Project Solara points to agent-first device interfaces for retail, healthcare, and field service",
+              "source": "tomshardware.com",
+              "relevance": "Intermediate",
+              "summary": "Coverage of Microsoft Project Solara describes agent-first enterprise devices, reference hardware, adaptive interfaces, and pilots in retail, healthcare, and field service.",
+              "why": "If devices become agent interfaces, opportunity opens for service designers who can script task flows, UI states, and physical-world handoffs.",
+              "action": "Sketch one frontline-agent demo: store associate product lookup, customer context, inventory check, and escalation to a human manager.",
+              "teacher": "Teach agent UX as a physical workflow: who is holding the device, what context is sensed, what action is allowed, and when control returns to a person.",
+              "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-unveils-project-solara-ai-a-chip-to-cloud-platform-built-to-power-a-new-generation-of-agent-first-enterprise-devices-hardware-designed-to-run-ai-agents-instead-of-traditional-apps"
+            },
+            {
+              "n": 8,
+              "category": "Mercor frames AI",
+              "title": "Mercor frames AI trainer, side-hustle, and hybrid AI roles as 2026 entry lanes",
+              "source": "mercor.com",
+              "relevance": "Intermediate",
+              "summary": "Mercor 2026 guide highlights AI trainer, freelance AI training, entry-level AI jobs, side hustles, and hybrid technical or business roles.",
+              "why": "Training and evaluation work remains an accessible bridge for domain experts who are not full-time ML engineers.",
+              "action": "Position design and 3D expertise as model-evaluation value: judge composition, prompt adherence, geometry, text rendering, and production usability.",
+              "teacher": "Teach evaluation rubrics. A good reviewer explains defects with examples and severity, not just says it looks wrong.",
+              "link": "https://www.mercor.com/resources/experts/new-artificial-intelligence-job-opportunities/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n builders",
+              "title": "Reddit n8n builders report high ROI from practical AI workflow orchestration",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit n8n post says the tool now runs research workflows, AI agents, SEO pipelines, background jobs, competitor monitoring, and content systems.",
+              "why": "This is useful grassroots evidence: builders are finding value in boring, repeatable workflows rather than abstract AI agent hype.",
+              "action": "Sell one narrow workflow per audience: competitor-monitoring for agencies, client-intake for freelancers, asset QA for designers, or lesson-prep for",
+              "teacher": "s. Teaching notes: Have learners write a workflow recipe before touching the tool: trigger, inputs, model task, decision rule, output, and failure handling.",
+              "link": "https://www.reddit.com/r/n8n/comments/1t5da2l/n8n_is_probably_the_highest_roi_skill_i_learned/"
+            },
+            {
+              "n": 10,
+              "category": "Public X discussion",
+              "title": "Public X discussion maps AI automation builders between workflow tools, applied AI, and simple integrations",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post describes AI automation builders as sitting between workflow automation tools like n8n, Make, Zapier, applied AI, prompts, and simple integrations.",
+              "why": "The market language is converging around builder rather than pure developer or pure consultant, which is easier to sell to small businesses.",
+              "action": "Use AI automation builder in offers, then back it with concrete deliverables: workflow map, implementation, test log, handover video, and monthly support.",
+              "teacher": "Teach the role boundary clearly: builders solve business bottlenecks using existing tools, and escalate custom code only when the workflow proves value.",
+              "link": "https://x.com/heiscaleb2/status/2061433840757862819"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 06",
       "label": "2026-06-10 · 06:04",
