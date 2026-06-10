@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-10 15:09",
-    "editions": 107
+    "fetchedAt": "2026-06-10 15:12",
+    "editions": 108
   },
   "editions": [
+    {
+      "key": "2026-06-10 15",
+      "label": "2026-06-10 · 15:06",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-10 · 15:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "HackerOne is hiring",
+              "title": "HackerOne is hiring a Senior AI Automation Engineer at $160K-$200K",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "HackerOne lists a senior automation role focused on AI-powered workflow solutions, with an application deadline at the end of June.",
+              "why": "Security programs are operationally messy, so AI automation in triage, reporting, routing, and response is becoming a high-value specialist lane.",
+              "action": "Build a security-ops automation demo: intake form, vulnerability summary, Jira routing, Slack escalation, and audit log.",
+              "teacher": "Use this as a class case for turning one painful enterprise process into a scoped agent workflow with measurable time saved.",
+              "link": "https://jobs.ashbyhq.com/hackerone/ab97488e-b159-41e3-8a20-a40b91acbdc4"
+            },
+            {
+              "n": 2,
+              "category": "n8n is hiring",
+              "title": "n8n is hiring RevOps talent with an explicit AI and automation mindset",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "n8n posted a sales strategy and operations role that calls out using AI and automation to streamline revenue workflows.",
+              "why": "The opportunity is not only building automations for clients; companies also need operators who can redesign internal teams around automation.",
+              "action": "Package a RevOps automation offer: lead enrichment, CRM hygiene, follow-up generation, dashboard alerts, and weekly pipeline notes.",
+              "teacher": "Teach students that automation skill becomes more valuable when paired with a business function such as sales, support, finance, or recruiting.",
+              "link": "https://jobs.ashbyhq.com/n8n/e77c1fa5-1232-49a3-9db3-b291cd79006b"
+            },
+            {
+              "n": 3,
+              "category": "Zapier Sales Assist",
+              "title": "Zapier Sales Assist role rewards operators who use automation every day",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Zapier lists a manager role for Sales Assist with high compensation and a requirement to use automation in daily work.",
+              "why": "This is a signal that no-code and AI automation fluency is moving into frontline management, not just engineering.",
+              "action": "Create a small portfolio showing before-and-after sales support workflows using Zapier, Airtable, HubSpot, and an LLM.",
+              "teacher": "Frame automation as management leverage: fewer handoffs, better follow-up, cleaner context, and faster coaching loops.",
+              "link": "https://jobs.ashbyhq.com/zapier/eb770f7a-ccf9-457b-87f6-3a70f2d3189b"
+            },
+            {
+              "n": 4,
+              "category": "Sudowrite is hiring",
+              "title": "Sudowrite is hiring a remote contract product designer for generative AI writing tools",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Wellfound listing seeks a remote contract product designer with UI/UX, Figma, creative writing, and generative AI context.",
+              "why": "Creative AI products need designers who understand both workflow emotion and interface precision, a strong fit for hybrid design talent.",
+              "action": "Prepare one redesign case study for an AI creative tool: onboarding, prompt iteration, version comparison, and export flow.",
+              "teacher": "Use this to teach designers to show product thinking, not only polished screens: the valuable artifact is the user loop.",
+              "link": "https://wellfound.com/jobs/4287608-remote-contract-product-designer"
+            },
+            {
+              "n": 5,
+              "category": "Jerry.ai posted a",
+              "title": "Jerry.ai posted a remote Senior Product Manager role for AI Agents and Platform",
+              "source": "wellfound.com",
+              "relevance": "Intermediate",
+              "summary": "Wellfound shows a new remote PM opening focused on AI agents and platform work, with a $160K-$200K range.",
+              "why": "Agent work is becoming a product discipline: tool permissioning, reliability, memory, evaluation, and workflow ownership all need PM judgement.",
+              "action": "Draft a one-page agent product spec with user goal, allowed actions, failure modes, evaluation metrics, and rollback rules.",
+              "teacher": "Teach PMs to treat agents as products with boundaries and QA, not as chatbots with vague promises.",
+              "link": "https://wellfound.com/jobs/4320883-senior-product-manager-ai-agents-and-platform"
+            },
+            {
+              "n": 6,
+              "category": "TechNet highlights AI",
+              "title": "TechNet highlights AI learning and upskilling programs from major tech companies",
+              "source": "technet.org",
+              "relevance": "Intermediate",
+              "summary": "TechNet published a current roundup of AI learning tools and workforce upskilling resources from member companies.",
+              "why": "There is opportunity in translating broad free training into practical workshops for teams, schools, and small businesses.",
+              "action": "Build a two-hour paid workshop: AI basics, safe prompting, workflow mapping, and one hands-on automation exercise.",
+              "teacher": "Give learners curated pathways instead of tool lists; pair every concept with a job task they already understand.",
+              "link": "https://www.technet.org/upskilling-ai-learning-tools/"
+            },
+            {
+              "n": 7,
+              "category": "Stanford SALT adds",
+              "title": "Stanford SALT adds JobBench for work-grounded AI agent evaluation",
+              "source": "futureofwork.saltlab.stanford.edu",
+              "relevance": "Intermediate",
+              "summary": "Stanford SALT notes a May 2026 update: JobBench uses WORKBank to benchmark agents against tasks real workers want delegated.",
+              "why": "This points toward consulting opportunities around task audits: what to automate, what to augment, and what to leave human-led.",
+              "action": "Offer a lightweight AI task audit for creative or operations teams: map 20 tasks into automate, assist, defer, or avoid.",
+              "teacher": "Use the automate-versus-augment distinction to keep AI training practical and ethically grounded.",
+              "link": "https://futureofwork.saltlab.stanford.edu/"
+            },
+            {
+              "n": 8,
+              "category": "Glassdoor shows live",
+              "title": "Glassdoor shows live remote demand for n8n and AI automation builders",
+              "source": "glassdoor.co.in",
+              "relevance": "Intermediate",
+              "summary": "Glassdoor search results show remote openings for automation developers, AI agent specialists, and builders using n8n, Zapier, APIs, and real-world execution.",
+              "why": "The hiring language is converging around practical systems builders who can connect tools and document working automations.",
+              "action": "Create a public mini-library of three reusable n8n workflows with screenshots, docs, and a short Loom-style walkthrough.",
+              "teacher": "Train learners to document repeatable workflows; documentation is what turns a demo into a hireable asset.",
+              "link": "https://www.glassdoor.co.in/Job/remote-n8n-jobs-SRCH_IL.0%2C6_IS12563_KO7%2C10.htm"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n agency",
+              "title": "Reddit n8n agency discussion says domain expertise beats generic AI automation",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit discussion for aspiring AI and automation agencies reflects skepticism about generic hype and points toward sharper positioning for 2026.",
+              "why": "Early market chatter says clients are less impressed by AI labels and more interested in specific business outcomes.",
+              "action": "Pick one niche, such as dental clinics, e-commerce returns, property managers, or design studios, and write three outcome-based offers.",
+              "teacher": "Use social discussion as market research: look for repeated pain, price resistance, and language clients use.",
+              "link": "https://www.reddit.com/r/n8n/comments/1q2youh/a_year_in_review_my_2025_summarised_for_aspiring/"
+            },
+            {
+              "n": 10,
+              "category": "Public X automation",
+              "title": "Public X automation expert profile signals proof-based AI freelance positioning",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X profile describes a Top Rated Plus AI automation expert with over $200K earned on Upwork and visible client-work positioning.",
+              "why": "For freelancers, proof of outcomes, marketplace traction, and repeated client language may matter more than broad AI branding.",
+              "action": "Audit your freelance profile for proof: before-after metrics, stack names, client niche, delivery time, and one concrete workflow sample.",
+              "teacher": "Teach creators to turn public profiles into positioning studies: what claims are specific, what proof is visible, and what offer is easy to buy.",
+              "link": "https://x.com/realodutola"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-10 12",
       "label": "2026-06-10 · 12:10",
