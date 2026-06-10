@@ -21,9 +21,12 @@
   --amber:     #B07E22;
   --violet:    #7C5FB8;
   --red:       #BC4B4B;
-  --mono: "Cascadia Code", "Cascadia Mono", Consolas, "SF Mono", ui-monospace, monospace;
+  /* --mono is the LABEL slot (chips, buttons, small caps labels). The Claude look
+     uses one clean sans for all UI labels — real monospace only inside <code>. */
+  --mono: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
   --sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
   --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+  --code: "Cascadia Code", Consolas, "SF Mono", ui-monospace, monospace;
   --radius: 10px;
   --fs: 1; /* font scale multiplier — set by the A- / A+ buttons */
 }
@@ -826,14 +829,63 @@ code {
 .vnav.has-due { position: relative; }
 .vnav.has-due::after { content: ""; position: absolute; top: 7px; right: 8px; width: 7px; height: 7px; background: var(--amber); border-radius: 50%; box-shadow: 0 0 8px var(--amber); }
 
-/* ===================== CLAUDE WARM THEME polish (v22) =====================
-   Light ivory/beige + terracotta. Serif display type, paper-soft shadows,
-   no neon glows. Overrides on top of the rules above. */
+/* ===================== CLAUDE WARM THEME polish v2 (v23) =====================
+   Ivory/beige + terracotta. ONE sans for all UI labels (mono only in <code>),
+   serif for headlines, paper shadows, calm letter-spacing, consistent controls,
+   and the A−/A+ size dial now scales EVERY view — not just the news text. */
+
+/* -- type roles -- */
+code { font-family: var(--code); }
+#clock-time { font-variant-numeric: tabular-nums; }
 .brand-mark { font-family: var(--serif); letter-spacing: 1px; color: var(--ink); text-shadow: none; font-weight: 700; }
 .brand-mark::after { content: "."; color: var(--cyan); }
 .signal-title, .wish-t, .ab-t, .hq-lock-title, .lock-box h3, .todo-src, .modal-head span,
 .hq-focus .hq-t, .project-name, .qa-q { font-family: var(--serif); }
 .signal-title { font-weight: 650; }
+
+/* -- calm the mono-era letter-spacing (hacker tracking → quiet small caps) -- */
+.brand-sub { letter-spacing: 2px; }
+.panel-title, .section-label { letter-spacing: 1.2px; font-weight: 700; }
+.meta-label, .kpi-label, .stat-label, .detail-label, .frame-label, .lib-meta, .search-meta { letter-spacing: .8px; }
+.meta-label, .detail-label, .frame-label { font-weight: 600; }
+.chip, .vtoggle, .ftab, .vnav, .refresh-btn, .markall, .note-add, .note-ask, .reload-btn,
+.lock-go, .loadmore, .sugg-btn, .edition-wrap label, .ab-add { letter-spacing: .2px; font-weight: 600; }
+
+/* -- consistent control row (A− A+ · AI · Sync · RELOAD all one height) -- */
+.refresh-btn, .fontctl button { height: 34px; display: inline-flex; align-items: center; justify-content: center; }
+.refresh-btn { padding: 0 13px; font-size: 11.5px; }
+.fontctl button { width: 34px; font-size: 13px; }
+.topbar-meta { gap: 14px; }
+
+/* -- pills + icon tiles on one scale -- */
+.vnav-count { font-size: 10px; padding: 1px 8px; font-weight: 700; }
+.vnav-sub { font-size: 9.5px; letter-spacing: .5px; }
+.frame-ico { width: 30px; height: 30px; flex: 0 0 30px; font-size: 15px; border-radius: 8px; }
+
+/* -- A−/A+ coverage: board · wishlist · nav · chips · tags (base px = old size ÷ 1.35
+      so the default "M" level looks the same as before, and the dial finally works) -- */
+.vnav        { font-size: calc(9.5px  * var(--fs)); }
+.chip        { font-size: calc(8px    * var(--fs)); }
+.vtoggle     { font-size: calc(8px    * var(--fs)); }
+.tag         { font-size: calc(6.8px  * var(--fs)); }
+.panel-count { font-size: calc(8px    * var(--fs)); }
+.markall     { font-size: calc(7px    * var(--fs)); }
+.board-rule  { font-size: calc(9px    * var(--fs)); }
+.ab-ct       { font-size: calc(9px    * var(--fs)); }
+.ab-cs, .ab-meta, .ab-next { font-size: calc(8px * var(--fs)); }
+.ab-t        { font-size: calc(9.6px  * var(--fs)); }
+.ab-pill     { font-size: calc(7px    * var(--fs)); }
+.ab-cnt      { font-size: calc(8px    * var(--fs)); }
+.ab-empty, .board-locked { font-size: calc(9px * var(--fs)); }
+.btab        { font-size: calc(8px    * var(--fs)); }
+.wish-head, .wish-addbtn { font-size: calc(9px * var(--fs)); }
+.wish-t      { font-size: calc(10.5px * var(--fs)); }
+.wish-st     { font-size: calc(7.5px  * var(--fs)); }
+.wish-next   { font-size: calc(9px    * var(--fs)); }
+.lib-meta, .search-meta { font-size: calc(9px * var(--fs)); }
+.status-banner { font-size: calc(9.3px * var(--fs)); }
+
+/* -- surfaces -- */
 .panel, .topbar { box-shadow: 0 1px 3px rgba(41,36,25,.06); }
 .signal, .ab-card, .wish-card, .todo-card, .hq-row, .stat, .action, .project, .qa-item { box-shadow: 0 1px 2px rgba(41,36,25,.05); }
 .refresh-btn:hover, .loadmore:hover, .note-add:hover, .note-ask:hover, .reload-btn:hover,
