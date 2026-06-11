@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 15:07",
-    "editions": 115
+    "fetchedAt": "2026-06-11 15:10",
+    "editions": 116
   },
   "editions": [
+    {
+      "key": "2026-06-11 15",
+      "label": "2026-06-11 · 15:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 15:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Chrome WebMCP points",
+              "title": "Chrome WebMCP points websites toward agent-readable tools instead of fragile click automation",
+              "source": "developer.chrome.com",
+              "relevance": "Intermediate",
+              "summary": "Chrome I/O 2026 previews WebMCP, Modern Web Guidance, and DevTools access for agents so browser agents can use structured site tools and debug code with better context.",
+              "why": "The web is shifting from human-only UI paths to agent-readable affordances, reducing brittle form-clicking and screenshot automation.",
+              "action": "For sites and internal tools, expose explicit tool surfaces, clean forms, documented actions, and agent-safe permissions.",
+              "teacher": "Agent UX is becoming frontend architecture: human UI plus exact handles for agents.",
+              "link": "https://developer.chrome.com/blog/chrome-at-io26"
+            },
+            {
+              "n": 2,
+              "category": "Micropython-wasm shows a",
+              "title": "Micropython-wasm shows a practical sandbox pattern for agents that need to run code",
+              "source": "simonwillison.net",
+              "relevance": "Intermediate",
+              "summary": "Simon Willison documented a MicroPython-in-WebAssembly sandbox used by Datasette Agent to execute Python code with tighter containment.",
+              "why": "Agents increasingly need safe code execution, and WASM sandboxes are a practical middle path between no execution and full machine access.",
+              "action": "Separate think permissions from execute-code permissions, and test whether small WASM sandboxes can handle transforms or previews.",
+              "teacher": "Let an agent write a tiny Python transform, run it in a sandbox, then compare the risk profile with host shell execution.",
+              "link": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/"
+            },
+            {
+              "n": 3,
+              "category": "Gartner says enterprise",
+              "title": "Gartner says enterprise coding agents are moving from IDE magic to governed automated platforms",
+              "source": "devopsdigest.com",
+              "relevance": "Intermediate",
+              "summary": "DEVOPSdigest reports Gartner view that coding agents are entering a phase driven by governance, pricing, support, workflow maturity, and SDLC-wide automation.",
+              "why": "Buyers are starting to judge agents by whether they can be operated, audited, paid for, and governed at scale.",
+              "action": "Score isolation, review gates, logs, pricing controls, support, and rollback paths, not just model quality.",
+              "teacher": "This is the shift from AI pair programmer to software production system.",
+              "link": "https://www.devopsdigest.com/gartner-enterprise-ai-coding-agent-entering-new-phase-of-expansion-and-competitive-realignment"
+            },
+            {
+              "n": 4,
+              "category": "Agenta changelog shows",
+              "title": "Agenta changelog shows eval, annotation, and GitHub automation becoming agent ops basics",
+              "source": "agenta.ai",
+              "relevance": "Intermediate",
+              "summary": "Agenta recent changelog highlights evaluate-while-iterating, annotation queues, a unified invoke API, webhooks, and GitHub automations.",
+              "why": "Agent builders are converging on test loops, review queues, automation hooks, and repeatable invocation instead of one-off prompt tinkering.",
+              "action": "Add a tiny eval set for every recurring agent workflow: golden inputs, expected behavior, failure examples, and a regression log.",
+              "teacher": "Treat prompts like code: version them, test them, annotate failures, and connect them to CI or GitHub workflows.",
+              "link": "https://agenta.ai/docs/changelog/main"
+            },
+            {
+              "n": 5,
+              "category": "ECC AgentShield turns",
+              "title": "ECC AgentShield turns AI-agent configuration security into a CI-checkable workflow",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The ECC repo packages skills, memory, rules, MCP configs, and AgentShield, including a scanner for Claude Code configuration vulnerabilities and injection risks.",
+              "why": "As configs become powerful, the config layer itself becomes attack surface across instructions, hooks, skills, tools, and MCP wiring.",
+              "action": "Audit agent folders for hidden tool access, risky hooks, overbroad permissions, and destructive commands without review.",
+              "teacher": "Red-team the agent config before reviewing app code. The harness can be the vulnerability.",
+              "link": "https://github.com/affaan-m/ECC"
+            },
+            {
+              "n": 6,
+              "category": "Claw Orchestrator points",
+              "title": "Claw Orchestrator points to a multi-engine future for Claude Code, Codex, Gemini, Cursor, and OpenCode",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Claw Orchestrator presents one runtime for multiple coding CLIs, with compatibility listed for Claude Code, Codex, Gemini, Cursor Agent, OpenCode, and custom engines.",
+              "why": "The market is moving toward harnesses that route work across engines instead of betting every workflow on one vendor agent.",
+              "action": "Keep task briefs, acceptance checks, and project state model-agnostic so the worker engine can be swapped.",
+              "teacher": "The stack is brief, harness, tools, model, verifier, delivery. Lock-in often hides in the middle layers.",
+              "link": "https://github.com/Enderfga/claw-orchestrator"
+            },
+            {
+              "n": 7,
+              "category": "Product Hunt now",
+              "title": "Product Hunt now tracks AI agents as a large standalone software category",
+              "source": "producthunt.com",
+              "relevance": "Intermediate",
+              "summary": "Product Hunt AI Agents category was updated today with 573 products considered and 3030 reviews across engineering, data science, sales, operations, and design agents.",
+              "why": "AI agent is becoming a market category with buyer expectations, rankings, and crowded positioning.",
+              "action": "Watch category pages for repeated promises and complaints; they reveal which agent jobs are commoditizing.",
+              "teacher": "Count how many tools sell autonomy, then ask what proof they show for reliability and handoff.",
+              "link": "https://www.producthunt.com/categories/ai-agents"
+            },
+            {
+              "n": 8,
+              "category": "HN discussion around",
+              "title": "HN discussion around Claude Fable 5 flags trust and refusal edge cases for serious makers",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Hacker News thread around Claude Fable 5 highlights concern that silent refusals or model fallback behavior can break confidence in serious technical work.",
+              "why": "Agent trust depends on visible constraints. If a model degrades, refuses, or changes behavior without disclosure, makers cannot debug the workflow.",
+              "action": "Add model behavior changed to your failure checklist and log model names, modes, effort settings, and refusal messages.",
+              "teacher": "This is observability for cognition: when the worker is probabilistic, run metadata matters.",
+              "link": "https://news.ycombinator.com/item?id=48467896"
+            },
+            {
+              "n": 9,
+              "category": "Reddit 3D makers",
+              "title": "Reddit 3D makers notice Roblox-style procedural AI assets as editable systems, not static meshes",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit 3D discussion frames Roblox AI-assisted procedural assets as editable, variable systems for modular scenes, props, buildings, and rapid prototyping.",
+              "why": "For 3D and game workflows, the next useful AI asset may be a controllable generator rather than a finished mesh.",
+              "action": "Before a render pipeline, decide if generated assets should be final geometry, parametric blocks, or editable proxies.",
+              "teacher": "Separate AI made me a mesh from AI gave me a system I can art-direct. The second is more production-friendly.",
+              "link": "https://www.reddit.com/r/TopologyAI/comments/1svb2a1/roblox_is_bringing_aiassisted_procedural_3d_model/"
+            },
+            {
+              "n": 10,
+              "category": "Public X thread",
+              "title": "Public X thread on verifiable looping agents shows makers converging on validators and token budgets",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X article today discusses verifiable looping agents, with Claude Code, Codex, and OpenClaw converging around validators, budgets, and repeatable loop control.",
+              "why": "The maker conversation is moving from let the agent run to run until a validator passes, within a budget, with proof.",
+              "action": "For recurring agents, define the stop condition first: tests pass, screenshot matches, file hash changes, budget cap hit, or human review required.",
+              "teacher": "The teaching pattern is goal, loop, validator, budget, transcript. Without all five, long-running agents drift.",
+              "link": "https://x.com/zeeshan_utd/article/2064703809990135846"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-11 12",
       "label": "2026-06-11 · 12:15",
