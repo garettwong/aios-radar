@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 00:23",
+    "fetchedAt": "2026-06-12 00:27",
     "editions": 119
   },
   "editions": [
     {
       "key": "2026-06-12 00",
-      "label": "2026-06-12 · 00:03",
+      "label": "2026-06-12 · 00:15",
       "briefs": [
         {
           "id": "trend",
@@ -153,6 +153,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "When evaluating a new model, record which surface was tested and do not assume API behavior matches the app or coding-agent surface.",
               "teacher": "Teach model launches as channel launches. The same named model can feel different depending on tool access, context, and billing path.",
               "link": "https://x.com/PawelHuryn/article/2064979937543549362"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 00:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Anthropic Claude Corps",
+              "title": "Anthropic Claude Corps creates paid AI-literacy deployment roles for nonprofits",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic announced Claude Corps, a program that embeds trained fellows into nonprofits so teams can apply Claude in day-to-day work.",
+              "why": "This is a people and training model for AI adoption in organizations that normally lack AI staff.",
+              "action": "Package a small AI fellow for nonprofit or team ops offer: intake, workflow map, Claude prompt library, staff training, and monthly office hours.",
+              "teacher": "AI opportunity often sits between technology and change management, not inside the model itself.",
+              "link": "https://www.anthropic.com/news/claude-corps"
+            },
+            {
+              "n": 2,
+              "category": "OpenAI Economic Research",
+              "title": "OpenAI Economic Research Exchange opens a research-services lane around AI and work",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI launched an Economic Research Exchange for external researchers studying AI impact on jobs, productivity, and the economy.",
+              "why": "Demand is rising for credible measurement of AI work impact, which creates room for research operations, data cleaning, survey design, and evidence reporting services.",
+              "action": "Build a template for an AI impact audit: baseline task inventory, before and after productivity metrics, worker interviews, and a short executive report.",
+              "teacher": "Separate hype claims from measurable work outcomes: time saved, error rate, throughput, quality, and adoption friction.",
+              "link": "https://openai.com/index/economic-research-exchange-request-for-proposals/"
+            },
+            {
+              "n": 3,
+              "category": "Meta Workforce Academy",
+              "title": "Meta Workforce Academy turns AI data-center buildout into trade jobs",
+              "source": "about.fb.com",
+              "relevance": "Intermediate",
+              "summary": "Meta announced Americas Workforce Academy, a free skilled-trades training program connected to data-center construction.",
+              "why": "AI opportunity is spilling into physical infrastructure: electrical, mechanical, fiber, HVAC, safety, training, and local workforce coordination.",
+              "action": "Watch AI infrastructure projects by region and build support services around training materials, onboarding visuals, site documentation, and worker education.",
+              "teacher": "AI creates software work, but also physical-world jobs where clear documentation and visual instruction matter.",
+              "link": "https://about.fb.com/news/2026/06/americas-workforce-academy-free-skilled-trade-training/"
+            },
+            {
+              "n": 4,
+              "category": "Anthropic Services Track",
+              "title": "Anthropic Services Track formalizes the Claude consulting partner market",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic added a Services Track and Partner Hub for firms helping enterprises put Claude into production, with certification and partner tiers.",
+              "why": "Enterprise buyers are moving from experiments to named implementation partners; certification becomes a sales signal for consultants.",
+              "action": "If offering AI consulting, create a certification roadmap, collect two public case studies, and define one narrow Claude deployment package.",
+              "teacher": "Teach the difference between AI user and AI implementation partner: deployment, governance, training, support, and measurable business outcome.",
+              "link": "https://www.anthropic.com/news/services-track-partner-hub"
+            },
+            {
+              "n": 5,
+              "category": "OpenAI Stargate Michigan",
+              "title": "OpenAI Stargate Michigan shows AI infrastructure work is becoming a regional jobs story",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI described the Stargate Michigan data-center campus, including construction, infrastructure partnerships, and job creation around Saline, Michigan.",
+              "why": "AI-capital projects can create local ecosystems for contractors, training providers, visualization specialists, permitting support, and community-facing communication.",
+              "action": "Track major AI data-center sites and offer visual explainers, stakeholder decks, contractor onboarding guides, or local workforce training content.",
+              "teacher": "Ask students to map one AI infrastructure project into direct jobs, indirect jobs, and communication needs.",
+              "link": "https://openai.com/index/stargate-michigan-data-center/"
+            },
+            {
+              "n": 6,
+              "category": "Omnidian Systems Specialist",
+              "title": "Omnidian Systems Specialist role makes AI-assisted IT operations a practical career signal",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Omnidian lists AI tools such as Gemini and Claude for troubleshooting, log synthesis, SOP drafting, and knowledge-base work.",
+              "why": "AI fluency is becoming a normal operations skill, not a separate AI job title.",
+              "action": "Build a portfolio piece showing an IT support ticket transformed into diagnosis notes, SOP update, user reply, and prevention checklist using AI responsibly.",
+              "teacher": "Have learners solve a mock IT incident with AI, then verify every claim manually before writing the SOP.",
+              "link": "https://jobs.lever.co/omnidian/b39a5b54-e553-46b9-9d27-95e7c63ec445"
+            },
+            {
+              "n": 7,
+              "category": "Upwork multi-agent n8n",
+              "title": "Upwork multi-agent n8n operations brief asks for resilient agentic business systems",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Upwork brief asks for advanced n8n workflows across operations, sales feedback loops, and performance monitoring with logic and self-correcting mechanisms.",
+              "why": "Clients are learning to ask for agentic systems, not just simple zaps; reliability, guardrails, and monitoring are the premium layer.",
+              "action": "Productize a resilient n8n agent audit with error handling, human approval points, logs, rollback paths, and weekly performance reports.",
+              "teacher": "The money is in failure handling and business fit, not just connecting nodes.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Seeking-n8n-Automation-Expert-Build-Powered-Operations-Revenue-Intelligence-System_~022064759064256819862/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork logistics automation",
+              "title": "Upwork logistics automation brief points to higher-value AI integration niches",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A logistics-focused Upwork post seeks a senior Make and n8n automation engineer for RFQ processing, invoice and OCR flows, ERP validation, and CRM logging.",
+              "why": "Vertical AI automation for logistics and transport is more defensible than generic chatbot work because it touches documents, systems, and costly operations.",
+              "action": "Build one demo workflow: email RFQ to data extraction to quote draft to CRM update to human approval. Use fake data but production-style documentation.",
+              "teacher": "Pick industries with repeatable documents, measurable time cost, and existing software pain.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Senior-Make-com-n8n-Automation-Engineer-ERP-Integrations-Logistics-Workflows_~022064736552157461189/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Upwork thread",
+              "title": "Reddit Upwork thread shows platform pain for AI automation freelancers",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/Upwork discussion includes AI automation freelancers saying invites dried up and others telling them to build their own network.",
+              "why": "Marketplace demand exists, but platform dependence and weak differentiation are risks; the opportunity is moving toward proof, positioning, and outbound distribution.",
+              "action": "Do not rely only on Upwork. Publish three concrete demos, write one case-study landing page, and build a target list of local businesses with obvious automation pain.",
+              "teacher": "Convert I know n8n into a clear business promise: saved hours, faster replies, fewer missed leads, cleaner reporting.",
+              "link": "https://www.reddit.com/r/Upwork/comments/1u0axla/upwork_is_no_more_for_freelancers/"
+            },
+            {
+              "n": 10,
+              "category": "Public X article",
+              "title": "Public X article packages n8n lead generation as a freelance offer pattern",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article describes an automated B2B lead-generation system with n8n, framing contacts as the start of a real pipeline rather than a static spreadsheet.",
+              "why": "This is a visible creator-market signal: buyers and freelancers are turning n8n workflows into packaged acquisition services.",
+              "action": "Turn the idea into a scoped service: collect leads legally, enrich, score, draft first-touch emails, sync to CRM, and require human approval before outreach.",
+              "teacher": "Teach consent, compliance, deliverability, and data quality before teaching automation volume.",
+              "link": "https://x.com/vicky_grok/article/2063119544470872447"
             }
           ]
         }
