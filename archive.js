@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 06:05",
-    "editions": 120
+    "fetchedAt": "2026-06-12 06:08",
+    "editions": 121
   },
   "editions": [
+    {
+      "key": "2026-06-12 06",
+      "label": "2026-06-12 · 06:02",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 06:02 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "NPR AI research",
+              "title": "NPR AI research internship turns archives into a generative-AI workflow lane",
+              "source": "",
+              "relevance": "Intermediate",
+              "summary": "NPR is hiring an AI Research, Ethics and Readiness intern for Fall 2026 to prototype workflows that turn unstructured archives into structured, queryable material for newsroom use.",
+              "why": "Media organizations are creating practical AI roles around retrieval, metadata, ethics, and editorial usefulness, not just model building.",
+              "action": "Build a mini portfolio demo that ingests a small archive, adds metadata, and lets users ask traceable questions with",
+              "teacher": "This is a strong case study for teaching RAG with domain constraints: provenance, editorial standards, and human review. Source: https://job-boards.greenhouse.io/nationalpublicradioinc/jobs/4701925005",
+              "link": null
+            },
+            {
+              "n": 2,
+              "category": "3Commas QuantPilot role",
+              "title": "3Commas QuantPilot role points to AI trading products needing product operators",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "3Commas is hiring a Senior Product Manager for QuantPilot, an AI-powered trading product launching in June 2026.",
+              "why": "AI-native fintech products need people who can translate model output, risk, UX, and user trust into everyday workflows.",
+              "action": "Study trading-assistant onboarding screens and build a checklist for confidence signals, risk warnings, and user-control moments.",
+              "teacher": "Use this to explain why AI product work is not only prompts; it is decision framing, failure states, and trust design.",
+              "link": "https://jobs.ashbyhq.com/3commas/36d7fc60-43d6-44e8-95e8-769891b8e54c"
+            },
+            {
+              "n": 3,
+              "category": "Gradera AI Native",
+              "title": "Gradera AI Native product role shows early teams still want full-stack builders",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Gradera lists a Full Stack Engineer role under AI Native Product with remote-friendly collaboration and a late-June deadline.",
+              "why": "Small AI-native teams value people who can move across product, engineering, and design instead of staying in a narrow lane.",
+              "action": "Package one end-to-end AI product demo: user problem, prototype, eval notes, deployment, and a short Loom walkthrough.",
+              "teacher": "Good lesson theme: full-stack now means product judgment plus implementation plus AI evaluation.",
+              "link": "https://jobs.ashbyhq.com/gradera/14b17a96-77fe-4395-a575-355e8f1d0f90"
+            },
+            {
+              "n": 4,
+              "category": "Hex Agent Context",
+              "title": "Hex Agent Context leadership role makes context quality a career category",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Hex is hiring an Engineering Director for Agent Context to make its analytics product learn from user work and improve over time.",
+              "why": "Context engineering is becoming a serious job family: memory, retrieval, usage signals, permissions, and evaluation all matter.",
+              "action": "Audit one existing workflow and map what context an agent needs before, during, and after the task.",
+              "teacher": "Teach context as a system design topic, not a prompt trick: data boundaries, freshness, feedback loops, and trust.",
+              "link": "https://job-boards.greenhouse.io/hextechnologies/jobs/5971196004"
+            },
+            {
+              "n": 5,
+              "category": "Gradial Senior Product",
+              "title": "Gradial Senior Product Designer role targets generative-AI marketing workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Gradial is hiring a Senior Product Designer for a generative-AI platform serving marketers and creative professionals.",
+              "why": "Creative AI products need designers who can make complex workflow automation feel approachable without hiding controls.",
+              "action": "Create a before/after workflow map for campaign asset production, then identify where AI should suggest, draft, approve, or stop.",
+              "teacher": "Strong example for teaching AI UX around creative control, review states, and brand consistency.",
+              "link": "https://job-boards.greenhouse.io/gradial/jobs/4000150009"
+            },
+            {
+              "n": 6,
+              "category": "n8n community job",
+              "title": "n8n community job board shows live demand for AI workflow builders",
+              "source": "community.n8n.io",
+              "relevance": "Intermediate",
+              "summary": "The n8n jobs category shows recent hiring and for-hire activity around AI agents, API integrations, and remote workflow building.",
+              "why": "Automation work is not only on Upwork; tool communities themselves are becoming lead sources and credibility surfaces.",
+              "action": "Prepare a short service menu for n8n builds: CRM sync, inbox triage, lead enrichment, RAG support bot, and reporting automation.",
+              "teacher": "Teach students to read job boards as market research: repeated tools, budgets, pain points, and deliverables become curriculum.",
+              "link": "https://community.n8n.io/c/jobs/13?page=1"
+            },
+            {
+              "n": 7,
+              "category": "Siena AI Product",
+              "title": "Siena AI Product Education role turns agent rollout into teaching work",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Siena AI is hiring a Product Education and Community Lead for a remote GTM role around explaining and enabling an AI customer-service product.",
+              "why": "AI companies need educators who can translate fast-changing products into onboarding, demos, docs, and community trust.",
+              "action": "Build one public tutorial that turns a complex AI agent feature into a simple customer-support playbook.",
+              "teacher": "This is a useful model for turning technical literacy into paid enablement work: courses, docs, demos, and office hours.",
+              "link": "https://jobs.ashbyhq.com/siena/3dbc355e-183c-4c84-8596-f002de59fcf5"
+            },
+            {
+              "n": 8,
+              "category": "AlphaSense Staff Product",
+              "title": "AlphaSense Staff Product Designer role frames AI-native workflows as design craft",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "AlphaSense is hiring a remote Senior/Staff Product Designer to shape AI-native workflows for market intelligence and search-to-synthesis decisions.",
+              "why": "Enterprise AI design is moving toward workflow-level judgment: synthesis, explainability, decision confidence, and daily adoption.",
+              "action": "Add an AI-native workflow case study to your portfolio showing source review, synthesis, and final decision support.",
+              "teacher": "Good teaching example for designers: the deliverable is not a pretty chat box; it is a trustworthy workflow.",
+              "link": "https://job-boards.greenhouse.io/alphasense/jobs/8530664002"
+            },
+            {
+              "n": 9,
+              "category": "Pendo Staff Product",
+              "title": "Pendo Staff Product Designer role explicitly rewards Cursor, Claude, and prompt workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Pendo says its design team uses LLMs, Cursor, Claude, code-level prototyping, and documented prompts in daily product work.",
+              "why": "AI-assisted prototyping is becoming a design hiring signal, especially for B2B SaaS roles that need fast validation.",
+              "action": "Document three reusable prompt/prototype patterns and show how each improved a design decision or reduced iteration time.",
+              "teacher": "Teach prompt libraries as design operations assets: they should be named, tested, versioned, and tied to outcomes.",
+              "link": "https://job-boards.greenhouse.io/pendo/jobs/8568595002"
+            },
+            {
+              "n": 10,
+              "category": "Anthropic People Products",
+              "title": "Anthropic People Products role applies AI-native products to HR and recruiting pain",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Anthropic is hiring a Staff Software Engineer for People Products to build AI-native workflows for internal people operations.",
+              "why": "HR, recruiting, and internal operations are becoming serious applied-AI product areas, not back-office afterthoughts.",
+              "action": "Prototype a small HR assistant with approval gates: interview scheduling, policy lookup, onboarding checklist, or recruiter notes cleanup.",
+              "teacher": "Use this to teach safe internal automation: sensitive data, permissions, audit trails, and human final judgment.",
+              "link": "https://job-boards.greenhouse.io/anthropic/jobs/5119468008"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 03",
       "label": "2026-06-12 · 03:04",
