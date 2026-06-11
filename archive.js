@@ -5,10 +5,278 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 18:06",
-    "editions": 116
+    "fetchedAt": "2026-06-11 18:22",
+    "editions": 117
   },
   "editions": [
+    {
+      "key": "2026-06-11 18",
+      "label": "2026-06-11 · 18:15",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 18:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Claude Code dynamic",
+              "title": "Claude Code dynamic workflows are now generally available, with Managed Agents schedules and vaults",
+              "source": "claude.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic's Claude update says dynamic workflows are generally available across Claude Code CLI, Desktop, VS Code, API, Bedrock, Vertex AI, and Microsoft Foundry, while Managed Agents add scheduled runs and vault-backed environment variables.",
+              "why": "This turns agent work from manual sessions into schedulable, credential-aware operations.",
+              "action": "Test one small recurring agent job: nightly repo scan, daily lead summary, or weekly compliance check, with a hard output validator.",
+              "teacher": "Teach this as the shift from prompt craft to loop design: trigger, tools, secrets, budget, verification, report.",
+              "link": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code"
+            },
+            {
+              "n": 2,
+              "category": "Cloudflare Browser Run",
+              "title": "Cloudflare Browser Run adopts WebMCP so sites can expose tools directly to agents",
+              "source": "blog.cloudflare.com",
+              "relevance": "Intermediate",
+              "summary": "Cloudflare describes Browser Run support for WebMCP, letting sites declare agent-callable tools instead of forcing brittle UI clicking.",
+              "why": "Agent-friendly websites may soon behave more like APIs with interface hints, permissions, and discoverable actions.",
+              "action": "For any web app you own, list the top 5 actions an agent should perform and map them to stable tool endpoints or structured page metadata.",
+              "teacher": "Compare old browser automation to scraping a UI; WebMCP is closer to handing the agent a labeled control panel.",
+              "link": "https://blog.cloudflare.com/browser-run-for-ai-agents/"
+            },
+            {
+              "n": 3,
+              "category": "Supabase packages MCP",
+              "title": "Supabase packages MCP plus agent skills as a one-step plugin for AI coding agents",
+              "source": "supabase.com",
+              "relevance": "Intermediate",
+              "summary": "Supabase's June developer update ships an AI Coding Agents plugin bundling the Supabase MCP server and agent skills for Claude Code, Cursor, Codex, and Gemini CLI.",
+              "why": "The winning pattern is no longer just tool access; it is tool access plus domain instructions so agents stop guessing platform rules.",
+              "action": "For your own stack, create paired MCP plus skill bundles: one gives capability, the other teaches safe conventions.",
+              "teacher": "Explain MCP as hands and skills as judgment. Agents need both to build correctly.",
+              "link": "https://supabase.com/changelog/46689-developer-update-june-2026"
+            },
+            {
+              "n": 4,
+              "category": "Autodesk APS publishes",
+              "title": "Autodesk APS publishes open-source agent skills for CAD and platform automation",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk Platform Services now has a GitHub skills repository, including skills for APS MCP server scaffolding and AutoCAD/ObjectARX workflows.",
+              "why": "CAD and 3D platform work is moving into reusable agent instruction packs, not only chat prompts.",
+              "action": "For 3D/design automation, start building skills for repeatable setup: asset import rules, naming, export formats, QA checks, and client-specific constraints.",
+              "teacher": "A skill is portable domain expertise. It reduces repeated explanations and makes agent output more consistent across projects.",
+              "link": "https://github.com/autodesk-platform-services/skills"
+            },
+            {
+              "n": 5,
+              "category": "Meshy Workspace 3.0",
+              "title": "Meshy Workspace 3.0 reorganizes AI 3D generation around task-oriented production workflows",
+              "source": "meshy.ai",
+              "relevance": "Intermediate",
+              "summary": "Meshy Workspace 3.0 moves from disconnected AI 3D tools to modules for Image, 3D Model, 3D Printing, Animate, Scene, Video, and unified asset management.",
+              "why": "AI 3D tools are learning that creators need pipeline flow, not isolated magic buttons.",
+              "action": "When evaluating AI 3D tools, score workflow continuity: reference input, mesh cleanup, texture control, print/export path, and asset library management.",
+              "teacher": "The trend is from generation to production handling. The question is not can it make a mesh, but can it carry the asset through revisions.",
+              "link": "https://www.meshy.ai/blog/workspace3"
+            },
+            {
+              "n": 6,
+              "category": "Context Rot paper",
+              "title": "Context Rot paper formalizes why long AI coding sessions degrade",
+              "source": "arxiv.org",
+              "relevance": "Intermediate",
+              "summary": "A new arXiv paper studies context rot in AI-assisted software development, where persistent context can accumulate noise and reduce tool reliability.",
+              "why": "Longer context windows do not automatically mean better agent work; stale context can become a hidden failure mode.",
+              "action": "Add context hygiene to agent routines: summarize decisions, prune obsolete notes, restart sessions at checkpoints, and keep specs in versioned files.",
+              "teacher": "Teach context as a working memory budget, not a dumping ground. Good agents need clean context as much as big context.",
+              "link": "https://arxiv.org/html/2606.09090v1"
+            },
+            {
+              "n": 7,
+              "category": "OpenAI token-for-equity offer",
+              "title": "OpenAI token-for-equity offer shows AI compute becoming startup capital",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports OpenAI is offering $2M in API tokens to YC spring and summer 2026 startups in exchange for equity.",
+              "why": "AI startup economics are shifting from headcount-first to compute-first; token budgets can be a financing instrument.",
+              "action": "Track token cost per shipped feature or client deliverable, not just monthly AI spend.",
+              "teacher": "This is a market signal: when tokens become capital, model efficiency and agent ROI become founder-level metrics.",
+              "link": "https://www.businessinsider.com/sam-altman-openai-offer-tokens-for-startup-equity-y-combinator-2026-5"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News early",
+              "title": "Hacker News early users say Claude Fable 5 is already changing heavy coding work",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current HN thread on Claude Fable 5 includes early hands-on reports from users pushing it through difficult coding and product problems.",
+              "why": "Community reaction is useful because it reveals where frontier models feel materially different before formal benchmarks settle.",
+              "action": "Run the same difficult task across your current model and any new model, then compare verification passes, not vibes.",
+              "teacher": "Treat HN as qualitative field notes. Useful comments describe task shape, failure mode, and repeatability.",
+              "link": "https://news.ycombinator.com/item?id=48463808"
+            },
+            {
+              "n": 9,
+              "category": "Reddit UX designers",
+              "title": "Reddit UX designers are separating useful AI workflow support from generic design generation",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit UXDesign thread asks which AI tools actually enhance real design workflows, with practitioners distinguishing research, copy, structure, and ideation help from weak visual generation.",
+              "why": "Designer adoption is becoming workflow-specific instead of hype-driven.",
+              "action": "Build an AI design checklist around jobs where quality can be reviewed: brief cleanup, variant naming, UX copy, competitor synthesis, and handoff notes.",
+              "teacher": "The lesson for makers is to sell AI as workflow leverage, not as a replacement for taste.",
+              "link": "https://www.reddit.com/r/UXDesign/comments/1tf2yea/actual_ai_design_workflows_in_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Official Claude X",
+              "title": "Official Claude X post confirms scheduled agents, vaults, and dynamic workflows from Tokyo",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Claude's public X announcement from Code with Claude Tokyo highlights scheduled deployments, environment variables in vaults, and dynamic workflows becoming generally available.",
+              "why": "The social signal matters because builders immediately see the product as an operations layer, not just another model launch.",
+              "action": "Watch for maker examples that combine cron, secret vaults, and validators; those patterns are likely to become reusable templates.",
+              "teacher": "Use this to explain the agent operations stack: schedule the run, secure the tools, split the work, verify the output.",
+              "link": "https://x.com/claudeai/status/2064741174317924421"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-11 · 18:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Scopely is hiring",
+              "title": "Scopely is hiring a Senior Generative AI Designer / Artist with 3D and game-engine production signals",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Scopely wants a marketing-side generative AI designer/artist in Barcelona, with bonus points for 3D tools, Unity or game-engine captures, sketching, storyboarding, UA video hooks, and portfolio proof.",
+              "why": "Game marketing is turning AI image/video skill into a production role, not just a prompt hobby.",
+              "action": "Build a short portfolio page showing one game-ad concept from sketch to AI variation to polished motion/key art, with clear notes on what was AI-assisted.",
+              "teacher": "Teach this as a pipeline: source brief, visual references, AI ideation, 3D/game-engine capture, edit, QA, final ad variants.",
+              "link": "https://job-boards.greenhouse.io/scopely/jobs/4592827008"
+            },
+            {
+              "n": 2,
+              "category": "Superside AI Creative",
+              "title": "Superside AI Creative role validates generative visual production for enterprise brand campaigns",
+              "source": "careers.superside.com",
+              "relevance": "Intermediate",
+              "summary": "Superside is looking for a hands-on creative who uses generative AI to produce brand, campaign, and digital-experience visuals for major clients.",
+              "why": "There is a consulting lane for designers who combine taste, brand systems, and AI workflow experiments.",
+              "action": "Package a service offer around AI-assisted brand campaign exploration: moodboards, concept routes, hero visuals, and delivery-ready files.",
+              "teacher": "Show students that AI creative work still needs art direction, client constraints, brand consistency, and revision discipline.",
+              "link": "https://careers.superside.com/jobs/ai-creative"
+            },
+            {
+              "n": 3,
+              "category": "Fever Senior AI",
+              "title": "Fever Senior AI Creative Designer asks for daily image, video, copy, and ideation workflow integration",
+              "source": "careers.feverup.com",
+              "relevance": "Intermediate",
+              "summary": "Fever lists a Madrid senior AI creative role using Figma, Adobe tools, and generative AI tools for image, video, copy, and ideation.",
+              "why": "Experience and event brands need fast campaign creative, making AI fluency valuable for designers who can still finish in standard production tools.",
+              "action": "Make a sample event campaign kit: poster, social cutdowns, AI-generated atmosphere frames, and editable Figma/Adobe deliverables.",
+              "teacher": "Use this to teach cross-tool fluency: AI for concepts, Adobe/Figma for precision, and final files for real production.",
+              "link": "https://careers.feverup.com/jobs/4779971101/senior-ai-creative-designer/"
+            },
+            {
+              "n": 4,
+              "category": "C3 AI Senior",
+              "title": "C3 AI Senior Video Producer and Motion Designer shows enterprise AI companies need visual storytellers",
+              "source": "builtin.com",
+              "relevance": "Intermediate",
+              "summary": "C3 AI is recruiting a video and motion designer to explain enterprise AI through polished visual content, animation, editing, and brand storytelling.",
+              "why": "Technical AI companies still struggle to make products legible, creating work for motion designers who can simplify complex workflows.",
+              "action": "Create a 30-second explainer reel for an AI tool, emphasizing before/after workflow clarity instead of abstract futuristic visuals.",
+              "teacher": "Teach motion students to storyboard data, agents, and workflow states as concrete user journeys.",
+              "link": "https://builtin.com/job/senior-video-producer-and-motion-designer/9008933"
+            },
+            {
+              "n": 5,
+              "category": "Fresh Upwork QuickBooks",
+              "title": "Fresh Upwork QuickBooks and Google Workspace n8n job points to small-business ops automation demand",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A new Upwork post asks for n8n automation around QuickBooks and Google Workspace, including process analysis, troubleshooting, and productivity improvements.",
+              "why": "Boring back-office automation is more monetizable than generic AI content because clients can measure time saved and fewer manual errors.",
+              "action": "Offer a fixed-scope audit: map one finance/admin workflow, identify triggers, build one n8n automation, and document handoff/testing.",
+              "teacher": "Teach learners to sell diagnosis first, then automation, then monitoring and maintenance.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/n8n-Automation-Developer-for-QuickBooks-Google-Workspace-Integration_~022064800770313899713/"
+            },
+            {
+              "n": 6,
+              "category": "Upwork n8n RAG",
+              "title": "Upwork n8n RAG agent post shows customer-support knowledge bases moving into freelance builds",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A client wants an advanced n8n developer to build an internal-doc RAG agent for customer support, connected to tickets, vector retrieval, and drafted replies.",
+              "why": "This is a clear productized service: turn messy support docs into a supervised AI response workflow.",
+              "action": "Prepare a demo support-agent workflow using n8n, a small FAQ/doc set, retrieval, confidence labels, and human approval before sending.",
+              "teacher": "Emphasize retrieval quality, failure modes, source citations, and escalation logic rather than chatbot hype.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/n8n-Developer-for-Agent-RAG-Pipeline-Built-n8n_~022064153608400956023/"
+            },
+            {
+              "n": 7,
+              "category": "Upwork lead-conversion AI",
+              "title": "Upwork lead-conversion AI agents brief names CRM, SMS, chatbot, HubSpot, GHL, and OpenClaw-style workflows",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "The job asks for lead capture, qualification, nurturing, CRM updates, follow-ups, and AI agent workflows across Make, n8n, Zapier, Airtable, Sheets, ClickUp, HubSpot, and GoHighLevel.",
+              "why": "Small businesses are buying connected revenue systems, not isolated automations.",
+              "action": "Position as revenue-ops automation: one landing-form trigger, scoring rules, CRM routing, owner notification, and weekly report.",
+              "teacher": "Teach system diagrams before tool setup so students understand data flow, ownership, and what happens when an API fails.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Specialist-for-Lead-Conversion-Agents-Hermes-Workflows_~022064318313065114231/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit Upwork profile",
+              "title": "Reddit Upwork profile critique shows AI automation freelancers need proof-heavy positioning",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A freelancer specializing in AI voice agents and workflow automation asks for feedback on profile positioning, stressing n8n, HubSpot, Airtable, and real business workflows.",
+              "why": "The market is crowded; buyers need outcomes, screenshots, diagrams, and trust signals more than tool lists.",
+              "action": "Rewrite portfolio thumbnails around outcomes: lead response time reduced, missed calls captured, CRM updated automatically, support drafts reviewed.",
+              "teacher": "Use this as a lesson in packaging: title, proof image, result metric, and one clear niche per portfolio item.",
+              "link": "https://www.reddit.com/r/Upwork/comments/1tvoqm9/roast_my_upwork_profile_overview_ai_automation/"
+            },
+            {
+              "n": 9,
+              "category": "Public X discussion",
+              "title": "Public X discussion says scarce 2026 freelancers combine creativity, problem-solving, and AI tool mastery",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post frames the valuable freelancer as someone who blends creativity, problem-solving, and AI tool mastery, not just someone who knows one tool.",
+              "why": "This supports the same pattern from job boards: durable value is judgment plus workflow design plus delivery.",
+              "action": "Audit your offer and replace tool-only claims with before/after problem statements, process screenshots, and measurable client outcomes.",
+              "teacher": "Teach students to present AI fluency as applied judgment: what to automate, what to review, and what to leave human.",
+              "link": "https://x.com/neil_xbt/status/2062379111905939480"
+            },
+            {
+              "n": 10,
+              "category": "Digiday reports generative",
+              "title": "Digiday reports generative AI is now embedded in creator workflows and partnership discovery",
+              "source": "digiday.com",
+              "relevance": "Intermediate",
+              "summary": "Digiday describes generative AI becoming part of creator workflows, including production assistance and identifying brand partnership opportunities.",
+              "why": "Creators and small studios may pay for AI systems that save editing, research, outreach, and sponsorship admin time.",
+              "action": "Build a creator-ops mini service: content calendar generation, sponsor list research, pitch draft templates, asset repurposing, and analytics summary.",
+              "teacher": "Teach creators where AI helps most: repeatable production ops and business development, while keeping personal voice and visual identity human-led.",
+              "link": "https://digiday.com/media/the-state-of-generative-ai-in-the-creator-economy/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-11 15",
       "label": "2026-06-11 · 15:15",
