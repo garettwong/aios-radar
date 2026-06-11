@@ -5,10 +5,159 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 00:02",
-    "editions": 118
+    "fetchedAt": "2026-06-12 00:23",
+    "editions": 119
   },
   "editions": [
+    {
+      "key": "2026-06-12 00",
+      "label": "2026-06-12 · 00:03",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 00:03 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI Codex app",
+              "title": "OpenAI Codex app adds usage profile signals and steadier computer-use startup",
+              "source": "developers.openai.com",
+              "relevance": "Intermediate",
+              "summary": "The June Codex changelog lists activity insights, share cards, better Computer Use startup readiness, appshot error reporting, and expanded onboarding roles.",
+              "why": "Coding agents are becoming measurable work surfaces. Usage insight and appshot reliability are signs that long-running desktop automation is moving into normal workflow UX.",
+              "action": "Track which Codex task classes actually save time, and record failure modes when Computer Use or appshots break.",
+              "teacher": "Teach measurement discipline: do not just ask whether an agent feels smart; ask what task class, time saved, and failure rate it produced.",
+              "link": "https://developers.openai.com/codex/changelog"
+            },
+            {
+              "n": 2,
+              "category": "Claude Sonnet 4",
+              "title": "Claude Sonnet 4 and Opus 4 API retirement lands on June 15",
+              "source": "",
+              "relevance": "Intermediate",
+              "summary": "Anthropic release notes say Claude Sonnet 4 and Opus 4 are scheduled for API retirement on June 15, 2026, with migration recommended to Sonnet 4.6 and Opus 4.8.",
+              "why": "Model churn is now operational risk. Agent workflows pinned to older model IDs can fail on deadlines, not just degrade gradually.",
+              "action": "Audit scripts, MCP servers, coding-agent configs, and evaluation baselines for hardcoded Claude model IDs before June",
+              "teacher": "",
+              "link": null
+            },
+            {
+              "n": 15,
+              "category": "Teaching notes: Teach",
+              "title": "Teaching notes: Teach model lifecycle as dependency management. Models need version audits the same way packages and APIs do.",
+              "source": "platform.claude.com",
+              "relevance": "Intermediate",
+              "summary": "",
+              "why": "",
+              "action": "",
+              "teacher": "",
+              "link": "https://platform.claude.com/docs/en/release-notes/overview"
+            },
+            {
+              "n": 3,
+              "category": "OpenPencil turns open-source",
+              "title": "OpenPencil turns open-source design editing toward programmable AI workflows",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "OpenPencil positions itself as an open-source design editor that opens .fig and .pen files, includes built-in AI, and exposes a headless Vue SDK for custom editors.",
+              "why": "Design tooling is adopting programmable, agent-readable surfaces. That matters for 3D/design teams because visual work can become diffable, scriptable, and automatable.",
+              "action": "Watch whether OpenPencil or similar tools can turn design review into files, diffs, and repeatable agent tasks instead of screenshot feedback.",
+              "teacher": "Explain this as design-as-software: when a canvas has a data model and SDK, agents can participate without pretending to be humans clicking UI.",
+              "link": "https://github.com/open-pencil/open-pencil"
+            },
+            {
+              "n": 4,
+              "category": "OpenPencil v0.7.4 hardens",
+              "title": "OpenPencil v0.7.4 hardens AI design generation and native agent runtime",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The OpenPencil v0.7.4 release notes focus on more reliable AI design generation on dark themes, smarter incremental edits, and a hardened native agent runtime.",
+              "why": "Maker tools are moving from demos to reliability work: fewer visual failures, better incremental changes, and safer native agent execution.",
+              "action": "When testing AI design tools, include dark-theme UI, incremental edits, and native-runtime failure cases in the evaluation set.",
+              "teacher": "Use this as a small but concrete example of product maturity: reliability around edge cases is what separates a toy from a daily tool.",
+              "link": "https://github.com/ZSeven-W/openpencil/releases"
+            },
+            {
+              "n": 5,
+              "category": "Autodesk Flow Studio",
+              "title": "Autodesk Flow Studio case signals AI 3D as editable scene reconstruction, not final pixels",
+              "source": "blogs.autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk says an Annecy session will show how Flow Studio helped transform live-action footage into editable 3D scenes that were then refined by hand.",
+              "why": "The strongest creative AI workflows are leaning toward controllable intermediate assets. For artists, editable scenes beat one-shot images.",
+              "action": "For render jobs, ask whether the AI output is a source asset, a proxy, or a final frame. Favor pipelines that preserve geometry and manual refinement.",
+              "teacher": "Use this as a 3D production lesson: AI should compress blocking, roto, and reconstruction time while leaving craft decisions editable.",
+              "link": "https://blogs.autodesk.com/media-and-entertainment/2026/06/03/annecy-animation-festival-2026/"
+            },
+            {
+              "n": 6,
+              "category": "Business Insider frames",
+              "title": "Business Insider frames Codex and Claude Code as platform lock-in plays",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports that OpenAI and Anthropic are pushing coding tools such as Codex and Claude Code toward stickier product ecosystems, while some enterprise buyers want provider-flexible internal tools.",
+              "why": "The battle is shifting from best model to best workflow moat. Buyers will care about portability, cost control, and whether the agent owns too much context.",
+              "action": "Keep prompts, task files, acceptance checks, and repo instructions portable across at least two agent vendors.",
+              "teacher": "Teach lock-in at the workflow layer: if only one platform understands your tasks, memory, and repo conventions, switching costs rise fast.",
+              "link": "https://www.businessinsider.com/openai-merging-codex-into-chatgpt-lock-in-code-2026-6"
+            },
+            {
+              "n": 7,
+              "category": "NY Post/FT coverage",
+              "title": "NY Post/FT coverage says OpenAI is pushing ChatGPT toward an agent superapp",
+              "source": "nypost.com",
+              "relevance": "Intermediate",
+              "summary": "Coverage of FT reporting says OpenAI is preparing a major ChatGPT overhaul toward a superapp with coding tools, partner apps, and AI agents that manage multiple tasks.",
+              "why": "The consumer surface is becoming an agent operating layer. That means more creative, coding, booking, and productivity workflows may converge inside one assistant shell.",
+              "action": "Watch which partner surfaces gain priority, especially Canva/design, booking, files, and coding, because those integrations hint at where user behavior will be pulled.",
+              "teacher": "Explain the superapp move as distribution strategy: the winner may be the product that owns the daily work surface, not only the strongest model.",
+              "link": "https://nypost.com/2026/06/08/business/openai-is-giving-chatgpt-its-biggest-makeover-yet-with-plans-for-superapp/"
+            },
+            {
+              "n": 8,
+              "category": "HN Gemini CLI",
+              "title": "HN Gemini CLI discussion shows migration deadlines create trust risk",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Hacker News discussion around Gemini CLI moving to Antigravity CLI highlights confusion over CLI identity, multi-agent positioning, and what happens to existing terminal workflows after June 18.",
+              "why": "Developers build habits around CLIs. If a vendor changes the tool surface suddenly, the issue is not only migration effort but trust in future workflows.",
+              "action": "For any agent CLI, keep a fallback path and document install, auth, and model-provider assumptions in the repo.",
+              "teacher": "Use HN as qualitative early warning: comments often expose naming confusion and migration pain before official docs do.",
+              "link": "https://news.ycombinator.com/item?id=48196867"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Gemini users",
+              "title": "Reddit Gemini users are translating Antigravity CLI migration into practical deadlines",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit GeminiAI post summarizes the June 18 Gemini CLI migration, what carries over, and which free, Pro, Ultra, and enterprise users are affected.",
+              "why": "Maker adoption depends on clear migration instructions. Reddit is acting as the practical support layer for users who may not read the official post carefully.",
+              "action": "If using Gemini CLI personally, migrate before June 18 and test Antigravity CLI on one real repo, not just a hello-world prompt.",
+              "teacher": "Teach community channels as operational signal: when users explain the deadline to each other, the official communication probably needs backup.",
+              "link": "https://www.reddit.com/r/GeminiAI/comments/1ti10v6/gemini_cli_is_being_retired_antigravity_cli_is/"
+            },
+            {
+              "n": 10,
+              "category": "Public X guide",
+              "title": "Public X guide says Claude Fable 5 availability is staggered by surface",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article snippet says Claude Fable 5 is available in subscription surfaces first, with API-key access not until June 22.",
+              "why": "Model availability is fragmenting by surface: app, coding tool, coworker product, and API may not launch together. That affects testing plans.",
+              "action": "When evaluating a new model, record which surface was tested and do not assume API behavior matches the app or coding-agent surface.",
+              "teacher": "Teach model launches as channel launches. The same named model can feel different depending on tool access, context, and billing path.",
+              "link": "https://x.com/PawelHuryn/article/2064979937543549362"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-11 21",
       "label": "2026-06-11 · 21:10",
