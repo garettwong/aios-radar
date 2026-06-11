@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 15:22",
+    "fetchedAt": "2026-06-11 15:25",
     "editions": 116
   },
   "editions": [
     {
       "key": "2026-06-11 15",
-      "label": "2026-06-11 · 15:00",
+      "label": "2026-06-11 · 15:15",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "For recurring agents, define the stop condition first: tests pass, screenshot matches, file hash changes, budget cap hit, or human review required.",
               "teacher": "The teaching pattern is goal, loop, validator, budget, transcript. Without all five, long-running agents drift.",
               "link": "https://x.com/zeeshan_utd/article/2064703809990135846"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-11 · 15:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "AlphaSense Senior Motion",
+              "title": "AlphaSense Senior Motion Designer role makes AI-augmented motion systems a brand function",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "AlphaSense is hiring a Senior Motion Designer who can bridge high-end cinematic motion and AI-driven production. The posting names After Effects, C4D, ComfyUI, Runway, Midjourney, repeatable workflows, and product UI animation.",
+              "why": "Motion design is shifting from one-off craft to reusable AI-assisted production systems for SaaS storytelling.",
+              "action": "Build a motion case study that shows a product UI reveal, the AI-assisted exploration stage, the manual animation polish, and the reusable template or workflow behind it.",
+              "teacher": "Teach motion designers to present both taste and system design: timing, typography, transitions, workflow reuse, and quality gates.",
+              "link": "https://job-boards.greenhouse.io/alphasense/jobs/8428179002"
+            },
+            {
+              "n": 2,
+              "category": "Faraday Future AI",
+              "title": "Faraday Future AI Designer role asks for product-grade AI imagery and image-to-video production",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Faraday Future is hiring an AI Designer to produce final-quality brand/product visuals, AI image-to-video, product demo content, social-native video, and reusable AI visual workflows. The stack includes Midjourney, Flux, Stable Diffusion/ComfyUI, Nano Banana, Runway, Kling, Veo, Sora, Hailuo, Adobe tools, and Figma.",
+              "why": "This is a clear job-market signal that AI visual production is becoming a commercial design role, not only experimental prompting.",
+              "action": "Create a portfolio page titled AI visual production workflow, with references, prompt/version control, model choices, rejection criteria, post-production, and final on-brand assets.",
+              "teacher": "Use this as a curriculum template: product fidelity, scene accuracy, brand consistency, reference management, and when to reject AI-looking results.",
+              "link": "https://job-boards.greenhouse.io/faradayfuture/jobs/7738680003"
+            },
+            {
+              "n": 3,
+              "category": "Givebutter remote Design",
+              "title": "Givebutter remote Design Engineer role rewards the design-code bridge",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Givebutter lists a remote Design Engineer role with a June 12, 2026 application deadline and $150K-$170K compensation. It sits between product design and engineering rather than pure visual production.",
+              "why": "AI makes the design-code handoff less valuable as a handoff, but more valuable as a combined skill. Designers who can prototype real interactions will stand out.",
+              "action": "Create a small interactive product demo in React or Framer, then publish the source and a short decision log. Use AI for scaffolding, but polish the interaction and typography manually.",
+              "teacher": "A useful workshop angle: teach designers to ship a tiny product surface, not just a mockup.",
+              "link": "https://jobs.ashbyhq.com/givebutter/642f7a29-dff1-4770-a331-635ef31856d3/application"
+            },
+            {
+              "n": 4,
+              "category": "Rasa growth role",
+              "title": "Rasa growth role asks marketers to use AI tools, workflows, and agents",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Rasa is hiring a remote Growth Marketing Manager and the posting explicitly references AI tools, workflows, and agents. This points to demand for marketers who can run experiments through automation, not just write campaigns.",
+              "why": "Agentic workflows are moving into GTM work: research, segmentation, content variants, lifecycle triggers, and analytics.",
+              "action": "Offer a lightweight AI growth ops audit service: map one funnel, identify three manual bottlenecks, prototype one agent-assisted workflow, and report measurable time saved.",
+              "teacher": "Teach growth teams to keep humans in approval loops for claims, offers, and brand voice while automating research and routing.",
+              "link": "https://jobs.ashbyhq.com/rasa/886faed3-5a1f-4906-9ac6-f39b3c0aa56e"
+            },
+            {
+              "n": 5,
+              "category": "The Browser Company",
+              "title": "The Browser Company enterprise systems role points to AI browser operations as a new internal IT lane",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "The Browser Company is hiring an Enterprise Systems Engineer for AI-powered browsers, automations, and identity systems. The role blends enterprise IT, security, device/user management, and automation.",
+              "why": "As AI browsers enter work, companies will need people who can govern browser agents, identity permissions, and internal workflows.",
+              "action": "Learn the admin side of AI tools: SSO, scopes, audit logs, data retention, browser policies, and approval flows. This becomes a consulting checklist.",
+              "teacher": "Good course module: AI tool rollout for teams covering permissions, prompt/data policy, workflow ownership, and incident response.",
+              "link": "https://jobs.ashbyhq.com/the%20browser%20company/b43c4a9e-6005-4658-9398-97dea566dd5b"
+            },
+            {
+              "n": 6,
+              "category": "Binalyze detection role",
+              "title": "Binalyze detection role shows AI automation moving into security and operations tooling",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Binalyze describes work designing and building AI-powered automation systems across functions with a focus on business impact. Even security-adjacent companies are looking for automation builders, not only analysts.",
+              "why": "The opportunity is not limited to creative or marketing work. There is a market for people who can connect AI automation to reliability, triage, and measurable operations outcomes.",
+              "action": "Create a sample incident-triage automation: ingest alert, summarize evidence, classify severity, draft response, assign owner, and log a postmortem stub.",
+              "teacher": "Use this to teach automation ethics: AI can summarize and route, but evidence preservation and final judgment need clear human ownership.",
+              "link": "https://jobs.ashbyhq.com/binalyze/acc40c49-9541-4b92-9a98-eca9e134104e"
+            },
+            {
+              "n": 7,
+              "category": "Fresh Upwork n8n",
+              "title": "Fresh Upwork n8n post asks for business-process automation, but budget pressure is severe",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A today-posted Upwork job asks for an AI Automation Specialist for n8n to design and implement business-process automations and integrations. The visible fixed price is only $5, which is a useful warning signal.",
+              "why": "Demand exists, but low-budget buyers are flooding the category. Freelancers need qualification filters and productized offers, not random bidding.",
+              "action": "Do not chase $5 builds. Use posts like this as market research, then sell a paid discovery call or fixed-scope workflow audit with a clear deliverable.",
+              "teacher": "Teach beginners to read job posts for scope risk: number of systems, error handling, documentation, ownership, and budget mismatch.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Specialist-for-n8n_~022064799009402474177/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork AI category",
+              "title": "Upwork AI category shows video construction generation as a tiny but revealing creative test job",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "Upwork's AI freelance category surfaced an AI video construction-generation job posted within the last day. The task is framed as a small test video for a Dubai construction time-lapse.",
+              "why": "Clients are experimenting with AI video for architecture, construction, real estate, and pitch visuals. The budgets may start low, but the repeatable offer can become higher-value visualization packages.",
+              "action": "Create a sample construction time-lapse concept portfolio piece with storyboard, generated clips, After Effects cleanup, and a usage-rights note.",
+              "teacher": "For 3D/design students, show how AI video becomes previsualization first; final commercial work still needs art direction, editing, and consistency checks.",
+              "link": "https://www.upwork.com/freelance-jobs/artificial-intelligence/"
+            },
+            {
+              "n": 9,
+              "category": "Figma Designer Advocate",
+              "title": "Figma Designer Advocate for Weave turns creative AI workflows into a teaching and community role",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Figma is hiring a Designer Advocate for Weave and asks for AI-driven creative workflows, generative pipelines, node-based or procedural tools such as ComfyUI, Houdini, TouchDesigner, and Runway, plus teaching and live-demo ability.",
+              "why": "The market needs people who can not only build creative workflows, but explain them, demo them, and make them adoptable by other designers.",
+              "action": "Turn one internal workflow into a public mini demo: problem, inputs, node/procedure map, output, failure modes, and a downloadable checklist.",
+              "teacher": "This is a strong signal for course design: documentation, live demos, community education, and workflow transfer are now part of the AI creative job ladder.",
+              "link": "https://job-boards.greenhouse.io/figma/jobs/5692764004"
+            },
+            {
+              "n": 10,
+              "category": "Reddit Upwork thread",
+              "title": "Reddit Upwork thread shows AI automation freelancers need better portfolio positioning, not just tool lists",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Reddit thread from an AI automation freelancer asks whether Upwork portfolio thumbnails and titles look professional enough for voice-agent and workflow-automation services. The pain is positioning, trust, and proof.",
+              "why": "This is buyer-facing evidence: the bottleneck for many AI freelancers is packaging and credibility, not only technical ability.",
+              "action": "Build portfolio cards around outcomes: Missed-call voice agent, lead-to-CRM cleanup, weekly report generator. Show screenshots, flow diagrams, and quantified savings.",
+              "teacher": "Useful class exercise: rewrite tool-heavy portfolio titles into client-outcome titles, then critique whether the thumbnail proves the result.",
+              "link": "https://www.reddit.com/r/Upwork/comments/1tsu9v2/are_my_upwork_portfolio_thumbnails_and_titles/"
             }
           ]
         }
