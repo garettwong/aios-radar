@@ -5,10 +5,39 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 21:10",
-    "editions": 117
+    "fetchedAt": "2026-06-11 21:13",
+    "editions": 118
   },
   "editions": [
+    {
+      "key": "2026-06-11 21",
+      "label": "2026-06-11 · 21:10",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 21:10 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 4,
+              "category": "Mistral Vibe merges",
+              "title": "Mistral Vibe merges work agent and coding agent into one product surface.",
+              "source": "mistral.ai",
+              "relevance": "Intermediate",
+              "summary": "Mistral repositioned Le Chat into Vibe, combining Work Mode, Code Mode, a VS Code extension, terminal/IDE workflows, and connector-aware long-horizon tasks.",
+              "why": "The line between office assistant and coding agent is collapsing into one persistent work agent with permissions and context.",
+              "action": "Watch whether Vibe integrated work/code model pressures OpenAI, Anthropic, and Google to unify their separate assistant and coding surfaces.",
+              "teacher": "This is a good example of agent products becoming operating layers rather than single-purpose tools.",
+              "link": "https://mistral.ai/news/vibe-agent/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-11 18",
       "label": "2026-06-11 · 18:15",
