@@ -5,10 +5,157 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 09:22",
-    "editions": 113
+    "fetchedAt": "2026-06-11 09:45",
+    "editions": 114
   },
   "editions": [
+    {
+      "key": "2026-06-11 09",
+      "label": "2026-06-11 · 09:24",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 09:24 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Copilot Chat can",
+              "title": "Copilot Chat can now search and explain past agent sessions",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub shipped a June 10 update that lets Copilot Chat reflect cloud-agent session status and query past agent sessions, including logs from agent pull-request work.",
+              "why": "Coding agents are moving from one-off task runners into searchable work history. That makes agent output auditable and easier to resume.",
+              "action": "Start keeping short, intentional issue titles and PR descriptions for agent tasks so later session search returns useful history.",
+              "teacher": "Good agent systems need memory that is inspectable, not just hidden context. Session logs are becoming part of the developer interface.",
+              "link": "https://github.blog/changelog/2026-06-10-copilot-chat-now-sees-your-agent-sessions/"
+            },
+            {
+              "n": 2,
+              "category": "Copilot CLI adds",
+              "title": "Copilot CLI adds an experimental terminal security-review command",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub added /security-review to Copilot CLI in public preview, scanning local code changes for high-confidence security findings before commit.",
+              "why": "Security review is moving into the same terminal loop as agentic coding, not just post-PR CI.",
+              "action": "Add a pre-commit habit: run tests, run lint, then run /security-review on agent-made diffs before pushing.",
+              "teacher": "The useful pattern is fast, local, focused review. Treat AI security scans as an early warning layer, not a replacement for code review.",
+              "link": "https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub now validates",
+              "title": "GitHub now validates third-party coding agents by default",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub made security validation generally available for code created by third-party agents such as Claude and OpenAI Codex, using CodeQL, advisory checks, and secret scanning.",
+              "why": "The platform is accepting multi-agent reality. The control point is no longer which agent wrote the code; it is whether generated code passes shared safety gates.",
+              "action": "For any repo using external agents, confirm agent validation settings are enabled and document which checks run before PR finalization.",
+              "teacher": "This is a strong example of platform-level guardrails: agent freedom at the edge, common validation at the merge path.",
+              "link": "https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/"
+            },
+            {
+              "n": 4,
+              "category": "GitHub Copilot SDK",
+              "title": "GitHub Copilot SDK is generally available",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub released the Copilot SDK as GA, exposing the Copilot agent runtime for planning, tool invocation, file edits, streaming, and multi-turn sessions across multiple languages.",
+              "why": "Agent runtimes are becoming embeddable infrastructure. Teams can build custom internal agents without building orchestration from scratch.",
+              "action": "Watch for internal-tool opportunities where a narrow Copilot SDK agent could automate repo maintenance, CI triage, or repetitive review work.",
+              "teacher": "The agent market is splitting between full products and runtime layers. SDKs are the layer that let companies build private workflows.",
+              "link": "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/"
+            },
+            {
+              "n": 5,
+              "category": "Vercel's June AI",
+              "title": "Vercel's June AI Gateway index shows low-cost models entering production",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel reported that DeepSeek's token share on AI Gateway jumped from under 1% to 17% in May, while Anthropic still dominated spend in high-stakes use cases like coding agents.",
+              "why": "The market signal is not simply cheaper models replacing frontier models. It is workload routing: cheap models for volume, frontier models for hard reasoning.",
+              "action": "Build a small eval set for your own workflows and test whether cheaper models can handle summaries, classifications, and first-pass code review.",
+              "teacher": "Model choice is now an operations decision. Cost, latency, and failure mode matter as much as leaderboard rank.",
+              "link": "https://vercel.com/blog/ai-gateway-production-index-june-2026"
+            },
+            {
+              "n": 6,
+              "category": "Microsoft is pushing",
+              "title": "Microsoft is pushing AI security into the development lifecycle",
+              "source": "microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Build security coverage emphasized production-signal enrichment, AI-assisted fixes, and validation through GitHub Copilot Autofix and the Copilot cloud agent.",
+              "why": "Enterprise buyers want agents that can remediate real risk, not just generate code. Security context is becoming part of agent task selection.",
+              "action": "For client or production work, label agent tasks by risk level and require stronger validation for internet-exposed or data-sensitive changes.",
+              "teacher": "Agents get more valuable when they know priority. Security signal enrichment is a concrete example of context improving automation quality.",
+              "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/"
+            },
+            {
+              "n": 7,
+              "category": "Visual Studio 2026",
+              "title": "Visual Studio 2026 frames deep AI integration as a platform shift",
+              "source": "learn.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft Learn positions the Visual Studio 2026 May update as the start of a new era with deep platform AI integration, better fundamentals, and performance improvements.",
+              "why": "Agentic coding is no longer only a VS Code/Cursor/terminal story. Traditional enterprise IDEs are being rebuilt around AI-native workflows.",
+              "action": "If a team is locked into Visual Studio, test whether the 2026 update reduces the need to move projects into separate AI-first tools.",
+              "teacher": "Adoption often follows existing workflow gravity. AI features inside incumbent tools can matter more than standalone novelty.",
+              "link": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes"
+            },
+            {
+              "n": 8,
+              "category": "Open-source CheetahClaws copies",
+              "title": "Open-source CheetahClaws copies Claude-Code-style quiet agent output",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The CheetahClaws GitHub project added a Claude-Code-style quiet mode that hides per-tool execution and shows concise progress summaries by default.",
+              "why": "Open-source agent harnesses are standardizing around operator experience, not just model access. Less noisy output helps long runs feel manageable.",
+              "action": "Compare your own agent logs: keep verbose logs for audit, but make the default human-facing stream concise and status-oriented.",
+              "teacher": "UX is a control surface. The way an agent reports progress changes whether users trust it during long autonomous work.",
+              "link": "https://github.com/SafeRL-Lab/cheetahclaws"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News builders",
+              "title": "Hacker News builders describe plan-first AI dev workflows",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "In an Ask HN thread on AI dev stacks, one practical workflow centered on plan mode, asking alignment questions, turning plans into tickets, and starting fresh sessions before context rot.",
+              "why": "Serious users are converging on process, not magic prompts. Planning, ticketing, committing, and context resets are becoming the craft of AI coding.",
+              "action": "For larger tasks, make the agent produce a plan, split tickets, commit after each ticket, and restart sessions before context gets overloaded.",
+              "teacher": "Teach agents like junior collaborators with checklists and review points. The process matters more than a single perfect prompt.",
+              "link": "https://news.ycombinator.com/item?id=48413629"
+            },
+            {
+              "n": 10,
+              "category": "Reddit discussion shows",
+              "title": "Reddit discussion shows AI-generated PR review is becoming a workflow pain point",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/ClaudeAI thread about reviewing AI-generated pull requests surfaces skepticism, jokes, and real concern about teams merging agent-created changes too casually.",
+              "why": "Maker adoption is producing a second-order problem: reviewing AI output at scale. The bottleneck shifts from code generation to taste, safety, and acceptance criteria.",
+              "action": "Create a PR template for agent-made changes with explicit sections for tests run, files touched, risks, and human review focus.",
+              "teacher": "The human role is shifting toward reviewer and systems designer. Good review scaffolding is how teams avoid accepting plausible but weak output.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1teuh5w/reviewing_aigenerated_pull_requests_in_2026/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-11 · 09:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": []
+        }
+      ]
+    },
     {
       "key": "2026-06-11 06",
       "label": "2026-06-11 · 06:15",
