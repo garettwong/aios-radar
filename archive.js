@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 03:04",
-    "editions": 119
+    "fetchedAt": "2026-06-12 03:08",
+    "editions": 120
   },
   "editions": [
+    {
+      "key": "2026-06-12 03",
+      "label": "2026-06-12 · 03:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 03:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Splash Financial Senior",
+              "title": "Splash Financial Senior Product Designer contract role requires AI-powered product UX and AI-assisted design workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Splash is hiring a remote contract senior product designer who can design AI-powered product features, handle uncertainty and error states, and use AI-assisted tools such as Figma AI to speed up exploration.",
+              "why": "This is a practical signal that AI design work is moving from novelty to regulated-product execution, where trust, edge cases, and user safety matter.",
+              "action": "Build a small portfolio case showing one AI-assisted flow with empty states, wrong-answer handling, confidence messaging, and before/after Figma iterations.",
+              "teacher": "Teach designers to present AI UX as risk management plus speed, not just prompt tricks.",
+              "link": "https://job-boards.greenhouse.io/splashfinancial/jobs/4685905006"
+            },
+            {
+              "n": 2,
+              "category": "Databricks Sr. Product",
+              "title": "Databricks Sr. Product Designer AI/BI role asks designers to make AI-generated insights trustworthy",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Databricks wants a designer for AI/BI experiences that let non-technical users ask data questions in natural language, validate answers, and move from insight to action.",
+              "why": "Enterprise AI design is becoming a clear specialty: explainability, confidence, collaboration, and decision workflows.",
+              "action": "Package a demo dashboard concept where AI answers are paired with evidence, follow-up questions, and action buttons.",
+              "teacher": "The lesson is to design the human-AI decision loop, not just the chat box.",
+              "link": "https://job-boards.greenhouse.io/databricks/jobs/8428820002"
+            },
+            {
+              "n": 3,
+              "category": "Glean Product Designer",
+              "title": "Glean Product Designer AI Products role points to daily enterprise AI UX becoming mainstream",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Glean is hiring for AI product design around enterprise knowledge work, agentic capabilities, and AI experiences embedded in tools like Teams, Zoom, ServiceNow, Zendesk, and GitHub.",
+              "why": "The opportunity is not only building AI apps; it is designing AI inside the places workers already live.",
+              "action": "Map one client workflow and identify three surfaces where an AI assistant could reduce search, handoff, or reporting friction.",
+              "teacher": "Teach students to spot embedded-AI opportunities in existing software stacks.",
+              "link": "https://job-boards.greenhouse.io/gleanwork/jobs/4696058005"
+            },
+            {
+              "n": 4,
+              "category": "Merge Product Designer",
+              "title": "Merge Product Designer role connects AI agents to B2B integration infrastructure",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Merge says it builds infrastructure connecting AI agents and B2B products to external systems, and wants a designer who moves quickly with AI-native workflows.",
+              "why": "Agent UX needs integrations, permissions, monitoring, and recovery paths; those are valuable design and consulting niches.",
+              "action": "Create a service offer around auditing agent workflows for integration failure points and human approval moments.",
+              "teacher": "The durable skill is designing control surfaces for agents, not only prompts.",
+              "link": "https://job-boards.greenhouse.io/merge/jobs/5746719004"
+            },
+            {
+              "n": 5,
+              "category": "fal Senior Product",
+              "title": "fal Senior Product Designer role rewards generative-media UX literacy",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "fal wants product design skill plus familiarity with generative media, LLMs, image/video models, prompt parameters, evaluation, and latency/quality tradeoffs.",
+              "why": "This is directly relevant to 3D, creator, and render workflows where output quality depends on controllable parameters and evaluation loops.",
+              "action": "Build a one-page comparison grid for image/video tools showing prompt controls, seed handling, latency, cost, and quality notes.",
+              "teacher": "Teach generative media as a production system: inputs, constraints, evaluation, iteration.",
+              "link": "https://job-boards.greenhouse.io/fal/jobs/4105054009"
+            },
+            {
+              "n": 6,
+              "category": "Babylist Staff Product",
+              "title": "Babylist Staff Product Designer AI Builder role turns AI prototyping into design leadership",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Babylist asks for an AI-native designer who can prototype quickly, write production frontend code, build feedback loops, and teach the organization what good AI-first design looks like.",
+              "why": "Senior design value is shifting toward builder-consultant capability: make the prototype, measure it, then teach the team.",
+              "action": "Turn one static portfolio piece into a working prototype with instrumentation and a short decision log.",
+              "teacher": "A strong AI-era designer can ship, test, and explain the design system consequences.",
+              "link": "https://job-boards.greenhouse.io/babylist/jobs/5831620004"
+            },
+            {
+              "n": 7,
+              "category": "10xTeam Product Marketing",
+              "title": "10xTeam Product Marketing Manager AI Trainer role monetizes marketing judgment for model training",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam lists a freelance remote AI trainer role for product marketing managers, updated June 2026, with part-time hours and high hourly compensation.",
+              "why": "Domain experts can sell judgment directly into AI training and evaluation, even without becoming full-time ML engineers.",
+              "action": "Prepare a short evaluator profile: strongest domain, examples of good versus bad outputs, and a repeatable scoring rubric.",
+              "teacher": "This is a useful lesson for non-coders: subject-matter taste is becoming paid AI labor.",
+              "link": "https://jobs.ashbyhq.com/10xteam/5f33beca-10b9-4268-914f-f7bb803416e9"
+            },
+            {
+              "n": 8,
+              "category": "Siena Forward Deployed",
+              "title": "Siena Forward Deployed Product Manager Agents role shows AI agent deployment becoming customer-facing product work",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Siena is hiring a forward deployed product manager for agents, remote in the US/Canada, with a June 14 deadline.",
+              "why": "Companies need people who can translate customer operations into agent deployments, not only people who can build the model.",
+              "action": "Create a client-discovery template for agent projects: trigger, data source, decision owner, failure mode, escalation, and success metric.",
+              "teacher": "Agent work should be taught as deployment and change management, not as a demo-only skill.",
+              "link": "https://jobs.ashbyhq.com/siena/bece1b22-9932-4621-ba86-4c5352344cf2"
+            },
+            {
+              "n": 9,
+              "category": "Upwork AI Automation",
+              "title": "Upwork AI Automation and Lead Generation brief bundles n8n, GoHighLevel, WhatsApp, and voice agents",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Upwork brief asks for end-to-end automation across n8n, GoHighLevel, WhatsApp automation, AI voice agents, and agentic workflows.",
+              "why": "Small businesses are buying bundled revenue automation, so freelancers can package repeatable offers around lead capture, follow-up, and CRM hygiene.",
+              "action": "Productize a starter package: audit one funnel, fix lead routing, add WhatsApp follow-up, and document handoff rules.",
+              "teacher": "Warn learners that low-budget automation work is common; win by selling outcomes and reliability, not tool names.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Lead-Generation-Specialist-n8n-GoHighLevel-WhatsApp-Retell_~022063823353666855566/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit n8n career",
+              "title": "Reddit n8n career thread says operations and finance automation beats generic n8n branding",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "In a public r/n8n career thread, commenters advised an automation learner to target operations, finance ops, rev ops, and business operations instead of marketing themselves only as an n8n specialist.",
+              "why": "The buyer language is business outcome language; generic AI automation branding is getting crowded.",
+              "action": "Rewrite offers around one business function, such as finance close, lead response, customer onboarding, or reporting ops.",
+              "teacher": "Teach positioning first: tool skill is evidence, but the offer should name a painful process.",
+              "link": "https://www.reddit.com/r/n8n/comments/1r929nm/hey_guys_i_just_wanted_to_askare_there_career/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 00",
       "label": "2026-06-12 · 00:15",
