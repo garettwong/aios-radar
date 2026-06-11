@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 12:06",
-    "editions": 114
+    "fetchedAt": "2026-06-11 12:09",
+    "editions": 115
   },
   "editions": [
+    {
+      "key": "2026-06-11 12",
+      "label": "2026-06-11 · 12:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-11 · 12:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Cursor Bugbot becomes",
+              "title": "Cursor Bugbot becomes faster, cheaper, and usable before push",
+              "source": "cursor.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor says Bugbot review time is now about 90 seconds, down from about five minutes, with 22 percent lower cost and 10 percent more bugs found per review. It also adds a pre-push review flow so teams can run Bugbot and security review before opening a PR.",
+              "why": "Code review is becoming the real bottleneck in AI coding workflows. The useful tools are moving earlier in the loop, before PR noise piles up.",
+              "action": "Test a pre-push review habit on one repo: run agent review locally, fix the obvious findings, then open the PR.",
+              "teacher": "Teach this as the shift from agent writes code to agent checks the diff while context is still warm.",
+              "link": "https://cursor.com/changelog/bugbot-updates-june-2026"
+            },
+            {
+              "n": 2,
+              "category": "Workday gives agent",
+              "title": "Workday gives agent builders controlled HR and finance tools plus Agent Passport",
+              "source": "newsroom.workday.com",
+              "relevance": "Intermediate",
+              "summary": "Workday announced Developer Agent, Agent-Ready Tools, and Agent Passport for building, connecting, and verifying agents across HR, finance, and IT workflows. The tools plug into agentic development environments including Claude Code, Cline, Codex, Cursor, and Google Antigravity.",
+              "why": "Enterprise agents are moving from generic assistants toward controlled action on sensitive systems of record.",
+              "action": "For any internal agent idea, write down the allowed actions, audit trail, and rollback path before building prompts.",
+              "teacher": "Use Workday as a clean example of the new enterprise agent pattern: natural-language build, MCP-style controlled tools, and independent verification.",
+              "link": "https://newsroom.workday.com/2026-06-02-Workday-Launches-New-Tools-for-Developers-to-Build%2C-Connect%2C-and-Verify-AI-Agents-For-HR%2C-Finance%2C-and-IT"
+            },
+            {
+              "n": 3,
+              "category": "LangChain says every",
+              "title": "LangChain says every production agent needs its own isolated computer",
+              "source": "langchain.com",
+              "relevance": "Intermediate",
+              "summary": "LangChain argues that agents need real execution environments: filesystem, shell, package manager, network, persistent state, and hardware-level isolation. Its LangSmith Sandboxes position microVMs as the safer unit for agent code execution.",
+              "why": "Serious agents need to run code and inspect results, but giving them a laptop or plain container is risky.",
+              "action": "Treat local execution, package installs, and generated scripts as untrusted by default. Separate agent workspaces from your real machine.",
+              "teacher": "Frame this as the difference between a chatbot and an acting agent: the acting agent needs a computer, permissions, and isolation.",
+              "link": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer"
+            },
+            {
+              "n": 4,
+              "category": "Firecrawl compares the",
+              "title": "Firecrawl compares the practical open-source agent framework landscape",
+              "source": "firecrawl.dev",
+              "relevance": "Intermediate",
+              "summary": "Firecrawl updated its guide comparing LangGraph, OpenAI Agents SDK, AutoGen, CrewAI, Google ADK, Dify, Mastra, Smolagents, Semantic Kernel, and Haystack. It highlights adoption numbers, language fit, production tradeoffs, and use cases.",
+              "why": "The agent framework market is crowded, and picking by hype wastes time. The practical split is now Python control, TypeScript product work, enterprise .NET work, low-code, or RAG-first systems.",
+              "action": "Choose frameworks by workflow shape: LangGraph for stateful control, Mastra for TypeScript apps, Haystack for document-heavy retrieval, Smolagents for quick Python automation.",
+              "teacher": "Use the table as a buyer map, not a ranking. Start with language, observability, human approval, and deployment path.",
+              "link": "https://www.firecrawl.dev/blog/best-open-source-agent-frameworks"
+            },
+            {
+              "n": 5,
+              "category": "Roblox CubePart turns",
+              "title": "Roblox CubePart turns 3D generation toward controllable game-engine parts",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Roblox Cube describes CubePart, an open-vocabulary, part-controllable 3D generator that takes an input mesh plus user-defined part schema and outputs coherent meshes per semantic part.",
+              "why": "For 3D artists and game workflows, controllable parts matter more than a single impressive mesh. Rigging, physics, behavior scripts, and editing all need structure.",
+              "action": "Watch for AI 3D tools that output editable parts, not only pretty previews. For production, ask what the asset exposes to Blender, Unreal, Unity, or Roblox Studio.",
+              "teacher": "Explain this as the move from text-to-shape toward text-to-structured-asset.",
+              "link": "https://github.com/Roblox/cube/"
+            },
+            {
+              "n": 6,
+              "category": "Salesforce Connections frames",
+              "title": "Salesforce Connections frames AI agents as brand-facing marketing workers",
+              "source": "salesforce.com",
+              "relevance": "Intermediate",
+              "summary": "Salesforce Connections 2026 material positions AI agents as new brand ambassadors shaping customer moments, with marketing workflows moving from static campaigns toward conversations.",
+              "why": "Agent adoption is not only coding. Customer-facing creative and marketing roles are being reframed around agent teams that generate, personalize, and follow up.",
+              "action": "For client work, prototype one agent-assisted customer journey: brief intake, personalized copy, asset checklist, and follow-up draft.",
+              "teacher": "The useful lens is not AI replaces marketers. It is marketers become operators of always-on systems.",
+              "link": "https://www.salesforce.com/plus/experience/connections_2026/series/connections_2026_highlights/episode/episode-s1e2"
+            },
+            {
+              "n": 7,
+              "category": "Reddit Claude Code",
+              "title": "Reddit Claude Code builders are turning agentic workflows into structured training loops",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit Claude Code post promotes a seven-day hands-on challenge covering newsletter automation, Firecrawl MCP scraping, reusable skills, Trigger.dev deployment, screenshot feedback loops, scheduled automation, and a personal assistant folder.",
+              "why": "Grassroots users are packaging agent workflows as learnable routines. The market is moving from random prompt sharing toward repeatable operator training.",
+              "action": "Build one small weekly drill: scrape, summarize, verify, publish to a private note, then log what failed.",
+              "teacher": "Good agent education is project-based. Each day should produce an artifact and one intentional failure lesson.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1tviwo2/a_free_7day_handson_challenge_to_build_agentic_ai/"
+            },
+            {
+              "n": 8,
+              "category": "Public X signal",
+              "title": "Public X signal says the GitHub Copilot bill has come due",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article from Kilo Code frames Copilot AI Credits as a wake-up call for engineering teams that had treated agent usage as flat-rate.",
+              "why": "Cost control is becoming a normal part of agent operations. Long context, premium models, and repeated review loops can turn casual use into a budget issue.",
+              "action": "Add a simple cost column to agent workflows: model, context size, number of loops, and expected retry count.",
+              "teacher": "Teach agents like render farms: quality settings cost money, and not every pass deserves maximum settings.",
+              "link": "https://x.com/kilocode/article/2064328144769736778"
+            },
+            {
+              "n": 9,
+              "category": "Salesforce Agentforce layoffs",
+              "title": "Salesforce Agentforce layoffs show the agent market is entering a harder proof phase",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports new Salesforce cuts affecting areas tied to Agentforce, Mulesoft, and Marketing Cloud, while noting pressure around Agentforce adoption and performance versus demos.",
+              "why": "The agent market is not pure hype-up. Buyers are asking for proof, adoption, and measurable value, and vendors are adjusting teams around reality.",
+              "action": "When evaluating agent products, ask for live workflow evidence, not just demo clips: adoption, task completion rate, escalation rate, and cost per completed job.",
+              "teacher": "This is a market discipline signal. Agent products need to survive procurement and usage metrics, not only keynote energy.",
+              "link": "https://www.businessinsider.com/salesforce-cuts-jobs-agentforce-2026-6"
+            },
+            {
+              "n": 10,
+              "category": "LangSmith Fleet weekly",
+              "title": "LangSmith Fleet weekly update fixes cron, long-running agents, and MCP authorization UX",
+              "source": "docs.langchain.com",
+              "relevance": "Intermediate",
+              "summary": "LangSmith Fleet June 1 to June 5 update adds faster skill metadata loading, agent templates, clearer remote MCP authorization screens, Slack availability in AWS and APAC, restored scheduled execution, and fixes for long-running agent runs.",
+              "why": "Agent platforms are maturing through boring reliability work: schedules, long runs, tool lists, MCP permissions, and regional integrations.",
+              "action": "Audit your own agent stack for these basics: scheduled jobs, timeout limits, OAuth and MCP consent clarity, and how long tool lists are presented.",
+              "teacher": "Reliability features are trend signals. When vendors fix cron and long-running runs, it means customers are pushing agents into real operations.",
+              "link": "https://docs.langchain.com/langsmith/fleet/changelog"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-11 09",
       "label": "2026-06-11 · 09:24",
