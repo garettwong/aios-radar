@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 03:11",
+    "fetchedAt": "2026-06-12 03:17",
     "editions": 120
   },
   "editions": [
     {
       "key": "2026-06-12 03",
-      "label": "2026-06-12 · 03:00",
+      "label": "2026-06-12 · 03:04",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 03:04 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI to acquire",
+              "title": "OpenAI to acquire Ona for persistent Codex cloud work",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says it will acquire Ona to bring secure cloud execution and orchestration into Codex. The pitch is persistent, customer-controlled environments where agents can keep working over hours or days, even after the local session ends.",
+              "why": "Coding agents are moving from editor helpers to production workers that need logs, scoped credentials, review paths, and stable execution contexts.",
+              "action": "For any serious agent workflow, define where the agent runs, what credentials it can touch, and how progress is reviewed before you scale it.",
+              "teacher": "The important shift is not just model quality; it is durable workspaces plus governance. Teach this as the move from chat to operations.",
+              "link": "https://openai.com/index/openai-to-acquire-ona/"
+            },
+            {
+              "n": 2,
+              "category": "Anthropic says Claude",
+              "title": "Anthropic says Claude now authors most merged Anthropic code",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic reports that, as of May 2026, more than 80% of code merged into its own codebase was authored by Claude, with engineers increasingly directing and reviewing rather than typing every line.",
+              "why": "This is a strong signal that frontier AI labs are reorganizing engineering around delegation, review, and task framing.",
+              "action": "Track your own agent-assisted output by merged PRs, review time, rollback rate, and defect rate, not by lines generated.",
+              "teacher": "Use this to explain the new senior skill: specifying goals, setting constraints, and verifying work, while leaving more implementation to agents.",
+              "link": "https://www.anthropic.com/institute/recursive-self-improvement"
+            },
+            {
+              "n": 3,
+              "category": "GitHub Agentic Workflows",
+              "title": "GitHub Agentic Workflows reaches public preview",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub moved Agentic Workflows into public preview, positioning Markdown-defined agent workflows inside GitHub Actions with sandboxing, read-only defaults, safe outputs, and threat detection.",
+              "why": "Repository automation is becoming agentic, but GitHub is packaging it with security boundaries instead of just asking users to trust long-running bots.",
+              "action": "Prototype one low-risk workflow such as issue triage, stale PR summarization, or documentation checks before letting agents touch production code paths.",
+              "teacher": "The lesson is that agent automation belongs in CI-style guardrails: explicit triggers, scoped permissions, repeatable logs, and human approval gates.",
+              "link": "https://github.blog/changelog/2026-06-11-github-agentic-workflows-is-now-in-public-preview"
+            },
+            {
+              "n": 4,
+              "category": "Google frames Antigravity",
+              "title": "Google frames Antigravity 2.0 as a desktop for agent cohorts",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "At I/O 2026, Google described Antigravity 2.0 as a standalone desktop application for developing and managing cohorts of autonomous AI agents, beyond a normal coding environment.",
+              "why": "The agent interface is shifting from one chat window to an operations console where multiple workers can run in parallel.",
+              "action": "Start designing your own work as queues, roles, and review checkpoints instead of single prompts. Name the jobs agents can own repeatedly.",
+              "teacher": "Teach Antigravity as a sign of interface evolution: IDE to agent desktop, single assistant to managed agent team.",
+              "link": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+            },
+            {
+              "n": 5,
+              "category": "Canva puts brand",
+              "title": "Canva puts brand design creation inside ChatGPT and Codex",
+              "source": "canva.com",
+              "relevance": "Intermediate",
+              "summary": "Canva says users can create, preview, and edit on-brand designs directly inside ChatGPT and Codex through its integration and MCP server.",
+              "why": "Design tools are being pulled into agent workflows, so brand assets can be generated and revised where the brief already lives.",
+              "action": "Prepare reusable brand kits, templates, and approval rules so AI-generated layouts stay useful instead of becoming off-brand drafts.",
+              "teacher": "This is a maker workflow signal: creative production is becoming connector-based, with design systems acting as source control for taste.",
+              "link": "https://www.canva.com/newsroom/news/deep-research-integration-mcp-server/"
+            },
+            {
+              "n": 6,
+              "category": "AI routing startups",
+              "title": "AI routing startups get funded as token costs bite builders",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports that AI-routing startups such as OpenRouter and Concentrate AI are attracting funding as teams look for cheaper, more flexible ways to route model traffic and control token spend.",
+              "why": "The next practical bottleneck is not only capability; it is cost, latency, outages, and choosing the right model for each task.",
+              "action": "Add a simple routing rulebook: frontier models for planning and review, cheaper models for extraction and bulk transforms, local models where privacy or cost matters.",
+              "teacher": "Teach model routing like render-farm management: match the job to the machine, measure output quality, and keep a fallback path.",
+              "link": "https://www.businessinsider.com/ai-routing-startups-openrouter-concentrate-funding-boom-2026-6"
+            },
+            {
+              "n": 7,
+              "category": "OpenAI shows Codex",
+              "title": "OpenAI shows Codex helping scientists build black-hole simulations",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI published a case study on astrophysicist Chi-kwan Chan using Codex to refine and test algorithms for black-hole plasma simulations.",
+              "why": "Coding agents are spreading beyond app development into scientific computing, where the work is algorithmic, numerical, and verification-heavy.",
+              "action": "For technical or 3D pipeline work, use agents to generate test harnesses, compare algorithm variants, and document assumptions rather than only writing UI code.",
+              "teacher": "This is a good example of agent value in hard domains: accelerate exploration, but keep domain experts in charge of correctness.",
+              "link": "https://openai.com/index/using-codex-to-simulate-black-holes/"
+            },
+            {
+              "n": 8,
+              "category": "HN flags retention",
+              "title": "HN flags retention and privacy as Fable and Mythos reach agent workflows",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Hacker News discussion around Anthropic's Fable and Mythos data-retention requirements shows builders worrying about PII, enterprise use, and how agent workflows change the risk profile.",
+              "why": "As powerful models become useful for long-running work, data governance becomes a product-selection issue, not just a legal footnote.",
+              "action": "Separate agent tasks by data sensitivity. Keep personal, client, and unreleased project data out of tools that do not match your retention requirements.",
+              "teacher": "Teach this as the privacy side of agent adoption: the more capable the worker, the more carefully you scope what it can see.",
+              "link": "https://news.ycombinator.com/item?id=48464258"
+            },
+            {
+              "n": 9,
+              "category": "Reddit AI builders",
+              "title": "Reddit AI builders compare tools by real workflow fit, not hype",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit AI_Agents thread compares tools across coding IDEs, app builders, design tools, and image generation based on practical fit, cost, and handoff quality.",
+              "why": "Maker adoption is maturing. People are no longer asking only which model is smartest; they are asking which tool fits the actual job and budget.",
+              "action": "Maintain a small personal tool matrix: best for coding, best for design handoff, best for research, best for low-cost bulk work, best for commercial-safe visuals.",
+              "teacher": "Use this to show market segmentation: general assistants, coding agents, app builders, and creative tools are becoming separate buying decisions.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tr9u9m/the_best_ai_tools_in_2026_are_not_always_the_most/"
+            },
+            {
+              "n": 10,
+              "category": "GitHub makes Copilot",
+              "title": "GitHub makes Copilot app technical preview available beyond the waitlist",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub posted on X that the Copilot app technical preview is now available to current Copilot Pro, Pro+, Max, Business, and Enterprise plan users.",
+              "why": "This widens access to the agent-native desktop experience and gives more teams a practical path to test GitHub-centered agent work.",
+              "action": "If you already pay for Copilot, test one contained repo workflow in the desktop app and compare review friction against your current CLI or IDE agent.",
+              "teacher": "This is a distribution signal: agent desktops are entering paid-user channels, not staying as private demos.",
+              "link": "https://x.com/github/status/2064810471124005218"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
