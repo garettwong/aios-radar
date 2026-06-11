@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 06:12",
+    "fetchedAt": "2026-06-12 06:16",
     "editions": 121
   },
   "editions": [
     {
       "key": "2026-06-12 06",
-      "label": "2026-06-12 · 06:02",
+      "label": "2026-06-12 · 06:10",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 06:10 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI says Gartner",
+              "title": "OpenAI says Gartner named Codex a leader in enterprise AI coding agents",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says Codex was recognized as a leader in Gartner's 2026 enterprise AI coding agents report, and cites weekly usage plus enterprise adoption across companies including Cisco, Datadog, Dell, and NVIDIA.",
+              "why": "Enterprise buyers are turning coding agents into a formal software category with procurement, governance, and vendor comparisons, not just developer enthusiasm.",
+              "action": "Keep a short comparison sheet for coding agents: deployment surface, data controls, audit trail, cost model, repo workflow, and failure recovery.",
+              "teacher": "Use this to teach market maturation: when Gartner tracks a category, buyers start asking for proof, controls, and ROI instead of demos.",
+              "link": "https://openai.com/index/gartner-2026-agentic-coding-leader/"
+            },
+            {
+              "n": 2,
+              "category": "Vercel adds Azure-backed",
+              "title": "Vercel adds Azure-backed DeepSeek routing to AI Gateway",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel's June 11 changelog says DeepSeek V4 Pro and V4 Flash can now route through Azure on AI Gateway, with failover requiring no code changes.",
+              "why": "Model routing is becoming infrastructure, not an experiment. Small teams can increasingly treat model choice as a runtime policy instead of a rewrite.",
+              "action": "For agent workflows, separate model policy from prompts: define which tasks need premium models, cheap models, or fallback routing.",
+              "teacher": "Use this to teach AI gateway thinking: one endpoint, many models, routing rules, budget caps, and resilience.",
+              "link": "https://vercel.com/changelog/deepseek-models-now-available-via-azure-on-ai-gateway"
+            },
+            {
+              "n": 3,
+              "category": "Figma turns live",
+              "title": "Figma turns live webpages into editable design layers",
+              "source": "figma.com",
+              "relevance": "Intermediate",
+              "summary": "Figma's June 10 release notes introduce a Chrome extension beta that copies full pages or selected webpage elements into Figma as structured editable layers.",
+              "why": "This is a practical bridge between live product, reference capture, and design iteration. It reduces screenshot tracing and makes competitive UI teardown faster.",
+              "action": "Use it on one production page or client reference page, then annotate spacing, type, hierarchy, and components directly in Figma.",
+              "teacher": "Frame it as reverse-engineering for designers: capture, decompose, critique, rebuild, then systematize.",
+              "link": "https://www.figma.com/release-notes/"
+            },
+            {
+              "n": 4,
+              "category": "Microsoft documents built-in",
+              "title": "Microsoft documents built-in and custom GitHub Copilot agents inside Visual Studio",
+              "source": "learn.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft's Visual Studio docs describe curated Copilot agents for debugging, profiling, testing, modernization, and team-specific custom agents.",
+              "why": "Agent UX is becoming domain-specific. The next useful agent is less chat with the repo and more run the debugger, profiler, or test specialist with local context.",
+              "action": "List the specialist roles your own workflow actually needs: verifier, screenshot checker, PDF finisher, render QA, billing checker, and so on.",
+              "teacher": "Teach agents as job roles with permissions and acceptance criteria, not as one omnipotent chat box.",
+              "link": "https://learn.microsoft.com/en-us/visualstudio/ide/copilot-specialized-agents?view=visualstudio"
+            },
+            {
+              "n": 5,
+              "category": "Goldman's AI capex",
+              "title": "Goldman's AI capex view points to enterprise agents as a demand driver",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports Goldman Sachs expects AI spending to stay larger than many investors assume, with enterprise AI agents driving compute, data center, chip, power, and labor demand.",
+              "why": "This is the market-side reason tool costs are getting stricter: agent adoption creates token demand, but physical infrastructure remains a bottleneck.",
+              "action": "Treat every agent workflow as a budgeted production process: estimate tokens, wall time, human review, and retry cost.",
+              "teacher": "Connect AI feels magical to AI is infrastructure: usage, power, routing, and ROI decide which workflows survive.",
+              "link": "https://www.businessinsider.com/stock-market-wall-street-tech-selloff-ai-token-goldman-sachs-2026-6"
+            },
+            {
+              "n": 6,
+              "category": "Google's MCP Toolbox",
+              "title": "Google's MCP Toolbox makes enterprise databases directly callable by agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Google's open-source MCP Toolbox for Databases connects AI agents, IDEs, and applications to enterprise databases through a Model Context Protocol server.",
+              "why": "Data access is becoming a standardized agent tool layer. This matters because useful business agents need reliable, permissioned access to real databases, not pasted CSVs.",
+              "action": "For any internal agent idea, name the system-of-record first and decide whether MCP, API, or exported snapshots are the right access layer.",
+              "teacher": "Teach the difference between chat over data and tool access to data: the second needs permissions, schemas, logs, and safe query limits.",
+              "link": "https://github.com/googleapis/mcp-toolbox"
+            },
+            {
+              "n": 7,
+              "category": "AI Forge MCP",
+              "title": "AI Forge MCP shows game-asset production being packaged as callable agent tools",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "AI Forge MCP advertises hundreds of AI-callable tools across multiple MCP servers for Blender, Substance, Maya, Houdini, Unreal Engine, and specialized asset-production agents.",
+              "why": "For 3D and game workflows, the momentum is toward pipeline control: agents that drive DCC apps, validate assets, and chain tools, not just generate concept images.",
+              "action": "For any 3D render pipeline, write down the exact callable operations needed: import, scale check, material assign, camera lock, render, compare, deliver.",
+              "teacher": "Teach this as the difference between image generation and production automation: assets need topology, scale, materials, exports, and QA.",
+              "link": "https://github.com/HurtzDonutStudios/ai-forge-mcp"
+            },
+            {
+              "n": 8,
+              "category": "Show HN Agent",
+              "title": "Show HN Agent Kanban turns AI coding plans into a durable task board inside VS Code",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "The HN discussion around VS Code Agent Kanban highlights markdown task files, GitOps-friendly boards, and persistent planning as antidotes to context rot in agent work.",
+              "why": "Makers are converging on durable task state because long agent sessions lose coherence. A visible board gives both the human and agent a shared source of truth.",
+              "action": "For multi-step agent jobs, keep a project-local task board or job card with acceptance criteria, decisions, and evidence links.",
+              "teacher": "Teach context as a consumable: move durable decisions into files, not memory, then let agents operate from those files.",
+              "link": "https://news.ycombinator.com/item?id=47307169"
+            },
+            {
+              "n": 9,
+              "category": "Reddit UX discussion",
+              "title": "Reddit UX discussion flags AI design drift as the real workflow failure",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent UXDesign thread describes teams using Figma MCP and AI-assisted implementation where features drift into inconsistent variants across production.",
+              "why": "This is exactly the pain point serious design teams will pay to fix: consistency, source-of-truth enforcement, and reviewable deltas.",
+              "action": "When using AI for UI work, give it a design-system source, component inventory, forbidden variants, and visual diff checks before accepting output.",
+              "teacher": "Teach drift with a simple test: if AI builds the same search feature three ways, the tool lacks enough constraints or review gates.",
+              "link": "https://www.reddit.com/r/UXDesign/comments/1tyho1h/i_think_i_have_found_a_solution_for_ai_drift_in/"
+            },
+            {
+              "n": 10,
+              "category": "Public X thread",
+              "title": "Public X thread explains Claude Code dynamic workflows as generated harnesses for agent loops",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "An Anthropic engineer's public X post says dynamic workflows let Claude Code write a task-specific harness and run agent loops rather than relying on a static prompt.",
+              "why": "The maker pattern is shifting from prompt the model to let the model build a temporary automation harness, then inspect the harness and outputs.",
+              "action": "For repeatable agent jobs, ask for the harness or script first, review it, then let the agent execute against clear validators.",
+              "teacher": "Use the phrase design loops, not prompts: generator, checker, retry rule, budget, and exit condition.",
+              "link": "https://x.com/trq212/status/2061907337154367865"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
