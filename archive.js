@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-11 12:22",
+    "fetchedAt": "2026-06-11 12:26",
     "editions": 115
   },
   "editions": [
     {
       "key": "2026-06-11 12",
-      "label": "2026-06-11 · 12:00",
+      "label": "2026-06-11 · 12:15",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Audit your own agent stack for these basics: scheduled jobs, timeout limits, OAuth and MCP consent clarity, and how long tool lists are presented.",
               "teacher": "Reliability features are trend signals. When vendors fix cron and long-running runs, it means customers are pushing agents into real operations.",
               "link": "https://docs.langchain.com/langsmith/fleet/changelog"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-11 · 12:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Appen Senior Software",
+              "title": "Appen Senior Software Automation Engineer role ties AI systems to IT reliability",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Appen is hiring a remote Mexico-based Senior Software Automation Engineer to replace manual IT workflows with scalable AI systems, observability, testing, and documentation.",
+              "why": "AI automation is moving into production IT and platform operations, where reliability and governance matter more than flashy demos.",
+              "action": "Build an internal-tools case study: incident intake, AI-assisted triage, suggested fix, logging, and human approval.",
+              "teacher": "Teach automation as engineering discipline: version control, tests, monitoring, privacy, and rollback plans.",
+              "link": "https://jobs.lever.co/appen-2/78ed171d-4280-42ad-9f9b-2cacd9547efa"
+            },
+            {
+              "n": 2,
+              "category": "Minted AI &",
+              "title": "Minted AI & Automation Engineer role asks for internal copilots across HR, Finance, and Operations",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Minted is hiring a remote AI & Automation Engineer to build AI assistants, custom agents, service-desk integrations, onboarding flows, and knowledge-base automation.",
+              "why": "This is the practical enterprise pattern: every department wants an AI operator that works with existing tools, not a generic chatbot.",
+              "action": "Package a consulting offer around one department at a time: map workflow, build assistant, connect APIs, add failure handling, train users.",
+              "teacher": "Use this as a lesson on scoping: start with one painful repeatable workflow before adding agents everywhere.",
+              "link": "https://jobs.lever.co/minted/257779c0-1bde-4810-9992-cd12e621de6e"
+            },
+            {
+              "n": 3,
+              "category": "Superside Lead Product",
+              "title": "Superside Lead Product Engineer AI Consulting role validates creative-AI consulting for enterprise brands",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Superside wants a remote lead engineer to design, prototype, and ship AI-powered tools for enterprise creative production, including integrations with Figma and Adobe.",
+              "why": "The opportunity is not just making images. It is turning creative operations into reliable systems that consultants can repeat across clients.",
+              "action": "Create a reusable creative-production audit: brief intake, reference locking, variant generation, QA, approval, and asset delivery.",
+              "teacher": "Show students how to move from prompt demos to production: repeatability, brand constraints, file handoff, and review loops.",
+              "link": "https://jobs.lever.co/superside/d4a0f891-bc64-4e0e-a002-6aa83f039c93"
+            },
+            {
+              "n": 4,
+              "category": "Stripe Art Director",
+              "title": "Stripe Art Director role explicitly values automation and AI integration in design operations",
+              "source": "stripe.com",
+              "relevance": "Intermediate",
+              "summary": "Stripe lists process improvements through automation and AI integration as part of an art director role, alongside Figma, Canva, Adobe, motion, and design leadership.",
+              "why": "AI fluency is leaking upward into senior creative direction. Taste plus system design is becoming more valuable than tool novelty.",
+              "action": "Build a portfolio case showing how AI improves a real design pipeline while preserving brand quality and pixel-level craft.",
+              "teacher": "Teach AI as a design-ops multiplier: better briefs, faster exploration, stronger QA, and cleaner handoff.",
+              "link": "https://stripe.com/jobs/listing/art-director/7823683"
+            },
+            {
+              "n": 5,
+              "category": "HHAeXchange CX Automation",
+              "title": "HHAeXchange CX Automation Engineer role makes AI-driven customer education a measurable product function",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "HHAeXchange wants a senior IC to build automated customer journeys, AI recommendations, product adoption guidance, dashboards, and lifecycle integrations.",
+              "why": "Customer success is becoming a technical automation lane. The value is onboarding, education, renewal, and usage lift, not generic content generation.",
+              "action": "Offer a customer-journey automation package: segment users, trigger guidance, personalize learning, measure activation, and iterate weekly.",
+              "teacher": "Teach CX automation with metrics first: activation, adoption, retention, engagement, and support-ticket reduction.",
+              "link": "https://jobs.lever.co/hhaexchange/e4a0fff0-1b65-4b74-88d2-a5e647b53345"
+            },
+            {
+              "n": 6,
+              "category": "Upwork real-estate automation",
+              "title": "Upwork real-estate automation post asks for n8n, OpenAI, MySQL, Facebook, and Instagram deployment",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Upwork buyer wants a VPS-based automation that pulls property listings from MySQL, writes posts with OpenAI, and publishes to Facebook and Instagram on a schedule.",
+              "why": "Small businesses are buying concrete automations with hosting, credentials, reliability, and documentation included.",
+              "action": "Turn this into a service template for real-estate portals: listing-to-post pipeline, duplicate prevention, schedule, image handling, and maintenance retainer.",
+              "teacher": "Teach the hidden work: secure n8n setup, API credentials, logs, retries, documentation, and handover.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/OpenAI-n8n-Social-Media-Automation-VPS-Setup-Connecting-accounts-making-posts_~022064350234654970810/"
+            },
+            {
+              "n": 7,
+              "category": "Lightcast and Stanford",
+              "title": "Lightcast and Stanford AI Index 2026 show agentic AI becoming a hiring signal",
+              "source": "lightcast.io",
+              "relevance": "Intermediate",
+              "summary": "Lightcast reports AI skills in 2.5% of U.S. job postings, up 55% year over year, and says agentic AI skill mentions jumped more than 280% in one year.",
+              "why": "The market is rewarding execution skills: workflow management, deployment, infrastructure, agents, and scalable systems.",
+              "action": "Add agentic workflow keywords to portfolio projects only when backed by working demos, diagrams, and measurable outcomes.",
+              "teacher": "Use this data to explain why portfolios should show systems, not only prompts or screenshots.",
+              "link": "https://lightcast.io/resources/research/stanford-ai-index-2026"
+            },
+            {
+              "n": 8,
+              "category": "Business Insider reports",
+              "title": "Business Insider reports no white-collar AI bloodbath yet, but warns of FOMO-driven layoffs",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "A Google DeepMind economist told the Dwarkesh Podcast he has not seen broad AI job-loss evidence yet, but warned companies may cut roles to look AI-adapted.",
+              "why": "The career risk is narrative-driven restructuring. The opportunity is helping teams prove AI value without reckless headcount theater.",
+              "action": "Position consulting around measured pilots: baseline current workflow, automate part of it, track quality/time, and report what should stay human.",
+              "teacher": "Teach leaders to separate productivity evidence from AI theater. Good pilots protect both margins and capability.",
+              "link": "https://www.businessinsider.com/google-deepmind-economist-ai-layoff-2026-6"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n salary",
+              "title": "Reddit n8n salary thread warns automation workers not to underprice agent and workflow work",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A public r/n8n thread describes a worker paid 1000 pounds per month for automation and migration work, with commenters calling the rate far too low.",
+              "why": "Demand exists, but beginners can get exploited if they price by task count instead of business value, complexity, support burden, and rights.",
+              "action": "Create three pricing tiers: audit only, build plus handoff, and build plus monthly support. Put scope limits in writing.",
+              "teacher": "Teach rate-setting with examples: discovery time, build time, revision risk, production support, and client upside.",
+              "link": "https://www.reddit.com/r/n8n/comments/1ly2d88/salary_for_automation_expert/"
+            },
+            {
+              "n": 10,
+              "category": "Public X posts",
+              "title": "Public X posts show freelancers automating Upwork proposal workflows with n8n and OpenAI",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Search-visible X posts from Fakhar Khan describe automating Upwork proposal writing with n8n and OpenAI triggered from Slack, including job search and fit decisions.",
+              "why": "Creator/freelancer tooling is becoming a niche: people want systems that find opportunities, draft first passes, and keep humans in the loop.",
+              "action": "Build a personal opportunity radar: scrape or search target boards, score fit, draft proposals, and require manual approval before sending.",
+              "teacher": "Teach ethics and quality: automation can research and draft, but final outreach should be reviewed, tailored, and truthful.",
+              "link": "https://x.com/fakharkhan"
             }
           ]
         }
