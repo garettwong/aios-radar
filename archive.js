@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 21:16",
+    "fetchedAt": "2026-06-12 21:20",
     "editions": 126
   },
   "editions": [
     {
       "key": "2026-06-12 21",
-      "label": "2026-06-12 · 21:00",
+      "label": "2026-06-12 · 21:11",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 21:11 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "MCP release candidate",
+              "title": "MCP release candidate turns agent tooling into infrastructure",
+              "source": "blog.modelcontextprotocol.io",
+              "relevance": "Intermediate",
+              "summary": "The Model Context Protocol team published the 2026-07-28 release candidate with stateless core, Extensions, Tasks, MCP Apps, stronger authorization, and a formal deprecation policy.",
+              "why": "MCP is moving from handy connector pattern to governed infrastructure. That affects every agent workflow that relies on tools, files, apps, or external services.",
+              "action": "Track which local MCP servers or agent tools you depend on, then label each one as personal, production, or risky before the July spec lands.",
+              "teacher": "Teach this as the USB-C moment for agents: useful only when the connector is standard, secure, and versioned.",
+              "link": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/"
+            },
+            {
+              "n": 2,
+              "category": "Coinbase adds MCP",
+              "title": "Coinbase adds MCP for agent trading and paid research access",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch reports Coinbase launched an MCP tool that lets agents use Coinbase Advanced and TradingView data to analyze and execute trades or access premium research.",
+              "why": "Finance is becoming an early test bed for agents that can spend, subscribe, and transact instead of only summarize.",
+              "action": "For any agent with payment or trading ability, require explicit limits, audit logs, and a human confirmation step before execution.",
+              "teacher": "This is a clean example of why tool access and authority to act must be taught as separate concepts.",
+              "link": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/"
+            },
+            {
+              "n": 3,
+              "category": "Kiro issue shows",
+              "title": "Kiro issue shows agent instruction-following is now a product bug category",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Kiro GitHub issue reports an AI behavioral failure where the assistant suggested server-side commands instead of following a fix locally first instruction.",
+              "why": "Users are starting to file agent behavior defects like normal software bugs. That means tool vendors will be judged on process fidelity, not just code quality.",
+              "action": "Add a small agent behavior regression checklist to coding-tool evaluations: obeys local-first, cites files, runs tests, and asks before destructive operations.",
+              "teacher": "Use this to show that prompts become part of QA once agents touch real systems.",
+              "link": "https://github.com/kirodotdev/Kiro/issues/9391"
+            },
+            {
+              "n": 4,
+              "category": "Pallaidium packages generative",
+              "title": "Pallaidium packages generative video production inside Blender",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Pallaidium is an open-source generative AI movie studio integrated into Blender Video Sequence Editor, covering prompt enhancement, captions, speech, video, and round-trip production.",
+              "why": "Blender is becoming a natural host for maker AI pipelines because it already owns timeline, 3D space, compositing, and asset context.",
+              "action": "Test whether a Blender-first workflow can replace loose web-tool hopping for short previs, product shots, and booth-render experiments.",
+              "teacher": "Frame it as AI tools inside the DCC, not AI replacing the DCC.",
+              "link": "https://github.com/tin2tin/Pallaidium"
+            },
+            {
+              "n": 5,
+              "category": "Reddit migration thread",
+              "title": "Reddit migration thread compares Claude Code and Codex from real usage",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A ClaudeCode user describes two weeks moving from Claude Code to Codex, citing lower usage pressure, better transparency, stronger code quality, and a less mature plugin and skills ecosystem.",
+              "why": "The practical buying signal is shifting from model loyalty to workflow economics: visibility, limits, uptime, and migration cost.",
+              "action": "Keep reusable skills, prompts, and project rules portable across agent tools instead of binding them to one vendor-specific format.",
+              "teacher": "This is useful for teaching tool choice as a portfolio decision: model, harness, ecosystem, and billing all matter.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1tbcfmi/impressions_two_weeks_after_moving_from_claude/"
+            },
+            {
+              "n": 6,
+              "category": "Hacker News discussion",
+              "title": "Hacker News discussion says agents need stronger planning memory",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "The HN thread around Eight more months of agents argues that coding agents still lack object permanence and often need detailed specs and test protocols to stay coherent.",
+              "why": "Builder attention is moving from prompt tricks to durable task plans, acceptance criteria, and verification loops.",
+              "action": "Before starting any long agent job, write a one-page job card with goal, constraints, source authority, pass/fail checks, and delivery format.",
+              "teacher": "Teach agents as junior executors with high throughput but weak continuity unless the surrounding system supplies memory.",
+              "link": "https://news.ycombinator.com/item?id=46933223"
+            },
+            {
+              "n": 7,
+              "category": "Awesome CLI coding",
+              "title": "Awesome CLI coding agents tracks the terminal-agent explosion",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "bradAGI awesome-cli-coding-agents curates tools that live in the terminal and can read, write, run tests, and iterate inside a repository.",
+              "why": "The command line is becoming the control surface for serious agentic coding because it exposes filesystem, tests, git, and automation without a heavy UI.",
+              "action": "Benchmark two terminal agents on the same small repo task, measuring not only success but commands run, files touched, and recovery from test failures.",
+              "teacher": "Use this list to teach the difference between chat assistants, IDE copilots, and repository-operating agents.",
+              "link": "https://github.com/bradAGI/awesome-cli-coding-agents"
+            },
+            {
+              "n": 8,
+              "category": "Hermes Agent release",
+              "title": "Hermes Agent release shows memory and self-improving skills as a product direction",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Hermes Agent v0.16.0 release notes describe a large update to a self-improving agent with persistent memory and skill creation as core concepts.",
+              "why": "Open-source agents are copying the most valuable personal-assistant pattern: remember work, distill procedures, and reuse them later.",
+              "action": "Watch for whether Hermes-style skill creation produces reliable reusable procedures or just more unreviewed automation surface.",
+              "teacher": "Explain this as procedural memory: an agent should not merely remember facts, it should learn repeatable workflows.",
+              "link": "https://github.com/NousResearch/hermes-agent/releases"
+            },
+            {
+              "n": 9,
+              "category": "Canva AI 2.0",
+              "title": "Canva AI 2.0 pushes design work toward conversational, editable systems",
+              "source": "canva.com",
+              "relevance": "Intermediate",
+              "summary": "Canva AI 2.0 introduces a design-specific foundation model, layered editable outputs, agentic editing, connectors, web research, brand intelligence, Sheets AI, and Canva Code 2.0.",
+              "why": "Creator platforms are racing to own the full path from idea to editable production asset, not just image generation.",
+              "action": "For design-heavy workflows, judge tools by editability and brand control after generation, not by first-prompt wow factor.",
+              "teacher": "This is the key creative-AI lesson: production value comes from controllable layers, memory, and revision, not a single render.",
+              "link": "https://www.canva.com/newsroom/news/canva-create-2026-ai/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal",
+              "title": "Public X signal argues most developers do not need full agent loops yet",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article warns that looping agents are powerful but premature for many teams, pointing to budget overruns and operational complexity around autonomous coding.",
+              "why": "The market is splitting between lightweight assisted coding and heavier autonomous loops with monitoring, budgets, and rollback.",
+              "action": "Use loops only for tasks with clear tests, bounded budgets, disposable branches, and a stop condition; keep everyday coding in supervised mode.",
+              "teacher": "Teach loop design as operations engineering: budget, observe, verify, stop.",
+              "link": "https://x.com/AlphaSignalAI/article/2064055529883029550"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
