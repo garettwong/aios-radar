@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 18:04",
-    "editions": 124
+    "fetchedAt": "2026-06-12 18:08",
+    "editions": 125
   },
   "editions": [
+    {
+      "key": "2026-06-12 18",
+      "label": "2026-06-12 · 18:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 18:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Neuroscale AI Forward",
+              "title": "Neuroscale AI Forward Deployed Engineer role turns workflow implementation into a paid AI consulting lane",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Neuroscale is hiring a Forward Deployed Engineer at $125K-$180K, with work around code, integrations, prototypes, and AI workflow configuration.",
+              "why": "The market is not just asking for model users; it wants people who can sit close to customers and turn messy operations into shipped AI systems.",
+              "action": "Package one portfolio case as a forward-deployed engagement: diagnosis, prototype, integration map, rollout checklist, and before/after operator workflow.",
+              "teacher": "Teach this as consultant plus builder: interview users, map the workflow, build a thin demo, then harden the integration.",
+              "link": "https://jobs.ashbyhq.com/neuroscale/02674783-e6dd-4a27-90a8-e727407c2e32"
+            },
+            {
+              "n": 2,
+              "category": "HackerOne Senior AI",
+              "title": "HackerOne Senior AI Automation Engineer role shows security teams buying end-to-end automation delivery",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "HackerOne is hiring a Senior AI Automation Engineer, with search snippets showing $160K-$200K and responsibility for scalable, secure automation delivery.",
+              "why": "Security automation is a premium niche because buyers already have budget, urgency, repetitive workflows, and measurable risk reduction.",
+              "action": "Build a demo playbook for vulnerability intake: classify report, enrich context, draft triage response, create ticket, and log audit trail.",
+              "teacher": "Emphasize that the valuable skill is reliable workflow design with permissions, logs, and human review.",
+              "link": "https://jobs.ashbyhq.com/hackerone/ab97488e-b159-41e3-8a20-a40b91acbdc4"
+            },
+            {
+              "n": 3,
+              "category": "Iru AI Security",
+              "title": "Iru AI Security and Automation Engineer role makes AI governance, telemetry, and remediation a career package",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Iru wants an engineer to secure AI platforms, manage AI risk, monitor shadow AI, build dashboards, and automate IT/security workflows.",
+              "why": "Companies adopting AI now need operating controls: inventory, usage visibility, policy enforcement, and remediation.",
+              "action": "Create a lightweight AI usage control center offer for SMBs: approved tools list, intake form, logging checklist, and monthly risk report.",
+              "teacher": "Use this to explain the shift from prompt skills to governance systems: who used what model, with what data, under what policy.",
+              "link": "https://jobs.lever.co/iru/10eeba78-0882-4b7a-936a-900d898457bc"
+            },
+            {
+              "n": 4,
+              "category": "Iru AI full-stack",
+              "title": "Iru AI full-stack engineering role asks for copilots, automation workflows, and agent-based systems",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Iru's full-stack AI role calls for LLM-powered customer features, copilots, automation workflows, conversational interfaces, prompt orchestration, and agent systems.",
+              "why": "AI product work is becoming ordinary full-stack work, with extra emphasis on structured responses, observability, and user trust.",
+              "action": "Build one polished internal-tool demo that has chat, tool calls, structured output, fallback states, and human approval before action.",
+              "teacher": "Show students that the UI is part of the AI system: latency, confidence, retry states, and failure copy matter as much as the prompt.",
+              "link": "https://jobs.lever.co/iru/8b92176d-9be2-47f9-9785-0e92db48a69d"
+            },
+            {
+              "n": 5,
+              "category": "Hex AI Engineer",
+              "title": "Hex AI Engineer Curator role points to context curation becoming a data/AI product craft",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Hex is hiring an AI Engineer, Curator while positioning its product around trusted context, natural-language exploration, agentic notebooks, and semantic models.",
+              "why": "AI analytics succeeds when the context layer is clean. That creates opportunity for people who can organize messy business knowledge into model-ready structures.",
+              "action": "Offer a context cleanup sprint for teams: define metrics, clean schema descriptions, write example questions, and test agent answers.",
+              "teacher": "Frame this as information architecture for AI: labels, examples, constraints, and source-of-truth rules are now production assets.",
+              "link": "https://job-boards.greenhouse.io/hextechnologies/jobs/5801103004"
+            },
+            {
+              "n": 6,
+              "category": "10xTeam Graphic Designer",
+              "title": "10xTeam Graphic Designer AI Trainer role monetizes visual judgment and design documentation",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is hiring freelance graphic designers to assess and improve AI-generated content with real design reasoning and practical procedures.",
+              "why": "Designers can sell judgment, not just pixels. Model-training and evaluation work rewards people who can explain why a composition, layout, or workflow is good.",
+              "action": "Prepare a design-evaluation sample: compare three AI layouts, mark typography and hierarchy issues, then rewrite the instruction for a better output.",
+              "teacher": "Teach critique as a job skill: observable defect, design principle, corrected instruction, and acceptance criteria.",
+              "link": "https://jobs.ashbyhq.com/10xteam/ceed48ff-dfa1-42e6-88ae-df93ac93d0d3"
+            },
+            {
+              "n": 7,
+              "category": "Qualified Lead Product",
+              "title": "Qualified Lead Product Designer AI Products role rewards conversational UX and LLM behavior literacy",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Qualified is hiring a Lead Product Designer for AI products, asking for AI or conversational experience and understanding of LLM latency, streaming, confidence, and failures.",
+              "why": "AI UX is becoming a specialist design lane. Buyers need designers who know how model behavior feels inside real product flows.",
+              "action": "Add one AI conversation case study to a portfolio: streaming response, uncertainty state, correction flow, handoff, and audit trail.",
+              "teacher": "Make learners design the unhappy path first: hallucination, missing context, no permission, slow response, and ambiguous user intent.",
+              "link": "https://jobs.ashbyhq.com/qualified/28cb33f7-333d-4ddd-9276-0423cf4731a2"
+            },
+            {
+              "n": 8,
+              "category": "Upwork n8n category",
+              "title": "Upwork n8n category shows fresh buyer demand for e-commerce workflows and AI automation consultation",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "Upwork's n8n jobs page shows hundreds of n8n jobs, including recent e-commerce workflow setup and AI automation consultation posts.",
+              "why": "Small businesses are buying practical workflow relief: store ops, CRM, support, lead handling, reporting, and low-cost automation.",
+              "action": "Build three fixed-scope offers: e-commerce order ops automation, CRM lead triage, and weekly owner dashboard with AI summaries.",
+              "teacher": "Train offer writing around a business process, not a tool name. The buyer wants fewer missed leads or less admin, not n8n nodes.",
+              "link": "https://www.upwork.com/freelance-jobs/n8n/"
+            },
+            {
+              "n": 9,
+              "category": "n8n community contract",
+              "title": "n8n community contract post shows small AI consultancies need dependable implementation partners",
+              "source": "community.n8n.io",
+              "relevance": "Intermediate",
+              "summary": "A recent n8n community jobs post says a small AI consulting firm builds AI agents, RAG systems, and integrations for SMB clients, and wants dependable per-project developers.",
+              "why": "The opportunity is not only direct clients. Agencies and consultancies need subcontractors who can build, document, and maintain production workflows.",
+              "action": "Create a subcontractor one-pager: stack, sample workflows, response time, documentation standard, maintenance terms, and hourly/project pricing.",
+              "teacher": "Teach reliability as positioning: clean handoff docs, naming conventions, test data, monitoring, and post-launch support beat flashy demos.",
+              "link": "https://community.n8n.io/t/seeking-a-reliable-n8n-developer-for-ongoing-project-based-work-build-maintain/296828"
+            },
+            {
+              "n": 10,
+              "category": "Reddit and X",
+              "title": "Reddit and X signals show buyer pain and build-in-public proof around AI automation offers",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A real-estate owner on Reddit says they are drowning in unqualified leads and willing to pay $500-$2,000 for an AI automation workflow; a public X post showed a multi-agent n8n lead system running prospecting, outreach, qualification, and follow-up.",
+              "why": "The practical buyer pain is lead qualification and follow-up, while public builders are proving that bundled agent workflows are easy to explain and sell.",
+              "action": "Prototype a real-estate lead triage workflow: intake, score, enrich, draft reply, schedule follow-up, and push hot leads to CRM.",
+              "teacher": "Use the Reddit pain as the problem brief and the X post as the demo pattern. Keep the lesson grounded in one painful business workflow.",
+              "link": "https://www.reddit.com/r/n8n/comments/1rqszcl/real_estate_agency_owner_looking_to_pay_5002000/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 15",
       "label": "2026-06-12 · 15:14",
