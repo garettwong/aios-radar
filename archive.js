@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 18:16",
+    "fetchedAt": "2026-06-12 18:20",
     "editions": 125
   },
   "editions": [
     {
       "key": "2026-06-12 18",
-      "label": "2026-06-12 · 18:00",
+      "label": "2026-06-12 · 18:11",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 18:11 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI argues agent",
+              "title": "OpenAI argues agent evaluations need harness and validity checks",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's evaluation playbook says agentic capability claims depend on the tested system, tool access, harness, retry behavior, scoring, resource budgets, and validity checks, not just headline benchmark numbers.",
+              "why": "As agents become production workers, evaluation quality becomes a buying and deployment skill.",
+              "action": "When testing an agent, document the exact harness: tools, permissions, budget, retries, scoring, and what evidence counts as success.",
+              "teacher": "Teach evals like render QA: the prompt is only one part; the environment, tool contract, and pass criteria shape the result.",
+              "link": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/"
+            },
+            {
+              "n": 2,
+              "category": "TechCrunch says enterprise",
+              "title": "TechCrunch says enterprise AI is moving from experimentation to production discipline",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch's VivaTech preview says enterprise AI conversations are shifting toward governance, compliance, infrastructure, security, and measurable operational value.",
+              "why": "The market is rewarding AI that fits real organizational systems, not just impressive demos.",
+              "action": "For agent ideas, write the deployment checklist early: owner, data access, failure mode, audit trail, cost, and rollback path.",
+              "teacher": "Teach makers to pitch operational reliability as part of the product, not as a boring afterthought.",
+              "link": "https://techcrunch.com/2026/06/10/why-enterprise-ai-will-be-a-major-focus-at-vivatech-2026/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub adds periodic",
+              "title": "GitHub adds periodic code scanning for inactive repositories",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub announced periodic code scanning for inactive repositories, extending security checks to code that is not changing but may still carry latent risk.",
+              "why": "Agent-generated code often leaves many side branches, experiments, and parked repos; stale code still matters if it can be deployed or copied.",
+              "action": "Add inactive repos, old demos, and AI experiments to the security inventory before reusing them in client work.",
+              "teacher": "Teach that done is not the same as safe; stale code needs periodic review, especially after dependency and platform changes.",
+              "link": "https://github.blog/changelog/2026-06-09-periodic-code-scanning-of-inactive-repositories/"
+            },
+            {
+              "n": 4,
+              "category": "Canva Magic Layers",
+              "title": "Canva Magic Layers moves AI image editing into major AI assistants",
+              "source": "canva.com",
+              "relevance": "Intermediate",
+              "summary": "Canva says Magic Layers is now inside major AI assistants, continuing its push to make generated images editable as layered design assets instead of flat outputs.",
+              "why": "Creator workflows are converging: prompt in an assistant, then keep design-layer control for brand and production edits.",
+              "action": "For client visuals, require layer-editable output whenever possible; avoid workflows that trap you in a flattened image.",
+              "teacher": "Explain the production difference between generation and editable composition: layers preserve typography, brand assets, and revision control.",
+              "link": "https://www.canva.com/newsroom/news/magic-layers-ai-assistants/"
+            },
+            {
+              "n": 5,
+              "category": "Runway replaces Unlimited",
+              "title": "Runway replaces Unlimited with Max for high-volume generative creation",
+              "source": "help.runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway's help center says Unlimited is switching to Max for new subscribers from June 1, 2026, with existing Unlimited users moving on September 1; Explore Mode remains subject to availability and simultaneous generation limits.",
+              "why": "Creator AI economics are tightening. High-volume video/image generation is being packaged around capacity management, not truly unlimited use.",
+              "action": "Budget render iterations explicitly: low-res exploration, locked prompts/seeds where possible, then final high-cost generations only after approval.",
+              "teacher": "Teach makers to treat AI video like render farm time: queue discipline, version naming, and approval gates matter.",
+              "link": "https://help.runwayml.com/hc/en-us/articles/18053095835795-Unlimited-plan-details"
+            },
+            {
+              "n": 6,
+              "category": "blender-ai-mcp treats Blender",
+              "title": "blender-ai-mcp treats Blender control as a stable production API for agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The blender-ai-mcp GitHub project exposes curated Blender tools, deterministic inspection, and goal-first routing so Claude, ChatGPT, Codex, and other MCP clients can control Blender without raw ad-hoc bpy scripts.",
+              "why": "3D agent work needs stable tool APIs and verification, especially when visual inspection alone cannot prove geometry is correct.",
+              "action": "For Blender automation, define small tools for object creation, material assignment, camera setup, and inspection instead of letting agents write arbitrary scripts every time.",
+              "teacher": "Teach 3D AI as tool orchestration: the agent should call known operations, inspect scene state, and report measurable geometry/material results.",
+              "link": "https://github.com/PatrykIti/blender-ai-mcp"
+            },
+            {
+              "n": 7,
+              "category": "HN thread recommends",
+              "title": "HN thread recommends using AI reviewers against low-effort AI pull requests",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current Hacker News discussion suggests pointing Copilot, Claude, or Codex at low-quality AI-generated PRs and making them review against team architecture and style guidelines through several rounds.",
+              "why": "Teams are adapting to AI-generated noise by building AI-assisted review pressure, not just banning AI output.",
+              "action": "Create a PR review prompt that references your conventions, architecture principles, and risk checklist; run it before asking humans for review.",
+              "teacher": "Teach the standard: if AI helped create the PR, AI should also help pre-review it before it consumes human attention.",
+              "link": "https://news.ycombinator.com/item?id=48497609"
+            },
+            {
+              "n": 8,
+              "category": "Reddit Claude Code",
+              "title": "Reddit Claude Code users are excited about code-defined /workflows orchestration",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit Claude Code post argues that /workflows moves orchestration from a main LLM context into workflow.js-style code, reducing token tax from multi-agent handoffs.",
+              "why": "Builders are noticing that agent orchestration needs deterministic control flow, not just a smarter central agent.",
+              "action": "For repeated multi-agent jobs, write explicit workflow steps: intake, source check, plan, implement, verify, package, and final review.",
+              "teacher": "Teach the difference between agent intelligence and workflow architecture: code handles routing; the model handles judgment-heavy steps.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1tkjy4u/claude_code_dropped_workflows/"
+            },
+            {
+              "n": 9,
+              "category": "Public X signal",
+              "title": "Public X signal says Ramp AI Index saw Codex launch not yet lift OpenAI business adoption",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from Ramp's Ara Kharazian says the June 2026 Ramp AI Index expected OpenAI to gain from Codex, but OpenAI business adoption held flat while Anthropic grew.",
+              "why": "Market adoption may reward day-to-day workflow fit more than launch buzz. Coding agents need retention, spend discipline, and clear team habits.",
+              "action": "Watch adoption data and user behavior, not just model announcements; compare which tools get used every day under real budgets.",
+              "teacher": "Teach market signals as evidence: announcements are inputs, but payment data, usage caps, and workflow posts reveal actual adoption.",
+              "link": "https://x.com/arakharazian/status/2064736003416604940"
+            },
+            {
+              "n": 10,
+              "category": "Zed explains GitHub",
+              "title": "Zed explains GitHub Copilot usage-based billing from the editor workflow angle",
+              "source": "zed.dev",
+              "relevance": "Intermediate",
+              "summary": "Zed's billing note explains that Copilot Chat usage is now metered by GitHub AI Credits in Zed, while completions and edit predictions remain outside that metering path.",
+              "why": "AI cost literacy is becoming editor-specific. Builders need to know which mode is cheap, which is metered, and when a background agent is burning credits.",
+              "action": "Map your daily coding actions by cost surface: autocomplete, chat, edits, agent sessions, and external model calls.",
+              "teacher": "Teach users to switch modes deliberately: autocomplete for small work, chat for clarification, agents for tasks with clear ROI and verification.",
+              "link": "https://zed.dev/blog/github-copilot-usage-based-billing"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
