@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 15:05",
-    "editions": 123
+    "fetchedAt": "2026-06-12 15:08",
+    "editions": 124
   },
   "editions": [
+    {
+      "key": "2026-06-12 15",
+      "label": "2026-06-12 · 15:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 15:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Rootly AI-native incident-management",
+              "title": "Rootly AI-native incident-management hiring shows ops teams buying incident automation",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Rootly is positioning incident management as AI-native, with hiring language around faster resolution, continuous learning, and operations tooling.",
+              "why": "Ops teams are buying workflow intelligence, not just dashboards. This creates consulting work around incident routing, postmortems, runbooks, and alert cleanup.",
+              "action": "Package a small offer: audit one team's incident flow, identify repetitive handoffs, and prototype one AI-assisted triage or postmortem workflow.",
+              "teacher": "Teach AI through incident examples: classify alerts, summarize timelines, draft follow-ups, then show where humans approve or override.",
+              "link": "https://job-boards.greenhouse.io/rootly/jobs/4015888007"
+            },
+            {
+              "n": 2,
+              "category": "Harvey Senior Data",
+              "title": "Harvey Senior Data Analyst role shows legal AI companies need product analytics around AI usage",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Harvey is hiring product analytics talent for a legal AI product, including analysis of AI-powered product usage.",
+              "why": "AI companies need people who can explain adoption, trust, failure modes, and ROI. Analytics plus domain workflow understanding is a strong career wedge.",
+              "action": "Build a sample analytics dashboard for an AI feature: activation, prompt success, human edits, retry rate, time saved, and retention.",
+              "teacher": "Use this as a lesson on measuring AI products: output quality is not enough; measure behavior change and business outcomes.",
+              "link": "https://jobs.ashbyhq.com/harvey/01741ba7-13a6-42a2-bbe1-6d93fcc7d380"
+            },
+            {
+              "n": 3,
+              "category": "VSCO Staff Product",
+              "title": "VSCO Staff Product Designer role ties creator tools, photography business workflows, and AI agents",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "VSCO's designer role mentions next-generation photography business tools, AI frameworks, AI-first team processes, and agent experience design.",
+              "why": "This is directly relevant to creator and visual professionals: AI UX is moving into paid workflow tools, not just image generation demos.",
+              "action": "Prototype one creator-agent flow: intake a shoot brief, suggest deliverables, create a client checklist, and hand off to normal UI when precision matters.",
+              "teacher": "Teach designers to specify agent behavior, escalation logic, tone, and failure states, not only screens.",
+              "link": "https://job-boards.greenhouse.io/vsco39/jobs/8567712002?gh_src=8afe0a3d2us"
+            },
+            {
+              "n": 4,
+              "category": "New York Times",
+              "title": "New York Times AI Strategy Intern role puts AI prototyping inside newsroom product strategy",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "The NYT role asks for low-fi prototypes of AI-powered experiences for readers and newsroom strategy work.",
+              "why": "Media organizations need people who can test AI product ideas quickly without turning them into vague decks.",
+              "action": "Create a portfolio case study: take one archive, article series, or newsletter and prototype an AI reader assistant with safeguards.",
+              "teacher": "Good class exercise: students must separate useful summarization,",
+              "link": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4626649005"
+            },
+            {
+              "n": 5,
+              "category": "Butternut Box Senior",
+              "title": "Butternut Box Senior Creative Designer role explicitly calls for AI-led design pioneers",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "The role calls for a senior designer with interest in AI-led design during a 2026 website and brand refresh.",
+              "why": "Brand teams are starting to value AI design process literacy, especially for fast iteration across layouts, copy, and campaign assets.",
+              "action": "Make a before/after portfolio page showing how AI accelerated exploration while final typography, hierarchy, and art direction stayed human-led.",
+              "teacher": "Useful teaching angle: AI can widen exploration, but critique, selection, and polish remain the designer's moat.",
+              "link": "https://job-boards.greenhouse.io/butternutbox/jobs/8543666002"
+            },
+            {
+              "n": 6,
+              "category": "Klaviyo Senior Product",
+              "title": "Klaviyo Senior Product Designer role names Claude, Cursor, and v0 as AI-first design practice tools",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Klaviyo's editor-design role explicitly values practical use of Claude, Cursor, v0, and similar tools in design workflows.",
+              "why": "AI-assisted prototyping is becoming an expected design skill in SaaS, especially for editors, builders, and marketing interfaces.",
+              "action": "Prepare a short demo reel where a static design becomes a working prototype, then document what changed after testing.",
+              "teacher": "Teach the workflow as design-to-code literacy: prompt, inspect, revise, test states, and keep visual standards high.",
+              "link": "https://job-boards.greenhouse.io/klaviyo/jobs/7720047003"
+            },
+            {
+              "n": 7,
+              "category": "Gusto Senior Staff",
+              "title": "Gusto Senior Staff Product Designer role frames AI-first financial UX as trust and uncertainty design",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Gusto says the role will define AI-first financial UX, including uncertainty, graceful errors, user agency, and trust in automated decisions.",
+              "why": "High-stakes AI design is a premium niche. Finance, payroll, and compliance cannot accept magic-box interfaces.",
+              "action": "Build a reusable AI trust checklist for client work: confidence, evidence, editability, audit trail, rollback, and human approval.",
+              "teacher": "Strong lesson topic: AI UX is partly risk design. Students should design what happens when the model is unsure or wrong.",
+              "link": "https://job-boards.greenhouse.io/gusto/jobs/6625049"
+            },
+            {
+              "n": 8,
+              "category": "Upwork MSP AI",
+              "title": "Upwork MSP AI Automation Engineer post asks for autonomous investigation and remediation pipelines",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "The freelance brief asks for an MSP operations layer that detects issues, investigates, seeks approval, executes, and documents reusable outputs.",
+              "why": "This is a concrete high-value automation pattern: governed agents for IT operations, not generic chatbots.",
+              "action": "Turn it into an offer: one monitored workflow with detection, evidence collection, approval gate, action, and reusable incident memory.",
+              "teacher": "Teach agent systems as controlled loops: observe, reason, request approval, act, log, and learn.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/MSP-Automation-Engineer_~022058553985637954473/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n niche",
+              "title": "Reddit n8n niche thread says n8n is a tool inside a business-process niche, not the whole offer",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit discussion argues that n8n has freelance value, but the real niche is the business problem and process design around it.",
+              "why": "This is useful market truth: clients pay for outcome clarity, integration judgment, and maintenance, not for naming a trendy tool.",
+              "action": "Rewrite service positioning from 'n8n builder' to one vertical result, such as lead follow-up, invoice cleanup, creator pipeline, or support triage.",
+              "teacher": "Use it to teach offer design: tool skill plus domain pain plus measurable outcome beats tool skill alone.",
+              "link": "https://www.reddit.com/r/n8n/comments/1s4q4hj/is_it_worth_learning_n8n_as_a_niche_in_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Public X profile",
+              "title": "Public X profile signal shows AI automation freelancers branding around n8n, Make, and Zapier for founders",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible public X profile brands around AI automation, AI agents, and workflow tools such as n8n, Make, and Zapier for founders.",
+              "why": "Even when individual posts are noisy, the positioning pattern is clear: freelancers are using social proof and niche tool stacks to attract founder work.",
+              "action": "Create a sharper profile line: I build approved AI workflows for a specific client type that save a specific time or revenue metric.",
+              "teacher": "Teach students to avoid vague AI branding. A profile should say who it helps, what workflow changes, and what proof exists.",
+              "link": "https://x.com/vishalsahilai"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 12",
       "label": "2026-06-12 · 12:17",
