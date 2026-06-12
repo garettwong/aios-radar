@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 09:17",
-    "editions": 121
+    "fetchedAt": "2026-06-12 09:21",
+    "editions": 122
   },
   "editions": [
+    {
+      "key": "2026-06-12 09",
+      "label": "2026-06-12 · 09:11",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 09:11 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Anthropic launches Claude",
+              "title": "Anthropic launches Claude Corps as AI literacy becomes a career pipeline",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic announced Claude Corps, a national fellowship for early-career people applying AI to community work.",
+              "why": "Model companies are not only selling APIs; they are training a labor pool and social proof layer around AI-native work.",
+              "action": "Watch for fellows' public projects as examples of AI workflows that non-engineers can actually operate.",
+              "teacher": "Ask: what parts of a fellowship project are model capability, workflow design, domain trust, and human review?",
+              "link": "https://www.anthropic.com/news/claude-corps"
+            },
+            {
+              "n": 2,
+              "category": "GitHub public preview",
+              "title": "GitHub public preview adds runner images for faster Copilot cloud-agent starts",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub's June 11 changelog says new runner images are in public preview and references Copilot cloud agent starts being faster with custom Actions images.",
+              "why": "Cloud coding agents are becoming infrastructure products; startup time and environment reproducibility directly affect whether teams trust async agents.",
+              "action": "For agent tasks, document the exact build image, dependency cache, secrets policy, and test command instead of relying on a generic runner.",
+              "teacher": "Good lesson: agent quality is partly environment quality. A faster model still fails if the workspace is slow or inconsistent.",
+              "link": "https://github.blog/changelog/2026-06-11-new-runner-images-in-public-preview"
+            },
+            {
+              "n": 3,
+              "category": "Copilot CLI gets",
+              "title": "Copilot CLI gets a unified slash-command settings surface",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub Copilot CLI now has /settings, a schema-driven place for CLI configuration that replaces scattered commands and manual file edits.",
+              "why": "Agent tools are moving from hidden config files to inspectable control panels. That lowers friction for normal users and helps teams standardize setups.",
+              "action": "Create a small baseline checklist for any CLI agent: model, permissions, theme/logging, experimental flags, and workspace rules.",
+              "teacher": "Compare this with Cursor, Claude Code, and Codex configs. The competitive edge is becoming operational clarity, not just autocomplete.",
+              "link": "https://github.blog/changelog/2026-06-11-copilot-cli-configure-everything-from-one-place-with-settings/"
+            },
+            {
+              "n": 4,
+              "category": "GitHub removes long-lived",
+              "title": "GitHub removes long-lived PATs from agentic workflows",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says agentic workflows can now use the Actions token in organization-owned repositories instead of creating and storing personal access tokens.",
+              "why": "This is a practical security step for agent automation. Long-lived tokens are a weak point when agents run tasks at scale.",
+              "action": "Audit any agent workflow that still uses a PAT. Replace it with scoped, short-lived, platform-native credentials where possible.",
+              "teacher": "Teach agents as junior operators: least privilege, short-lived credentials, logs, approvals, and rollback are part of the workflow.",
+              "link": "https://github.blog/changelog/2026-06-11-agentic-workflows-no-longer-need-a-personal-access-token"
+            },
+            {
+              "n": 5,
+              "category": "GitHub lets approved",
+              "title": "GitHub lets approved bot-created pull requests run CI workflows",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub now allows pull requests created by github-actions[bot] to run CI/CD workflows after user approval, matching Copilot-generated PR behavior.",
+              "why": "Agent-generated code needs a path into real CI without automatically exposing sensitive workflows. Approval gates are becoming default product design.",
+              "action": "For bot PRs, require human approval before privileged CI, but keep low-risk tests automatic so review does not become the bottleneck.",
+              "teacher": "The key pattern is staged trust: generate, inspect, approve, test, merge. Do not give an agent full deployment authority on day one.",
+              "link": "https://github.blog/changelog/2026-06-11-bot-created-pull-requests-can-run-workflows-if-approved"
+            },
+            {
+              "n": 6,
+              "category": "QwenPaw adds free-model",
+              "title": "QwenPaw adds free-model OAuth, plugin market, and AgentScope deployment",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The QwenPaw GitHub repo notes June 10-11 updates for free model OAuth, a plugin market, and AgentScope Platform deployment and skill sharing.",
+              "why": "Open-source assistant stacks are copying the product loops of commercial agents: zero-config model access, plugins, skills, and hosted deployment.",
+              "action": "Test QwenPaw as a low-cost personal assistant sandbox, especially if you want plugin workflows without committing to one vendor.",
+              "teacher": "Have learners map the stack: model access, tool/plugin layer, skills, deployment, and safety controls.",
+              "link": "https://github.com/agentscope-ai/QwenPaw"
+            },
+            {
+              "n": 7,
+              "category": "Agent S keeps",
+              "title": "Agent S keeps pushing open computer-use agents toward real desktop work",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Agent S is an open-source framework for agents that interact with computers through an Agent-Computer Interface and learn from prior experience.",
+              "why": "Desktop agents matter for creator and production workflows because many useful tools still have GUI surfaces, not clean APIs.",
+              "action": "Track whether it can reliably operate boring desktop workflows: file naming, browser forms, asset export, and QA screenshots.",
+              "teacher": "A strong exercise is to separate perception, planning, action, memory, and verification in any computer-use demo.",
+              "link": "https://github.com/simular-ai/agent-s"
+            },
+            {
+              "n": 8,
+              "category": "Firecrawl comparison says",
+              "title": "Firecrawl comparison says agent harnesses now matter more than raw model choice",
+              "source": "firecrawl.dev",
+              "relevance": "Intermediate",
+              "summary": "Firecrawl's June 10 comparison argues frontier models have converged enough that the harness, tools, permissions, memory, and async runtime now decide the user experience.",
+              "why": "This is the practical market signal. Buyers are comparing Claude Code, Codex, Cursor, Copilot, Antigravity, OpenCode, and Devin by workflow fit and cost, not only benchmark claims.",
+              "action": "Build your own scorecard around five axes: harness depth, review controls, cost per task, async execution, and project memory.",
+              "teacher": "Use the article to teach why the same model can feel excellent in one product and weak in another.",
+              "link": "https://www.firecrawl.dev/blog/best-ai-coding-agents"
+            },
+            {
+              "n": 9,
+              "category": "Reddit maker ships",
+              "title": "Reddit maker ships BurnClaw to monitor Claude Code limits from the Windows tray",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A r/ClaudeCode maker posted BurnClaw, a Tauri/Rust/TypeScript Windows tray widget that tracks Claude Pro/Max usage and activity via local hooks.",
+              "why": "When users build monitoring tools around subscription limits, it signals real pain in daily agent workflows: cost visibility and session planning.",
+              "action": "Add usage telemetry to any serious agent setup: session age, spend, active tasks, waiting-for-input state, and completion notifications.",
+              "teacher": "This is a good maker case study: a tiny utility can become valuable when it sits exactly on a workflow pain point.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1tds0cd/i_built_burnclaw_a_windows_tray_widget_to_track/"
+            },
+            {
+              "n": 10,
+              "category": "HN debate flags",
+              "title": "HN debate flags Fable 5 coding quality and policy behavior as live adoption risks",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current Hacker News thread on Claude Fable 5 coding results is less about hype and more about whether the model is dependable for coding tasks under real constraints.",
+              "why": "Early adopter discussion is useful because it surfaces failure modes faster than polished launch pages: pricing, policy limits, benchmark mismatch, and tool behavior.",
+              "action": "Before switching a production coding workflow to a new model, run your own migration, bugfix, and security-review tasks across the old and new model.",
+              "teacher": "Teach benchmark skepticism: ask what task, harness, effort setting, policy layer, and cost produced the claimed result.",
+              "link": "https://news.ycombinator.com/item?id=48492210"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 06",
       "label": "2026-06-12 · 06:10",
