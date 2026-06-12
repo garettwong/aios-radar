@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 21:04",
-    "editions": 125
+    "fetchedAt": "2026-06-12 21:08",
+    "editions": 126
   },
   "editions": [
+    {
+      "key": "2026-06-12 21",
+      "label": "2026-06-12 · 21:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 21:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Canva Magic Layers",
+              "title": "Canva Magic Layers moves AI images into editable production files",
+              "source": "canva.com",
+              "relevance": "Intermediate",
+              "summary": "Canva says Magic Layers is now available inside Gemini and ChatGPT, turning flat AI-generated images into editable layered Canva designs.",
+              "why": "This closes a real client-work gap: AI visuals stop being dead-end references and become assets designers can revise, localize, resize, and brand.",
+              "action": "Build a small before/after offer for creators and SMEs: generate a campaign visual, convert it to editable layers, then deliver three finished platform variants.",
+              "teacher": "Teach the difference between prompting an image and finishing a design file. The paid skill is cleanup, hierarchy, brand control, and export discipline.",
+              "link": "https://www.canva.com/newsroom/news/magic-layers-ai-assistants/"
+            },
+            {
+              "n": 2,
+              "category": "Planet AI Engineer,",
+              "title": "Planet AI Engineer, Marketing role shows revenue teams hiring AI workflow builders",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Planet is hiring an AI Engineer for Marketing, with emphasis on automation and AI reshaping revenue workflows.",
+              "why": "Marketing teams are turning AI work into engineering-adjacent roles, not just prompt-writing tasks.",
+              "action": "Package a portfolio demo around lead research, campaign briefs, asset generation, CRM handoff, and reporting automation.",
+              "teacher": "Use this as a class example of AI jobs moving into every department: the winning profile combines workflow mapping, APIs, and business metrics.",
+              "link": "https://job-boards.greenhouse.io/planetlabs/jobs/7782587"
+            },
+            {
+              "n": 3,
+              "category": "Contentful Product Designer",
+              "title": "Contentful Product Designer role targets AI translation workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Contentful is hiring a Product Designer for its AI Translations product, focused on marketing and editor customers.",
+              "why": "AI localization is becoming a product-design niche: teams need UX for review, trust, brand voice, and multilingual content operations.",
+              "action": "Create a case study redesigning an AI translation review queue with confidence states, side-by-side copy, glossary control, and approval history.",
+              "teacher": "Teach students that AI design work is often interface design for human review, not just generative output.",
+              "link": "https://job-boards.greenhouse.io/contentful/jobs/7763320"
+            },
+            {
+              "n": 4,
+              "category": "GeoComply ML internship",
+              "title": "GeoComply ML internship includes internal AI-assisted skills",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "GeoComply lists an ML Engineering Intern role that includes designing internal AI-assisted skills for deployment, investigation, monitoring, and ticket coordination.",
+              "why": "Even internships are shifting toward building reusable internal agents and operational skills, which is a strong signal for AI-native workplace tooling.",
+              "action": "Practice by turning one repetitive team workflow into a documented reusable agent skill with inputs, outputs, guardrails, and test cases.",
+              "teacher": "This is a clean teaching example for moving from one-off scripts to durable internal automation.",
+              "link": "https://jobs.lever.co/geocomply-2/bd0ae58f-5718-4200-bd33-cd0e3c1465d5"
+            },
+            {
+              "n": 5,
+              "category": "Leading Educators role",
+              "title": "Leading Educators role makes practitioner-level AI fluency part of coaching work",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "A Director of Implementation, Design, and Coaching role asks for practitioner-level AI fluency and responsible integration into established workflows.",
+              "why": "AI fluency is spreading into education leadership and consulting roles where the value is judgment, facilitation, and adoption.",
+              "action": "Offer an AI workflow audit for",
+              "teacher": "s, trainers, or small learning teams: identify safe use cases, redesign one recurring task, and leave a rubric. Teaching notes: Frame AI training around when to use it, when not to use it, and how to preserve learning quality.",
+              "link": "https://job-boards.greenhouse.io/leadingeducators/jobs/5169423008"
+            },
+            {
+              "n": 6,
+              "category": "Upwork brief bundles",
+              "title": "Upwork brief bundles n8n, Zapier, Make, GoHighLevel, and AI systems",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Upwork brief asks for automation across sales, operations, CRM, communication, and support using n8n, Zapier, Make, GoHighLevel, and AI systems.",
+              "why": "Buyers are asking for integrated business systems, not isolated automations. That favors consultants who can map operations and maintain reliability.",
+              "action": "Write a fixed-scope service menu: discovery map, workflow build, handover docs, monitoring, and one month of support.",
+              "teacher": "Teach students to sell outcomes like fewer missed leads and cleaner handoffs, not tool names alone.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Expert-for-n8n-Zapier-Make-GoHighLevel-and-Systems_~022062883574492621565/"
+            },
+            {
+              "n": 7,
+              "category": "Upwork direct-mail automation",
+              "title": "Upwork direct-mail automation brief connects Notion, Handwrytten, Make, Zapier, and n8n",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Upwork post seeks an AI automation expert to trigger personalized handwritten postcard campaigns from Notion through Handwrytten and automation tools.",
+              "why": "Offline-to-online automation is a useful niche: many businesses still pay for physical outreach when it is personalized and trackable.",
+              "action": "Prototype a small Notion-to-mail workflow and create a demo for real estate, clinics, event venues, or premium retail follow-up.",
+              "teacher": "Use it to show that AI service ideas do not need to be chatbots. Valuable automation often connects boring business systems.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Expert-Needed-Notion-Handwrytten-Make-Zapier-n8n_~022062465160730255228/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork Claude/n8n/Make brief",
+              "title": "Upwork Claude/n8n/Make brief asks for AI agents, voice agents, and Airtable workflows",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Upwork post asks for Claude, n8n, Make.com, Zapier, AI assistants, chatbots, voice agents, APIs, webhooks, and Airtable database workflows.",
+              "why": "The market is converging around full-stack automation operators who can connect LLMs, databases, voice, and existing apps.",
+              "action": "Build one portfolio project with an intake form, Airtable, AI triage, human approval, and a voice or email follow-up step.",
+              "teacher": "Teach architecture first: trigger, data store, model call, tool action, human approval, logging, and rollback.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Expert-Needed-for-Claude-n8n-Make-com-Business-Process-Automation_~022061859562633443695/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit creator-workflow thread",
+              "title": "Reddit creator-workflow thread asks how to automate founder-story videos",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n thread asks how to turn founder interviews into story beats, scripts, image/video prompts, voiceover, and assembled short-form video.",
+              "why": "This is early demand for creator-production pipelines, where 3D/design judgment can beat generic automation.",
+              "action": "Design a creator package: interview transcript to storyboard, asset list, visual style frames, draft edit, and human review checkpoints.",
+              "teacher": "Show learners where automation should stop: story quality, visual continuity, and final edit decisions still need taste.",
+              "link": "https://www.reddit.com/r/n8n/comments/1tykkey/how_would_you_recreate_the_snapchat_kingdom/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: full-stack designers can become one-person feature teams",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post argues that a full-stack designer with strong taste can now operate like a one-person feature team, while design job-market data lags.",
+              "why": "This supports a practical career angle for designers: prototype, ship, and validate product ideas faster instead of waiting for traditional role definitions.",
+              "action": "Turn one design concept into a working prototype with AI coding tools, then present both the taste decisions and the shipped interaction.",
+              "teacher": "Teach designers to document decision quality, not just speed: constraints, references, tradeoffs, and where AI output was corrected.",
+              "link": "https://x.com/gokulr/status/2062638283100930085"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 18",
       "label": "2026-06-12 · 18:11",
