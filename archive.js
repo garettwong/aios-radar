@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 12:17",
+    "fetchedAt": "2026-06-12 12:22",
     "editions": 123
   },
   "editions": [
     {
       "key": "2026-06-12 12",
-      "label": "2026-06-12 · 12:04",
+      "label": "2026-06-12 · 12:17",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 12:17 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Anthropic and DXC",
+              "title": "Anthropic and DXC target regulated-industry Claude deployments",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "DXC will integrate Claude into systems used by banks, airlines, and other regulated industries, with Claude Code Enterprise part of the enterprise story.",
+              "why": "Agent adoption is shifting from novelty tools to governed systems where auditability and risk controls decide whether deployment happens.",
+              "action": "Add governance checks to your agent tool matrix: data boundary, logs, approvals, rollback, and who owns failures.",
+              "teacher": "Enterprise AI is less about prompt cleverness and more about wrapping models in acceptable operating controls.",
+              "link": "https://www.anthropic.com/news/dxc-anthropic-alliance"
+            },
+            {
+              "n": 2,
+              "category": "Endava reframes software",
+              "title": "Endava reframes software delivery around AI agents",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI describes Endava using ChatGPT Enterprise and Codex across delivery, planning, reporting, operations, and internal-tool creation.",
+              "why": "The market signal is that agents are becoming workflow infrastructure across the whole company, not just developer autocomplete.",
+              "action": "Map one recurring client or studio workflow and mark where an agent could prepare, draft, summarize, or verify without blocking humans.",
+              "teacher": "AI-native teams redesign the process around the agent loop instead of sprinkling chat on top of the old process.",
+              "link": "https://openai.com/index/endava-frontiers/"
+            },
+            {
+              "n": 3,
+              "category": "Zed Terminal Threads",
+              "title": "Zed Terminal Threads keep terminal agents inside the editor sidebar",
+              "source": "zed.dev",
+              "relevance": "Intermediate",
+              "summary": "Zed says Terminal Threads let users run Claude Code, Amp, or other terminal agents as persistent threads in the editor sidebar.",
+              "why": "Editors are adapting to a multi-agent reality where the terminal agent remains useful but needs visibility, review, and continuity.",
+              "action": "Try one persistent terminal-agent thread for a narrow maintenance lane, such as tests or dependency cleanup.",
+              "teacher": "The practical pattern is not full autonomy; it is keeping agent state visible enough that humans can steer and interrupt.",
+              "link": "https://zed.dev/blog/terminal-threads"
+            },
+            {
+              "n": 4,
+              "category": "Miasma worm makes",
+              "title": "Miasma worm makes agent startup files a supply-chain target",
+              "source": "safedep.io",
+              "relevance": "Intermediate",
+              "summary": "SafeDep reports a malicious payload wired into repos so Claude Code, Gemini CLI, Cursor, VS Code, and npm test could trigger it.",
+              "why": "Agent hooks, setup scripts, and repo-local tool configs are now security-sensitive execution paths.",
+              "action": "Before opening unfamiliar repos with an agent, inspect hooks, tasks, MCP/tool configs, package scripts, and large unexpected files.",
+              "teacher": "Agent safety starts at repo trust and sandboxing; prompt-injection defenses are not enough if startup code is already hostile.",
+              "link": "https://safedep.io/miasma-worm-ai-coding-agent-config-injection"
+            },
+            {
+              "n": 5,
+              "category": "OpenDev pushes the",
+              "title": "OpenDev pushes the lightweight coding-agent CLI lane",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "OpenDev is an open-source terminal coding agent emphasizing fast startup, small memory use, and parallel agents in isolated worktrees.",
+              "why": "A second market lane is forming around small, composable CLIs rather than heavy IDE-native agents.",
+              "action": "Watch lightweight agents for repeatable chores: issue triage, test fixes, dependency bumps, and small refactors.",
+              "teacher": "The smaller the harness, the more important the task boundary, logs, and worktree isolation become.",
+              "link": "https://github.com/opendev-to/opendev"
+            },
+            {
+              "n": 6,
+              "category": "Agent3Dify explores 2D-to-3D",
+              "title": "Agent3Dify explores 2D-to-3D CAD conversion with coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Agent3Dify is a small open-source project for converting 2D input into 3D CAD output using a coding-agent approach.",
+              "why": "Maker workflows are starting to treat CAD generation as an agent task, not just an image-model trick.",
+              "action": "Use projects like this as reference for controlled prototypes, but verify dimensions, topology, and export validity manually.",
+              "teacher": "For CAD and 3D, the agent should produce editable structure; final geometry has to survive real inspection.",
+              "link": "https://github.com/neka-nat/agent3dify"
+            },
+            {
+              "n": 7,
+              "category": "Public X signal:",
+              "title": "Public X signal: SAM 3D Body gains fresh maker attention after CVPR buzz",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post highlights Meta SAM 3D Body as a CVPR 2026 award-candidate paper that recovers a full 3D human mesh from one RGB image.",
+              "why": "Single-image 3D reconstruction is moving closer to useful previsualization, mocap prep, avatar blocking, and reference extraction.",
+              "action": "Test SAM 3D Body on your own reference images and compare output against camera angle, pose, silhouette, and rig usability.",
+              "teacher": "Fresh social traction is useful only when paired with technical QA: mesh recovery can look impressive while still failing production constraints.",
+              "link": "https://x.com/skalskip92/status/2062194945902223557"
+            },
+            {
+              "n": 8,
+              "category": "HN supply-chain thread",
+              "title": "HN supply-chain thread shows developers connecting repo compromise to agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Hacker News thread about .github/setup.js compromise points directly at Claude hooks, Gemini hooks, Cursor setup, and VS Code tasks as vectors.",
+              "why": "Community risk awareness is catching up with the fact that agents run local code and inherit local trust mistakes.",
+              "action": "Create a quick pre-agent checklist for third-party repos: scripts, hooks, actions, binary blobs, and credentials exposure.",
+              "teacher": "HN is useful here because it shows what practitioners notice before formal best practices settle.",
+              "link": "https://news.ycombinator.com/item?id=48409869"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Fable 5",
+              "title": "Reddit Fable 5 users report usage economics as the adoption bottleneck",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Claude Code users discussing Fable 5 on Max plans focus on how quickly meaningful work consumes limits, not only on model quality.",
+              "why": "Model upgrades can lose daily users if the cost per completed task feels unpredictable.",
+              "action": "Benchmark premium models by task-completion cost, retries, and session-limit impact, not just output quality.",
+              "teacher": "Adoption is unit economics: a brilliant model may belong in planning or review if it is too expensive for implementation loops.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1u1ob6w/for_those_of_you_using_fable_5_on_the_max_5x_plan/"
+            },
+            {
+              "n": 10,
+              "category": "Meshy-guide packages AI",
+              "title": "Meshy-guide packages AI 3D generation as assistant-callable skills",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy-guide points to Meshy 3D Agent skills that let coding assistants generate models, textures, images, rigs, animations, and print-prep assets.",
+              "why": "3D platforms are becoming callable toolchains for assistants, which matters for automated asset sheets and maker pipelines.",
+              "action": "Prototype a controlled asset workflow: prompt, generate variants, export, inspect mesh, then record failure cases.",
+              "teacher": "The useful lesson is tool choreography: an assistant should call specialized 3D tools, then verify outputs against production constraints.",
+              "link": "https://github.com/meshy-dev/Meshy-guide"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
