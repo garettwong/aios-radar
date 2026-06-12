@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 15:15",
+    "fetchedAt": "2026-06-12 15:20",
     "editions": 124
   },
   "editions": [
     {
       "key": "2026-06-12 15",
-      "label": "2026-06-12 · 15:00",
+      "label": "2026-06-12 · 15:14",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-12 · 15:14 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Visual Studio adds",
+              "title": "Visual Studio adds Copilot usage alerts and a smarter Agent preview",
+              "source": "learn.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Visual Studio Insiders now shows real-time Copilot usage tracking and quota alerts after Copilot moved toward token-based usage. The same release adds an Agent preview in Copilot Chat for feature work, bug fixes, refactors, and day-to-day coding tasks.",
+              "why": "Coding agents are becoming normal IDE controls, but token visibility is now part of the product experience. The market is moving from unlimited-feeling chat to managed agent consumption.",
+              "action": "Add usage and cost checks to any AI coding workflow. For team templates, separate light chat tasks from agent tasks that run tools, tests, or repository analysis.",
+              "teacher": "Explain this as a product maturity signal: once the agent is embedded, governance, usage alerts, and review controls become core UI, not admin afterthoughts.",
+              "link": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes-insiders"
+            },
+            {
+              "n": 2,
+              "category": "Nebius publishes an",
+              "title": "Nebius publishes an open production architecture for agents",
+              "source": "nebius.com",
+              "relevance": "Intermediate",
+              "summary": "Nebius introduced Agents Blueprint, an open reference architecture for building, operating, and improving AI agents in production. It frames agent reliability as a system problem, not just a model problem.",
+              "why": "This is where serious agent work is heading: observability, recipes, feedback loops, failure diagnosis, and composable runtime layers. The pitch is shifting from demos to operations.",
+              "action": "Compare your own agent stack against the blueprint: orchestration, state, evaluation, logs, approvals, recovery, and cost controls.",
+              "teacher": "Use this to teach the difference between a prompt demo and a production agent. The model is only one layer; the surrounding system determines whether it survives real use.",
+              "link": "https://nebius.com/blog/posts/introducing-the-nebius-agents-blueprint"
+            },
+            {
+              "n": 3,
+              "category": "World Labs keeps",
+              "title": "World Labs keeps defining the 3D world-model stack",
+              "source": "worldlabs.ai",
+              "relevance": "Intermediate",
+              "summary": "World Labs' research page highlights a June 3 taxonomy of world models: renderers, simulators, planners, and the loop connecting them. The same page points to its earlier 3D-as-code and World API work.",
+              "why": "For 3D/design workflows, the frontier is moving from single generated images to editable, navigable, simulated worlds. This maps directly to booth, retail, product, and environment visualization.",
+              "action": "When evaluating AI 3D tools, ask whether they produce final pixels only, editable scene state, camera-controllable worlds, or simulation-ready assets.",
+              "teacher": "Teach this as the transition from image generation to spatial systems. A render is the output; the useful asset is the controllable world behind it.",
+              "link": "https://www.worldlabs.ai/blog"
+            },
+            {
+              "n": 4,
+              "category": "GUI-agent benchmarks show",
+              "title": "GUI-agent benchmarks show real web automation is still hard",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "OSU's GUI Agents Paper List highlights ClawBench, which evaluates agents on 153 everyday online tasks across 144 live production websites. The listed best model reaches only 33.3 percent.",
+              "why": "Public demos make computer-use agents feel solved, but live websites remain messy. This is a practical warning for any workflow that expects agents to reliably buy, book, apply, or operate browser UIs.",
+              "action": "For browser agents, add final-submit blockers, screenshots, replay logs, and human approval for irreversible actions.",
+              "teacher": "Use this as the reality check: agent autonomy should be gated by task risk. Reading and drafting can be broad; clicking purchase or submit needs guardrails.",
+              "link": "https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List"
+            },
+            {
+              "n": 5,
+              "category": "The Sandbox Studio",
+              "title": "The Sandbox Studio adds an AI coding agent to creator tools",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from The Sandbox describes Sandbox Studio as a desktop SDK plus visual editor with a built-in AI coding agent for creators.",
+              "why": "Game and world builders are folding coding agents into visual creation environments. This suggests the next wave of creator tools will pair scene editing, scripting, and AI assistance in one surface.",
+              "action": "Watch for creator platforms where AI coding is not a separate developer feature, but part of asset, gameplay, and interaction authoring.",
+              "teacher": "Good example for non-engineers: the agent is not replacing the editor; it is becoming another tool inside the editor.",
+              "link": "https://x.com/TheSandboxGame/status/2064353128833487028"
+            },
+            {
+              "n": 6,
+              "category": "GitHub CLI adds",
+              "title": "GitHub CLI adds issue hierarchy that agents can operate from terminals",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub CLI v2.94.0 adds issue types, parent/sub-issue links, and blocking relationships directly in gh issue commands.",
+              "why": "Coding agents increasingly use CLI surfaces as their control plane. More structured issue metadata in the terminal makes it easier for agents to turn plans into durable task graphs.",
+              "action": "Start writing implementation plans as issue trees with dependencies instead of flat lists. Agents can then pick off scoped work without losing the larger plan.",
+              "teacher": "This is a small feature with big workflow impact: structured work items become machine-readable coordination memory.",
+              "link": "https://github.blog/changelog/2026-06-10-manage-sub-issues-types-and-dependencies-from-github-cli/"
+            },
+            {
+              "n": 7,
+              "category": "CNCF considers agentregistry",
+              "title": "CNCF considers agentregistry for MCP servers, agents, and skills",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A CNCF sandbox issue proposes agentregistry, a cloud-native registry for discovering, curating, and deploying MCP servers, agents, and skills across local development and Kubernetes.",
+              "why": "The agent ecosystem now needs package-management style governance. Teams are accumulating MCP servers and skills faster than they can audit them.",
+              "action": "Treat MCP servers and agent skills like dependencies: inventory them, version them, review permissions, and define who can install or update them.",
+              "teacher": "Compare this to container registries. Once agent tools become deployable artifacts, discovery and trust infrastructure becomes unavoidable.",
+              "link": "https://github.com/cncf/sandbox/issues/477"
+            },
+            {
+              "n": 8,
+              "category": "GitHub community discussion",
+              "title": "GitHub community discussion asks how teams audit MCP servers",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A GitHub Community thread asks how teams are reviewing MCP servers before connecting them to databases, APIs, code repositories, cloud resources, and internal systems.",
+              "why": "This is a live pain point: MCP turns context and tools into an agent-accessible surface, but traditional AppSec checklists do not fully cover behavior, permissions, and tool-call risk.",
+              "action": "Build a lightweight MCP intake checklist: owner, source, permissions, network access, secrets exposure, tool list, logging, and revocation plan.",
+              "teacher": "Teach MCP as a security boundary, not just an integration format. Every tool exposed to an agent is part of the agent's effective authority.",
+              "link": "https://github.com/orgs/community/discussions/198577"
+            },
+            {
+              "n": 9,
+              "category": "Replit adds Skills",
+              "title": "Replit adds Skills and Custom Instructions to Replit Agent",
+              "source": "replit.com",
+              "relevance": "Intermediate",
+              "summary": "Replit's June update lets teams customize Replit Agent with skills and custom instructions so it can follow project conventions, secrets handling, design systems, tests, and code style.",
+              "why": "Agent customization is becoming productized. The winning workflow is not a generic agent; it is an agent that understands the team's house style and constraints.",
+              "action": "Maintain a small, current agent instruction pack per project: folder structure, commands, design rules, security rules, and done criteria.",
+              "teacher": "This is the difference between prompting and onboarding. A good skills file is like giving the agent a team handbook plus a checklist.",
+              "link": "https://replit.com/blog/custom-skills"
+            },
+            {
+              "n": 10,
+              "category": "Zed's DeltaDB frames",
+              "title": "Zed's DeltaDB frames software as conversation plus edits",
+              "source": "zed.dev",
+              "relevance": "Intermediate",
+              "summary": "Zed introduced DeltaDB around the idea that messages and edits should be recorded side by side, with conflict-free replicated worktrees so people and agents can edit across machines.",
+              "why": "Agentic development is exposing a gap in normal Git: the reasoning conversation often disappears while the code remains. Tools are starting to preserve the work process, not just commits.",
+              "action": "For important agent work, keep prompts, plans, decisions, and final diffs together. Treat the conversation as part of the engineering record.",
+              "teacher": "Teach this as context preservation. The commit says what changed; the agent thread explains why it changed and what alternatives were considered.",
+              "link": "https://zed.dev/blog/introducing-deltadb"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
