@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-12 12:13",
-    "editions": 122
+    "fetchedAt": "2026-06-12 12:17",
+    "editions": 123
   },
   "editions": [
+    {
+      "key": "2026-06-12 12",
+      "label": "2026-06-12 · 12:04",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-12 · 12:04 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Axios reports Nasdaq",
+              "title": "Axios reports Nasdaq sees AI behind a solo-founder business formation boom",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "Axios reports Nasdaq Economic Institute data showing a rise in one-person businesses as generative AI and coding agents lower startup operating friction.",
+              "why": "This supports AI-native micro-agencies, solo product studios, and specialist service businesses.",
+              "action": "Package one narrow service that a solo founder can buy: landing page plus CRM automation, proposal bot, content pipeline, or design asset system.",
+              "teacher": "Teach solo founders to choose one revenue workflow first, then automate around it instead of building a tool stack for its own sake.",
+              "link": "https://www.axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq"
+            },
+            {
+              "n": 2,
+              "category": "Fresh Upwork payroll",
+              "title": "Fresh Upwork payroll automation brief shows HR and outsourcing firms buying n8n/Make systems",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A today-posted Upwork job asks for end-to-end payroll automation across payroll software, spreadsheets, WhatsApp, Outlook, n8n, and Make.",
+              "why": "Back-office automation remains a concrete freelance lane because the pain is specific, recurring, and measurable.",
+              "action": "Build a payroll-ops automation template: intake checklist, approval flow, exception log, WhatsApp/email notifications, and monthly report.",
+              "teacher": "Payroll is sensitive. Emphasize access control, audit trails, manual approval gates, and error handling.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/automation-specialist-Payroll-workflow-automation-n8n-make-com_~022065051590428919283/"
+            },
+            {
+              "n": 3,
+              "category": "Megazone Cloud Director",
+              "title": "Megazone Cloud Director of AI Applied Solutions turns AI consulting into a leadership lane",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Megazone Cloud US is hiring a Director of AI Applied Solutions, with a July 3, 2026 application deadline and a listed salary range of $170K to $195K.",
+              "why": "AI services are maturing into managed solution practices, not just one-off prompt or workflow jobs.",
+              "action": "Build a consulting menu around discovery, prototype, deployment, governance, and training, then price each stage separately.",
+              "teacher": "Teach the difference between a demo and an applied solution: owner, data path, failure mode, support model, and ROI metric.",
+              "link": "https://jobs.ashbyhq.com/megazone/88a55b4b-aede-4d99-8cf9-3c924e124529"
+            },
+            {
+              "n": 4,
+              "category": "Harvey Software Engineer",
+              "title": "Harvey Software Engineer role shows legal AI companies need infrastructure and automation builders",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Harvey has a today-indexed Software Engineer role with a July 3, 2026 application deadline, focused on infrastructure services and automation tools.",
+              "why": "AI-native vertical SaaS companies still need strong product infrastructure, not only model skills.",
+              "action": "Create a portfolio project that automates document intake, retrieval, review queues, and human approvals for a regulated workflow.",
+              "teacher": "For learners, pair AI app building with reliability basics: permissions, logging, retries, evaluation, and clear operator handoff.",
+              "link": "https://jobs.ashbyhq.com/harvey/581cd358-0186-48a6-b76f-c76946c5c7a7"
+            },
+            {
+              "n": 5,
+              "category": "Megazone Cloud Sr.",
+              "title": "Megazone Cloud Sr. AI FDE points to customer-facing AI deployment as a high-value role",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Megazone Cloud US is hiring a Senior AI Forward Deployed Engineer in Rochester, NY, with a July 3, 2026 deadline.",
+              "why": "Forward-deployed AI work rewards people who can translate client pain into working prototypes and production systems.",
+              "action": "Position yourself as a deployment partner with a two-week offer: workflow audit, prototype, acceptance test, and operator training.",
+              "teacher": "Teach FDE work as consulting plus engineering. The deliverable is adoption, not just code.",
+              "link": "https://jobs.ashbyhq.com/megazone/cae79248-f874-4ceb-9ed5-88df7267d9d1"
+            },
+            {
+              "n": 6,
+              "category": "Deliverect Technical Operations",
+              "title": "Deliverect Technical Operations Lead shows finance teams adopting AI agents inside billing ops",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Deliverect is hiring a Technical Operations Lead in Casablanca to drive billing operations and AI automation, including agent deployment and monitoring.",
+              "why": "Finance operations are becoming a strong automation niche because errors, exceptions, and approvals are measurable.",
+              "action": "Offer a billing-ops automation audit: map invoice paths, exceptions, Slack/email alerts, ERP handoffs, and reconciliation reports.",
+              "teacher": "This is a good case study for teaching operations AI: start with process mapping before touching tools.",
+              "link": "https://jobs.lever.co/deliverect/92bf8068-aab8-4b5c-b075-96f8de331ee6"
+            },
+            {
+              "n": 7,
+              "category": "n8n Enterprise Account",
+              "title": "n8n Enterprise Account Executive opening signals enterprise demand for workflow orchestration",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "n8n is hiring an Enterprise Account Executive, with the job page describing n8n as open workflow orchestration for AI-era automation.",
+              "why": "If n8n is selling upmarket, implementation partners and educators can follow the buying cycle into larger teams.",
+              "action": "Build sales collateral for one industry: CRM enrichment, lead routing, finance approvals, content ops, or support triage.",
+              "teacher": "Teach n8n as orchestration, not magic. The value is connecting systems, states, approvals, and monitoring.",
+              "link": "https://jobs.ashbyhq.com/n8n/c13cb33a-b0c7-466b-bbd2-f32a76a12b8a"
+            },
+            {
+              "n": 8,
+              "category": "Empire State Realty",
+              "title": "Empire State Realty Trust role brings AI automation into real estate enterprise systems",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "ESRT is hiring a Senior Application Developer to integrate AI-driven capabilities, MCP servers, RPA, BI dashboards, and enterprise systems.",
+              "why": "AI automation opportunities are spreading into traditional property, finance, and operations environments.",
+              "action": "Prototype a property-ops assistant that summarizes tenant requests, routes tickets, drafts status updates, and updates dashboards.",
+              "teacher": "This is a strong teaching example for non-tech industries: AI value appears where legacy systems meet repetitive workflows.",
+              "link": "https://jobs.lever.co/esrtreit/6558e60c-1d8b-48ee-87e4-7a493c95156d"
+            },
+            {
+              "n": 9,
+              "category": "Reddit warning says",
+              "title": "Reddit warning says AI automation freelancers need production skill, not guru-course confidence",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n post warns that simple tutorial workflows do not prepare beginners to charge businesses for production automation.",
+              "why": "The opportunity is shifting toward robust delivery: error handling, compliance, maintenance, and realistic scoping.",
+              "action": "Turn this into a service checklist: discovery, data access, test cases, exception handling, documentation, and monthly support.",
+              "teacher": "Teach beginners to ship one boring reliable workflow before selling broad AI agency claims.",
+              "link": "https://www.reddit.com/r/n8n/comments/1s99r0a/youtube_automation_gurus_are_setting_you_up_for_a/"
+            },
+            {
+              "n": 10,
+              "category": "Public X n8n",
+              "title": "Public X n8n hashtag shows ongoing build-in-public demand around AI workflow demos",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "The public X n8n hashtag has search-visible posts showing builders sharing AI agents, email automation, and workflow demos in public.",
+              "why": "Social demand is noisy, but it reveals what prospects recognize quickly: visible demos, named tools, and clear action from a workflow.",
+              "action": "Publish one short demo per offer: input, automation path, human approval point, and final business output.",
+              "teacher": "Teach creators to avoid vague AI claims. A 45-second workflow proof video is stronger than a long capability list.",
+              "link": "https://x.com/hashtag/n8n?src=hashtag_click"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 09",
       "label": "2026-06-12 · 09:11",
