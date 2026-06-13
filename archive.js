@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 10:09",
-    "editions": 126
+    "fetchedAt": "2026-06-13 10:12",
+    "editions": 127
   },
   "editions": [
+    {
+      "key": "2026-06-13 09",
+      "label": "2026-06-13 · 10:07",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-13 · 10:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Ada AI Manager",
+              "title": "Ada AI Manager designer role turns bot training into UX work",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Ada is hiring a Senior Product Designer for the AI Manager experience: the dashboard where teams train, evaluate, and deploy AI agents across chat, voice, and email.",
+              "why": "AI operations is becoming a design discipline, not only an engineering task. Someone has to make evaluation, training loops, and deployment states understandable.",
+              "action": "Build one portfolio case around an AI-agent admin console: training data, test scenarios, confidence states, rollback, and deployment approval.",
+              "teacher": "Teach AI product design as system behavior design: inputs, model behavior, human override, evaluation, and audit trail.",
+              "link": "https://job-boards.greenhouse.io/ada18/jobs/5017211007"
+            },
+            {
+              "n": 2,
+              "category": "Skild AI industrial",
+              "title": "Skild AI industrial design role connects 3D craft to robotics UX",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Skild AI wants a Lead Industrial Designer for next-generation robotic systems, covering sketches, CAD, prototypes, materials, finishes, ergonomics, and human-robot interaction.",
+              "why": "Physical AI needs artists and product designers who can make robotics feel usable, legible, and manufacturable.",
+              "action": "Package a robotics/AI industrial-design sample: one object, three use states, CAD/proxy model, material callouts, and interaction notes.",
+              "teacher": "Frame 3D work around decisions: ergonomic constraint, sensor placement, manufacturability, brand fit, and user feedback.",
+              "link": "https://job-boards.greenhouse.io/skildai-careers/jobs/4552462008"
+            },
+            {
+              "n": 3,
+              "category": "10xTeam architect AI-trainer",
+              "title": "10xTeam architect AI-trainer post monetizes professional design judgment",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh 10xTeam listing seeks architects for freelance AI training work, asking domain experts to review and refine model outputs around building design, regulations, workflows, and practical constraints.",
+              "why": "Specialist critique is becoming a paid layer in AI. Design professionals can sell judgment even when they are not building the model.",
+              "action": "Create a reusable review rubric for spatial AI output: code compliance, circulation, scale, material realism, lighting, and client-readiness.",
+              "teacher": "Teach students to mark AI output like a senior reviewer: identify constraint violations, not just whether the image looks good.",
+              "link": "https://jobs.ashbyhq.com/10xteam/f16425b1-895d-4103-9006-90a2ef8a27fa"
+            },
+            {
+              "n": 4,
+              "category": "Aibuild OS positions",
+              "title": "Aibuild OS positions autonomous CAD/CAM execution as a service layer",
+              "source": "ai-build.com",
+              "relevance": "Intermediate",
+              "summary": "Aibuild describes an agentic engineering platform that takes natural-language instructions, clarifies requirements, operates existing CAD/CAE/CAM tools, and delivers validated manufacturing-ready outputs.",
+              "why": "The opportunity is not only prompt-to-model. It is workflow packaging around engineering software that clients already use.",
+              "action": "Prototype a small offer: turn a client sketch into a validated CAD/CAM preparation checklist plus toolpath handoff notes.",
+              "teacher": "Teach automation as supervised execution: requirement capture, constraints, software actions, validation, and handoff.",
+              "link": "https://ai-build.com/"
+            },
+            {
+              "n": 5,
+              "category": "Canva publishing integrations",
+              "title": "Canva publishing integrations make AI design delivery more end-to-end",
+              "source": "canva.com",
+              "relevance": "Intermediate",
+              "summary": "Canva added sharper AI cleanup and direct publishing paths, including HTML email campaign integrations with Mailchimp, Constant Contact, Klaviyo, and Flodesk.",
+              "why": "Small clients increasingly want finished campaigns, not just assets. Designers who understand delivery channels can charge for the whole workflow.",
+              "action": "Offer a one-day email-campaign production service: layout, image cleanup, platform handoff, alt text, and test-send checklist.",
+              "teacher": "Teach design students the last mile: export is not delivery; captions, accessibility, platform preview, and audience fit matter.",
+              "link": "https://www.canva.com/newsroom/news/whats-new-may-2026/"
+            },
+            {
+              "n": 6,
+              "category": "OpenAI Notion case",
+              "title": "OpenAI Notion case shows agent-ready codebases are a hiring advantage",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI reports Notion used Codex to build AI voice input for web much faster, with emphasis on codebase exploration, verification, and agent-friendly engineering primitives.",
+              "why": "The valuable skill is becoming harness engineering: making work easy for agents to inspect, change, and verify.",
+              "action": "For any project, add an agent README, test command, screenshot path, and small acceptance checklist so AI tools can work faster.",
+              "teacher": "Teach coding with verification-first tasks: inspect, change, run, compare, and document what proved the result.",
+              "link": "https://openai.com/index/notion/"
+            },
+            {
+              "n": 7,
+              "category": "Reddit n8n thread",
+              "title": "Reddit n8n thread shows brand-consistent AI image workflows are a real client pain",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Recent r/n8n activity includes a client-paid workflow for brand-consistent AI images, with the pain point that normal AI images drift from one output to the next.",
+              "why": "This is directly relevant to 3D/design services: consistency, source locking, and QA are the sellable parts, not merely generation.",
+              "action": "Turn brand-consistent image generation into a service checklist: reference board, locked prompt variables, rejection criteria, and contact sheet review.",
+              "teacher": "Teach the difference between a nice image and a controllable production workflow: repeatability, traceability, and client approval.",
+              "link": "https://www.reddit.com/r/n8n/new/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork n8n optimization",
+              "title": "Upwork n8n optimization brief shows demand after workflows reach production",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Upwork job asks for help improving an existing n8n workflow that routes inbound leads, updates HubSpot, sends Slack alerts, and manages SLA follow-up logic.",
+              "why": "Clients are moving from demo automations to maintenance, monitoring, and production behavior. That favors reliable operators over template sellers.",
+              "action": "Create a maintenance offer for n8n/Make systems: audit, error handling, logging, SLA alerts, and a monthly improvement report.",
+              "teacher": "Teach automation students to ask: what happens when it fails, duplicates, times out, or needs a human decision?",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Workflow-Optimization-n8n-with-Slack-Alerts-and-SLA-Logic_~022062471140951294991/"
+            },
+            {
+              "n": 9,
+              "category": "Zeta Global agentic",
+              "title": "Zeta Global agentic AI designer role defines a new product-design lane",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Zeta is hiring a Senior Product Designer for Agentic AI Applications, with responsibilities around agentic app frameworks, MCP patterns, AI interaction models, motion, prototyping, and design systems.",
+              "why": "Agent UX is becoming a formal senior design specialty. Designers who can prototype behavior, context, and system state will stand out.",
+              "action": "Make one demo that shows an AI agent working across states: waiting, reasoning, asking for context, acting, erroring, and handing control back.",
+              "teacher": "Teach AI interaction with state diagrams and motion notes, not only static Figma screens.",
+              "link": "https://job-boards.greenhouse.io/zetaglobal/jobs/5800279004?gh_src=Blind"
+            },
+            {
+              "n": 10,
+              "category": "Public X AI-automation",
+              "title": "Public X AI-automation article frames n8n and Make as an earning path for non-expert programmers",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article circulating this week argues that people can start earning with AI-assisted workflows before becoming expert programmers, specifically naming Make and n8n.",
+              "why": "The claim is not proof of easy money, but it shows market education is pulling beginners toward automation. That creates demand for honest training, templates, audits, and mentorship.",
+              "action": "Position any course or consulting offer away from hype: sell practical workflow literacy, debugging, documentation, and client scoping.",
+              "teacher": "Use this as a warning case: teach opportunity sizing and ethics alongside the tools so students do not confuse viral advice with production skill.",
+              "link": "https://x.com/shabnam_774/article/2063222091059810805"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-12 21",
       "label": "2026-06-12 · 21:11",
