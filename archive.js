@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 16:08",
-    "editions": 128
+    "fetchedAt": "2026-06-13 16:10",
+    "editions": 129
   },
   "editions": [
+    {
+      "key": "2026-06-13 15",
+      "label": "2026-06-13 · 16:03",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-13 · 16:03 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Hunter Douglas AI",
+              "title": "Hunter Douglas AI Legal Engineer internship makes legal automation a build role",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "A July 2026 internship asks for AI-enabled legal workflows, contract data extraction, dashboards, prompt testing, playbooks, and secure adoption support.",
+              "why": "Legal teams are turning document-heavy process work into builder roles that do not require being a lawyer first.",
+              "action": "Package a sample legal-tech mini portfolio: contract intake form, extraction prompt, QA checklist, dashboard, and policy notes.",
+              "teacher": "Teach legal workflow automation as map process -> classify documents -> extract fields -> verify output -> create audit trail.",
+              "link": "https://job-boards.greenhouse.io/talentprograms/jobs/7761283003"
+            },
+            {
+              "n": 2,
+              "category": "Phamily HR AI",
+              "title": "Phamily HR AI Automation internship puts workflow automation inside people operations",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Phamily lists an HR, AI Automation Intern role for June-August 2026 in New York.",
+              "why": "HR operations is becoming another entry point for AI automation: onboarding, reporting, document routing, and employee support workflows.",
+              "action": "Build one HR automation demo around offer-letter tracking, onboarding reminders, and manager status summaries.",
+              "teacher": "Emphasize privacy, permissions, and human review; HR automations fail fast if they leak or overstep.",
+              "link": "https://job-boards.greenhouse.io/jobsatphamily/jobs/5225795008"
+            },
+            {
+              "n": 3,
+              "category": "GitLab Senior AI",
+              "title": "GitLab Senior AI Engineer role sells internal AI workflow delivery as a company-wide function",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "GitLab wants an AI engineer to diagnose business problems, ship prototypes quickly, integrate AI into sales, marketing, and support workflows, and measure ROI.",
+              "why": "Companies are hiring people who can say when AI is useful, when it is not, and then deliver measurable internal tools.",
+              "action": "Turn past automation work into case studies with before/after cycle time, adoption, and maintenance notes.",
+              "teacher": "The lesson is workflow diagnosis, simplest useful intervention, and visible metrics.",
+              "link": "https://job-boards.greenhouse.io/gitlab/jobs/8556658002"
+            },
+            {
+              "n": 4,
+              "category": "Greenhouse Revenue Intelligence",
+              "title": "Greenhouse Revenue Intelligence Engineer role blends GTM ops, Claude Code, and internal apps",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Greenhouse is hiring for internal AI-enabled applications, revenue workflow automation, Salesforce/Gong integrations, prompts, and operational playbooks.",
+              "why": "Revenue teams need builders who understand business logic, data pipelines, and AI-assisted development.",
+              "action": "Create a GTM automation demo that turns call notes and CRM fields into renewal-risk alerts and next actions.",
+              "teacher": "Teach this as internal product design: stakeholders, data contracts, tool choice, prompt validation, and maintainable docs.",
+              "link": "https://job-boards.greenhouse.io/greenhouse/jobs/7958633"
+            },
+            {
+              "n": 5,
+              "category": "DoorDash TPM role",
+              "title": "DoorDash TPM role turns AI automation adoption into enterprise sales infrastructure",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "DoorDash wants a technical program manager to identify manual workflows, deploy AI-enabled solutions, run pilots, and scale adoption across enterprise sales.",
+              "why": "AI jobs are not only engineering seats; program managers who can translate ambiguous work into pilots are valuable.",
+              "action": "Build a one-page pilot template: pain point, data source, automation design, owner, metric, rollout plan, and training plan.",
+              "teacher": "This is a strong example for teaching AI consulting: discovery and adoption are as important as the workflow itself.",
+              "link": "https://job-boards.greenhouse.io/doordashusa/jobs/7727529"
+            },
+            {
+              "n": 6,
+              "category": "NVIDIA Applied AI",
+              "title": "NVIDIA Applied AI design-automation role points to agentic EDA and CAD-style workflows",
+              "source": "jobs.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA is hiring a Senior Design Automation Engineer, Applied AI, around end-to-end AI solution development and agentic automation for design workflows.",
+              "why": "The same pattern behind coding agents is moving into specialist design tools: generate data, orchestrate tools, check outputs, and optimize.",
+              "action": "For 3D/design positioning, prepare demos where AI controls structured tools, not just image generation.",
+              "teacher": "Teach agentic design automation as constrained tool use plus verification, especially for geometry, timing, layout, and repeatability.",
+              "link": "https://jobs.nvidia.com/careers/job/893394087332?ncid=ref-inpa-"
+            },
+            {
+              "n": 7,
+              "category": "Campus AI for",
+              "title": "Campus AI for Business Instructor role shows paid demand for practical AI teaching",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Campus is hiring an AI for Business Instructor for live online courses.",
+              "why": "There is still demand for instructors who can make AI useful for business students and working adults.",
+              "action": "Build a short workshop product: AI for operations, AI for sales follow-up, AI for reporting, and AI governance basics.",
+              "teacher": "Keep lessons tool-light and workflow-heavy: inputs, process, outputs, review, risk, and measurable value.",
+              "link": "https://jobs.ashbyhq.com/campus/460ac929-5546-4d58-a2bc-b6fa48f65437"
+            },
+            {
+              "n": 8,
+              "category": "Upwork meeting-intelligence n8n",
+              "title": "Upwork meeting-intelligence n8n post points to internal AI assistants for Google Workspace",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Upwork post seeks a senior n8n specialist to build an internal AI meeting-intelligence system tailored to Google Workspace workflows.",
+              "why": "Meeting notes, follow-ups, inbox context, and internal search are becoming a practical freelance automation package.",
+              "action": "Build a demo that ingests meeting notes, extracts decisions, creates tasks, drafts follow-ups, and logs evidence back to Workspace.",
+              "teacher": "Teach this as a bounded assistant: capture source, summarize, assign owner, request approval, and avoid pretending memory is perfect.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Senior-n8n-Automation-Specialist_~022063967589260100895/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n discussion",
+              "title": "Reddit n8n discussion says the durable skill is orchestration, retries, credentials, and audit trails",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n thread debates whether n8n is still useful in 2026; the best signal is that durable automation skill beats memorizing tool screenshots.",
+              "why": "Client work needs workflows that survive API changes, credential issues, debugging, retries, and handoff, not just impressive demos.",
+              "action": "Add monitoring, retry paths, credential-refresh notes, and replay instructions to every portfolio automation.",
+              "teacher": "Teach n8n beside code: AI can write transforms, while orchestration owns triggers, schedules, retries, notifications, and audit trails.",
+              "link": "https://www.reddit.com/r/n8n/comments/1te1hhm/is_learning_n8n_still_usefull_in_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal",
+              "title": "Public X signal warns AI automation freelancers to show real results, not just tool claims",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X profile/post stream around AI automation says freelancers need proof of results before claiming the specialist label.",
+              "why": "The buyer-facing lesson is clear: portfolios need measurable before/after outcomes, not only stacks like n8n, Make, Zapier, or agents.",
+              "action": "Publish one case study with baseline time, workflow diagram, test evidence, failure handling, and saved hours or revenue impact.",
+              "teacher": "Teach students to sell outcomes: fewer manual steps, faster reply time, lower error rate, and a maintainable handoff.",
+              "link": "https://x.com/aiautomatik"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-13 12",
       "label": "2026-06-13 · 13:13",
