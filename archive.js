@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 10:12",
+    "fetchedAt": "2026-06-13 10:15",
     "editions": 127
   },
   "editions": [
     {
       "key": "2026-06-13 09",
-      "label": "2026-06-13 · 10:07",
+      "label": "2026-06-13 · 10:08",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-13 · 10:08 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub makes Copilot",
+              "title": "GitHub makes Copilot code review more controllable for organizations",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub added organization-level runner configuration, content exclusion support, and no character limit for Copilot code review custom instructions.",
+              "why": "Agentic review is moving from novelty to governed CI infrastructure. Teams now need runner policy, repo boundaries, and instruction files as part of their engineering system.",
+              "action": "Treat `.github/copilot-instructions.md` as a maintained artifact; add explicit excluded paths for private/client material and test a self-hosted runner lane for high-risk repos.",
+              "teacher": "Good example of the pattern agents become infrastructure: once the agent runs in CI, permissions and compute placement matter as much as model quality.",
+              "link": "https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls"
+            },
+            {
+              "n": 2,
+              "category": "Ramp uses Codex",
+              "title": "Ramp uses Codex for code review and on-call assistant work",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's Ramp case study says Ramp engineers use Codex with GPT-5.5 for substantive code review and for an internal on-call assistant.",
+              "why": "The strongest market signal is not AI writes code; it is teams plugging agents into recurring engineering workflows where review, triage, and incident context repeat.",
+              "action": "Pick one recurring DevEx workflow and define the expected inputs, outputs, evaluation checks, and human approval step before trying to automate it.",
+              "teacher": "Use this to explain why agents should start in high-context repetitive work, not random one-off prompts.",
+              "link": "https://openai.com/index/ramp/"
+            },
+            {
+              "n": 3,
+              "category": "Notion reports large",
+              "title": "Notion reports large speedups from Codex spec-to-implementation work",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's Notion customer story says Notion uses Codex to turn specs into implementation work and reduce some development cycles from weeks to hours.",
+              "why": "Product teams are learning to make specs more agent-readable. Design, PM, and engineering workflows will converge around better written intent, constraints, and acceptance checks.",
+              "action": "For your own projects, write specs with sections for context, non-goals, visual constraints, tests, and do not change boundaries before giving work to a coding agent.",
+              "teacher": "The teachable shift is from prompt craft to work packaging: the artifact that matters is the spec packet.",
+              "link": "https://openai.com/index/notion/"
+            },
+            {
+              "n": 4,
+              "category": "Microsoft Agent Framework",
+              "title": "Microsoft Agent Framework keeps moving toward release-quality agent plumbing",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Microsoft Agent Framework releases show June updates around versioning, GitHub Copilot agent work, hosted-agent samples, and dependency alignment.",
+              "why": "Big vendors are turning agent orchestration into normal SDK surface area. This makes multi-agent systems less experimental and more like app architecture.",
+              "action": "Watch this repo for patterns around auth, hosted-agent samples, and merge gates before inventing your own orchestration conventions.",
+              "teacher": "Useful contrast with lightweight CLI agents: frameworks are slower to adopt but better for enterprise maintainability.",
+              "link": "https://github.com/microsoft/agent-framework/releases"
+            },
+            {
+              "n": 5,
+              "category": "New Blender MCP",
+              "title": "New Blender MCP repos keep turning 3D tools into agent-callable surfaces",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh GitHub repo, `sandraschi/blender-mcp`, packages natural-language Blender control through MCP and FastMCP.",
+              "why": "3D creation is becoming programmable by assistants, but production quality will depend on scene constraints, references, camera locking, and verification rather than raw prompting.",
+              "action": "Prototype with MCP for repetitive Blender actions such as scene setup, batch import, material naming, camera passes, and render sanity checks.",
+              "teacher": "Stress the boundary: MCP is a control layer, not a taste layer. The artist still owns composition, typography, and final QA.",
+              "link": "https://github.com/sandraschi/blender-mcp"
+            },
+            {
+              "n": 6,
+              "category": "Reddit users are",
+              "title": "Reddit users are building multi-agent fallback stacks for coding work",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Claude Code thread shows users combining Claude, Gemini, Codex, DeepSeek, OpenRouter, and review loops to survive usage limits and cross-check outputs.",
+              "why": "Power users are no longer loyal to one model. The workflow is becoming router-first: one orchestrator, several models, and explicit review/test loops.",
+              "action": "Build a simple model-routing checklist: planning model, implementation model, cheap review model, final verification command, and budget cap.",
+              "teacher": "This is a practical adoption signal from users, not vendor marketing. It shows pain around limits, cost, and trust.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1u3d0l4/any_recommendations_for_a_2nd_coding_agent_to_use/"
+            },
+            {
+              "n": 7,
+              "category": "Hacker News debate",
+              "title": "Hacker News debate shows agent billing changes are reshaping workflows",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "HN users discussed Claude Agent SDK and `claude -p` usage moving to separate monthly credits, with concern that automation-heavy workflows become less attractive.",
+              "why": "Pricing now directly changes architecture. Always-on agents, subagent swarms, and CLI automation can become expensive or brittle if tied to one vendor plan.",
+              "action": "Track token spend per workflow and keep an API-key fallback path for critical automations.",
+              "teacher": "Teach this as cost is a product constraint: agent design must include budget behavior and degradation modes.",
+              "link": "https://news.ycombinator.com/item?id=48130374"
+            },
+            {
+              "n": 8,
+              "category": "Forbes reports a",
+              "title": "Forbes reports a gap between AI-written code volume and shipped software",
+              "source": "forbes.com",
+              "relevance": "Intermediate",
+              "summary": "Forbes says AI coding agents may generate far more code while production shipping rises much less, highlighting coordination and quality bottlenecks.",
+              "why": "The market is learning that output volume is not throughput. Review, architecture, QA, deployment, and product judgment are the real limits.",
+              "action": "Measure accepted PRs, escaped defects, cycle time, and rollback rate instead of counting generated lines or prompt volume.",
+              "teacher": "Good teaching frame: agents increase inventory; teams still need flow control.",
+              "link": "https://www.forbes.com/sites/josipamajic/2026/06/10/ai-coding-agents-write-180-more-code-but-ship-only-30-more-software/"
+            },
+            {
+              "n": 9,
+              "category": "Google explains the",
+              "title": "Google explains the agent protocol stack developers now need to understand",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google Developers published a guide to agent protocols including MCP, A2A, UCP, AP2, A2UI, and AG-UI.",
+              "why": "Agent systems are splitting into protocol layers for tools, agent-to-agent work, commerce, UI, and payments. Builders who understand the layers can avoid brittle one-off integrations.",
+              "action": "Map any serious agent idea into protocol needs: tools/data, multi-agent handoff, UI actions, payments, identity, and audit logs.",
+              "teacher": "Use this as a glossary anchor for makers before they wire random MCP servers together.",
+              "link": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/"
+            },
+            {
+              "n": 10,
+              "category": "Public X visual-AI",
+              "title": "Public X visual-AI roundup highlights self-criticism loops for 3D city generation",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X roundup pointed to visual-AI work where systems generate expansive photorealistic 3D cityscapes using iterative self-criticism.",
+              "why": "Creative AI is moving toward generate-check-expand loops, which is the same pattern coding agents use: produce, critique, repair, and continue.",
+              "action": "For 3D/design workflows, add an explicit critique pass after each generation: silhouette, scale, material, text legibility, camera, and client-source match.",
+              "teacher": "Connect maker workflows across domains: the reliable unit is not one prompt; it is a loop with a checklist.",
+              "link": "https://x.com/TraffAlex/status/2064334997121577112"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
