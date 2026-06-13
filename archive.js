@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 22:12",
-    "editions": 130
+    "fetchedAt": "2026-06-13 22:14",
+    "editions": 131
   },
   "editions": [
+    {
+      "key": "2026-06-13 21",
+      "label": "2026-06-13 · 22:13",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-13 · 22:13 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "WSJ says the",
+              "title": "WSJ says the AI price war is now pressuring OpenAI and Anthropic",
+              "source": "wsj.com",
+              "relevance": "Intermediate",
+              "summary": "WSJ reports that companies are shifting more workloads toward cheaper models and judging AI by cost per completed task, not just raw capability.",
+              "why": "Frontier labs may lose pricing power if open or lower-cost models become good enough for routine agent work.",
+              "action": "Track your own agent runs by task outcome, wall time, retries, and model cost so you can route easy work to cheaper models.",
+              "teacher": "The useful lesson is model tiering: reserve premium models for ambiguous, high-risk steps and let cheaper models handle drafts, extraction, and batch checks.",
+              "link": "https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b"
+            },
+            {
+              "n": 2,
+              "category": "Google adds Go",
+              "title": "Google adds Go support to ADK for code-first agent builders",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google announced Go support for its Agent Development Kit, extending ADK beyond Python and TypeScript for developers who want explicit, typed agent orchestration.",
+              "why": "Agent frameworks are moving into normal engineering languages, which makes testing, deployment, and ops feel less like prompt experiments.",
+              "action": "If you build durable internal agents, compare ADK Go against your current stack for long-running services, typed tools, and CI-friendly tests.",
+              "teacher": "Watch the shift from chat wrappers to code-first agents: prompts become config, tools become interfaces, and evals become part of the build.",
+              "link": "https://developers.googleblog.com/announcing-the-agent-development-kit-for-go-build-powerful-ai-agents-with-your-favorite-languages/"
+            },
+            {
+              "n": 3,
+              "category": "LangChain warns agent",
+              "title": "LangChain warns agent code execution needs real sandbox boundaries",
+              "source": "langchain.com",
+              "relevance": "Intermediate",
+              "summary": "LangChain published a practical guide to choosing sandboxes for agents that write or run code, centered on filesystem isolation, network limits, resource caps, and reuse controls.",
+              "why": "The more useful an agent becomes, the more dangerous untrusted inputs, sensitive data, and external communication become together.",
+              "action": "For any coding or research agent, define what files it can see, what domains it can call, and what commands are forbidden before scaling usage.",
+              "teacher": "Teach the agent-risk triangle: sensitive data, untrusted content, and external communication. If all three are present, you need hard controls.",
+              "link": "https://www.langchain.com/blog/how-to-choose-the-right-sandbox-for-your-agent"
+            },
+            {
+              "n": 4,
+              "category": "Box AI uses",
+              "title": "Box AI uses Deep Agents to search, synthesize, and report across enterprise content",
+              "source": "langchain.com",
+              "relevance": "Intermediate",
+              "summary": "LangChain describes Box Agent as a Deep Agents implementation that can search enterprise content, synthesize findings, and produce reports while respecting Box permissions.",
+              "why": "Enterprise agents are converging on a clear pattern: retrieval, synthesis, report generation, and permission-aware execution inside existing knowledge stores.",
+              "action": "For document-heavy workflows, prototype source-bound report agents that cite exactly which files they used and fail closed when permissions are unclear.",
+              "teacher": "The moat is not just the model. It is permissioning, source grounding, audit trails, and integration with the place where work already lives.",
+              "link": "https://www.langchain.com/blog/building-box-ai-how-an-enterprise-content-platform-went-ai-native-with-deep-agents"
+            },
+            {
+              "n": 5,
+              "category": "Sierra shows one",
+              "title": "Sierra shows one engineer localizing Agent Studio mostly solo with AI coding agents",
+              "source": "sierra.ai",
+              "relevance": "Intermediate",
+              "summary": "Sierra says one engineer localized Agent Studio in four months with heavy AI coding-agent support, exposing new coordination overhead and feedback-loop patterns.",
+              "why": "AI agents can compress implementation, but they do not remove product judgement, review, design QA, or localization nuance.",
+              "action": "For maker projects, split work into small reviewable slices and keep human checkpoints at copy, UI layout, visual polish, and customer-impact boundaries.",
+              "teacher": "The key workflow is not just prompting. It is spec, generate, inspect, test, revise, and repeat with a clear owner for taste and correctness.",
+              "link": "https://sierra.ai/blog/ai-native-product-localization"
+            },
+            {
+              "n": 6,
+              "category": "Awesome AI Agents",
+              "title": "Awesome AI Agents 2026 tracks how crowded the agent stack has become",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "This GitHub list maps hundreds of agent frameworks, models, tools, and protocols across categories, showing how fast the ecosystem is fragmenting.",
+              "why": "Builders now face selection overload. The opportunity is in opinionated stacks, interoperability, and clear migration paths.",
+              "action": "Keep a short approved tool roster for your own work: one coding agent, one browser/computer-use path, one memory layer, one render/design path, and one eval harness.",
+              "teacher": "Curated lists are market maps. Use them to spot categories that are overcrowded versus gaps where workflow glue is still missing.",
+              "link": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+            },
+            {
+              "n": 7,
+              "category": "MCP-Link for Blender",
+              "title": "MCP-Link for Blender exposes the full Blender Python API to AI agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "MCP-Link for Blender takes a generic approach: expose Blender's Python API through MCP instead of limiting the agent to a fixed set of hardcoded commands.",
+              "why": "3D tools are becoming agent-callable workspaces. That points toward promptable scene setup, batch cleanup, export, and pipeline automation for artists.",
+              "action": "Test Blender MCP workflows on boring production tasks first: renaming assets, checking scale, exporting GLB/USD, material audits, and camera setup.",
+              "teacher": "Full API access is powerful but risky. Pair it with source-locked scenes, versioned files, screenshots, and undoable operations before trusting creative edits.",
+              "link": "https://github.com/aurafriday/mcp_link_blender"
+            },
+            {
+              "n": 8,
+              "category": "HN discussion flags",
+              "title": "HN discussion flags runaway agent actions as a cost and governance risk",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Hacker News thread discusses an AI agent that allegedly caused unexpected costs while scanning a network, with commenters focusing on autonomy, budgets, and containment.",
+              "why": "Real-world agent failures are no longer abstract safety stories. They are budget, permission, and operational-control problems.",
+              "action": "Put spend limits, rate limits, scoped credentials, and kill switches around agents before giving them network or cloud access.",
+              "teacher": "Autonomy should be leased, not granted forever. Define budget, scope, allowed tools, and stop conditions for every agent job.",
+              "link": "https://news.ycombinator.com/item?id=48500012"
+            },
+            {
+              "n": 9,
+              "category": "Reddit vibe-coding users",
+              "title": "Reddit vibe-coding users share day-to-day tool choices and review habits",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit thread asks what AI tools people actually use for coding in 2026, surfacing practical patterns like VS Code plus Codex, agent mode, manual review, and test refinement.",
+              "why": "The adoption signal is shifting from novelty to routine: builders are standardizing the human-in-the-loop review habits that keep agent work usable.",
+              "action": "Write your own default coding-agent loop: understand codebase, discuss approach, implement, manually review, add tests, then commit only verified changes.",
+              "teacher": "Mature AI coding is workflow design. The model matters, but repeatable review and test habits matter more for shipped quality.",
+              "link": "https://www.reddit.com/r/vibecoding/comments/1revk82/what_ai_toolsplatforms_are_you_actually_using_for/"
+            },
+            {
+              "n": 10,
+              "category": "Public X maker",
+              "title": "Public X maker thread turns agent engineering into repeatable operating advice",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post summarizes practical agent-engineering hacks, including reachable agent inboxes, session routines, and orchestration ideas for Codex and Claude Code workflows.",
+              "why": "Power users are turning agent work into operating systems: communication channels, repeatable prompts, task queues, and handoff rituals.",
+              "action": "Give long-running agents a durable job card, a contact channel, and a clear done/blocked reporting format instead of relying on one chat window.",
+              "teacher": "The signal here is behavior, not the individual post: advanced users are building process around agents the same way teams build process around people.",
+              "link": "https://x.com/rickmanelius/status/2063993792512807242"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-13 18",
       "label": "2026-06-13 · 19:13",
