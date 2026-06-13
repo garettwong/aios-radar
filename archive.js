@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 13:14",
-    "editions": 127
+    "fetchedAt": "2026-06-13 13:16",
+    "editions": 128
   },
   "editions": [
+    {
+      "key": "2026-06-13 12",
+      "label": "2026-06-13 · 13:13",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-13 · 13:13 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub Agentic Workflows",
+              "title": "GitHub Agentic Workflows reaches public preview for repository automation",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub put Agentic Workflows into public preview: natural-language repository automations that run through GitHub Actions with Copilot and guardrails.",
+              "why": "Agents are moving into CI/CD and repository maintenance, not just chat or IDE sidebars.",
+              "action": "Prototype one low-risk markdown workflow such as weekly repo status, stale issue review, or release-note drafting.",
+              "teacher": "Teach the pattern as human policy plus markdown instruction plus sandboxed run plus logged result.",
+              "link": "https://github.blog/changelog/2026-06-11-github-agentic-workflows-is-now-in-public-preview/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub lets approved",
+              "title": "GitHub lets approved bot-created PRs run workflows",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Pull requests from github-actions[bot] can now run CI/CD workflows after user approval, matching Copilot-generated PR behavior.",
+              "why": "Agent-made code needs tests, but automatic workflow execution can expose secrets or deployment paths.",
+              "action": "Review repo Actions settings for bot PR approval and keep secrets away from untrusted PR contexts.",
+              "teacher": "This is a crisp governance example: autonomy is useful only with explicit execution gates.",
+              "link": "https://github.blog/changelog/2026-06-11-bot-created-pull-requests-can-run-workflows-if-approved/"
+            },
+            {
+              "n": 3,
+              "category": "Meta Business Agent",
+              "title": "Meta Business Agent becomes globally available in WhatsApp",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch reports Meta made its customer-support AI bot, Meta Business Agent, globally available inside WhatsApp Business.",
+              "why": "Agent distribution is moving into messaging surfaces where customers already talk to businesses.",
+              "action": "For service businesses, map top support intents and decide which can be safely handled by an agent with handoff.",
+              "teacher": "Separate answer automation from authority: the agent may respond, but refunds, commitments, and exceptions need policy.",
+              "link": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/"
+            },
+            {
+              "n": 4,
+              "category": "Jedify raises 24M",
+              "title": "Jedify raises 24M dollars for business-context layers for agents",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "Jedify raised funding to help companies give AI agents context about their business data and operations.",
+              "why": "The agent market is shifting from generic models toward context plumbing: permissions, data shape, and company-specific knowledge.",
+              "action": "Inventory where your best business context lives: docs, boards, emails, file naming, CRM notes, and spreadsheets.",
+              "teacher": "Context quality is now infrastructure. Bad source hygiene becomes bad agent behavior.",
+              "link": "https://techcrunch.com/2026/06/10/jedify-raises-24m-to-help-companies-arm-ai-agents-with-context-on-their-business/"
+            },
+            {
+              "n": 5,
+              "category": "NotebookLM adds richer",
+              "title": "NotebookLM adds richer source-based outputs and editable exports",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch says NotebookLM added more instruction control and exports including documents, structured data, images, charts, Excel, and PowerPoint.",
+              "why": "Research tools are becoming lightweight production systems, turning source collections into usable deliverables.",
+              "action": "Use source-grounded notebooks for first drafts of briefs, evidence packs, and client summaries, then review citations manually.",
+              "teacher": "A practical assignment is to compare unsupported chat output against source-bound NotebookLM output for the same brief.",
+              "link": "https://techcrunch.com/2026/06/08/notebooklms-new-update-will-help-you-build-source-repository-from-chat/"
+            },
+            {
+              "n": 6,
+              "category": "Cua packages open-source",
+              "title": "Cua packages open-source infrastructure for full desktop computer-use agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Cua provides sandboxes, SDKs, and benchmarks for agents that control full desktops across macOS, Linux, and Windows.",
+              "why": "Useful agents increasingly need to open real apps, inspect pixels and accessibility trees, click controls, and verify the result.",
+              "action": "For GUI-heavy workflows, add screenshot and accessibility-tree verification alongside unit tests.",
+              "teacher": "Computer-use agents should be graded on observed state changes, not just confident textual reports.",
+              "link": "https://github.com/trycua/cua"
+            },
+            {
+              "n": 7,
+              "category": "GitHub docs define",
+              "title": "GitHub docs define Agentic Workflows as markdown-run coding-agent automation",
+              "source": "docs.github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub documentation frames Agentic Workflows as markdown-defined AI repository automations executed through GitHub Actions.",
+              "why": "This turns agent prompts into repo artifacts that can be reviewed, versioned, and governed like code.",
+              "action": "Keep agent instructions in version control and require reviews for workflows that can change files or trigger CI.",
+              "teacher": "Prompt governance becomes code review when instructions live beside the codebase.",
+              "link": "https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows"
+            },
+            {
+              "n": 8,
+              "category": "Public X signal",
+              "title": "Public X signal says Codex launch did not yet lift OpenAI business adoption",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from Boris Cherny on the June 2026 Ramp AI Index says OpenAI held flat in business adoption despite expectations around Codex.",
+              "why": "Market adoption can lag product hype. Teams may like agents but still wait on trust, integration, pricing, or workflow proof.",
+              "action": "Treat adoption claims skeptically and ask what changed in daily workflow, not just what launched.",
+              "teacher": "Use public market snippets as directional signals, then corroborate with official usage data and customer stories.",
+              "link": "https://x.com/bcherny/status/2064970759408079333"
+            },
+            {
+              "n": 9,
+              "category": "HN maker says",
+              "title": "HN maker says full-time agent builders are moving from chat to workflows",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "In a recent HN AI dev-stack discussion, a commenter building agents full time describes workflow choices rather than model-only choices.",
+              "why": "Practitioners are converging on process design: planning, context, orchestration, and verification matter as much as the model.",
+              "action": "Document your own default agent workflow: plan, files to read, acceptance checks, commit rules, and fallback behavior.",
+              "teacher": "This is a good lesson for makers: the repeatable workflow is the product, not the clever prompt.",
+              "link": "https://news.ycombinator.com/item?id=48415435"
+            },
+            {
+              "n": 10,
+              "category": "Reddit users warn",
+              "title": "Reddit users warn Claude Agent SDK billing changes may weaken stickiness",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Claude Code Reddit thread argues the June 15 Agent SDK billing change could reduce loyalty among heavy programmatic users.",
+              "why": "Early adopters are highly sensitive to quota and billing changes because background agents consume usage differently from chat.",
+              "action": "Track completed tasks per dollar and keep a second agent provider ready for burst weeks.",
+              "teacher": "Community threads are weak evidence but strong pain detectors; verify facts against official pricing before acting.",
+              "link": "https://www.reddit.com/r/ClaudeCode/comments/1tfquo4/jun_15_claudeagentsdk_billing_change_weakens/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-13 09",
       "label": "2026-06-13 · 10:08",
