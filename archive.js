@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 19:13",
+    "fetchedAt": "2026-06-13 19:15",
     "editions": 130
   },
   "editions": [
     {
       "key": "2026-06-13 18",
-      "label": "2026-06-13 · 18:00",
+      "label": "2026-06-13 · 19:13",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-13 · 19:13 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI rolls Lockdown",
+              "title": "OpenAI rolls Lockdown Mode and Elevated Risk labels into ChatGPT and Codex",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI expanded Lockdown Mode to personal and self-serve business accounts and labels riskier connected capabilities, including Codex internet access.",
+              "why": "Agent products are becoming powerful enough that security controls are now part of the core user experience, not only enterprise policy.",
+              "action": "Keep a high-security profile for client work: default network-off coding agents, allowlist domains only when docs are needed, and note why access was enabled.",
+              "teacher": "Use this as a concrete example when explaining prompt injection: connected tools create new exfiltration paths, so the product needs deterministic brakes.",
+              "link": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/"
+            },
+            {
+              "n": 2,
+              "category": "NVIDIA publishes open-source",
+              "title": "NVIDIA publishes open-source physical AI agent tools and skills",
+              "source": "nvidianews.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA released open-source agent skills and tools for Omniverse, Cosmos, Isaac, Metropolis, Alpamayo, and related physical AI workflows.",
+              "why": "The agent pattern is moving from software coding into robotics, industrial twins, synthetic data, manufacturing inspection, and simulation-heavy 3D work.",
+              "action": "Watch the skills repo as a pattern library for how to document repeatable render/simulation workflows so coding agents can execute and validate them.",
+              "teacher": "The important shift is not just models generating scenes; it is libraries and pipelines becoming agent-callable procedures.",
+              "link": "https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai"
+            },
+            {
+              "n": 3,
+              "category": "Microsoft Agent Framework",
+              "title": "Microsoft Agent Framework turns hosted tools, CodeAct, and observability into agent platform features",
+              "source": "devblogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft is positioning Agent Framework around agent harnesses, hosted agents, CodeAct, evals, observability, and multi-framework control.",
+              "why": "Enterprise agent stacks are standardizing around boring production concerns: where tools run, how runs are observed, and how multi-agent systems are governed.",
+              "action": "For internal automations, copy the platform checklist: tracing, evals, hosted tools, background operations, and a clear boundary between prototype and production.",
+              "teacher": "Tell makers that the winner is no longer the smartest chatbot; it is the harness that can run, observe, and recover work safely.",
+              "link": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/"
+            },
+            {
+              "n": 4,
+              "category": "Make adds external",
+              "title": "Make adds external MCP tools directly to its AI Agent builder",
+              "source": "community.make.com",
+              "relevance": "Intermediate",
+              "summary": "Make AI Agents can now connect to external MCP servers and use those tools in the same run as native Make modules.",
+              "why": "MCP is escaping developer IDEs and entering no-code automation surfaces, which means agencies and operators can wire agents into client tools faster.",
+              "action": "Build one test MCP bridge for a real workflow, such as market briefing, ticket triage, or CRM enrichment, and measure where the agent still needs hard rules.",
+              "teacher": "This is a clean teaching example of agents choosing tools inside a workflow automation system instead of replacing the workflow system.",
+              "link": "https://community.make.com/t/feature-spotlight-add-mcp-tools-to-make-ai-agents/110260"
+            },
+            {
+              "n": 5,
+              "category": "Tripo AI turns",
+              "title": "Tripo AI turns AI 3D generation into a creator challenge workflow",
+              "source": "tripo3d.ai",
+              "relevance": "Intermediate",
+              "summary": "Tripo's Out There challenge asks creators to use AI-generated 3D models plus rendering, animation, and post-production to make a 6-second 3D video.",
+              "why": "AI 3D tools are being judged by finished creator output, not just isolated mesh generation; the market is moving toward full pipeline fluency.",
+              "action": "Treat AI 3D entries as workflow references: prompt-to-model, cleanup, camera, render, post, and final delivery should all be documented.",
+              "teacher": "Use the challenge format to show that the durable skill is art direction and pipeline control, not pressing one generate button.",
+              "link": "https://www.tripo3d.ai/blog/tripo-rendering-competition-s3-out-there"
+            },
+            {
+              "n": 6,
+              "category": "VoltAgent packages TypeScript agents with memory, RAG, guardrails,",
+              "title": "MCP, voice, and workflow ops",
+              "source": "Script framework plus operations console for building agents with memory, tools, workflows, MCP, guardrails, and observability.",
+              "relevance": "Intermediate",
+              "summary": "VoltAgent is an open-",
+              "why": "JavaScript and TypeScript teams are getting agent frameworks that look more like app infrastructure than demos.",
+              "action": "Use it as a reference when deciding what an agent app really needs: state, memory, tool boundaries, tracing, deployment, and evals.",
+              "teacher": "Compare this with LangGraph-style Python stacks to show how frontend and full-stack developers are pulling agents into their native ecosystem.",
+              "link": "https://github.com/voltagent/voltagent"
+            },
+            {
+              "n": 7,
+              "category": "OpenCognit shifts from",
+              "title": "OpenCognit shifts from open-source agent OS to commercial-first licensing",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "OpenCognit says its Community Edition is the final AGPL release, with active development, security patches, audit logging, SSO, and sandboxing moving to Pro.",
+              "why": "Agent infrastructure is expensive to secure and support; some open-source agent projects are already converting trust and governance into paid tiers.",
+              "action": "Before adopting an agent OS, check license durability, sandbox model, audit logs, and whether security fixes stay in the community version.",
+              "teacher": "This is a useful market signal: open-source availability does not guarantee open-source continuity once agent systems become operationally valuable.",
+              "link": "https://github.com/OpenCognit/opencognit"
+            },
+            {
+              "n": 8,
+              "category": "Contentful Skills teaches",
+              "title": "Contentful Skills teaches coding agents a product-specific content workflow",
+              "source": "contentful.com",
+              "relevance": "Intermediate",
+              "summary": "Contentful released open-source skills for Cursor, Claude Code, GitHub Copilot, Codex, Gemini CLI, and other agents, covering SDK setup, migrations, and personalization.",
+              "why": "Companies are starting to ship agent-native docs as installable skills, so users can build inside their coding agent instead of reading docs separately.",
+              "action": "Make a small skill file for any repeated studio workflow: project setup, export checklist, naming rules, QA steps, and source-of-truth links.",
+              "teacher": "This is the practical future of docs: not only web pages, but executable guidance that lives where the agent writes code.",
+              "link": "https://www.contentful.com/blog/introducing-contentful-skills/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit agent builders",
+              "title": "Reddit agent builders compare open-source frameworks by memory, tool use, and deployment DX",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit AI_Agents thread compares LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Mastra, Semantic Kernel, Haystack, and Vercel AI SDK, with comments pushing on observability limits.",
+              "why": "Builder conversation is shifting from novelty to operational pain: scaling node graphs, debugging determinism, and choosing frameworks by maintainability.",
+              "action": "When evaluating frameworks, run a tiny benchmark with 10 to 15 nodes, logging, replay, and one failure path before committing to the stack.",
+              "teacher": "Reddit adds real signal here because it surfaces the friction official docs underplay: observability and production debugging.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tp335p/i_compared_8_opensource_ai_agent_frameworks_so/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal",
+              "title": "Public X signal shows developers combining Codex parallel runs with Claude Code review",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X/search-visible post describes a hybrid workflow where Codex handles parallel sandboxed runs while Claude Code covers review and polish.",
+              "why": "Power users are no longer picking one agent; they are composing agents by strength, cost, latency, and review style.",
+              "action": "Test a two-agent routine: one agent implements in parallel branches, another reviews diffs against acceptance criteria, then a human approves the merge.",
+              "teacher": "Use this to explain the emerging conductor role: the human designs the workflow and assigns agents to specialized lanes.",
+              "link": "https://x.com/so_sthbryan/status/2064292923043094950"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
