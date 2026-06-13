@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 18:04",
-    "editions": 129
+    "fetchedAt": "2026-06-13 18:06",
+    "editions": 130
   },
   "editions": [
+    {
+      "key": "2026-06-13 18",
+      "label": "2026-06-13 · 18:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-13 · 18:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Crusoe Staff Enterprise",
+              "title": "Crusoe Staff Enterprise AI Automation Engineer role turns internal agents into an enterprise function",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Crusoe is hiring a Staff Enterprise AI Automation Engineer to design agentic systems that move work from information lookup into multi-system automation.",
+              "why": "Enterprise buyers are naming orchestration, integration, and reliability as staff-level work, not side experiments.",
+              "action": "Package a consulting offer around one department workflow: intake, tools, approvals, audit logs, and measurable time saved.",
+              "teacher": "Teach this as the difference between chatbot demos and production agents: triggers, permissions, fallback paths, and owner sign-off.",
+              "link": "https://jobs.ashbyhq.com/crusoe/f5a5f987-43e5-42d7-b607-27dbfe07c5eb"
+            },
+            {
+              "n": 2,
+              "category": "Vocal Media AI",
+              "title": "Vocal Media AI Automations Product Manager role makes creative production systems a full-time job",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Vocal Media wants an AI Automations Product Manager to build repeatable AI-driven content workflows, prompt systems, templates, pipelines, and team enablement.",
+              "why": "Creator and media teams are paying for people who can turn creative taste into scalable operating systems.",
+              "action": "Build a portfolio case study that converts one content workflow from brief to publishable assets with checkpoints and brand QA.",
+              "teacher": "Show students how to document prompts, templates, acceptance criteria, and iteration loops so creative work becomes teachable.",
+              "link": "https://jobs.lever.co/get-vocal-pbc/d2b9928f-c4e6-4442-9a42-b48126a22c64"
+            },
+            {
+              "n": 3,
+              "category": "Parabola Automation Engineer",
+              "title": "Parabola Automation Engineer role points to customer-facing AI workflow implementation",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Parabola describes Automation Engineers working with customers to design and deploy AI-powered workflows for complex business processes.",
+              "why": "Low-code automation is shifting from tool setup to solution architecture for real operators.",
+              "action": "Create a reusable discovery questionnaire for ops clients: inputs, exceptions, owners, downstream systems, and failure alerts.",
+              "teacher": "Frame automation classes around business-process mapping before tool choice; the workflow model is the asset.",
+              "link": "https://jobs.ashbyhq.com/parabola-io/e9a24262-275d-48a2-b8e3-83a8226e7e3e"
+            },
+            {
+              "n": 4,
+              "category": "Iru GTM Operations",
+              "title": "Iru GTM Operations Manager role shows automation fluency moving into revenue leadership",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Iru wants a GTM Operations leader to own sales, marketing, and customer-success operations while partnering with GTM Engineering to operationalize automation opportunities.",
+              "why": "RevOps and consulting skills are becoming more valuable when paired with AI workflow literacy and data discipline.",
+              "action": "Pitch a GTM ops audit that finds broken CRM handoffs, scoring gaps, reporting delays, and automation candidates.",
+              "teacher": "Teach students that AI systems need clean ownership, data integrity, and cadences before any agent can be trusted.",
+              "link": "https://jobs.lever.co/iru/61e68cd1-59ef-4411-a36d-c23fa4cfa9cb"
+            },
+            {
+              "n": 5,
+              "category": "Suger Revenue Operations",
+              "title": "Suger Revenue Operations & AI Systems Manager role turns RevOps into an AI operating layer",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Suger asks for agents, workflows, skills, and automations across revenue operations, forecasting, account prioritization, renewals, expansion, and pipeline risk.",
+              "why": "Consulting and ops backgrounds can become AI-systems careers when paired with enough technical fluency.",
+              "action": "Build a small demo that flags pipeline risk from CRM data and drafts next actions for account owners.",
+              "teacher": "Explain context management, tool use, handoffs, and evals using sales operations examples instead of abstract agent theory.",
+              "link": "https://jobs.lever.co/suger/40debfe2-7b6a-44ae-9cdb-39924036d4a2"
+            },
+            {
+              "n": 6,
+              "category": "ID.me HR AI",
+              "title": "ID.me HR AI Intern role brings agentic workflow automation into recruiting",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "ID.me is hiring an intern to build human-in-the-loop recruiting agents over Greenhouse, Ashby, Slack, and sourcing tools, with governance guardrails.",
+              "why": "Even internships now ask for production AI workflow thinking across compliance, behavior design, and APIs.",
+              "action": "Prototype a recruiting assistant that detects stalled interview feedback and drafts Slack nudges without ranking candidates.",
+              "teacher": "Good teaching example for responsible automation: decision support, transparent rationale, human approval, and auditability.",
+              "link": "https://job-boards.greenhouse.io/idmeuniversityrecruiting/jobs/7648978003"
+            },
+            {
+              "n": 7,
+              "category": "Liberate Agent Product",
+              "title": "Liberate Agent Product Manager role makes customer workshops part of AI-agent delivery",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Liberate is hiring an Agent Product Manager to run customer discovery workshops, author agent requirements, and deliver enterprise AI deployments in insurance workflows.",
+              "why": "Service design, product thinking, and implementation consulting are converging around AI agents.",
+              "action": "Create a workshop template that maps pain points into agent requirements, success metrics, and rollout stages.",
+              "teacher": "Use this to teach requirement writing for agents: trigger, context, tool access, user approval, failure mode, and metric.",
+              "link": "https://job-boards.greenhouse.io/liberate/jobs/4673583008"
+            },
+            {
+              "n": 8,
+              "category": "Upwork post seeks",
+              "title": "Upwork post seeks AI automation developer for GPT-5, Claude, Gemini, agents, n8n, and voice AI",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A June 12 Upwork post seeks two freelancers for AI agents, chatbots, RAG, workflow automation, n8n, Make, Zapier, Vapi, Retell, Twilio, Python, APIs, and webhooks.",
+              "why": "Freelance demand is bundling agents, voice, RAG, integrations, and backend deployment into one practical service stack.",
+              "action": "Create a modular service menu: chatbot, RAG knowledge base, voice agent, CRM integration, monitoring, and monthly maintenance.",
+              "teacher": "Teach learners to scope risk: fixed-price jobs need clear deliverables, acceptance tests, and maintenance boundaries.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Senior-Automation-Engineer-Developer-GPT-Claude-Gemini-Agents-n8n-LangChain_~022065458596229186847/"
+            },
+            {
+              "n": 9,
+              "category": "Axios reports Adobe",
+              "title": "Axios reports Adobe is testing agentic AI in Firefly and creative workflows",
+              "source": "axios.com",
+              "relevance": "Intermediate",
+              "summary": "Axios reports Adobe has begun public testing of an agentic AI assistant inside Firefly, with plans to connect creative tasks across Adobe apps and external assistants such as Claude.",
+              "why": "For 3D and design work, the opportunity is moving from prompt images to managed creative workflows, handoffs, and asset preparation.",
+              "action": "Prepare an agency-facing workflow that turns client brief, references, prompt variants, approvals, and export specs into one repeatable pipeline.",
+              "teacher": "Teach creative AI as production direction: source control, style constraints, editable outputs, approvals, and final delivery standards.",
+              "link": "https://www.axios.com/2026/04/27/adobe-agentic-ai-firefly-claude"
+            },
+            {
+              "n": 10,
+              "category": "Reddit and public",
+              "title": "Reddit and public X signals show AI automation freelancers need proof, niche focus, and sales discipline",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit thread questions whether AI automation demand is real or hype, while a public X search-visible post about AI automation positioning stresses LinkedIn, niche proof, and portfolio framing.",
+              "why": "The useful signal is go-to-market: buyers respond to solved pain, credibility, and proof more than tool screenshots.",
+              "action": "Publish one weekly teardown: buyer problem, workflow map, stack choice, before-after result, and maintenance plan.",
+              "teacher": "Teach market validation: gather objections, choose a niche, write a concrete promise, and support it with a visible case study. X checked: https://x.com/AutomationKing0/status/2064972317906681998/photo/1",
+              "link": "https://www.reddit.com/r/n8n/comments/1lrv6wx/future_of_ai_automation/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-13 15",
       "label": "2026-06-13 · 16:13",
