@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-13 16:14",
+    "fetchedAt": "2026-06-13 16:16",
     "editions": 129
   },
   "editions": [
     {
       "key": "2026-06-13 15",
-      "label": "2026-06-13 · 16:03",
+      "label": "2026-06-13 · 16:13",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-13 · 16:13 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub removes personal",
+              "title": "GitHub removes personal access tokens from agentic workflows",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says agentic workflows in organization-owned repositories can now use the Actions token instead of a long-lived personal access token.",
+              "why": "Agent automation is being pulled into normal CI security boundaries, which reduces one of the biggest operational risks for repo-running agents.",
+              "action": "Prefer short-lived platform tokens for any repo agent, and retire any stored PAT that only exists for automation.",
+              "teacher": "This is the security pattern to teach: agents need scoped identities, not borrowed human credentials.",
+              "link": "https://github.blog/changelog/2026-06-11-agentic-workflows-no-longer-need-a-personal-access-token/"
+            },
+            {
+              "n": 2,
+              "category": "GitHub AI usage",
+              "title": "GitHub AI usage reports standardize around AI Credits fields",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub updated AI usage reports so AI Credits show through standard quantity and gross_amount fields after the June 1 billing model change.",
+              "why": "The AI coding market is moving toward explicit usage accounting, not fuzzy seat-based spend.",
+              "action": "Track agent cost per accepted PR, reviewed diff, or finished ticket, not only monthly tool spend.",
+              "teacher": "Billing fields are product signals. They show what the platform expects teams to measure and optimize.",
+              "link": "https://github.blog/changelog/2026-06-11-ai-usage-report-updates/"
+            },
+            {
+              "n": 3,
+              "category": "Runway API adds",
+              "title": "Runway API adds Seedance 2.0 Fast and Aleph 2.0 video editing",
+              "source": "docs.dev.runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway added Seedance 2.0 Fast for text, image, and video generation with reference controls, plus Aleph 2.0 for prompt-based video editing with keyframe images.",
+              "why": "Creator workflows are becoming API pipelines where model choice, references, keyframes, and durations can be scripted.",
+              "action": "Prototype a storyboard-to-clip test with fixed references and keyframes, then compare consistency, cost, and cleanup time.",
+              "teacher": "The useful lesson is control surfaces. Good creative AI work depends on references, timing, model choice, and verification, not just prompts.",
+              "link": "https://docs.dev.runwayml.com/api-details/api_changelog/"
+            },
+            {
+              "n": 4,
+              "category": "AI 3D market",
+              "title": "AI 3D market report frames MCP and APIs as 3D production infrastructure",
+              "source": "3daistudio.com",
+              "relevance": "Intermediate",
+              "summary": "3D AI Studio says AI 3D generation has become a multi-billion-dollar market and highlights APIs, open models, Gaussian splatting, and MCP-driven Blender control.",
+              "why": "For 3D artists, the strategic shift is pipeline automation around asset generation, cleanup, capture, and tool control.",
+              "action": "Make a 3D tool scorecard with topology, UVs, texture quality, export formats, license, and cleanup time.",
+              "teacher": "Generated 3D must be judged like production 3D: mesh quality, editability, scale, materials, and pipeline fit.",
+              "link": "https://www.3daistudio.com/state-of-ai-3d-generation-2026"
+            },
+            {
+              "n": 5,
+              "category": "ITPro says enterprises",
+              "title": "ITPro says enterprises are stuck before operational agentic AI",
+              "source": "itpro.com",
+              "relevance": "Intermediate",
+              "summary": "ITPro reports Forrester findings that many companies are adopting agentic AI, but most remain in pilots because they lack orchestration, governance, data foundations, and ROI clarity.",
+              "why": "This is the practical enterprise gap: ambition is high, but deployment discipline is still weak.",
+              "action": "Before adding agents, define the registry, owner, credentials, logging, fallback, and approval path for each autonomous action.",
+              "teacher": "Agents are distributed systems. Treating them as chatbots creates demos; treating them as governed services creates production.",
+              "link": "https://www.itpro.com/technology/artificial-intelligence/most-enterprises-are-still-unprepared-to-operationalize-it-it-leaders-are-bullish-on-agents-but-keeping-falling-at-the-final-hurdle-heres-why"
+            },
+            {
+              "n": 6,
+              "category": "Okara runs eight",
+              "title": "Okara runs eight marketing subagents for 120000 businesses on Vercel",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel says Okara runs an AI CMO with eight subagents for SEO, GEO, social, content, Reddit, and Hacker News, processing 4 billion tokens daily across multiple providers.",
+              "why": "Small teams are using agent stacks to deliver agency-like services at software scale.",
+              "action": "Watch for niches where one expert workflow can be decomposed into specialist agents and sold as an operating system.",
+              "teacher": "The teaching angle is specialization. A useful agent product often looks like a team of narrow workers, not one giant generalist.",
+              "link": "https://vercel.com/blog/how-okara-runs-cmo-agents-for-120000-companies-on-vercel"
+            },
+            {
+              "n": 7,
+              "category": "browser-use 0.13 introduces",
+              "title": "browser-use 0.13 introduces a Rust-backed beta agent",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The browser-use release notes describe version 0.13.0 as a Rust-backed beta agent with a more direct browser control loop and robust helpers.",
+              "why": "Browser automation remains one of the highest-friction agent surfaces, so lower-level control loops are becoming competitive infrastructure.",
+              "action": "Test the beta on one login-free web task and compare reliability against Playwright MCP or the current browser tool.",
+              "teacher": "Browser agents need observation, action, and recovery loops. The framework matters as much as the model.",
+              "link": "https://github.com/browser-use/browser-use/releases"
+            },
+            {
+              "n": 8,
+              "category": "Cua details Windows",
+              "title": "Cua details Windows background computer-use for coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Cua explains a Windows driver that gives agents window pixels, accessibility trees, and actions for clicks, typing, scrolling, and verification across Win32, WPF, WinUI, UWP, Electron, and Chromium apps.",
+              "why": "Computer-use agents are moving from browser-only control toward real desktop verification loops.",
+              "action": "For app-building agents, add a UI verification step that reads the real window instead of trusting logs or screenshots alone.",
+              "teacher": "The key concept is multimodal state: pixels, accessibility trees, app state, and actions must line up before an agent can verify its work.",
+              "link": "https://github.com/trycua/cua/blob/main/blog/inside-windows-computer-use.md"
+            },
+            {
+              "n": 9,
+              "category": "HN Show HN",
+              "title": "HN Show HN highlights a local-first .NET and Ollama coding agent",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A new Hacker News Show HN post introduces MandoCode, an open-source CLI coding agent in .NET that runs against local Ollama models without API keys.",
+              "why": "The local-agent lane keeps growing as cost, privacy, and model lock-in become real user concerns.",
+              "action": "Keep one local coding-agent stack installed as a fallback for private, low-risk, or budget-sensitive tasks.",
+              "teacher": "Local-first agents teach the tradeoff clearly: more control and predictable spend, usually weaker frontier reasoning.",
+              "link": "https://news.ycombinator.com/item?id=48499532"
+            },
+            {
+              "n": 10,
+              "category": "Reddit coding users",
+              "title": "Reddit coding users compare local AI with cloud coding agents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit thread asks which local AI setup is closest to Claude, Codex, or Gemini, while acknowledging that local models still trail the strongest cloud agents.",
+              "why": "Maker sentiment is turning practical: people want cheaper, private alternatives even if they keep frontier tools for hard tasks.",
+              "action": "Split coding work into local-safe tasks and frontier-required tasks so cost and privacy choices become deliberate.",
+              "teacher": "This is a good classroom example of tool selection by risk and difficulty, not brand loyalty.",
+              "link": "https://www.reddit.com/r/GithubCopilot/comments/1stx9kz/local_ai_for_code_in_2026_the_real_alternative_to/"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
