@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 20:51",
+    "fetchedAt": "2026-06-14 20:53",
     "editions": 135
   },
   "editions": [
     {
       "key": "2026-06-14 21",
-      "label": "2026-06-14 · 20:42",
+      "label": "2026-06-14 · 20:51",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-14 · 20:51 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub CLI makes",
+              "title": "GitHub CLI makes Discussions a first-class terminal workflow",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub CLI v2.94.0 adds gh discussion list, view, create, edit, and comment so teams can work with GitHub Discussions from the terminal.",
+              "why": "Agentic development needs durable conversation surfaces. Moving discussions into CLI makes design review, issue debate, and agent handoff easier to script and preserve.",
+              "action": "For repo-based projects, consider using discussions as lightweight decision logs that agents can read before touching code.",
+              "teacher": "The direction is clear: planning, discussion, code, review, and automation are collapsing into one terminal-accessible workflow.",
+              "link": "https://github.blog/changelog/2026-06-10-list-view-and-create-discussions-in-github-cli/"
+            },
+            {
+              "n": 2,
+              "category": "Google Colab MCP",
+              "title": "Google Colab MCP turns notebooks into agent-controlled cloud workspaces",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google released an open-source Colab MCP server so MCP-compatible agents can create notebook cells, run code, install dependencies, organize analysis, and leave reproducible cloud artifacts.",
+              "why": "This is a practical answer to local-agent limits: give agents a sandbox with compute, state, and a human-inspectable notebook instead of letting them run everything on the local machine.",
+              "action": "Use Colab MCP-style patterns for data or visual experiments: have the agent produce an executable notebook, then inspect and take over where needed.",
+              "teacher": "A good agent tool is not just more power. It gives the human a visible artifact, a checkpoint, and a safe place to interrupt.",
+              "link": "https://developers.googleblog.com/announcing-the-colab-mcp-server-connect-any-ai-agent-to-google-colab/"
+            },
+            {
+              "n": 3,
+              "category": "Claude for Small",
+              "title": "Claude for Small Business packages agents as ready-to-run workflows",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic announced Claude for Small Business with connectors and workflows across finance, operations, sales, marketing, HR, and customer service inside tools like QuickBooks, PayPal, HubSpot, Canva, Google Workspace, and Microsoft 365.",
+              "why": "The mainstream market wants packaged jobs, not blank chat windows. This is the same shift makers need: turn repeated work into named workflows with approvals.",
+              "action": "When building automations for Garett, frame them as repeatable jobs with inputs, approvals, outputs, and a clear stop condition.",
+              "teacher": "Agent adoption improves when the product says what job it can do, where it will do it, and where the human approves.",
+              "link": "https://www.anthropic.com/news/claude-for-small-business"
+            },
+            {
+              "n": 4,
+              "category": "Runway is bundling",
+              "title": "Runway is bundling models, MCP, agents, and edit apps into one creative control plane",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway now presents a broad creative toolkit with Runway MCP, Runway Agent, Aleph editing, Gen-4.5, Seedance, Kling, Sora, Claude, FLUX, and apps for product reshoots, dialogue, relighting, virtual staging, and style changes.",
+              "why": "Creative AI is shifting from isolated generators to multi-model production surfaces. For artists, the value is controlled revision and workflow memory.",
+              "action": "For 3D and design delivery, keep a recipe per workflow: sources, constraints, model choice, camera rules, QA checks, and final export path.",
+              "teacher": "The useful question is no longer which model can make a pretty frame. It is which workflow can revise the frame without destroying intent.",
+              "link": "https://runwayml.com/product"
+            },
+            {
+              "n": 5,
+              "category": "Google information agents",
+              "title": "Google information agents point search toward background monitoring",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch reports Google is preparing information agents that monitor user-defined topics and send alerts when matching updates appear, with active tracked topics managed in AI Mode history.",
+              "why": "Search is becoming a scheduled agent, not just a page of links. This validates radar-style automations like this email: define the interest, monitor, and summarize when signal appears.",
+              "action": "Keep the AI radar categories narrow and action-oriented so the monitoring loop finds useful changes instead of generic AI noise.",
+              "teacher": "Background agents are only helpful when the watch query is specific, the output is short, and the user can edit or stop the loop.",
+              "link": "https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/"
+            },
+            {
+              "n": 6,
+              "category": "HN debate says",
+              "title": "HN debate says Fable 5 may plan better while execution remains close to GPT-5.5",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Hacker News thread around Claude Fable 5 vs GPT-5.5 discusses planning strength, execution quality, and whether model upgrades change real developer outcomes.",
+              "why": "Community evaluation is moving past leaderboard worship. Builders care whether a model plans better, executes safely, burns tokens, and fits the surrounding harness.",
+              "action": "When testing a new coding model, score planning, implementation, review quality, token burn, and recovery from bad assumptions separately.",
+              "teacher": "Model selection should be a job test. A model can be excellent at planning and still need a stronger executor or reviewer.",
+              "link": "https://news.ycombinator.com/item?id=48517973"
+            },
+            {
+              "n": 7,
+              "category": "Reddit makers rank",
+              "title": "Reddit makers rank agent frameworks by what they are building",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh r/AI_Agents discussion compares frameworks like LangGraph, CrewAI, OpenAI Agents SDK, Claude Agent SDK, Mastra, LlamaIndex, Pydantic AI, Letta, DSPy, and Vercel AI SDK by use case rather than hype.",
+              "why": "This is a maturity signal from builders: the agent-framework market is fragmenting by job shape, deployment needs, memory, evals, and UI surface.",
+              "action": "Before adopting a framework, write one sentence naming the job: coding worker, browser operator, RAG analyst, workflow orchestrator, UI agent, or eval harness.",
+              "teacher": "Framework choice follows task shape. A memory problem, a routing problem, and a browser-control problem should not be forced into the same stack.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tuum2e/best_agentic_frameworks_in_2026_ranked_by_what/"
+            },
+            {
+              "n": 8,
+              "category": "Public X makers",
+              "title": "Public X makers are turning agentic engineering into operating-system habits",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article on agentic engineering hacks collects practices around remote-controlling agent sessions, reachable agents, and workflow loops for Claude Code or Codex-style tools.",
+              "why": "The early-adopter signal is that serious users are designing agent operating habits: remote access, durable context, repeatable loops, and handoffs across tools.",
+              "action": "Keep OpenClaw jobs reachable, resumable, and logged; the useful product is not a smarter prompt, it is a dependable operating loop.",
+              "teacher": "X is noisy, but maker threads can reveal where workflows are going before official docs catch up.",
+              "link": "https://x.com/mvanhorn/article/2061877533885473181"
+            },
+            {
+              "n": 9,
+              "category": "Post-Fable coding-tool comparisons",
+              "title": "Post-Fable coding-tool comparisons now include billing, suspension risk, and model routing",
+              "source": "developersdigest.tech",
+              "relevance": "Intermediate",
+              "summary": "DevelopersDigest frames June coding-tool choices around Fable 5 availability changes, GitHub Copilot billing shifts, and which tools can route to top model tiers.",
+              "why": "Tool choice is now operational risk management. Availability, pricing, routing, and fallback models can change faster than a team can rewrite its workflow.",
+              "action": "Maintain a fallback matrix for coding agents: primary model, backup model, cost trigger, offline mode, and what tasks must pause if access changes.",
+              "teacher": "The best tool on Monday can be a bad dependency on Friday if billing or access changes. Plan for substitution.",
+              "link": "https://www.developersdigest.tech/blog/best-ai-coding-tools-june-2026-post-fable5"
+            },
+            {
+              "n": 10,
+              "category": "June 14 AI",
+              "title": "June 14 AI ops watch flags Claude API deadlines and model-access risk",
+              "source": "aitoolsrecap.com",
+              "relevance": "Intermediate",
+              "summary": "AIToolsRecap reports June 15 Claude API model-string deadlines, Agent SDK billing changes, and continuing Fable 5 and Mythos 5 suspension as operational issues for builders.",
+              "why": "Even if the source is a market recap, the signal is practical: model naming, billing pools, and sudden access changes can break real automations.",
+              "action": "Audit any agent workflow for hard-coded model names and separate interactive usage from SDK or batch-agent billing assumptions.",
+              "teacher": "Operational AI literacy now includes reading deprecation dates and billing rules, not just model benchmarks.",
+              "link": "https://aitoolsrecap.com/Blog/ai-news-june-14-2026"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
