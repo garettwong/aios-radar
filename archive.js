@@ -5,10 +5,39 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 09:19",
-    "editions": 131
+    "fetchedAt": "2026-06-14 09:22",
+    "editions": 132
   },
   "editions": [
+    {
+      "key": "2026-06-14 09",
+      "label": "2026-06-14 · 09:17",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-14 · 09:17 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 9,
+              "category": "Reddit operator thread",
+              "title": "Reddit operator thread says buyers are cooling on vague agents and paying for reliable automations.",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A practitioner says many founders ask for agents but actually need auditable automations with one model call in the middle.",
+              "why": "Buyer language is correcting toward honest scoping, reliability, and maintainability.",
+              "action": "Sell production automation with AI where useful and include monitoring, handoff rules, and failure recovery.",
+              "teacher": "Teach the agent-versus-automation decision tree: clear steps, high risk, compliance, and irreversible actions push toward deterministic workflows.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1taei9m/stop_building_ai_agents/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-13 21",
       "label": "2026-06-13 · 22:13",
