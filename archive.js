@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 05:47",
-    "editions": 136
+    "fetchedAt": "2026-06-15 05:52",
+    "editions": 137
   },
   "editions": [
+    {
+      "key": "2026-06-15 06",
+      "label": "2026-06-15 · 05:47",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-15 · 05:47 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "10xTeam Delivery Manager",
+              "title": "10xTeam Delivery Manager - AI Trainer",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is hiring freelance delivery managers for 8-20 hours per week to review and train AI on delivery management reasoning.",
+              "why": "Domain experts are being paid to turn practical project judgment into AI training data, not just to write prompts.",
+              "action": "Package delivery-management case studies: scope drift, stakeholder updates, kickoff checklists, risk logs, and recovery plans.",
+              "teacher": "This is a good lesson format for students: give a messy project scenario, ask for a delivery decision, then compare against expert critique.",
+              "link": "https://jobs.ashbyhq.com/10xteam/e35345e9-5c0f-4442-bc79-b5c362186aae"
+            },
+            {
+              "n": 2,
+              "category": "10xTeam Product Owner",
+              "title": "10xTeam Product Owner - AI Trainer",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "A remote freelance product-owner role asks experienced product people to shape how AI understands backlog, priority, and delivery tradeoffs.",
+              "why": "Product judgment is becoming a monetizable training category for AI systems.",
+              "action": "Build a small portfolio of before/after product specs, acceptance criteria, roadmap tradeoffs, and release notes.",
+              "teacher": "Teach product students to explain why a feature should not be built, not only how to describe it.",
+              "link": "https://jobs.ashbyhq.com/10xteam/97fcbc5f-38a5-4842-87a4-46360eb08264"
+            },
+            {
+              "n": 3,
+              "category": "10xTeam Organizational Design",
+              "title": "10xTeam Organizational Design Specialist - AI Trainer",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam also lists an organizational-design AI training role for experts who can evaluate structure, accountability, and operating-model decisions.",
+              "why": "AI training demand is spreading into management consulting and org design, where judgment is context-heavy.",
+              "action": "Prepare templates for org diagnostics, role clarity maps, RACI reviews, and change-management plans.",
+              "teacher": "Good training angle: ask learners to distinguish a tooling problem from an accountability problem.",
+              "link": "https://jobs.ashbyhq.com/10xteam/ca6e6890-ee22-4a5a-b666-f17aedea1efc"
+            },
+            {
+              "n": 4,
+              "category": "Handshake Structural Engineer",
+              "title": "Handshake Structural Engineer - AI Trainer for FreeCAD BIM/IFC",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Handshake is looking for FreeCAD BIM/IFC users to support AI research through flexible hourly contract work.",
+              "why": "3D and technical modeling expertise is being pulled directly into AI model evaluation and training.",
+              "action": "If you know BIM, FreeCAD, IFC, or technical drawing workflows, document clean examples and error cases.",
+              "teacher": "This is a strong bridge between 3D production and AI education: teach model-checking, constraints, and drawing intent.",
+              "link": "https://jobs.ashbyhq.com/handshake/b416cb5d-661a-4793-8d5b-071e6ca4475b"
+            },
+            {
+              "n": 5,
+              "category": "Quadbridge Sales Enablement",
+              "title": "Quadbridge Sales Enablement and Development Partner",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Quadbridge wants enablement programs that are AI-first, scalable, and tied to a shift from IT solutions toward data, automation, and AI at scale.",
+              "why": "AI enablement is no longer just a technical team responsibility; sales and training teams need operational AI fluency.",
+              "action": "Create a consulting offer around AI-first sales playbooks, LMS content, Gong-style coaching, and automation adoption metrics.",
+              "teacher": "Useful classroom exercise: convert one old sales training module into an AI-assisted coaching workflow.",
+              "link": "https://job-boards.greenhouse.io/quadbridge/jobs/4258501009"
+            },
+            {
+              "n": 6,
+              "category": "Upwork n8n Automation",
+              "title": "Upwork n8n Automation Expert for Workflow Integration and API Development",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A client wants a senior AI automation engineer or low-code architect to integrate Kommo, Wrike, Rentman, QuickBooks, Claude, Gemini, MCP, and n8n.",
+              "why": "Buyers are asking for production-grade workflow architecture, not toy automations.",
+              "action": "Build a reusable audit checklist for CRM, project management, accounting, event logistics, LLM routing, and failure handling.",
+              "teacher": "Teach n8n as systems architecture: data ownership, retries, observability, and handoff rules matter more than the canvas.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/n8n-Automation-Expert-Workflow-Integration-API-Development_~022061793142332373324/"
+            },
+            {
+              "n": 7,
+              "category": "Upwork n8n Workflow",
+              "title": "Upwork n8n Workflow Automation Specialist",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "Another Upwork post asks for workflow analysis, improvement, and implementation by an n8n specialist.",
+              "why": "There is still steady demand for practical process automation where the buyer wants someone to find the bottlenecks first.",
+              "action": "Offer a paid workflow teardown before implementation: map the process, estimate savings, then quote the build.",
+              "teacher": "Make students document the current workflow before touching tools; automation without diagnosis creates fragile work.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/n8n-Workflow-Automation-Specialist_~022062869807744896705/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork Make.com and",
+              "title": "Upwork Make.com and n8n Automation Builder for Business Website",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A business advisory website needs low-cost workflows to capture, organize, follow up with, and qualify seller and buyer inquiries.",
+              "why": "Small firms want affordable lead operations, which is a realistic freelance lane for AI automation builders.",
+              "action": "Productize a lead-intake kit: form, enrichment, qualification score, CRM update, follow-up email, and weekly report.",
+              "teacher": "This is a clean beginner project because the value chain is visible from inquiry to follow-up.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Make-com-n8n-Automation-Workflow-Builder-for-Business-Website_~022064093050936637002/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit signal: e-commerce",
+              "title": "Reddit signal: e-commerce AI automation needs niche outcomes",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit discussion on starting an e-commerce AI automation agency says generic AI services struggle, while e-commerce founders care about saving creative time and increasing conversion.",
+              "why": "The market is telling builders to stop selling vague AI and sell measurable niche outcomes.",
+              "action": "For e-commerce, pitch specific automations: ad creative variants, product-page QA, review mining, abandoned-cart experiments, and conversion reporting.",
+              "teacher": "Use this as positioning practice: rewrite a generic AI agency offer into one narrow e-commerce promise.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1s7iov6/i_want_to_start_an_ai_automation_ecom_specific_in/"
+            },
+            {
+              "n": 10,
+              "category": "Freelancer n8n jobs",
+              "title": "Freelancer n8n jobs board shows active demand clusters",
+              "source": "freelancer.com",
+              "relevance": "Intermediate",
+              "summary": "Freelancer's n8n board shows current bids around WhatsApp two-way chat, n8n voice sales agents, AI content, API integration, and lead generation.",
+              "why": "The same buyer needs keep repeating across platforms: messaging, sales follow-up, lead gen, and small-business operations.",
+              "action": "Build three demos: WhatsApp lead capture, voice sales callback, and Google Sheets/CRM reporting. Use them as proof in proposals.",
+              "teacher": "Have learners compare job-board demand against their portfolio; every portfolio piece should answer a real posted buyer need.",
+              "link": "https://www.freelancer.com/jobs/n8n"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-15 03",
       "label": "2026-06-15 · 02:46",
