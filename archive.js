@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 12:22",
+    "fetchedAt": "2026-06-14 12:25",
     "editions": 133
   },
   "editions": [
     {
       "key": "2026-06-14 12",
-      "label": "2026-06-14 · 12:00",
+      "label": "2026-06-14 · 12:20",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-14 · 12:20 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Claude Agent SDK",
+              "title": "Claude Agent SDK billing separates long-running agent usage from normal chat allowances",
+              "source": "docs.anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Starting June 15, Claude Agent SDK and claude -p usage on subscription plans move into a separate credit pool instead of blending into regular Claude usage.",
+              "why": "Agent runs are being priced like infrastructure, not chat. This changes how makers budget automated coding, cron research, and long-running background workers.",
+              "action": "Put a per-job cost cap and daily quota around Claude Code / SDK automation, especially unattended jobs.",
+              "teacher": "Treat agent minutes like render minutes: plan, batch, cache context, then verify only the expensive steps.",
+              "link": "https://docs.anthropic.com/en/docs/claude-code/sdk"
+            },
+            {
+              "n": 2,
+              "category": "Anthropic suspension of",
+              "title": "Anthropic suspension of Fable 5 and Mythos 5 shows model availability can change overnight",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic says a US government directive forced suspension of Fable 5 and Mythos 5 access for all customers while other Claude models remain available.",
+              "why": "Model choice is now a supply-chain risk. Builders who hard-code one frontier model can lose a workflow instantly.",
+              "action": "Keep fallback routing ready: primary model, fallback model, and a degraded-mode prompt for urgent work.",
+              "teacher": "In production agent design, model portability belongs beside backups and dependency pinning.",
+              "link": "https://www.anthropic.com/news/fable-mythos-access"
+            },
+            {
+              "n": 3,
+              "category": "NVIDIA publishes AA-AgentPerf",
+              "title": "NVIDIA publishes AA-AgentPerf results for concurrent coding-agent workloads",
+              "source": "developer.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA highlights AA-AgentPerf, a benchmark aimed at real coding-agent trajectories, concurrent runs, tool latency, and power-normalized hardware performance.",
+              "why": "The market is starting to benchmark agent throughput, not just single-prompt model quality. Local and hosted agent farms will compete on runs per watt and runs per dollar.",
+              "action": "Track your own agent metrics: wall time, tool calls, retry rate, accepted patches, and compute cost per merged result.",
+              "teacher": "A good agent benchmark measures the whole loop: plan, act, wait, inspect, repair, and finish.",
+              "link": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/"
+            },
+            {
+              "n": 4,
+              "category": "LangChain argues agentic",
+              "title": "LangChain argues agentic engineering is becoming team-shaped, not assistant-shaped",
+              "source": "langchain.com",
+              "relevance": "Intermediate",
+              "summary": "LangChain describes multi-agent systems that mirror engineering teams with roles, shared context, leadership, and accountability instead of isolated assistants.",
+              "why": "The next productivity jump may come from orchestration discipline, not another chat UI. This matches how real projects need planner, builder, reviewer, and verifier roles.",
+              "action": "For serious builds, split one big agent prompt into named roles with clear handoffs and acceptance checks.",
+              "teacher": "Teach agents like teams: define responsibility, state, handoff format, escalation path, and done criteria.",
+              "link": "https://www.langchain.com/blog/agentic-engineering-redefining-software-engineering"
+            },
+            {
+              "n": 5,
+              "category": "Cisco AI Defense",
+              "title": "Cisco AI Defense adds runtime security controls for LangChain agents",
+              "source": "langchain.com",
+              "relevance": "Intermediate",
+              "summary": "Cisco AI Defense integrates with LangChain middleware to classify and block prompt injection, PII exposure, and exfiltration-style behavior at runtime.",
+              "why": "Agent security is moving from policy documents into inline enforcement. This is essential when agents can browse, run tools, and touch private systems.",
+              "action": "Add a guardrail layer around any agent that reads inboxes, files, credentials, customer data, or private project material.",
+              "teacher": "Security for agents should be a runtime contract: allow/block decisions, trace IDs, audit logs, and replayable failures.",
+              "link": "https://www.langchain.com/blog/secure-agents-cisco-ai-defense"
+            },
+            {
+              "n": 6,
+              "category": "LangSmith Agent Builder",
+              "title": "LangSmith Agent Builder pushes no-code agents toward business users with memory and guided prompts",
+              "source": "langchain.com",
+              "relevance": "Intermediate",
+              "summary": "LangChain positions LangSmith Agent Builder as a no-code path for business users to build agents with memory, guided prompt creation, MCP tools, and Deep Agents underneath.",
+              "why": "Agent creation is moving out of pure engineering. Non-technical operators will build workflows, while engineers provide rails, integrations, and governance.",
+              "action": "Look for repetitive admin or reporting tasks that can become governed no-code agents before writing custom software.",
+              "teacher": "The builder market is splitting: engineers need SDKs; operators need safe forms, memory, and approval flows.",
+              "link": "https://www.langchain.com/blog/langsmith-agent-builder"
+            },
+            {
+              "n": 7,
+              "category": "Blender Developer Tools",
+              "title": "Blender Developer Tools packages skills, rules, templates, and snippets for AI coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The GitHub project ships agent-consumable skills, rules, templates, and snippets for Blender Python, geometry nodes scripts, batch pipelines, and animation tooling.",
+              "why": "3D workflows are adopting the same agent instruction pattern as software repos. This is directly relevant to Blender automation and production cleanup.",
+              "action": "Build a small local Blender-agent rules pack for your own preferred naming, scale, camera, material, and export conventions.",
+              "teacher": "AI works better in DCC tools when the repo teaches house style instead of relying on a giant one-off prompt.",
+              "link": "https://github.com/TMHSDigital/Blender-Developer-Tools"
+            },
+            {
+              "n": 8,
+              "category": "Best-of-MCP-servers turns MCP",
+              "title": "Best-of-MCP-servers turns MCP discovery into a ranked open-source market map",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "This GitHub repo tracks hundreds of MCP servers and ranks them by project-quality signals across many categories.",
+              "why": "MCP is becoming the plugin layer for agents. Discovery and quality filtering now matter because random tools can expand both capability and attack surface.",
+              "action": "Before wiring a new MCP into your workflow, check maintenance, stars, package activity, permissions, and whether the tool is actually needed.",
+              "teacher": "MCP servers should be treated like browser extensions: useful, powerful, and risky unless reviewed.",
+              "link": "https://github.com/tolkonepiu/best-of-mcp-servers"
+            },
+            {
+              "n": 9,
+              "category": "GitHub community confirms",
+              "title": "GitHub community confirms Copilot usage-based billing is now live and needs active cost management",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub's community discussion says usage-based billing for Copilot is live as of June 1, with Copilot code review consuming Actions minutes plus AI Credits.",
+              "why": "AI coding costs are becoming operational, not just subscription line items. Power users will need budgets, dashboards, and tool-choice discipline.",
+              "action": "Audit which AI tasks should use Copilot, Claude Code, Codex, local models, or manual review based on cost and value.",
+              "teacher": "Pricing changes often reveal the real unit economics of a workflow. Watch what users complain about, then design around that friction.",
+              "link": "https://github.com/orgs/community/discussions/192948"
+            },
+            {
+              "n": 10,
+              "category": "Reddit makers compare",
+              "title": "Reddit makers compare Claude Code Pro, Codex Plus, and Cursor as value shifts to workflow control planes",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A current r/vibecoding thread compares paid coding-agent plans and includes maker discussion around routing work through a control plane such as AgentRail to avoid single-tool lock-in.",
+              "why": "Users are no longer asking only which model is smartest. They are asking how to route tasks, manage limits, and keep workflows portable.",
+              "action": "Maintain a small agent router: task type, preferred tool, fallback tool, cost limit, and review method.",
+              "teacher": "The mature workflow is not one magic agent. It is orchestration: intake, routing, execution, CI feedback, and review.",
+              "link": "https://www.reddit.com/r/vibecoding/comments/1txg1gp/quick_question_claude_code_pro_17_vs_codex_plus/"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
