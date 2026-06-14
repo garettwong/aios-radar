@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 02:49",
-    "editions": 135
+    "fetchedAt": "2026-06-15 02:53",
+    "editions": 136
   },
   "editions": [
+    {
+      "key": "2026-06-15 03",
+      "label": "2026-06-15 · 02:46",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-15 · 02:46 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Visual Studio moves",
+              "title": "Visual Studio moves its AI foundation to the GitHub Copilot SDK",
+              "source": "devblogs.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft says Visual Studio is moving to the GitHub Copilot SDK as the foundation for its AI integration, so new capabilities can arrive through the broader Copilot ecosystem.",
+              "why": "The AI coding market is consolidating around shared agent runtimes rather than every IDE building separate plumbing.",
+              "action": "Watch Visual Studio agent features through the lens of SDK capability: tools, sessions, auth, tracing, and policy will matter more than UI labels.",
+              "teacher": "Use this as a clean example of platform layering: IDE surface on top, agent runtime underneath, governance around both.",
+              "link": "https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/"
+            },
+            {
+              "n": 2,
+              "category": "WebMCP reference work",
+              "title": "WebMCP reference work shows browser agents moving toward structured web tools",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The WebMCP README describes a pattern where browser-based AI agents invoke structured service tools instead of scraping or guessing through page UI alone.",
+              "why": "If this direction sticks, websites may need agent-facing tool contracts the same way APIs need developer documentation.",
+              "action": "For any product or dashboard you build, identify two user actions that would become safer if exposed as explicit tools rather than screen clicks.",
+              "teacher": "Explain WebMCP as the web becoming machine-operable without handing the agent uncontrolled page authority.",
+              "link": "https://github.com/webmachinelearning/webmcp/blob/main/README.md"
+            },
+            {
+              "n": 3,
+              "category": "doc2mcp turns documentation",
+              "title": "doc2mcp turns documentation URLs into hosted MCP endpoints for agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A GitHub Community post introduces doc2mcp, a tool that converts documentation URLs such as Stripe, GitHub, Mintlify, OpenAPI, or Markdown docs into hosted MCP endpoints.",
+              "why": "Documentation is becoming an executable agent resource, not just human reading material.",
+              "action": "Test the idea on one frequently used API doc and see whether an agent can answer integration questions with fewer hallucinations.",
+              "teacher": "This is a useful mental model: docs plus MCP equals queryable operating context for coding agents.",
+              "link": "https://github.com/orgs/community/discussions/198937"
+            },
+            {
+              "n": 4,
+              "category": "Neuledge Context packages",
+              "title": "Neuledge Context packages local-first documentation lookup for AI agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Neuledge Context is an MCP server backed by a package registry of library documentation that agents can search and query locally.",
+              "why": "Local-first docs reduce latency, privacy exposure, and brittle web lookup for repeat coding-agent tasks.",
+              "action": "Try it on a stack with fast-moving APIs and compare agent answers against your current web-search workflow.",
+              "teacher": "Position this as memory for external libraries: the agent should not rediscover the same docs every session.",
+              "link": "https://github.com/neuledge/context"
+            },
+            {
+              "n": 5,
+              "category": "AWS Agent Plugins",
+              "title": "AWS Agent Plugins turn cloud SOPs and MCP servers into installable agent skills",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "AWS Labs published agent-plugins with installable workflows, SOPs, and MCP servers for tasks such as Amplify app creation, sandbox deployment, testing, and production deployment.",
+              "why": "Cloud vendors are starting to package operational knowledge as agent-ready skills rather than static docs alone.",
+              "action": "Review the plugin structure for patterns you can copy into internal deployment or render-pipeline playbooks.",
+              "teacher": "This is a strong example of domain procedures becoming reusable agent capabilities.",
+              "link": "https://github.com/awslabs/agent-plugins"
+            },
+            {
+              "n": 6,
+              "category": "Mozilla cq gives",
+              "title": "Mozilla cq gives coding agents a structured memory and reflection workflow",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Mozilla AI's cq project gives AI coding agents a store where they can propose, reflect on, and reuse knowledge units through MCP-style tooling.",
+              "why": "Agent memory is moving from loose markdown notes toward managed, inspectable knowledge stores.",
+              "action": "Experiment with a small project memory that stores decisions, failed attempts, and validated commands separately from chat history.",
+              "teacher": "The teaching point is not just memory, but memory with review: useful agent recall needs structure and human trust.",
+              "link": "https://github.com/mozilla-ai/cq"
+            },
+            {
+              "n": 7,
+              "category": "Vercel Labs agent-browser",
+              "title": "Vercel Labs agent-browser packages browser automation as a Rust CLI for agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel Labs' agent-browser is a fast native browser automation CLI for AI agents, with security features aimed at safer deployments.",
+              "why": "Browser control is becoming a portable agent capability, useful for UI testing, web workflows, and visual verification loops.",
+              "action": "Compare this kind of CLI browser control with Playwright MCP for one screenshot-and-verify workflow.",
+              "teacher": "Use this to show the difference between an agent thinking and an agent seeing and acting in a browser.",
+              "link": "https://github.com/vercel-labs/agent-browser"
+            },
+            {
+              "n": 8,
+              "category": "StableGen brings TRELLIS",
+              "title": "StableGen brings TRELLIS and ComfyUI generation directly into Blender",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "StableGen is an open-source Blender add-on that can generate 3D meshes from images or prompts and texture or refine them through ComfyUI with tools such as FLUX, SDXL, and Qwen Image Edit.",
+              "why": "AI 3D workflows are moving into artist workspaces instead of staying in separate web apps.",
+              "action": "Test StableGen on a throwaway prop sheet and measure whether it helps with ideation, texture variants, or mesh cleanup.",
+              "teacher": "Emphasize that the value is pipeline integration: Blender remains the review surface, ComfyUI provides the generation backend.",
+              "link": "https://github.com/sakalond/StableGen"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News highlights",
+              "title": "Hacker News highlights formal verification for agent skills",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Show HN thread on SkillFortify frames agent skills as software supply-chain artifacts that may need formal checks, not just heuristic scanning.",
+              "why": "As skills and MCP tools become installable, malicious or overpowered tools become a real agent-platform risk.",
+              "action": "Before installing third-party skills, inspect permissions, network access, command execution paths, and update behavior.",
+              "teacher": "This is a good security lesson: an agent skill is not a prompt; it is executable capability inside a trusted workflow.",
+              "link": "https://news.ycombinator.com/item?id=47168723"
+            },
+            {
+              "n": 10,
+              "category": "Reddit LocalLLaMA flags",
+              "title": "Reddit LocalLLaMA flags growing interest in visual open-source agent builders",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A LocalLLaMA thread around AgentPerfBench surfaces community interest in open-source agent frameworks with visual building, MCP tools, memory, RAG, and reasoning components.",
+              "why": "Builders want agent systems that are inspectable, composable, and local-friendly, not only closed cloud chat products.",
+              "action": "Track which open-source agent builders expose workflow graphs, memory, MCP, and evaluation hooks; those are the pieces that matter for serious use.",
+              "teacher": "Use this as community signal: adoption pain is now orchestration and workflow visibility, not only model quality.",
+              "link": "https://www.reddit.com/r/LocalLLaMA/comments/1u5bzg7/agentperfbench/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-14 21",
       "label": "2026-06-14 · 23:46",
