@@ -10,7 +10,7 @@ window.DASHBOARD_DATA = {
     "operator": "GARETT",
     "generatedAt": "2026-06-15 · 02:46 GMT+8",
     "latestBrief": "2026-06-15 · 02:46 GMT+8",
-    "fetchedAt": "2026-06-15 04:01",
+    "fetchedAt": "2026-06-15 04:04",
     "source": "myaiagent2026@gmail.com"
   },
   "briefs": [
