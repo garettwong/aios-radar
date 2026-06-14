@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 12:05",
-    "editions": 132
+    "fetchedAt": "2026-06-14 12:07",
+    "editions": 133
   },
   "editions": [
+    {
+      "key": "2026-06-14 12",
+      "label": "2026-06-14 · 12:00",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-14 · 12:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "HackerOne Senior AI",
+              "title": "HackerOne Senior AI Automation Engineer role makes internal AI delivery a security-platform function",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "HackerOne is hiring a remote Senior AI Automation Engineer in Enterprise Data & AI, with a June 30, 2026 application deadline and $160K-$200K listed compensation.",
+              "why": "AI automation is moving from side experiments into formal enterprise data and security teams.",
+              "action": "Build a portfolio case study around secure automation: intake, permission checks, audit logs, rollback, and human approval.",
+              "teacher": "Teach this as 'automation with controls,' not just prompt chains.",
+              "link": "https://jobs.ashbyhq.com/hackerone/ab97488e-b159-41e3-8a20-a40b91acbdc4"
+            },
+            {
+              "n": 2,
+              "category": "Neuroscale Forward Deployed",
+              "title": "Neuroscale Forward Deployed Engineer role packages AI workflow deployment as client implementation",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Neuroscale wants someone to write code, design integrations, build prototypes, configure AI workflows, troubleshoot deployments, and work with product and engineering.",
+              "why": "Forward-deployed AI work is a strong consulting shape: diagnose the client's process, wire tools, prove value, then harden.",
+              "action": "Offer a fixed-scope 'AI workflow deployment sprint' for one department or sales/support flow.",
+              "teacher": "Students should learn discovery, integration mapping, and handoff docs alongside coding.",
+              "link": "https://jobs.ashbyhq.com/neuroscale/02674783-e6dd-4a27-90a8-e727407c2e32"
+            },
+            {
+              "n": 3,
+              "category": "Planet AI Engineer,",
+              "title": "Planet AI Engineer, Marketing role turns revenue workflows into automation products",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Planet's marketing AI engineering role asks for curiosity about how automation and AI can reshape traditional revenue workflows, with an application deadline of July 14, 2026.",
+              "why": "Marketing teams need builders who can connect data, content, campaigns, and reporting into repeatable AI systems.",
+              "action": "Package a demo that converts campaign briefs into landing-page copy, segment ideas, CRM tasks, and performance summaries.",
+              "teacher": "The opportunity is strongest when AI output ties to revenue operations and measurement.",
+              "link": "https://job-boards.greenhouse.io/planetlabs/jobs/7782580"
+            },
+            {
+              "n": 4,
+              "category": "Iru AI Security",
+              "title": "Iru AI Security and Automation Engineer role shows governance plus automation is becoming one job",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Iru's role combines AI technologies, governance controls, security, cloud operations, and automation workflows.",
+              "why": "Companies adopting agents now need people who can make them safe, observable, and compliant.",
+              "action": "Add an 'AI workflow risk review' service: secrets handling, access scope, approval gates, logs, and incident playbooks.",
+              "teacher": "Good AI automation teaching should include threat modeling and failure modes.",
+              "link": "https://jobs.lever.co/iru/10eeba78-0882-4b7a-936a-900d898457bc"
+            },
+            {
+              "n": 5,
+              "category": "Zapier Senior Manager,",
+              "title": "Zapier Senior Manager, Marketing Operations post asks for automation, AI tooling, and operational rigor",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Zapier's marketing operations role explicitly names automation, AI tooling, and operational rigor as part of creating leverage across the organization.",
+              "why": "Even automation-native companies still need operators who can turn scattered tools into dependable systems.",
+              "action": "Build a reusable RevOps audit checklist covering lead routing, attribution, enrichment, alerts, and reporting.",
+              "teacher": "Teach learners to find bottlenecks before choosing tools.",
+              "link": "https://jobs.ashbyhq.com/zapier/09eb1ac8-2a49-44e0-8463-bfa6e72000cf"
+            },
+            {
+              "n": 6,
+              "category": "SIA Innovations Agentic",
+              "title": "SIA Innovations Agentic AI Engineer/Architect apprenticeship turns agent design into a paid training lane",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "SIA lists an Agentic AI Engineer/Architect fast-track apprenticeship starting June 2026 for forward-deployed system architecture work.",
+              "why": "Agentic AI is becoming teachable as a structured professional discipline, not just self-study.",
+              "action": "Create a mini-curriculum: agent task decomposition, tool contracts, evaluation, deployment, and client handover.",
+              "teacher": "Apprenticeship-style content should be project-based, with a final deployed workflow.",
+              "link": "https://job-boards.greenhouse.io/siainnovationsinc/jobs/5206810008"
+            },
+            {
+              "n": 7,
+              "category": "Adobe CX Enterprise",
+              "title": "Adobe CX Enterprise Coworker GA creates consulting demand for brand-grounded agentic workflows",
+              "source": "news.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe announced general availability of CX Enterprise Coworker, positioning it as agentic AI grounded in brand, customer, and channel intelligence.",
+              "why": "Brands will need specialists who can connect creative operations, campaign governance, and measurable outcomes.",
+              "action": "Offer a 'brand-agent readiness' workshop: asset taxonomy, approval rules, tone rules, channel templates, and QA.",
+              "teacher": "For designers, the teachable skill is systematizing judgment so agents can assist without flattening brand quality.",
+              "link": "https://news.adobe.com/news/2026/06/adobe-announces-general-availability-of-cx-enterprise-coworker"
+            },
+            {
+              "n": 8,
+              "category": "Autodesk NavPack 2026",
+              "title": "Autodesk NavPack 2026 applies Physics AI to design and engineering collaboration",
+              "source": "blogs.autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk's AI tag page highlights NavPack 2026 as an integrated offering using Physics AI to help design and engineering teams collaborate and make decisions faster.",
+              "why": "3D/design opportunity is shifting toward AI-assisted simulation, review, and cross-functional decision support.",
+              "action": "Build a sample workflow that turns a 3D concept into review notes, risk flags, and client-ready decision snapshots.",
+              "teacher": "This is a good bridge topic for 3D artists: AI as preflight, not replacement.",
+              "link": "https://blogs.autodesk.com/design-studio/tag/ai/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit AI automation",
+              "title": "Reddit AI automation agency discussion says the opportunity is complex, niche operational systems",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A current Reddit discussion argues that generic chatbot agencies are weak, while tailored operational systems for specific industries still have demand.",
+              "why": "The market is skeptical of vague AI services but open to clear ROI and painful workflow fixes.",
+              "action": "Pick one niche, interview five operators, and define one paid automation package with before/after metrics.",
+              "teacher": "Use this to teach positioning: buyer pain, measurable outcome, narrow scope, and proof.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1s0j357/is_a_serious_ai_automation_agency_still_worth/"
+            },
+            {
+              "n": 10,
+              "category": "Public X workshop",
+              "title": "Public X workshop signal shows hands-on n8n agent training is being sold to freelancers and agencies",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X profile from Fakhar Khan reports a hands-on 'Building AI Agents with n8n' workshop where participants built live AI automations in three hours, aimed at freelancers and agencies.",
+              "why": "Training demand is not only corporate; freelancers and small agencies want practical agent-building skills they can resell.",
+              "action": "Create a 3-hour workshop outline with one live business automation, one failure-recovery exercise, and one pricing template.",
+              "teacher": "The course should produce a working workflow, not just concepts.",
+              "link": "https://x.com/fakharkhan"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-14 09",
       "label": "2026-06-14 · 09:18",
