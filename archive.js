@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 09:24",
+    "fetchedAt": "2026-06-14 09:27",
     "editions": 132
   },
   "editions": [
     {
       "key": "2026-06-14 09",
-      "label": "2026-06-14 · 09:17",
+      "label": "2026-06-14 · 09:18",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-14 · 09:18 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "TechRadar says OpenAI",
+              "title": "TechRadar says OpenAI buying Ona points Codex toward long-running enterprise agents",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's planned Ona acquisition is being read as infrastructure for Codex agents that can keep secure, persistent workspaces and continue long-running tasks.",
+              "why": "The coding-agent race is moving from chat quality into durable execution environments, context retention, and enterprise cloud control.",
+              "action": "For any serious Codex workflow, start documenting which files, tools, credentials, and approval boundaries a persistent agent would need.",
+              "teacher": "Explain this as the difference between an assistant that answers and a worker that has a desk, tools, memory, and a shift log.",
+              "link": "https://www.techradar.com/pro/openais-latest-acquisition-could-see-big-changes-on-the-way-for-its-codex-coding-assistant"
+            },
+            {
+              "n": 2,
+              "category": "GitHub adds org-level",
+              "title": "GitHub adds org-level runner and content controls to Copilot code review",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Copilot code review now supports organization-level runner controls, content exclusions, and larger custom instruction files.",
+              "why": "Agentic review is becoming configurable infrastructure, not just a button in a pull request.",
+              "action": "Keep a repo-level agent review policy file: what it can inspect, what it must ignore, and what it must prove before suggesting fixes.",
+              "teacher": "Show makers that AI review quality improves when the repo gives explicit constraints, not just broad permission.",
+              "link": "https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls/"
+            },
+            {
+              "n": 3,
+              "category": "GitHub deprecates GPT-4.1",
+              "title": "GitHub deprecates GPT-4.1 across most Copilot experiences",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub deprecated GPT-4.1 in Copilot chat, edit, ask, agent modes, and completions, pointing users to GPT-5.5.",
+              "why": "Model availability is now a live dependency for coding workflows; saved prompts, evals, and agent behavior can drift when platforms rotate models.",
+              "action": "Track model assumptions in project docs and keep a small regression checklist for agent-generated code quality after model switches.",
+              "teacher": "Treat model deprecation like a library upgrade: useful, but it needs compatibility testing.",
+              "link": "https://github.blog/changelog/2026-06-02-gpt-4-1-deprecated/"
+            },
+            {
+              "n": 4,
+              "category": "GitHub makes billing",
+              "title": "GitHub makes billing usage reports programmatic as AI credit management becomes operational",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub's billing usage report API is generally available, letting enterprise admins pull cost data as CSV programmatically.",
+              "why": "AI coding spend is becoming something teams monitor in pipelines, dashboards, and budgets rather than after-the-fact invoices.",
+              "action": "For agent-heavy projects, log cost per task category: research, codegen, review, render prep, and retry loops.",
+              "teacher": "The maker lesson is simple: if a workflow cannot be measured, it cannot be scaled without surprises.",
+              "link": "https://github.blog/changelog/2026-06-04-api-access-to-billing-usage-reports-now-generally-available/"
+            },
+            {
+              "n": 5,
+              "category": "Agentjacking turns Sentry-style",
+              "title": "Agentjacking turns Sentry-style developer telemetry into a coding-agent attack surface",
+              "source": "thehackernews.com",
+              "relevance": "Intermediate",
+              "summary": "Security researchers describe Agentjacking, where malicious input through developer telemetry can trick coding agents into running harmful code.",
+              "why": "Agents read the same noisy operational context humans do, but may execute more quickly and with broader local permissions.",
+              "action": "Treat logs, issue text, error reports, and third-party traces as untrusted input before exposing them to an agent with shell access.",
+              "teacher": "Teach prompt injection through the software supply chain, not only through chat boxes.",
+              "link": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html"
+            },
+            {
+              "n": 6,
+              "category": "Runway product updates",
+              "title": "Runway product updates keep pushing AI video toward a full conversational creative workstation",
+              "source": "runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway's changelog highlights creative-partner workflows and multi-model generation/editing options including Aleph and Seedance-style video tools.",
+              "why": "Creator tools are converging on a single workspace where ideation, direction, generation, and editing happen in one loop.",
+              "action": "Build a small repeatable shot brief template: subject, lens, motion, negative constraints, edit intent, and delivery format.",
+              "teacher": "For 3D/design people, the durable skill is art direction language plus iteration discipline, not one magic prompt.",
+              "link": "https://runwayml.com/changelog"
+            },
+            {
+              "n": 7,
+              "category": "Reco AI explains",
+              "title": "Reco AI explains why Codex-style security agents need non-human identity controls",
+              "source": "reco.ai",
+              "relevance": "Intermediate",
+              "summary": "Reco frames Codex security and agentic security workflows around governance, monitoring, least privilege, and non-human identity management.",
+              "why": "As agents get persistent workspaces, their accounts and permissions become real security objects.",
+              "action": "Give each automation lane its own identity, limited token scope, audit trail, and kill switch.",
+              "teacher": "A good teaching analogy: do not lend the intern your admin account; do not lend the agent one either.",
+              "link": "https://www.reco.ai/blog/openai-daybreak-codex-security"
+            },
+            {
+              "n": 8,
+              "category": "HN debate asks",
+              "title": "HN debate asks whether coding agents make money or mostly burn hardware and attention",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Hacker News discussion around agent economics questions whether agent enthusiasm translates into durable revenue or mostly compute spend and workflow churn.",
+              "why": "The market signal is shifting from novelty to ROI: faster code is not enough if review, deployment, and maintenance remain bottlenecks.",
+              "action": "Judge an agent workflow by shipped outcomes, fewer retries, lower rework, and clearer handoff notes, not raw lines of code.",
+              "teacher": "Use this to teach the difference between productivity theater and production leverage.",
+              "link": "https://news.ycombinator.com/item?id=47226958"
+            },
+            {
+              "n": 9,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are shifting coding agents toward design-first planning before implementation",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent vibecoding thread argues for having the coding agent design first, then implement, reflecting a practical workflow correction from maker users.",
+              "why": "Community practice is moving away from one-shot coding and toward planning artifacts that survive context limits and human review.",
+              "action": "Before implementation, require the agent to produce a file map, data model, state flow, failure cases, and test plan.",
+              "teacher": "The useful pattern is not 'vibe and hope'; it is 'design, inspect, then delegate small pieces.'",
+              "link": "https://www.reddit.com/r/vibecoding/comments/1txla92/i_changed_my_workflow_make_the_coding_agent/"
+            },
+            {
+              "n": 10,
+              "category": "Public X long-form",
+              "title": "Public X long-form post frames autonomous coding agents around durable goal-mode workflows",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article by Omar Sar describes autonomous long-running coding agents through goal-mode style workflows and sustained execution patterns.",
+              "why": "Public maker education is moving from tool lists to operating models: goals, checkpoints, review loops, and continuity.",
+              "action": "Create one reusable long-running-agent brief with objective, constraints, checkpoints, allowed commands, stop rules, and delivery format.",
+              "teacher": "Teach long-running agents as project management plus verification, not just stronger autocomplete.",
+              "link": "https://x.com/omarsar0/article/2065880971031834786"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
