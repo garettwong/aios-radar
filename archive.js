@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 15:08",
-    "editions": 133
+    "fetchedAt": "2026-06-14 15:11",
+    "editions": 134
   },
   "editions": [
+    {
+      "key": "2026-06-14 15",
+      "label": "2026-06-14 · 15:04",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-14 · 15:04 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "10xTeam Marketing Automation",
+              "title": "10xTeam Marketing Automation Specialist - AI Trainer",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is hiring a freelance marketing automation AI trainer for 8-20 hours/week, updated 09 June 2026, paying for people who can guide AI systems on marketing automation workflows.",
+              "why": "This is a clean example of domain experts getting paid to teach models, not just use models.",
+              "action": "Package one marketing-automation teardown: inputs, decision logic, failure cases, QA checklist, and example corrections.",
+              "teacher": "Good lesson topic: how to turn messy business workflow judgment into training examples and rubrics.",
+              "link": "https://jobs.ashbyhq.com/10xteam/ba5dbf6c-98a9-4a38-be25-b1ec100e12bc?ref=oneremotejobs.com&utm_campaign=job_application&utm_medium=job_board&utm_source=oneremotejobs.com"
+            },
+            {
+              "n": 2,
+              "category": "Upwork luxury real",
+              "title": "Upwork luxury real estate SEO and content automation system",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A buyer wants an AI-assisted autonomous content, SEO, and publishing system for a luxury real estate site, focused on qualified inbound leads, not simple blog generation.",
+              "why": "Niche content automation is moving toward measurable sales outcomes and local-market expertise.",
+              "action": "Build a demo pipeline for one property niche: keyword research, local brief, draft, image prompt, approval, publish checklist.",
+              "teacher": "Emphasize the difference between content spam and a controlled editorial system with source checks and lead intent.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-Full-Stack-Developer-Real-Estate-SEO-Content-Automation-System_~022065460453423205030/"
+            },
+            {
+              "n": 3,
+              "category": "Merge Money AI-Led",
+              "title": "Merge Money AI-Led RevOps Lead",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Merge Money is recruiting an AI-led revenue operations lead around a stablecoin payments business, with a June 29 deadline.",
+              "why": "AI operations roles are appearing in finance-adjacent GTM teams, where workflows, reporting, compliance, and customer handoffs all need structure.",
+              "action": "Create a RevOps AI audit template: lead source, CRM fields, handoff points, manual steps, automatable checks, risk notes.",
+              "teacher": "Useful class angle: AI in revenue work is less about prompts and more about clean process maps.",
+              "link": "https://jobs.ashbyhq.com/mergemoney/492acc98-abc7-480c-baa6-d11c19c5f60a"
+            },
+            {
+              "n": 4,
+              "category": "Figma Support AI",
+              "title": "Figma Support AI Engineer",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Figma describes product support as AI, automation, and integrated systems work, with the role connecting customer context, internal systems, and AI workflows.",
+              "why": "Design-tool companies need engineers who understand support operations and product context, a strong lane for design-minded automation builders.",
+              "action": "Prototype a support-agent knowledge flow for a design tool: issue intake, file context, account context, suggested fix, escalation.",
+              "teacher": "Teach support automation as a product-design problem: users, state, constraints, confidence, and handoff.",
+              "link": "https://job-boards.greenhouse.io/figma/jobs/5802956004"
+            },
+            {
+              "n": 5,
+              "category": "Point B Manager,",
+              "title": "Point B Manager, Consulting - AI and Process Automation",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Point B is hiring a consulting manager for AI and process automation in intelligent operations.",
+              "why": "The consulting market is formalizing AI process redesign as a billable management practice, not only a technical build task.",
+              "action": "Prepare a one-page service offer: process discovery workshop, automation opportunity matrix, pilot workflow, ROI proof.",
+              "teacher": "This is a good teaching case for moving from tool demos to client-facing diagnosis and change management.",
+              "link": "https://jobs.lever.co/pointb/5c922abd-e4ac-4a96-b11f-de9b2afbbe87/apply"
+            },
+            {
+              "n": 6,
+              "category": "Upwork AI Operations",
+              "title": "Upwork AI Operations Engineer for AI-native transformation",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fast-growing AI transformation company wants an operations engineer to map manual workflows, define success metrics, and build agents with Claude, Claude Code, Codex, n8n, Zapier, APIs, and light code.",
+              "why": "Buyers are asking for the full delivery loop: workflow mapping, metrics, build, adoption, and maintenance.",
+              "action": "Turn your automation pitch into a repeatable delivery checklist with discovery, build, test, rollout, and monitoring sections.",
+              "teacher": "Strong lesson: every useful automation needs current-state map, future-state map, and success metric before tooling.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-for-Ops-Workflows-Native-Transformation_~022051150556015092691/"
+            },
+            {
+              "n": 7,
+              "category": "10xTeam System Operations",
+              "title": "10xTeam System Operations Engineer - AI Trainer",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is hiring freelance system-operations AI trainers, 8-20 hours/week, with compensation listed at EUR81-EUR139/hour.",
+              "why": "Operations knowledge is becoming training data and evaluation work; experts can monetize how they reason through incidents and systems.",
+              "action": "Document three operations scenarios: alert triage, root-cause hypothesis, escalation, rollback, and postmortem notes.",
+              "teacher": "Teach AI evaluation through operations cases where wrong answers have visible consequences.",
+              "link": "https://jobs.ashbyhq.com/10xteam/ce219929-9c21-4dfd-9dab-c26e83176fe4"
+            },
+            {
+              "n": 8,
+              "category": "Hightouch Go-to-Market Engineer",
+              "title": "Hightouch Go-to-Market Engineer",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Hightouch asks for someone to audit GTM workflows, design agentic workflows with Clay, Claude, and Hightouch, and own the AI context layer through skills, knowledge resources, and graphs.",
+              "why": "The new GTM engineer role blends automation, data activation, agent design, and internal enablement.",
+              "action": "Build a GTM context-layer sample: target accounts, enrichment fields, outreach rules, approval gates, and evaluation metrics.",
+              "teacher": "Good framework: agents improve when the surrounding context layer is maintained like product infrastructure.",
+              "link": "https://job-boards.greenhouse.io/hightouch/jobs/5823552004"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n learner",
+              "title": "Reddit n8n learner wants to become a freelance automation specialist",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n post from a 22-year-old learner lists practical starter builds such as a Telegram course catalog bot and a CRM lead capture workflow.",
+              "why": "Grassroots demand is still forming around practical business automations, especially small-business workflows that can be shown as demos.",
+              "action": "Recreate the two demo workflows and add screenshots, error handling, and a short client-facing case study.",
+              "teacher": "Teach beginners to ship small, inspectable workflows before selling broad AI automation promises.",
+              "link": "https://www.reddit.com/r/n8n/comments/1tnfqde/n8n_ai_automation/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: AI freelancer automation system with n8n",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X profile snippet says the user started building an AI Freelancer Automation System using n8n, showing the idea is circulating in public creator/freelance channels.",
+              "why": "This is weak as proof of revenue, but useful as trend signal: people are branding automation systems as freelancer infrastructure.",
+              "action": "If building a public demo, position it around a concrete freelancer workflow: intake, proposal, invoice, reminder, delivery archive.",
+              "teacher": "Use this to warn students that public buzz is not validation; pair it with job-board demand and a working demo.",
+              "link": "https://x.com/qmshahzad1"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-14 12",
       "label": "2026-06-14 · 12:20",
