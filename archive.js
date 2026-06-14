@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 20:47",
-    "editions": 134
+    "fetchedAt": "2026-06-14 20:49",
+    "editions": 135
   },
   "editions": [
+    {
+      "key": "2026-06-14 21",
+      "label": "2026-06-14 · 20:42",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-14 · 20:42 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitLab Senior AI",
+              "title": "GitLab Senior AI Engineer role makes internal AI transformation a platform job",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "GitLab is hiring a Senior AI Engineer to build internal AI-powered solutions and help the company become AI-first.",
+              "why": "This is a strong job-market signal: enterprise AI is moving from experiments into internal product platforms with measurable business outcomes.",
+              "action": "Position your portfolio around one internal workflow you can automate end-to-end: intake, tool use, logging, evaluation, and measurable time saved.",
+              "teacher": "Teach this as an internal-agent capstone: students pick one company process, define success metrics, and ship a guarded assistant.",
+              "link": "https://job-boards.greenhouse.io/gitlab/jobs/8548545002"
+            },
+            {
+              "n": 2,
+              "category": "Intersect AI Solutions",
+              "title": "Intersect AI Solutions role packages AI translation into client outcomes",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Intersect is looking for a hands-on AI Solutions leader who can translate AI potential into measurable business outcomes.",
+              "why": "Consulting demand is shifting toward people who can explain, scope, and implement AI systems for non-technical teams.",
+              "action": "Build a one-page AI opportunity audit offer: map three workflows, estimate ROI, and propose a phased automation roadmap.",
+              "teacher": "Have learners practice translating vague executive AI goals into a scoped problem statement, data needs, risks, and pilot plan.",
+              "link": "https://jobs.lever.co/intersect/414106b8-e9e8-4404-91ee-c42b98cdf5cf"
+            },
+            {
+              "n": 3,
+              "category": "Figma lists Product",
+              "title": "Figma lists Product Designer roles for AI Models and Design/Dev/AI tools",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Figma career listings include design roles around AI Models, Design/Dev/AI Tools, and UX writing for AI.",
+              "why": "Designers who understand model behavior, prompt surfaces, component systems, and dev handoff have a clear AI-native lane.",
+              "action": "Create a mini case study showing an AI design-tool workflow with before/after screens, guardrails, and failure-state UX.",
+              "teacher": "Teach AI UX around uncertainty: confidence cues, editable outputs, undo, source traceability, and handoff to human judgment.",
+              "link": "https://job-boards.greenhouse.io/figma/jobs/5602159004"
+            },
+            {
+              "n": 4,
+              "category": "10xTeam System Operations",
+              "title": "10xTeam System Operations Engineer AI Trainer pays for domain experts to train AI",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is hiring freelance system operations engineers for 8-20 hours per week to review and train AI on operations work.",
+              "why": "Domain teaching is becoming paid work: experienced operators can monetize tacit knowledge without becoming full-time AI engineers.",
+              "action": "Package your ops/design/3D expertise as evaluation rubrics: what good output looks like, common mistakes, and escalation rules.",
+              "teacher": "Use this to show students that AI training is not just labeling: it is expert critique, edge cases, and workflow judgment.",
+              "link": "https://jobs.ashbyhq.com/10xteam/e5e26710-76e4-4bb4-b59d-21c51abfa051"
+            },
+            {
+              "n": 5,
+              "category": "10xTeam Venture Builder",
+              "title": "10xTeam Venture Builder AI Trainer turns startup judgment into freelance AI training",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is also sourcing freelance venture builders to train AI on startup and business-building reasoning.",
+              "why": "AI training markets are broadening beyond coding into entrepreneurship, positioning, strategy, and go-to-market judgment.",
+              "action": "Draft a reusable venture-evaluation worksheet: customer pain, distribution, moat, pricing, execution risk, and first 30-day test.",
+              "teacher": "Teach founders to make AI critique structured: every AI business idea should be scored against evidence, market, and execution constraints.",
+              "link": "https://jobs.ashbyhq.com/10xteam/269e84d2-7dc7-4682-90c1-a55371a8c659"
+            },
+            {
+              "n": 6,
+              "category": "Upwork buyer wants",
+              "title": "Upwork buyer wants AI automations across Make, Zapier, GoHighLevel, Claude, and OpenAI",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Upwork post seeks an AI automation expert to build and manage workflows across Make.com, Zapier, GHL, Claude, and OpenAI.",
+              "why": "Small clients are no longer asking for isolated zaps; they want multi-tool operating systems that connect marketing, CRM, and AI.",
+              "action": "Offer a fixed-price automation audit plus a weekly retainer for monitoring, error handling, and workflow improvements.",
+              "teacher": "Teach workflow architecture: trigger, data validation, AI decision, human approval, CRM update, notification, and audit log.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Expert-Make-com-Zapier-GoHighLevel-Claude_~022065884779170949885/"
+            },
+            {
+              "n": 7,
+              "category": "Upwork gym chatbot",
+              "title": "Upwork gym chatbot post shows local businesses buying n8n appointment systems",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A newly posted Upwork project asks for an n8n chatbot that answers gym membership questions and books Google Calendar appointments.",
+              "why": "Local service businesses are a practical entry point for AI automation freelancers because the pain is concrete and easy to measure.",
+              "action": "Build a demo for gyms, salons, clinics, or studios: FAQ bot, lead capture, appointment booking, confirmation, and no-show follow-up.",
+              "teacher": "Use this as a beginner project because it teaches conversation memory, calendar APIs, data capture, and clear handoff rules.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Powered-Gym-Chatbot-Appointment-Booking-System-n8n_~022065870923692803359/"
+            },
+            {
+              "n": 8,
+              "category": "Autodesk AIF26 keynote",
+              "title": "Autodesk AIF26 keynote frames AI as speed with confidence for design studios",
+              "source": "blogs.autodesk.com",
+              "relevance": "Intermediate",
+              "summary": "Autodesk describes its AIF26 Design Studio keynote around compressing vehicle development cycles while preserving quality and control.",
+              "why": "For 3D/design work, the opportunity is not raw generation alone; it is controlled iteration, source locking, review, and production confidence.",
+              "action": "Turn render workflows into a service: faster concept variants plus a QA checklist for camera, scale, material, and source fidelity.",
+              "teacher": "Teach AI-assisted 3D as a controlled pipeline: reference lock, proxy layout, candidate generation, rejection criteria, and final verification.",
+              "link": "https://blogs.autodesk.com/design-studio/2026/06/12/speed-with-confidence-inside-the-aif26-design-studio-keynote/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n thread",
+              "title": "Reddit n8n thread asks what AI automation developers can realistically earn",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n thread shows beginners trying to understand realistic income, market entry, and whether n8n plus AI is freelance or job-friendly.",
+              "why": "The early-user signal is confusion, not lack of interest. Clear roadmaps, honest pricing, and portfolio guidance are teachable products.",
+              "action": "Create a public roadmap: three portfolio builds, how to price them, what proof to show, and what mistakes to avoid.",
+              "teacher": "Teach expectation management: clients pay for reliable outcomes and maintenance, not screenshots of complicated canvases.",
+              "link": "https://www.reddit.com/r/n8n/comments/1u2d61e/realistically_how_much_can_you_make_as_an_n8n_ai/"
+            },
+            {
+              "n": 10,
+              "category": "Public X article",
+              "title": "Public X article signal says beginners are packaging AI automation as a premium freelance skill",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X article promotes a path from beginner to charging premium hourly rates for AI automation solutions, citing demand for AI integration, Zapier, and n8n skills.",
+              "why": "Even if the earnings claims need skepticism, the marketing language reveals what the market is hearing: integration, workflow automation, and business outcomes.",
+              "action": "Do not sell generic AI hype. Sell one narrow result, such as lead response, content ops, invoice routing, or design asset QA.",
+              "teacher": "Use this as a media-literacy note: separate useful demand signals from inflated income claims, then design a proof-based offer.",
+              "link": "https://x.com/neil_xbt/article/2062379111905939480"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-14 15",
       "label": "2026-06-14 · 15:18",
