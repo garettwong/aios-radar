@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 05:52",
+    "fetchedAt": "2026-06-15 05:56",
     "editions": 137
   },
   "editions": [
     {
       "key": "2026-06-15 06",
-      "label": "2026-06-15 · 05:47",
+      "label": "2026-06-15 · 05:51",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-15 · 05:51 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI Academy turns",
+              "title": "OpenAI Academy turns agent adoption into practical workflow training",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI introduced Academy courses focused on practical AI skills, repeatable workflows, and applying agents in daily work with partners such as BCG, Accenture, and BBVA.",
+              "why": "Agent adoption is becoming a training and habits problem, not only a model-access problem.",
+              "action": "Build one small practice track around a real workflow: template, example run, review rubric, and before-after metric.",
+              "teacher": "Teach agents as repeatable work systems; the skill is designing the loop, not memorizing prompts.",
+              "link": "https://openai.com/index/academy-courses-applying-ai-at-work/"
+            },
+            {
+              "n": 2,
+              "category": "VoltAgent packages Claude",
+              "title": "VoltAgent packages Claude Code subagents as installable specialist plugins",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The VoltAgent repository now presents a large catalog of Claude Code subagents across categories such as core development, language specialists, infrastructure, quality, security, and data.",
+              "why": "Maker practice is moving from one generic coding agent to a marketplace of narrow specialists.",
+              "action": "Pick only two or three specialist agents for a project; too many roles can create coordination noise.",
+              "teacher": "Specialist agents work best when each has a crisp responsibility and a clear handoff back to the main agent.",
+              "link": "https://github.com/VoltAgent/awesome-claude-code-subagents"
+            },
+            {
+              "n": 3,
+              "category": "wshobson agents maps",
+              "title": "wshobson agents maps subagents across Claude Code, Codex CLI, Cursor, OpenCode, Copilot, and Gemini CLI",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "This repo positions agent skills and subagents as a multi-harness layer spanning the main AI coding tools instead of one vendor's format.",
+              "why": "Agent workflow assets are starting to look portable across IDEs, CLIs, and model providers.",
+              "action": "Write project skills in plain Markdown first, then adapt only the wrapper format for each tool.",
+              "teacher": "The durable asset is the procedure; the agent runtime is the replaceable adapter.",
+              "link": "https://github.com/wshobson/agents"
+            },
+            {
+              "n": 4,
+              "category": "Awesome AI Agent",
+              "title": "Awesome AI Agent Attacks turns agent security incidents into a dated threat map",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The curated list tracks real AI agent security incidents, breaches, and vulnerabilities from 2024 through 2026, including MCP-related risk.",
+              "why": "Agent security is becoming concrete enough to teach through incidents, not abstract warnings.",
+              "action": "Add a preflight checklist for any MCP or tool server: auth, command execution, secrets exposure, sandboxing, and logging.",
+              "teacher": "Treat every tool-connected agent as a privileged plugin until proven otherwise.",
+              "link": "https://github.com/webpro255/awesome-ai-agent-attacks"
+            },
+            {
+              "n": 5,
+              "category": "Claude Code issue",
+              "title": "Claude Code issue shows subagent terminology can leak into hallucinated commands",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A Claude Code issue reports the tool suggesting a non-existent 'fan out subagents' command, apparently blending real workflow patterns with invented CLI syntax.",
+              "why": "As agent systems gain vocabulary, users need to distinguish concepts, docs, and actual commands.",
+              "action": "When an agent suggests a new command, run help or docs lookup before building workflow muscle memory around it.",
+              "teacher": "Teach verification of tool affordances: concept first, command second, dry run third.",
+              "link": "https://github.com/anthropics/claude-code/issues/61491"
+            },
+            {
+              "n": 6,
+              "category": "AI coding tool",
+              "title": "AI coding tool lists now track burn-rate monitors, local CLIs, and workflow helpers",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The awesome-ai-coding-tools list includes not just coding assistants, but shell tools, local agents, context monitors, and workflow utilities.",
+              "why": "The market is widening around the agent loop: cost visibility, context health, shell automation, and local control are now separate product opportunities.",
+              "action": "Add a context and cost monitor to any heavy coding-agent setup before increasing model spend.",
+              "teacher": "Mature agent workflows measure the loop: context, time, tokens, failures, and verification.",
+              "link": "https://github.com/ai-for-developers/awesome-ai-coding-tools"
+            },
+            {
+              "n": 7,
+              "category": "GitHub AI rankings",
+              "title": "GitHub AI rankings turn agent repos into a live market map",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The GitHub-Ranking-AI Top100 agent page tracks popular AI agent projects and recent update signals, making open-source attention easier to scan.",
+              "why": "For makers, repository momentum is a practical early signal of where tool ecosystems and integrations are forming.",
+              "action": "Watch weekly movement in the top agent repos, but filter by recent commits and usable docs before adopting anything.",
+              "teacher": "Stars are a weak signal alone; combine stars, update recency, issues, examples, and license.",
+              "link": "https://github.com/yuxiaopeng/Github-Ranking-AI/blob/main/Top100/AI%20Agents.md"
+            },
+            {
+              "n": 8,
+              "category": "Gaussian splatting keeps",
+              "title": "Gaussian splatting keeps moving from research trick into consumer-scale 3D maps",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar reports that users suspect Apple's upgraded Flyover visuals rely on Gaussian splatting-like capture, even though Apple has not confirmed the exact technique.",
+              "why": "Photoreal 3D capture is becoming visible in mainstream products, which will raise expectations for spatial, VFX, and product-preview work.",
+              "action": "For 3D scene work, separate captured photoreal backgrounds from editable generated meshes; they solve different problems.",
+              "teacher": "Splatting is excellent for real-world ambience and camera moves, while mesh generation still owns editable assets.",
+              "link": "https://www.techradar.com/computing/software/apple-maps-has-a-huge-ios-27-upgrade-on-the-way-for-flyover-that-will-help-you-see-cities-around-the-world-like-never-before-and-users-think-its-down-to-gaussian-splatting-the-next-big-3d-photography-craze"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Claude users",
+              "title": "Reddit Claude users hit recursive sub-agent fan-out and quota burn",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A ClaudeAI post says one research prompt spawned hundreds of sub-agents after recursive sub-agent behavior, burning a Max quota quickly and exposing missing budget guardrails.",
+              "why": "Parallel agents can multiply cost and noise faster than users expect, especially when general-purpose agents can spawn more agents.",
+              "action": "Put explicit fan-out limits, budget caps, and confirmation gates in any multi-agent workflow.",
+              "teacher": "Autonomy needs brakes: max children, max depth, max tokens, max wall time, and a stop condition.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u5d02w/til_claude_code_spawned_339_subagents_from_a/"
+            },
+            {
+              "n": 10,
+              "category": "Reddit makers optimize",
+              "title": "Reddit makers optimize AI coding stacks around budget and usage limits",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A vibecoding thread asks for a sustainable 20 to 40 USD per month AI coding stack because daily builders keep hitting limits and traffic slowdowns.",
+              "why": "Pricing and quota friction are shaping tool choice as much as raw model quality.",
+              "action": "Track your own cost per accepted change, not just subscription price; include waiting time and rework.",
+              "teacher": "Budget pressure teaches the real unit economics of agent work: useful merged output per dollar and hour.",
+              "link": "https://www.reddit.com/r/vibecoding/comments/1slum7k/best_ai_coding_stack_for_2040month_in_2026/"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
