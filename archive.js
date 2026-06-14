@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-14 15:23",
+    "fetchedAt": "2026-06-14 15:26",
     "editions": 134
   },
   "editions": [
     {
       "key": "2026-06-14 15",
-      "label": "2026-06-14 · 15:04",
+      "label": "2026-06-14 · 15:18",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-14 · 15:18 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Google Pay and",
+              "title": "Google Pay and Wallet ships a domain-specific MCP server",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google published a Pay and Wallet developer MCP server so AI agents and IDEs can access live integration context, API updates, and account-specific status instead of guessing from stale docs.",
+              "why": "MCP is moving from generic tool wiring into narrow, business-domain support surfaces. That is where agents become useful for production integration work.",
+              "action": "For any repeated client workflow, list the live context an agent always lacks, then decide whether a small MCP wrapper would remove that friction.",
+              "teacher": "The important pattern is agent plus authenticated operational context plus bounded task domain.",
+              "link": "https://developers.googleblog.com/supercharge-your-integration-workflow-with-the-google-pay-wallet-developer-mcp-server/"
+            },
+            {
+              "n": 2,
+              "category": "Google Search keeps",
+              "title": "Google Search keeps shifting from links to agentic task surfaces",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "Google's AI Search update frames Search as a place where users can ask agents to complete richer tasks, not only retrieve pages.",
+              "why": "Discovery, SEO, support docs, and maker storefronts will be judged by whether agents can understand and act on them.",
+              "action": "Audit one public page or product page this week: can an agent extract the offer, constraints, price, contact path, and next step without extra help?",
+              "teacher": "Treat search visibility as structured task readiness, not only keywords and backlinks.",
+              "link": "https://blog.google/products-and-platforms/products/search/search-io-2026/"
+            },
+            {
+              "n": 3,
+              "category": "AI filmmaking is",
+              "title": "AI filmmaking is becoming a real pre-production workflow, not just prompt roulette",
+              "source": "creativebloq.com",
+              "relevance": "Intermediate",
+              "summary": "CreativeBloq profiled a filmmaker who used AI tools to produce CATACOMBS while still relying on scripts, character sheets, props, shot planning, and continuity checks.",
+              "why": "The useful creator signal is discipline. Strong AI output is increasingly tied to traditional production structure, not one-shot generation.",
+              "action": "For render or video work, build a mini production packet first: story intent, references, shot list, continuity constraints, and rejection criteria.",
+              "teacher": "AI lowers the production barrier, but it raises the need for source authority and review loops.",
+              "link": "https://www.creativebloq.com/ai/how-a-filmmaker-turned-a-10-year-old-unmakeable-movie-idea-into-reality-with-ai"
+            },
+            {
+              "n": 4,
+              "category": "OSSInsight is turning",
+              "title": "OSSInsight is turning GitHub AI repos into an hourly market radar",
+              "source": "ossinsight.io",
+              "relevance": "Intermediate",
+              "summary": "OSSInsight's AI trending page tracks AI agents, MCP servers, coding agents, RAG, inference, and vibe-coding repositories using GitHub activity.",
+              "why": "For builders, repo momentum is now a practical market signal: it shows where developer attention, integrations, and examples are moving before polished products arrive.",
+              "action": "Check the AI Agents, MCP Servers, and Coding Agents tabs weekly; save only projects with recent commits, docs, and real examples.",
+              "teacher": "Stars alone are weak; combine growth, commit activity, issue quality, and examples before betting workflow time.",
+              "link": "https://ossinsight.io/trending/ai"
+            },
+            {
+              "n": 5,
+              "category": "Blender-focused AI tool",
+              "title": "Blender-focused AI tool roundups are getting practical for asset pipelines",
+              "source": "3daistudio.com",
+              "relevance": "Intermediate",
+              "summary": "3D AI Studio's Blender workflow roundup compares AI tools for model generation, texturing, rigging, and rendering rather than treating 3D AI as a single button.",
+              "why": "3D creators need pipeline fit: GLB quality, topology, texture control, cleanup cost, and Blender handoff matter more than flashy preview images.",
+              "action": "Test one AI-to-Blender path with a real asset brief and score it on mesh cleanup time, material usability, scale, and export reliability.",
+              "teacher": "The right question is which tool leaves the least cleanup before production.",
+              "link": "https://www.3daistudio.com/blog"
+            },
+            {
+              "n": 6,
+              "category": "Reddit builders are",
+              "title": "Reddit builders are relearning prompt habits as Copilot-style agents change",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit user describes being trained by older Copilot habits around dense, long prompts, then needing to relearn workflow as 2026 coding agents and pricing behavior shifted.",
+              "why": "Tool changes are forcing workflow changes. Good operators will separate planning, task slices, review, and cost control instead of carrying old habits forward.",
+              "action": "Rewrite one large prompt into a plan, acceptance checks, and two smaller implementation tasks before handing it to an agent.",
+              "teacher": "Community pain is useful because it reveals adoption friction earlier than official docs do.",
+              "link": "https://www.reddit.com/r/vibecoding/comments/1u1plrq/im_a_recovering_github_copilot_user_from_last/"
+            },
+            {
+              "n": 7,
+              "category": "Coding-agent comparisons are",
+              "title": "Coding-agent comparisons are shifting toward harness, cost, and benchmark fit",
+              "source": "morphllm.com",
+              "relevance": "Intermediate",
+              "summary": "MorphLLM's June comparison ranks coding agents by benchmark, price, and exact setup details, reflecting buyer demand for measurable tradeoffs.",
+              "why": "The market is leaving the best model conversation and moving toward total workflow cost: harness depth, terminal ability, review quality, and billing predictability.",
+              "action": "Keep a small local scorecard for Codex, Claude Code, Cursor, Copilot, and any open-source agent you test: task type, success rate, review time, and cost.",
+              "teacher": "Benchmarks help only when mapped to your task class; a strong terminal benchmark may not predict UI or design judgment.",
+              "link": "https://www.morphllm.com/best-ai-coding-agents-2026"
+            },
+            {
+              "n": 8,
+              "category": "New open-source agent",
+              "title": "New open-source agent maps keep multiplying",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A newer GitHub awesome-list organizes 2026 agent frameworks, protocols, coding agents, browser agents, voice, creative workflows, and self-hosted tools.",
+              "why": "The agent stack is fragmenting fast. Curated maps are becoming necessary just to know which category a tool belongs to.",
+              "action": "Use these lists as discovery, not authority: shortlist three projects, then verify docs, releases, license, and examples before installing anything.",
+              "teacher": "Teach the taxonomy first: model, harness, protocol, memory, tool server, sandbox, evaluator, and UI are different layers.",
+              "link": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News makers",
+              "title": "Hacker News makers are still building their own coding-agent harnesses",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "The Show HN thread for Zot highlights a simple Go-based coding-agent harness and discussion around why builders still want their own control layer.",
+              "why": "Serious users are not waiting for one IDE to win. They are exploring small harnesses that match their stack, review style, and automation comfort.",
+              "action": "Document what your current harness must control: repo context, plan files, command permissions, tests, screenshots, and final review.",
+              "teacher": "A harness is product design for the agent's behavior; it is where taste, safety, and repeatability live.",
+              "link": "https://news.ycombinator.com/item?id=48319524"
+            },
+            {
+              "n": 10,
+              "category": "Public X maker",
+              "title": "Public X maker posts show external agents becoming plug-ins to control planes",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article explains adding Goose as an external agent to Entire alongside Claude Code, Gemini CLI, Codex, Cursor, and Copilot.",
+              "why": "The control-plane pattern is spreading: one workspace coordinates many agents, each with different strengths, instead of one assistant owning the whole job.",
+              "action": "Define when to route work to each agent: planning, code edit, browser task, local command, design critique, or verification.",
+              "teacher": "Multi-agent value comes from routing and verification, not from adding more agents for novelty.",
+              "link": "https://x.com/blackgirlbytes/article/2065145467877372363"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
