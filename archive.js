@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 09:08",
+    "fetchedAt": "2026-06-15 09:13",
     "editions": 138
   },
   "editions": [
     {
       "key": "2026-06-15 09",
-      "label": "2026-06-15 · 08:46",
+      "label": "2026-06-15 · 09:03",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Keep a repo memory file with decisions, conventions, commands, and known pitfalls. Make the agent read it at session start and update it after meaningful changes.",
               "teacher": "Explain memory as an externalized senior engineer habit: write down context once, reuse it every run, and prune it when it becomes stale.",
               "link": "https://x.com/gambletan/article/2065614891092988120"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-15 · 09:03 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Spotify Product Designer",
+              "title": "Spotify Product Designer role asks for AI, automation, and experimentation fluency",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Spotify is hiring a Product Designer for Advertising across campaign management, creative tooling, measurement, and internal platforms, explicitly calling out comfort with AI, automation, and experimentation.",
+              "why": "Ad-tech design is becoming workflow design: the valuable designer can make complex AI-enabled systems usable for marketers, not just make screens pretty.",
+              "action": "Build one portfolio case around an AI-assisted ad workflow: brief intake, creative variants, measurement dashboard, and failure states.",
+              "teacher": "Teach this as product design for AI operations: map the human decision points, then show where automation reduces friction without hiding control.",
+              "link": "https://jobs.lever.co/spotify/fc779380-7e9c-48be-a730-e789fed1879e"
+            },
+            {
+              "n": 2,
+              "category": "Upwork buyer wants",
+              "title": "Upwork buyer wants n8n AI agent automation for InDesign and Illustrator packaging artwork",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A freelance brief asks for n8n-based automation around Adobe InDesign and Illustrator artwork production for packaging.",
+              "why": "This is directly relevant to design production: small companies are willing to pay for AI automation inside familiar creative tools, especially where handoff errors are expensive.",
+              "action": "Package a service offer: Adobe production automation audit, with one sample flow for file naming, proof generation, approval routing, and asset export.",
+              "teacher": "Use it to teach that automation opportunities often live in boring production bottlenecks, not flashy generation demos.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/N8N-Agent-Automation-Expert-Needed-for-InDesign-Packaging-Artwork-Workflow_~022056643996278315489/"
+            },
+            {
+              "n": 3,
+              "category": "Bloom and Wild",
+              "title": "Bloom and Wild Product Designer role expects active use of AI, automation, and tools",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Bloom and Wild is hiring an own-brand packaging and product designer and says the role should actively use AI, automation, and tools.",
+              "why": "Physical product and packaging teams are now asking designers to bring AI-enabled speed and systems thinking into real-world product development.",
+              "action": "Prepare a packaging workflow demo: moodboard to dieline checklist to render mockups to variant comparison, with human taste checks at each gate.",
+              "teacher": "Frame AI as a multiplier for option generation and review, while the designer still owns constraints, taste, materials, and brand fit.",
+              "link": "https://jobs.lever.co/bloomon/ec4c5ed8-151a-40ea-8996-b10614006f8a"
+            },
+            {
+              "n": 4,
+              "category": "GHL plus n8n",
+              "title": "GHL plus n8n automation specialist role targets AI lead response for home services",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A SaaS company serving roofing, HVAC, plumbing, and electrical contractors wants a long-term GHL and n8n automation specialist for an AI-powered lead response platform.",
+              "why": "Local service businesses are a practical market for AI automation: missed leads, slow follow-up, and booking friction have clear ROI.",
+              "action": "Create a reusable demo for one vertical, such as plumbing: form lead to qualification to calendar booking to owner summary.",
+              "teacher": "Teach the business case with simple numbers: response time, booked appointments, no-shows, and hours saved.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/GHL-n8n-Automation-Specialist-Lead-Response-Platform-Long-Term_~022065135887324035781/"
+            },
+            {
+              "n": 5,
+              "category": "Ncontracts AI Automation",
+              "title": "Ncontracts AI Automation and Enablement Specialist turns client services into automation consulting",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Ncontracts is hiring a remote AI Automation and Enablement Specialist in Client Services, with compensation listed around $90K and a remit around enablement.",
+              "why": "AI enablement is becoming a client-facing services role, not only an engineering function. That is a lane for consultants who can translate workflows into adoption.",
+              "action": "Draft a one-page enablement menu: workflow discovery, prompt/playbook library, automation prototype, training session, and ROI follow-up.",
+              "teacher": "Show students how to sell adoption: the deliverable is changed behavior plus a measured process improvement, not just a bot.",
+              "link": "https://jobs.ashbyhq.com/ncontracts/daea5de0-51f0-438a-b4e5-3fff4e5b53cc"
+            },
+            {
+              "n": 6,
+              "category": "DEPT Applied AI",
+              "title": "DEPT Applied AI Creative Technologist role audits creative workflows for automation opportunities",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "DEPT is hiring an Applied AI Creative Technologist to audit copy and design workflows, identify automation opportunities, and accelerate production.",
+              "why": "Agencies are formalizing the exact hybrid profile that sits between creative direction, production, and AI systems.",
+              "action": "Build a portfolio teardown of one creative workflow: where briefs enter, where assets branch, where reviews happen, and where AI can safely assist.",
+              "teacher": "Teach workflow audit as a creative skill: observe the current process, mark repeatable steps, then design safeguards for quality.",
+              "link": "https://job-boards.greenhouse.io/dept/jobs/7917139"
+            },
+            {
+              "n": 7,
+              "category": "Pencil Product Researcher",
+              "title": "Pencil Product Researcher role shows AI creative automation needs user discovery",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Pencil is hiring a Product Researcher for a product centered on creative automation, stressing deep user understanding rather than just asking users what they want.",
+              "why": "AI creative tools still need research talent: adoption depends on finding the real anxieties, review habits, and quality bars of creative teams.",
+              "action": "Interview three designers or marketers about where AI outputs fail their workflow, then convert findings into a product/service checklist.",
+              "teacher": "Use this to teach that AI product research should look for trust blockers, approval loops, and hidden manual cleanup.",
+              "link": "https://jobs.ashbyhq.com/pencil/287a64a7-a18a-4ff4-9c29-c0f2626e00bc"
+            },
+            {
+              "n": 8,
+              "category": "PhonePe AI Creative",
+              "title": "PhonePe AI Creative Lead role includes prompt libraries, workflow templates, N8N, Zapier, Make, and training 100 marketers",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "PhonePe is hiring an AI Creative Lead to manage a marketing AI stack, maintain prompt libraries and workflow templates, build N8N/Zapier/Make workflows, and train over 100 marketers.",
+              "why": "This is the playbook role: companies need someone to standardize AI usage so creative output is faster, safer, and more consistent.",
+              "action": "Start a personal AI creative ops playbook with prompts, review rules, tool choices, brand-safety checks, and reusable workflow diagrams.",
+              "teacher": "Teach prompt libraries as operations assets: versioned, tested, and tied to a specific marketing job.",
+              "link": "https://job-boards.greenhouse.io/phonepe/jobs/7650503003"
+            },
+            {
+              "n": 9,
+              "category": "Reddit discussion says",
+              "title": "Reddit discussion says n8n is useful, but Python or TypeScript matters when automation needs control",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit AI agents discussion argues n8n can be useful, but warns that costs and limitations push serious builders toward Python, TypeScript, Claude Code, and MCP-style workflows.",
+              "why": "The market signal is clear: no-code is an entry point, but durable freelance advantage comes from understanding orchestration, APIs, and code-level escape hatches.",
+              "action": "For every n8n demo, write the equivalent API or script fallback for the one step most likely to break or become expensive.",
+              "teacher": "Teach tool progression: no-code for discovery, code for reliability, and AI agents for judgment-heavy steps.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1pnxs9e/is_it_still_worth_it_to_start_an_ai_automation/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: AI automation builders are positioning through LinkedIn, Upwork, and niche proof instead of generic portfolios",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A recent public X post about getting AI automation work emphasizes positioning in the AI automation niche, with signals around LinkedIn, Upwork, solopreneur work, and proof of execution.",
+              "why": "The useful signal is distribution: buyers need to see a narrow promise and evidence, not a broad I know AI claim.",
+              "action": "Write one narrow offer and publish one proof post: problem, workflow diagram, before/after metric, and the exact stack used.",
+              "teacher": "Teach career building as a visibility system: niche, proof, repeated examples, and a clear buyer path.",
+              "link": "https://x.com/AutomationKing0/status/2064972317906681998/photo/1"
             }
           ]
         }
