@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 11:52",
-    "editions": 138
+    "fetchedAt": "2026-06-15 11:56",
+    "editions": 139
   },
   "editions": [
+    {
+      "key": "2026-06-15 12",
+      "label": "2026-06-15 · 11:46",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-15 · 11:46 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Google Android CLI",
+              "title": "Google Android CLI makes mobile app work more agent-ready",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "Google released Android CLI so coding agents can interact with Android development through a command-line surface instead of relying only on IDE UI flows.",
+              "why": "Mobile is becoming a first-class target for agentic development, which matters because many agent stacks still handle web apps better than app stores, emulators, and device workflows.",
+              "action": "For any Android-heavy build, test whether CLI-driven setup, emulator checks, and Playwright-style validation can be scripted before giving the agent a feature ticket.",
+              "teacher": "Teach this as the shift from AI writing code to AI operating a platform: expose stable tools first, then let agents plan around them.",
+              "link": "https://techcrunch.com/2026/05/19/agentic-app-coding-gets-an-upgrade-with-googles-release-of-android-cli/"
+            },
+            {
+              "n": 2,
+              "category": "OpenClaw vulnerability coverage",
+              "title": "OpenClaw vulnerability coverage turns agent security into a board-level signal",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar highlighted an OpenClaw WebSocket hijack case as an example of how local autonomous agents can become high-value targets when they hold broad workstation access.",
+              "why": "The market is learning that agent adoption creates identity, permission, and endpoint-risk problems, not just prompt-quality problems.",
+              "action": "Inventory every local agent with network access, browser control, file permissions, and stored credentials; patch quickly and treat each agent like a privileged app.",
+              "teacher": "Use this to explain shadow AI: an agent is not a note-taking plugin once it can read files, browse, run commands, or act across accounts.",
+              "link": "https://www.techradar.com/pro/what-the-openclaw-vulnerability-reveals-about-the-future-of-agentic-ai-security"
+            },
+            {
+              "n": 3,
+              "category": "Cohere releases North",
+              "title": "Cohere releases North Mini Code as an open agentic coding model",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "CohereLabs released North Mini Code, a 30B-parameter MoE model with about 3B active parameters, under Apache 2.0 for agentic software engineering tasks.",
+              "why": "Open coding models are pushing toward cheaper, specialized agent loops instead of always routing every step to a large frontier model.",
+              "action": "Benchmark it on small repo-maintenance tasks: test editing accuracy, command use, latency, and cost against your current light-model tier.",
+              "teacher": "Frame this as model routing: reserve expensive reasoning for planning and verification, then use specialized models for routine implementation passes.",
+              "link": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
+            },
+            {
+              "n": 4,
+              "category": "Hugging Face maker",
+              "title": "Hugging Face maker chains Spaces into a 3D Paris gallery agent",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "A Hugging Face community post shows an agent building a 3D Paris gallery by chaining multiple Spaces rather than using a single monolithic creative tool.",
+              "why": "Creative AI workflows are becoming composable: generation, scene assembly, and presentation can be linked as small tools the agent operates.",
+              "action": "Prototype a two-step visual pipeline: one tool generates or cleans assets, another arranges them into a scene, with saved intermediate files for review.",
+              "teacher": "The lesson for makers is orchestration beats magic prompts: reliable outputs come from chaining narrow tools with visible checkpoints.",
+              "link": "https://huggingface.co/blog/mishig/spaces-agents-md"
+            },
+            {
+              "n": 5,
+              "category": "Agent Reach packages",
+              "title": "Agent Reach packages internet access setup for coding agents",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Agent Reach is a GitHub-hosted installer and configuration guide that tells agents like Claude Code, Cursor, Windsurf, and OpenClaw how to set up internet access.",
+              "why": "Makers are packaging environment bootstrap as agent-readable instructions, which reduces repeated setup friction and turns local tooling into reusable skills.",
+              "action": "Create small install/update instructions for your own recurring tools so the agent can self-check prerequisites before asking for help.",
+              "teacher": "Show this as a pattern: if a human can follow a setup runbook, an agent can often follow it too, provided the commands and success checks are explicit.",
+              "link": "https://github.com/Panniantong/Agent-Reach/blob/main/docs/README_en.md"
+            },
+            {
+              "n": 6,
+              "category": "ComfyUI Pixaroma adds",
+              "title": "ComfyUI Pixaroma adds visual layer composition inside node workflows",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Pixaroma provides ComfyUI nodes for arranging, scaling, rotating, blurring, erasing, and background-removing layered image elements in a visual editor.",
+              "why": "ComfyUI is moving closer to a production design surface, not just a generation graph, which matters for product shots, booth mockups, and controlled revisions.",
+              "action": "Test it for contact-sheet cleanup or render comping where the subject must stay fixed but background, blur, and placement need fast iteration.",
+              "teacher": "Teach this as non-destructive AI compositing: preserve layers and controls so revisions do not require regenerating the whole image.",
+              "link": "https://github.com/pixaroma/ComfyUI-Pixaroma"
+            },
+            {
+              "n": 7,
+              "category": "UniRig points to",
+              "title": "UniRig points to automated rigging as the next 3D bottleneck reducer",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "UniRig is an open implementation for automatic diverse skeleton rigging, with reported gains in skinning accuracy and bone prediction.",
+              "why": "Text-to-3D and image-to-3D are useful only when assets can be animated, posed, or adapted; rigging automation closes part of that production gap.",
+              "action": "For character or mascot workflows, evaluate generated meshes against rigging readiness: topology, skeleton quality, deformation, and export format.",
+              "teacher": "Use this to separate asset generation from asset usability: a model is not production-ready until it can be rigged, edited, textured, and exported cleanly.",
+              "link": "https://github.com/VAST-AI-Research/UniRig"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News makers",
+              "title": "Hacker News makers still want quiet background automation",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "In an HN thread about what should be automated in 2026, commenters point to demand for agents that quietly handle recurring work without fragile setup.",
+              "why": "The practical market signal is not only smarter agents; it is lower-maintenance automation that saves attention and does not break every week.",
+              "action": "Pick one recurring admin or build task and design it as a low-drama loop: trigger, permissions, logs, success criteria, and fallback.",
+              "teacher": "This is a good way to explain product fit for agents: the winning workflow removes a repeated annoyance, not merely a step in a demo.",
+              "link": "https://news.ycombinator.com/item?id=48045237"
+            },
+            {
+              "n": 9,
+              "category": "Boris Cherny says",
+              "title": "Boris Cherny says Claude Code now supports nested subagents",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from Boris Cherny says nested subagent support landed in Claude Code, enabling experiments where agents kick off other agents.",
+              "why": "Nested agents can scale research and implementation, but they also raise cost, coordination, and runaway-task risks that teams must manage.",
+              "action": "If testing nested agents, add hard caps: maximum depth, maximum parallel children, budget alarms, and a required summary from every child run.",
+              "teacher": "Teach nested agents like delegation in a studio: useful only when the manager defines roles, limits, and review gates.",
+              "link": "https://x.com/bcherny/status/2064327225504403752"
+            },
+            {
+              "n": 10,
+              "category": "Reddit vibe coders",
+              "title": "Reddit vibe coders complain that AI coding is getting expensive",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit vibe-coding discussion centers on users hitting higher AI coding costs and looking for cheaper combinations of editors, CLIs, and models.",
+              "why": "Pricing pressure is shaping tool choice as much as raw capability; makers are optimizing stacks around monthly budget, limits, and predictable throughput.",
+              "action": "Track cost per completed task, not just subscription price: include retries, context resets, failed runs, and review time.",
+              "teacher": "Use this to explain the real unit economics of AI coding: the cheapest model is not cheapest if it burns time, tokens, and trust.",
+              "link": "https://www.reddit.com/r/vibecoding/comments/1tqwxxb/ai_coding_is_getting_expensive_and_cannot_afford/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-15 09",
       "label": "2026-06-15 · 09:03",
