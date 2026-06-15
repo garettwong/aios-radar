@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 12:08",
+    "fetchedAt": "2026-06-15 12:14",
     "editions": 139
   },
   "editions": [
     {
       "key": "2026-06-15 12",
-      "label": "2026-06-15 · 11:46",
+      "label": "2026-06-15 · 12:05",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Track cost per completed task, not just subscription price: include retries, context resets, failed runs, and review time.",
               "teacher": "Use this to explain the real unit economics of AI coding: the cheapest model is not cheapest if it burns time, tokens, and trust.",
               "link": "https://www.reddit.com/r/vibecoding/comments/1tqwxxb/ai_coding_is_getting_expensive_and_cannot_afford/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-15 · 12:05 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "10xTeam DevOps Lead",
+              "title": "10xTeam DevOps Lead AI Trainer turns infrastructure automation into paid model-training work",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is hiring freelance DevOps leads for 8-20 hours per week to review and refine AI output around CI/CD, monitoring, deployments, and infrastructure automation.",
+              "why": "Senior operators can monetize real production judgment without taking a full-time role.",
+              "action": "Package a short portfolio note showing before/after CI/CD, monitoring, or deployment decisions an AI often gets wrong.",
+              "teacher": "This is a good lesson niche: teach AI-assisted DevOps review using incident examples, not generic prompt tips.",
+              "link": "https://jobs.ashbyhq.com/10xteam/1318bb44-d731-4b83-bf7a-90914097db8d"
+            },
+            {
+              "n": 2,
+              "category": "R37 Lab Product",
+              "title": "R37 Lab Product Engineer role makes complex automation feel simple for customers",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "R37 Lab wants a product engineer who can partner with customers, design, and research to understand workflows and ship products that simplify complex automation.",
+              "why": "The opportunity is not only building agents; it is translating messy real workflows into clear tools people trust.",
+              "action": "Create one case study around a confusing client workflow and show the UI/state model that makes it manageable.",
+              "teacher": "Use this as a class example for “automation UX”: mapping exceptions, status, and handoff moments.",
+              "link": "https://jobs.ashbyhq.com/phare-r1-r37/2173d43c-f816-49bb-8bdc-5afa0956fb59"
+            },
+            {
+              "n": 3,
+              "category": "Upwork retail buyer",
+              "title": "Upwork retail buyer wants n8n, Odoo, LLM, and AI-agent integration",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A retail client is looking for an AI engineer to connect conversational assistants, n8n, Odoo, LLMs, and workflow automation into production-ready operations.",
+              "why": "Small retailers are moving past chat demos toward business-system integration.",
+              "action": "Build a demo flow: product inquiry -> Odoo lookup -> draft customer reply -> human approval -> CRM note.",
+              "teacher": "Show students why business data models matter more than prompt novelty in paid automation work.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Engineer-n8n-Odoo-LLMs-Agents_~022065700286793883790/"
+            },
+            {
+              "n": 4,
+              "category": "tvScientific creative-tech PM",
+              "title": "tvScientific creative-tech PM role treats generative video and image as a core advertising primitive",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "tvScientific/Pinterest is hiring a Group Product Manager for creative tech to turn brand assets into TV-ready commercials, generate variants, and feed creative signals into optimization models.",
+              "why": "Creative direction, performance data, and AI generation are merging into one product lane.",
+              "action": "Prepare a mini spec for AI-assisted ad variant generation with quality gates and brand constraints.",
+              "teacher": "Great example for teaching designers how taste, validation, and metrics sit together in AI creative systems.",
+              "link": "https://job-boards.greenhouse.io/pinterest/jobs/7890195"
+            },
+            {
+              "n": 5,
+              "category": "Upwork client wants",
+              "title": "Upwork client wants n8n plus OpenAI content pack generation with human review",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A small business wants one topic turned into a blog post, LinkedIn posts, X posts, Facebook post, and newsletter section, with drafts landing in an inbox before publishing.",
+              "why": "Clients are buying governed content systems, not just one-off AI copy.",
+              "action": "Offer a fixed-scope “review-first content engine” with platform-specific outputs and approval logging.",
+              "teacher": "Use it to teach workflow design: generation, channel adaptation, approval, publishing, analytics.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Build-content-generation-and-auto-publishing-system-n8n-OpenAI_~022065469106489846525/"
+            },
+            {
+              "n": 6,
+              "category": "10xTeam Brand Specialist",
+              "title": "10xTeam Brand Specialist AI Trainer values senior creative judgment as training data",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "10xTeam is seeking senior brand specialists, strategists, or creatives to help AI better understand branding work.",
+              "why": "Brand judgment is becoming a paid AI-training niche for people who can explain taste and positioning clearly.",
+              "action": "Write a one-page “brand critique rubric” covering consistency, audience fit, visual tone, and proof.",
+              "teacher": "Have learners compare AI brand outputs against a rubric so critique becomes teachable, not subjective noise.",
+              "link": "https://jobs.ashbyhq.com/10xteam/2c4ff544-9207-4034-b5f6-21ca29ff9821"
+            },
+            {
+              "n": 7,
+              "category": "10xTeam Strategy Consultant",
+              "title": "10xTeam Strategy Consultant AI Trainer shows consulting frameworks are becoming model-training inventory",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "A freelance strategy consultant role asks experts to improve how AI models reason through strategy work.",
+              "why": "Consulting skill is being unbundled into frameworks, review tasks, and domain judgment AI labs can buy.",
+              "action": "Turn one repeatable consulting framework into examples: bad AI answer, corrected answer, and decision rationale.",
+              "teacher": "This is a practical bridge between traditional consulting education and AI evaluation work.",
+              "link": "https://jobs.ashbyhq.com/10xteam/07e8767c-cb11-41e2-9e5c-10bc7dd9e5a8"
+            },
+            {
+              "n": 8,
+              "category": "Verdigris Head of",
+              "title": "Verdigris Head of Marketing role asks for an AI-native marketing system from scratch",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Verdigris wants a marketing leader to build an AI-native system for positioning, proof, sales enablement, and demand generation from a single source of truth.",
+              "why": "AI-native marketing is becoming an operating-system problem, not just content volume.",
+              "action": "Prototype a “single-source marketing brain”: claims, proof, ICP notes, offers, assets, and approval rules.",
+              "teacher": "Use this as a lesson on source-of-truth design for brand, sales, and content automation.",
+              "link": "https://jobs.lever.co/verdigris/956236dd-733f-4abc-9a63-67b459c96e7d"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n discussion",
+              "title": "Reddit n8n discussion says AI automation value still depends on real workflows and basic coding",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n thread argues clients still need workflows that move data, trigger actions, and handle errors, and that basic Python expands what builders can deliver.",
+              "why": "This is useful ground truth against shallow “no-code agency” hype.",
+              "action": "Position services around dependable workflow outcomes: validation, APIs, error handling, and handoff dashboards.",
+              "teacher": "Teach a simple rule: if the system cannot recover from bad input or failed APIs, it is a demo, not a service.",
+              "link": "https://www.reddit.com/r/n8n/comments/1t9e1r3/starting_ai_automation_as_a_medical_student/"
+            },
+            {
+              "n": 10,
+              "category": "BCG says 50-55%",
+              "title": "BCG says 50-55% of US jobs will be reshaped by AI within two to three years",
+              "source": "bcg.com",
+              "relevance": "Intermediate",
+              "summary": "BCG argues that many roles will remain but face new expectations for output, upskilling, reskilling, and redesigned career ladders.",
+              "why": "The practical opportunity is helping people and teams redesign their actual work, not selling replacement fear.",
+              "action": "Create a small “AI work redesign audit” offer: task map, automation candidates, training plan, and risk notes.",
+              "teacher": "This is strong framing for workshops: AI literacy should be tied to job redesign and measurable work outputs.",
+              "link": "https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces"
             }
           ]
         }
