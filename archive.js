@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-15 08:53",
-    "editions": 137
+    "fetchedAt": "2026-06-15 08:58",
+    "editions": 138
   },
   "editions": [
+    {
+      "key": "2026-06-15 09",
+      "label": "2026-06-15 · 08:46",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-15 · 08:46 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub gives Copilot",
+              "title": "GitHub gives Copilot larger context windows and configurable reasoning",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub expanded Copilot with larger context windows and more configurable reasoning controls, continuing the move from single-turn chat into managed agent sessions.",
+              "why": "Longer context and adjustable reasoning make coding agents more useful for big repositories, but they also make cost and review discipline more important.",
+              "action": "For any large repo workflow, create a before/after checklist: context sources loaded, commands run, files changed, tests run, and estimated cost.",
+              "teacher": "Teach juniors that context is a budget, not a dump. Bigger windows help only when the agent is given the right files, constraints, and validation gates.",
+              "link": "https://github.blog/changelog/2026-06-04-larger-context-windows-and-configurable-reasoning-for-copilot/"
+            },
+            {
+              "n": 2,
+              "category": "Stensul ships MCP",
+              "title": "Stensul ships MCP so marketing agents can create inside brand governance",
+              "source": "stensul.com",
+              "relevance": "Intermediate",
+              "summary": "Stensul says its June release adds an MCP layer so agents can create email and marketing assets inside existing templates, rules, compliance checks, and approvals.",
+              "why": "This is the practical direction for creator workflows: agents will not just generate assets, they will enter controlled production systems.",
+              "action": "For client design work, map which rules an agent must obey: brand fonts, layout templates, legal copy, approval status, and export format.",
+              "teacher": "Position MCP as a bridge into governed tools. The value is less about magic prompts and more about letting agents act where the real constraints live.",
+              "link": "https://stensul.com/blog/june-product-release/"
+            },
+            {
+              "n": 3,
+              "category": "Coinbase for Agents",
+              "title": "Coinbase for Agents turns trading and payments into an MCP and CLI workflow",
+              "source": "coinbase.com",
+              "relevance": "Intermediate",
+              "summary": "Coinbase launched Coinbase for Agents, connecting an AI agent to a Coinbase account for trading, payments, and workflows within user-controlled limits.",
+              "why": "Agents are crossing from information work into money movement. That raises the bar for permissions, spending limits, audit trails, and fail-safes.",
+              "action": "Do not give any payment-capable agent broad authority. Start with read-only mode, hard caps, allowlists, and a manual approval step for transfers.",
+              "teacher": "Use this as the clean example for agency: when an agent can move money, the product is really an authorization system with an AI interface.",
+              "link": "https://www.coinbase.com/blog/coinbase-for-agents"
+            },
+            {
+              "n": 4,
+              "category": "Coinbase CEO points",
+              "title": "Coinbase CEO points to model routing as the next AI cost lever",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports Brian Armstrong saying Coinbase is routing prompts to cheaper models where appropriate to keep costs roughly flat while token use grows.",
+              "why": "The market signal is clear: frontier-only AI stacks are becoming too expensive. The winners will route work by difficulty, risk, and required quality.",
+              "action": "Add a simple model router policy: cheap model for extraction and summaries, strong model for architecture and final review, human review for external actions.",
+              "teacher": "Teach teams to separate task importance from task difficulty. Expensive models should be reserved for work where failure is costly or reasoning depth matters.",
+              "link": "https://www.businessinsider.com/coinbase-ceo-ai-cost-savings-strategy-token-costs-2026-6"
+            },
+            {
+              "n": 5,
+              "category": "Coinbase AgentKit keeps",
+              "title": "Coinbase AgentKit keeps wallets and onchain actions framework-agnostic",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Coinbase AgentKit is an open GitHub project for giving AI agents wallets and onchain interactions across frameworks and wallet setups.",
+              "why": "Open-source payment and wallet kits make agent commerce easier to prototype, which means more makers will test paid agents, subscriptions, and machine-to-machine payments.",
+              "action": "If experimenting, build a toy agent with testnet funds only and log every tool call, transaction request, and approval decision.",
+              "teacher": "This is a good lesson in capability separation: the LLM should propose actions, but the wallet layer must enforce permissions and limits.",
+              "link": "https://github.com/coinbase/agentkit"
+            },
+            {
+              "n": 6,
+              "category": "Runway AIFF puts",
+              "title": "Runway AIFF puts AI film making into a serious creator market frame",
+              "source": "aiff.runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway AIFF 2026 lists June programming and more than $135k across tracks, with partners including Lionsgate, Tribeca Festival, The Gotham, Monks, Adobe, and Roku.",
+              "why": "AI video is becoming a professional competition and distribution lane, not only a demo feed. That matters for makers who can package workflows into finished stories.",
+              "action": "For any AI video test, define a festival-style deliverable: title, logline, 30-60 second cut, source asset list, and what was AI-assisted.",
+              "teacher": "Teach creators that prompt craft is only one layer. Selection, pacing, edit continuity, audio, and rights documentation are what make the output usable.",
+              "link": "https://aiff.runwayml.com/ticket-terms"
+            },
+            {
+              "n": 7,
+              "category": "AI 3D generator",
+              "title": "AI 3D generator comparisons are moving toward production-readiness checks",
+              "source": "rapiddirect.com",
+              "relevance": "Intermediate",
+              "summary": "RapidDirect compares 2026 AI 3D model generators by practical concerns such as output accuracy, speed, exports, licensing, prototyping, and e-commerce use.",
+              "why": "The 3D AI conversation is maturing from novelty meshes to whether assets can enter CAD, product, game, or render pipelines without heavy cleanup.",
+              "action": "When testing text-to-3D or image-to-3D, score topology, UVs, scale, material slots, export formats, and manual cleanup time.",
+              "teacher": "For 3D artists, the teachable frame is pipeline fit. A model that looks good in a viewer is not automatically usable in Blender, Substance, CAD, or production renders.",
+              "link": "https://www.rapiddirect.com/blog/best-8-ai-3d-model-generators/"
+            },
+            {
+              "n": 8,
+              "category": "HN makers are",
+              "title": "HN makers are adding validation scripts because agents can code faster than they can verify",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "In today's Ask HN thread, one maker describes building reusable validation scripts after noticing that AI coding made per-project checks a repeated bottleneck.",
+              "why": "This is the ground-level shift: agent speed creates verification debt. Makers who build reusable checks get more value than those who only write longer prompts.",
+              "action": "Create a project-local validate command that runs formatting, tests, smoke checks, and a short artifact diff before any agent work is accepted.",
+              "teacher": "Teach that agentic coding is loop design: prompt, change, validate, inspect, repeat. The validation loop is the product quality engine.",
+              "link": "https://news.ycombinator.com/item?id=48528779"
+            },
+            {
+              "n": 9,
+              "category": "Reddit browser-agent discussion",
+              "title": "Reddit browser-agent discussion favors deterministic automation for repeatable work",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit AI agents thread on browser agents includes the practical view that repeatable login/click flows are often better handled by Playwright, Python, or RPA, with AI helping build the script.",
+              "why": "This is a useful maker signal: not every browser task should be delegated to a visual agent. Deterministic scripts still win for stable workflows.",
+              "action": "For browser automation, classify the job first: stable path equals script; changing site or fuzzy judgment equals agent with screenshots and guardrails.",
+              "teacher": "Teach the hybrid pattern: use AI to write and repair deterministic automation, then reserve agent judgment for exceptions, extraction, and ambiguous pages.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1s2crma/best_web_browser_agent_in_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Public X maker",
+              "title": "Public X maker posts keep circling around persistent memory for Claude Code agents",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X article frames the pain plainly: every Claude Code session starts blank, so makers are building persistent memory layers for names, conventions, and decisions.",
+              "why": "Memory is becoming a product surface for coding agents. The market is moving from one-off sessions toward durable project context and reusable operating habits.",
+              "action": "Keep a repo memory file with decisions, conventions, commands, and known pitfalls. Make the agent read it at session start and update it after meaningful changes.",
+              "teacher": "Explain memory as an externalized senior engineer habit: write down context once, reuse it every run, and prune it when it becomes stale.",
+              "link": "https://x.com/gambletan/article/2065614891092988120"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-15 06",
       "label": "2026-06-15 · 06:00",
