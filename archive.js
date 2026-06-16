@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 03:19",
+    "fetchedAt": "2026-06-17 03:22",
     "editions": 146
   },
   "editions": [
     {
       "key": "2026-06-17 03",
-      "label": "2026-06-17 · 03:06",
+      "label": "2026-06-17 · 03:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Try the same loop manually before adding tooling: one task per session, one validation command, one commit, then reset context.",
               "teacher": "This is a concrete way to teach context management without abstract theory.",
               "link": "https://www.reddit.com/r/ClaudeAI/comments/1thpfxg/ralphterm_a_ralphstyle_loop_for_claude_code_with/"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-17 · 03:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Google Cloud highlights",
+              "title": "Google Cloud highlights ComfyUI as a production media-automation stack",
+              "source": "cloud.google.com",
+              "relevance": "Intermediate",
+              "summary": "Google Cloud's real-world gen AI use-case page says ComfyUI helps creators prototype and automate media generation with pre-set models, 20,000+ extensions, and integrations around Gemini and Veo.",
+              "why": "This validates ComfyUI-style workflow design as more than hobby tooling; cloud providers are positioning it as creator infrastructure.",
+              "action": "Package a small ComfyUI audit offer for studios: workflow map, model/node dependency list, reproducible preset pack, and cloud/local cost estimate.",
+              "teacher": "Teach clients the difference between one-off prompting and node-based pipelines: repeatability, versioning, and handoff are the value.",
+              "link": "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders"
+            },
+            {
+              "n": 2,
+              "category": "Runway Academy teaches",
+              "title": "Runway Academy teaches custom AI pipelines for creative workflows",
+              "source": "academy.runwayml.com",
+              "relevance": "Intermediate",
+              "summary": "Runway Academy now includes an advanced Building Custom Workflows track for automated systems covering character generation, storyboarding, and multi-step creative processes.",
+              "why": "AI-video work is moving from tool demos to teachable production systems, which creates demand for workflow instructors and studio enablement.",
+              "action": "Build a one-page curriculum for AI previsualization: brief intake, reference lock, storyboard, shot variants, edit notes, final delivery.",
+              "teacher": "Students need pipeline thinking: how to preserve character, scene, motion intent, and revision notes across multiple generations.",
+              "link": "https://academy.runwayml.com/"
+            },
+            {
+              "n": 3,
+              "category": "Strawberry.me Creator Marketing",
+              "title": "Strawberry.me Creator Marketing role asks for AI automation in creator workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Strawberry.me is hiring Creator Marketing & Growth help at $20-$35/hour and explicitly asks for comfort using AI tools to build automation, plus Canva and creator outreach.",
+              "why": "Creator ops is becoming a practical lane for lightweight AI systems, not only content creation.",
+              "action": "Offer creators a workflow kit: lead list, outreach variants, campaign tracker, Canva asset queue, and weekly performance summary.",
+              "teacher": "This is a good beginner case study because the workflow is visible, measurable, and close to revenue.",
+              "link": "https://job-boards.greenhouse.io/strawberryme/jobs/5226935008"
+            },
+            {
+              "n": 4,
+              "category": "Databricks GTM Enablement",
+              "title": "Databricks GTM Enablement role turns AI role-plays and agents into field training",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Databricks wants a Lead GTM Enablement & Scale Architect to build AI-powered tools such as instant-answer agents, pitch-practice role-plays, and automated competitive briefs.",
+              "why": "Sales enablement is becoming an AI product surface: training, objection handling, and competitive intelligence are automatable services.",
+              "action": "Prototype a sales enablement agent for one vertical: product facts, competitor matrix, role-play prompts, and a scorecard after each practice call.",
+              "teacher": "Teach the human loop: source-backed answers, role-play scoring, and update cadence matter more than flashy chat UI.",
+              "link": "https://job-boards.greenhouse.io/databricks/jobs/8548502002"
+            },
+            {
+              "n": 5,
+              "category": "Degreed Senior Creative",
+              "title": "Degreed Senior Creative Lead role wants responsible AI across design and motion",
+              "source": "boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Degreed lists AI use across concepting, image generation, design exploration, video, animation, presentation design, and workflow automation for a senior creative lead.",
+              "why": "Creative leadership is being redefined around taste plus systems: faster output, reuse, brand safety, and responsible standards.",
+              "action": "Create an AI design-governance template: allowed tools, source/reference rules, finish-pass checklist, originality notes, and client disclosure language.",
+              "teacher": "The teachable skill is not just prompting; it is judging whether generated work matches brand, hierarchy, and production intent.",
+              "link": "https://boards.greenhouse.io/degreed/jobs/6019066004"
+            },
+            {
+              "n": 6,
+              "category": "Iterable AI IT",
+              "title": "Iterable AI IT role shows demand for internal AI integration builders",
+              "source": "boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Iterable's Senior IT Systems Developer (AI) role focuses on connecting AI platforms to systems such as Salesforce, Snowflake, and ADP so teams can use AI safely and effectively.",
+              "why": "Many companies now need internal AI plumbers: permissions, connectors, logging, and business-system glue.",
+              "action": "Position an internal-AI integration audit: list business systems, data sensitivity, automation candidates, approval gates, and quick-win connectors.",
+              "teacher": "This is a strong class module for non-developers: AI value often appears when existing systems are connected cleanly.",
+              "link": "https://boards.greenhouse.io/iterable/jobs/7984113"
+            },
+            {
+              "n": 7,
+              "category": "Upwork buyer wants",
+              "title": "Upwork buyer wants a ComfyUI media engineer for image, video, and voice endpoints",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh Upwork project seeks ComfyUI on Ubuntu/NVIDIA Docker, SDXL/Flux image generation, LTXVideo/CogVideoX video, FastAPI endpoints, ElevenLabs voiceover, and sample outputs at $30-$60/hour.",
+              "why": "Clients are asking for deployable media systems, not isolated images. The deliverable is infrastructure plus proof outputs.",
+              "action": "Build a reusable demo repo: Docker Compose, /generate/image, /generate/video, /generate/voiceover, README, and three sample outputs.",
+              "teacher": "Show students how to sell the full pipeline: install, validation, API, samples, documentation, and maintenance.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Media-Engineer-for-Automated-Media-Generation_~022066934496381251258/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork service firm",
+              "title": "Upwork service firm wants an AI partner to productise expertise into SaaS",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A 14-person German professional-services firm wants a long-term AI architect to turn internal frameworks, decks, Notion, Drive, and email knowledge into a productized Claude/Supabase system.",
+              "why": "Consulting firms have messy expertise trapped in people and documents; turning that into reliable AI products is a high-value service lane.",
+              "action": "Offer an Expertise-to-System sprint: inventory knowledge, extract reusable patterns, define source authority, build a beta assistant, and set evaluation cases.",
+              "teacher": "The core lesson is source authority. A productized expert system must know which deck, email, or note wins when sources conflict.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Long-Term-Partner-Architect-Builder-Service-Firm-Productising-Expertise-into-SaaS_~022066523916180179081/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit founders question",
+              "title": "Reddit founders question whether AI automation agencies are saturated",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Reddit discussion argues that basic automation products feel saturated, but sales ability, client support, and real implementation still matter because customers rarely understand tooling differences.",
+              "why": "This is useful market pain: buyers do not pay for n8n or Claude by name; they pay for a trusted operator who solves a business problem.",
+              "action": "Avoid selling generic AI automation. Pick one painful workflow, one buyer, one measurable outcome, and one maintenance plan.",
+              "teacher": "Use this as a warning slide: technical skill without client discovery becomes a commodity quickly.",
+              "link": "https://www.reddit.com/r/AIStartupAutomation/comments/1sy074i/are_ai_automation_agencies_still_a_good/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: ComfyUI is showing up inside mainstream AI media events",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post from an AI media conference says a ComfyUI tutorial appeared right after the keynote, with strong excitement around it.",
+              "why": "Conference programming is a weak but useful adoption signal: artists and media teams are looking for practical workflow education.",
+              "action": "Make a short ComfyUI-for-art-directors workshop: node basics, reference locking, quality control, render queue, and client revision handling.",
+              "teacher": "Keep it tool-light at first. Creative buyers need to understand controllability and review loops before node complexity.",
+              "link": "https://x.com/yoland_yan/status/2059731937116463433"
             }
           ]
         }
