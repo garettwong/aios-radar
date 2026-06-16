@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 03:16",
-    "editions": 145
+    "fetchedAt": "2026-06-17 03:19",
+    "editions": 146
   },
   "editions": [
+    {
+      "key": "2026-06-17 03",
+      "label": "2026-06-17 · 03:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-17 · 03:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub Code Quality",
+              "title": "GitHub Code Quality turns AI code review into a metered quality budget",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says Code Quality becomes generally available on July 20, 2026, with $10 per active committer per month plus usage billing for AI-powered work such as Copilot code review, AI-assisted detection, and Copilot Autofix.",
+              "why": "AI review is becoming a governed line item, not a free assistant feature hidden inside the IDE.",
+              "action": "Start tracking which repos actually need AI review and autofix before enabling org-wide quality gates.",
+              "teacher": "Show this as the shift from AI helps code to AI quality control has pricing, policy, and reporting.",
+              "link": "https://github.blog/changelog/2026-06-16-github-code-quality-generally-available-july-20-2026/"
+            },
+            {
+              "n": 2,
+              "category": "Google sets the",
+              "title": "Google sets the Gemini Code Assist consumer shutdown deadline",
+              "source": "developers.google.com",
+              "relevance": "Intermediate",
+              "summary": "Google says Gemini Code Assist IDE extensions and Gemini CLI stop serving requests for Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers on June 18, 2026; Standard and Enterprise are not affected.",
+              "why": "Coding-agent platforms are consolidating quickly, and consumer lanes can disappear with short migration windows.",
+              "action": "Keep coding-agent workflows portable: store prompts, plans, and project rules in repo files instead of inside one vendor UI.",
+              "teacher": "This is a good market-signal example for dependency risk in AI tooling.",
+              "link": "https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals"
+            },
+            {
+              "n": 3,
+              "category": "NewCore emerges with",
+              "title": "NewCore emerges with $66M for AI-agent identity governance",
+              "source": "techstartups.com",
+              "relevance": "Intermediate",
+              "summary": "TechStartups reports NewCore emerged from stealth with $66M to build identity infrastructure for agentic enterprises, including discovery, permissions, audit trails, and phishing-resistant authentication for agents.",
+              "why": "Agent identity is becoming a serious security category because agents need access to the same systems humans and service accounts use.",
+              "action": "For any internal agent project, write down who is the agent, what can it touch, and where is the audit trail before scaling.",
+              "teacher": "Compare agent identity to employee onboarding: access should be provisioned, limited, reviewed, and revoked.",
+              "link": "https://techstartups.com/2026/06/16/top-tech-news-today-june-16-2026/"
+            },
+            {
+              "n": 4,
+              "category": "KISS Sorcar claims",
+              "title": "KISS Sorcar claims a local open-source coding-agent benchmark lead",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The KISS AI GitHub repo presents KISS Sorcar as a free, local, bring-your-own-key coding and general-purpose agent, claiming 62.2% on Terminal Bench 2.0 versus Cursor agent at 61.7% and Claude Code at 58%.",
+              "why": "Open-source coding agents are competing on workflow, privacy, and benchmark narratives, not only on model access.",
+              "action": "Keep a small evaluation harness for your own tasks; public benchmark claims are useful leads, not buying decisions.",
+              "teacher": "Use this to explain why agent wrappers are becoming products: the harness, memory, UI, and permissions shape outcomes.",
+              "link": "https://github.com/ksenxx/kiss_ai"
+            },
+            {
+              "n": 5,
+              "category": "GitHub Agentic Workflows",
+              "title": "GitHub Agentic Workflows adds cost and failure diagnostics",
+              "source": "github.github.com",
+              "relevance": "Intermediate",
+              "summary": "The June 15 GitHub Agentic Workflows update highlights new failure diagnostics, AI-credit guardrail advice, token-cost optimizations, cross-repo allowlists, and generated linters for reliability.",
+              "why": "Agent platforms are maturing around observability, cost control, and guardrails rather than only generation quality.",
+              "action": "Add failure summaries, token-cost notes, and permission-denial context to every serious agent automation.",
+              "teacher": "Use this to teach that production agents need logs, budgets, and failure analysis just like production services.",
+              "link": "https://github.github.com/gh-aw/blog/2026-06-15-weekly-update/"
+            },
+            {
+              "n": 6,
+              "category": "Adobe Lightroom adds",
+              "title": "Adobe Lightroom adds photo-to-video generation with generative credits",
+              "source": "digitalcameraworld.com",
+              "relevance": "Intermediate",
+              "summary": "Digital Camera World reports Lightroom's June 2026 update can generate short AI videos from still photos using Adobe Firefly or Google Veo, while Assisted Culling leaves beta and Photoshop gains layered reflection removal.",
+              "why": "Creator tools are putting video generation and AI curation directly inside normal photo workflows, but usage credits make cost visible.",
+              "action": "For client work, test where AI-generated B-roll saves time and where credit costs or visual consistency make it risky.",
+              "teacher": "This is a practical creator example: AI is becoming a workflow button, not a separate app.",
+              "link": "https://www.digitalcameraworld.com/photography/photo-editing/lightroom-has-just-gained-the-ability-to-turn-photos-into-videos-but-its-the-first-adobe-made-tool-to-use-generative-credits-inside-lightroom"
+            },
+            {
+              "n": 7,
+              "category": "ComfyUI v0.24.0 adds",
+              "title": "ComfyUI v0.24.0 adds open-model support and fixes TripoSplat preview",
+              "source": "docs.comfy.org",
+              "relevance": "Intermediate",
+              "summary": "ComfyUI's June 3 changelog lists new open-model support including Ideogram 4, PiD conditioning updates, an Ideogram V4 API node, performance fixes, and a TripoSplat preview fix.",
+              "why": "Node-based visual AI workflows are still absorbing new models quickly, and 3D/preview fixes matter for production-style experimentation.",
+              "action": "Pin ComfyUI versions per project and record node versions before client render work; model support is moving faster than stable pipelines.",
+              "teacher": "Use this to teach why visual AI pipelines need version control just like code projects.",
+              "link": "https://docs.comfy.org/changelog"
+            },
+            {
+              "n": 8,
+              "category": "OpenAI Codex pay-as-you-go",
+              "title": "OpenAI Codex pay-as-you-go pricing exposes agent spend as a workflow metric",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says ChatGPT Business and Enterprise teams can add Codex-only seats with pay-as-you-go token billing, while reporting that Codex usage inside teams has grown 6x since January.",
+              "why": "Agent adoption is moving into budgetable team workflows where token consumption, not only seat count, determines spend.",
+              "action": "Track cost per useful merged change or completed workflow, not only monthly subscription price.",
+              "teacher": "This pairs well with GitHub's AI-credit signals: the market is teaching builders to measure agent economics.",
+              "link": "https://openai.com/index/codex-flexible-pricing-for-teams/"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News debate",
+              "title": "Hacker News debate shows multi-agent orchestration has coordination cost",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "In a Hacker News thread on writing software with LLMs, users compare multi-role agent hierarchies with one strong model session; one report found similar output at much lower cost from a single Claude Code run.",
+              "why": "More agents can mean more overhead, not automatically better work.",
+              "action": "Before building an agent swarm, benchmark one strong agent with good context against the multi-agent version on the same task.",
+              "teacher": "Useful teaching frame: orchestration is a cost center until it proves better quality, speed, or reliability.",
+              "link": "https://news.ycombinator.com/item?id=47394022"
+            },
+            {
+              "n": 10,
+              "category": "Reddit RalphTerm post",
+              "title": "Reddit RalphTerm post shows fresh-session task loops around Claude Code",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit ClaudeAI post describes RalphTerm as an outer loop around Claude Code: take a markdown checklist, start a fresh session for the next task, let Claude edit, validate, commit, mark done, and repeat.",
+              "why": "Makers are productizing the supervision pattern around agents: small tasks, fresh context, validation, commits, and independent review.",
+              "action": "Try the same loop manually before adding tooling: one task per session, one validation command, one commit, then reset context.",
+              "teacher": "This is a concrete way to teach context management without abstract theory.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1thpfxg/ralphterm_a_ralphstyle_loop_for_claude_code_with/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-17 00",
       "label": "2026-06-17 · 00:16",
