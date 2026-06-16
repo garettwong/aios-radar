@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 00:16",
-    "editions": 144
+    "fetchedAt": "2026-06-17 00:19",
+    "editions": 145
   },
   "editions": [
+    {
+      "key": "2026-06-17 00",
+      "label": "2026-06-17 · 00:01",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-17 · 00:01 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenEnv turns agent",
+              "title": "OpenEnv turns agent training into a browser-and-OS task arena",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face published OpenEnv, an open benchmark/environment for agentic RL across realistic web and computer-control tasks.",
+              "why": "Agent quality is moving from chat ability toward repeated interaction with messy tools, pages, files, and state.",
+              "action": "Track OpenEnv-style tasks as a testbed for your own agent workflows: browser control, file edits, recovery, and long-horizon reliability.",
+              "teacher": "Show the difference between a model answering a prompt and an agent surviving a task loop with observations, actions, rewards, and failure recovery.",
+              "link": "https://huggingface.co/blog/openenv-agentic-rl"
+            },
+            {
+              "n": 2,
+              "category": "Arcade raises $60M",
+              "title": "Arcade raises $60M to secure AI agent tool access",
+              "source": "wsj.com",
+              "relevance": "Intermediate",
+              "summary": "WSJ reports Arcade.dev raised $60M for infrastructure that helps AI agents authenticate, connect to tools, and act safely across services.",
+              "why": "The money is moving into the boring layer under agents: permissions, identity, policy, and safe tool execution.",
+              "action": "For any agent project, map the tool permissions first: who can call what, with which scopes, logs, and rollback path.",
+              "teacher": "Use this as a market signal that agent adoption is constrained less by demos and more by trustable access to real systems.",
+              "link": "https://www.wsj.com/cio-journal/arcade-dev-raises-60-million-to-secure-ai-agents-5d07eff4"
+            },
+            {
+              "n": 3,
+              "category": "Supabase says AI",
+              "title": "Supabase says AI coding tools now start most new databases",
+              "source": "supabase.com",
+              "relevance": "Intermediate",
+              "summary": "Supabase's Series F post says it is seeing AI coding tools launch a majority of new databases on the platform.",
+              "why": "This is a practical maker signal: AI coding agents are no longer only editing frontend code; they are provisioning backend infrastructure.",
+              "action": "Build project templates that assume agents will create database schemas, policies, migrations, seed data, and API wiring.",
+              "teacher": "The lesson is that AI app builders need guardrails around backend defaults, not just nicer prompts for UI generation.",
+              "link": "https://supabase.com/blog/supabase-series-f"
+            },
+            {
+              "n": 4,
+              "category": "Supabase warns AI",
+              "title": "Supabase warns AI agents can amplify npm supply-chain risk",
+              "source": "supabase.com",
+              "relevance": "Intermediate",
+              "summary": "Supabase published guidance on protecting projects from npm supply-chain attacks, a risk that grows when agents install packages quickly.",
+              "why": "AI coding speed can quietly multiply dependency exposure, typosquatting, hallucinated package names, and insecure defaults.",
+              "action": "Add package allowlists, lockfile review, provenance checks, and dependency-diff review to agent coding workflows.",
+              "teacher": "Teach creators that fast AI build loops need slow gates at install time; dependencies are part of the product surface.",
+              "link": "https://supabase.com/blog/protecting-your-supabase-projects-from-npm-supply-chain-attacks"
+            },
+            {
+              "n": 5,
+              "category": "Supabase community packages",
+              "title": "Supabase community packages an AI-coding-agent plugin lane",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A Supabase GitHub discussion collects plugin ideas and behavior for AI coding agents working with Supabase projects.",
+              "why": "Tool-specific agent plugins are becoming the new docs layer: schema awareness, auth rules, migrations, and safe operations embedded in the assistant.",
+              "action": "For repeated stack work, write a local agent playbook or plugin spec instead of relying on generic model memory.",
+              "teacher": "This is a useful example of community demand turning platform docs into executable agent context.",
+              "link": "https://github.com/orgs/supabase/discussions/46689"
+            },
+            {
+              "n": 6,
+              "category": "Mastercard launches Agent",
+              "title": "Mastercard launches Agent Pay for machine-initiated commerce",
+              "source": "mastercard.com",
+              "relevance": "Intermediate",
+              "summary": "Mastercard announced Agent Pay for Machines, positioning payment credentials and controls for AI agents that buy or transact on behalf of users.",
+              "why": "Agent commerce is shifting from concept to infrastructure: identity, spending caps, merchant trust, and authorization UX.",
+              "action": "If you build assistant workflows, design approval checkpoints and spending limits before adding any purchase-capable automation.",
+              "teacher": "Frame this as the payments equivalent of OAuth for agents: the real product is constrained permission, not autonomous shopping hype.",
+              "link": "https://www.mastercard.com/us/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html"
+            },
+            {
+              "n": 7,
+              "category": "Infinite London shows",
+              "title": "Infinite London shows geospatial 3D moving into maker-scale AI workflows",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "A Hugging Face maker post demonstrates an Infinite London workflow for generating and exploring large-scale 3D city-like content.",
+              "why": "3D generation is moving toward navigable, tiled, world-scale spaces rather than isolated hero assets.",
+              "action": "For booth, retail, and environment work, start separating asset generation, layout, navigation, and verification as distinct pipeline stages.",
+              "teacher": "Use this to teach why AI 3D needs scene logic: scale, continuity, camera paths, and repeatable asset placement matter more than one pretty view.",
+              "link": "https://huggingface.co/blog/mishig/infinite-london"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News highlights",
+              "title": "Hacker News highlights AI sticker shock as a real adoption limiter",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Hacker News discussion around AI cost pressure shows builders watching token spend, seat pricing, quotas, and marginal productivity closely.",
+              "why": "The market is splitting between premium agent workflows that pay for themselves and casual AI usage that feels expensive fast.",
+              "action": "Track cost per accepted output: merged PR, approved design, rendered option, resolved ticket, or shipped automation.",
+              "teacher": "Teach AI tool evaluation with unit economics, not vibes: measure time saved, rework created, and compute/tool cost per deliverable.",
+              "link": "https://news.ycombinator.com/item?id=48307098"
+            },
+            {
+              "n": 9,
+              "category": "Reddit Claude Code",
+              "title": "Reddit Claude Code users are reframing subagents as memory architecture",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit ClaudeAI discussion argues subagents are useful less as parallel speed hacks and more as structured memory and responsibility boundaries.",
+              "why": "Maker adoption is discovering that agent orchestration is an information-architecture problem, not only a model-performance problem.",
+              "action": "Split recurring work into named roles with narrow context, artifacts, and acceptance checks; avoid one giant context pile.",
+              "teacher": "This is a good classroom example for why roles, handoffs, and written state beat blind multi-agent enthusiasm.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u71d27/subagents_in_claude_code_arent_a_speed_trick/"
+            },
+            {
+              "n": 10,
+              "category": "Public X maker",
+              "title": "Public X maker post shows always-on Claude Code loops for civic-scale monitoring",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post describes running many Claude Code loops as persistent patrol-style agents, pointing at a maker pattern for ongoing monitoring.",
+              "why": "The frontier is shifting from one-shot code generation to fleets of small watchers that inspect state, file issues, and escalate only when needed.",
+              "action": "Prototype one narrow watcher first: define input, alert threshold, action log, stop condition, and daily cost cap.",
+              "teacher": "Treat this as early adoption signal, not proof of reliability; the teachable point is designing bounded autonomy around watch loops.",
+              "link": "https://x.com/iHarnoorSingh/status/2064123751843971191"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-16 21",
       "label": "2026-06-16 · 21:16",
