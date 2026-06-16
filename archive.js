@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 12:11",
-    "editions": 140
+    "fetchedAt": "2026-06-16 12:13",
+    "editions": 141
   },
   "editions": [
+    {
+      "key": "2026-06-16 12",
+      "label": "2026-06-16 · 12:07",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-16 · 12:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Copilot usage metrics",
+              "title": "Copilot usage metrics now include more active users through server-side telemetry",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says Copilot usage metrics reports now combine server-side telemetry with client signals, surfacing active users that client-side telemetry alone missed.",
+              "why": "Agent and coding-tool adoption is becoming a managed operating metric, not just a developer perk. Better telemetry helps teams see who is actually using AI tools before arguing about ROI.",
+              "action": "Add active-user and session-quality checks to any AI-tool rollout dashboard, not just seat counts.",
+              "teacher": "Adoption data can be misleading when the measurement layer misses background, web, or agent activity; always ask how the metric is captured.",
+              "link": "https://github.blog/changelog/2026-06-15-copilot-usage-metrics-now-include-more-of-your-active-users/"
+            },
+            {
+              "n": 2,
+              "category": "OpenAI makes Codex",
+              "title": "OpenAI makes Codex controllable from the ChatGPT mobile app",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says Codex in the ChatGPT mobile app can monitor, steer, approve, and start coding tasks across active machines while files and credentials remain on the host machine.",
+              "why": "Coding agents are moving from desktop-only tools into always-on operations surfaces. The phone becomes a lightweight approval and supervision console.",
+              "action": "For long-running agent work, design prompts and checkpoints so mobile approval is enough to keep work moving without reopening the full workstation.",
+              "teacher": "The durable pattern is not just mobile coding; it is mobile orchestration of remote local context, approvals, diffs, tests, and screenshots.",
+              "link": "https://openai.com/index/work-with-codex-from-anywhere/"
+            },
+            {
+              "n": 3,
+              "category": "OpenAI adds Codex-routed",
+              "title": "OpenAI adds Codex-routed NGS analysis workflows to GPT-Rosalind",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI's GPT-Rosalind update includes a Life Sciences NGS Analysis plugin that routes requests through Codex to run single-cell and bulk RNA-seq workflows with provenance and blockers surfaced.",
+              "why": "This is a strong example of agents becoming domain workflow routers, not generic chat wrappers. The agent chooses tools, preserves provenance, and reports missing dependencies.",
+              "action": "When building specialist agents, copy this pattern: scoped toolchains, provenance logs, blocker reporting, and reviewable artifacts.",
+              "teacher": "Domain agents need constrained execution and audit trails more than broad autonomy; the value is repeatable workflow packaging.",
+              "link": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/"
+            },
+            {
+              "n": 4,
+              "category": "Adobe ships on-device",
+              "title": "Adobe ships on-device Remove Tool AI and layered reflection removal for Creative Cloud",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe announced Creative Cloud updates including offline/on-device generative Remove Tool support and Reflection Removal that isolates reflections into a separate layer for nondestructive control.",
+              "why": "Creator AI is shifting toward practical, latency-light cleanup features inside existing production tools. This matters more for working artists than another standalone image generator.",
+              "action": "Test whether local/offline cleanup changes your retouching workflow for client-sensitive images or travel/event shoots with poor connectivity.",
+              "teacher": "On-device AI is not only privacy; it changes when and where edits are feasible, especially in high-volume production.",
+              "link": "https://blog.adobe.com/en/publish/2026/06/15/from-culling-to-compositing-new-creative-cloud-innovations-across-every-stage-of-your-workflow"
+            },
+            {
+              "n": 5,
+              "category": "Hugging Face maker",
+              "title": "Hugging Face maker tests one-prompt fine-tuning with TRL and Colab CLI",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "A Hugging Face post shows a maker using Google's new Colab CLI with TRL to fine-tune a model from a prompt-driven workflow and bring the artifact back locally.",
+              "why": "The maker workflow signal is that agent-driven remote compute is becoming accessible without a heavyweight cloud setup. Fine-tuning can become a scripted agent task.",
+              "action": "Keep a reusable fine-tuning prompt template that provisions compute, runs the script, downloads artifacts, and cleans up resources.",
+              "teacher": "The winning workflow is not just cheap GPU access; it is artifact discipline and cleanup automation.",
+              "link": "https://huggingface.co/blog/sergiopaniego/trl-colab-cli"
+            },
+            {
+              "n": 6,
+              "category": "Google Colab CLI",
+              "title": "Google Colab CLI repo packages remote accelerators for agent-driven terminal workflows",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Google Colab CLI GitHub repo describes a command-line tool for provisioning CPU/GPU/TPU runtimes, executing local code remotely, managing files, and orchestrating automated pipelines from the terminal.",
+              "why": "This gives coding agents a standardized way to offload heavy compute without custom cloud provisioning. It is especially relevant for 3D, ML, and asset-generation experiments.",
+              "action": "Add Colab CLI to the candidate stack for burst GPU tasks, but note current platform support before planning Windows-heavy workflows.",
+              "teacher": "Agent compute tools should be judged by setup friction, artifact return path, cleanup behavior, and OS support.",
+              "link": "https://github.com/googlecolab/google-colab-cli"
+            },
+            {
+              "n": 7,
+              "category": "Hacker News builders",
+              "title": "Hacker News builders pressure-test local models as daily coding agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh HN thread asks whether people have replaced Claude/GPT with local models for daily coding; replies compare Qwen setups, llama.cpp/Vulkan, prompt caching, and the tradeoff between privacy and frontier-model quality.",
+              "why": "Local coding agents are now a serious workflow discussion, but the signal is nuanced: local can be fast and private, while frontier models still win on architecture and judgment.",
+              "action": "Trial local agents on constrained, well-specified tasks first, and measure wall-clock task completion rather than tokens per second.",
+              "teacher": "Local model success depends on the harness: caching, edit reliability, quantization, filesystem boundaries, and prompt precision.",
+              "link": "https://news.ycombinator.com/item?id=48542100"
+            },
+            {
+              "n": 8,
+              "category": "Reddit maker ships",
+              "title": "Reddit maker ships local notifier for stalled coding-agent permission prompts",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit maker released agnt, a local notifier for Claude Code, Codex, Gemini CLI, and OpenCode that alerts when an agent is waiting on a permission prompt while the user is away.",
+              "why": "This is a real workflow-pain signal: agent productivity often dies in invisible wait states, not model intelligence. Small local utilities can recover hours.",
+              "action": "Add permission-wait detection to any multi-agent cockpit or long-running terminal workflow.",
+              "teacher": "Human-in-the-loop systems need attention routing; the interface should make blocked states visible without spamming active work.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1tvox1k/got_tired_of_missing_claude_codes_permission/"
+            },
+            {
+              "n": 9,
+              "category": "Google Developers X",
+              "title": "Google Developers X post frames Colab CLI as agent-driven cloud compute",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public Google Developers X post highlights Colab CLI as agent-driven workflow infrastructure with instant GPU/TPU provisioning from local environments.",
+              "why": "The marketing angle matters: Google is positioning cloud accelerators as something coding agents should call directly, not just notebooks for humans.",
+              "action": "Watch whether agent tools add first-class Colab CLI skills or recipes; that will make compute offload easier for non-ML builders.",
+              "teacher": "X is useful here because it shows the adoption message Google wants makers to repeat: agents plus instant accelerators.",
+              "link": "https://x.com/googledevs/status/2062965284290400686"
+            },
+            {
+              "n": 10,
+              "category": "WSJ reports consumer",
+              "title": "WSJ reports consumer lawsuit over Anthropic premium plan limits",
+              "source": "wsj.com",
+              "relevance": "Intermediate",
+              "summary": "The Wall Street Journal reports a proposed class-action lawsuit alleging Anthropic misled consumers about usage limits on its $100 and $200 Max plans; Anthropic declined to comment.",
+              "why": "AI subscription limits and quota transparency are becoming legal and market-risk issues. Heavy users are treating agent access like infrastructure, not entertainment.",
+              "action": "For paid AI stacks, keep a monthly usage ledger and avoid building critical automation around vague consumer-plan limits.",
+              "teacher": "Pricing clarity is part of product trust. If a workflow depends on subsidized tokens, it is exposed to policy changes and customer anger.",
+              "link": "https://www.wsj.com/tech/ai/anthropic-sued-over-limits-on-its-200-a-month-ai-plans-e2a109e4"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-16 09",
       "label": "2026-06-16 · 09:16",
