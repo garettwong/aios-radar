@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 12:21",
+    "fetchedAt": "2026-06-16 12:23",
     "editions": 141
   },
   "editions": [
     {
       "key": "2026-06-16 12",
-      "label": "2026-06-16 · 12:07",
+      "label": "2026-06-16 · 12:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "For paid AI stacks, keep a monthly usage ledger and avoid building critical automation around vague consumer-plan limits.",
               "teacher": "Pricing clarity is part of product trust. If a workflow depends on subsidized tokens, it is exposed to policy changes and customer anger.",
               "link": "https://www.wsj.com/tech/ai/anthropic-sued-over-limits-on-its-200-a-month-ai-plans-e2a109e4"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-16 · 12:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Taskrabbit AI Automation",
+              "title": "Taskrabbit AI Automation Senior Lead role",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Taskrabbit is hiring a senior lead for AI automation, pointing at internal workflow redesign becoming a named leadership lane.",
+              "why": "Marketplaces and service platforms need operators who can turn fragmented support, trust, and operations work into measurable AI systems.",
+              "action": "Build a small case study around one messy service workflow: intake, triage, response drafting, escalation, and weekly quality metrics.",
+              "teacher": "Teach this as AI ops leadership: map the process first, then add automations only where a KPI can move.",
+              "link": "https://job-boards.greenhouse.io/taskrabbit/jobs/7782633"
+            },
+            {
+              "n": 2,
+              "category": "Pattern AI Automations",
+              "title": "Pattern AI Automations Engineer role",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Pattern asks for AI automation, n8n, MCP, Zapier, documentation, training, and China AI model familiarity.",
+              "why": "Cross-border commerce teams increasingly need builders who can connect Western and China AI/tool ecosystems without making the workflow fragile.",
+              "action": "Create a demo that compares one process across OpenAI or Claude plus Qwen, Kimi, or Doubao-style tool choices, with a clear handoff doc.",
+              "teacher": "Good lesson topic: tool selection is localization, not just preference.",
+              "link": "https://jobs.lever.co/pattern/3d1bf30b-62dc-41dd-80b3-991752cd0bab"
+            },
+            {
+              "n": 3,
+              "category": "Tebra AI Automation",
+              "title": "Tebra AI Automation Engineer role",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Tebra is hiring an AI Automation Engineer, adding healthcare SaaS to the list of verticals formalizing automation-builder roles.",
+              "why": "Regulated verticals need more than prompts: they need auditability, patient/customer data caution, workflow ownership, and reliability.",
+              "action": "Package a healthcare-friendly automation audit checklist covering privacy, approvals, logging, fallback, and user training.",
+              "teacher": "Use it to teach why client work in regulated industries sells on risk reduction, not just speed.",
+              "link": "https://job-boards.greenhouse.io/tebra/jobs/4694698005"
+            },
+            {
+              "n": 4,
+              "category": "Xsolla Senior AI",
+              "title": "Xsolla Senior AI and Automation Specialist role",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Xsolla wants an AI/automation specialist with n8n, Zapier, Make, custom pipelines, BI, and measurable manual-work reduction.",
+              "why": "Gaming/payment companies are turning automation into an operations and intelligence function, not a side project.",
+              "action": "Build a portfolio page showing before/after process metrics: manual hours removed, error rate reduced, and adoption by teams.",
+              "teacher": "Strong framing: automation proof beats automation screenshots.",
+              "link": "https://jobs.lever.co/xsolla/e71bdd74-1249-41cb-8e03-21dc105a0fc0"
+            },
+            {
+              "n": 5,
+              "category": "CSC Generation AI",
+              "title": "CSC Generation AI Solutions Engineer role",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "CSC Generation's AI Solutions Engineer starts in performance marketing and expands into operations, creative, and logistics.",
+              "why": "The opportunity is a hybrid role: marketer enough to find bottlenecks, engineer enough to ship production automations, operator enough to measure adoption.",
+              "action": "Offer a paid discovery sprint for ecommerce brands: creative ops audit, campaign automation map, and one working prototype.",
+              "teacher": "Teach students to find the first automation wedge inside an existing revenue team before promising company-wide AI transformation.",
+              "link": "https://jobs.lever.co/cscgeneration-2/8168dca0-4f8f-4473-b26f-9cf1a10ed046?lever-source=Indeed"
+            },
+            {
+              "n": 6,
+              "category": "Morning Brew GTM",
+              "title": "Morning Brew GTM Engineer role asks for Claude Code and n8n automations",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Morning Brew is hiring a GTM Engineer to build automations with Claude Code, n8n-style orchestration, Mastra, and Inngest.",
+              "why": "Media companies now want builder-operators who automate contract checks, media-plan summaries, pricing flags, and disconnected systems.",
+              "action": "Create a GTM automation sample pack: contract summary, campaign QA, pricing discrepancy alert, and CRM-to-Slack workflow.",
+              "teacher": "This is a clean example of AI-native service work for non-software companies: turn recurring decisions into monitored systems.",
+              "link": "https://jobs.lever.co/morningbrew/674cb200-dbf8-4da8-a9e9-78807019d69e"
+            },
+            {
+              "n": 7,
+              "category": "Upwork DTC email",
+              "title": "Upwork DTC email designer project asks for Figma plus AI visuals",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A DTC email agency wants an ongoing email designer who works in Figma and uses AI heavily to create visuals when brand assets are thin.",
+              "why": "Design freelancers can win by combining taste, conversion layout, Figma discipline, and AI asset direction instead of selling generic image generation.",
+              "action": "Build a mini portfolio with three email flows: product launch, replenishment, and win-back, each using AI-assisted but brand-safe visuals.",
+              "teacher": "Teach AI as art department assistant: the human owns hierarchy, typography, brand consistency, and conversion intent.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Email-Designer-for-DTC-Ecommerce-Brands-Figma_~022066509904295518781/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork Claude Code",
+              "title": "Upwork Claude Code automation specialist full-time project",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A client wants one builder to turn messy agency and client work into reliable automations using Claude Code, APIs, databases, dashboards, and MCP-style integrations.",
+              "why": "Claude Code/Codex-style operating skill is becoming freelance labor, not just developer tooling.",
+              "action": "Make a short demo video: take a messy spreadsheet and email process, use an agent to wire an API workflow, then show the dashboard output.",
+              "teacher": "Emphasize production habits: auth, pagination, rate limits, errors, logging, and maintainability.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Specialist-Claude-Code-Full-Time_~022065586128771017469/"
+            },
+            {
+              "n": 9,
+              "category": "Lovepop digital graphic",
+              "title": "Lovepop digital graphic designer role values Firefly, Magnific, and n8n",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Lovepop's digital graphic designer role lists hands-on AI and automation tools like Adobe Firefly, Magnific, and n8n as a strong plus.",
+              "why": "Creative roles are absorbing automation literacy: asset generation, upscaling, workflow chaining, and production throughput now sit beside taste.",
+              "action": "Build a visual production workflow sample: moodboard, generated variants, upscale pass, Figma/ad layout, and automated export naming.",
+              "teacher": "Useful class exercise: compare pretty output versus repeatable production pipeline.",
+              "link": "https://jobs.lever.co/lovepop/7380391d-00fc-47b2-b1a7-807276df4dc3"
+            },
+            {
+              "n": 10,
+              "category": "Reddit thread asks",
+              "title": "Reddit thread asks whether n8n AI automation skills can become freelance income",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh r/AI_Agents discussion asks if n8n and AI automation skills can realistically make money; replies push the asker toward finding paying customers before overbuilding.",
+              "why": "The market pain is clear: beginners are learning tools, but the bottleneck is offer design, proof, and client acquisition.",
+              "action": "Test one narrow offer this week: I will automate one repetitive intake or reporting workflow and document the before/after. Price it low enough to get proof, not low enough to trap you.",
+              "teacher": "Teach the difference between skill acquisition and market validation; both are required.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1u25rzk/are_ai_agents_and_automation_skills_using_n8n_a/"
             }
           ]
         }
