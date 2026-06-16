@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 09:21",
+    "fetchedAt": "2026-06-16 09:23",
     "editions": 140
   },
   "editions": [
     {
       "key": "2026-06-16 09",
-      "label": "2026-06-16 · 09:15",
+      "label": "2026-06-16 · 09:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Track 3D tools by downstream export quality: GLB/FBX reliability, material grouping, riggability, collision readiness, and Unity/Unreal import friction.",
               "teacher": "This is the maker-market version of last mile matters. A pretty generated asset is less valuable than one that drops cleanly into a scene.",
               "link": "https://x.com/tripoai"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-16 · 09:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "10xTeam AI Specialist",
+              "title": "10xTeam AI Specialist AI Trainer freelance role",
+              "source": "jobs.ashbyhq.com",
+              "relevance": ".",
+              "summary": "10xTeam is recruiting EU/UK AI specialists for freelance AI training work, 8-20 hours per week, focused on improving model accuracy, depth, and real-world",
+              "why": "Domain experts can now package judgement and tool fluency as paid training labor without needing a full-time ML role.",
+              "action": "Build a one-page AI training profile: domains, tools used, before/after examples, evaluation method, and weekly availability.",
+              "teacher": "A good mini-lesson here is how to critique AI output: factuality, completeness, edge cases, and what a stronger answer should include.",
+              "link": "https://jobs.ashbyhq.com/10xteam/3c053f18-838a-4e58-8b06-46228c57dc54"
+            },
+            {
+              "n": 2,
+              "category": "GitLab AI Engineer",
+              "title": "GitLab AI Engineer role embeds AI into sales, marketing, and support workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "GitLab is hiring an AI Engineer to diagnose business problems, build prototypes quickly, integrate AI into existing workflows, and measure impact across Sales, Marketing, and Customer Support.",
+              "why": "The job description reads like a consulting playbook: workflow mapping, stakeholder discovery, tool choice, ROI, and reusable foundations.",
+              "action": "Turn one past automation into a case study with the problem, manual workflow, AI intervention, metrics, and adoption risk.",
+              "teacher": "Teach AI-or-not-AI triage: when a rule, dashboard, script, prompt, or full agent is the right intervention.",
+              "link": "https://job-boards.greenhouse.io/gitlab/jobs/8565469002"
+            },
+            {
+              "n": 3,
+              "category": "Gradera Strategic Account",
+              "title": "Gradera Strategic Account Executive sells measurable AI pilots and automation outcomes",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Gradera is hiring for enterprise sales around AI pilots and disconnected automation, with a deadline of June 28, 2026.",
+              "why": "AI opportunity is not only building tools; companies also need people who can package pilots into business cases and close stakeholder alignment.",
+              "action": "Create a simple pilot menu: 2-week workflow audit, 30-day automation prototype, 60-day adoption and measurement sprint.",
+              "teacher": "Teach students to define success before building: saved hours, faster response time, fewer errors, higher conversion, or better creative throughput.",
+              "link": "https://jobs.ashbyhq.com/gradera/79e7def9-111b-4e72-871e-4c5284683b09"
+            },
+            {
+              "n": 4,
+              "category": "Upwork supplement packaging",
+              "title": "Upwork supplement packaging dielines project posted today",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A UK client posted a fixed-price packaging design and dielines project for a supplements brand, requiring existing-brand alignment, print design, Illustrator, and fast delivery.",
+              "why": "AI is flooding generic design, but production-ready packaging still needs taste, dielines, prepress discipline, and client-ready mockups.",
+              "action": "Offer a packaging sprint product: dieline setup, print-ready PDF, 3D mockup, compliance text pass, and one revision window.",
+              "teacher": "Use this to teach the difference between AI concept images and manufacturable packaging files: bleed, CMYK, dielines, hierarchy, and proofing.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Packaging-Design-and-Dielines-for-Supplements_~022066498545742972403/"
+            },
+            {
+              "n": 5,
+              "category": "Trust & Will",
+              "title": "Trust & Will performance marketing role values lightweight AI agents and prompt chains",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Trust & Will's Performance Marketing Manager role lists experience with lightweight AI agents, prompt chains, Zapier, Make, n8n, APIs, UGC pipelines, and rights tracking.",
+              "why": "AI automation is moving into marketing operations roles, not just engineering roles; hybrid marketers who can build systems have leverage.",
+              "action": "Build a demo UGC pipeline: intake form, rights tracker, creator status, content review, and weekly performance summary.",
+              "teacher": "Teach prompt chains as operations diagrams: input, transformation, approval, publishing, measurement, and fallback.",
+              "link": "https://job-boards.greenhouse.io/trustwill/jobs/4257707009"
+            },
+            {
+              "n": 6,
+              "category": "PwC 2026 AI",
+              "title": "PwC 2026 AI Jobs Barometer says AI-exposed companies grow productivity, wages, and headcount faster",
+              "source": "pwc.com",
+              "relevance": "Intermediate",
+              "summary": "PwC's 2026 Global AI Jobs Barometer analyzes over a billion job ads and argues that AI is creating a two-track labor market where judgement and leadership become more rewarded.",
+              "why": "The strongest career signal is not learn AI tools alone; it is combining AI fluency with judgement, client context, and leadership.",
+              "action": "Update portfolio language from tool names to outcomes: used AI to shorten X, built review loop for Y, trained team to adopt Z.",
+              "teacher": "Teach students to present AI as leverage for responsibility, not as a shortcut: better decisions, faster iteration, clearer documentation.",
+              "link": "https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html"
+            },
+            {
+              "n": 7,
+              "category": "Cloudflare public policy",
+              "title": "Cloudflare public policy internship includes AI tooling and automation for policy tracking",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Cloudflare's APJC public policy internship asks candidates to build AI-driven tools for policy tracking, research, internal reporting, and business intelligence.",
+              "why": "AI automation is spreading into policy, legal, and strategy work, creating openings for non-engineers who can build useful internal systems.",
+              "action": "Prototype a policy-monitoring workflow: source watcher, summary, risk tag, stakeholder alert, and weekly brief.",
+              "teacher": "This is a strong class exercise for responsible AI: source reliability, audit trail, human review, and sensitive-context limits.",
+              "link": "https://job-boards.greenhouse.io/cloudflare/jobs/7863831"
+            },
+            {
+              "n": 8,
+              "category": "Reddit n8n thread",
+              "title": "Reddit n8n thread flags EU AI Act compliance as a coming automation-client pain point",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit n8n discussion asks how builders are handling EU AI Act documentation for workflows touching hiring, credit decisions, or customer profiling.",
+              "why": "Compliance documentation can become a paid add-on for AI automation services, especially for clients in regulated workflows.",
+              "action": "Make a lightweight AI workflow compliance checklist: use case, data inputs, human review, logging, risk class, and rollback plan.",
+              "teacher": "Teach automation with receipts: diagrams, decision logs, data maps, and test cases that prove the workflow is controllable.",
+              "link": "https://www.reddit.com/r/n8n/comments/1rvgfjx/eu_ai_act_compliance_for_n8n_workflows_anyone/"
+            },
+            {
+              "n": 9,
+              "category": "Public X article",
+              "title": "Public X article frames service-as-a-software as a 2026 AI-native agency model",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article describes service-as-a-software as a model where the customer buys the service outcome while software and AI handle much of execution.",
+              "why": "This is the clearest packaging opportunity for solo builders: sell one narrow business result, then automate delivery behind the scenes.",
+              "action": "Pick one repeatable offer such as lead research, render brief cleanup, weekly content repurposing, or CRM hygiene, then build a semi-automated delivery line.",
+              "teacher": "Teach the difference between SaaS and service-as-a-software: onboarding, human QA, workflow automation, and recurring outcome pricing.",
+              "link": "https://x.com/dan__rosenthal/article/2065794144824377665"
+            },
+            {
+              "n": 10,
+              "category": "TechRadar reports worker",
+              "title": "TechRadar reports worker anxiety as AI agent use rises sharply",
+              "source": "techradar.com",
+              "relevance": "Intermediate",
+              "summary": "TechRadar reports new workplace anxiety around AI, while also citing a sharp rise in AI agent usage and continued human oversight of most AI-led tasks.",
+              "why": "Adoption is rising, but trust is still thin; this creates demand for trainers, change-management consultants, AI workflow auditors, and team enablement.",
+              "action": "Offer an AI adoption clinic for small teams: map fears, find safe use cases, set review rules, and measure one low-risk workflow.",
+              "teacher": "Teach adoption as a people problem: autonomy boundaries, error handling, privacy, and when humans must remain in control.",
+              "link": "https://www.techradar.com/pro/half-of-workers-worry-ai-will-still-take-their-job-as-new-report-claims-use-of-agents-soars-90-percent-in-just-a-year"
             }
           ]
         }
