@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 15:23",
-    "editions": 141
+    "fetchedAt": "2026-06-16 15:25",
+    "editions": 142
   },
   "editions": [
+    {
+      "key": "2026-06-16 15",
+      "label": "2026-06-16 · 15:16",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-16 · 15:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Ataccama AI-native Marketing",
+              "title": "Ataccama AI-native Marketing Manager role turns content operations into repeatable systems",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Ataccama is hiring a marketer who blends creative storytelling, operational efficiency, executive LinkedIn programs, advocacy, social publishing, and AI-powered repeatable content systems.",
+              "why": "B2B companies are no longer asking only for content creators; they want people who can design the operating model behind content volume and quality.",
+              "action": "Build a small portfolio piece: one executive LinkedIn calendar, one AI-assisted content queue, and one measurement dashboard for a niche B2B product.",
+              "teacher": "Teach this as AI-native marketing ops: inputs, brand voice, approval gates, publishing cadence, and reuse rules.",
+              "link": "https://jobs.lever.co/ataccama/49c2a1f7-2b34-47c5-814f-c74992a24048"
+            },
+            {
+              "n": 2,
+              "category": "Runway Sales Development",
+              "title": "Runway Sales Development leader role calls for an AI-first sales organization",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Runway is hiring a sales development leader to build systems, processes, and infrastructure for a modern AI-first sales development organization.",
+              "why": "Creative AI companies need GTM operators who can make sales teams faster without turning outreach into low-quality spam.",
+              "action": "Package a consulting offer around AI-assisted SDR workflows: account research, first-draft personalization, CRM hygiene, and review checkpoints.",
+              "teacher": "Emphasize that the saleable skill is workflow design plus quality control, not just prompt writing.",
+              "link": "https://jobs.ashbyhq.com/runway-ml/44c1578a-3b0c-4b64-b1c0-89f51e8635ee"
+            },
+            {
+              "n": 3,
+              "category": "Gradial Creative Lead",
+              "title": "Gradial Creative Lead role packages AI agents and orchestration as brand storytelling",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Gradial wants a Creative Lead who can translate AI agents, automation, and orchestration into clear, confident, human brand work across web, product marketing, motion, social, and decks.",
+              "why": "AI infrastructure companies still need strong taste and visual clarity; technical complexity creates demand for designers who can make agent products legible.",
+              "action": "Create two before-and-after examples explaining a complex AI workflow as a one-page visual narrative.",
+              "teacher": "Use this to teach designers how to turn agent architecture into buyer-facing language, diagrams, and campaign concepts.",
+              "link": "https://job-boards.greenhouse.io/gradial/jobs/4087685009"
+            },
+            {
+              "n": 4,
+              "category": "Stripe Art Director",
+              "title": "Stripe Art Director role asks for AI and automation in design-quality systems",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Stripe lists process improvements through automation and AI integration as part of an Art Director role focused on design quality and efficiency.",
+              "why": "Even premium design organizations are framing AI as part of craft operations, not a shortcut around craft.",
+              "action": "Audit one recurring design task and document how AI can speed exploration while preserving art-direction review.",
+              "teacher": "Teach AI for design quality: reference gathering, variation, production cleanup, and final human judgment.",
+              "link": "https://job-boards.greenhouse.io/stripe/jobs/7823683"
+            },
+            {
+              "n": 5,
+              "category": "Asana AI Engineer",
+              "title": "Asana AI Engineer role names agents, LLM automations, n8n, Workato, and Zapier",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Asana is hiring for AI-powered applications, agents, multi-step reasoning workflows, and business-critical automations using tools such as n8n, Workato, or Zapier.",
+              "why": "No-code and low-code automation skills are converging with software engineering and product workflow knowledge.",
+              "action": "Build a demo that turns a messy team workflow into a monitored AI automation with escalation and rollback paths.",
+              "teacher": "Frame this as reliability training: triggers, state, logs, human approval, and failure handling.",
+              "link": "https://job-boards.greenhouse.io/asana/jobs/7818833"
+            },
+            {
+              "n": 6,
+              "category": "Serval Technical Product",
+              "title": "Serval Technical Product Enablement Manager role turns AI automation into sales-ready explanations",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Serval, an AI-native automation platform, is hiring enablement talent to explain agentic workflow automation and help enterprise teams understand real-world use cases.",
+              "why": "As agent platforms multiply, there is opportunity in translating product capability into sales demos, customer education, and internal playbooks.",
+              "action": "Make a one-page enablement kit for an automation product: buyer pain, demo flow, objections, and three use cases.",
+              "teacher": "Teach the bridge skill: product literacy plus clear demos plus workflow examples.",
+              "link": "https://jobs.ashbyhq.com/Serval/13e123af-76a9-4af7-b137-17653c0e61e4"
+            },
+            {
+              "n": 7,
+              "category": "Upwork buyer wants",
+              "title": "Upwork buyer wants a senior n8n automation architect for an AI-powered operating system",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A buyer is seeking a senior automation architect to build an AI-powered operating system for estimating, quoting, invoicing, customer communication, follow-up, and admin workflows.",
+              "why": "Small and local service businesses are asking for full operating systems, not isolated automations.",
+              "action": "Turn this into a productized service for one vertical: map intake, quote, invoice, follow-up, and reporting into a fixed-scope roadmap.",
+              "teacher": "Teach scoping discipline: start with the workflow map, define data sources, then choose n8n or code only where it fits.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Senior-n8n-Automation-Architect-Systems-Builder_~022065593611550700182/"
+            },
+            {
+              "n": 8,
+              "category": "Business Insider reports",
+              "title": "Business Insider reports PwC data showing entry-level AI-exposed roles are being seniorized",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports PwC analysis saying entry-level roles in AI-exposed fields increasingly require advanced skills such as leadership, emotional intelligence, team building, and strategic decision-making.",
+              "why": "Junior workers and career switchers need proof of judgment and ownership, not just tool familiarity.",
+              "action": "Update portfolio case studies to show decisions made, tradeoffs, stakeholder handling, and measurable outcome.",
+              "teacher": "Teach students to present AI work as responsibility: problem framing, constraints, review, and final accountability.",
+              "link": "https://www.businessinsider.com/pwc-global-jobs-barometer-ai-advanced-skills-entry-level-jobs-2026-6"
+            },
+            {
+              "n": 9,
+              "category": "Reddit founders question",
+              "title": "Reddit founders question performance-based pricing for AI automation agencies",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit founder thread asks whether AI automation agencies should get paid only when their systems actually work, reflecting buyer skepticism about unproven automation promises.",
+              "why": "The market is pushing agencies toward outcome proof, pilots, and risk-sharing instead of vague AI retainers.",
+              "action": "Offer a paid diagnostic plus milestone-based pilot: baseline metric, target metric, acceptance test, and maintenance terms.",
+              "teacher": "Use this as a pricing lesson: sell a measurable operational result, not generic automation.",
+              "link": "https://www.reddit.com/r/Entrepreneur/comments/1r9ka6j/its_2026_shouldnt_agencies_get_paid_only_if_their/"
+            },
+            {
+              "n": 10,
+              "category": "Public X article",
+              "title": "Public X article says solo AI automation agencies can package small-business systems",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article from an AI automation agency operator describes building automations and AI systems for small businesses and lean teams, with a solo-agency angle.",
+              "why": "Search-visible X posts show how builders are positioning the opportunity: narrow systems for real business pain, packaged with proof.",
+              "action": "Pick one boring niche and write three offers: lead intake, customer support, and reporting automation, each with a demo and metric.",
+              "teacher": "Teach positioning from examples: niche, pain, system, proof, price, and maintenance.",
+              "link": "https://x.com/DeRonin_/article/2062301065312407891"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-16 12",
       "label": "2026-06-16 · 12:16",
