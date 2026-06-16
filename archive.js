@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 21:12",
-    "editions": 143
+    "fetchedAt": "2026-06-16 21:15",
+    "editions": 144
   },
   "editions": [
+    {
+      "key": "2026-06-16 21",
+      "label": "2026-06-16 · 21:00",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-16 · 21:00 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Ceros launches agent",
+              "title": "Ceros launches agent trust layer",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "New platform for agent identity, observability, and governance.",
+              "why": "Agent risk is now about permissions, logs, and revocation.",
+              "action": "Add an agent identity/audit checklist before granting tools.",
+              "teacher": "Treat agents like non-human workers with scoped access.",
+              "link": "https://www.prnewswire.com/news-releases/ceros-launches-providing-unified-identity-observability-and-governance-for-every-ai-agent-and-workflow-302800721.html"
+            },
+            {
+              "n": 2,
+              "category": "Curbcheck tests small",
+              "title": "Curbcheck tests small VLMs on real-world signs",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Maker tests if a small VLM can judge SF parking legality from photos.",
+              "why": "Narrow visual reasoning tools are becoming practical.",
+              "action": "Prototype one camera-plus-rules workflow for signage or labels.",
+              "teacher": "Pair vision models with domain rules and verification.",
+              "link": "https://huggingface.co/blog/shubhamgoel27/curbcheck"
+            },
+            {
+              "n": 3,
+              "category": "LiteLLM frames an",
+              "title": "LiteLLM frames an agent control plane",
+              "source": "docs.litellm.ai",
+              "relevance": "Intermediate",
+              "summary": "AI gateways are moving from model routing to agent-work routing.",
+              "why": "Cost, policy, and observability are becoming agent infrastructure.",
+              "action": "Log every agent by task, model, tools, and cost.",
+              "teacher": "Gateway controls traffic; agent control plane governs action.",
+              "link": "https://docs.litellm.ai/blog"
+            },
+            {
+              "n": 4,
+              "category": "Ruflo offers open",
+              "title": "Ruflo offers open multi-agent orchestration",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub project coordinates Claude Code and Codex agent swarms.",
+              "why": "Open-source orchestration is maturing beyond demos.",
+              "action": "Study its roles before building custom multi-agent glue.",
+              "teacher": "Many agents need roles, state, handoffs, and trust boundaries.",
+              "link": "https://github.com/ruvnet/ruflo"
+            },
+            {
+              "n": 5,
+              "category": "Step1X-3D targets cleaner",
+              "title": "Step1X-3D targets cleaner controllable 3D assets",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Open project focuses on geometry quality, textures, and style control.",
+              "why": "AI 3D is moving toward assets that can survive inspection.",
+              "action": "Test it on one hard product or booth object.",
+              "teacher": "Judge topology, UVs, materials, scale, and editability.",
+              "link": "https://github.com/stepfun-ai/Step1X-3D"
+            },
+            {
+              "n": 6,
+              "category": "Hugging Face clarifies",
+              "title": "Hugging Face clarifies agent vocabulary",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Glossary defines harness, scaffold, environment, tools, and evals.",
+              "why": "Teams waste time when agent architecture terms blur together.",
+              "action": "Make a one-page glossary for AIOS/OpenClaw concepts.",
+              "teacher": "Model, tool, memory, evaluator, and policy are separate parts.",
+              "link": "https://huggingface.co/blog/agent-glossary"
+            },
+            {
+              "n": 7,
+              "category": "HN users report",
+              "title": "HN users report stronger Fable 5 coding performance",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "Builders say Fable 5 in Claude Code handles hard tasks better.",
+              "why": "Community reports can flag models worth benchmarking early.",
+              "action": "Run a same-task bakeoff against your current coding model.",
+              "teacher": "Convert anecdotes into repeatable tests with budget limits.",
+              "link": "https://news.ycombinator.com/item?id=48467564"
+            },
+            {
+              "n": 8,
+              "category": "Reddit watches Claude",
+              "title": "Reddit watches Claude programmatic quota split",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Builders discuss Agent SDK, claude -p, Actions, and app usage moving to a separate credit pool.",
+              "why": "Agent pricing is becoming an architecture constraint.",
+              "action": "Audit unattended Claude jobs before adding cron automations.",
+              "teacher": "Platform pricing can change the correct technical design.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u5nd0r/remember_monday_programmatic_usage_is_switching/"
+            },
+            {
+              "n": 9,
+              "category": "X makers warn",
+              "title": "X makers warn about unattended agent costs",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Public X post warns Claude automation may need stricter cost planning.",
+              "why": "Background agents are useful but unbounded loops get expensive.",
+              "action": "Add stop conditions, per-job budgets, and approval gates.",
+              "teacher": "Agent loop management means define done, cap retries, log cost.",
+              "link": "https://x.com/phipps/article/2062712197210394664"
+            },
+            {
+              "n": 10,
+              "category": "Claude Code determinism",
+              "title": "Claude Code determinism issue shows automation pressure",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "GitHub issue asks for reproducibility as billing and automation collide.",
+              "why": "Determinism and replayability are becoming agent requirements.",
+              "action": "Save prompts, inputs, tool outputs, diffs, tests, and settings.",
+              "teacher": "Reliable agents need pipelines, validators, logs, and budgets.",
+              "link": "https://github.com/anthropics/claude-code/issues/58933"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-16 18",
       "label": "2026-06-16 · 18:16",
