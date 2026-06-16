@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 00:23",
+    "fetchedAt": "2026-06-17 00:26",
     "editions": 145
   },
   "editions": [
     {
       "key": "2026-06-17 00",
-      "label": "2026-06-17 · 00:01",
+      "label": "2026-06-17 · 00:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Prototype one narrow watcher first: define input, alert threshold, action log, stop condition, and daily cost cap.",
               "teacher": "Treat this as early adoption signal, not proof of reliability; the teachable point is designing bounded autonomy around watch loops.",
               "link": "https://x.com/iHarnoorSingh/status/2064123751843971191"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-17 · 00:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Upwork task-extraction workflow",
+              "title": "Upwork task-extraction workflow shows demand for narrow AI utilities",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A buyer wants a simple n8n plus Claude workflow that reads notes and extracts tasks, follow-ups, appointments, and dates.",
+              "why": "Tiny proof-of-concept jobs are entry points. The client explicitly says future work may follow if extraction works.",
+              "action": "Build a reusable demo that turns messy notes into structured tasks with confidence flags and human review.",
+              "teacher": "Good beginner lesson: separate summarization from extraction, then validate output against a small test set.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Build-Simple-Task-Extraction-Workflow-Using-n8n-and-Claude_~022065520031051318559/"
+            },
+            {
+              "n": 2,
+              "category": "Upwork AI automation",
+              "title": "Upwork AI automation course project pays for teaching, not just building",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A course-creation job asks an AI automation expert to plan, record, speak, and teach Claude Code, n8n workflows, AI agents, APIs, productivity, and business systems.",
+              "why": "The opportunity is not only implementation. People will pay for clear education from operators who can explain real workflows on screen.",
+              "action": "Create one polished sample lesson: build an intake-to-task workflow, narrate the design choices, and include downloadable assets.",
+              "teacher": "Teaching quality becomes the differentiator. Emphasize voice clarity, pacing, and why each automation step exists.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Expert-for-Course-Creation_~022063243695230005344/"
+            },
+            {
+              "n": 3,
+              "category": "Meshy launches 3D",
+              "title": "Meshy launches 3D Agent Beta for continuous AI-assisted 3D creation",
+              "source": "eqs-news.com",
+              "relevance": "Intermediate",
+              "summary": "Meshy announced Meshy 3D Agent Beta on June 4, describing an agent workflow from initial idea to editable 3D asset.",
+              "why": "For 3D/design work, the market is shifting from single prompt outputs toward guided production flows. That creates service opportunities around cleanup, art direction, asset standards, and pipeline integration.",
+              "action": "Test a 3D asset pipeline: concept prompt, generated mesh, cleanup checklist, material pass, and render-ready export.",
+              "teacher": "Teach AI 3D as art-direction plus QA. The valuable skill is knowing what needs correction before the asset enters production.",
+              "link": "https://www.eqs-news.com/news/corporate-news/meshy-brings-ai-agents-to-3d-creation-meshy-3d-agent-beta-launches/f1dbf054-7ab4-4bab-824f-a83364caa3e9_en"
+            },
+            {
+              "n": 4,
+              "category": "TLDR Applied AI",
+              "title": "TLDR Applied AI role turns Claude Skills into newsletter and sales infrastructure",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "TLDR is hiring a Senior Software Engineer, Applied AI, with responsibilities including building Claude Skills and internal AI tooling connected to systems such as HubSpot.",
+              "why": "Claude Skills are becoming operational infrastructure, not just personal shortcuts. Media and newsletter businesses need AI that plugs into CRM, content, and sales workflows.",
+              "action": "Create a Claude Skill prototype for content operations: source intake, summary draft, fact checklist, and CRM note creation.",
+              "teacher": "Teach skills as repeatable operating procedures. The lesson should include file structure, tool boundaries, and verification.",
+              "link": "https://jobs.ashbyhq.com/tldr.tech/3b21aaf8-dea5-4127-be71-602d30e5001e"
+            },
+            {
+              "n": 5,
+              "category": "Numeral AI engineer",
+              "title": "Numeral AI engineer role names n8n and Claude Code-style orchestration",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Numeral is hiring a Software Engineer (AI) and asks for automation/workflow thinking with tools like n8n and Claude Code-style agents.",
+              "why": "Finance and tax operations are adopting agentic orchestration. This is a good sign for consultants who can automate regulated, detail-heavy back-office work.",
+              "action": "Prototype a tax or finance workflow with document intake, extraction, validation, and an audit trail.",
+              "teacher": "Stress compliance habits: deterministic checks, traceable inputs, and human approval before final action.",
+              "link": "https://jobs.ashbyhq.com/numeral/26400013-a45f-4504-a0f9-f288069ee32c"
+            },
+            {
+              "n": 6,
+              "category": "ApartmentIQ AI Operations",
+              "title": "ApartmentIQ AI Operations Lead makes adoption, metrics, and training part of the job",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "ApartmentIQ lists an AI Operations Lead role that builds workflows with ChatGPT, Claude, Cursor, n8n, Zapier, Make, Retool, Notion, SQL, BI tools, APIs, and internal data sources.",
+              "why": "The role is not just building automations. It measures time savings, accuracy, usage, QA, adoption, and stakeholder feedback.",
+              "action": "For consulting offers, include an adoption dashboard and training handoff, not only the workflow build.",
+              "teacher": "Teach students to define success metrics before automation: hours saved, error reduction, adoption rate, and escalation path.",
+              "link": "https://job-boards.greenhouse.io/apartmentiq/jobs/7859627"
+            },
+            {
+              "n": 7,
+              "category": "Verdigris Technical Marketing",
+              "title": "Verdigris Technical Marketing Lead asks marketers to ship AI-native enablement systems",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Verdigris wants a technical marketing lead who can work in Claude Code or Cursor, automate product-documentation-to-sales-material workflows, build custom GPTs, and ship landing pages or calculators.",
+              "why": "Marketing is turning into a builder role. The opportunity is self-updating sales decks, one-pagers, demo narratives, and content systems.",
+              "action": "Build a sample product-doc-to-sales-deck pipeline with source-of-truth tracking and a simple Vercel demo.",
+              "teacher": "Position AI marketing lessons around building systems that stay current, not generating one-off copy.",
+              "link": "https://jobs.lever.co/verdigris/47665d37-3533-4bc8-a17b-090c18f9b60a"
+            },
+            {
+              "n": 8,
+              "category": "CookUnity AI Native",
+              "title": "CookUnity AI Native Engineer role separates agents from deterministic tools",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "CookUnity is hiring an AI Native Engineer using Claude Code, Codex App Server, Sandboxes, MCP, n8n, Temporal, Agent SDK, TypeScript/Python pipelines, and business systems.",
+              "why": "The job description values judgment: use agents when reasoning is needed and deterministic scripts when a cron job is enough.",
+              "action": "Create a consulting checklist that classifies every automation step as deterministic, LLM-assisted, or human-approved.",
+              "teacher": "This is a strong lesson on production maturity: structured outputs, evals, monitoring, documentation, and human-in-the-loop design.",
+              "link": "https://job-boards.greenhouse.io/cookunity/jobs/7751648003"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n niche",
+              "title": "Reddit n8n niche discussion says flexibility matters more than betting on one platform",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Reddit discussion says n8n is worth learning, but builders should not bet their whole career on one platform because AI agents and code-generation tools are changing the space.",
+              "why": "This is useful market reality. Clients buy outcomes; tools change. The durable lane is workflow architecture plus business process judgment.",
+              "action": "Market yourself as an automation systems builder, with n8n, Claude Code, APIs, and small custom apps as interchangeable tools.",
+              "teacher": "Teach tool portability: data model, trigger, transformation, decision, approval, logging, and recovery are the core concepts.",
+              "link": "https://www.reddit.com/r/n8n/comments/1s4q4hj/is_it_worth_learning_n8n_as_a_niche_in_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Public X post",
+              "title": "Public X post frames Claude Code plus n8n automation as a freelance pricing story",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X/search-visible post promotes Claude Code building n8n agents and automations, with freelancers charging for automation builds.",
+              "why": "Even if social pricing claims need skepticism, the attention is useful: buyers and learners are associating Claude Code plus n8n with paid automation work.",
+              "action": "Use the attention to publish proof, not hype: before/after workflow, screenshots, failure handling, maintenance plan, and business result.",
+              "teacher": "Teach students to challenge viral claims with evidence. The assignment: price a workflow only after scoping reliability and maintenance.",
+              "link": "https://x.com/hammertime_one/status/2050950333224882651"
             }
           ]
         }
