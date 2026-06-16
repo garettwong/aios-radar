@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 06:14",
-    "editions": 146
+    "fetchedAt": "2026-06-17 06:19",
+    "editions": 147
   },
   "editions": [
+    {
+      "key": "2026-06-17 06",
+      "label": "2026-06-17 · 06:11",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-17 · 06:11 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Microsoft Marketplace adds",
+              "title": "Microsoft Marketplace adds a fresh batch of AI apps and agents",
+              "source": "techcommunity.microsoft.com",
+              "relevance": "Intermediate",
+              "summary": "Microsoft listed 213 new marketplace offers on June 16, including AI apps and agents for cloud buyers.",
+              "why": "Agent products are being normalized as purchasable enterprise software, not only experimental demos.",
+              "action": "When evaluating agent tools, check whether they are already sold through a trusted marketplace with procurement, billing, and compliance metadata.",
+              "teacher": "Teach the difference between a model, an agent, and a deployable business solution: buyers increasingly purchase packaged workflows.",
+              "link": "https://techcommunity.microsoft.com/blog/marketplace-blog/new-in-microsoft-marketplace-june-16-2026/4508154"
+            },
+            {
+              "n": 2,
+              "category": "OwnXR uses AWE",
+              "title": "OwnXR uses AWE USA to push no-3D-background AI spatial content creation",
+              "source": "prnewswire.com",
+              "relevance": "Intermediate",
+              "summary": "AWE USA coverage highlights OwnXR, which lets users generate AI-created 3D models and Gaussian Splat content for immersive XR experiences.",
+              "why": "Spatial AI is moving toward creator-facing tooling where 3D skill is optional at the starting point.",
+              "action": "Watch for workflows that combine generated 3D assets, splats, interaction layers, and direct publishing; these are relevant to booth, retail, and experiential mockups.",
+              "teacher": "Position AI 3D as a concept and iteration accelerator, then require artist QA for geometry, materials, scale, and brand taste.",
+              "link": "https://www.prnewswire.com/news-releases/xr-and-ai-leap-into-the-future-at-augmented-world-expo-usa-2026-as-expo-hall-opens-in-long-beach-ca-302802146.html"
+            },
+            {
+              "n": 3,
+              "category": "Clawd trains Solana-specific",
+              "title": "Clawd trains Solana-specific open models for agents and builders",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "A Hugging Face post introduces Clawd, open Solana-native AI models for developers, traders, researchers, creators, and agents.",
+              "why": "Domain-specific models are becoming a practical answer to generic-model hallucination in tool-heavy ecosystems.",
+              "action": "For any serious vertical agent, build or choose a domain context layer before adding more autonomy.",
+              "teacher": "Use this as a case study for why agents need local domain grammar, APIs, failure modes, and evaluation data.",
+              "link": "https://huggingface.co/blog/solanaclawd/clawd"
+            },
+            {
+              "n": 4,
+              "category": "Browser Use 0.13",
+              "title": "Browser Use 0.13 moves web agents toward a Rust-core browser harness",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Browser Use repo describes a beta agent with a Rust core, browser harness, persistent tools, and recovery loops.",
+              "why": "Web agents are shifting from fragile screenshot automation toward more engineered runtimes.",
+              "action": "Test browser-agent stacks on recovery from stale pages, auth flows, and interrupted tasks before trusting them for client work.",
+              "teacher": "Teach browser agents as systems engineering: observation, action, memory, retries, and verification all matter.",
+              "link": "https://github.com/browser-use/browser-use"
+            },
+            {
+              "n": 5,
+              "category": "GitHub Community thread",
+              "title": "GitHub Community thread shows Copilot billing friction after usage-based rollout",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A GitHub Community discussion says usage-based billing for Copilot and code review went live June 1, with budget controls and expanded contexts.",
+              "why": "AI coding cost is becoming an operational constraint, not just a subscription line item.",
+              "action": "Add per-project AI spend notes: tool, model, minutes/credits, and whether the output actually shipped.",
+              "teacher": "Teach makers to measure agent ROI by merged work and avoided rework, not just impressive generations.",
+              "link": "https://github.com/orgs/community/discussions/197524"
+            },
+            {
+              "n": 6,
+              "category": "Hacker News comment",
+              "title": "Hacker News comment highlights KV-cache friction in local coding-agent harnesses",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Hacker News discussion on replacing cloud models with local coding models calls out harness behavior, including system-prompt mutation that can break KV-cache benefits.",
+              "why": "Local AI coding performance depends on the orchestration layer as much as the model.",
+              "action": "When benchmarking local coding agents, record harness, prompt mutation, context reuse, tool support, and latency, not only tokens per second.",
+              "teacher": "Good local-agent evaluation separates model quality from runtime architecture.",
+              "link": "https://news.ycombinator.com/item?id=48545304"
+            },
+            {
+              "n": 7,
+              "category": "Reddit creator thread",
+              "title": "Reddit creator thread puts hard numbers on current AI video workflow economics",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "In a Reddit AI video workflow thread, creators describe spending around hundreds per month, using start frames, regenerating heavily, and still relying on normal editing and client management.",
+              "why": "The market signal is sober: AI video helps, but control, QA, and production judgment still carry the business.",
+              "action": "For paid creator work, budget credits and revision time before quoting; do not price AI video as one-click output.",
+              "teacher": "Teach the pipeline as brief -> reference frames -> generation -> selection -> edit -> sound/color -> client review.",
+              "link": "https://www.reddit.com/r/aitubers/comments/1u6slx5/what_does_your_ai_video_workflow_actually_look/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit Unreal Engine",
+              "title": "Reddit Unreal Engine users flag AI-generated asset disclosure problems on FAB",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "Unreal Engine users are discussing AI-generated plugin and asset disclosure issues on FAB, including concerns about mass-produced 3D models marked incorrectly.",
+              "why": "Asset marketplaces may face trust and labeling pressure as AI-generated 3D content floods supply.",
+              "action": "Before buying or using marketplace assets, inspect topology, face count, animations, style consistency, license, and AI disclosure.",
+              "teacher": "This is a good lesson in marketplace QA: cheap generated assets can cost more once cleanup, optimization, and legal risk are included.",
+              "link": "https://www.reddit.com/r/unrealengine/comments/1u6azd3/heads_up_to_anyone_who_buys_assets_plugins_on_fab/"
+            },
+            {
+              "n": 9,
+              "category": "SiliconANGLE tracks Arcade",
+              "title": "SiliconANGLE tracks Arcade funding as agent authorization gets hot",
+              "source": "siliconangle.com",
+              "relevance": "Intermediate",
+              "summary": "SiliconANGLE reports Arcade raised million for AI-agent authorization, with a focus on controlling what agents can access and modify.",
+              "why": "The agent security market is forming around permissions, runtime enforcement, and audit trails.",
+              "action": "For any autonomous workflow, define allowed tools, allowed data, human approval points, and revocation before scaling usage.",
+              "teacher": "Teach agent safety as access design, not just prompt safety.",
+              "link": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/"
+            },
+            {
+              "n": 10,
+              "category": "X maker post",
+              "title": "X maker post turns agent workflow design into explicit read-edit-test loops",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X maker post frames workflows as the loop an agent follows instead of improvising, with simple coding loops such as read, edit, test, summarize.",
+              "why": "Builders are converging on small repeatable loops as the real productivity layer above models.",
+              "action": "Convert repeated personal workflows into named loops with inputs, checks, and exit criteria.",
+              "teacher": "Teach agents like junior production systems: give them a loop, a stop condition, and a verification habit.",
+              "link": "https://x.com/EXM7777"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-17 03",
       "label": "2026-06-17 · 03:16",
