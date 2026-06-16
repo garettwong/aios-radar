@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 06:23",
+    "fetchedAt": "2026-06-17 06:28",
     "editions": 147
   },
   "editions": [
     {
       "key": "2026-06-17 06",
-      "label": "2026-06-17 · 06:11",
+      "label": "2026-06-17 · 06:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Convert repeated personal workflows into named loops with inputs, checks, and exit criteria.",
               "teacher": "Teach agents like junior production systems: give them a loop, a stop condition, and a verification habit.",
               "link": "https://x.com/EXM7777"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-17 · 06:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Grafana Labs Staff",
+              "title": "Grafana Labs Staff AI Engineer owns marketing AI agent infrastructure",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Grafana is hiring a remote Staff AI Engineer to build multi-agent systems, MCP servers, RAG, workflow orchestration, and reusable agentic skills for Marketing, RevOps, SDR, and GTM teams.",
+              "why": "AI ops has moved from experiments to owned production infrastructure inside revenue teams.",
+              "action": "Build a portfolio demo that connects CRM, Slack, email, analytics, and a small evaluation dashboard, then frame it as GTM agent infrastructure.",
+              "teacher": "Teach this as the stack: data source, tool server, agent skill, human escalation, observability, cost control, and business metric.",
+              "link": "https://job-boards.greenhouse.io/grafanalabs/jobs/5806328004"
+            },
+            {
+              "n": 2,
+              "category": "Storyblok AI Operations",
+              "title": "Storyblok AI Operations and Automation Manager points to AI ops as a remote company function",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Storyblok is advertising AI operations and automation work inside a fully remote company context, with the job-board snippet emphasizing flexible schedules and international operating culture.",
+              "why": "Remote-first companies need people who can turn messy internal workflows into measurable AI systems without sitting next to every stakeholder.",
+              "action": "Package an audit offer for remote teams: map recurring handoffs, pick three automation wins, and deliver a lightweight playbook plus prototype.",
+              "teacher": "Students should learn discovery interviews, workflow diagrams, permission boundaries, and rollout metrics before touching tools.",
+              "link": "https://job-boards.greenhouse.io/storyblok/jobs/4816871101"
+            },
+            {
+              "n": 3,
+              "category": "StackAdapt Business Systems",
+              "title": "StackAdapt Business Systems role asks for production automation experience",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "StackAdapt wants a Senior Analyst for Business Systems with hands-on production automations using Workato, Zapier, Make, n8n, or equivalents, especially around Salesforce and high-growth operations.",
+              "why": "The market is rewarding analysts who can ship durable workflow systems, not just document requirements.",
+              "action": "Turn one ops case study into a before/after artifact: manual process, automation diagram, failure handling, QA checklist, and time saved.",
+              "teacher": "Teach analysts to own integration logic, data hygiene, test cases, and adoption, not only dashboards.",
+              "link": "https://job-boards.greenhouse.io/stackadapt/jobs/4234359009"
+            },
+            {
+              "n": 4,
+              "category": "IonQ internal audit",
+              "title": "IonQ internal audit automation role names Claude and Vellum for control workflows",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "IonQ is hiring a Staff Automation Engineer for internal audit to build AI-assisted workflows around control mapping, walkthrough summaries, anomaly narratives, and audit evidence.",
+              "why": "Audit, compliance, and finance are becoming strong niches for AI builders because the work is repetitive, high-value, and needs human review.",
+              "action": "Create a compliance automation sample: ingest meeting notes, map them to a framework, draft evidence summaries, and flag gaps for review.",
+              "teacher": "Teach guardrails clearly: source citation, confidence levels, reviewer sign-off, audit trail, and no autonomous final approvals.",
+              "link": "https://job-boards.greenhouse.io/ionq/jobs/5818448004"
+            },
+            {
+              "n": 5,
+              "category": "HopSkipDrive GTM Engineer",
+              "title": "HopSkipDrive GTM Engineer wants AI-first revenue workflow builders",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "HopSkipDrive is seeking a GTM Engineer with experience using LLMs, automation agents, enrichment tools, Clay, n8n, Gemini, Claude, or similar tools to reduce manual lift across GTM workflows.",
+              "why": "GTM engineering is turning into a bridge role between sales ops, data enrichment, automation, and AI-assisted prospecting.",
+              "action": "Build a sample pipeline that enriches leads, scores fit, drafts next actions, and logs everything to a CRM with review gates.",
+              "teacher": "Teach the difference between automation that creates spam and automation that improves signal, routing, and follow-up quality.",
+              "link": "https://job-boards.greenhouse.io/hopskipdrive/jobs/6011491004"
+            },
+            {
+              "n": 6,
+              "category": "Datadog People Systems",
+              "title": "Datadog People Systems Developer shows HR becoming an AI workflow lane",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Datadog is hiring a People Systems Developer to design and deploy AI-native workflows across hiring, onboarding, performance, workforce planning, and internal service delivery.",
+              "why": "AI workflow work is expanding beyond product and marketing into People teams, where service requests and process handoffs are constant.",
+              "action": "Prototype an HR service agent that answers from policy docs, drafts ticket responses, and routes sensitive cases to humans.",
+              "teacher": "Teach privacy, role-based access, escalation rules, and tone control as first-class requirements in people-ops automation.",
+              "link": "https://job-boards.greenhouse.io/datadog/jobs/7874990"
+            },
+            {
+              "n": 7,
+              "category": "Cargomatic AI Engineer",
+              "title": "Cargomatic AI Engineer focuses on rapid standalone automation apps",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Cargomatic is hiring a hands-on AI Engineer for rapid prototyping and standalone AI-driven applications that integrate with business systems and deliver immediate operational value.",
+              "why": "Logistics and operations buyers want small useful AI apps that remove bottlenecks, not vague transformation decks.",
+              "action": "Offer a two-week prototype sprint: one workflow, one business system integration, one measurable reduction in manual handling.",
+              "teacher": "Teach quick scoping: input, decision, output, owner, exception path, and success metric.",
+              "link": "https://job-boards.greenhouse.io/cargomatic/jobs/5207803008"
+            },
+            {
+              "n": 8,
+              "category": "Brainlake AI Automation",
+              "title": "Brainlake AI Automation Engineer shows agency-side demand for intelligent business systems",
+              "source": "jobs.workable.com",
+              "relevance": "Intermediate",
+              "summary": "Brainlake Advertising posted a recent AI Automation Engineer role to design, build, and deploy intelligent business systems that combine AI tools with automation.",
+              "why": "Agencies are hiring builders who can turn AI from content output into repeatable client delivery infrastructure.",
+              "action": "For a design or 3D studio, productize an internal system: intake, asset checklist, status updates, client review summary, and invoice trigger.",
+              "teacher": "Teach agency learners to sell systems around throughput, fewer revisions, and fewer dropped handoffs, not tool novelty.",
+              "link": "https://jobs.workable.com/view/b44xk6RfMdHFgQ1Q5W9PRp/hybrid-ai-automation-engineer-in-cairo-at-brainlake-advertising-llc"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n case",
+              "title": "Reddit n8n case study: invoicing automation cut three daily hours to twenty-five minutes",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A fresh r/n8n post describes discovering a hidden invoicing bottleneck, syncing two disconnected systems, filtering fake entries, creating client profiles, and leaving final invoice approval with the human.",
+              "why": "This is a strong freelance signal: real opportunities often hide inside invisible daily pain that still technically gets done on time.",
+              "action": "Use the exact discovery prompt from the case: ask operators to walk through their actual day, then listen for the step with fatigue and risk.",
+              "teacher": "Teach students to keep legal or financial approvals human-in-the-loop while automating preparation, validation, and draft creation.",
+              "link": "https://www.reddit.com/r/n8n/comments/1u333z1/software_in_2026_ai_machine_learning_autonomous/"
+            },
+            {
+              "n": 10,
+              "category": "X search signal:",
+              "title": "X search signal: AI automation is being packaged as six connected business tools",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X/search-visible article frames most AI automation offers as a small connected stack: workflow builders such as n8n or Make, AI tools, and business apps wired into a usable system.",
+              "why": "The useful opportunity is not selling magic agents; it is packaging a clear stack that a client can understand, maintain, and measure.",
+              "action": "Write a one-page service menu with three bundles: lead ops, content ops, and admin ops, each listing inputs, tools, outputs, and maintenance fee.",
+              "teacher": "Teach positioning around repeatable templates plus customization, with screenshots and workflow maps as proof. X page itself required login, so the signal was taken from public search-visible snippet only.",
+              "link": "https://x.com/IAmAaronWill/article/2062156700275110257"
             }
           ]
         }
