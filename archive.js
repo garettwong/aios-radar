@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 09:15",
-    "editions": 139
+    "fetchedAt": "2026-06-16 09:17",
+    "editions": 140
   },
   "editions": [
+    {
+      "key": "2026-06-16 09",
+      "label": "2026-06-16 · 09:15",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-16 · 09:15 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub expands Gemini",
+              "title": "GitHub expands Gemini model access across Copilot CLI, cloud agent, app, and SDK",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub put Gemini models into more Copilot surfaces, including CLI, cloud agent, the Copilot app, and SDK paths.",
+              "why": "Model choice is becoming a workflow feature, not just a chat setting. Builders can route work by cost, context, and behavior inside the same agent surface.",
+              "action": "Keep a small agent test matrix: one refactor, one UI tweak, one bug hunt, and one long-context task across Gemini, Claude, OpenAI, and local models.",
+              "teacher": "Explain this as agents becoming model routers. The product advantage shifts toward orchestration, evals, and defaults.",
+              "link": "https://github.blog/changelog/2026-06-02-gemini-models-in-copilot-cli-cloud-agent-and-the-copilot-app/"
+            },
+            {
+              "n": 2,
+              "category": "AWS weekly update",
+              "title": "AWS weekly update surfaces FinOps Agent preview, Gemma 4 on Bedrock, and Kiro Pro Max",
+              "source": "aws.amazon.com",
+              "relevance": "Intermediate",
+              "summary": "AWS rounded up a FinOps Agent preview, Gemma 4 on Bedrock, and Kiro Pro Max as part of its June 15 platform updates.",
+              "why": "Cloud providers are bundling agents with cost control and developer workflow packaging, which makes AI operations more budget-driven.",
+              "action": "For every automated build/render agent, add a cost guardrail: max runtime, max calls, and a stop condition before it spends silently.",
+              "teacher": "Tie this to agent economics: good agents are not just smart; they are metered, observable, and interruptible.",
+              "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-finops-agent-in-preview-gemma-4-on-bedrock-kiro-pro-max-and-more-june-15-2026/"
+            },
+            {
+              "n": 3,
+              "category": "Linear Agent can",
+              "title": "Linear Agent can now write code using Claude Code and Codex",
+              "source": "",
+              "relevance": "Intermediate",
+              "summary": "Linear introduced coding sessions where Linear Agent can use Claude Code and Codex to work from issue context.",
+              "why": "The project-management layer is becoming the launcher for coding agents. Issues, acceptance criteria, and status loops become first-class agent inputs.",
+              "action": "Write AI-ready tickets with",
+              "teacher": "Show this as the move from chat with a coder to assigning a scoped job card. The PM tool becomes the agent cockpit. Source: Linear Changelog - https://linear.app/changelog/2026-06-11-coding-sessions",
+              "link": null
+            },
+            {
+              "n": 4,
+              "category": "Salesforce moves to",
+              "title": "Salesforce moves to acquire Fin for $3.6B as AI agents pressure SaaS",
+              "source": "investors.com",
+              "relevance": "Intermediate",
+              "summary": "Investor coverage says Salesforce is acquiring Fin for $3.6B, a signal that AI support agents are now strategic SaaS infrastructure.",
+              "why": "Agent startups that own workflow, data, and customer outcomes are becoming acquisition targets, not just feature vendors.",
+              "action": "Watch which maker tools become system-of-record adjacent. Durable value sits near support, sales, project state, billing, and asset libraries.",
+              "teacher": "Use this as a market signal: AI agents are moving from demos into categories with measurable ROI and consolidation pressure.",
+              "link": "https://www.investors.com/news/technology/salesforce-stock-fin-artificial-intelligence-acqusition-crm/"
+            },
+            {
+              "n": 5,
+              "category": "Google publishes Gemini",
+              "title": "Google publishes Gemini Code Assist consumer deprecation dates",
+              "source": "developers.google.com",
+              "relevance": "Intermediate",
+              "summary": "Google lists consumer Gemini Code Assist deprecation dates, including shutdown steps across CLI and IDE paths.",
+              "why": "Maker workflows built on free or consumer AI tools can break quickly. Platform migration planning is now part of AI productivity hygiene.",
+              "action": "Keep a fallback stack for coding agents: one cloud CLI, one IDE assistant, one browser agent, and one local/offline option.",
+              "teacher": "Teach this as dependency risk for AI tools. A clever workflow is only useful if it survives product renames, limits, and sunsets.",
+              "link": "https://developers.google.com/gemini-code-assist/docs/deprecations"
+            },
+            {
+              "n": 6,
+              "category": "NVIDIA 3D object",
+              "title": "NVIDIA 3D object generation blueprint packages Llama, SANA, and TRELLIS into a scene workflow",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA's open blueprint combines Llama, SANA, and TRELLIS components for 3D object generation workflows.",
+              "why": "3D generation is shifting from single-image novelty toward reproducible pipelines with prompts, mesh output, and renderable scene assets.",
+              "action": "Test it on one booth object class: podium, product stand, display wall, or decorative prop. Judge mesh cleanliness, scale, material separation, and view consistency.",
+              "teacher": "Frame this as pipeline thinking: the win is not AI makes a model, it is AI produces assets that survive downstream production.",
+              "link": "https://github.com/NVIDIA-AI-Blueprints/3d-object-generation"
+            },
+            {
+              "n": 7,
+              "category": "ComfyUI-Lux3D adds image-to-3D,",
+              "title": "ComfyUI-Lux3D adds image-to-3D, material preview, and render passes to node workflows",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "ComfyUI-Lux3D brings Lux3DGen into ComfyUI with image-to-3D generation, material preview, and render-pass style workflow pieces.",
+              "why": "Node-based 3D generation is getting closer to controllable creator tooling, especially for artists who already think in passes and references.",
+              "action": "Build a repeatable ComfyUI test sheet: source image, generated mesh preview, albedo/material check, four camera angles, and failure notes.",
+              "teacher": "Useful teaching contrast: image models optimize appearance; production 3D workflows need geometry, normals, UV/material sanity, and repeatable cameras.",
+              "link": "https://github.com/manycore-research/ComfyUI-Lux3D"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News discussion",
+              "title": "Hacker News discussion highlights agent-readable docs and role compression",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current Hacker News thread around documentation and automation reflects a familiar maker concern: docs now serve both humans and AI agents.",
+              "why": "If agents consume your docs, examples, and READMEs, documentation quality directly affects automation quality and support load.",
+              "action": "Add agent-readable sections to internal docs: exact commands, expected outputs, known failure modes, and verification commands.",
+              "teacher": "Teach documentation as an API surface. Agents do not just read docs; they execute the assumptions encoded inside them.",
+              "link": "https://news.ycombinator.com/item?id=48614563"
+            },
+            {
+              "n": 9,
+              "category": "Reddit maker says",
+              "title": "Reddit maker says Claude Code productized their custom multi-agent cockpit",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A ClaudeAI Reddit maker says they spent months building a multi-agent cockpit, only to see Claude Code evolve toward the same pattern.",
+              "why": "Maker adoption is converging on dashboards, subagents, queues, and supervision. The cockpit pattern is becoming mainstream.",
+              "action": "Keep agent UI simple: job queue, worker identity, active file/project, budget, last verification, and one clear stop button.",
+              "teacher": "Good lesson for product timing: custom workflows often reveal where platform products are heading next.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u4pf9e/spent_6_months_building_a_multiagent_claude_code/"
+            },
+            {
+              "n": 10,
+              "category": "Public X posts",
+              "title": "Public X posts show makers pushing AI-generated 3D toward playable worlds",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Search-visible X activity around Tripo points to creators turning AI-generated assets into interactive or game-like 3D worlds.",
+              "why": "The 3D maker market is moving from static generated meshes toward asset pipelines that land in games, spatial demos, and product scenes.",
+              "action": "Track 3D tools by downstream export quality: GLB/FBX reliability, material grouping, riggability, collision readiness, and Unity/Unreal import friction.",
+              "teacher": "This is the maker-market version of last mile matters. A pretty generated asset is less valuable than one that drops cleanly into a scene.",
+              "link": "https://x.com/tripoai"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-15 12",
       "label": "2026-06-15 · 12:05",
