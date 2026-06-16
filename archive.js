@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 18:13",
-    "editions": 142
+    "fetchedAt": "2026-06-16 18:15",
+    "editions": 143
   },
   "editions": [
+    {
+      "key": "2026-06-16 18",
+      "label": "2026-06-16 · 18:07",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-16 · 18:07 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub capacity pressure",
+              "title": "GitHub capacity pressure becomes an AI-code market signal",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports Microsoft is using outside cloud capacity to help GitHub handle AI-driven growth and reliability pressure.",
+              "why": "AI coding is no longer just a tool category; it is stressing the infrastructure layer that developers depend on.",
+              "action": "Treat GitHub uptime, Actions minutes, queue time, and agent concurrency as production risks when planning AI-heavy workflows.",
+              "teacher": "Good example of second-order effects: more agent output means more repos, PRs, CI runs, storage, and review load.",
+              "link": "https://www.businessinsider.com/microsoft-github-amazon-ai-cloud-capacity-2026-6"
+            },
+            {
+              "n": 2,
+              "category": "Local AI agents",
+              "title": "Local AI agents on RTX PCs are being positioned as the private-agent path",
+              "source": "blogs.nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA says local agentic AI on Windows RTX PCs and DGX Spark is aimed at private, fast, user-controlled agent workflows.",
+              "why": "The cloud-agent narrative now has a strong counter-market: local agents for privacy, latency, cost control, and creator machines.",
+              "action": "For any workstation upgrade, compare GPU memory and local model/tool support against monthly AI subscriptions, not just render performance.",
+              "teacher": "Watch the split between cloud orchestration for teams and local orchestration for personal maker work.",
+              "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-computex-spark-local-agents/"
+            },
+            {
+              "n": 3,
+              "category": "Google monthly AI",
+              "title": "Google monthly AI updates show agentic features becoming the product default",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "Google's May AI roundup frames the agentic era across Gemini, AI Mode, creative tools, and developer workflows.",
+              "why": "Platform vendors are bundling agents into search, creation, coding, and productivity instead of treating them as separate apps.",
+              "action": "Track which Google tools expose agent APIs, CLI paths, or repeatable workflows before committing to one-off prompt habits.",
+              "teacher": "This is a platform-shift signal: the interface is moving from chat boxes to task-owning workflows.",
+              "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/"
+            },
+            {
+              "n": 4,
+              "category": "Marktoflow turns markdown",
+              "title": "Marktoflow turns markdown workflows into agent-executable automation",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The Marktoflow GitHub repo packages markdown/YAML workflows that can run through Claude Code, GitHub Copilot, Codex, or OpenCode without AI API keys.",
+              "why": "Makers are converging on repo-owned workflow files as the durable layer above whichever agent is hot this month.",
+              "action": "Keep repeatable AI tasks as markdown recipes with inputs, checks, and acceptance criteria inside the project repo.",
+              "teacher": "The useful abstraction is not another chatbot; it is a portable task spec that multiple agents can execute.",
+              "link": "https://github.com/marktoflow/marktoflow"
+            },
+            {
+              "n": 5,
+              "category": "MONA frames an",
+              "title": "MONA frames an agentic OS for interior design studios",
+              "source": "monaverse.com",
+              "relevance": "Intermediate",
+              "summary": "MONA's blog is publishing guidance on agentic OS workflows and AI tool stacks for interior design studios.",
+              "why": "Vertical creative markets are moving from generic image generation toward packaged workflows for briefs, references, sourcing, and client delivery.",
+              "action": "For design/3D services, map the full studio workflow first, then decide where AI should own handoff-heavy steps.",
+              "teacher": "The market opportunity is in domain-specific workflow glue, not another isolated render generator.",
+              "link": "https://monaverse.com/blog"
+            },
+            {
+              "n": 6,
+              "category": "Hacker News OpenCode",
+              "title": "Hacker News OpenCode discussion shows open-source coding agents still matter",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "HN discussion around OpenCode highlights makers looking for open-source alternatives after using Claude Code-style workflows.",
+              "why": "Even with strong commercial agents, open-source agents remain the pressure valve for cost, inspectability, and customization.",
+              "action": "Keep one open-source coding-agent path tested for fallback, automation experiments, and low-risk background tasks.",
+              "teacher": "Adoption signal: users compare agents by workflow fit and trust, not only benchmark scores.",
+              "link": "https://news.ycombinator.com/item?id=47460525"
+            },
+            {
+              "n": 7,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are asking whether local coding-agent machines are worth it",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A LocalLLaMA thread asks whether freelancers should buy beefy local hardware for coding agents, and what models/workflows can compete with cloud tools.",
+              "why": "Subscription fatigue is turning hardware ROI into a real maker decision, especially for people who code or create daily.",
+              "action": "Before buying hardware, benchmark one real project with local models and record setup time, edit quality, latency, and power cost.",
+              "teacher": "The right question is not 'local or cloud'; it is which tasks need privacy, speed, cheap iteration, or frontier reasoning.",
+              "link": "https://www.reddit.com/r/LocalLLaMA/comments/1qmqmb9/should_i_invest_in_a_beefy_machine_for_local_ai/"
+            },
+            {
+              "n": 8,
+              "category": "Reddit ChatGPTCoding users",
+              "title": "Reddit ChatGPTCoding users want practical tools beyond Copilot",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A ChatGPTCoding discussion asks what tools are actually worth trying beyond Copilot, including Cursor, Claude Code, Kiro, and analyst workflows.",
+              "why": "The buyer is now workflow-shopping: coding, data, SQL, notebooks, and task execution are being judged together.",
+              "action": "Build a small evaluation matrix around install friction, repo understanding, edit safety, cost, and handoff quality.",
+              "teacher": "This is a good classroom prompt for separating autocomplete, chat, agent execution, and workflow automation.",
+              "link": "https://www.reddit.com/r/ChatGPTCoding/comments/1rxw1gu/what_ai_tools_are_actually_worth_trying_beyond/"
+            },
+            {
+              "n": 9,
+              "category": "Public X maker",
+              "title": "Public X maker posts show AI-assisted 3D entering physical maker labs",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Edge City promoted a maker lab with 3D printers, fabrication tools, and AI-assisted design workflows including MONA image-to-3D and text-to-3D.",
+              "why": "AI 3D is moving from online demo to workshop setting, where outputs are tested against physical making and fabrication constraints.",
+              "action": "When testing image-to-3D tools, include a physical print or fabrication pass, not just a screen preview.",
+              "teacher": "The evaluation bar changes when an asset has to survive scale, material, supports, and real-world use.",
+              "link": "https://x.com/JoinEdgeCity/status/2058989276352655587"
+            },
+            {
+              "n": 10,
+              "category": "Addy Osmani's X",
+              "title": "Addy Osmani's X article frames agentic code review as risk triage",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article from Addy Osmani describes Codex and Claude Code as first-pass, risk-sorted PR reviewers while keeping merge judgment human.",
+              "why": "The strongest near-term agent pattern is not full autonomy; it is fast triage that lets humans spend attention where risk is highest.",
+              "action": "Ask review agents for risk ranking, missing tests, regression areas, and unclear assumptions before asking them to patch.",
+              "teacher": "This is a clean human-in-the-loop pattern: agent finds where to look; human owns the decision.",
+              "link": "https://x.com/addyosmani/article/2066595308629594363"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-16 15",
       "label": "2026-06-16 · 15:16",
