@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 18:23",
+    "fetchedAt": "2026-06-16 18:26",
     "editions": 143
   },
   "editions": [
     {
       "key": "2026-06-16 18",
-      "label": "2026-06-16 · 18:07",
+      "label": "2026-06-16 · 18:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Ask review agents for risk ranking, missing tests, regression areas, and unclear assumptions before asking them to patch.",
               "teacher": "This is a clean human-in-the-loop pattern: agent finds where to look; human owns the decision.",
               "link": "https://x.com/addyosmani/article/2066595308629594363"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-16 · 18:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Baseten GTM Engineer",
+              "title": "Baseten GTM Engineer asks for real fluency with Claude Code, Cursor, Codex, or similar tools",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Baseten is hiring a GTM Engineer who is expected to actively build with AI coding assistants, not just experiment.",
+              "why": "GTM engineering is becoming a hybrid role: sales ops, internal tooling, data, and AI-assisted shipping.",
+              "action": "Package a small portfolio demo that turns messy sales or marketing data into a working dashboard or workflow.",
+              "teacher": "Teach this as GTM engineering equals automation plus business judgment, with one Claude Code/Codex build-along.",
+              "link": "https://jobs.ashbyhq.com/baseten/b621b620-85eb-4f73-8d77-e4ebd458b02d"
+            },
+            {
+              "n": 2,
+              "category": "Peec AI Financial",
+              "title": "Peec AI Financial Systems Lead wants automations with n8n, Claude Code, Stripe Connect, and Payhawk",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Peec AI is hiring finance systems talent that can build operational automations across payments and finance tools.",
+              "why": "Finance ops is a high-trust niche where AI automation services can command better fees than generic chatbot work.",
+              "action": "Build a finance-ops sample: invoice intake, payment status check, exception report, and human approval step.",
+              "teacher": "Emphasize controls, audit logs, and failure handling. That is the difference between a toy workflow and a paid workflow.",
+              "link": "https://jobs.ashbyhq.com/peec/44a3ac2e-0f01-4f3f-83d6-b3a4b2045dbc"
+            },
+            {
+              "n": 3,
+              "category": "Dust Senior AI",
+              "title": "Dust Senior AI Support Engineer values builders of agents, workflows, and internal tools",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Dust is hiring support engineering talent with hands-on experience in Dust, Cursor, Claude Code, n8n, GPT-4, Claude, Mistral, or Gemini.",
+              "why": "AI support is turning into implementation consulting: diagnose, build, teach, and document customer workflows.",
+              "action": "Create a support-to-automation case study: customer issue, root cause, agent/workflow fix, and measurable time saved.",
+              "teacher": "Train support people to think like solution architects, not ticket responders.",
+              "link": "https://jobs.ashbyhq.com/dust/31640a53-7c85-416b-9c95-610445a55e81"
+            },
+            {
+              "n": 4,
+              "category": "Vizzia Business Operations",
+              "title": "Vizzia Business Operations Manager role explicitly says to bring AI into operational workflows",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Vizzia is hiring a BizOps operator who can challenge workflows, ship projects end to end, and introduce AI into operations.",
+              "why": "Smaller companies increasingly need AI-literate operators who can find bottlenecks and implement practical systems.",
+              "action": "Offer a fixed-price workflow audit plus one automation package for small operations teams.",
+              "teacher": "Use before/after process maps so nontechnical clients can see where AI belongs and where it should stay out.",
+              "link": "https://jobs.ashbyhq.com/vizzia/8182e40d-4c74-4a23-a2b9-31273031fd89"
+            },
+            {
+              "n": 5,
+              "category": "Allium Revenue Operations",
+              "title": "Allium Revenue Operations Manager includes Claude and Salesforce pipeline automation",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Allium wants RevOps talent that can build automated pipeline analysis and alerting using Claude and Salesforce.",
+              "why": "Sales teams pay for clean pipeline intelligence because bad data directly affects revenue forecasting.",
+              "action": "Build a demo that summarizes account changes, flags stalled opportunities, and drafts next-step recommendations.",
+              "teacher": "Teach sales automation around decision support, not spam. The deliverable is a better rep workflow.",
+              "link": "https://jobs.ashbyhq.com/allium/99d427de-147b-4c88-8085-a6ff64f74a44"
+            },
+            {
+              "n": 6,
+              "category": "Braviant AI and",
+              "title": "Braviant AI and Automation Engineer is a greenfield Claude/Claude Code role",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Braviant is hiring an engineer to build on Claude, Claude Code, and the broader Anthropic ecosystem, with agent framework judgment.",
+              "why": "Companies are starting to standardize on AI stacks and need people who can choose frameworks responsibly.",
+              "action": "Prepare a comparison note: when to use n8n, Claude Code, Strands-style agents, or plain scripts.",
+              "teacher": "Make students justify tool choice with reliability, observability, data sensitivity, and maintenance cost.",
+              "link": "https://jobs.lever.co/braviantholdings/483fbb24-8f95-4548-bb0e-f181cacd3cd1"
+            },
+            {
+              "n": 7,
+              "category": "Upwork client wants",
+              "title": "Upwork client wants Claude Code plus n8n for social media content automation",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A current Upwork brief requires hands-on Claude Code experience for scalable social media content automation.",
+              "why": "Content automation clients are moving past prompt packs toward maintained systems that generate, review, schedule, and report.",
+              "action": "Build a content pipeline sample with source intake, draft generation, approval queue, and posting calendar export.",
+              "teacher": "Stress brand voice QA and human approval. This is where designers and content people can beat pure automation sellers.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Claude-Code-n8n-Developer-for-Social-Media-Content-Automation_~022064434932833283005/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork marine chemicals",
+              "title": "Upwork marine chemicals buyer wants AI outreach automation with Claude, n8n, and HubSpot",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A B2B industrial buyer is looking for AI-powered sales and lead-generation automation, with architecture examples requested.",
+              "why": "Boring verticals can be better opportunities because the workflows are specific and ROI is easier to explain.",
+              "action": "Create an outreach automation proposal template with data sources, CRM fields, qualification rules, and compliance checks.",
+              "teacher": "Show how to sell architecture and risk control, not only tool setup.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Outreach-Sales-Automation-Specialist-Claude-n8n-HubSpot_~022065445992854731461/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit freelancers are",
+              "title": "Reddit freelancers are pivoting away from simple WhatsApp wrappers toward backend n8n automation",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/AI_Agents thread asks what real businesses are paying for now that basic WhatsApp chatbot wrappers are becoming weak offers.",
+              "why": "The market signal is clear: wrapper-only services are fragile, while backend workflow automation remains useful.",
+              "action": "Reframe any chatbot offer as an operations system: CRM update, appointment flow, quote builder, reporting, and escalation.",
+              "teacher": "Use this as a cautionary lesson: never build a service around a feature a platform can copy.",
+              "link": "https://www.reddit.com/r/AI_Agents/comments/1tn9idm/pivoting_from_whatsapp_wrappers_to_n8n_backend/"
+            },
+            {
+              "n": 10,
+              "category": "Public X article",
+              "title": "Public X article frames higher-value freelance work as building real AI systems, not isolated automations",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X article argues that agency/freelance projects move into the 5K-15K range when the offer becomes a real business system.",
+              "why": "This supports the shift from task automation to packaged systems with onboarding, monitoring, and measurable outcomes.",
+              "action": "Turn one niche into a named productized service: intake, build, monitor, monthly improvement, and ROI report.",
+              "teacher": "Teach packaging: scope, proof, maintenance, reporting, and a clear line between prototype and production.",
+              "link": "https://x.com/nateherk/article/2054206361240490434"
             }
           ]
         }
