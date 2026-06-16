@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-16 21:26",
+    "fetchedAt": "2026-06-16 21:29",
     "editions": 144
   },
   "editions": [
     {
       "key": "2026-06-16 21",
-      "label": "2026-06-16 · 21:00",
+      "label": "2026-06-16 · 21:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Save prompts, inputs, tool outputs, diffs, tests, and settings.",
               "teacher": "Reliable agents need pipelines, validators, logs, and budgets.",
               "link": "https://github.com/anthropics/claude-code/issues/58933"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-16 · 21:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "n8n AI Product",
+              "title": "n8n AI Product Manager role treats AI-native tool fluency as product judgment",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "n8n is hiring an AI Product Manager and explicitly values regular use of Claude Code, Cursor, Lovable, n8n, or similar tools.",
+              "why": "AI-native product work is moving from generic PM skills to hands-on workflow taste.",
+              "action": "Build a short product memo for one n8n-style AI workflow: user pain, current workaround, proposed flow, risk, and measurement.",
+              "teacher": "Teach PMs to evaluate agent products by failure modes, handoff design, and adoption friction, not feature count.",
+              "link": "https://jobs.ashbyhq.com/n8n/42e72645-d99a-4545-97b7-53ba3a699893"
+            },
+            {
+              "n": 2,
+              "category": "WeTravel Agentic Operator",
+              "title": "WeTravel Agentic Operator for Marketing Growth turns AI agents into no-code GTM operations",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "WeTravel is hiring a marketing growth operator to configure agents with Clay, Lindy, n8n, Zapier, HubSpot AI, and OpenAI or Claude APIs.",
+              "why": "GTM teams are buying structured thinking plus no-code agent setup, not only software engineering.",
+              "action": "Offer a travel or events client a lead enrichment and follow-up agent with clear handoff points.",
+              "teacher": "Teach operators to write workflow specs before touching tools: trigger, data source, decision rule, output, owner, failure path.",
+              "link": "https://jobs.ashbyhq.com/wetravel/a9938fa9-2468-40de-a5f7-c703298973fb"
+            },
+            {
+              "n": 3,
+              "category": "INFUSE AI Transformation",
+              "title": "INFUSE AI Transformation Specialist contract turns department redesign into a remote service lane",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "INFUSE wants a remote contract specialist who can question legacy processes and implement AI tools, agents, workflows, and process redesign.",
+              "why": "Companies are buying practical transformation help, not just model demos.",
+              "action": "Create a one-page department AI audit offer: map repetitive work, rank workflows, prototype one improvement, train the team.",
+              "teacher": "Teach discovery interviews before tools: the first artifact should be a workflow map and constraint list.",
+              "link": "https://job-boards.greenhouse.io/infuse/jobs/4698758005"
+            },
+            {
+              "n": 4,
+              "category": "Sleeper AI Content",
+              "title": "Sleeper AI Content Creator contract asks creators to scale throughput with agents and automation workflows",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Sleeper's contract role targets creators already deep in AI tools, with comfort using Claude, ChatGPT projects, and automation workflows.",
+              "why": "Creator jobs are becoming hybrid roles: taste, speed, platform knowledge, and AI production systems.",
+              "action": "Build a sports or entertainment content sample pack showing prompt system, source rules, visual style, and approval steps.",
+              "teacher": "Useful class exercise: compare three AI-assisted posts and grade them on accuracy, timing, hook quality, and brand fit.",
+              "link": "https://jobs.ashbyhq.com/sleeper/fd7c8e44-caa4-4dff-b2d9-3a3365aae706"
+            },
+            {
+              "n": 5,
+              "category": "Trackmind AI Full",
+              "title": "Trackmind AI Full Stack Developer role blends Figma AI, Framer, v0, Claude Code, and n8n",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Trackmind lists AI-assisted coding, AI-powered design tools, LLM APIs, workflow automation, and AI-assisted testing in one role.",
+              "why": "The full-stack label is expanding into design prototyping and automation, which is good territory for design-technical people.",
+              "action": "Make a portfolio case study that starts in Figma or Framer, ships a small app, and automates one internal workflow.",
+              "teacher": "Teach students to document the stack choices and verification steps, not just the finished screen.",
+              "link": "https://jobs.lever.co/trackmind/baaa002e-13d3-4510-8ae4-8ebe58a43b1b"
+            },
+            {
+              "n": 6,
+              "category": "Phiture AI Automation",
+              "title": "Phiture AI Automation and Insights Analyst role points to mobile marketing analytics as an automation niche",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Phiture is hiring around AI automation, insights, app store optimization, user acquisition, CRM, and tools like n8n, Zapier, Make, or Airflow.",
+              "why": "Analytics-heavy marketing teams need operators who can automate data collection and turn it into action.",
+              "action": "Prototype a dashboard pipeline that pulls campaign data, summarizes anomalies, and drafts next tests.",
+              "teacher": "Teach the difference between a dashboard, an alert, and a decision workflow; clients pay more for the decision workflow.",
+              "link": "https://job-boards.greenhouse.io/phiture/jobs/4797534101"
+            },
+            {
+              "n": 7,
+              "category": "Leland Strategy and",
+              "title": "Leland Strategy and Ops Lead for AI Education shows teaching workflows are becoming AI-operator jobs",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Leland's AI education role mentions building automations with Notion task boards, n8n flows, and AI agents in Claude Code.",
+              "why": "AI education is not only course content; it is curriculum operations, coaching workflows, and student outcome systems.",
+              "action": "Package a workshop that teaches professionals to build one personal AI learning board plus one useful automation.",
+              "teacher": "Strong angle: teach by making each learner leave with a working workflow and a repeatable rubric.",
+              "link": "https://jobs.ashbyhq.com/leland/1bfddf5d-3db8-4af1-a142-06db9c6547bd"
+            },
+            {
+              "n": 8,
+              "category": "Upwork DTC pet",
+              "title": "Upwork DTC pet brand wants a Claude, n8n, Canva, Shopify content pipeline with human approval",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A UK DTC pet brand wants a specialist to automate social and blog content across Claude, n8n, image/design generation, Canva, Shopify, Meta, and TikTok, with mandatory human approval.",
+              "why": "This is a clear freelance offer shape for AI content systems with brand rules and compliance guardrails.",
+              "action": "Sell a phase-one build: Instagram/Facebook planner, image draft, caption draft, approval queue, and scheduled publishing.",
+              "teacher": "Emphasize review gates: unattended publishing is a risk, while approval-centered automation is easier to sell.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Automation-Specialist-Full-Social-Media-Blog-Content-Pipeline-Claude-n8n-Nano-Banana-Pro_~022056803784473271759/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit operators say",
+              "title": "Reddit operators say businesses still use n8n where deterministic workflows beat pure agents",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A current Reddit discussion says some businesses still prefer n8n when workflows must be reliable, cheaper to run, easier to debug, and not over-agentic.",
+              "why": "The opportunity is production operations, not just shiny demos.",
+              "action": "Pitch maintenance retainers for existing n8n systems: audit, error handling, logs, credential cleanup, and AI-step upgrades.",
+              "teacher": "Teach the phrase deterministic spine, AI judgment nodes as a simple architecture pattern.",
+              "link": "https://www.reddit.com/r/n8n/comments/1tarxwc/are_business_still_using_n8n/"
+            },
+            {
+              "n": 10,
+              "category": "Quicknode GTM Operations",
+              "title": "Quicknode GTM Operations Analyst role uses Claude Code for sales and support operations",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Quicknode wants Claude Code and AI-assisted tooling for scripted bulk updates, data quality checks, and agentic support-ticket triage.",
+              "why": "Sales ops and support ops are becoming applied automation fields, even outside pure AI companies.",
+              "action": "Build a demo that cleans CRM records, flags account gaps, and drafts support triage summaries from messy inputs.",
+              "teacher": "Teach operators to measure throughput, error rate, and handoff quality so AI ops work has business proof.",
+              "link": "https://jobs.ashbyhq.com/quicknode/aa18b773-624e-4173-ab8c-fa534f3bab4b"
             }
           ]
         }
