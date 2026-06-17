@@ -5,13 +5,13 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 09:21",
+    "fetchedAt": "2026-06-17 09:26",
     "editions": 148
   },
   "editions": [
     {
       "key": "2026-06-17 09",
-      "label": "2026-06-17 · 09:06",
+      "label": "2026-06-17 · 09:16",
       "briefs": [
         {
           "id": "trend",
@@ -141,6 +141,137 @@ window.DASHBOARD_ARCHIVE = {
               "action": "Maintain a one-page agent operating guide for each serious project: goals, constraints, commands, verification, and stop conditions.",
               "teacher": "Teach agent use like workshop safety: the setup is part of the craft, not optional decoration.",
               "link": "https://x.com/PrajwalTomar_/article/2063238968125333581"
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-17 · 09:16 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Adobe Creative Cloud",
+              "title": "Adobe Creative Cloud shifts more client cleanup work into built-in AI",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe's June 15 Creative Cloud update adds AI-assisted culling in Lightroom, Photo to Video, faster object masking in Premiere, Object Matte and 3D improvements in After Effects, Photoshop reflection removal/offline generative remove, and Illustrator Concept to Vector.",
+              "why": "Creative clients will expect faster image cleanup, b-roll, vector draft, and comp work without adding separate tools.",
+              "action": "Package a creative cleanup sprint for photographers, product teams, or event clients: cull, clean, short-motion clips, and vector redraws from existing assets.",
+              "teacher": "Teach the workflow as human selection plus AI acceleration: source quality, approval gates, nondestructive layers, and final manual polish.",
+              "link": "https://blog.adobe.com/en/publish/2026/06/15/from-culling-to-compositing-new-creative-cloud-innovations-across-every-stage-of-your-workflow"
+            },
+            {
+              "n": 2,
+              "category": "Anthropic Claude Corps",
+              "title": "Anthropic Claude Corps creates a paid AI implementation lane for nonprofits",
+              "source": "apnews.com",
+              "relevance": "Intermediate",
+              "summary": "AP reports Anthropic launched Claude Corps, a $150M initiative placing 1,000 trained early-career fellows into 400 U.S. nonprofits, with grants and Claude credits.",
+              "why": "AI implementation for nonprofits is becoming a structured service market, not just volunteer tech support.",
+              "action": "Build a nonprofit AI starter offer: intake triage, donor email drafts, grant research, spreadsheet cleanup, and board-report automation.",
+              "teacher": "Stress mission fit, privacy, consent, and measurable saved hours instead of generic AI hype.",
+              "link": "https://apnews.com/article/b1c130a08417d13e1256f8982d233b0e"
+            },
+            {
+              "n": 3,
+              "category": "Anthropic Academy packages",
+              "title": "Anthropic Academy packages Claude, Claude Code, MCP, skills, and AI fluency as teachable courses",
+              "source": "anthropic.skilljar.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic's course catalog includes Claude 101, Claude Code 101, Claude Cowork, MCP, agent skills, subagents, educator AI fluency, nonprofit AI fluency, and small-business AI fluency.",
+              "why": "The market is standardizing around teachable AI work patterns, which creates room for local workshops, internal training, and onboarding material.",
+              "action": "Create a one-page curriculum mapping: beginner daily work, Claude Code basics, workflow safety, and one hands-on automation.",
+              "teacher": "Use Anthropic's topics as module names, then localize examples for design studios, freelancers, and small teams.",
+              "link": "https://anthropic.skilljar.com/"
+            },
+            {
+              "n": 4,
+              "category": "The N2 Company",
+              "title": "The N2 Company Technical AI Delivery Manager role centers on managing freelance AI specialists",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "N2 is hiring a remote Technical AI Delivery Manager to oversee AI initiatives, manage freelance AI specialists, translate business needs into requirements, and monitor production automations.",
+              "why": "Companies now need people who can scope, hire, QA, and document AI work, not only build every workflow personally.",
+              "action": "Position as an AI delivery lead: write specs, source specialists, test outputs, keep project dashboards, and own acceptance criteria.",
+              "teacher": "Teach the difference between builder, delivery manager, and stakeholder; the money is often in reducing ambiguity.",
+              "link": "https://job-boards.greenhouse.io/n2co/jobs/5257249008"
+            },
+            {
+              "n": 5,
+              "category": "Appfire Senior AI",
+              "title": "Appfire Senior AI Automation Engineer role combines MCP, n8n, SaaS ops, and internal tools",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Appfire's role asks for AI-powered automations, internal tools, SaaS integrations, AI coding assistants, agents, MCP services, n8n-like workflow tools, APIs, and dashboards.",
+              "why": "Internal IT and SaaS operations are becoming a strong AI automation job lane.",
+              "action": "Build a portfolio demo around employee onboarding/offboarding, role access, SaaS data sync, and an ops dashboard.",
+              "teacher": "Show error handling, OAuth/API basics, logging, and documentation; these are what separate demos from production workflows.",
+              "link": "https://job-boards.greenhouse.io/appfire/jobs/4667233005"
+            },
+            {
+              "n": 6,
+              "category": "Capital on Tap",
+              "title": "Capital on Tap AI Operations Specialist role is adoption, training, and live workflow ownership",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Capital on Tap wants someone to ship multi-step agentic workflows, map operations processes, debug production issues, measure adoption, train champions, and maintain an AI playbook.",
+              "why": "AI operations is becoming a change-management role with technical delivery attached.",
+              "action": "Offer an AI adoption audit for one operations team: map 3 workflows, build 1 working v1, train users, measure usage after a week.",
+              "teacher": "Teach adoption metrics: active users, time saved, defect rate, escalation count, and repeat use.",
+              "link": "https://job-boards.greenhouse.io/capitalontap/jobs/8520481002"
+            },
+            {
+              "n": 7,
+              "category": "Faraday Future growth",
+              "title": "Faraday Future growth role treats GEO, LLM citations, Claude Code, and n8n as one operator stack",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Faraday Future's Data-Driven Growth Specialist owns GEO/LLM answer share, prompt libraries, AI content and competitor monitoring, n8n/Make pipelines, MCP servers, dashboards, and growth experiments.",
+              "why": "Growth marketing is shifting from content calendars to AI-search authority and automated experimentation systems.",
+              "action": "Build a GEO audit offer: check how ChatGPT, Claude, Gemini, and Perplexity cite a brand, then fix FAQs, schema, llms.txt, and source pages.",
+              "teacher": "Teach creators to measure answer share and citation quality, not only Google rankings.",
+              "link": "https://job-boards.greenhouse.io/faradayfuture/jobs/7738669003"
+            },
+            {
+              "n": 8,
+              "category": "Scale Army AI",
+              "title": "Scale Army AI Automation Specialist shows remote agency demand for Claude and workflow builders",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Scale Army's remote AI Automation Specialist listing frames the job as building AI workflows, connecting business systems, and driving organization-wide automation with Claude, Make, Zapier, and similar tools.",
+              "why": "Agencies are hiring operators who can convert messy client operations into working automations.",
+              "action": "Prepare a client-ready automation menu: lead intake, CRM cleanup, content repurposing, reporting, proposal generation, and inbox triage.",
+              "teacher": "Teach discovery questions first: trigger, data owner, approval step, failure mode, and success metric.",
+              "link": "https://jobs.ashbyhq.com/Scale%20Army%20Careers/80a50c24-fe1a-4579-8952-8b57bfc22c10/application?embed=js"
+            },
+            {
+              "n": 9,
+              "category": "n8n community builder",
+              "title": "n8n community builder ships Synta MCP for self-healing production workflows",
+              "source": "community.n8n.io",
+              "relevance": "Intermediate",
+              "summary": "A public n8n community post introduces Synta MCP, which lets Claude, Cursor, or OpenClaw execute triggers, inspect input/output schemas, validate node details, and debug n8n workflows more autonomously.",
+              "why": "The next freelance edge is not just making workflows; it is proving they run and recover from failure.",
+              "action": "Add a workflow QA and repair service: import a client's broken n8n workflow, validate schemas, document failure points, and deliver a tested version.",
+              "teacher": "Teach students to save execution logs, schema samples, and test cases as part of every automation deliverable.",
+              "link": "https://community.n8n.io/t/i-built-an-n8n-mcp-server-that-makes-claude-openclaw-and-cursor-and-an-end-to-end-n8n-specialist/286092?tl=en"
+            },
+            {
+              "n": 10,
+              "category": "Reddit operators are",
+              "title": "Reddit operators are mapping nontechnical n8n and Claude skills into GTM, RevOps, and implementation roles",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n discussion asks where a nontechnical person who likes n8n, Claude, dashboards, APIs, and internal tools fits long-term; replies point toward GTM engineering, RevOps, product owner, implementation lead, support, and vertical specialization.",
+              "why": "This is real market language from operators: the opportunity is automate chaos inside a business function, not calling yourself an AI expert.",
+              "action": "Pick one vertical, such as design studios, ecommerce, real estate, or clinics, and build 3 case-study workflows tied to money or time saved.",
+              "teacher": "Teach positioning as domain workflow improvement: understand the job first, automate second, productionalize with technical help when needed.",
+              "link": "https://www.reddit.com/r/n8n/comments/1te2xhn/nontechnical_guy_who_loves_n8n_claude_vibe_coding/"
             }
           ]
         }
