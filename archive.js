@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-17 09:11",
-    "editions": 147
+    "fetchedAt": "2026-06-17 09:16",
+    "editions": 148
   },
   "editions": [
+    {
+      "key": "2026-06-17 09",
+      "label": "2026-06-17 · 09:06",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-17 · 09:06 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Probably raises $9M",
+              "title": "Probably raises $9M for validator-first AI accuracy",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "Probably is building a data-science AI tool that uses deterministic validators and audit trails to stop hallucinations before users see them.",
+              "why": "The market is shifting from bigger models toward harness engineering: constrained context, validators, citations, and smaller cheaper models that can still be trusted.",
+              "action": "For any agent workflow, define a validator before the prompt: source checks, schema checks, render checks, budget checks, and a fail-closed path.",
+              "teacher": "Teach agents as systems, not chat boxes: model + harness + verifier + audit trail. The harness often decides whether the model is useful.",
+              "link": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai/"
+            },
+            {
+              "n": 2,
+              "category": "Respond.io raises $62.5M",
+              "title": "Respond.io raises $62.5M for AI-agent customer messaging",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "Respond.io says its platform processes about 2B messages per quarter and uses AI agents to qualify leads, answer customer questions, and close sales across chat channels.",
+              "why": "AI agents are moving into revenue workflows where the interface is messaging, not a dashboard. The pricing model is also important: charge by conversation volume, not seats.",
+              "action": "Watch customer-chat workflows in retail, travel, education, and healthcare. These are good examples of agents attached to clear commercial outcomes.",
+              "teacher": "A practical agent business needs channel access, history, workflow data, and pricing aligned with automation.",
+              "link": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe/"
+            },
+            {
+              "n": 3,
+              "category": "HPE Discover points",
+              "title": "HPE Discover points to agent-powered self-driving networks",
+              "source": "itpro.com",
+              "relevance": "Intermediate",
+              "summary": "HPE Discover coverage expects more on Juniper-Aruba integration, self-driving networks, private cloud, and the budget pressure that AI agents put on enterprise infrastructure.",
+              "why": "Agents are becoming infrastructure load, not just software features. Networking, private cloud, and tokenomics are now part of the agent discussion.",
+              "action": "For internal tools, track agent cost, latency, failure, and network dependency as first-class ops metrics.",
+              "teacher": "When agents become always-on workers, the platform must budget for compute, connectivity, identity, and rollback.",
+              "link": "https://www.itpro.com/business/business-strategy/what-will-the-big-announcements-be-at-hpe-discover-2026"
+            },
+            {
+              "n": 4,
+              "category": "Spacely AI brings",
+              "title": "Spacely AI brings interior workflow AI to SketchUp 3D Summit",
+              "source": "spacely.ai",
+              "relevance": "Intermediate",
+              "summary": "Spacely AI is joining SketchUp 3D Summit 2026, framing AI as part of architecture and interior-design workflow education rather than a separate novelty.",
+              "why": "Design AI adoption is entering existing professional communities: SketchUp users, interior designers, and visualization teams.",
+              "action": "For 3D/design work, build AI steps around existing tools like SketchUp, Blender, Substance, and client review loops instead of isolated demos.",
+              "teacher": "Adoption rises when AI attaches to the software professionals already trust.",
+              "link": "https://www.spacely.ai/blog"
+            },
+            {
+              "n": 5,
+              "category": "Editing Reality explores",
+              "title": "Editing Reality explores generative AI inside mixed reality spaces",
+              "source": "colorado.edu",
+              "relevance": "Intermediate",
+              "summary": "CU Boulder describes a mixed-reality system where users can generate, reconstruct, erase, retexture, and modify real-anchored virtual scene elements through speech, sketching, and direct manipulation.",
+              "why": "The next design interface is spatial and multimodal: talk, point, sketch, and edit in context.",
+              "action": "Prototype one small scene-editing workflow that combines reference images, spatial anchors, and explicit edit commands.",
+              "teacher": "For creators, the key idea is in-situ co-creation: the model edits the environment you are looking at, not an abstract prompt box.",
+              "link": "https://www.colorado.edu/atlas/editing-reality-situ-co-creation-generative-ai-mixed-reality"
+            },
+            {
+              "n": 6,
+              "category": "Leuphana Startup School",
+              "title": "Leuphana Startup School teaches n8n agents and automation",
+              "source": "leuphana.de",
+              "relevance": "Intermediate",
+              "summary": "A June 17 startup workshop teaches no-code workflows and AI agents with n8n for founders.",
+              "why": "Agent education is moving into founder training. Nontechnical builders are being taught workflow automation as a startup skill.",
+              "action": "Keep a starter n8n template library for lead intake, content monitoring, file triage, and human approval.",
+              "teacher": "The teaching pattern is useful: begin with workflow maps, then add model calls only where judgment or language handling is needed.",
+              "link": "https://www.leuphana.de/en/current-affairs/events/events-singleview/2026/06/17/leuphana-startup-school-n8n-deep-dive-ai-agents-automation.html"
+            },
+            {
+              "n": 7,
+              "category": "DeskBot Local AI",
+              "title": "DeskBot Local AI packages a small local assistant with memory",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "DeskBot is an open-source local assistant with chat, voice, TTS, SQLite memory, Ollama/LM Studio support, and browser WebGPU standalone mode.",
+              "why": "Maker demand is not only for frontier agents. People still want small local assistants that remember preferences and run on personal hardware.",
+              "action": "Test the pattern: local memory + local model + simple UI + voice. It is a good template for private personal tools.",
+              "teacher": "Local-first agents trade raw intelligence for privacy, persistence, and predictable cost.",
+              "link": "https://github.com/nikunjsingh93/deskbot-local-ai"
+            },
+            {
+              "n": 8,
+              "category": "Claude-code-tools turns agent",
+              "title": "Claude-code-tools turns agent productivity into installable skills and hooks",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The repo packages CLI tools, skills, agents, hooks, plugins, and search utilities for Claude Code, Codex CLI, and similar coding agents.",
+              "why": "The ecosystem is standardizing around agent add-ons: reusable skills, search, hooks, and task-specific plugins.",
+              "action": "Audit your own agent setup for repeated manual routines and convert the top three into reusable commands or skills.",
+              "teacher": "A mature coding-agent workflow is less about one perfect prompt and more about a toolbelt the agent can reliably use.",
+              "link": "https://github.com/pchalasani/claude-code-tools"
+            },
+            {
+              "n": 9,
+              "category": "Reddit game developers",
+              "title": "Reddit game developers still need cleaner AI image-to-3D outputs",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/aigamedev thread asks for image-to-3D tools that create cleaner Blender starting points with better mesh structure, textures, and less cleanup.",
+              "why": "3D AI is useful, but production friction remains mesh quality, retopology, texture cleanup, and export readiness.",
+              "action": "Evaluate 3D generators by cleanup time, not demo quality: topology, UVs, material separation, scale, and Blender editability.",
+              "teacher": "For 3D artists, the practical question is not whether AI can make a model; it is whether the result saves time after cleanup.",
+              "link": "https://www.reddit.com/r/aigamedev/comments/1tp1nrr/what_is_the_best_ai_tool_for_imageto3d_and_3d/"
+            },
+            {
+              "n": 10,
+              "category": "Public X posts",
+              "title": "Public X posts push Claude Code setup and long-running agent practices",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A search-visible X article frames Claude Code value around setup discipline rather than simply opening the tool and prompting.",
+              "why": "The public maker conversation is shifting from tool choice to operating practice: setup files, permissions, loops, and review habits.",
+              "action": "Maintain a one-page agent operating guide for each serious project: goals, constraints, commands, verification, and stop conditions.",
+              "teacher": "Teach agent use like workshop safety: the setup is part of the craft, not optional decoration.",
+              "link": "https://x.com/PrajwalTomar_/article/2063238968125333581"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-17 06",
       "label": "2026-06-17 · 06:16",
