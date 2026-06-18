@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-18 21:03",
-    "editions": 148
+    "fetchedAt": "2026-06-18 21:05",
+    "editions": 149
   },
   "editions": [
+    {
+      "key": "2026-06-18 21",
+      "label": "2026-06-18 · 21:01",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-18 · 21:01 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Gushwork Product Manager",
+              "title": "Gushwork Product Manager role asks for Claude Code plus n8n as product-ops muscle",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Gushwork wants a PM who can combine cohort analysis, funnel modeling, structured prompts, Claude Code, n8n, webhooks, API auth, error mapping, and LLM QA.",
+              "why": "Product management is becoming closer to hands-on AI systems design, not just roadmap writing.",
+              "action": "Package one product-ops demo: a funnel dashboard, one webhook automation, and a simple eval sheet for AI output quality.",
+              "teacher": "Teach PMs to treat prompts, automations, and evals as product artifacts with owners and acceptance criteria.",
+              "link": "https://jobs.lever.co/gushwork/c03a9615-f124-424c-8bbd-90d209a68f3d?lever-source=Indeed"
+            },
+            {
+              "n": 2,
+              "category": "CSC Generation Director",
+              "title": "CSC Generation Director FP&A and AI Finance role turns finance into an automation build lane",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "The role owns FP&A plus AI-driven process transformation, automated reporting, agent-based tools, and workflows using n8n, Claude Code, or ChatGPT.",
+              "why": "Finance teams are hiring leaders who can replace manual reporting cycles with working automations.",
+              "action": "Build a finance automation sample: monthly variance pack, source checks, commentary draft, and review checklist.",
+              "teacher": "Good teaching angle: finance AI is less about magic forecasts and more about repeatable data hygiene, traceability, and approval gates.",
+              "link": "https://jobs.lever.co/cscgeneration-2/7173fff2-b5d4-4ed1-ae23-47205f2140c5"
+            },
+            {
+              "n": 3,
+              "category": "Unlimit Agentic Content",
+              "title": "Unlimit Agentic Content Creator role formalizes AI-native editorial operations",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Unlimit wants a writer who uses Claude, ChatGPT, Claude Code, Cursor, n8n, Make, or LangChain, while fact-checking and versioning prompts like code.",
+              "why": "Content work is splitting into generic AI output and higher-value verified content systems.",
+              "action": "Create a small GEO content workflow: source brief, draft, citation check, schema notes, and reusable prompt library.",
+              "teacher": "Teach creators that editorial judgment plus verification is the defensible skill; the AI draft is only one step.",
+              "link": "https://jobs.lever.co/unlimit/3d6ae806-7fd8-4002-95b3-a424fc377e14"
+            },
+            {
+              "n": 4,
+              "category": "Sauce Head of",
+              "title": "Sauce Head of Go-To-Market Engineering shows SMB revenue teams want AI builders",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Sauce asks for hands-on GenAI, Claude Code/OpenAI, n8n/Make/Zapier, Cursor, data literacy, and deployed AI agents that improve revenue-per-rep.",
+              "why": "GTM engineering is becoming a hybrid of growth, product, automation, and systems architecture.",
+              "action": "Design a demo revenue engine: lead intake, enrichment, scoring, follow-up draft, CRM update, and dashboard.",
+              "teacher": "Frame lessons around business flow first, then tooling: data foundation, automation target, human approval, measurement.",
+              "link": "https://jobs.lever.co/Sauce/379a0c39-8c5f-4d57-a0df-94fb18747e06"
+            },
+            {
+              "n": 5,
+              "category": "Portage Point Partners",
+              "title": "Portage Point Partners AI Solutions role points to consulting demand for agentic workflow delivery",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "This consulting role builds LLM integrations, agentic workflows, AI automation, prototypes, production systems, and client-facing AI proposals.",
+              "why": "Consulting firms need people who can turn advisory decks into working systems and reusable delivery methods.",
+              "action": "Prepare a consulting offer around one measurable workflow: intake, build, QA, documentation, training, and post-launch support.",
+              "teacher": "Teaching opportunity: show students how to translate vague executive goals into scoped AI workflow specs.",
+              "link": "https://jobs.lever.co/portagepointpartners/d1b70163-7b68-4ff4-82a3-a4080e85a255"
+            },
+            {
+              "n": 6,
+              "category": "Jobgether Staff Automation",
+              "title": "Jobgether Staff Automation Engineer role stresses governance for production n8n and AI orchestration",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "The role leads automation operating models, n8n governance, RPA decisions, LLMOps, prompt/version control, eval frameworks, and incident management.",
+              "why": "The market is moving past one-off workflows toward automation platforms that need standards and reliability.",
+              "action": "Build a production-readiness checklist for client automations: logging, retries, ownership, rollback, secrets, evals, and incident paths.",
+              "teacher": "Teach that production automation is an operations discipline, not just a canvas full of connected nodes.",
+              "link": "https://jobs.lever.co/jobgether/83007bea-1c59-4517-8133-82296c9fa161"
+            },
+            {
+              "n": 7,
+              "category": "Upwork home-service buyer",
+              "title": "Upwork home-service buyer wants n8n, Claude, GoHighLevel lead-response automation",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A home-service business needs Facebook leads, website forms, missed calls, follow-ups, appointment logic, Claude, n8n, APIs, and GHL connected.",
+              "why": "Local businesses still have painful, specific automation gaps with direct revenue impact.",
+              "action": "Productize a home-service lead rescue package with fast response, missed-call textback, appointment checks, and owner reporting.",
+              "teacher": "Good teaching case because the problem is concrete: lost leads, manual follow-up, double booking, and no connected CRM.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/n8n-Automation-Expert-for-Lead-Response-CRM-Workflow-Claude-API-GoHighLevel_~022066909219419855051/"
+            },
+            {
+              "n": 8,
+              "category": "Upwork Amalfi Coast",
+              "title": "Upwork Amalfi Coast visualization brief asks for AI-enhanced luxury landscape reels",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "The buyer wants photorealistic landscape views, site-specific terrace geometry, AI-enhanced visuals with Midjourney/Flux/Stable Diffusion/Runway/Kling/ComfyUI, and a cinematic flythrough.",
+              "why": "3D/design clients are asking for AI acceleration, but still judge realism, restraint, composition, and site accuracy.",
+              "action": "Create a portfolio page for AI-assisted architectural visualization that shows source references, locked geometry, before/after frames, and final reel.",
+              "teacher": "Teach source-locking: AI can accelerate mood and variation, but geometry and client constraints must stay anchored.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Amalfi-Coast-Landscape-Transformation-Visualisation-Cinematic-Video_~022067366891498730707/"
+            },
+            {
+              "n": 9,
+              "category": "Toyota Research Institute",
+              "title": "Toyota Research Institute CAD design reasoning internship validates generative 3D design as a serious research track",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "TRI is hiring a Fall 2026 intern to work on generative models for 3D parametric B-rep editing and design reasoning in automotive product design.",
+              "why": "The high end of 3D AI is not only text-to-mesh; it is editable parametric reasoning tied to industrial design workflows.",
+              "action": "For 3D career positioning, learn B-rep/CAD basics, evaluation of editability, and how AI outputs connect to downstream manufacturing constraints.",
+              "teacher": "Teaching angle: separate pretty meshes from useful geometry; clients pay more when the output remains editable and reasoned.",
+              "link": "https://jobs.lever.co/tri/ca561b23-9589-49bc-a056-7f741ff48c26"
+            },
+            {
+              "n": 10,
+              "category": "Google Search I/O",
+              "title": "Google Search I/O 2026 update signals agents becoming a discovery and action channel",
+              "source": "blog.google",
+              "relevance": "Intermediate",
+              "summary": "Google says Search is adding AI features and agents that can work from a question, including more proactive discovery and action flows.",
+              "why": "If Search shifts from answers to agents, businesses will need new consulting around AI-search visibility, structured content, and action-ready data.",
+              "action": "Audit one client site for agent-readiness: clear service pages, schema, FAQs, comparison pages, pricing clarity, and contact/action paths.",
+              "teacher": "Teach SEO/GEO students to optimize for machine-readable decisions, not just keyword rankings.",
+              "link": "https://blog.google/products-and-platforms/products/search/search-io-2026/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-17 09",
       "label": "2026-06-17 · 09:16",
