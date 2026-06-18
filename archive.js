@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-19 03:09",
+    "fetchedAt": "2026-06-19 03:11",
     "editions": 150
   },
   "editions": [
     {
       "key": "2026-06-19 03",
-      "label": "2026-06-19 · 02:59",
+      "label": "2026-06-19 · 03:08",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-19 · 03:08 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub release notes",
+              "title": "GitHub release notes now credit humans for Copilot cloud-agent pull requests",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub changed generated release notes so merged Copilot cloud-agent pull requests are listed under the human developer who initiated or owned the work.",
+              "why": "Agent work is becoming normal release history, but organizations still need human accountability and traceability.",
+              "action": "Check how your repos label AI-generated PRs and make sure release notes distinguish agent output, reviewer ownership, and user-facing change risk.",
+              "teacher": "This is a small product detail with a big workflow lesson: agents can ship work, but the changelog still needs a responsible human name and a readable audit trail.",
+              "link": "https://github.blog/changelog/2026-06-18-generated-release-notes-credit-you-for-copilot-pull-requests/"
+            },
+            {
+              "n": 2,
+              "category": "ServiceNow MosaicLeaks shows",
+              "title": "ServiceNow MosaicLeaks shows research agents can leak private data through web-search queries",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "A new benchmark tests deep-research agents that mix private documents with web retrieval. The study found that better task performance can increase leakage unless privacy is trained into the planning loop.",
+              "why": "Any agent that searches the web while holding client files, proposals, or internal notes can leak sensitive fragments through its search terms.",
+              "action": "For local agent setups, add a rule that web-search queries must be rewritten to remove private names, metrics, dates, and client-specific context before execution.",
+              "teacher": "Do not teach agents only to answer correctly. Teach them to form safe intermediate actions, especially search queries and tool calls.",
+              "link": "https://huggingface.co/blog/ServiceNow/mosaicleaks"
+            },
+            {
+              "n": 3,
+              "category": "Hugging Face publishes",
+              "title": "Hugging Face publishes a practical benchmark for agent-friendly software APIs",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face benchmarked how open models drive software tools, using transformers as the case study, and argued that libraries now need tests and docs for agentic use, not only human use.",
+              "why": "Agent cost is shaped by API shape, docs quality, examples, CLI affordances, and error loops. Bad tool UX becomes token spend.",
+              "action": "When building internal tools, add one agent path: a short CLI, examples, and a test task that measures how many calls the agent needs to succeed.",
+              "teacher": "Agent-ready software is discoverable, scripted, and testable. If an agent has to reverse-engineer your API, your docs are not production-ready anymore.",
+              "link": "https://huggingface.co/blog/is-it-agentic-enough"
+            },
+            {
+              "n": 4,
+              "category": "Serge packages AI",
+              "title": "Serge packages AI code review around GitHub-native workflow and repository-owned rules",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face introduced Serge, an open-source GitHub-native reviewer that can run as an Action, GitHub App, or staged human-in-the-loop web app, using repository-owned review rules.",
+              "why": "AI review tools are moving away from generic comments and toward maintainers controlling policy, context, trigger phrases, and publish approval.",
+              "action": "Create a small .ai/review-rules.md for one repo and test whether an AI reviewer focuses on bugs, security, behavior changes, and missing tests instead of style noise.",
+              "teacher": "The useful pattern is not replacement review. It is bounded review with default-branch policy, read-only context, and human approval before comments hit the PR.",
+              "link": "https://huggingface.co/blog/huggingface/serge"
+            },
+            {
+              "n": 5,
+              "category": "Intel XPU Kernel",
+              "title": "Intel XPU Kernel Skill turns GPU kernel tuning into an agent trial loop",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "A Hugging Face post describes an Agent Skill that lets a coding agent generate, validate, benchmark, profile, and refine Triton kernels for Intel Arc Pro GPUs.",
+              "why": "This is a clear example of agents becoming repeatable engineering loops: measure, decide, rewrite, benchmark, publish.",
+              "action": "Copy the pattern for render and 3D pipelines: do not ask an agent for one output; give it a measured trial loop with pass/fail checks and a final artifact format.",
+              "teacher": "The advantage is the harness, not the prompt. The skill works because the agent has references, validation scripts, benchmarking, and a forced iteration budget.",
+              "link": "https://huggingface.co/blog/danf/intel-xpu-kernels-skill"
+            },
+            {
+              "n": 6,
+              "category": "A tiny GitHub",
+              "title": "A tiny GitHub project fixes a real multi-agent pain: missed permission prompts",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "agent-notifier is a local desktop notifier for Claude Code, Codex, Gemini, and OpenCode events such as permission requests, idle state, and turn completion.",
+              "why": "Makers are hitting the same operational problem: background agents stall silently while the user has switched context.",
+              "action": "Test notification hooks for local agent runs and add a simple blocked-waiting-for-approval signal to any long-running automation.",
+              "teacher": "The next layer of agent tools is not always smarter models. Sometimes it is boring coordination UX: status, pings, mute rules, and per-project controls.",
+              "link": "https://github.com/JohnPremKumar/agent-notifier"
+            },
+            {
+              "n": 7,
+              "category": "Convey raises $38M",
+              "title": "Convey raises $38M for outcome-oriented AI teammates in office workflows",
+              "source": "businessinsider.com",
+              "relevance": "Intermediate",
+              "summary": "Business Insider reports that Convey raised a $38M Series A led by a16z to build AI teammates for repetitive workplace tasks, with customers including media, gaming, and logistics companies.",
+              "why": "The agent market is moving from demo assistants toward outcome-priced teammates embedded in real operations.",
+              "action": "When evaluating agent startups, ask what workflow they own end to end, what outcome they price against, and how they handle handoff back to humans.",
+              "teacher": "Market signal: buyers do not want generic autonomy. They want boring repetitive work removed with clear accountability and measurable output.",
+              "link": "https://www.businessinsider.com/convey-raises-38-million-a16z-to-automate-repetitive-office-work-2026-6"
+            },
+            {
+              "n": 8,
+              "category": "Hacker News discussion",
+              "title": "Hacker News discussion around Claude errors highlights agent UX fragility on Windows terminals",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A Hacker News thread on Claude service errors includes developer complaints about Claude Code being choppy or garbled in Windows Terminal, with contrasting praise for smoother CLI experiences.",
+              "why": "For daily agent users, terminal rendering, interruption recovery, and perceived smoothness affect trust as much as model intelligence.",
+              "action": "When comparing coding agents, score the shell experience: permissions, redraw behavior, resume behavior, Windows compatibility, and failure recovery.",
+              "teacher": "A capable model can still feel unreliable if the harness is noisy. Agent product quality includes the terminal, not just the model card.",
+              "link": "https://news.ycombinator.com/item?id=48558766"
+            },
+            {
+              "n": 9,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are building structural codebase graphs to reduce agent exploration cost",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "A r/ClaudeAI post points to codex-cli-compact, a local MCP/codebase graph approach meant to help agents find relevant files without repeatedly burning context on broad grep.",
+              "why": "Token spend is shifting from generation to exploration. Better codebase maps can make agents cheaper and less confused.",
+              "action": "For large projects, try a small local index or graph that exposes symbols, calls, and file roles before letting the agent roam the repo.",
+              "teacher": "Agents know grep because training data taught them grep. Better tools must be easier for the model to use than familiar tools, or it will ignore them.",
+              "link": "https://github.com/kunal12203/codex-cli-compact"
+            },
+            {
+              "n": 10,
+              "category": "Google Colab CLI",
+              "title": "Google Colab CLI gives agents a direct bridge from local terminals to remote GPUs",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google Developers lists the Colab CLI as a way for developers and AI agents to connect local terminals to remote Colab runtimes, run scripts, and retrieve artifacts.",
+              "why": "Creator and ML workflows increasingly need agents that can burst to remote compute without turning every experiment into a manual notebook session.",
+              "action": "For image, 3D, or model experiments, define a repeatable local agent to remote GPU to artifact return path instead of ad hoc notebook clicking.",
+              "teacher": "Agent-friendly compute looks like a CLI contract: request hardware, run the job, collect logs and outputs, and resume locally.",
+              "link": "https://developers.googleblog.com/en/search/?query=AI+coding+agent"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
