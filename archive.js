@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-19 03:03",
-    "editions": 149
+    "fetchedAt": "2026-06-19 03:05",
+    "editions": 150
   },
   "editions": [
+    {
+      "key": "2026-06-19 03",
+      "label": "2026-06-19 · 02:59",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-19 · 02:59 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI plans to",
+              "title": "OpenAI plans to acquire Ona for persistent Codex workspaces",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI says Ona will expand Codex with secure, customer-controlled cloud infrastructure for long-running agents across software and knowledge work.",
+              "why": "The opportunity is moving from one-off coding help to persistent agent workspaces that enterprises can trust.",
+              "action": "Build a small demo of a long-running agent that keeps state, runs checks, writes a report, and hands off cleanly to a human.",
+              "teacher": "Teach clients the difference between a chatbot, a task agent, and a persistent workspace with permissions, logs, and recovery.",
+              "link": "https://openai.com/index/openai-to-acquire-ona/"
+            },
+            {
+              "n": 2,
+              "category": "Claude for Small",
+              "title": "Claude for Small Business packages ready-to-run workflows inside everyday SMB tools",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic describes Claude for Small Business as connectors and ready workflows for QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, and Microsoft 365.",
+              "why": "Small businesses need implementation help that turns AI into payroll, invoices, campaigns, documents, and customer workflows.",
+              "action": "Create a fixed-price SMB workflow setup offer with one finance workflow, one sales workflow, and one marketing workflow.",
+              "teacher": "Teach owners approval checkpoints, account permissions, and what should never be automated without review.",
+              "link": "https://www.anthropic.com/news/claude-for-small-business"
+            },
+            {
+              "n": 3,
+              "category": "Adobe reports 87",
+              "title": "Adobe reports 87 percent of creators say creative AI is growing their business",
+              "source": "news.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe's 2026 Creators' Toolkit Report says creative AI is already tied to business and audience growth for most surveyed creators.",
+              "why": "This supports paid creator services around AI-assisted content systems, not just experimental image generation.",
+              "action": "Offer a creator content audit: workflow map, reusable templates, model/tool selection, and a weekly production calendar.",
+              "teacher": "Frame AI as throughput plus brand consistency; creators still need taste, art direction, editing, and distribution.",
+              "link": "https://news.adobe.com/news/2026/06/creators-toolkit-report-2026"
+            },
+            {
+              "n": 4,
+              "category": "Weekday AI Automation",
+              "title": "Weekday AI Automation Engineer role asks for n8n, Zapier, Make, and workflow building",
+              "source": "jobs.workable.com",
+              "relevance": "Intermediate",
+              "summary": "A current Workable listing asks for 3-5 years of hands-on no-code and low-code workflow automation experience.",
+              "why": "Automation builders are being hired as core operators, not only as software engineers.",
+              "action": "Create a portfolio page with three business automations: lead intake, invoice chasing, and reporting dashboard.",
+              "teacher": "Teach n8n concepts as systems thinking: triggers, transforms, retries, credentials, logging, and failure handling.",
+              "link": "https://jobs.workable.com/view/wVFbo4wShLqBL6t5ycNc2A/remote-ai-automation-engineer-in-india-at-weekday-ai"
+            },
+            {
+              "n": 5,
+              "category": "Pavago AI Automation",
+              "title": "Pavago AI Automation Specialist role shows demand for OpenAI, Claude, Gemini, and low-code automation",
+              "source": "jobs.workable.com",
+              "relevance": "Intermediate",
+              "summary": "Pavago's current listing asks for Zapier, Make, n8n, Power Automate, plus OpenAI, Claude, Gemini, and AI APIs.",
+              "why": "The market wants tool-agnostic operators who can connect business systems and model APIs.",
+              "action": "Build a comparison sheet for when to use Zapier, Make, n8n, direct API scripts, or an agent.",
+              "teacher": "Teach selection criteria: cost, hosting, compliance, maintainability, speed, and handoff to nontechnical staff.",
+              "link": "https://jobs.workable.com/view/aBVJLZZE8jt4Cc7bodQdPx/remote-ai-automation-specialist-in-argentina-at-pavago"
+            },
+            {
+              "n": 6,
+              "category": "The Quality Group",
+              "title": "The Quality Group AI Enablement Staff Engineer role combines Claude Code, Codex, and n8n",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "The listing says the role accelerates agentic engineering with Claude Code, Codex, and n8n while building reusable frameworks and best practices.",
+              "why": "Companies need internal enablement people who turn AI experiments into repeatable engineering habits.",
+              "action": "Write one reusable AI engineering playbook: request intake, repo context, coding agent setup, review, test, deploy.",
+              "teacher": "Teach managers that AI enablement is documentation, examples, governance, and coaching, not just buying licenses.",
+              "link": "https://job-boards.greenhouse.io/thequalitygroupgmbh1/jobs/4842879101"
+            },
+            {
+              "n": 7,
+              "category": "Apollo.io GTM Engineer",
+              "title": "Apollo.io GTM Engineer role asks for agentic campaigns with MCP, n8n, Clay, Bolt, and Lovable",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Apollo's listing asks for AI-native GTM campaigns, workflows, guardrails, QA, and tools beyond foundation models.",
+              "why": "Revenue teams are hiring builders who can turn messy go-to-market work into reliable systems.",
+              "action": "Build a demo GTM workflow: ICP list, enrichment, personalized email draft, QA checklist, and CRM update.",
+              "teacher": "Teach that GTM automation needs attribution, data hygiene, and guardrails, not just clever outbound copy.",
+              "link": "https://job-boards.greenhouse.io/apolloio/jobs/5778017004"
+            },
+            {
+              "n": 8,
+              "category": "Upwork buyer wants",
+              "title": "Upwork buyer wants a low-cost local AI UGC video creation pipeline",
+              "source": "upwork.com",
+              "relevance": "Intermediate",
+              "summary": "A buyer wants a scalable local or low-cost workflow for product-image input, scripts, voiceover, captions, 9:16 output, and batch variation generation.",
+              "why": "Ecommerce clients want owned creative pipelines that reduce dependence on expensive video platforms.",
+              "action": "Prototype a ComfyUI plus FFmpeg plus caption workflow that outputs three vertical ad variants from one product brief.",
+              "teacher": "Teach clients cost per finished video, hardware needs, model limits, and where human editing remains essential.",
+              "link": "https://www.upwork.com/freelance-jobs/apply/Build-Low-Cost-UGC-Video-Creation-Pipeline_~022066850976278825097/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n builders",
+              "title": "Reddit n8n builders are paying for Claude and ChatGPT to debug production workflows",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n thread asks whether automation builders pay for AI chat subscriptions to fix JSON expressions, HTTP nodes, and workflow logic.",
+              "why": "Real pain is not idea generation; it is debugging, maintenance, and making automations reliable.",
+              "action": "Offer a paid automation clinic: inspect workflow exports, fix brittle nodes, add logs, and document recovery steps.",
+              "teacher": "Use this to teach learners that debugging literacy is a sellable skill, especially around APIs and data shapes.",
+              "link": "https://www.reddit.com/r/n8n/comments/1u3ljf4/do_automation_builders_actually_pay_for_ai_chat/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: paid AI automation skills are being packaged around n8n, Zapier, Claude, and AI product work",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post lists AI automation, n8n, Zapier, prompt engineering, ChatGPT, Claude, and AI product as money-making skills for 2026.",
+              "why": "The creator education market is turning tool stacks into paid curricula and coaching offers.",
+              "action": "Build a mini-course around one real client outcome: automate intake, route leads, generate follow-up, and report ROI.",
+              "teacher": "Emphasize proof: before/after time saved, error reduction, and maintenance plan beat hype lists.",
+              "link": "https://x.com/info_with_ai/status/2058736067428388891"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-18 21",
       "label": "2026-06-18 · 23:59",
