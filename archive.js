@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-19 06:08",
-    "editions": 150
+    "fetchedAt": "2026-06-19 06:11",
+    "editions": 151
   },
   "editions": [
+    {
+      "key": "2026-06-19 06",
+      "label": "2026-06-19 · 06:08",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-19 · 06:08 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GitHub Copilot code",
+              "title": "GitHub Copilot code review now reads AGENTS.md",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub says Copilot code review now supports repository-level AGENTS.md files, so review behavior can follow the same project instructions used by coding agents.",
+              "why": "Agent instructions are moving from private prompt craft into repo-owned infrastructure. This makes reviews, coding agents, and human contributors easier to align.",
+              "action": "Add a short AGENTS.md to active repos with build/test commands, review standards, visual QA rules, and files agents must not touch.",
+              "teacher": "Treat AGENTS.md like a README for machine coworkers: concrete commands beat vague preferences, and shorter rules are more likely to be followed.",
+              "link": "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/"
+            },
+            {
+              "n": 2,
+              "category": "MAI-Code-1-Flash expands across",
+              "title": "MAI-Code-1-Flash expands across Copilot surfaces",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "Microsoft/GitHub made MAI-Code-1-Flash available in Copilot CLI, the Copilot app, GitHub chat, Visual Studio, mobile, JetBrains, Eclipse, and Xcode.",
+              "why": "Small purpose-built coding models are becoming default utility models inside many surfaces, not just cheaper fallbacks.",
+              "action": "When using Copilot, test MAI-Code-1-Flash for quick edits, explanations, and CLI tasks before spending premium requests on heavier models.",
+              "teacher": "The model-routing lesson is simple: match model size to task risk. Small model for narrow edits, stronger model for architecture or risky refactors.",
+              "link": "https://github.blog/changelog/2026-06-18-mai-code-1-flash-available-on-more-copilot-surfaces"
+            },
+            {
+              "n": 3,
+              "category": "Cursor is pushing",
+              "title": "Cursor is pushing cloud subagents into the main workflow",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Cursor's public X post points users to Cloud Environment Setup and Cloud Subagents in the Agents Window.",
+              "why": "The market signal is that coding tools are racing to make parallel cloud agents visible, managed, and easy to launch from the desktop.",
+              "action": "For larger code work, split tasks by repo area and run cloud subagents only after writing a shared acceptance checklist.",
+              "teacher": "Parallel agents amplify both speed and chaos. Teach juniors to define ownership, exit criteria, and review order before fan-out.",
+              "link": "https://x.com/cursor_ai/status/2067378594343510183"
+            },
+            {
+              "n": 4,
+              "category": "Google frames A2A",
+              "title": "Google frames A2A as connective tissue for collaborative agents",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google published an update on Agent2Agent, highlighting developers using A2A for collaborative, transactional agent workflows.",
+              "why": "Agent protocols are turning into platform strategy. The winner may be the system that lets agents safely hand work to other agents.",
+              "action": "Track A2A alongside MCP when designing internal automation; separate tool access from agent-to-agent delegation in your architecture notes.",
+              "teacher": "MCP is often about tools and context. A2A is about agents coordinating with each other. Keep that distinction clear when explaining the stack.",
+              "link": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents/"
+            },
+            {
+              "n": 5,
+              "category": "AGENTS.md is solidifying",
+              "title": "AGENTS.md is solidifying as an open repo instruction format",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The AGENTS.md project presents a simple open format for guiding coding agents inside a repository.",
+              "why": "Teams using multiple agents need one durable instruction file instead of separate CLAUDE.md, Cursor rules, Copilot notes, and hidden prompts.",
+              "action": "Create one source-of-truth AGENTS.md, then let tool-specific files point back to it where possible.",
+              "teacher": "Good agent instructions are operational: setup, test, deploy, style, safety boundaries, and examples of done work.",
+              "link": "https://github.com/agentsmd/agents.md"
+            },
+            {
+              "n": 6,
+              "category": "Stagehand releases show",
+              "title": "Stagehand releases show browser-agent infrastructure still moving quickly",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Browserbase's Stagehand release feed shows steady June updates across its browser-agent SDK and CLI packages.",
+              "why": "Browser agents are becoming the practical layer for workflows without clean APIs: research, forms, dashboards, screenshots, and QA.",
+              "action": "Prototype browser automation with typed steps, screenshots, and replay logs before trusting a pure natural-language browser agent.",
+              "teacher": "A browser agent is only as good as its observability. Teach people to capture URL, screenshot, action, and failure reason for every step.",
+              "link": "https://github.com/browserbase/stagehand/releases"
+            },
+            {
+              "n": 7,
+              "category": "NVIDIA SIGGRAPH 2026",
+              "title": "NVIDIA SIGGRAPH 2026 agenda points to neural rendering and physical AI",
+              "source": "nvidia.com",
+              "relevance": "Intermediate",
+              "summary": "NVIDIA's SIGGRAPH 2026 page highlights neural and generative rendering, real-time simulation, physical AI, robotics workflows, and visual computing.",
+              "why": "For 3D artists, the AI opportunity is shifting from image tricks to scene pipelines, simulation-ready assets, and neural rendering workflows.",
+              "action": "Watch for sessions and demos around OpenUSD, simulation, and neural rendering; map which tools can plug into Blender/Substance/Unreal workflows.",
+              "teacher": "The practical question is not whether AI can make a pretty image. It is whether it can preserve scale, materials, camera, lighting, and editability.",
+              "link": "https://www.nvidia.com/en-us/events/siggraph/"
+            },
+            {
+              "n": 8,
+              "category": "General Intuition funding",
+              "title": "General Intuition funding rumor signals investor appetite for spatial agents",
+              "source": "techcrunch.com",
+              "relevance": "Intermediate",
+              "summary": "TechCrunch reports General Intuition is in talks to raise about $300M at around a $2B valuation for foundation models that train agents to move through space and time.",
+              "why": "Capital is flowing toward world models and embodied AI, which overlaps with 3D, robotics, simulation, games, and digital twins.",
+              "action": "Track whether these models expose creator tools, asset pipelines, or simulation APIs rather than only robotics demos.",
+              "teacher": "Spatial intelligence is the bridge between generated media and controllable worlds. Look for persistence, physics, and camera consistency.",
+              "link": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News skepticism",
+              "title": "Hacker News skepticism highlights the human-understanding cost of coding agents",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "A current Hacker News discussion around AI coding skepticism focuses on the risk of agents making choices users do not understand.",
+              "why": "The bottleneck is not just code output. It is maintaining enough understanding to review, debug, and own the system afterward.",
+              "action": "Ask agents for decision logs and tradeoffs before implementation, then require a short after-action note explaining the changed files.",
+              "teacher": "Teach agent use as assisted engineering, not outsourcing. The user still owns architecture, tests, and the final judgment.",
+              "link": "https://news.ycombinator.com/item?id=48549208"
+            },
+            {
+              "n": 10,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are comparing real monthly Cursor spend",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A Reddit Cursor thread surfaces what users are actually paying and how they compare Cursor, OpenCode, direct API usage, and subscription economics.",
+              "why": "Maker adoption is becoming cost-aware. Pricing, quota behavior, and runaway loops now shape tool choice as much as model quality.",
+              "action": "Keep a simple monthly AI tooling sheet: subscription cost, overage risk, best use case, and one exit alternative for each tool.",
+              "teacher": "A good AI workflow has a budget circuit breaker. Daily spend limits and small test runs matter when agents can loop.",
+              "link": "https://www.reddit.com/r/cursor/comments/1tsb8s6/be_honest_what_are_you_actually_paying_for_cursor/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-19 03",
       "label": "2026-06-19 · 03:08",
