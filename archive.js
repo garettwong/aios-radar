@@ -5,14 +5,145 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-18 21:05",
+    "fetchedAt": "2026-06-18 21:07",
     "editions": 149
   },
   "editions": [
     {
       "key": "2026-06-18 21",
-      "label": "2026-06-18 · 21:01",
+      "label": "2026-06-18 · 21:03",
       "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-18 · 21:03 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "GPT-5.3-Codex moves coding",
+              "title": "GPT-5.3-Codex moves coding agents toward full computer work",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI introduced GPT-5.3-Codex as a faster, stronger agentic coding model for Codex across the app, CLI, IDE extension, and web, with emphasis on long-running research, tool use, web development, and broader software-lifecycle work.",
+              "why": "The direction is clear: coding agents are becoming supervised computer operators, not just code generators.",
+              "action": "Test one long, messy task that includes research, edits, tests, and a written handoff. Track where supervision still breaks.",
+              "teacher": "Teach Codex as a workflow harness: goal, constraints, tools, checkpoints, evidence, final verification.",
+              "link": "https://openai.com/index/introducing-gpt-5-3-codex/"
+            },
+            {
+              "n": 2,
+              "category": "Claude Code is",
+              "title": "Claude Code is scaling inside major Korean engineering organizations",
+              "source": "anthropic.com",
+              "relevance": "Intermediate",
+              "summary": "Anthropic opened its Seoul office and said NAVER has deployed Claude Code across its engineering organization, with Nexon using it for live-service game engineering and Samsung SDS deploying Claude across Samsung Electronics workflows.",
+              "why": "Enterprise agent adoption is moving from pilots into large developer populations, including games and high-scale consumer tech.",
+              "action": "Watch Korean dev-tool case studies for patterns in governance, onboarding, and game-production use.",
+              "teacher": "Use this as an example of regional AI ecosystems: model provider, cloud/data residency, enterprise rollout, and developer community.",
+              "link": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem?via=fahim"
+            },
+            {
+              "n": 3,
+              "category": "Agentic Resource Discovery",
+              "title": "Agentic Resource Discovery gives agents a missing search layer",
+              "source": "developers.googleblog.com",
+              "relevance": "Intermediate",
+              "summary": "Google announced ARD, an open specification for publishing, discovering, and verifying AI capabilities across the web, so agents can find tools, skills, services, and other agents across organizations.",
+              "why": "MCP and skills solve connection and instruction, but discovery is still manual. ARD points toward a searchable agent web.",
+              "action": "Start tagging your own tools with name, capability, trust boundary, auth needs, and verification notes.",
+              "teacher": "Explain the stack as discovery before connection: ARD finds, MCP connects, skills teach, A2A delegates.",
+              "link": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/"
+            },
+            {
+              "n": 4,
+              "category": "Robot workflows are",
+              "title": "Robot workflows are becoming agent scripts, not separate toolchains",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face and Amazon show a Strands Agents plus LeRobot path where one agent records simulated demonstrations, writes LeRobotDataset data, runs a policy, switches to physical hardware with one argument, and can coordinate a fleet.",
+              "why": "Robotics is getting the same agent abstraction as software: one loop around data capture, simulation, policy execution, and deployment.",
+              "action": "For physical or 3D pipelines, design the workflow as reusable agent tools around the real data format first.",
+              "teacher": "This is a good bridge lesson between AI agents and production: data schema stability matters more than flashy autonomy.",
+              "link": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware"
+            },
+            {
+              "n": 5,
+              "category": "MolmoMotion adds language-guided",
+              "title": "MolmoMotion adds language-guided 3D motion forecasting",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Ai2 released MolmoMotion on Hugging Face, an open model that predicts future 3D point motion from a video frame, marked object points, and text instructions.",
+              "why": "Creator and robotics tools need controllable motion, not only image/video generation. This is a practical step toward text-directed spatial behavior.",
+              "action": "Track whether motion-control models can improve product animation, camera blocking, and object-in-scene revision workflows.",
+              "teacher": "Separate 3D appearance from 3D motion: assets, trajectories, constraints, and verification are different teaching units.",
+              "link": "https://huggingface.co/blog/allenai/molmomotion"
+            },
+            {
+              "n": 6,
+              "category": "GLM-5.2 makes open",
+              "title": "GLM-5.2 makes open long-horizon coding models more credible",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Z.AI released GLM-5.2 with MIT licensing, 1M-token context, coding effort controls, and reported gains on long-horizon coding benchmarks and Terminal-Bench.",
+              "why": "Open models are pushing into the exact territory where closed agents were strongest: long, tool-heavy engineering runs.",
+              "action": "Try GLM-5.2 on a non-sensitive codebase with a fixed evaluation checklist: build, test, patch quality, latency, and cost.",
+              "teacher": "Use it to teach the hidden cost of long context: KV cache, compaction, reward hacking, and benchmark leakage.",
+              "link": "https://huggingface.co/blog/zai-org/glm-52-blog"
+            },
+            {
+              "n": 7,
+              "category": "Salesforce buying Fin",
+              "title": "Salesforce buying Fin turns customer agents into a major M&A signal",
+              "source": "salesforce.com",
+              "relevance": "Intermediate",
+              "summary": "Salesforce signed a definitive agreement to acquire Fin, formerly Intercom, for about $3.6B, describing Fin as an industry-leading customer agent company.",
+              "why": "Agentic customer support is no longer only product positioning. Large SaaS vendors are buying proven agent revenue and deployment muscle.",
+              "action": "Watch outcome-based pricing, handoff quality, and CRM integration depth as the real differentiators.",
+              "teacher": "Frame this as the market test for agents: resolved outcomes, not chat quality, become the unit of value.",
+              "link": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/"
+            },
+            {
+              "n": 8,
+              "category": "claude-tap shows agent",
+              "title": "claude-tap shows agent observability becoming a maker category",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "The open-source claude-tap project provides a local proxy and trace viewer for Claude Code, Codex CLI, Codex App, Gemini CLI, Kimi, OpenCode, Cursor CLI, OpenClaw, and other agent clients.",
+              "why": "As agents run longer and touch more tools, makers need traces: prompts, tool calls, token usage, diffs, and context changes.",
+              "action": "Add local trace capture to one agent workflow before optimizing prompts. Debug with evidence, not vibes.",
+              "teacher": "Teach agent debugging like web debugging: inspect the request, response, tool schema, and state transition.",
+              "link": "https://github.com/liaohch3/claude-tap"
+            },
+            {
+              "n": 9,
+              "category": "Hacker News discussion",
+              "title": "Hacker News discussion highlights open-model cost pressure",
+              "source": "news.ycombinator.com",
+              "relevance": "Intermediate",
+              "summary": "HN discussion around GLM-5.2 focused on whether the benchmark claims translate to real usage and noted competitive serving prices compared with premium closed models.",
+              "why": "Developer adoption often follows the price-performance frontier, especially for repeated agent runs.",
+              "action": "Build a small price-per-accepted-task spreadsheet for your common agent jobs, not just price per token.",
+              "teacher": "Show students why benchmark score, latency, context length, and provider price must be evaluated together.",
+              "link": "https://news.ycombinator.com/item?id=48558960"
+            },
+            {
+              "n": 10,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are turning multi-agent Windows sessions into a product lane",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A r/ClaudeAI maker described wmux, a Windows-focused workspace for running Claude Code, Codex, and Gemini agents together while preserving attention, coordination, and session continuity across restarts.",
+              "why": "Maker demand is shifting from single-agent prompts to durable multi-agent workspaces that survive real desktop life.",
+              "action": "For your own agent stack, define what must persist after a reboot: transcript, working tree, pending approvals, and task state.",
+              "teacher": "Teach agent UX around continuity: panes are not enough; sessions need state, recovery, visibility, and clear ownership.",
+              "link": "https://www.reddit.com/r/ClaudeAI/comments/1u6etz9/all_your_claude_code_agents_on_one_screen_and/"
+            }
+          ]
+        },
         {
           "id": "job",
           "title": "AI Life & Job Opportunity",
