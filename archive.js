@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-19 12:15",
-    "editions": 152
+    "fetchedAt": "2026-06-19 12:18",
+    "editions": 153
   },
   "editions": [
+    {
+      "key": "2026-06-19 12",
+      "label": "2026-06-19 · 12:08",
+      "briefs": [
+        {
+          "id": "trend",
+          "title": "AI Trends & Maker Awareness",
+          "accent": "cyan",
+          "subtitle": "Market brief for builders, AI-native creators, 3D / design workflows, coding agents, and open-source maker signals.",
+          "date": "2026-06-19 · 12:08 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "OpenAI adds enterprise",
+              "title": "OpenAI adds enterprise credit analytics and spend controls",
+              "source": "openai.com",
+              "relevance": "Intermediate",
+              "summary": "OpenAI introduced credit usage analytics and more flexible spend controls for ChatGPT Enterprise, aimed at making AI consumption visible before teams scale it further.",
+              "why": "Agent and coding workflows are moving from novelty budgets to managed operating costs. The winners will show clear usage, caps, and adoption patterns.",
+              "action": "Add a simple weekly AI spend panel for every serious workflow: tool, user, task type, credits, output, and whether it was worth repeating.",
+              "teacher": "Teach this as the shift from buying seats to managing AI unit economics. A good demo is comparing raw usage against a named business outcome.",
+              "link": "https://openai.com/index/chatgpt-enterprise-spend-controls/"
+            },
+            {
+              "n": 2,
+              "category": "Claude Code hardens",
+              "title": "Claude Code hardens auto mode after unsafe-action edge cases",
+              "source": "raw.githubusercontent.com",
+              "relevance": "Intermediate",
+              "summary": "Claude Code 2.1.183 blocks destructive git and infrastructure commands unless the user clearly asked, fixes subagent web search, Windows terminal corruption, auth-stub MCP exposure, and scheduled-trigger approval handling.",
+              "why": "The practical frontier is no longer just smarter agents. It is agents that know when to stop, especially in unattended or scheduled environments.",
+              "action": "Update local agent runbooks with explicit destructive-command gates, scheduled-trigger rules, and a quick smoke test for nested subagents on Windows.",
+              "teacher": "Use this to teach safety as product UX: blockers, warnings, and recovery paths are part of agent capability, not paperwork.",
+              "link": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md"
+            },
+            {
+              "n": 3,
+              "category": "GitHub makes Copilot-authored",
+              "title": "GitHub makes Copilot-authored pull requests visible in author searches",
+              "source": "github.blog",
+              "relevance": "Intermediate",
+              "summary": "GitHub now includes pull requests opened by Copilot cloud agent on a user behalf when searching with author filters like author:@me.",
+              "why": "Attribution and retrieval are becoming core collaboration features. If agents open work items, humans still need one place to audit what is theirs.",
+              "action": "For any agent-built repo, standardize labels and saved searches for human-requested, agent-opened PRs so review queues stay legible.",
+              "teacher": "Teach this as provenance for teamwork: the question is not only who typed the code, but who requested, reviewed, and owns it.",
+              "link": "https://github.blog/changelog/2026-06-18-copilot-authored-pull-requests-now-included-in-author-searches/"
+            },
+            {
+              "n": 4,
+              "category": "Hugging Face frames",
+              "title": "Hugging Face frames Agentic Resource Discovery as the search layer for tools and agents",
+              "source": "huggingface.co",
+              "relevance": "Intermediate",
+              "summary": "Hugging Face described Agentic Resource Discovery as a draft open spec for searching skills, MCP servers, A2A agents, and services across federated registries.",
+              "why": "Tool discovery is becoming a protocol problem. Agents cannot scale if every capability must be manually installed and remembered by a human.",
+              "action": "For internal tools, draft a small catalog with tool names, auth requirements, scopes, owner, and example tasks an agent can safely perform.",
+              "teacher": "Teach discovery as a runtime skill: the agent should find the right capability, then still respect trust, auth, and approval boundaries.",
+              "link": "https://huggingface.co/blog/agentic-resource-discovery-launch"
+            },
+            {
+              "n": 5,
+              "category": "Auth0 says AI",
+              "title": "Auth0 says AI agents need identity models separate from human users",
+              "source": "auth0.com",
+              "relevance": "Intermediate",
+              "summary": "Auth0 argues that forcing autonomous agents into human user profiles creates security risk, and points to delegated, scoped, request-aware identity patterns.",
+              "why": "As agents touch SaaS accounts, files, CI, and customer data, identity will decide whether workflows are auditable or just shared-token chaos.",
+              "action": "For each agent, record principal, delegated user, allowed tools, token lifetime, approval path, and audit destination before giving it production access.",
+              "teacher": "Teach this as the difference between a person, an app, and an agent acting for a person. They need different controls.",
+              "link": "https://auth0.com/blog/ai-agents-are-not-users/"
+            },
+            {
+              "n": 6,
+              "category": "Vercel releases eve,",
+              "title": "Vercel releases eve, a filesystem-first open-source agent framework",
+              "source": "github.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel eve treats an agent as a directory of Markdown instructions, TypeScript tools, skills, subagents, and production primitives such as durable execution and approvals.",
+              "why": "Agent authoring is converging on repo-native conventions. Builders want agents that can be inspected, versioned, reviewed, and deployed like software.",
+              "action": "Prototype one small personal agent as a folder: instructions.md, one tool, one approval path, and one eval. Keep it boring and inspectable.",
+              "teacher": "Teach this as the Next.js mental model for agents: file placement becomes product architecture.",
+              "link": "https://github.com/vercel/eve"
+            },
+            {
+              "n": 7,
+              "category": "Vercel Connect pushes",
+              "title": "Vercel Connect pushes agents toward short-lived task-scoped credentials",
+              "source": "vercel.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel Connect entered public beta with runtime credential exchange so apps and agents can access services through short-lived, task-scoped credentials instead of stored provider tokens.",
+              "why": "Agent security is becoming identity plumbing. Persistent tokens are too blunt for agents that act across Slack, GitHub, Snowflake, Salesforce, Notion, and Linear.",
+              "action": "Replace any prototype agent token checklist with three fields: who authorized it, what task scope it has, and when the credential expires.",
+              "teacher": "Teach this with a before and after diagram: one shared API key versus per-task delegated access with an audit trail.",
+              "link": "https://vercel.com/blog/introducing-vercel-connect"
+            },
+            {
+              "n": 8,
+              "category": "Game creators push",
+              "title": "Game creators push back as Epic promotes generative AI in production workflows",
+              "source": "pcgamer.com",
+              "relevance": "Intermediate",
+              "summary": "PC Gamer reported that the Vampire Survivors developer considered reviewing a Fortnite collaboration after Epic promoted generative AI use in asset and Unreal Engine workflows.",
+              "why": "For 3D, design, and game work, the market signal is not only capability. Client trust, training data concerns, and brand alignment can affect partnerships.",
+              "action": "For AI-assisted creative work, keep a source-use disclosure sheet: what was generated, what was hand-made, what references were used, and what stays client-owned.",
+              "teacher": "Teach creator AI as a trust workflow. The best-looking asset can still fail if provenance and approval expectations are unclear.",
+              "link": "https://www.pcgamer.com/games/action/hours-after-announcing-a-collab-with-fortnite-vampire-survivors-dev-suggests-it-may-back-out-over-epics-recent-touting-of-gen-ai/"
+            },
+            {
+              "n": 9,
+              "category": "Reddit makers are",
+              "title": "Reddit makers are still searching for a practical Cursor agent-mode workflow",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent Cursor thread asks how to use agent mode with branches, worktrees, planning, parallel agents, and review without losing control of the work.",
+              "why": "This is a real adoption signal: makers understand the tool is powerful, but the repeatable operating pattern is still forming.",
+              "action": "Use a simple loop: one worktree per agent, written plan, bounded task, review diff, run tests, merge only after a human-readable summary.",
+              "teacher": "Teach agent workflow as production discipline, not magic. The structure around the agent matters as much as the model.",
+              "link": "https://www.reddit.com/r/cursor/comments/1u4pr96/whats_your_workflow_for_agent_mode/"
+            },
+            {
+              "n": 10,
+              "category": "X chatter around",
+              "title": "X chatter around Vercel eve highlights agent-as-directory adoption",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "Vercel developer account announced eve on X, and search-visible reactions focused on the agent-as-directory idea, durable execution, sandboxing, and approvals.",
+              "why": "The social signal is not the post itself; it is which concept makers repeat. Agent as files is becoming a memorable design pattern.",
+              "action": "Name agent folders and files so a human can inspect them in 30 seconds: instructions, tools, skills, evals, schedules, channels.",
+              "teacher": "Teach adoption signals by watching repeated phrases in maker channels. When a phrase sticks, it often becomes the onboarding mental model.",
+              "link": "https://x.com/vercel_dev/status/2067180129609208029"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-19 09",
       "label": "2026-06-19 · 09:08",
