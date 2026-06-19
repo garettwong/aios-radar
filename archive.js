@@ -5,10 +5,147 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-19 15:05",
-    "editions": 153
+    "fetchedAt": "2026-06-19 15:09",
+    "editions": 154
   },
   "editions": [
+    {
+      "key": "2026-06-19 15",
+      "label": "2026-06-19 · 15:02",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-19 · 15:02 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 1,
+              "category": "Adobe Firefly adds",
+              "title": "Adobe Firefly adds agentic creative AI studio capabilities",
+              "source": "blog.adobe.com",
+              "relevance": "Intermediate",
+              "summary": "Adobe says Firefly is moving toward an upgraded creative AI studio with agentic capabilities, aimed at helping creative teams move from idea to output faster.",
+              "why": "Creative AI is being packaged as a production system, not just a prompt box, which favors designers who can direct workflows and quality.",
+              "action": "Build a small offer around AI-assisted campaign variant production: mood boards, product visuals, short reels, and human art-direction review.",
+              "teacher": "Teach clients the difference between prompt output and production-ready creative direction: references, constraints, iteration, approvals, and asset governance.",
+              "link": "https://blog.adobe.com/en/publish/2026/06/18/adobe-firefly-introduces-new-agentic-capabilities-and-an-upgraded-creative-ai-studio-built-for-the-way-you-work"
+            },
+            {
+              "n": 2,
+              "category": "Phiture AI Automation",
+              "title": "Phiture AI Automation and Insights Analyst turns app marketing into AI-generated briefs",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Phiture is hiring for BigQuery, APIs, n8n, and AI coding or analysis tools to generate executive-ready narrative briefs and slide decks.",
+              "why": "Growth teams want people who can turn raw performance data into decisions and client-ready reporting without waiting on full data teams.",
+              "action": "Create a sample mobile-app marketing automation: pull metrics, summarize changes, draft a weekly deck, and flag experiments.",
+              "teacher": "This is a good class module: metric input, AI interpretation, slide output, QA checklist, and human sign-off.",
+              "link": "https://job-boards.greenhouse.io/phiture/jobs/4797534101"
+            },
+            {
+              "n": 3,
+              "category": "Loadsmart AI Automation",
+              "title": "Loadsmart AI Automation Specialist maps business workflows into Claude and n8n agents",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Loadsmart wants an AI Automation Specialist to find repetitive workflows with business teams and build agents using Claude, n8n, and low-code tools.",
+              "why": "The job spec validates a consulting lane: discovery sessions, pain mapping, prototype workflows, and measurable operational savings.",
+              "action": "Package a one-week workflow audit for logistics, ecommerce, or creative operations teams with three automations and an ROI estimate.",
+              "teacher": "Train students to interview stakeholders before building; the valuable skill is translating messy work into automatable steps.",
+              "link": "https://jobs.lever.co/loadsmart/ff17eee3-0003-4cbb-87bb-c10b1ae29ba7"
+            },
+            {
+              "n": 4,
+              "category": "ApartmentIQ AI Operations",
+              "title": "ApartmentIQ AI Operations Lead makes Codex and Claude fluency an operations role",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "ApartmentIQ lists AI Operations Lead requirements including ChatGPT, Claude, Cursor, Claude Code, Codex, low-code tools, SQL, APIs, and systems integration.",
+              "why": "AI operations is becoming a cross-functional business role, not just a developer title.",
+              "action": "Build a portfolio case study showing one operational workflow before and after AI: intake, triage, dashboard, and weekly summary.",
+              "teacher": "Emphasize business process diagrams and outcome metrics alongside screenshots; hiring managers need proof of operational judgment.",
+              "link": "https://job-boards.greenhouse.io/apartmentiq/jobs/7859627"
+            },
+            {
+              "n": 5,
+              "category": "Checkout.com AI and",
+              "title": "Checkout.com AI and Automation Specialist ships internal tools with Cursor, Claude Code, n8n, and LLM APIs",
+              "source": "jobs.ashbyhq.com",
+              "relevance": "Intermediate",
+              "summary": "Checkout.com is hiring for rapid prototyping of internal tools that eliminate manual work using AI-assisted development, n8n, and LLM APIs.",
+              "why": "Fintech operations are buying practical AI builders who can ship internal leverage while staying close to compliance and reliability.",
+              "action": "Practice building internal tools that never auto-send money or messages: draft-only workflows, audit logs, approvals, and exception queues.",
+              "teacher": "Make safety part of the demo. A controlled workflow with logs beats a flashy autonomous agent.",
+              "link": "https://jobs.ashbyhq.com/checkout.com/2ea119a0-49c8-489b-9c18-86cb31ed3708"
+            },
+            {
+              "n": 6,
+              "category": "Mirakl AI Agent",
+              "title": "Mirakl AI Agent Builder moves internal agents from experiments to industrialization",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Mirakl says it has deployed agents using Dust, n8n, Claude Code, and LangChain and now needs someone to industrialize them internally.",
+              "why": "Companies are entering the second phase of AI adoption: governance, reuse, monitoring, templates, and internal enablement.",
+              "action": "Offer an agent-hardening service: inventory existing experiments, score risk, add documentation, evals, and owner handoff.",
+              "teacher": "Teach the lifecycle: prototype, pilot, eval, permission model, monitoring, and retirement. That is more employable than demo-only skills.",
+              "link": "https://job-boards.greenhouse.io/mirakllabs/jobs/5998019004"
+            },
+            {
+              "n": 7,
+              "category": "Pattern AI Automations",
+              "title": "Pattern AI Automations Engineer owns ROI for n8n, MCP, Zapier, and LLM workflows",
+              "source": "jobs.lever.co",
+              "relevance": "Intermediate",
+              "summary": "Pattern is hiring an AI Automations Engineer to own design, build, operation, adoption, performance uplift, and ROI for workflows using n8n, MCP, Zapier, and LLMs.",
+              "why": "The market is asking for operators who can keep automation alive after launch, not just deliver a one-off build.",
+              "action": "Add maintenance retainers to automation proposals: monitoring, monthly improvements, failure review, and staff training.",
+              "teacher": "Have students include adoption plans and support boundaries in every workflow project.",
+              "link": "https://jobs.lever.co/pattern/3d1bf30b-62dc-41dd-80b3-991752cd0bab"
+            },
+            {
+              "n": 8,
+              "category": "CookUnity AI Native",
+              "title": "CookUnity AI Native Engineer redesigns work with Codex App Server, sandboxes, MCP, n8n, and agents",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "CookUnity describes an AI Native Engineer role focused on redesigning how work gets done, choosing between agents, deterministic apps, and workflow tools.",
+              "why": "The best AI roles are becoming systems-design roles: know when to automate, when to build software, and when to keep humans in the loop.",
+              "action": "Build a decision matrix for client work: agent, script, dashboard, n8n workflow, or manual SOP.",
+              "teacher": "Teach tool selection as a core skill. The answer is not always an agent.",
+              "link": "https://job-boards.greenhouse.io/cookunity/jobs/7751648003"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n builders",
+              "title": "Reddit n8n builders debate scripts versus orchestration as the job skill",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A current r/n8n thread asks whether learning n8n is still useful when Claude can write scripts, with replies arguing n8n still helps orchestration, maintenance, and debugging.",
+              "why": "This is real buyer/user pain: automation clients do not only need code; they need maintainable systems and someone who can debug failures.",
+              "action": "Position yourself as an automation maintainer: credentials, retries, logs, API-change fixes, and handoff documentation.",
+              "teacher": "Use this discussion to explain why workflows fail in production and why debugging is a paid skill.",
+              "link": "https://www.reddit.com/r/n8n/comments/1te1hhm/is_learning_n8n_still_usefull_in_2026/"
+            },
+            {
+              "n": 10,
+              "category": "Public X signal:",
+              "title": "Public X signal: AI automation builder is being packaged as a six-month career path",
+              "source": "x.com",
+              "relevance": "Intermediate",
+              "summary": "A public X post frames AI automation as a high-ROI skill and points learners toward becoming AI automation builders with structured resources.",
+              "why": "Even if the post is educational marketing, it reflects demand-side positioning: people are buying clear paths into automation work.",
+              "action": "Create a cleaner, design-led version of this path for creative operators: workflow basics, Claude/Codex, n8n, client discovery, and portfolio demos.",
+              "teacher": "Teach opportunity scanning critically: separate useful market signal from hype, then convert it into a practical curriculum.",
+              "link": "https://x.com/DeRonin_/status/2058843938220388371"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-19 12",
       "label": "2026-06-19 · 12:08",
