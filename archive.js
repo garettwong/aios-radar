@@ -5,10 +5,51 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-06-19 09:08",
-    "editions": 151
+    "fetchedAt": "2026-06-19 09:10",
+    "editions": 152
   },
   "editions": [
+    {
+      "key": "2026-06-19 09",
+      "label": "2026-06-19 · 09:03",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "Brief for teaching, consulting, freelance offers, course creation, 3D / design production, and AI-native client services.",
+          "date": "2026-06-19 · 09:03 GMT+8",
+          "quickRead": [],
+          "callout": {},
+          "signals": [
+            {
+              "n": 7,
+              "category": "Code and Theory",
+              "title": "Code and Theory ops role asks for Claude, n8n, Airtable, Python, and internal agents --",
+              "source": "job-boards.greenhouse.io",
+              "relevance": "Intermediate",
+              "summary": "Code and Theory lists an ops strategy and BI role designing agentic workflows with Claude, n8n, Airtable, Python scripting, and AI-native tooling. --",
+              "why": "Consulting and agency operations are becoming internal product work across finance, HR, delivery, and pipeline data. --",
+              "action": "Build a demo agency ops radar that pulls project status, billing risk, and staffing notes into one daily brief. --",
+              "teacher": "Show learners how to combine lightweight data work with narrative outputs. The value is decisions getting easier. --",
+              "link": "https://job-boards.greenhouse.io/codeandtheory/jobs/8573878002"
+            },
+            {
+              "n": 9,
+              "category": "Reddit n8n learners",
+              "title": "Reddit n8n learners are asking how to become freelance or part-time job-ready --",
+              "source": "reddit.com",
+              "relevance": "Intermediate",
+              "summary": "A recent r/n8n thread asks for free courses to learn n8n from scratch and become confident enough for freelance or part-time jobs. --",
+              "why": "Demand is not just from buyers; there is a growing learner market around practical automation skills and job-readiness. --",
+              "action": "Create a job-ready n8n in 30 days curriculum with real business builds: lead capture, invoice routing, content approval, and daily reporting. --",
+              "teacher": "Position lessons around portfolio artifacts. Each module should leave the learner with a workflow they can show to a client. --",
+              "link": "https://www.reddit.com/r/n8n/comments/1tzazg0/best_free_courses_to_learn_n8n_from_scratch_and/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "2026-06-19 06",
       "label": "2026-06-19 · 06:08",
