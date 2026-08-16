@@ -5,10 +5,477 @@
 ============================================================================= */
 window.DASHBOARD_ARCHIVE = {
   "meta": {
-    "fetchedAt": "2026-07-02 19:19",
-    "editions": 154
+    "fetchedAt": "2026-08-16 20:24",
+    "editions": 173
   },
   "editions": [
+    {
+      "key": "2026-07-07 06",
+      "label": "2026-07-07 · 07:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-07 · 07:30 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Upgrade your personal AIOS: one daily board, one permission rule, and one scheduled intelligence brief. Keep it practical and logged."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-07 03",
+      "label": "2026-07-07 · 04:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-07 · 04:30 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Design AI signals are strongest when turned into critique, one-pagers, slide decks, and client-ready visual workflows.",
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Upgrade your personal AIOS: one daily board, one permission rule, and one scheduled intelligence brief. Keep it practical and logged."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-07 00",
+      "label": "2026-07-07 · 01:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-07 · 01:30 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Upgrade your personal AIOS: one daily board, one permission rule, and one scheduled intelligence brief. Keep it practical and logged."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 21",
+      "label": "2026-07-06 · 22:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 22:30 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Design AI signals are strongest when turned into critique, one-pagers, slide decks, and client-ready visual workflows.",
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Upgrade your personal AIOS: one daily board, one permission rule, and one scheduled intelligence brief. Keep it practical and logged."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 18",
+      "label": "2026-07-06 · 19:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 19:30 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Design AI signals are strongest when turned into critique, one-pagers, slide decks, and client-ready visual workflows.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Upgrade your personal AIOS: one daily board, one permission rule, and one scheduled intelligence brief. Keep it practical and logged."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 15",
+      "label": "2026-07-06 · 16:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 14:00 GMT+8",
+          "quickRead": [
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 12",
+      "label": "2026-07-06 · 13:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 11:00 GMT+8",
+          "quickRead": [
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 09",
+      "label": "2026-07-06 · 10:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 08:00 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 06",
+      "label": "2026-07-06 · 07:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 05:15 GMT+8",
+          "quickRead": [
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 03",
+      "label": "2026-07-06 · 04:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 02:00 GMT+8",
+          "quickRead": [
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-06 00",
+      "label": "2026-07-06 · 01:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-06 · 00:00 GMT+8",
+          "quickRead": [
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 21",
+      "label": "2026-07-05 · 23:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 20:00 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 18",
+      "label": "2026-07-05 · 19:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 17:00 GMT+8",
+          "quickRead": [
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Design AI signals are strongest when turned into critique, one-pagers, slide decks, and client-ready visual workflows.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Create one sellable visual workflow demo: rough client brief → AI-assisted draft → senior critique → polished deliverable. This can become both a class module and a client offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 15",
+      "label": "2026-07-05 · 16:30",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 14:15 GMT+8",
+          "quickRead": [
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 12",
+      "label": "2026-07-05 · 13:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 11:00 GMT+8",
+          "quickRead": [
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 09",
+      "label": "2026-07-05 · 10:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 08:15 GMT+8",
+          "quickRead": [
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 06",
+      "label": "2026-07-05 · 07:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 05:00 GMT+8",
+          "quickRead": [
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Verify source quality before selling, teaching, or changing your workflow based on any single news item.",
+            "For each useful signal, decide one next action: lesson slide, client question, tool test, or archive.",
+            "The best radar item is one you can convert into a concrete asset within 24 hours."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Pick only one signal today and convert it into a practical asset: a lesson slide, client checklist, tool test, or mini service offer."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 03",
+      "label": "2026-07-05 · 04:45",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 02:00 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Design AI signals are strongest when turned into critique, one-pagers, slide decks, and client-ready visual workflows.",
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Upgrade your personal AIOS: one daily board, one permission rule, and one scheduled intelligence brief. Keep it practical and logged."
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "key": "2026-07-05 00",
+      "label": "2026-07-05 · 01:58",
+      "briefs": [
+        {
+          "id": "job",
+          "title": "AI Life & Job Opportunity",
+          "accent": "green",
+          "subtitle": "AI Life and Job Opportunity - 10 Signals English-first brief for Garett -",
+          "date": "2026-07-05 · 00:19 GMT+8",
+          "quickRead": [
+            "Agent products are moving toward memory, tools, connectors, and scheduled work — close to your AIOS direction.",
+            "Coding-agent news should be read with a safety lens: tests, dependency checks, secrets, rollback, and proof screenshots.",
+            "Model/infrastructure updates matter when they change cost, speed, privacy, reliability, or what you can teach clients.",
+            "Design AI signals are strongest when turned into critique, one-pagers, slide decks, and client-ready visual workflows.",
+            "AI 3D/media tools are useful only when wrapped in production constraints: cleanup, handoff, render quality, and teaching examples."
+          ],
+          "callout": {
+            "label": "Best move for Garett today",
+            "text": "Create one sellable visual workflow demo: rough client brief → AI-assisted draft → senior critique → polished deliverable. This can become both a class module and a client offer."
+          },
+          "signals": []
+        }
+      ]
+    },
     {
       "key": "2026-06-19 15",
       "label": "2026-06-19 · 15:02",
